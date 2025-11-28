@@ -1,4 +1,4 @@
-import { canReachNpc } from "../logic/itemAvailability.js";
+import { canDoOtherMethod, canReachNpc } from "../logic/itemAvailability.js";
 import { fileStore } from "../storage/fileStore.js";
 
 export default async function ItemPage() {
@@ -31,7 +31,7 @@ export default async function ItemPage() {
         <h2>Where to get it</h2>
         ${renderSources(item.sources)}
 
-        <h2>Processable</h2>
+        <h2>Processable into:</h2>
         ${renderProcessable(item.processable, items)}
     `;
 }
@@ -40,7 +40,8 @@ export default async function ItemPage() {
     SOURCES SECTIONS
    =========================================================== */
 function renderSources(sources = {}) {
-    const sections = ["drops", "shops", "spawns", "other"];
+    // const sections = ["drops", "shops", "spawns", "other"]; TODO whenever i get around to this
+    const sections = ["drops", "other"];
 
     return sections.map(section => `
         <div class="source-section">
@@ -89,23 +90,55 @@ function renderSourceTable(section, entries) {
         `;
     }
 
+
     // ---------------------------
-    // OTHER TABLES (shops, spawns, other)
+    // OTHER TABLE
+    // ---------------------------
+    if (section === "other") {
+    return `
+            <table class="osrs-table">
+                <tr>
+                    <th>How</th>
+                    <th>Notes</th>
+                    <th>Obtainable?</th>
+                </tr>
+                ${Object.entries(entries).map(([method, info]) => {
+                    const { notes, rule } = info;
+
+                    const obtainable = canDoOtherMethod(rule, fileStore)
+                        ? `<span class="obtainable yes">✔</span>`
+                        : `<span class="obtainable no">✘</span>`;
+
+                    return `
+                        <tr>
+                            <td>${method}</td>
+                            <td>${notes}</td>
+                            <td>${obtainable}</td>
+                        </tr>
+                    `;
+                }).join("")}
+            </table>
+        `;
+    }
+
+    // ---------------------------
+    // OTHER TABLES (shops, spawns)
     // Name in first column, clickable link icon in second column
     // ---------------------------
-    return `
-        <table class="osrs-table">
-            ${Object.entries(entries).map(([name, url]) => `
-                <tr>
-                    <td>
-                        <a href="${url}" target="_blank">
-                            ${name}
-                        </a>
-                    </td>
-                </tr>
-            `).join("")}
-        </table>
-    `;
+    // TODO: logic if the item is unlocked, so it can be picked up or purchased.
+    // return `
+    //     <table class="osrs-table">
+    //         ${Object.entries(entries).map(([name, url]) => `
+    //             <tr>
+    //                 <td>
+    //                     <a href="${url}" target="_blank">
+    //                         ${name}
+    //                     </a>
+    //                 </td>
+    //             </tr>
+    //         `).join("")}
+    //     </table>
+    // `;
 }
 
 /* ===========================================================

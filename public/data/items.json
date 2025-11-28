@@ -3,211 +3,887 @@
         "index": 1,
         "id": 10344,
         "name": "3rd age amulet",
-        "image": "3rd_age_amulet.png"
+        "image": "3rd_age_amulet.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 2,
         "id": 20011,
         "name": "3rd age axe",
-        "image": "3rd_age_axe.png"
+        "image": "3rd_age_axe.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        },
+        "processable": {
+            "28226": "28177"
+        }
     },
     {
         "index": 3,
         "id": 12424,
         "name": "3rd age bow",
-        "image": "3rd_age_bow.png"
+        "image": "3rd_age_bow.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 4,
         "id": 12437,
         "name": "3rd age cloak",
-        "image": "3rd_age_cloak.png"
+        "image": "3rd_age_cloak.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 5,
         "id": 23345,
         "name": "3rd age druidic cloak",
-        "image": "3rd_age_druidic_cloak.png"
+        "image": "3rd_age_druidic_cloak.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 6,
         "id": 23339,
         "name": "3rd age druidic robe bottoms",
-        "image": "3rd_age_druidic_robe_bottoms.png"
+        "image": "3rd_age_druidic_robe_bottoms.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 7,
         "id": 23336,
         "name": "3rd age druidic robe top",
-        "image": "3rd_age_druidic_robe_top.png"
+        "image": "3rd_age_druidic_robe_top.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 8,
         "id": 23342,
         "name": "3rd age druidic staff",
-        "image": "3rd_age_druidic_staff.png"
+        "image": "3rd_age_druidic_staff.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 9,
         "id": 28226,
         "name": "3rd age felling axe",
-        "image": "3rd_age_felling_axe.png"
+        "image": "3rd_age_felling_axe.png",
+        "sources": {
+            "craftable": [
+                [20011, 28177]
+            ]
+        }
     },
     {
         "index": 10,
         "id": 10350,
         "name": "3rd age full helmet",
-        "image": "3rd_age_full_helmet.png"
+        "image": "3rd_age_full_helmet.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 11,
         "id": 10352,
         "name": "3rd age kiteshield",
-        "image": "3rd_age_kiteshield.png"
+        "image": "3rd_age_kiteshield.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 12,
         "id": 12426,
         "name": "3rd age longsword",
-        "image": "3rd_age_longsword.png"
+        "image": "3rd_age_longsword.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 13,
         "id": 10342,
         "name": "3rd age mage hat",
-        "image": "3rd_age_mage_hat.png"
+        "image": "3rd_age_mage_hat.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 14,
         "id": 20014,
         "name": "3rd age pickaxe",
-        "image": "3rd_age_pickaxe.png"
+        "image": "3rd_age_pickaxe.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 15,
         "id": 10348,
         "name": "3rd age platebody",
-        "image": "3rd_age_platebody.png"
+        "image": "3rd_age_platebody.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 16,
         "id": 10346,
         "name": "3rd age platelegs",
-        "image": "3rd_age_platelegs.png"
+        "image": "3rd_age_platelegs.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 17,
         "id": 23242,
         "name": "3rd age plateskirt",
-        "image": "3rd_age_plateskirt.png"
+        "image": "3rd_age_plateskirt.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 18,
         "id": 10334,
         "name": "3rd age range coif",
-        "image": "3rd_age_range_coif.png"
+        "image": "3rd_age_range_coif.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 19,
         "id": 10332,
         "name": "3rd age range legs",
-        "image": "3rd_age_range_legs.png"
+        "image": "3rd_age_range_legs.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 20,
         "id": 10330,
         "name": "3rd age range top",
-        "image": "3rd_age_range_top.png"
+        "image": "3rd_age_range_top.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 21,
         "id": 10340,
         "name": "3rd age robe",
-        "image": "3rd_age_robe.png"
+        "image": "3rd_age_robe.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 22,
         "id": 10338,
         "name": "3rd age robe top",
-        "image": "3rd_age_robe_top.png"
+        "image": "3rd_age_robe_top.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 23,
         "id": 10336,
         "name": "3rd age vambraces",
-        "image": "3rd_age_vambraces.png"
+        "image": "3rd_age_vambraces.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/211,250",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 24,
         "id": 12422,
         "name": "3rd age wand",
-        "image": "3rd_age_wand.png"
+        "image": "3rd_age_wand.png",
+        "sources": {
+            "drops": {
+                "The Mimic (master)": {
+                    "droprate": "1/5,244",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Master"
+                    },
+                "The Mimic (elite)": {
+                    "droprate": "1/5,750",
+                    "url": "https://oldschool.runescape.wiki/w/The_Mimic#Elite"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/249,262",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/313,168",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 25,
         "id": 10392,
         "name": "A powdered wig",
-        "image": "a_powdered_wig.png"
+        "image": "a_powdered_wig.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 26,
         "id": 25775,
         "name": "Abyssal ashes",
-        "image": "abyssal_ashes.png"
+        "image": "abyssal_ashes.png",
+        "sources": {
+            "drops": {
+                "Abyssal demon (standard)": {
+                    "droprate": "always",
+                    "url": "https://oldschool.runescape.wiki/w/Abyssal_demon#Standard"
+                    },
+                "Abyssal demon (Wilderness Slayer Cave)": {
+                    "droprate": "always",
+                    "url": "https://oldschool.runescape.wiki/w/Abyssal_demon#Wilderness_Slayer_Cave"
+                    },
+                "Abyssal Sire": {
+                    "droprate": "always",
+                    "url": "https://oldschool.runescape.wiki/w/Abyssal_Sire"
+                    },
+                "Greater abyssal demon": {
+                    "droprate": "always",
+                    "url": "https://oldschool.runescape.wiki/w/Greater_abyssal_demon"
+                    },
+                "Rewards Guardian": {
+                    "droprate": "1/140",
+                    "url": "https://oldschool.runescape.wiki/w/Rewards_Guardian"
+                    }
+            }
+        }
     },
     {
         "index": 27,
         "id": 13263,
         "name": "Abyssal bludgeon",
-        "image": "abyssal_bludgeon.png"
+        "image": "abyssal_bludgeon.png",
+        "sources": {
+            "other": {
+                "Combining its 3 parts": {
+                    "notes": "The Bludgeon axon, Bludgeon claw and Bludgeon spine are abailable from the Abyssal Sire.",
+                    "rule": "canReachAbyssalSire"
+                }
+            }
+        }
     },
     {
         "index": 28,
         "id": 11095,
         "name": "Abyssal bracelet(5)",
-        "image": "abyssal_bracelet.png"
+        "image": "abyssal_bracelet.png",
+        "sources": {
+            "other": {
+                "Enchanting a diamond bracelet": {
+                    "notes": "Requires a diamond bracelet, cosmic runes or aether runes and a source of earth runes",
+                    "rule": {
+                        "all": [
+                            { "has": 11092 },
+                            { "any": [
+                                { "has": 564 },
+                                { "has": 30843 }
+                            ]},
+                            { "any": [
+                                { "has": 557 },
+                                { "has": 4696 },
+                                { "has": 4698 },
+                                { "has": 4699 },
+                                { "has": 1385 },
+                                { "has": 1399 },
+                                { "has": 1407 },
+                                { "has": 3053 },
+                                { "has": 3054 },
+                                { "has": 6562 },
+                                { "has": 6563 },
+                                { "has": 20736 },
+                                { "has": 20739 },
+                                { "all": [
+                                    { "has": 30066 },
+                                    { "has": 30068 }
+                                ]}
+                            ]}
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 29,
         "id": 13265,
         "name": "Abyssal dagger",
-        "image": "abyssal_dagger.png"
+        "image": "abyssal_dagger.png",
+        "sources": {
+            "drops": {
+                "Unsired": {
+                    "droprate": "1/4.923",
+                    "url": "https://oldschool.runescape.wiki/w/Unsired"
+                    },
+                "Greater abyssal demon": {
+                    "droprate": "3 × 1/32,000",
+                    "url": "https://oldschool.runescape.wiki/w/Greater_abyssal_demon"
+                    },
+                "Abyssal demon (standard)": {
+                    "droprate": "1/32,000",
+                    "url": "https://oldschool.runescape.wiki/w/Abyssal_demon#Standard"
+                    },
+                "Abyssal demon (Wilderness Slayer Cave)": {
+                    "droprate": "1/32,000",
+                    "url": "https://oldschool.runescape.wiki/w/Abyssal_demon#Wilderness_Slayer_Cave"
+                    }
+            }
+        },
+        "processable": {
+            "13267": "187",
+            "13269": "5937",
+            "13271": "5940"
+        }
     },
     {
         "index": 30,
         "id": 13267,
         "name": "Abyssal dagger (p)",
-        "image": "abyssal_dagger_(p).png"
+        "image": "abyssal_dagger_(p).png",
+        "sources": {
+            "other": {
+                "Poisoning an Abyssal dagger": {
+                    "notes": "Requires an Abyssal dagger and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 13265 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 31,
         "id": 13269,
         "name": "Abyssal dagger (p+)",
-        "image": "abyssal_dagger_(p+).png"
+        "image": "abyssal_dagger_(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning an Abyssal dagger": {
+                    "notes": "Requires an Abyssal dagger and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 13265 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 32,
         "id": 13271,
         "name": "Abyssal dagger (p++)",
-        "image": "abyssal_dagger_(p++).png"
+        "image": "abyssal_dagger_(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning an Abyssal dagger": {
+                    "notes": "Requires an Abyssal dagger and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 13265 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 33,
         "id": 4151,
         "name": "Abyssal whip",
-        "image": "abyssal_whip.png"
+        "image": "abyssal_whip.png",
+        "sources": {
+            "drops": {
+                "Unsired": {
+                    "droprate": "1/10.67",
+                    "url": "https://oldschool.runescape.wiki/w/Unsired"
+                    },
+                "Greater abyssal demon": {
+                    "droprate": "3 × 1/512",
+                    "url": "https://oldschool.runescape.wiki/w/Greater_abyssal_demon"
+                    },
+                "Abyssal demon (standard)": {
+                    "droprate": "1/512",
+                    "url": "https://oldschool.runescape.wiki/w/Abyssal_demon#Standard"
+                    },
+                "Abyssal demon (Wilderness Slayer Cave)": {
+                    "droprate": "1/512",
+                    "url": "https://oldschool.runescape.wiki/w/Abyssal_demon#Wilderness_Slayer_Cave"
+                    }
+            }
+        }
     },
     {
         "index": 35,
         "id": 27676,
         "name": "Accursed sceptre (au)",
-        "image": "accursed_sceptre_(au).png"
+        "image": "accursed_sceptre_(au).png",
+        "sources": {
+            "other": {
+                "Swapping modes": {
+                    "notes": "Swapping to the autocasting variant of the Accursed sceptre.",
+                    "rule": { "has": 27662 }
+                }
+            }
+        }
     },
     {
         "index": 36,
         "id": 27662,
         "name": "Accursed sceptre (u)",
-        "image": "accursed_sceptre_(u).png"
+        "image": "accursed_sceptre_(u).png",
+        "sources": {
+            "other": {
+                "Combining": {
+                    "notes": "Combining the Skull of Vet'ion and a Thammaron's sceptre (u).",
+                    "rule": {
+                        "all": [
+                            { "has": 27673 },
+                            { "has": 22552 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 37,
@@ -1203,7 +1879,15 @@
         "index": 202,
         "id": 10366,
         "name": "Amulet of magic (t)",
-        "image": "amulet_of_magic_(t).png"
+        "image": "amulet_of_magic_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/360",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 203,
@@ -1215,7 +1899,15 @@
         "index": 204,
         "id": 23354,
         "name": "Amulet of power (t)",
-        "image": "amulet_of_power_(t).png"
+        "image": "amulet_of_power_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 205,
@@ -1527,13 +2219,29 @@
         "index": 256,
         "id": 12195,
         "name": "Ancient robe legs",
-        "image": "ancient_robe_legs.png"
+        "image": "ancient_robe_legs.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 257,
         "id": 12193,
         "name": "Ancient robe top",
-        "image": "ancient_robe_top.png"
+        "image": "ancient_robe_top.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 258,
@@ -2181,13 +2889,29 @@
         "index": 365,
         "id": 12255,
         "name": "Armadyl robe legs",
-        "image": "armadyl_robe_legs.png"
+        "image": "armadyl_robe_legs.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 366,
         "id": 12253,
         "name": "Armadyl robe top",
-        "image": "armadyl_robe_top.png"
+        "image": "armadyl_robe_top.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 367,
@@ -2781,13 +3505,29 @@
         "index": 465,
         "id": 12267,
         "name": "Bandos robe legs",
-        "image": "bandos_robe_legs.png"
+        "image": "bandos_robe_legs.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 466,
         "id": 12265,
         "name": "Bandos robe top",
-        "image": "bandos_robe_top.png"
+        "image": "bandos_robe_top.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 467,
@@ -2997,7 +3737,15 @@
         "index": 501,
         "id": 12245,
         "name": "Beanie",
-        "image": "beanie.png"
+        "image": "beanie.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 502,
@@ -3165,7 +3913,15 @@
         "index": 529,
         "id": 2635,
         "name": "Black beret",
-        "image": "black_beret.png"
+        "image": "black_beret.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 530,
@@ -3189,7 +3945,15 @@
         "index": 533,
         "id": 12375,
         "name": "Black cane",
-        "image": "black_cane.png"
+        "image": "black_cane.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 534,
@@ -3393,13 +4157,29 @@
         "index": 567,
         "id": 2595,
         "name": "Black full helm (g)",
-        "image": "black_full_helm_(g).png"
+        "image": "black_full_helm_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 568,
         "id": 2587,
         "name": "Black full helm (t)",
-        "image": "black_full_helm_(t).png"
+        "image": "black_full_helm_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 569,
@@ -3429,31 +4209,71 @@
         "index": 573,
         "id": 10306,
         "name": "Black helm (h1)",
-        "image": "black_helm_(h1).png"
+        "image": "black_helm_(h1).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 574,
         "id": 10308,
         "name": "Black helm (h2)",
-        "image": "black_helm_(h2).png"
+        "image": "black_helm_(h2).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 575,
         "id": 10310,
         "name": "Black helm (h3)",
-        "image": "black_helm_(h3).png"
+        "image": "black_helm_(h3).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 576,
         "id": 10312,
         "name": "Black helm (h4)",
-        "image": "black_helm_(h4).png"
+        "image": "black_helm_(h4).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 577,
         "id": 10314,
         "name": "Black helm (h5)",
-        "image": "black_helm_(h5).png"
+        "image": "black_helm_(h5).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 578,
@@ -3465,13 +4285,29 @@
         "index": 579,
         "id": 2597,
         "name": "Black kiteshield (g)",
-        "image": "black_kiteshield_(g).png"
+        "image": "black_kiteshield_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 580,
         "id": 2589,
         "name": "Black kiteshield (t)",
-        "image": "black_kiteshield_(t).png"
+        "image": "black_kiteshield_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 581,
@@ -3561,43 +4397,99 @@
         "index": 595,
         "id": 2591,
         "name": "Black platebody (g)",
-        "image": "black_platebody_(g).png"
+        "image": "black_platebody_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 596,
         "id": 23366,
         "name": "Black platebody (h1)",
-        "image": "black_platebody_(h1).png"
+        "image": "black_platebody_(h1).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 597,
         "id": 23369,
         "name": "Black platebody (h2)",
-        "image": "black_platebody_(h2).png"
+        "image": "black_platebody_(h2).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 598,
         "id": 23372,
         "name": "Black platebody (h3)",
-        "image": "black_platebody_(h3).png"
+        "image": "black_platebody_(h3).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 599,
         "id": 23375,
         "name": "Black platebody (h4)",
-        "image": "black_platebody_(h4).png"
+        "image": "black_platebody_(h4).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 600,
         "id": 23378,
         "name": "Black platebody (h5)",
-        "image": "black_platebody_(h5).png"
+        "image": "black_platebody_(h5).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 601,
         "id": 2583,
         "name": "Black platebody (t)",
-        "image": "black_platebody_(t).png"
+        "image": "black_platebody_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 602,
@@ -3609,13 +4501,29 @@
         "index": 603,
         "id": 2593,
         "name": "Black platelegs (g)",
-        "image": "black_platelegs_(g).png"
+        "image": "black_platelegs_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 604,
         "id": 2585,
         "name": "Black platelegs (t)",
-        "image": "black_platelegs_(t).png"
+        "image": "black_platelegs_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 605,
@@ -3627,13 +4535,29 @@
         "index": 606,
         "id": 3473,
         "name": "Black plateskirt (g)",
-        "image": "black_plateskirt_(g).png"
+        "image": "black_plateskirt_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 607,
         "id": 3472,
         "name": "Black plateskirt (t)",
-        "image": "black_plateskirt_(t).png"
+        "image": "black_plateskirt_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 608,
@@ -3669,31 +4593,71 @@
         "index": 613,
         "id": 7332,
         "name": "Black shield (h1)",
-        "image": "black_shield_(h1).png"
+        "image": "black_shield_(h1).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 614,
         "id": 7338,
         "name": "Black shield (h2)",
-        "image": "black_shield_(h2).png"
+        "image": "black_shield_(h2).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 615,
         "id": 7344,
         "name": "Black shield (h3)",
-        "image": "black_shield_(h3).png"
+        "image": "black_shield_(h3).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 616,
         "id": 7350,
         "name": "Black shield (h4)",
-        "image": "black_shield_(h4).png"
+        "image": "black_shield_(h4).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 617,
         "id": 7356,
         "name": "Black shield (h5)",
-        "image": "black_shield_(h5).png"
+        "image": "black_shield_(h5).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 618,
@@ -3705,13 +4669,29 @@
         "index": 619,
         "id": 12445,
         "name": "Black skirt (g)",
-        "image": "black_skirt_(g).png"
+        "image": "black_skirt_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 620,
         "id": 12447,
         "name": "Black skirt (t)",
-        "image": "black_skirt_(t).png"
+        "image": "black_skirt_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 621,
@@ -3813,25 +4793,57 @@
         "index": 637,
         "id": 12453,
         "name": "Black wizard hat (g)",
-        "image": "black_wizard_hat_(g).png"
+        "image": "black_wizard_hat_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 638,
         "id": 12455,
         "name": "Black wizard hat (t)",
-        "image": "black_wizard_hat_(t).png"
+        "image": "black_wizard_hat_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 639,
         "id": 12449,
         "name": "Black wizard robe (g)",
-        "image": "black_wizard_robe_(g).png"
+        "image": "black_wizard_robe_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 640,
         "id": 12451,
         "name": "Black wizard robe (t)",
-        "image": "black_wizard_robe_(t).png"
+        "image": "black_wizard_robe_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 641,
@@ -4125,7 +5137,15 @@
         "index": 689,
         "id": 2633,
         "name": "Blue beret",
-        "image": "blue_beret.png"
+        "image": "blue_beret.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 690,
@@ -4251,25 +5271,57 @@
         "index": 710,
         "id": 10428,
         "name": "Blue elegant blouse",
-        "image": "blue_elegant_blouse.png"
+        "image": "blue_elegant_blouse.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 711,
         "id": 10410,
         "name": "Blue elegant legs",
-        "image": "blue_elegant_legs.png"
+        "image": "blue_elegant_legs.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 712,
         "id": 10408,
         "name": "Blue elegant shirt",
-        "image": "blue_elegant_shirt.png"
+        "image": "blue_elegant_shirt.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 713,
         "id": 10430,
         "name": "Blue elegant skirt",
-        "image": "blue_elegant_skirt.png"
+        "image": "blue_elegant_skirt.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 714,
@@ -4383,13 +5435,29 @@
         "index": 732,
         "id": 7386,
         "name": "Blue skirt (g)",
-        "image": "blue_skirt_(g).png"
+        "image": "blue_skirt_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 733,
         "id": 7388,
         "name": "Blue skirt (t)",
-        "image": "blue_skirt_(t).png"
+        "image": "blue_skirt_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 734,
@@ -4407,13 +5475,29 @@
         "index": 736,
         "id": 7394,
         "name": "Blue wizard hat (g)",
-        "image": "blue_wizard_hat_(g).png"
+        "image": "blue_wizard_hat_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 737,
         "id": 7396,
         "name": "Blue wizard hat (t)",
-        "image": "blue_wizard_hat_(t).png"
+        "image": "blue_wizard_hat_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 738,
@@ -4425,13 +5509,29 @@
         "index": 739,
         "id": 7390,
         "name": "Blue wizard robe (g)",
-        "image": "blue_wizard_robe_(g).png"
+        "image": "blue_wizard_robe_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 740,
         "id": 7392,
         "name": "Blue wizard robe (t)",
-        "image": "blue_wizard_robe_(t).png"
+        "image": "blue_wizard_robe_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 741,
@@ -4461,31 +5561,71 @@
         "index": 745,
         "id": 10322,
         "name": "Bob's black shirt",
-        "image": "bob's_black_shirt.png"
+        "image": "bob's_black_shirt.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 746,
         "id": 10318,
         "name": "Bob's blue shirt",
-        "image": "bob's_blue_shirt.png"
+        "image": "bob's_blue_shirt.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 747,
         "id": 10320,
         "name": "Bob's green shirt",
-        "image": "bob's_green_shirt.png"
+        "image": "bob's_green_shirt.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 748,
         "id": 10324,
         "name": "Bob's purple shirt",
-        "image": "bob's_purple_shirt.png"
+        "image": "bob's_purple_shirt.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 749,
         "id": 10316,
         "name": "Bob's red shirt",
-        "image": "bob's_red_shirt.png"
+        "image": "bob's_red_shirt.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 750,
@@ -5067,13 +6207,29 @@
         "index": 847,
         "id": 12211,
         "name": "Bronze full helm (g)",
-        "image": "bronze_full_helm_(g).png"
+        "image": "bronze_full_helm_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 848,
         "id": 12221,
         "name": "Bronze full helm (t)",
-        "image": "bronze_full_helm_(t).png"
+        "image": "bronze_full_helm_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 849,
@@ -5163,13 +6319,29 @@
         "index": 863,
         "id": 12213,
         "name": "Bronze kiteshield (g)",
-        "image": "bronze_kiteshield_(g).png"
+        "image": "bronze_kiteshield_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 864,
         "id": 12223,
         "name": "Bronze kiteshield (t)",
-        "image": "bronze_kiteshield_(t).png"
+        "image": "bronze_kiteshield_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 865,
@@ -5247,13 +6419,29 @@
         "index": 877,
         "id": 12205,
         "name": "Bronze platebody (g)",
-        "image": "bronze_platebody_(g).png"
+        "image": "bronze_platebody_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 878,
         "id": 12215,
         "name": "Bronze platebody (t)",
-        "image": "bronze_platebody_(t).png"
+        "image": "bronze_platebody_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 879,
@@ -5265,13 +6453,29 @@
         "index": 880,
         "id": 12207,
         "name": "Bronze platelegs (g)",
-        "image": "bronze_platelegs_(g).png"
+        "image": "bronze_platelegs_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 881,
         "id": 12217,
         "name": "Bronze platelegs (t)",
-        "image": "bronze_platelegs_(t).png"
+        "image": "bronze_platelegs_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 882,
@@ -5283,13 +6487,29 @@
         "index": 883,
         "id": 12209,
         "name": "Bronze plateskirt (g)",
-        "image": "bronze_plateskirt_(g).png"
+        "image": "bronze_plateskirt_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 884,
         "id": 12219,
         "name": "Bronze plateskirt (t)",
-        "image": "bronze_plateskirt_(t).png"
+        "image": "bronze_plateskirt_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 885,
@@ -5781,7 +7001,15 @@
         "index": 966,
         "id": 23351,
         "name": "Cape of skulls",
-        "image": "cape_of_skulls.png"
+        "image": "cape_of_skulls.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/5,616",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 967,
@@ -9429,7 +10657,23 @@
         "index": 1578,
         "id": 314,
         "name": "Feather",
-        "image": "feather.png"
+        "image": "feather.png",
+        "sources": {
+            "drops": {
+                "Chicken": {
+                    "droprate": "1/2",
+                    "url": "https://oldschool.runescape.wiki/w/Chicken"
+                    }
+            },
+            "other": {
+                "Opening feather packs": {
+                    "notes": "Feather packs are untradable and buyable from shops."
+                }
+            }
+        },
+        "processable": {
+            "9143": "9380"
+        }
     },
     {
         "index": 1579,
@@ -9675,7 +10919,15 @@
         "index": 1619,
         "id": 10394,
         "name": "Flared trousers",
-        "image": "flared_trousers.png"
+        "image": "flared_trousers.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1620,
@@ -10353,7 +11605,15 @@
         "index": 1732,
         "id": 12251,
         "name": "Goblin mask",
-        "image": "goblin_mask.png"
+        "image": "goblin_mask.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1733,
@@ -10479,13 +11739,29 @@
         "index": 1753,
         "id": 20208,
         "name": "Golden apron",
-        "image": "golden_apron.png"
+        "image": "golden_apron.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1754,
         "id": 20205,
         "name": "Golden chef's hat",
-        "image": "golden_chef's_hat.png"
+        "image": "golden_chef's_hat.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1755,
@@ -10767,25 +12043,57 @@
         "index": 1801,
         "id": 10432,
         "name": "Green elegant blouse",
-        "image": "green_elegant_blouse.png"
+        "image": "green_elegant_blouse.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1802,
         "id": 10414,
         "name": "Green elegant legs",
-        "image": "green_elegant_legs.png"
+        "image": "green_elegant_legs.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1803,
         "id": 10412,
         "name": "Green elegant shirt",
-        "image": "green_elegant_shirt.png"
+        "image": "green_elegant_shirt.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1804,
         "id": 10434,
         "name": "Green elegant skirt",
-        "image": "green_elegant_skirt.png"
+        "image": "green_elegant_skirt.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1805,
@@ -11343,13 +12651,29 @@
         "index": 1897,
         "id": 10466,
         "name": "Guthix robe legs",
-        "image": "guthix_robe_legs.png"
+        "image": "guthix_robe_legs.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1898,
         "id": 10462,
         "name": "Guthix robe top",
-        "image": "guthix_robe_top.png"
+        "image": "guthix_robe_top.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1899,
@@ -11463,7 +12787,15 @@
         "index": 1917,
         "id": 23360,
         "name": "Ham joint",
-        "image": "ham_joint.png"
+        "image": "ham_joint.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1918,
@@ -11625,7 +12957,15 @@
         "index": 1944,
         "id": 2631,
         "name": "Highwayman mask",
-        "image": "highwayman_mask.png"
+        "image": "highwayman_mask.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1945,
@@ -11883,7 +13223,15 @@
         "index": 1987,
         "id": 12249,
         "name": "Imp mask",
-        "image": "imp_mask.png"
+        "image": "imp_mask.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 1988,
@@ -12261,13 +13609,29 @@
         "index": 2050,
         "id": 12241,
         "name": "Iron full helm (g)",
-        "image": "iron_full_helm_(g).png"
+        "image": "iron_full_helm_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2051,
         "id": 12231,
         "name": "Iron full helm (t)",
-        "image": "iron_full_helm_(t).png"
+        "image": "iron_full_helm_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2052,
@@ -12357,13 +13721,29 @@
         "index": 2066,
         "id": 12243,
         "name": "Iron kiteshield (g)",
-        "image": "iron_kiteshield_(g).png"
+        "image": "iron_kiteshield_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2067,
         "id": 12233,
         "name": "Iron kiteshield (t)",
-        "image": "iron_kiteshield_(t).png"
+        "image": "iron_kiteshield_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2068,
@@ -12441,13 +13821,29 @@
         "index": 2080,
         "id": 12235,
         "name": "Iron platebody (g)",
-        "image": "iron_platebody_(g).png"
+        "image": "iron_platebody_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2081,
         "id": 12225,
         "name": "Iron platebody (t)",
-        "image": "iron_platebody_(t).png"
+        "image": "iron_platebody_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2082,
@@ -12459,13 +13855,29 @@
         "index": 2083,
         "id": 12237,
         "name": "Iron platelegs (g)",
-        "image": "iron_platelegs_(g).png"
+        "image": "iron_platelegs_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2084,
         "id": 12227,
         "name": "Iron platelegs (t)",
-        "image": "iron_platelegs_(t).png"
+        "image": "iron_platelegs_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2085,
@@ -12477,13 +13889,29 @@
         "index": 2086,
         "id": 12239,
         "name": "Iron plateskirt (g)",
-        "image": "iron_plateskirt_(g).png"
+        "image": "iron_plateskirt_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2087,
         "id": 12229,
         "name": "Iron plateskirt (t)",
-        "image": "iron_plateskirt_(t).png"
+        "image": "iron_plateskirt_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2088,
@@ -13425,7 +14853,15 @@
         "index": 2246,
         "id": 23381,
         "name": "Leather body (g)",
-        "image": "leather_body_(g).png"
+        "image": "leather_body_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2247,
@@ -13443,7 +14879,15 @@
         "index": 2249,
         "id": 23384,
         "name": "Leather chaps (g)",
-        "image": "leather_chaps_(g).png"
+        "image": "leather_chaps_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2250,
@@ -15153,7 +16597,15 @@
         "index": 2534,
         "id": 20202,
         "name": "Monk's robe (g)",
-        "image": "monk's_robe_(g).png"
+        "image": "monk's_robe_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/14,040",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2535,
@@ -15171,7 +16623,15 @@
         "index": 2537,
         "id": 20199,
         "name": "Monk's robe top (g)",
-        "image": "monk's_robe_top_(g).png"
+        "image": "monk's_robe_top_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/14,040",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2538,
@@ -16533,7 +17993,15 @@
         "index": 2764,
         "id": 10396,
         "name": "Pantaloons",
-        "image": "pantaloons.png"
+        "image": "pantaloons.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2765,
@@ -17661,7 +19129,15 @@
         "index": 2954,
         "id": 23357,
         "name": "Rain bow",
-        "image": "rain_bow.png"
+        "image": "rain_bow.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 2955,
@@ -18183,7 +19659,15 @@
         "index": 3041,
         "id": 12247,
         "name": "Red beret",
-        "image": "red_beret.png"
+        "image": "red_beret.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3042,
@@ -18309,25 +19793,57 @@
         "index": 3062,
         "id": 10424,
         "name": "Red elegant blouse",
-        "image": "red_elegant_blouse.png"
+        "image": "red_elegant_blouse.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3063,
         "id": 10406,
         "name": "Red elegant legs",
-        "image": "red_elegant_legs.png"
+        "image": "red_elegant_legs.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3064,
         "id": 10404,
         "name": "Red elegant shirt",
-        "image": "red_elegant_shirt.png"
+        "image": "red_elegant_shirt.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3065,
         "id": 10426,
         "name": "Red elegant skirt",
-        "image": "red_elegant_skirt.png"
+        "image": "red_elegant_skirt.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/2,808",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3066,
@@ -20103,13 +21619,29 @@
         "index": 3361,
         "id": 10464,
         "name": "Saradomin robe legs",
-        "image": "saradomin_robe_legs.png"
+        "image": "saradomin_robe_legs.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3362,
         "id": 10458,
         "name": "Saradomin robe top",
-        "image": "saradomin_robe_top.png"
+        "image": "saradomin_robe_top.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3363,
@@ -20835,7 +22367,15 @@
         "index": 3565,
         "id": 10398,
         "name": "Sleeping cap",
-        "image": "sleeping_cap.png"
+        "image": "sleeping_cap.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3566,
@@ -21267,7 +22807,15 @@
         "index": 3637,
         "id": 23363,
         "name": "Staff of bob the cat",
-        "image": "staff_of_bob_the_cat.png"
+        "image": "staff_of_bob_the_cat.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3638,
@@ -21573,13 +23121,29 @@
         "index": 3688,
         "id": 20178,
         "name": "Steel full helm (g)",
-        "image": "steel_full_helm_(g).png"
+        "image": "steel_full_helm_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3689,
         "id": 20193,
         "name": "Steel full helm (t)",
-        "image": "steel_full_helm_(t).png"
+        "image": "steel_full_helm_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3690,
@@ -21669,13 +23233,29 @@
         "index": 3704,
         "id": 20181,
         "name": "Steel kiteshield (g)",
-        "image": "steel_kiteshield_(g).png"
+        "image": "steel_kiteshield_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3705,
         "id": 20196,
         "name": "Steel kiteshield (t)",
-        "image": "steel_kiteshield_(t).png"
+        "image": "steel_kiteshield_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3706,
@@ -21753,13 +23333,29 @@
         "index": 3718,
         "id": 20169,
         "name": "Steel platebody (g)",
-        "image": "steel_platebody_(g).png"
+        "image": "steel_platebody_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3719,
         "id": 20184,
         "name": "Steel platebody (t)",
-        "image": "steel_platebody_(t).png"
+        "image": "steel_platebody_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3720,
@@ -21771,13 +23367,29 @@
         "index": 3721,
         "id": 20172,
         "name": "Steel platelegs (g)",
-        "image": "steel_platelegs_(g).png"
+        "image": "steel_platelegs_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3722,
         "id": 20187,
         "name": "Steel platelegs (t)",
-        "image": "steel_platelegs_(t).png"
+        "image": "steel_platelegs_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3723,
@@ -21789,13 +23401,29 @@
         "index": 3724,
         "id": 20175,
         "name": "Steel plateskirt (g)",
-        "image": "steel_plateskirt_(g).png"
+        "image": "steel_plateskirt_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3725,
         "id": 20190,
         "name": "Steel plateskirt (t)",
-        "image": "steel_plateskirt_(t).png"
+        "image": "steel_plateskirt_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3726,
@@ -22059,13 +23687,29 @@
         "index": 3769,
         "id": 7362,
         "name": "Studded body (g)",
-        "image": "studded_body_(g).png"
+        "image": "studded_body_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3770,
         "id": 7364,
         "name": "Studded body (t)",
-        "image": "studded_body_(t).png"
+        "image": "studded_body_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3771,
@@ -22077,13 +23721,29 @@
         "index": 3772,
         "id": 7366,
         "name": "Studded chaps (g)",
-        "image": "studded_chaps_(g).png"
+        "image": "studded_chaps_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3773,
         "id": 7368,
         "name": "Studded chaps (t)",
-        "image": "studded_chaps_(t).png"
+        "image": "studded_chaps_(t).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3774,
@@ -22947,19 +24607,43 @@
         "index": 3917,
         "id": 20217,
         "name": "Team cape i",
-        "image": "team_cape_i.png"
+        "image": "team_cape_i.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/5,616",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3918,
         "id": 20214,
         "name": "Team cape x",
-        "image": "team_cape_x.png"
+        "image": "team_cape_x.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/5,616",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3919,
         "id": 20211,
         "name": "Team cape zero",
-        "image": "team_cape_zero.png"
+        "image": "team_cape_zero.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/5,616",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 3920,
@@ -25281,7 +26965,15 @@
         "index": 4306,
         "id": 2637,
         "name": "White beret",
-        "image": "white_beret.png"
+        "image": "white_beret.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 4307,
@@ -25563,7 +27255,15 @@
         "index": 4353,
         "id": 10280,
         "name": "Willow comp bow",
-        "image": "willow_comp_bow.png"
+        "image": "willow_comp_bow.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/360",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 4354,
@@ -25761,7 +27461,15 @@
         "index": 4388,
         "id": 20166,
         "name": "Wooden shield (g)",
-        "image": "wooden_shield_(g).png"
+        "image": "wooden_shield_(g).png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 4389,
@@ -26301,13 +28009,29 @@
         "index": 4478,
         "id": 10468,
         "name": "Zamorak robe legs",
-        "image": "zamorak_robe_legs.png"
+        "image": "zamorak_robe_legs.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 4479,
         "id": 10460,
         "name": "Zamorak robe top",
-        "image": "zamorak_robe_top.png"
+        "image": "zamorak_robe_top.png",
+        "sources": {
+            "drops": {
+                "Reward casket (easy)": {
+                    "droprate": "1/1,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    }
+            }
+        }
     },
     {
         "index": 4480,
