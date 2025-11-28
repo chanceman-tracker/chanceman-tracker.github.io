@@ -1,0 +1,13 @@
+.item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.item-card {
+    width: 150px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
