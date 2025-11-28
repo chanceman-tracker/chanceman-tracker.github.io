@@ -1,3 +1,4 @@
+import { canReachNpc } from "../logic/itemAvailability.js";
 import { fileStore } from "../storage/fileStore.js";
 
 export default async function ItemPage() {
@@ -70,13 +71,20 @@ function renderSourceTable(section, entries) {
                 <tr>
                     <th>Source</th>
                     <th>Droprate</th>
+                    <th>Obtainable?</th>
                 </tr>
-                ${Object.entries(entries).map(([name, data]) => `
-                    <tr>
-                        <td><a href="${data.url}" target="_blank">${name}</a></td>
-                        <td>${data.droprate}</td>
-                    </tr>
-                `).join("")}
+                ${Object.entries(entries).map(([name, data]) => {
+                    const obtainable = canReachNpc(name, fileStore)
+                        ? `<span class="obtainable yes">✔</span>`
+                        : `<span class="obtainable no">✘</span>`;
+                    return `
+                        <tr>
+                            <td><a href="${data.url}" target="_blank">${name}</a></td>
+                            <td>${data.droprate}</td>
+                            <td>${obtainable}</td>
+                        </tr>
+                    `
+                }).join("")}
             </table>
         `;
     }
