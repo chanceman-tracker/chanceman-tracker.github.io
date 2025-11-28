@@ -2,20 +2,20 @@ export default async function ItemsPage() {
     const items = await fetch("/data/items.json").then(r => r.json());
 
     return `
-        <h1>Item Overview</h1>
-        <p>Total items: ${items.length}</p>
-
+        <h1>Items</h1>
         <div class="item-grid">
-            ${items.map(i => `
-                <div class="item-card">
+            ${items.map(item => `
+                <div
+                    class="item-card"
+                    onclick="navigate('/item?id=${item.id}')"
+                >
                     <img
                         class="lazy-img"
-                        data-src="/images/${i.image}"
+                        data-src="/images/${item.image}"
                         src="/images/placeholder.png"
-                        alt="${i.name}"
+                        src="/images/${item.image}"
                     >
-                    <strong>${i.name}</strong><br>
-                    <small>${i.category || ""}</small>
+                    <strong>${item.name}</strong>
                 </div>
             `).join("")}
         </div>
