@@ -21,9 +21,10 @@ export default async function ItemPage() {
         <h1>${item.name}</h1>
 
         <div class="item-header">
-            <img src="/images/${item.image}" width="128" height="128" />
-            <p><strong>ID:</strong> ${item.id}</p>
-            <p><strong>Internal Index:</strong> ${item.index}</p>
+            <img src="/images/${item.image}" style="margin: 1rem" />
+            <a href="https://oldschool.runescape.wiki/w/${item.name}" target="_blank">
+                <img src="/images/wiki.png" style="width: 32px" />
+            </a>
         </div>
 
         <h2>Where to get it</h2>
@@ -34,53 +35,104 @@ export default async function ItemPage() {
     `;
 }
 
+/* ===========================================================
+    SOURCES SECTIONS
+   =========================================================== */
 function renderSources(sources = {}) {
     const sections = ["drops", "shops", "spawns", "other"];
 
     return sections.map(section => `
         <div class="source-section">
-            <h3>${section.charAt(0).toUpperCase() + section.slice(1)}</h3>
-            ${renderSourceSection(sources[section])}
+            <h3>${capitalize(section)}</h3>
+            ${renderSourceTable(section, sources[section])}
         </div>
     `).join("");
 }
 
-function renderSourceSection(entries) {
+function capitalize(s) {
+    return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+/* ===========================================================
+    ONLY DROPS GET SPECIAL TABLE WITH DROPRATE
+    ALL OTHER SECTIONS GET NORMAL TABLE: name + link
+   =========================================================== */
+function renderSourceTable(section, entries) {
     if (!entries || Object.keys(entries).length === 0)
         return `<p><em>No data.</em></p>`;
 
+    // ---------------------------
+    // DROPS TABLE
+    // ---------------------------
+    if (section === "drops") {
+        return `
+            <table class="osrs-table">
+                <tr>
+                    <th>Source</th>
+                    <th>Droprate</th>
+                </tr>
+                ${Object.entries(entries).map(([name, data]) => `
+                    <tr>
+                        <td><a href="${data.url}" target="_blank">${name}</a></td>
+                        <td>${data.droprate}</td>
+                    </tr>
+                `).join("")}
+            </table>
+        `;
+    }
+
+    // ---------------------------
+    // OTHER TABLES (shops, spawns, other)
+    // Name in first column, clickable link icon in second column
+    // ---------------------------
     return `
-        <ul>
-            ${Object.entries(entries).map(([name, url]) =>
-                `<li><a href="${url}" target="_blank">${name}</a></li>`
-            ).join("")}
-        </ul>
+        <table class="osrs-table">
+            ${Object.entries(entries).map(([name, url]) => `
+                <tr>
+                    <td>
+                        <a href="${url}" target="_blank">
+                            ${name}
+                        </a>
+                    </td>
+                </tr>
+            `).join("")}
+        </table>
     `;
 }
 
+/* ===========================================================
+   PROCESSABLE TABLE
+   =========================================================== */
 function renderProcessable(processable = {}, allItems) {
     if (!processable || Object.keys(processable).length === 0)
         return `<p><em>Not processable.</em></p>`;
 
     return `
-        <ul>
+        <table class="osrs-table">
+            <tr>
+                <th>Creates</th>
+                <th>Ingredients</th>
+            </tr>
             ${Object.entries(processable).map(([resultId, components]) => {
-                const result = allItems.find(x => x.id == resultId);
-                const componentIds = components.split(",");
+                const resultItem = allItems.find(x => x.id == resultId);
+                const ingredientIds = components.split(",");
 
-                // Component names
-                const componentNames = componentIds.map(cid => {
-                    const c = allItems.find(x => x.id == cid);
-                    return c ? `<a onclick="navigate('/item?id=${cid}')">${c.name}</a>` : cid;
+                const ingredients = ingredientIds.map(cid => {
+                    const ing = allItems.find(x => x.id == cid);
+                    return ing
+                        ? `<a onclick="navigate('/item?id=${cid}')">${ing.name}</a>`
+                        : cid;
                 }).join(", ");
 
                 return `
-                    <li>
-                        Creates <a onclick="navigate('/item?id=${resultId}')">${result.name}</a>
-                        using: ${componentNames}
-                    </li>
+                    <tr>
+                        <td>
+                            <a onclick="navigate('/item?id=${resultId}')">${resultItem.name}</a>
+                        </td>
+                        <td>${ingredients}</td>
+                    </tr>
                 `;
             }).join("")}
-        </ul>
+        </table>
     `;
 }

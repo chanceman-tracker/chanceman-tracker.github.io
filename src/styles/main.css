@@ -11,3 +11,25 @@
     border: 1px solid #ccc;
     border-radius: 6px;
 }
+
+/* For item.js */
+.osrs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.osrs-table th, .osrs-table td {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    text-align: left;
+}
+
+.osrs-table th {
+    background: #ececec;
+}
+
+.osrs-table tr:nth-child(even) {
+    background: #fafafa;
+}
+/* End item.js */
