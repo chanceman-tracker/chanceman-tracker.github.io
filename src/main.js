@@ -8,13 +8,13 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 window.addEventListener('DOMContentLoaded', router);
 window.addEventListener('popstate', router);
+window.addEventListener("hashchange", router);
 
 // Allow <a data-link href="/about"> navigation
 document.addEventListener("click", (e) => {
     if (e.target.matches("[data-link]")) {
         e.preventDefault();
-        history.pushState(null, "", e.target.href);
-        router();
+        window.location.hash = e.target.getAttribute("href").replace("#", "");
     }
 });
 
@@ -50,7 +50,7 @@ window.addEventListener("popstate", () => {
 document.addEventListener("click", (e) => {
     if (e.target.matches("[data-link]")) {
         e.preventDefault();
-        history.pushState(null, "", e.target.href);
+        window.location.hash = e.target.getAttribute("href").replace("#", "");
         router();
         setTimeout(initLazyImages, 0);
     }
