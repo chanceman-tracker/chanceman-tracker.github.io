@@ -8,14 +8,14 @@ import ReuploadPage from "./pages/reupload.js";
 import UploadPage from "./pages/upload.js";
 
 export async function navigate(path) {
-    window.location.hash = path;
+    history.pushState({}, "", path);
+    router();
 }
 
 window.navigate = navigate;
 
 export async function router() {
-    const hash = window.location.hash || "#/";
-    const path = hash.slice(1);
+    const path = window.location.pathname;
 
     const basePath = path.split("?")[0];
 
@@ -40,4 +40,3 @@ export async function router() {
 }
 
 window.addEventListener("popstate", router);
-window.addEventListener("hashchange", router);

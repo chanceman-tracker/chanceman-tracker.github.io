@@ -52,7 +52,7 @@ document.addEventListener("click", async (e) => {
         status.textContent = "Files saved! Redirecting...";
 
         // Redirect to items page
-        window.location.hash = "/items";
+        history.pushState(null, "", "/items");
         window.dispatchEvent(new PopStateEvent("popstate"));
 
     } catch (err) {

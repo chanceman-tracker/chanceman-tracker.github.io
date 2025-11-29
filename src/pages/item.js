@@ -8,14 +8,12 @@ export default async function ItemPage() {
     if (!rolled || !unlocked)
         return `<h1>Please upload your files on the Home page first.</h1>`;
 
-    const hash = window.location.hash;  // "#/item?id=11095"
-    const query = hash.split("?")[1] || "";
-    const params = new URLSearchParams(query);
+    const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
 
     if (!id) return `<h1>No item selected</h1>`;
 
-    const items = await fetch("data/items.json").then(r => r.json());
+    const items = await fetch("/data/items.json").then(r => r.json());
     const item = items.find(x => x.id == id);
 
     if (!item) return `<h1>Item not found</h1>`;
@@ -24,9 +22,9 @@ export default async function ItemPage() {
         <h1>${item.name}</h1>
 
         <div class="item-header">
-            <img src="images/${item.image}" style="margin: 1rem" />
+            <img src="/images/${item.image}" style="margin: 1rem" />
             <a href="https://oldschool.runescape.wiki/w/${item.name}" target="_blank">
-                <img src="images/wiki.png" style="width: 32px" />
+                <img src="/images/wiki.png" style="width: 32px" />
             </a>
         </div>
 
@@ -163,14 +161,14 @@ function renderProcessable(processable = {}, allItems) {
                 const ingredients = ingredientIds.map(cid => {
                     const ing = allItems.find(x => x.id == cid);
                     return ing
-                        ? `<a onclick="navigate('#/item?id=${cid}')">${ing.name}</a>`
+                        ? `<a onclick="navigate('/item?id=${cid}')">${ing.name}</a>`
                         : cid;
                 }).join(", ");
 
                 return `
                     <tr>
                         <td>
-                            <a onclick="navigate('#/item?id=${resultId}')">${resultItem.name}</a>
+                            <a onclick="navigate('/item?id=${resultId}')">${resultItem.name}</a>
                         </td>
                         <td>${ingredients}</td>
                     </tr>
