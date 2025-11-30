@@ -1,3 +1,4 @@
+import { getObtainabilityRank } from "./logic/sortHelpers.js";
 import { router } from "./router.js";
 import { fileStore } from "./storage/fileStore.js";
 
@@ -43,6 +44,7 @@ window.initItemsPage = function () {
 
     const searchInput = document.getElementById("itemSearch");
     const hideRolled = document.getElementById("hideRolled");
+    hideRolled.checked = true;
     const onlyUnlocked = document.getElementById("onlyUnlocked");
     const grid = document.getElementById("itemGrid");
 
@@ -53,7 +55,8 @@ window.initItemsPage = function () {
         const hideR = hideRolled?.checked || false;
         const onlyU = onlyUnlocked?.checked || false;
 
-        const filtered = items.filter(item => {
+        // FILTER
+        let filtered = items.filter(item => {
             const nameMatch = item.name.toLowerCase().includes(search);
             if (!nameMatch) return false;
 
@@ -66,6 +69,16 @@ window.initItemsPage = function () {
             return true;
         });
 
+        // SORT
+        filtered = filtered.sort((a, b) => {
+            const ra = getObtainabilityRank(a, fileStore);
+            const rb = getObtainabilityRank(b, fileStore);
+
+            if (ra.rank !== rb.rank) return ra.rank - rb.rank;
+            return ra.name.localeCompare(rb.name);
+        });
+
+        // RENDER
         grid.innerHTML = filtered.map(item => {
             const isRolled = rolled.includes(item.id);
             const isUnlocked = unlocked.includes(item.id);
