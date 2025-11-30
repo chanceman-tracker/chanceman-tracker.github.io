@@ -1,16 +1,15 @@
-.item-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+body {
+    margin-top: 0px;
+    background-color: #E2DBC8;
 }
 
-.item-card {
-    width: 150px;
-    padding: 8px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+/* For header.js */
+.header {
+    padding:10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #B8A282;
 }
+/* End header.js */
 
 /* For item.js */
 .osrs-table {
@@ -33,3 +32,54 @@
     background: #fafafa;
 }
 /* End item.js */
+
+/* For items.js */
+.item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.item-card {
+    width: 150px;
+    padding: 35px 8px 8px 8px;
+    background: #D8CCB4;
+    border: 1px solid #8E8068;
+    color: #9B6039;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item-image {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.badge {
+    padding: 2px 6px;
+    font-size: 11px;
+    border-radius: 4px;
+    color: black;
+}
+
+.badge.rolled {
+    position: absolute;
+    top: 4px;
+    right: 62px;
+    background: #c48aff; /* purple-ish */
+}
+
+.badge.unlocked {
+    position: absolute;
+    top: 4px;
+    right:4px;
+    background: #7bff7b; /* green-ish */
+}
+/* End items.js */
