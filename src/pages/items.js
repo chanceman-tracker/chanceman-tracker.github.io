@@ -6,30 +6,29 @@ export default async function ItemsPage() {
     const rolled = fileStore.rolled || [];
     const unlocked = fileStore.unlocked || [];
 
+    window.__itemsPageData = {
+        items,
+        rolled,
+        unlocked
+    };
+
     return `
         <h1>Items</h1>
 
-        <div class="item-grid">
-            ${items.map(item => {
-                const isRolled = rolled.includes(item.id);
-                const isUnlocked = unlocked.includes(item.id);
+        <div class="item-filters">
+            <input type="text" id="itemSearch" placeholder="Search items..." />
 
-                return `
-                    <div class="item-card" onclick="navigate('/item?id=${item.id}')">
+            <label>
+                <input type="checkbox" id="hideRolled">
+                Hide rolled
+            </label>
 
-                        ${isRolled ? `<span class="badge rolled">Rolled</span>` : ""}
-                        ${isUnlocked ? `<span class="badge unlocked">Unlocked</span>` : ""}
-
-                        <img
-                            class="lazy-img item-image"
-                            data-src="/images/${item.image}"
-                            src="/images/placeholder.png"
-                        >
-
-                        ${item.name}
-                    </div>
-                `;
-            }).join("")}
+            <label>
+                <input type="checkbox" id="onlyUnlocked">
+                Only unlocked
+            </label>
         </div>
+
+        <div class="item-grid" id="itemGrid"></div>
     `;
 }

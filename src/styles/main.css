@@ -34,6 +34,19 @@ body {
 /* End item.js */
 
 /* For items.js */
+.item-filters {
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#itemSearch {
+    padding: 6px;
+    font-size: 14px;
+    width: 250px;
+}
+
 .item-grid {
     display: flex;
     flex-wrap: wrap;
