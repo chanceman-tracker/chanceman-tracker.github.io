@@ -47,6 +47,9 @@ window.initItemsPage = function () {
     hideRolled.checked = true;
     const onlyUnlocked = document.getElementById("onlyUnlocked");
     const onlyObtainable = document.getElementById("onlyObtainable");
+    const hideClue = document.getElementById("hideClueRewardOnly");
+    hideClue.checked = true;
+
     const grid = document.getElementById("itemGrid");
 
     if (!grid) return; // Safety check
@@ -56,6 +59,7 @@ window.initItemsPage = function () {
         const hideR = hideRolled?.checked || false;
         const onlyU = onlyUnlocked?.checked || false;
         const onlyO = onlyObtainable?.checked || false;
+        const hideCl = hideClue?.checked || false;
 
         // FILTER
         let filtered = items.filter(item => {
@@ -71,6 +75,7 @@ window.initItemsPage = function () {
                 const obtainable = isItemObtainable(item, fileStore);
                 if (!obtainable) return false;
             }
+            if (hideCl && item.tags?.includes("clue-reward-only")) return false;
 
             return true;
         });
@@ -115,6 +120,7 @@ window.initItemsPage = function () {
     hideRolled?.addEventListener("input", renderItems);
     onlyUnlocked?.addEventListener("input", renderItems);
     onlyObtainable?.addEventListener("input", renderItems);
+    hideClue?.addEventListener("input", renderItems);
 
     // Initial render
     renderItems();

@@ -4,6 +4,7 @@
         "id": 10344,
         "name": "3rd age amulet",
         "image": "3rd_age_amulet.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -34,6 +35,7 @@
         "id": 20011,
         "name": "3rd age axe",
         "image": "3rd_age_axe.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -59,6 +61,7 @@
         "id": 12424,
         "name": "3rd age bow",
         "image": "3rd_age_bow.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -85,6 +88,7 @@
         "id": 12437,
         "name": "3rd age cloak",
         "image": "3rd_age_cloak.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -111,6 +115,7 @@
         "id": 23345,
         "name": "3rd age druidic cloak",
         "image": "3rd_age_druidic_cloak.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -133,6 +138,7 @@
         "id": 23339,
         "name": "3rd age druidic robe bottoms",
         "image": "3rd_age_druidic_robe_bottoms.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -155,6 +161,7 @@
         "id": 23336,
         "name": "3rd age druidic robe top",
         "image": "3rd_age_druidic_robe_top.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -177,6 +184,7 @@
         "id": 23342,
         "name": "3rd age druidic staff",
         "image": "3rd_age_druidic_staff.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -199,6 +207,7 @@
         "id": 28226,
         "name": "3rd age felling axe",
         "image": "3rd_age_felling_axe.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "craftable": [
                 [20011, 28177]
@@ -210,6 +219,7 @@
         "id": 10350,
         "name": "3rd age full helmet",
         "image": "3rd_age_full_helmet.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -240,6 +250,7 @@
         "id": 10352,
         "name": "3rd age kiteshield",
         "image": "3rd_age_kiteshield.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -270,6 +281,7 @@
         "id": 12426,
         "name": "3rd age longsword",
         "image": "3rd_age_longsword.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -296,6 +308,7 @@
         "id": 10342,
         "name": "3rd age mage hat",
         "image": "3rd_age_mage_hat.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -326,6 +339,7 @@
         "id": 20014,
         "name": "3rd age pickaxe",
         "image": "3rd_age_pickaxe.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -348,6 +362,7 @@
         "id": 10348,
         "name": "3rd age platebody",
         "image": "3rd_age_platebody.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -378,6 +393,7 @@
         "id": 10346,
         "name": "3rd age platelegs",
         "image": "3rd_age_platelegs.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -408,6 +424,7 @@
         "id": 23242,
         "name": "3rd age plateskirt",
         "image": "3rd_age_plateskirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -438,6 +455,7 @@
         "id": 10334,
         "name": "3rd age range coif",
         "image": "3rd_age_range_coif.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -468,6 +486,7 @@
         "id": 10332,
         "name": "3rd age range legs",
         "image": "3rd_age_range_legs.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -498,6 +517,7 @@
         "id": 10330,
         "name": "3rd age range top",
         "image": "3rd_age_range_top.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -528,6 +548,7 @@
         "id": 10340,
         "name": "3rd age robe",
         "image": "3rd_age_robe.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -558,6 +579,7 @@
         "id": 10338,
         "name": "3rd age robe top",
         "image": "3rd_age_robe_top.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -588,6 +610,7 @@
         "id": 10336,
         "name": "3rd age vambraces",
         "image": "3rd_age_vambraces.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -618,6 +641,7 @@
         "id": 12422,
         "name": "3rd age wand",
         "image": "3rd_age_wand.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "The Mimic (master)": {
@@ -644,6 +668,7 @@
         "id": 10392,
         "name": "A powdered wig",
         "image": "a_powdered_wig.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -1827,7 +1852,8 @@
         "index": 192,
         "id": 23309,
         "name": "Amulet of defence (t)",
-        "image": "amulet_of_defence_(t).png"
+        "image": "amulet_of_defence_(t).png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 193,
@@ -1888,6 +1914,7 @@
         "id": 10366,
         "name": "Amulet of magic (t)",
         "image": "amulet_of_magic_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -1908,6 +1935,7 @@
         "id": 23354,
         "name": "Amulet of power (t)",
         "image": "amulet_of_power_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -2228,6 +2256,7 @@
         "id": 12195,
         "name": "Ancient robe legs",
         "image": "ancient_robe_legs.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -2242,6 +2271,7 @@
         "id": 12193,
         "name": "Ancient robe top",
         "image": "ancient_robe_top.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -2898,6 +2928,7 @@
         "id": 12255,
         "name": "Armadyl robe legs",
         "image": "armadyl_robe_legs.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -2912,6 +2943,7 @@
         "id": 12253,
         "name": "Armadyl robe top",
         "image": "armadyl_robe_top.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -3514,6 +3546,7 @@
         "id": 12267,
         "name": "Bandos robe legs",
         "image": "bandos_robe_legs.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -3528,6 +3561,7 @@
         "id": 12265,
         "name": "Bandos robe top",
         "image": "bandos_robe_top.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -3746,6 +3780,7 @@
         "id": 12245,
         "name": "Beanie",
         "image": "beanie.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -3759,7 +3794,8 @@
         "index": 502,
         "id": 23291,
         "name": "Bear feet",
-        "image": "bear_feet.png"
+        "image": "bear_feet.png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 503,
@@ -3922,6 +3958,7 @@
         "id": 2635,
         "name": "Black beret",
         "image": "black_beret.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -3954,6 +3991,7 @@
         "id": 12375,
         "name": "Black cane",
         "image": "black_cane.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4166,6 +4204,7 @@
         "id": 2595,
         "name": "Black full helm (g)",
         "image": "black_full_helm_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4180,6 +4219,7 @@
         "id": 2587,
         "name": "Black full helm (t)",
         "image": "black_full_helm_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4218,6 +4258,7 @@
         "id": 10306,
         "name": "Black helm (h1)",
         "image": "black_helm_(h1).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4232,6 +4273,7 @@
         "id": 10308,
         "name": "Black helm (h2)",
         "image": "black_helm_(h2).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4246,6 +4288,7 @@
         "id": 10310,
         "name": "Black helm (h3)",
         "image": "black_helm_(h3).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4260,6 +4303,7 @@
         "id": 10312,
         "name": "Black helm (h4)",
         "image": "black_helm_(h4).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4274,6 +4318,7 @@
         "id": 10314,
         "name": "Black helm (h5)",
         "image": "black_helm_(h5).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4294,6 +4339,7 @@
         "id": 2597,
         "name": "Black kiteshield (g)",
         "image": "black_kiteshield_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4308,6 +4354,7 @@
         "id": 2589,
         "name": "Black kiteshield (t)",
         "image": "black_kiteshield_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4393,7 +4440,8 @@
         "index": 593,
         "id": 12297,
         "name": "Black pickaxe",
-        "image": "black_pickaxe.png"
+        "image": "black_pickaxe.png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 594,
@@ -4406,6 +4454,7 @@
         "id": 2591,
         "name": "Black platebody (g)",
         "image": "black_platebody_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4420,6 +4469,7 @@
         "id": 23366,
         "name": "Black platebody (h1)",
         "image": "black_platebody_(h1).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4434,6 +4484,7 @@
         "id": 23369,
         "name": "Black platebody (h2)",
         "image": "black_platebody_(h2).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4448,6 +4499,7 @@
         "id": 23372,
         "name": "Black platebody (h3)",
         "image": "black_platebody_(h3).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4462,6 +4514,7 @@
         "id": 23375,
         "name": "Black platebody (h4)",
         "image": "black_platebody_(h4).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4476,6 +4529,7 @@
         "id": 23378,
         "name": "Black platebody (h5)",
         "image": "black_platebody_(h5).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4490,6 +4544,7 @@
         "id": 2583,
         "name": "Black platebody (t)",
         "image": "black_platebody_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4510,6 +4565,7 @@
         "id": 2593,
         "name": "Black platelegs (g)",
         "image": "black_platelegs_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4524,6 +4580,7 @@
         "id": 2585,
         "name": "Black platelegs (t)",
         "image": "black_platelegs_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4544,6 +4601,7 @@
         "id": 3473,
         "name": "Black plateskirt (g)",
         "image": "black_plateskirt_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4558,6 +4616,7 @@
         "id": 3472,
         "name": "Black plateskirt (t)",
         "image": "black_plateskirt_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4602,6 +4661,7 @@
         "id": 7332,
         "name": "Black shield (h1)",
         "image": "black_shield_(h1).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4616,6 +4676,7 @@
         "id": 7338,
         "name": "Black shield (h2)",
         "image": "black_shield_(h2).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4630,6 +4691,7 @@
         "id": 7344,
         "name": "Black shield (h3)",
         "image": "black_shield_(h3).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4644,6 +4706,7 @@
         "id": 7350,
         "name": "Black shield (h4)",
         "image": "black_shield_(h4).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4658,6 +4721,7 @@
         "id": 7356,
         "name": "Black shield (h5)",
         "image": "black_shield_(h5).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4678,6 +4742,7 @@
         "id": 12445,
         "name": "Black skirt (g)",
         "image": "black_skirt_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4692,6 +4757,7 @@
         "id": 12447,
         "name": "Black skirt (t)",
         "image": "black_skirt_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4802,6 +4868,7 @@
         "id": 12453,
         "name": "Black wizard hat (g)",
         "image": "black_wizard_hat_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4816,6 +4883,7 @@
         "id": 12455,
         "name": "Black wizard hat (t)",
         "image": "black_wizard_hat_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4830,6 +4898,7 @@
         "id": 12449,
         "name": "Black wizard robe (g)",
         "image": "black_wizard_robe_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -4844,6 +4913,7 @@
         "id": 12451,
         "name": "Black wizard robe (t)",
         "image": "black_wizard_robe_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5146,6 +5216,7 @@
         "id": 2633,
         "name": "Blue beret",
         "image": "blue_beret.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5280,6 +5351,7 @@
         "id": 10428,
         "name": "Blue elegant blouse",
         "image": "blue_elegant_blouse.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5294,6 +5366,7 @@
         "id": 10410,
         "name": "Blue elegant legs",
         "image": "blue_elegant_legs.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5308,6 +5381,7 @@
         "id": 10408,
         "name": "Blue elegant shirt",
         "image": "blue_elegant_shirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5322,6 +5396,7 @@
         "id": 10430,
         "name": "Blue elegant skirt",
         "image": "blue_elegant_skirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5444,6 +5519,7 @@
         "id": 7386,
         "name": "Blue skirt (g)",
         "image": "blue_skirt_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5458,6 +5534,7 @@
         "id": 7388,
         "name": "Blue skirt (t)",
         "image": "blue_skirt_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5484,6 +5561,7 @@
         "id": 7394,
         "name": "Blue wizard hat (g)",
         "image": "blue_wizard_hat_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5498,6 +5576,7 @@
         "id": 7396,
         "name": "Blue wizard hat (t)",
         "image": "blue_wizard_hat_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5518,6 +5597,7 @@
         "id": 7390,
         "name": "Blue wizard robe (g)",
         "image": "blue_wizard_robe_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5532,6 +5612,7 @@
         "id": 7392,
         "name": "Blue wizard robe (t)",
         "image": "blue_wizard_robe_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5570,6 +5651,7 @@
         "id": 10322,
         "name": "Bob's black shirt",
         "image": "bob's_black_shirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5584,6 +5666,7 @@
         "id": 10318,
         "name": "Bob's blue shirt",
         "image": "bob's_blue_shirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5598,6 +5681,7 @@
         "id": 10320,
         "name": "Bob's green shirt",
         "image": "bob's_green_shirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5612,6 +5696,7 @@
         "id": 10324,
         "name": "Bob's purple shirt",
         "image": "bob's_purple_shirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -5626,6 +5711,7 @@
         "id": 10316,
         "name": "Bob's red shirt",
         "image": "bob's_red_shirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -6216,6 +6302,7 @@
         "id": 12211,
         "name": "Bronze full helm (g)",
         "image": "bronze_full_helm_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -6230,6 +6317,7 @@
         "id": 12221,
         "name": "Bronze full helm (t)",
         "image": "bronze_full_helm_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -6328,6 +6416,7 @@
         "id": 12213,
         "name": "Bronze kiteshield (g)",
         "image": "bronze_kiteshield_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -6342,6 +6431,7 @@
         "id": 12223,
         "name": "Bronze kiteshield (t)",
         "image": "bronze_kiteshield_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -6428,6 +6518,7 @@
         "id": 12205,
         "name": "Bronze platebody (g)",
         "image": "bronze_platebody_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -6442,6 +6533,7 @@
         "id": 12215,
         "name": "Bronze platebody (t)",
         "image": "bronze_platebody_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -6462,6 +6554,7 @@
         "id": 12207,
         "name": "Bronze platelegs (g)",
         "image": "bronze_platelegs_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -6476,6 +6569,7 @@
         "id": 12217,
         "name": "Bronze platelegs (t)",
         "image": "bronze_platelegs_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -6496,6 +6590,7 @@
         "id": 12209,
         "name": "Bronze plateskirt (g)",
         "image": "bronze_plateskirt_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -6510,6 +6605,7 @@
         "id": 12219,
         "name": "Bronze plateskirt (t)",
         "image": "bronze_plateskirt_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -7010,6 +7106,7 @@
         "id": 23351,
         "name": "Cape of skulls",
         "image": "cape_of_skulls.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -8343,7 +8440,8 @@
         "index": 1189,
         "id": 23294,
         "name": "Demon feet",
-        "image": "demon_feet.png"
+        "image": "demon_feet.png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 1190,
@@ -10928,6 +11026,7 @@
         "id": 10394,
         "name": "Flared trousers",
         "image": "flared_trousers.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -11157,7 +11256,8 @@
         "index": 1656,
         "id": 23288,
         "name": "Frog slippers",
-        "image": "frog_slippers.png"
+        "image": "frog_slippers.png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 1657,
@@ -11614,6 +11714,7 @@
         "id": 12251,
         "name": "Goblin mask",
         "image": "goblin_mask.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -11748,6 +11849,7 @@
         "id": 20208,
         "name": "Golden apron",
         "image": "golden_apron.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -11762,6 +11864,7 @@
         "id": 20205,
         "name": "Golden chef's hat",
         "image": "golden_chef's_hat.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -12052,6 +12155,7 @@
         "id": 10432,
         "name": "Green elegant blouse",
         "image": "green_elegant_blouse.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -12066,6 +12170,7 @@
         "id": 10414,
         "name": "Green elegant legs",
         "image": "green_elegant_legs.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -12080,6 +12185,7 @@
         "id": 10412,
         "name": "Green elegant shirt",
         "image": "green_elegant_shirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -12094,6 +12200,7 @@
         "id": 10434,
         "name": "Green elegant skirt",
         "image": "green_elegant_skirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -12660,6 +12767,7 @@
         "id": 10466,
         "name": "Guthix robe legs",
         "image": "guthix_robe_legs.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -12674,6 +12782,7 @@
         "id": 10462,
         "name": "Guthix robe top",
         "image": "guthix_robe_top.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -12796,6 +12905,7 @@
         "id": 23360,
         "name": "Ham joint",
         "image": "ham_joint.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -12966,6 +13076,7 @@
         "id": 2631,
         "name": "Highwayman mask",
         "image": "highwayman_mask.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -13232,6 +13343,7 @@
         "id": 12249,
         "name": "Imp mask",
         "image": "imp_mask.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -13618,6 +13730,7 @@
         "id": 12241,
         "name": "Iron full helm (g)",
         "image": "iron_full_helm_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -13632,6 +13745,7 @@
         "id": 12231,
         "name": "Iron full helm (t)",
         "image": "iron_full_helm_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -13730,6 +13844,7 @@
         "id": 12243,
         "name": "Iron kiteshield (g)",
         "image": "iron_kiteshield_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -13744,6 +13859,7 @@
         "id": 12233,
         "name": "Iron kiteshield (t)",
         "image": "iron_kiteshield_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -13830,6 +13946,7 @@
         "id": 12235,
         "name": "Iron platebody (g)",
         "image": "iron_platebody_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -13844,6 +13961,7 @@
         "id": 12225,
         "name": "Iron platebody (t)",
         "image": "iron_platebody_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -13864,6 +13982,7 @@
         "id": 12237,
         "name": "Iron platelegs (g)",
         "image": "iron_platelegs_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -13878,6 +13997,7 @@
         "id": 12227,
         "name": "Iron platelegs (t)",
         "image": "iron_platelegs_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -13898,6 +14018,7 @@
         "id": 12239,
         "name": "Iron plateskirt (g)",
         "image": "iron_plateskirt_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -13912,6 +14033,7 @@
         "id": 12229,
         "name": "Iron plateskirt (t)",
         "image": "iron_plateskirt_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -14237,7 +14359,8 @@
         "index": 2140,
         "id": 23297,
         "name": "Jester cape",
-        "image": "jester_cape.png"
+        "image": "jester_cape.png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 2141,
@@ -14862,6 +14985,7 @@
         "id": 23381,
         "name": "Leather body (g)",
         "image": "leather_body_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -14888,6 +15012,7 @@
         "id": 23384,
         "name": "Leather chaps (g)",
         "image": "leather_chaps_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -16587,7 +16712,8 @@
         "index": 2531,
         "id": 23285,
         "name": "Mole slippers",
-        "image": "mole_slippers.png"
+        "image": "mole_slippers.png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 2532,
@@ -16606,6 +16732,7 @@
         "id": 20202,
         "name": "Monk's robe (g)",
         "image": "monk's_robe_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -16619,7 +16746,8 @@
         "index": 2535,
         "id": 23306,
         "name": "Monk's robe (t)",
-        "image": "monk's_robe_(t).png"
+        "image": "monk's_robe_(t).png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 2536,
@@ -16632,6 +16760,7 @@
         "id": 20199,
         "name": "Monk's robe top (g)",
         "image": "monk's_robe_top_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -16645,7 +16774,8 @@
         "index": 2538,
         "id": 23303,
         "name": "Monk's robe top (t)",
-        "image": "monk's_robe_top_(t).png"
+        "image": "monk's_robe_top_(t).png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 2539,
@@ -18002,6 +18132,7 @@
         "id": 10396,
         "name": "Pantaloons",
         "image": "pantaloons.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -19138,6 +19269,7 @@
         "id": 23357,
         "name": "Rain bow",
         "image": "rain_bow.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -19668,6 +19800,7 @@
         "id": 12247,
         "name": "Red beret",
         "image": "red_beret.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -19802,6 +19935,7 @@
         "id": 10424,
         "name": "Red elegant blouse",
         "image": "red_elegant_blouse.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -19816,6 +19950,7 @@
         "id": 10406,
         "name": "Red elegant legs",
         "image": "red_elegant_legs.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -19830,6 +19965,7 @@
         "id": 10404,
         "name": "Red elegant shirt",
         "image": "red_elegant_shirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -19844,6 +19980,7 @@
         "id": 10426,
         "name": "Red elegant skirt",
         "image": "red_elegant_skirt.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -21015,19 +21152,22 @@
         "index": 3259,
         "id": 23321,
         "name": "Rune scimitar ornament kit (guthix)",
-        "image": "rune_scimitar_ornament_kit_(guthix).png"
+        "image": "rune_scimitar_ornament_kit_(guthix).png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 3260,
         "id": 23324,
         "name": "Rune scimitar ornament kit (saradomin)",
-        "image": "rune_scimitar_ornament_kit_(saradomin).png"
+        "image": "rune_scimitar_ornament_kit_(saradomin).png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 3261,
         "id": 23327,
         "name": "Rune scimitar ornament kit (zamorak)",
-        "image": "rune_scimitar_ornament_kit_(zamorak).png"
+        "image": "rune_scimitar_ornament_kit_(zamorak).png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 3262,
@@ -21303,19 +21443,22 @@
         "index": 3307,
         "id": 23318,
         "name": "Sandwich lady bottom",
-        "image": "sandwich_lady_bottom.png"
+        "image": "sandwich_lady_bottom.png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 3308,
         "id": 23312,
         "name": "Sandwich lady hat",
-        "image": "sandwich_lady_hat.png"
+        "image": "sandwich_lady_hat.png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 3309,
         "id": 23315,
         "name": "Sandwich lady top",
-        "image": "sandwich_lady_top.png"
+        "image": "sandwich_lady_top.png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 3310,
@@ -21628,6 +21771,7 @@
         "id": 10464,
         "name": "Saradomin robe legs",
         "image": "saradomin_robe_legs.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -21642,6 +21786,7 @@
         "id": 10458,
         "name": "Saradomin robe top",
         "image": "saradomin_robe_top.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -22129,7 +22274,8 @@
         "index": 3442,
         "id": 23300,
         "name": "Shoulder parrot",
-        "image": "shoulder_parrot.png"
+        "image": "shoulder_parrot.png",
+        "tags": ["clue-reward-only"]
     },
     {
         "index": 3443,
@@ -22376,6 +22522,7 @@
         "id": 10398,
         "name": "Sleeping cap",
         "image": "sleeping_cap.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -22816,6 +22963,7 @@
         "id": 23363,
         "name": "Staff of bob the cat",
         "image": "staff_of_bob_the_cat.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23130,6 +23278,7 @@
         "id": 20178,
         "name": "Steel full helm (g)",
         "image": "steel_full_helm_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23144,6 +23293,7 @@
         "id": 20193,
         "name": "Steel full helm (t)",
         "image": "steel_full_helm_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23242,6 +23392,7 @@
         "id": 20181,
         "name": "Steel kiteshield (g)",
         "image": "steel_kiteshield_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23256,6 +23407,7 @@
         "id": 20196,
         "name": "Steel kiteshield (t)",
         "image": "steel_kiteshield_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23342,6 +23494,7 @@
         "id": 20169,
         "name": "Steel platebody (g)",
         "image": "steel_platebody_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23356,6 +23509,7 @@
         "id": 20184,
         "name": "Steel platebody (t)",
         "image": "steel_platebody_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23376,6 +23530,7 @@
         "id": 20172,
         "name": "Steel platelegs (g)",
         "image": "steel_platelegs_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23390,6 +23545,7 @@
         "id": 20187,
         "name": "Steel platelegs (t)",
         "image": "steel_platelegs_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23410,6 +23566,7 @@
         "id": 20175,
         "name": "Steel plateskirt (g)",
         "image": "steel_plateskirt_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23424,6 +23581,7 @@
         "id": 20190,
         "name": "Steel plateskirt (t)",
         "image": "steel_plateskirt_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23696,6 +23854,7 @@
         "id": 7362,
         "name": "Studded body (g)",
         "image": "studded_body_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23710,6 +23869,7 @@
         "id": 7364,
         "name": "Studded body (t)",
         "image": "studded_body_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23730,6 +23890,7 @@
         "id": 7366,
         "name": "Studded chaps (g)",
         "image": "studded_chaps_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -23744,6 +23905,7 @@
         "id": 7368,
         "name": "Studded chaps (t)",
         "image": "studded_chaps_(t).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -24616,6 +24778,7 @@
         "id": 20217,
         "name": "Team cape i",
         "image": "team_cape_i.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -24630,6 +24793,7 @@
         "id": 20214,
         "name": "Team cape x",
         "image": "team_cape_x.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -24644,6 +24808,7 @@
         "id": 20211,
         "name": "Team cape zero",
         "image": "team_cape_zero.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -26974,6 +27139,7 @@
         "id": 2637,
         "name": "White beret",
         "image": "white_beret.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -27264,6 +27430,7 @@
         "id": 10280,
         "name": "Willow comp bow",
         "image": "willow_comp_bow.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -27470,6 +27637,7 @@
         "id": 20166,
         "name": "Wooden shield (g)",
         "image": "wooden_shield_(g).png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -28018,6 +28186,7 @@
         "id": 10468,
         "name": "Zamorak robe legs",
         "image": "zamorak_robe_legs.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {
@@ -28032,6 +28201,7 @@
         "id": 10460,
         "name": "Zamorak robe top",
         "image": "zamorak_robe_top.png",
+        "tags": ["clue-reward-only"],
         "sources": {
             "drops": {
                 "Reward casket (easy)": {

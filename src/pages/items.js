@@ -32,6 +32,11 @@ export default async function ItemsPage() {
                 <input type="checkbox" id="onlyObtainable">
                 Only obtainable
             </label>
+
+            <label>
+                <input type="checkbox" id="hideClueRewardOnly">
+                Hide clue items
+            </label>
         </div>
 
         <div class="item-grid" id="itemGrid"></div>
