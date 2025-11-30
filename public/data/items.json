@@ -889,7 +889,15 @@
         "index": 37,
         "id": 2862,
         "name": "Achey tree logs",
-        "image": "achey_tree_logs.png"
+        "image": "achey_tree_logs.png",
+        "sources": {
+            "other": {
+                "Cutting Achey logs": {
+                    "notes": "Achey tree.",
+                    "rule": "canTrainWoodcutting"
+                }
+            }
+        }
     },
     {
         "index": 38,

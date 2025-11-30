@@ -11,7 +11,7 @@ export function canReachNpc(npcName, ctx) {
 }
 
 export function canDoOtherMethod(ruleName, ctx) {
-    evaluateRule(ruleName, ctx);
+    return evaluateRule(ruleName, ctx);
 }
 
 export function evaluateRule(rule, ctx) {

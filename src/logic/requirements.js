@@ -13,6 +13,12 @@ export const REQUIREMENT_CHECKS = {
     canDoGuardiansOfTheRift(ctx) {
         return canCompleteTempleOfTheEye(ctx);
     },
+    canTrainWoodcutting(ctx) {
+        return canTrainWoodcutting(ctx);
+    },
+    canTrainMining(ctx) {
+        return canTrainMining(ctx);
+    },
     isNotSlayerLocked(ctx) {
         return true; // TODO implement slayer locked filter
     }
@@ -67,4 +73,16 @@ function canTrainRunecraft(ctx) {
                 || has(ctx.unlocked, 1436) // Rune essence
                 || has(ctx.unlocked, 7936) // Pure essence
             );
+}
+
+function canTrainWoodcutting(ctx) {
+    return has(ctx.unlocked, 1351)      // Bronze axe
+            || has(ctx.unlocked, 1349)  // Iron axe
+            || has(ctx.unlocked, 1353); // Steel axe
+}
+
+function canTrainMining(ctx) {
+    return has(ctx.unlocked, 1265)     // Bronze pickaxe
+            || has(ctx.unlocked, 1267) // Iron pickaxe
+            || has(ctx.unlocked, 1269); // Steel pickaxe
 }
