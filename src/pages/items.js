@@ -27,6 +27,11 @@ export default async function ItemsPage() {
                 <input type="checkbox" id="onlyUnlocked">
                 Only unlocked
             </label>
+
+            <label>
+                <input type="checkbox" id="onlyObtainable">
+                Only obtainable
+            </label>
         </div>
 
         <div class="item-grid" id="itemGrid"></div>

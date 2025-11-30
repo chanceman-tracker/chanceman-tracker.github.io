@@ -1,4 +1,4 @@
-import { getObtainabilityRank } from "./logic/sortHelpers.js";
+import { getObtainabilityRank, isItemObtainable } from "./logic/sortHelpers.js";
 import { router } from "./router.js";
 import { fileStore } from "./storage/fileStore.js";
 
@@ -46,6 +46,7 @@ window.initItemsPage = function () {
     const hideRolled = document.getElementById("hideRolled");
     hideRolled.checked = true;
     const onlyUnlocked = document.getElementById("onlyUnlocked");
+    const onlyObtainable = document.getElementById("onlyObtainable");
     const grid = document.getElementById("itemGrid");
 
     if (!grid) return; // Safety check
@@ -54,6 +55,7 @@ window.initItemsPage = function () {
         const search = searchInput?.value.toLowerCase() || "";
         const hideR = hideRolled?.checked || false;
         const onlyU = onlyUnlocked?.checked || false;
+        const onlyO = onlyObtainable?.checked || false;
 
         // FILTER
         let filtered = items.filter(item => {
@@ -65,6 +67,10 @@ window.initItemsPage = function () {
 
             if (hideR && isRolled) return false;
             if (onlyU && !isUnlocked) return false;
+            if (onlyO) {
+                const obtainable = isItemObtainable(item, fileStore);
+                if (!obtainable) return false;
+            }
 
             return true;
         });
@@ -108,6 +114,7 @@ window.initItemsPage = function () {
     searchInput?.addEventListener("input", renderItems);
     hideRolled?.addEventListener("input", renderItems);
     onlyUnlocked?.addEventListener("input", renderItems);
+    onlyObtainable?.addEventListener("input", renderItems);
 
     // Initial render
     renderItems();
