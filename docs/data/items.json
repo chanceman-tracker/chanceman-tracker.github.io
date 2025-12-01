@@ -825,7 +825,7 @@
                     "rule": {
                         "all": [
                             { "has": 13265 },
-                            { "has": 5940 }
+                            { "has": 5937 }
                         ]
                     }
                 }
@@ -928,37 +928,269 @@
         "index": 38,
         "id": 5312,
         "name": "Acorn",
-        "image": "acorn.png"
+        "image": "acorn.png",
+        "sources": {
+            "drops": {
+                "Mammoth": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Mammoth"
+                    }
+            },
+            "other": {
+                "Opening Bird nest (seeds)": {
+                    "notes": "Woodcutting, Managing Miscellania, offering bird's eggs to the shrine in the Woodcutting guild, bird houses, chopping ent trunks or Gnome Restaurant.",
+                    "rule": {
+                        "any": [
+                            "canTrainWoodcutting",
+                            "canCompleteThroneOfMiscellania",
+                            "canDoGnomeRestaurant"
+                        ]
+                    }
+                },
+                "Opening Bird nest (Wyson)": {
+                    "notes": "Giant mole, requires spade and a mole claw or a mole skin.",
+                    "rule": {
+                        "all": [
+                            { "has": 952 },
+                            { "any": [
+                                { "has": 7416 },
+                                { "has": 7418 }
+                            ]}
+                        ]
+                    }
+                },
+                "Void Knights' Reward Options (Seed pack)": {
+                    "notes": "Pest control, requires 25 farming.",
+                    "rule": "canTrainFarming"
+                },
+                "Seed pack (Low seed)": {
+                    "notes": "Farming guild contract reward.",
+                    "rule": "canTrainFarming"
+                },
+                "Flowering Tree (Forestry event)": {
+                    "notes": "",
+                    "rule": "canTrainWoodcutting"
+                },
+                "Vale offerings": {
+                    "notes": "",
+                    "rule": "canDoValeTotems"
+                },
+                "Reward Cart": {
+                    "notes": "Wintertodt.",
+                    "rule": "canDoWintertodt"
+                }
+            }
+        },
+        "processable": {
+            "5370": "5354, 5325"
+        }
     },
     {
         "index": 39,
         "id": 1317,
         "name": "Adamant 2h sword",
-        "image": "adamant_2h_sword.png"
+        "image": "adamant_2h_sword.png",
+        "sources": {
+            "drops": {
+                "Coffin (Hallowed Sepulchre)": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Coffin_(Hallowed_Sepulchre)"
+                    },
+                "Hallowed sack": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Hallowed_sack"
+                    },
+                "Greater demon (Wilderness Slayer Cave)": {
+                    "droprate": "1/10.25",
+                    "url": "https://oldschool.runescape.wiki/w/Greater_demon#Wilderness_Slayer_Cave"
+                    },
+                "Martial salvage": {
+                    "droprate": "1/24",
+                    "url": "https://oldschool.runescape.wiki/w/Martial_salvage"
+                    },
+                "Cyclops (Warriors' Guild Basement)": {
+                    "droprate": "1/25",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops#Warriors'_Guild_Basement"
+                    },
+                "Jelly (Wilderness Slayer Cave)": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Jelly#Wilderness_Slayer_Cave"
+                    },
+                "Black dragon (Wilderness Slayer Cave)": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Black_dragon#Wilderness_Slayer_Cave"
+                    },
+                "Iron dragon": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Iron_dragon"
+                    },
+                "Brutal green dragon": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Brutal_green_dragon"
+                    },
+                "Wyrm": {
+                    "droprate": "1/38",
+                    "url": "https://oldschool.runescape.wiki/w/Wyrm"
+                    },
+                "Silver Chest": {
+                    "droprate": "1/50",
+                    "url": "https://oldschool.runescape.wiki/w/Silver_Chest"
+                    },
+                "Lava Dragon": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Lava_dragon"
+                    },
+                "Warped Jelly": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Warped_Jelly"
+                    },
+                "Chilled Jelly": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Chilled_Jelly"
+                    },
+                "Cyclops (Warriors' Guild Top Floor)": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops#Warriors'_Guild_Top_Floor"
+                    },
+                "Cyclops (Catacombs of Kourend)": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops_(Catacombs_of_Kourend)"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 40,
         "id": 890,
         "name": "Adamant arrow",
-        "image": "adamant_arrow.png"
+        "image": "adamant_arrow.png",
+        "sources": {
+            "drops": {
+                "Ice Giant (Wilderness Slayer Cave)": {
+                    "droprate": "1/10.33",
+                    "url": "https://oldschool.runescape.wiki/w/Ice_giant#Wilderness_Slayer_Cave_drops"
+                    },
+                "Ice Giant": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Ice_giant"
+                    },
+                "Ankou": {
+                    "droprate": "1/25",
+                    "url": "https://oldschool.runescape.wiki/w/Ankou"
+                    },
+                "Ice Warrior": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Ice_warrior"
+                    },
+                "Spiritual ranger": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Spiritual_ranger"
+                    }
+            },
+            "other": {
+                "Fletching Adamant arrows": {
+                    "notes": "",
+                    "rule": {
+                        "all": [
+                            { "has": 53 },
+                            { "has": 43 }
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        },
+        "processable": {
+            "891": "187",
+            "5620": "5937",
+            "5626": "5940"
+        }
     },
     {
         "index": 41,
         "id": 891,
         "name": "Adamant arrow(p)",
-        "image": "adamant_arrow(p).png"
+        "image": "adamant_arrow(p).png",
+        "sources": {
+            "other": {
+                "Poisoning an Adamant arrow": {
+                    "notes": "Requires an Adamant arrow and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 890 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 42,
         "id": 5620,
         "name": "Adamant arrow(p+)",
-        "image": "adamant_arrow(p+).png"
+        "image": "adamant_arrow(p+).png",
+        "sources": {
+            "drops": {
+                "Zombie (Tarn's Lair)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_(Tarn's_Lair)"
+                    }
+            },
+            "other": {
+                "Poisoning an Adamant arrow": {
+                    "notes": "Requires an Adamant arrow and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 890 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 43,
         "id": 5626,
         "name": "Adamant arrow(p++)",
-        "image": "adamant_arrow(p++).png"
+        "image": "adamant_arrow(p++).png",
+        "sources": {
+            "drops": {
+                "K'ril Tsutsaroth": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth"
+                    },
+                "Maniacal Monkey Archer": {
+                    "droprate": "1/20",
+                    "url": "https://oldschool.runescape.wiki/w/Maniacal_Monkey_Archer"
+                    },
+                "Maniacal monkey": {
+                    "droprate": "1/20",
+                    "url": "https://oldschool.runescape.wiki/w/Maniacal_monkey"
+                    },
+                "Spiritual ranger": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Spiritual_ranger"
+                    }
+            },
+            "other": {
+                "Poisoning an Adamant arrow": {
+                    "notes": "Requires an Adamant arrow and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 890 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 44,
