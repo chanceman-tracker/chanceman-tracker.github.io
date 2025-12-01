@@ -4,7 +4,7 @@ function has(unlocked, id) {
 }
 
 export const REQUIREMENT_CHECKS = {
-    canCompleteDragonSlayer2(ctx) {
+    canCompleteDragonSlayerII(ctx) {
         return false; // TODO
     },
     canCompleteThroneOfMiscellania(ctx) {
@@ -54,9 +54,63 @@ export const REQUIREMENT_CHECKS = {
     },
     CanCompleteMonkeyMadnessII(ctx) {
         return false; // TODO
+    },
+    canCompletePriestInPeril(ctx) {
+        return canCompletePriestInPeril(ctx);
+    },
+    canCompleteZogreFleshEaters(ctx) {
+        return canCompleteZogreFleshEaters(ctx);
+    },
+    canEnterKaruulmSlayerDungeon(ctx) {
+        return canEnterKaruulmSlayerDungeon(ctx);
+    },
+    hasFacemask(ctx) {
+    return has(ctx.unlocked, 4164);
+    },
+    canKillGargoyles(ctx) {
+        return canKillGargoyles(ctx);
+    },
+    canKillDifficultDragons(ctx) {
+        return canKillDifficultDragons(ctx);
+    },
+    canKillFossilIslandWyverns(ctx) {
+        return canKillFossilIslandWyverns(ctx);
+    },
+    hasAccessToWyvernProtection(ctx) {
+        return hasAccessToWyvernProtection(ctx);
+    },
+    canTrainFletching(ctx) {
+        return canTrainFletching(ctx);
+    },
+    canTrainSmithing(ctx) {
+        return canTrainSmithing(ctx);
     }
 };
 
+function canKillGargoyles(ctx) {
+    return has(ctx.unlocked, 4162)       // Rock hammer
+            || has(ctx.unlocked, 21754); // Rock thrownhammer
+}
+
+function canKillDifficultDragons(ctx) {
+    return false; // TODO: need to implement quest points
+}
+
+function canEnterKaruulmSlayerDungeon(ctx) {
+    return has(ctx.unlocked, 23037) // Boots of stone
+            || (canKillFossilIslandWyverns(ctx) && has(ctx.unlocked, 21643)); // Granite boots
+}
+
+function canKillFossilIslandWyverns(ctx) {
+    return canCompleteBoneVoyage(ctx) && hasAccessToWyvernProtection(ctx);
+}
+
+function hasAccessToWyvernProtection(ctx) {
+    return canCompleteElementalWorkshopI(ctx) //
+                && (has(ctx.unlocked, 2890) // Elemental shield
+                    || (has(ctx.unlocked, 9731) && canCompleteElementalWorkshopII(ctx)) // Mind shield
+                    );
+}
 
 function canCompleteEnterTheAbyss(ctx) {
     return canCompleteRuneMysteries(ctx);
@@ -166,8 +220,65 @@ function canCompleteTheHeartOfDarkness(ctx) {
     return canTrainMining(ctx);
 }
 
+function canCompletePriestInPeril(ctx) {
+    return has(ctx.unlocked, 1925)      // Bucket
+            && (has(ctx.unlocked, 7936) // Pure essence
+                || has(ctx.unlocked, 1436) // or Rune essence
+                );
+}
+
+function canCompleteBoneVoyage(ctx) {
+    return false; // TODO
+}
+
+function canCompleteElementalWorkshopI(ctx) {
+    return canTrainMining(ctx) //
+            && canTrainCrafting(ctx) //
+            && has(ctx.unlocked, 2347) // Hammer
+            && has(ctx.unlocked, 1733) // Needle
+            && has(ctx.unlocked, 1734) // Thread
+            && has(ctx.unlocked, 1741) // Leather
+            && has(ctx.unlocked, 453); // Coal
+}
+
+function canCompleteElementalWorkshopII(ctx) {
+    return canCompleteElementalWorkshopI(ctx);
+}
+
+function canCompleteZogreFleshEaters(ctx) {
+    return canCompleteBigChompyBirdHunting(ctx) //
+            && canCompleteJunglePotion(ctx) //
+            && canTrainSmithing(ctx);
+}
+
+function canCompleteJunglePotion(ctx) {
+    return canCompleteDruidicRitual(ctx);
+}
+
+function canCompleteBigChompyBirdHunting(ctx) {
+    return canTrainFletching(ctx) //
+            && canTrainCooking(ctx) //
+            && canTrainWoodcutting(ctx) //
+            && has(ctx.unlocked, 314)  // Feather
+            && has(ctx.unlocked, 946)  // Knife
+            && has(ctx.unlocked, 1755) // Chisel
+            && has(ctx.unlocked, 1965) // Cabbage
+            && has(ctx.unlocked, 1982) // Tomato
+            && has(ctx.unlocked, 1957) // Onion
+            && has(ctx.unlocked, 1942) // Potato
+            && has(ctx.unlocked, 2128) // Equa leaves
+            && has(ctx.unlocked, 1573) // Doogle leaves
+            && has(ctx.unlocked, 2862) // Achey tree logs
+            && has(ctx.unlocked, 2864) // Ogre arrow shaft
+            && has(ctx.unlocked, 2865) // Flighted ogre arrow
+            && has(ctx.unlocked, 2859) // Wolf bones
+            && has(ctx.unlocked, 2861) // Wolfbone arrowtips
+            && has(ctx.unlocked, 2866) // Ogre arrow
+            && has(ctx.unlocked, 2876);// Raw chompy
+}
+
 function canTrainCrafting(ctx) {
-    return true; //TODO implement this beast (true because lamps and buttons)
+    return true; // TODO implement this beast (true because lamps and buttons)
 }
 
 function canTrainRunecraft(ctx) {
@@ -231,6 +342,10 @@ function canTrainFletching(ctx) {
 
 function canTrainFiremaking(ctx) {
     return has(ctx.unlocked, 590); // Tinderbox
+}
+
+function canTrainSmithing(ctx) {
+    return has(ctx.unlocked, 2347); // Hammer
 }
 
 function canDoGnomeRestaurant(ctx) {

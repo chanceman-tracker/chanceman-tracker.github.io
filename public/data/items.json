@@ -1044,7 +1044,7 @@
                     "droprate": "1/64",
                     "url": "https://oldschool.runescape.wiki/w/Warped_Jelly"
                     },
-                "Chilled Jelly": {
+                "Chilled jelly": {
                     "droprate": "1/64",
                     "url": "https://oldschool.runescape.wiki/w/Chilled_Jelly"
                     },
@@ -1096,7 +1096,8 @@
                     "rule": {
                         "all": [
                             { "has": 53 },
-                            { "has": 43 }
+                            { "has": 43 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -1196,61 +1197,393 @@
         "index": 44,
         "id": 43,
         "name": "Adamant arrowtips",
-        "image": "adamant_arrowtips.png"
+        "image": "adamant_arrowtips.png",
+        "sources": {
+            "drops": {
+                "Martial salvage": {
+                    "droprate": "1/8",
+                    "url": "https://oldschool.runescape.wiki/w/Martial_salvage"
+                    },
+                "Dirty arrowtips": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Dirty_arrowtips"
+                    },
+                "Spiritual ranger": {
+                    "droprate": "1/14.22",
+                    "url": "https://oldschool.runescape.wiki/w/Spiritual_ranger"
+                    },
+                "Wyrm": {
+                    "droprate": "1/38",
+                    "url": "https://oldschool.runescape.wiki/w/Wyrm"
+                    }
+            },
+            "other": {
+                "Smithing Adamant arrowtips": {
+                    "notes": "Adamantite bar and hammer needed.",
+                    "rule": {
+                        "all": [
+                            { "has": 2361 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        },
+        "processable": {
+            "890": "53"
+        }
     },
     {
         "index": 45,
         "id": 1357,
         "name": "Adamant axe",
-        "image": "adamant_axe.png"
+        "image": "adamant_axe.png",
+        "sources": {
+            "drops": {
+                "Greater demon (Wilderness Slayer Cave)": {
+                    "droprate": "1/13.67",
+                    "url": "https://oldschool.runescape.wiki/w/Greater_demon#Wilderness_Slayer_Cave"
+                    },
+                "Tree spirit": {
+                    "droprate": "1/16",
+                    "url": "https://oldschool.runescape.wiki/w/Tree_spirit"
+                    },
+                "Jelly (Wilderness Slayer Cave)": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Jelly#Wilderness_Slayer_Cave"
+                    },
+                "Black Chest": {
+                    "droprate": "1/23.5",
+                    "url": "https://oldschool.runescape.wiki/w/Black_Chest"
+                    },
+                "Wyrm": {
+                    "droprate": "1/38",
+                    "url": "https://oldschool.runescape.wiki/w/Wyrm#Wilderness_Slayer_Cave"
+                    },
+                "Dust devil": {
+                    "droprate": "1/42",
+                    "url": "https://oldschool.runescape.wiki/w/Dust_devil"
+                    },
+                "Dust devil (Wilderness Slayer Cave)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Dust_devil#Wilderness_Slayer_Cave"
+                    },
+                "Iron dragon": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Iron_dragon"
+                    },
+                "Warped Jelly": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Warped_Jelly"
+                    },
+                "Chilled jelly": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Chilled_jelly"
+                    },
+                "Skeleton (Shayzien Crypts)": {
+                    "droprate": "1/60",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Shayzien_Crypts)"
+                    },
+                "Zombie (Shayzien Crypts)": {
+                    "droprate": "1/60",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_(Shayzien_Crypts)"
+                    }
+            },
+            "other": {
+                "Smithing Adamant axe": {
+                    "notes": "Adamantite bar and hammer needed.",
+                    "rule": {
+                        "all": [
+                            { "has": 2361 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        },
+        "processable": {
+            "28211": "28177"
+        }
     },
     {
         "index": 46,
         "id": 1371,
         "name": "Adamant battleaxe",
-        "image": "adamant_battleaxe.png"
+        "image": "adamant_battleaxe.png",
+        "sources": {
+            "drops": {
+                "Jelly (Wilderness Slayer Cave)": {
+                    "droprate": "1/5.818",
+                    "url": "https://oldschool.runescape.wiki/w/Jelly#Wilderness_Slayer_Cave"
+                    },
+                "Warped Jelly": {
+                    "droprate": "1/11.64",
+                    "url": "https://oldschool.runescape.wiki/w/Warped_Jelly"
+                    },
+                "Chilled jelly": {
+                    "droprate": "1/11.64",
+                    "url": "https://oldschool.runescape.wiki/w/Chilled_jelly"
+                    },
+                "Greater demon (Wilderness Slayer Cave)": {
+                    "droprate": "1/20.5",
+                    "url": "https://oldschool.runescape.wiki/w/Greater_demon#Wilderness_Slayer_Cave_drops"
+                    },
+                "Black demon (Wilderness Slayer Cave)": {
+                    "droprate": "1/37",
+                    "url": "https://oldschool.runescape.wiki/w/Black_demon#Wilderness_Slayer_Cave"
+                    },
+                "Wyrm": {
+                    "droprate": "1/38",
+                    "url": "https://oldschool.runescape.wiki/w/Wyrm"
+                    },
+                "Silver Chest": {
+                    "droprate": "1/50",
+                    "url": "https://oldschool.runescape.wiki/w/Silver_Chest"
+                    },
+                "Spitting Wyvern": {
+                    "droprate": "1/61.5",
+                    "url": "https://oldschool.runescape.wiki/w/Spitting_Wyvern"
+                    },
+                "Taloned Wyvern": {
+                    "droprate": "1/61.5",
+                    "url": "https://oldschool.runescape.wiki/w/Spitting_Wyvern"
+                    },
+                "Long-tailed Wyvern": {
+                    "droprate": "1/61.5",
+                    "url": "https://oldschool.runescape.wiki/w/Spitting_Wyvern"
+                    },
+                "Spiritual warrior": {
+                    "droprate": "1/63.5",
+                    "url": "https://oldschool.runescape.wiki/w/Spiritual_warrior"
+                    },
+                "Magic axe": {
+                    "droprate": "1/125",
+                    "url": "https://oldschool.runescape.wiki/w/Magic_axe"
+                    },
+                "Skeleton (Tarn's Lair)": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Tarn's_Lair)"
+                    }
+            },
+            "other": {
+                "Smithing Adamant battleaxe": {
+                    "notes": "Adamantite bar and hammer needed.",
+                    "rule": {
+                        "all": [
+                            { "has": 2361 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 47,
         "id": 9143,
         "name": "Adamant bolts",
-        "image": "adamant_bolts.png"
+        "image": "adamant_bolts.png",
+        "sources": {
+            "drops": {
+                "Spoils of war": {
+                    "droprate": "3 × 1/9",
+                    "url": "https://oldschool.runescape.wiki/w/Spoils_of_war"
+                    },
+                "Coffin (Hallowed Sepulchre)": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Coffin_(Hallowed_Sepulchre)"
+                    },
+                "Hallowed sack": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Hallowed_sack"
+                    },
+                "Tortured gorilla": {
+                    "droprate": "1/11.63",
+                    "url": "https://oldschool.runescape.wiki/w/Tortured_gorilla"
+                    },
+                "Gnome Restaurant Tips": {
+                    "droprate": "1/17",
+                    "url": "https://oldschool.runescape.wiki/w/King_Bolren#Gnome_Restaurant_Tips"
+                    },
+                "Iron dragon": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Iron_dragon"
+                    },
+                "Skeletal wyvern": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeletal_Wyvern"
+                    },
+                "Zombie (Tarn's Lair)": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_(Tarn's_Lair)"
+                    }
+            },
+            "other": {
+                "Fletching Adamant bolts": {
+                    "notes": "",
+                    "rule": {
+                        "all": [
+                            { "has": 314 },
+                            { "has": 9380 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "9290": "187",
+            "9297": "5937",
+            "9304": "5940",
+            "9340": "9192",
+            "9339": "9191"
+        }
     },
     {
         "index": 48,
         "id": 9290,
         "name": "Adamant bolts (p)",
-        "image": "adamant_bolts_(p).png"
+        "image": "adamant_bolts_(p).png",
+        "sources": {
+            "other": {
+                "Poisoning an Adamant bolt": {
+                    "notes": "Requires an Adamant bolt and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 9143 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 49,
         "id": 9297,
         "name": "Adamant bolts (p+)",
-        "image": "adamant_bolts_(p+).png"
+        "image": "adamant_bolts_(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning an Adamant bolt": {
+                    "notes": "Requires an Adamant bolt and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 9143 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 50,
         "id": 9304,
         "name": "Adamant bolts (p++)",
-        "image": "adamant_bolts_(p++).png"
+        "image": "adamant_bolts_(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning an Adamant bolt": {
+                    "notes": "Requires an Adamant bolt and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 9143 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 51,
         "id": 9380,
         "name": "Adamant bolts(unf)",
-        "image": "adamant_bolts(unf).png"
+        "image": "adamant_bolts(unf).png",
+        "sources": {
+            "drops": {
+                "Adamant dragon": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Adamant_dragon"
+                    },
+                "The Hueycoatl": {
+                    "droprate": "1/22.67",
+                    "url": "https://oldschool.runescape.wiki/w/The_Hueycoatl"
+                    },
+                "Martial salvage": {
+                    "droprate": "1/24",
+                    "url": "https://oldschool.runescape.wiki/w/Martial_salvage"
+                    }
+            },
+            "other": {
+                "Smithing Adamant bolts(unf)": {
+                    "notes": "Adamantite bar and hammer needed.",
+                    "rule": {
+                        "all": [
+                            { "has": 2361 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "9143": "314"
+        }
     },
     {
         "index": 52,
         "id": 4129,
         "name": "Adamant boots",
-        "image": "adamant_boots.png"
+        "image": "adamant_boots.png",
+        "sources": {
+            "drops": {
+                "Grotesque Guardians": {
+                    "droprate": "2 × 1/142",
+                    "url": "https://oldschool.runescape.wiki/w/Grotesque_Guardians"
+                    },
+                "Gargoyle": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Gargoyle"
+                    }
+            }
+        }
     },
     {
         "index": 53,
         "id": 4798,
         "name": "Adamant brutal",
-        "image": "adamant_brutal.png"
+        "image": "adamant_brutal.png",
+        "sources": {
+            "other": {
+                "Fletching Adamant brutal": {
+                    "notes": "Flighted ogre arrow, Adamantite nails and hammer needed.",
+                    "rule": {
+                        "all": [
+                            { "has": 2865 },
+                            { "has": 4823 },
+                            { "has": 2347 },
+                            "canTrainFletching",
+                            "canCompleteZogreFleshEaters"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 54,
