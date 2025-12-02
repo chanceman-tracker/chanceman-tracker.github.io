@@ -7,8 +7,17 @@ export const REQUIREMENT_CHECKS = {
     canCompleteDragonSlayerII(ctx) {
         return false; // TODO
     },
+    canCompleteDesertTreasureII(ctx) {
+        return false; // TODO
+    },
+    canCompleteSongOfTheElves(ctx) {
+        return false; // TODO
+    },
     canCompleteThroneOfMiscellania(ctx) {
         return canCompleteThroneOfMiscellania(ctx);
+    },
+    canCompleteDeathPlateau(ctx) {
+        return canCompleteDeathPlateau(ctx);
     },
     canCompleteTheHeartOfDarkness(ctx) {
         return canCompleteTheHeartOfDarkness(ctx);
@@ -84,8 +93,105 @@ export const REQUIREMENT_CHECKS = {
     },
     canTrainSmithing(ctx) {
         return canTrainSmithing(ctx);
+    },
+    canCompleteDwarfCannon(ctx) {
+        return canCompleteDwarfCannon(ctx);
+    },
+    canCompleteTroubledTortugans(ctx) {
+        return canCompleteTroubledTortugans(ctx);
+    },
+    canLongrange(ctx) {
+        return canLongrange(ctx);
+    },
+    canShortrange(ctx) {
+        return canShortrange(ctx);
+    },
+    canSailToTheNorthernOcean(ctx) {
+        return canSailToTheNorthernOcean(ctx);
+    },
+    canDoSailingCombat(ctx) {
+        return canDoSailingCombat(ctx);
+    },
+    canEnterTheCharredDungeon(ctx) {
+        return canEnterTheCharredDungeon(ctx);
+    },
+    canSailToBrittleIsle(ctx) {
+        return canSailToBrittleIsle(ctx);
+    },
+    canSailToYnysdail(ctx) {
+        return canSailToYnysdail(ctx);
+    },
+    canEnterAncientCavern(ctx) {
+        return canEnterAncientCavern(ctx);
+    },
+    canEnterKalphiteLair(ctx) {
+        return canEnterKalphiteLair(ctx);
+    },
+    canCompleteRoyalTrouble(ctx) {
+        return canCompleteRoyalTrouble(ctx);
+    },
+    canCompleteTouristTrap(ctx) {
+        return canCompleteTouristTrap(ctx);
     }
 };
+
+function canEnterKalphiteLair(ctx) {
+    return has(ctx.unlocked, 954); // Rope
+}
+
+function canEnterAncientCavern(ctx) {
+    return canCompleteBarbarianFiremaking(ctx);
+}
+
+function canCompleteBarbarianFiremaking(ctx) {
+    return has(ctx.unlocked, 1521) // Oak logs
+            && ( //
+                has(ctx.unlocked, 841) // Shortbow
+                || has(ctx.unlocked, 839) // Longbow
+                || has(ctx.unlocked, 843) // Oak shortbow
+                || has(ctx.unlocked, 845) // Oak longbow
+                || has(ctx.unlocked, 849) // Willow shortbow
+                || has(ctx.unlocked, 847) // Willow longbow
+                || has(ctx.unlocked, 853) // Maple shortbow
+                || has(ctx.unlocked, 851) // Maple longbow
+                || has(ctx.unlocked, 857) // Yew shortbow
+                || has(ctx.unlocked, 855) // Yew longbow
+                || has(ctx.unlocked, 861) // Magic shortbow
+                || has(ctx.unlocked, 859) // Magic longbow
+            );
+}
+
+function canSailToTheNorthernOcean(ctx) {
+    return canCompletePandemonium(ctx) //
+            && false; // TODO sailing stuff
+}
+
+function canSailToTheWesternOcean(ctx) {
+    return canCompletePandemonium(ctx) //
+            && false; // TODO sailing stuff
+}
+
+function canSailToYnysdail(ctx) {
+    return canSailToTheWesternOcean(ctx);
+}
+
+function canSailToBrittleIsle(ctx) {
+    return canSailToTheNorthernOcean(ctx);
+}
+
+function canEnterTheCharredDungeon(ctx) {
+    return canCompletePandemonium(ctx) //
+            && has(ctx.unlocked, 954); // Rope
+}
+
+function canLongrange(ctx) {
+    return ((has(ctx.unlocked, 841) || has(ctx.unlocked, 839)) // Shortbow or Longbow
+                && (has(ctx.unlocked, 882) || has(ctx.unlocked, 884))) // Bronze arrow or Iron arrow
+            || ((has(ctx.unlocked, 837) || (has(ctx.unlocked, 9174) && has(ctx.unlocked, 9454) && has(ctx.unlocked, 9440) && has(ctx.unlocked, 9420) && has(ctx.unlocked, 9438) && (has(ctx.unlocked, 6043) || has(ctx.unlocked, 6045) || (has(ctx.unlocked, 9436) && (has(ctx.unlocked, 2132) || has(ctx.unlocked, 2136) || has(ctx.unlocked, 25833)))))) // Crossbow or (Bronze crossbow, Bronze crossbow (u), Wooden stock, Bronze limbs and a Crossbow string and either Oak roots, Willow roots or Sinew and Raw beef, Raw bear meat or Raw boar meat)
+                && (has(ctx.unlocked, 877) || has(ctx.unlocked, 884))) // Bronze bolts
+            ||((has(ctx.unlocked, 556) || has(ctx.unlocked, 4696) || has(ctx.unlocked, 1381) || has(ctx.unlocked, 1397)) // Air rune, Dust rune, Staff of air or Air battlestaff
+                && (has(ctx.unlocked, 558) || has(ctx.unlocked, 562) || has(ctx.unlocked, 560) || has(ctx.unlocked, 565))) // Mind rune, Chaos rune, Death rune or Blood rune
+}
 
 function canKillGargoyles(ctx) {
     return has(ctx.unlocked, 4162)       // Rock hammer
@@ -149,6 +255,32 @@ function canCompleteTempleOfTheEye(ctx) {
             && canTrainRunecraft(ctx);
 }
 
+function canCompleteDeathPlateau(ctx) {
+    return has(ctx.unlocked, 2309)      // Bread
+            && has(ctx.unlocked, 333)   // Trout
+            && has(ctx.unlocked, 2351)  // Iron bar
+            && has(ctx.unlocked, 1905)  // Asgarnian ale
+            && has(ctx.unlocked, 3105); // Climbing boots
+}
+
+function canCompleteRoyalTrouble(ctx) {
+    return canCompleteThroneOfMiscellania(ctx) //
+            && has(ctx.unlocked, 954) // Rope
+            && has(ctx.unlocked, 453) // Coal
+            && has(ctx.unlocked, 960); // Plank
+}
+
+function canCompleteTouristTrap(ctx) {
+    return canTrainFletching(ctx) //
+            && canTrainSmithing(ctx) //
+            && has(ctx.unlocked, 1833) // Desert shirt
+            && has(ctx.unlocked, 1835) // Desert robe
+            && has(ctx.unlocked, 1837) // Desert boots
+            && has(ctx.unlocked, 2347) // Hammer
+            && has(ctx.unlocked, 2349) // Bronze bar
+            && has(ctx.unlocked, 314); // Feather
+}
+
 function canCompleteThroneOfMiscellania(ctx) {
     return canCompleteHeroesQuest(ctx) //
             && canCompleteTheFremennikTrials(ctx) //
@@ -195,6 +327,19 @@ function canCompleteDragonSlayerI(ctx) { // TODO quest points
             && has(ctx.unlocked, 2347)  // Hammer
             && has(ctx.unlocked, 1539)  // Steel nails
             && has(ctx.unlocked, 960);  // Plank
+}
+
+function canCompleteDwarfCannon(ctx) {
+    return has(ctx.unlocked, 2347); // Hammer
+}
+
+function canCompleteTroubledTortugans(ctx) {
+    return canTrainCrafting(ctx) //
+            && canTrainHunter(ctx) //
+            && canTrainWoodcutting(ctx) //
+            && canTrainConstruction(ctx) //
+            && canCompletePandemonium(ctx) //
+            && has(ctx.unlocked, 401);     // Seaweed
 }
 
 function canCompleteTheFremennikTrials(ctx) {
@@ -315,6 +460,13 @@ function canTrainFishing(ctx) {
             && (has(ctx.unlocked, 307) && has(ctx.unlocked, 313)); // Fishing rod & Fishing bait
 }
 
+function canTrainHunter(ctx) {
+    return has(ctx.unlocked, 10006)     // Bird snare
+            && has(ctx.unlocked, 10150) // Noose wand
+            && has(ctx.unlocked, 10010) // Butterfly net
+            ; // TODO or the player's lvl allows for barehanding butterflies (lvl 25)
+}
+
 function canTrainCooking(ctx) {
     return has(ctx.unlocked, 25833)    // Raw boar meat
             && has(ctx.unlocked, 2132) // Raw beef
@@ -331,7 +483,16 @@ function canTrainCooking(ctx) {
 }
 
 function canTrainFarming(ctx) {
-    return has(ctx.unlocked, 5341); // Rake
+    return has(ctx.unlocked, 5341)     // Rake
+            || has(ctx.unlocked, 8431) // Bagged plant 1
+}
+
+function canTrainConstruction(ctx) {
+    return has(ctx.unlocked, 8431) // Bagged plant 1
+            && (
+                (has(ctx.unlocked, 2347) && has(ctx.unlocked, 8794)) // Hammer and Saw
+                (has(ctx.unlocked, 2351) || has(ctx.unlocked, 960))  // Iron bar or Plank and any nails
+            );
 }
 
 function canTrainFletching(ctx) {
@@ -397,37 +558,32 @@ function canDoGnomeRestaurant(ctx) {
 function canDoValeTotems(ctx) {
     return canTrainFletching(ctx) //
             && has(ctx.unlocked, 946) // Knife
-            && (
+            || ((
                 has(ctx.unlocked, 843) // Oak shortbow
                 || has(ctx.unlocked, 845) // Oak longbow
                 || has(ctx.unlocked, 9442) // Oak stock
                 || has(ctx.unlocked, 22251) // Oak shield
-                || (has(ctx.unlocked, 946) && (has(ctx.unlocked, 54) || has(ctx.unlocked, 56))) // Oak logs & either Oak shortbow (u) or Oak longbow (u)
+                || (has(ctx.unlocked, 1521) && (has(ctx.unlocked, 54) || has(ctx.unlocked, 56))) // Oak logs & either Oak shortbow (u) or Oak longbow (u)
             ) //
-            && (
+            || (
                 has(ctx.unlocked, 849) // Willow shortbow
                 || has(ctx.unlocked, 847) // Willow longbow
                 || has(ctx.unlocked, 9444) // Willow stock
                 || (has(ctx.unlocked, 1519) && (has(ctx.unlocked, 60) || has(ctx.unlocked, 58) || has(ctx.unlocked, 22254))) // Willow logs & either Willow shortbow (u), Willow longbow (u) or Willow shield
             ) //
-            && (
+            || (
                 has(ctx.unlocked, 853) // Maple shortbow
                 || has(ctx.unlocked, 851) // Maple longbow
                 || has(ctx.unlocked, 9448) // Maple stock
                 || (has(ctx.unlocked, 1517) && (has(ctx.unlocked, 64) || has(ctx.unlocked, 62) || has(ctx.unlocked, 22257))) // Maple logs & either Maple shortbow (u), Maple longbow (u) or Maple shield
             ) //
-            && (
+            || (
                 has(ctx.unlocked, 857) // Yew shortbow
                 || has(ctx.unlocked, 855) // Yew longbow
                 || (has(ctx.unlocked, 1515) && (has(ctx.unlocked, 68) || has(ctx.unlocked, 66) || has(ctx.unlocked, 22260) || has(ctx.unlocked, 9452))) // Yew logs & either Yew shortbow (u), Yew longbow (u), Yew shield or Yew stock
             ) //
-            && (
-                has(ctx.unlocked, 857) // Yew shortbow
-                || has(ctx.unlocked, 855) // Yew longbow
-                || (has(ctx.unlocked, 1515) && (has(ctx.unlocked, 68) || has(ctx.unlocked, 66) || has(ctx.unlocked, 22260) || has(ctx.unlocked, 9452))) // Yew logs & either Yew shortbow (u), Yew longbow (u), Yew shield or Yew stock
-            ) //
-            && (has(ctx.unlocked, 1513) && (has(ctx.unlocked, 72) || has(ctx.unlocked, 70) || has(ctx.unlocked, 22263) || has(ctx.unlocked, 21952))) // Magic logs & either Magic shortbow (u), Magic longbow (u), Magic shield or Magic stock
-            && (canTrainWoodcutting(ctx) && has(ctx.unlocked, 19669) && (has(ctx.unlocked, 31049) || has(ctx.unlocked, 22266))); // Redwood logs & either Redwood hiking staff or Redwood shield
+            || (has(ctx.unlocked, 1513) && (has(ctx.unlocked, 72) || has(ctx.unlocked, 70) || has(ctx.unlocked, 22263) || has(ctx.unlocked, 21952))) // Magic logs & either Magic shortbow (u), Magic longbow (u), Magic shield or Magic stock
+            || (canTrainWoodcutting(ctx) && has(ctx.unlocked, 19669) && (has(ctx.unlocked, 31049) || has(ctx.unlocked, 22266)))); // Redwood logs & either Redwood hiking staff or Redwood shield
 }
 
 function canDoWintertodt(ctx) {
@@ -436,7 +592,11 @@ function canDoWintertodt(ctx) {
 }
 
 function canDoSalvaging(ctx) {
-    return canCompletePandemonium(ctx); // TODO add different salvaging hooks requirements
+    return canCompletePandemonium(ctx) && false; // TODO add different salvaging hooks requirements
+}
+
+function canDoSailingCombat(ctx) {
+    return canCompletePandemonium(ctx) && false; // TODO sailing combat
 }
 
 function canDoShadesOfMortton(ctx) {

@@ -1354,11 +1354,11 @@
                     },
                 "Taloned Wyvern": {
                     "droprate": "1/61.5",
-                    "url": "https://oldschool.runescape.wiki/w/Spitting_Wyvern"
+                    "url": "https://oldschool.runescape.wiki/w/Taloned_Wyvern"
                     },
                 "Long-tailed Wyvern": {
                     "droprate": "1/61.5",
-                    "url": "https://oldschool.runescape.wiki/w/Spitting_Wyvern"
+                    "url": "https://oldschool.runescape.wiki/w/Long-tailed_Wyvern"
                     },
                 "Spiritual warrior": {
                     "droprate": "1/63.5",
@@ -1604,85 +1604,505 @@
         "index": 55,
         "id": 31912,
         "name": "Adamant cannonball",
-        "image": "adamant_cannonball.png"
+        "image": "adamant_cannonball.png",
+        "sources": {
+            "drops": {
+                "Shellbane Gryphon": {
+                    "droprate": "2 × 1/16",
+                    "url": "https://oldschool.runescape.wiki/w/Shellbane_gryphon"
+                    },
+                "Narwhal": {
+                    "droprate": "1/15.13",
+                    "url": "https://oldschool.runescape.wiki/w/Narwhal"
+                    },
+                "Cannonball stall": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Cannonball_stall"
+                    },
+                "Martial salvage": {
+                    "droprate": "1/24",
+                    "url": "https://oldschool.runescape.wiki/w/Martial_salvage"
+                    },
+                "Spined kraken": {
+                    "droprate": "1/26.75",
+                    "url": "https://oldschool.runescape.wiki/w/Spined_kraken"
+                    },
+                "Plundered salvage": {
+                    "droprate": "1/42",
+                    "url": "https://oldschool.runescape.wiki/w/Plundered_salvage"
+                    },
+                "Lava Strykewyrm": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Lava_Strykewyrm"
+                    },
+                "Pygmy kraken": {
+                    "droprate": "1/50.5",
+                    "url": "https://oldschool.runescape.wiki/w/Pygmy_kraken"
+                    },
+                "Gryphon": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Gryphon"
+                    },
+                "Large salvage": {
+                    "droprate": "1/222",
+                    "url": "https://oldschool.runescape.wiki/w/Large_salvage"
+                    },
+                "Reinforced chest": {
+                    "droprate": "Unknown 2 Dec 2025",
+                    "url": "https://oldschool.runescape.wiki/w/Reinforced_chest"
+                    }
+            },
+            "other": {
+                "Smithing Adamant cannonball": {
+                    "notes": "Adamantite bar needed.",
+                    "rule": {
+                        "all": [
+                            { "has": 2361 },
+                            "canTrainSmithing",
+                            "canCompleteDwarfCannon"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 56,
         "id": 1111,
         "name": "Adamant chainbody",
-        "image": "adamant_chainbody.png"
+        "image": "adamant_chainbody.png",
+        "sources": {
+            "drops": {
+                "Gold Chest": {
+                    "droprate": "1/36",
+                    "url": "https://oldschool.runescape.wiki/w/Gold_Chest"
+                    },
+                "Lesser demon (Wilderness Slayer Cave)": {
+                    "droprate": "1/39",
+                    "url": "https://oldschool.runescape.wiki/w/Lesser_demon#Wilderness_Slayer_Cave_drops"
+                    },
+                "Mutated Bloodveld": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Mutated_Bloodveld"
+                    },
+                "Silver Chest": {
+                    "droprate": "1/50.8",
+                    "url": "https://oldschool.runescape.wiki/w/Silver_Chest"
+                    },
+                "Spined kraken": {
+                    "droprate": "1/53.5",
+                    "url": "https://oldschool.runescape.wiki/w/Spined_kraken"
+                    },
+                "Waterfiend": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Waterfiend"
+                    },
+                "Duke Sucellus": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Duke_Sucellus"
+                    },
+                "Brutal green dragon": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Brutal_green_dragon"
+                    }
+            },
+            "other": {
+                "Smithing Adamant chainbody": {
+                    "notes": "Adamantite bar and hammer needed.",
+                    "rule": {
+                        "all": [
+                            { "has": 2361 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 57,
         "id": 3100,
         "name": "Adamant claws",
-        "image": "adamant_claws.png"
+        "image": "adamant_claws.png",
+        "sources": {
+            "other": {
+                "Smithing Adamant claws": {
+                    "notes": "Adamantite bar and hammer needed.",
+                    "rule": {
+                        "all": [
+                            { "has": 2361 },
+                            { "has": 2347 },
+                            "canTrainSmithing",
+                            "canCompleteDeathPlateau"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 58,
         "id": 9183,
         "name": "Adamant crossbow",
-        "image": "adamant_crossbow.png"
+        "image": "adamant_crossbow.png",
+        "sources": {
+            "drops": {
+                "Bull shark": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Bull_shark"
+                    },
+                "Tiger shark": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Tiger_shark"
+                    }
+            },
+            "other": {
+                "Fletching Adamant crossbow": {
+                    "notes": "Adamant crossbow (u) and Crossbow string needed.",
+                    "rule": {
+                        "all": [
+                            { "has": 9463 },
+                            { "has": 9438 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 59,
         "id": 9463,
         "name": "Adamant crossbow (u)",
-        "image": "adamant_crossbow_(u).png"
+        "image": "adamant_crossbow_(u).png",
+        "sources": {
+            "drops": {
+                "Spitting Wyvern": {
+                    "droprate": "1/61.5",
+                    "url": "https://oldschool.runescape.wiki/w/Spitting_Wyvern"
+                    },
+                "Taloned Wyvern": {
+                    "droprate": "1/61.5",
+                    "url": "https://oldschool.runescape.wiki/w/Taloned_Wyvern"
+                    },
+                "Long-tailed Wyvern": {
+                    "droprate": "1/61.5",
+                    "url": "https://oldschool.runescape.wiki/w/Long-tailed_Wyvern"
+                    }
+            },
+            "other": {
+                "Smithing Adamant crowssbow (u)": {
+                    "notes": "Adamantite limbs, Mahogany stock and hammer needed.",
+                    "rule": {
+                        "all": [
+                            { "has": 9429 },
+                            { "has": 9450 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "9183": "9438"
+        }
     },
     {
         "index": 60,
         "id": 1211,
         "name": "Adamant dagger",
-        "image": "adamant_dagger.png"
+        "image": "adamant_dagger.png",
+        "sources": {
+            "drops": {
+                "Cyclops (Warriors' Guild Basement)": {
+                    "droprate": "1/20",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops#Warriors'_Guild_Basement"
+                    },
+                "Black demon (Wilderness Slayer Cave)": {
+                    "droprate": "1/24.67",
+                    "url": "https://oldschool.runescape.wiki/w/Black_demon#Wilderness_Slayer_Cave"
+                    },
+                "Reward Chest (The Gauntlet)": {
+                    "droprate": "1/27",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_Chest_(The_Gauntlet)"
+                    },
+                "Steel chest": {
+                    "droprate": "1/33.6",
+                    "url": "https://oldschool.runescape.wiki/w/Steel_chest"
+                    },
+                "Reward casket (medium)": {
+                    "droprate": "1/34.1",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(medium)"
+                    },
+                "Lesser demon (Wilderness Slayer Cave)": {
+                    "droprate": "1/39",
+                    "url": "https://oldschool.runescape.wiki/w/Lesser_demon#Wilderness_Slayer_Cave_drops"
+                    },
+                "Ice Giant (Wilderness Slayer Cave)": {
+                    "droprate": "1/62",
+                    "url": "https://oldschool.runescape.wiki/w/Ice_giant#Wilderness_Slayer_Cave_drops"
+                    },
+                "Kalphite Guardian": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Kalphite_Guardian"
+                    },
+                "Green dragon (Wilderness Slayer Cave)": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Green_dragon#Wilderness_Slayer_Cave"
+                    },
+                "Reinforced chest": {
+                    "droprate": "Unknown 2 Dec 2025",
+                    "url": "https://oldschool.runescape.wiki/w/Reinforced_chest"
+                    }
+            },
+            "other": {
+                "Smithing Adamant dagger": {
+                    "notes": "Adamantite bar and hammer needed.",
+                    "rule": {
+                        "all": [
+                            { "has": 2361 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        },
+        "processable": {
+            "1227": "187",
+            "5676": "5937",
+            "5694": "5940"
+        }
     },
     {
         "index": 61,
         "id": 1227,
         "name": "Adamant dagger(p)",
-        "image": "adamant_dagger(p).png"
+        "image": "adamant_dagger(p).png",
+        "sources": {
+            "drops": {
+                "Steel chest": {
+                    "droprate": "1/134.4",
+                    "url": "https://oldschool.runescape.wiki/w/Steel_chest"
+                    }
+            },
+            "other": {
+                "Poisoning an Adamant dagger": {
+                    "notes": "Requires an Adamant dagger and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 1211 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 62,
         "id": 5676,
         "name": "Adamant dagger(p+)",
-        "image": "adamant_dagger(p+).png"
+        "image": "adamant_dagger(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning an Adamant dagger": {
+                    "notes": "Requires an Adamant dagger and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 1211 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 63,
         "id": 5694,
         "name": "Adamant dagger(p++)",
-        "image": "adamant_dagger(p++).png"
+        "image": "adamant_dagger(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning an Adamant dagger": {
+                    "notes": "Requires an Adamant dagger and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 1211 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 64,
         "id": 810,
         "name": "Adamant dart",
-        "image": "adamant_dart.png"
+        "image": "adamant_dart.png",
+        "sources": {
+            "drops": {
+                "Dagannoth Supreme": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Dagannoth_Supreme"
+                    },
+                "Brutal blue dragon": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Brutal_blue_dragon"
+                    },
+                "Brutal red dragon": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Brutal_red_dragon"
+                    }
+            },
+            "other": {
+                "Fletching Adamant darts": {
+                    "notes": "Adamant dart tip and Feather",
+                    "rule": {
+                        "all": [
+                            { "has": 823 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "816": "187",
+            "5633": "5937",
+            "5640": "5940"
+        }
     },
     {
         "index": 65,
         "id": 823,
         "name": "Adamant dart tip",
-        "image": "adamant_dart_tip.png"
+        "image": "adamant_dart_tip.png",
+        "sources": {
+            "drops": {
+                "Martial salvage": {
+                    "droprate": "1/12.14",
+                    "url": "https://oldschool.runescape.wiki/w/Martial_salvage"
+                    },
+                "Sea Snake Hatchling": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/Sea_Snake_Hatchling"
+                    },
+                "Sea Snake Young": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/Sea_Snake_Young"
+                    },
+                "Giant Sea Snake": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/Giant_Sea_Snake"
+                    }
+            },
+            "other": {
+                "Smithing Adamant dart tips": {
+                    "notes": "Adamantite bar, hammer and Tourist Trap quest required.",
+                    "rule": {
+                        "all": [
+                            { "has": 2361 },
+                            { "has": 2347 },
+                            "canTrainSmithing",
+                            "canCompleteTouristTrap"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "810": "314"
+        }
     },
     {
         "index": 66,
         "id": 816,
         "name": "Adamant dart(p)",
-        "image": "adamant_dart(p).png"
+        "image": "adamant_dart(p).png",
+        "sources": {
+            "drops": {
+                "Bronze dragon": {
+                    "droprate": "1/18.29",
+                    "url": "https://oldschool.runescape.wiki/w/Bronze_dragon"
+                    },
+                "Black dragon": {
+                    "droprate": "1/18.29",
+                    "url": "https://oldschool.runescape.wiki/w/Black_dragon"
+                    },
+                "Chewed bones": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Chewed_bones"
+                    },
+                "Brutal green dragon": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Brutal_green_dragon"
+                    },
+                "Ferocious barbarian spirit": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Ferocious_barbarian_spirit"
+                    }
+            },
+            "other": {
+                "Poisoning an Adamant dart": {
+                    "notes": "Requires an Adamant dart and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 810 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 67,
         "id": 5633,
         "name": "Adamant dart(p+)",
-        "image": "adamant_dart(p+).png"
+        "image": "adamant_dart(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning an Adamant dart": {
+                    "notes": "Requires an Adamant dart and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 810 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 68,
         "id": 5640,
         "name": "Adamant dart(p++)",
-        "image": "adamant_dart(p++).png"
+        "image": "adamant_dart(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning an Adamant dart": {
+                    "notes": "Requires an Adamant dart and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 810 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 69,
