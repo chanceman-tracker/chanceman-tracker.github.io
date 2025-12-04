@@ -2,6 +2,7 @@ import { fileStore } from "../storage/fileStore.js";
 
 export default async function ItemsPage() {
     const items = await fetch("/data/items.json").then(r => r.json());
+    fileStore.items = items;
 
     const rolled = fileStore.rolled || [];
     const unlocked = fileStore.unlocked || [];

@@ -14,13 +14,47 @@ export const NPC_RULES = {
     "Adamant dragon": [
         "canCompleteDragonSlayerII"
     ],
+    "Angry barbarian spirit": [
+        "canEnterAncientCavern"
+    ],
+    "Ava's accumulator": {
+        "all": [
+            "canCompleteAnimalMagnetism",
+            "hasSteelArrow"
+        ]
+    },
+    "Ava's assembler": {
+        "all": [
+            "canCompleteAnimalMagnetism",
+            "hasMithrilArrow",
+            "canCompleteDragonSlayerII"
+        ]
+    },
+    "Ava's attractor": [
+        "canCompleteAnimalMagnetism"
+    ],
+    "Balfrug Kreeyath": [
+        "canDoKrilTsutsaroth"
+    ],
+    "Barrel (Shaman Caves)": [
+        "canDoLegendsQuest"
+    ],
+    "Berserk barbarian spirit": [
+        "canEnterAncientCavern"
+    ],
     "Black Chest": [
         "canDoShadesOfMortton"
+    ],
+    "Bree": [
+        "canDoCommanderZilyana"
     ],
     "Bronze dragon": [
         "canKillDifficultDragons"
     ],
     "Brutal blue dragon": [
+        "canKillDifficultDragons"
+    ],
+    "Brutal black dragon": [
         "canKillDifficultDragons"
     ],
     "Brutal green dragon": {
@@ -47,11 +81,23 @@ export const NPC_RULES = {
             "canEnterAncientCavern"
         ]
     },
+    "Crystal impling": {
+        "all": [
+            "canTrainHunter",
+            "canCompleteSongOfTheElves"
+        ]
+    },
     "Coffin (Hallowed Sepulchre)": [
         "canDoHallowedSepulchre"
     ],
+    "Commander Zilyana": [
+        "canDoCommanderZilyana"
+    ],
     "Dirty arrowtips": [
         "canDoValeTotems"
+    ],
+    "Dragon impling": [
+        "canTrainHunter"
     ],
     "Duke Sucellus": [
         "canCompleteDesertTreasureII"
@@ -62,12 +108,30 @@ export const NPC_RULES = {
     "Dust devil (Wilderness Slayer Cave)": [
         "hasFacemask"
     ],
-    "Ferocious barbarian spirit": [
+    "Enraged barbarian spirit": [
         "canEnterAncientCavern"
+    ],
+    "Ferocious barbarian spirit": {
+        "all": [
+            "canEnterAncientCavern",
+            "canTrainWoodcutting"
+        ]
+    },
+    "Flight Kilisa": [
+        "canDoKreearra"
+    ],
+    "Flockleader Geerin": [
+        "canDoKreearra"
+    ],
+    "Forgotten Lockbox": [
+        "canDoYama"
     ],
     "Gargoyle": [
         "canCompletePriestInPeril",
         "canKillGargoyles"
+    ],
+    "General Graardor": [
+        "canDoGeneralGraardor"
     ],
     "Giant Sea Snake": [
         "canCompleteRoyalTrouble"
@@ -85,6 +149,9 @@ export const NPC_RULES = {
         "canCompletePriestInPeril",
         "canKillGargoyles"
     ],
+    "Growler": [
+        "canDoCommanderZilyana"
+    ],
     "Gryphon": [
         "canCompleteTroubledTortugans"
     ],
@@ -94,11 +161,14 @@ export const NPC_RULES = {
     "Iron dragon": [
         "canKillDifficultDragons"
     ],
+    "K'ril Tsutsaroth": [
+        "canDoKrilTsutsaroth"
+    ],
     "Kalphite Guardian": [
         "canEnterKalphiteLair"
     ],
-    "K'ril Tsutsaroth": [
-        "canDoGodWarsDungeon"
+    "Kree'arra": [
+        "canDoKreearra"
     ],
     "Lava Strykewyrm": [
         "canEnterTheCharredDungeon"
@@ -118,12 +188,21 @@ export const NPC_RULES = {
     "Martial salvage": [
         "canDoSalvaging"
     ],
+    "Mithril dragon": {
+        "all": [
+            "canKillDifficultDragons",
+            "canEnterAncientCavern"
+        ]
+    },
     "Narwhal": {
         "all": [
             "canDoSailingCombat",
             "canSailToTheNorthernOcean"
         ]
     },
+    "Ninja impling": [
+        "canTrainHunter"
+    ],
     "Plundered salvage": [
         "canDoSalvaging"
     ],
@@ -148,6 +227,15 @@ export const NPC_RULES = {
     "Sea Snake Young": [
         "canCompleteRoyalTrouble"
     ],
+    "Sergeant Grimspike": [
+        "canDoGeneralGraardor"
+    ],
+    "Sergeant Steelwill": [
+        "canDoGeneralGraardor"
+    ],
+    "Sergeant Strongstack": [
+        "canDoGeneralGraardor"
+    ],
     "Shellbane Gryphon": [
         "canCompleteTroubledTortugans"
     ],
@@ -157,11 +245,38 @@ export const NPC_RULES = {
     "Skeletal wyvern": [
         "hasAccessToWyvernProtection"
     ],
+    "Skeleton brute": [
+        "canEnterAncientCavern"
+    ],
+    "Skeleton heavy": [
+        "canEnterAncientCavern"
+    ],
+    "Skeleton hero": [
+        "canEnterAncientCavern"
+    ],
+    "Skeleton thug": [
+        "canEnterAncientCavern"
+    ],
+    "Skeleton warlord": [
+        "canEnterAncientCavern"
+    ],
     "Spined kraken": [
         "canDoSailingCombat"
     ],
     "Spitting Wyvern": [
         "canKillFossilIslandWyverns"
+    ],
+    "Starlight": [
+        "canDoCommanderZilyana"
+    ],
+    "Steel Chest": [
+        "canDoShadesOfMortton"
+    ],
+    "Steel dragon": [
+        "canKillDifficultDragons"
+    ],
+    "Storage crate": [
+        "canCompleteTheDigSite"
     ],
     "Taloned Wyvern": [
         "canKillFossilIslandWyverns"
@@ -174,6 +289,9 @@ export const NPC_RULES = {
     ],
     "Tree spirit": [
         "canCompleteFairytaleIGrowingPains"
+    ],
+    "Tstanon Karlak": [
+        "canDoKrilTsutsaroth"
     ],
     "Unsired": {
         "all": [
@@ -190,8 +308,14 @@ export const NPC_RULES = {
             "canCompleteSongOfTheElves"
         ]
     },
+    "Wingman Skree": [
+        "canDoKreearra"
+    ],
     "Wyrm": [
         "canEnterKaruulmSlayerDungeon"
+    ],
+    "Zakl'n Gritch": [
+        "canDoKrilTsutsaroth"
     ],
     "Zombie (Tarn's Lair)": [
         "canCompletePriestInPeril"

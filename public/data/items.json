@@ -209,9 +209,17 @@
         "image": "3rd_age_felling_axe.png",
         "tags": ["clue-reward-only"],
         "sources": {
-            "craftable": [
-                [20011, 28177]
-            ]
+            "other": {
+                "Creating a 3rd age felling axe": {
+                    "notes": "Requires a 3rd age axe and a Felling axe handle",
+                    "rule": {
+                        "all": [
+                            { "has": 20011 },
+                            { "has": 28177 }
+                        ]
+                    }
+                }
+            }
         }
     },
     {
@@ -1830,7 +1838,7 @@
                     "droprate": "1/27",
                     "url": "https://oldschool.runescape.wiki/w/Reward_Chest_(The_Gauntlet)"
                     },
-                "Steel chest": {
+                "Steel Chest": {
                     "droprate": "1/33.6",
                     "url": "https://oldschool.runescape.wiki/w/Steel_chest"
                     },
@@ -1888,7 +1896,7 @@
         "image": "adamant_dagger(p).png",
         "sources": {
             "drops": {
-                "Steel chest": {
+                "Steel Chest": {
                     "droprate": "1/134.4",
                     "url": "https://oldschool.runescape.wiki/w/Steel_chest"
                     }
@@ -2123,7 +2131,20 @@
         "index": 70,
         "id": 28211,
         "name": "Adamant felling axe",
-        "image": "adamant_felling_axe.png"
+        "image": "adamant_felling_axe.png",
+        "sources": {
+            "other": {
+                "Creating an Adamant felling axe": {
+                    "notes": "Requires an adamant axe and a Felling axe handle",
+                    "rule": {
+                        "all": [
+                            { "has": 20011 },
+                            { "has": 1357 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 71,
@@ -3002,7 +3023,26 @@
         "index": 176,
         "id": 25849,
         "name": "Amethyst dart",
-        "image": "amethyst_dart.png"
+        "image": "amethyst_dart.png",
+        "sources": {
+            "other": {
+                "Fletching Amethyst darts": {
+                    "notes": "Amethyst dart tip and Feather",
+                    "rule": {
+                        "all": [
+                            { "has": 25853 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "25851": "187",
+            "25855": "5937",
+            "25857": "5940"
+        }
     },
     {
         "index": 177,
@@ -3014,19 +3054,58 @@
         "index": 178,
         "id": 25851,
         "name": "Amethyst dart(p)",
-        "image": "amethyst_dart(p).png"
+        "image": "amethyst_dart(p).png",
+        "sources": {
+            "other": {
+                "Poisoning an Amethyst dart": {
+                    "notes": "Requires an Amethyst dart and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 25849 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 179,
         "id": 25855,
         "name": "Amethyst dart(p+)",
-        "image": "amethyst_dart(p+).png"
+        "image": "amethyst_dart(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning an Amethyst dart": {
+                    "notes": "Requires an Amethyst dart and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 25849 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 180,
         "id": 25857,
         "name": "Amethyst dart(p++)",
-        "image": "amethyst_dart(p++).png"
+        "image": "amethyst_dart(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning an Amethyst dart": {
+                    "notes": "Requires an Amethyst dart and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 25849 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 181,
@@ -6261,25 +6340,77 @@
         "index": 551,
         "id": 3093,
         "name": "Black dart",
-        "image": "black_dart.png"
+        "image": "black_dart.png",
+        "sources": {
+            "drops": {
+                "Soldier (Burthorpe)": {
+                    "droprate": "1/14.22",
+                    "url": "https://oldschool.runescape.wiki/w/Soldier_(Burthorpe)"
+                    }
+            }
+        },
+        "processable": {
+            "p": "187",
+            "p+": "5937",
+            "p++": "5940"
+        }
     },
     {
         "index": 552,
         "id": 3094,
         "name": "Black dart(p)",
-        "image": "black_dart(p).png"
+        "image": "black_dart(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Black dart": {
+                    "notes": "Requires a Black dart and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 3093 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 553,
         "id": 5631,
         "name": "Black dart(p+)",
-        "image": "black_dart(p+).png"
+        "image": "black_dart(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Black dart": {
+                    "notes": "Requires a Black dart and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 3093 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 554,
         "id": 5638,
         "name": "Black dart(p++)",
-        "image": "black_dart(p++).png"
+        "image": "black_dart(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Black dart": {
+                    "notes": "Requires a Black dart and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 3093 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 555,
@@ -6375,7 +6506,20 @@
         "index": 564,
         "id": 28205,
         "name": "Black felling axe",
-        "image": "black_felling_axe.png"
+        "image": "black_felling_axe.png",
+        "sources": {
+            "other": {
+                "Creating an Black felling axe": {
+                    "notes": "Requires a Black axe and a Felling axe handle",
+                    "rule": {
+                        "all": [
+                            { "has": 1361 },
+                            { "has": 1357 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 565,
@@ -8585,7 +8729,36 @@
         "index": 839,
         "id": 806,
         "name": "Bronze dart",
-        "image": "bronze_dart.png"
+        "image": "bronze_dart.png",
+        "sources": {
+            "drops": {
+                "Ork": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Ork"
+                    },
+                "Barrel (Shaman Caves)": {
+                    "droprate": "Uncommon",
+                    "url": "https://oldschool.runescape.wiki/w/Barrel_(Shaman_Caves)"
+                    }
+            },
+            "other": {
+                "Fletching Bronze darts": {
+                    "notes": "Bronze dart tip and Feather",
+                    "rule": {
+                        "all": [
+                            { "has": 819 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "812": "187",
+            "5628": "5937",
+            "5635": "5940"
+        }
     },
     {
         "index": 840,
@@ -8597,19 +8770,58 @@
         "index": 841,
         "id": 812,
         "name": "Bronze dart(p)",
-        "image": "bronze_dart(p).png"
+        "image": "bronze_dart(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bronze dart": {
+                    "notes": "Requires a Bronze dart and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 806 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 842,
         "id": 5628,
         "name": "Bronze dart(p+)",
-        "image": "bronze_dart(p+).png"
+        "image": "bronze_dart(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bronze dart": {
+                    "notes": "Requires a Bronze dart and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 806 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 843,
         "id": 5635,
         "name": "Bronze dart(p++)",
-        "image": "bronze_dart(p++).png"
+        "image": "bronze_dart(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bronze dart": {
+                    "notes": "Requires a Bronze dart and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 806 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 844,
@@ -8630,7 +8842,20 @@
         "index": 845,
         "id": 28196,
         "name": "Bronze felling axe",
-        "image": "bronze_felling_axe.png"
+        "image": "bronze_felling_axe.png",
+        "sources": {
+            "other": {
+                "Creating an Bronze felling axe": {
+                    "notes": "Requires a Bronze axe and a Felling axe handle",
+                    "rule": {
+                        "all": [
+                            { "has": 1351 },
+                            { "has": 1357 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 846,
@@ -11709,7 +11934,36 @@
         "index": 1303,
         "id": 11230,
         "name": "Dragon dart",
-        "image": "dragon_dart.png"
+        "image": "dragon_dart.png",
+        "sources": {
+            "drops": {
+                "Forgotten Lockbox": {
+                    "droprate": "1/7",
+                    "url": "https://oldschool.runescape.wiki/w/Forgotten_lockbox"
+                    },
+                "Dragon Impling": {
+                    "droprate": "1/19",
+                    "url": "https://oldschool.runescape.wiki/w/Dragon_impling"
+                    }
+            },
+            "other": {
+                "Fletching Dragon darts": {
+                    "notes": "Dragon dart tip and Feather",
+                    "rule": {
+                        "all": [
+                            { "has": 11232 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "11231": "187",
+            "11233": "5937",
+            "11234": "5940"
+        }
     },
     {
         "index": 1304,
@@ -11721,19 +11975,58 @@
         "index": 1305,
         "id": 11231,
         "name": "Dragon dart(p)",
-        "image": "dragon_dart(p).png"
+        "image": "dragon_dart(p).png",
+        "sources": {
+            "other": {
+                "Poisoning an Dragon dart": {
+                    "notes": "Requires an Dragon dart and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 11230 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1306,
         "id": 11233,
         "name": "Dragon dart(p+)",
-        "image": "dragon_dart(p+).png"
+        "image": "dragon_dart(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning an Dragon dart": {
+                    "notes": "Requires an Dragon dart and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 11230 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1307,
         "id": 11234,
         "name": "Dragon dart(p++)",
-        "image": "dragon_dart(p++).png"
+        "image": "dragon_dart(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Dragon dart": {
+                    "notes": "Requires a Dragon dart and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 11230 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1308,
@@ -11754,7 +12047,20 @@
         "index": 1309,
         "id": 28217,
         "name": "Dragon felling axe",
-        "image": "dragon_felling_axe.png"
+        "image": "dragon_felling_axe.png",
+        "sources": {
+            "other": {
+                "Creating an Dragon felling axe": {
+                    "notes": "Requires a Dragon axe and a Felling axe handle",
+                    "rule": {
+                        "all": [
+                            { "has": 6739 },
+                            { "has": 1357 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1310,
@@ -17291,13 +17597,76 @@
         "index": 2042,
         "id": 807,
         "name": "Iron dart",
-        "image": "iron_dart.png"
+        "image": "iron_dart.png",
+        "sources": {
+            "drops": {
+                "Storage crate": {
+                    "droprate": "1/19.5",
+                    "url": "https://oldschool.runescape.wiki/w/Storage_crate"
+                    },
+                "Ork": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Ork"
+                    },
+                "Skeleton (Tarn's Lair)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Tarn's_Lair)"
+                    },
+                "Barrel (Shaman Caves)": {
+                    "droprate": "Rare",
+                    "url": "https://oldschool.runescape.wiki/w/Barrel_(Shaman_Caves)"
+                    },
+                "Ava's attractor": {
+                    "droprate": "1/400",
+                    "url": "https://oldschool.runescape.wiki/w/Ava's_attractor"
+                    }
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fletching Iron darts": {
+                    "notes": "Iron dart tip and Feather",
+                    "rule": {
+                        "all": [
+                            { "has": 820 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "813": "187",
+            "5629": "5937",
+            "5636": "5940"
+        }
     },
     {
         "index": 2043,
         "id": 813,
         "name": "Iron dart (p)",
-        "image": "iron_dart_(p).png"
+        "image": "iron_dart_(p).png",
+        "sources": {
+            "drops": {
+                "Skeleton (Tarn's Lair)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Tarn's_Lair)"
+                    }
+            },
+            "other": {
+                "Poisoning an Iron dart": {
+                    "notes": "Requires an Iron dart and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 807 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2044,
@@ -17309,13 +17678,39 @@
         "index": 2045,
         "id": 5629,
         "name": "Iron dart(p+)",
-        "image": "iron_dart(p+).png"
+        "image": "iron_dart(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning an Iron dart": {
+                    "notes": "Requires an Iron dart and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 807 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2046,
         "id": 5636,
         "name": "Iron dart(p++)",
-        "image": "iron_dart(p++).png"
+        "image": "iron_dart(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning an Iron dart": {
+                    "notes": "Requires an Iron dart and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 807 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2047,
@@ -17336,7 +17731,20 @@
         "index": 2048,
         "id": 28199,
         "name": "Iron felling axe",
-        "image": "iron_felling_axe.png"
+        "image": "iron_felling_axe.png",
+        "sources": {
+            "other": {
+                "Creating an Iron felling axe": {
+                    "notes": "Requires a Iron axe and a Felling axe handle",
+                    "rule": {
+                        "all": [
+                            { "has": 1349 },
+                            { "has": 1357 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2049,
@@ -20130,7 +20538,40 @@
         "index": 2461,
         "id": 809,
         "name": "Mithril dart",
-        "image": "mithril_dart.png"
+        "image": "mithril_dart.png",
+        "sources": {
+            "drops": {
+                "Cyclops (Warriors' Guild Basement)": {
+                    "droprate": "1/16.67",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops#Warriors'_Guild_Basement"
+                    },
+                "Barrel (Shaman Caves)": {
+                    "droprate": "Rare",
+                    "url": "https://oldschool.runescape.wiki/w/Barrel_(Shaman_Caves)"
+                    },
+                "Ava's assembler": {
+                    "droprate": "1/400",
+                    "url": "https://oldschool.runescape.wiki/w/Ava's_assembler"
+                    }
+            },
+            "other": {
+                "Fletching Mithril darts": {
+                    "notes": "Mithril dart tip and Feather",
+                    "rule": {
+                        "all": [
+                            { "has": 822 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "815": "187",
+            "5632": "5937",
+            "5639": "5940"
+        }
     },
     {
         "index": 2462,
@@ -20142,19 +20583,58 @@
         "index": 2463,
         "id": 815,
         "name": "Mithril dart(p)",
-        "image": "mithril_dart(p).png"
+        "image": "mithril_dart(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Mithril dart": {
+                    "notes": "Requires a Mithril dart and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 809 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2464,
         "id": 5632,
         "name": "Mithril dart(p+)",
-        "image": "mithril_dart(p+).png"
+        "image": "mithril_dart(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Mithril dart": {
+                    "notes": "Requires a Mithril dart and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 809 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2465,
         "id": 5639,
         "name": "Mithril dart(p++)",
-        "image": "mithril_dart(p++).png"
+        "image": "mithril_dart(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Mithril dart": {
+                    "notes": "Requires a Mithril dart and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 809 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2466,
@@ -20175,7 +20655,20 @@
         "index": 2467,
         "id": 28208,
         "name": "Mithril felling axe",
-        "image": "mithril_felling_axe.png"
+        "image": "mithril_felling_axe.png",
+        "sources": {
+            "other": {
+                "Creating an Mithril felling axe": {
+                    "notes": "Requires a Mithril axe and a Felling axe handle",
+                    "rule": {
+                        "all": [
+                            { "has": 1355 },
+                            { "has": 1357 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2468,
@@ -25473,7 +25966,68 @@
         "index": 3201,
         "id": 811,
         "name": "Rune dart",
-        "image": "rune_dart.png"
+        "image": "rune_dart.png",
+        "sources": {
+            "drops": {
+                "Commander Zilyana": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Commander_Zilyana"
+                    },
+                "Crystal impling": {
+                    "droprate": "1/18",
+                    "url": "https://oldschool.runescape.wiki/w/Crystal_impling"
+                    },
+                "Ninja impling": {
+                    "droprate": "1/19",
+                    "url": "https://oldschool.runescape.wiki/w/Ninja_impling"
+                    },
+                "Lava Dragon": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Lava_dragon"
+                    },
+                "Chaos Elemental": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Chaos_Elemental"
+                    },
+                "Brutal black dragon": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Brutal_black_dragon"
+                    },
+                "Lava Strykewyrm": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Lava_Strykewyrm"
+                    },
+                "Vet'ion": {
+                    "droprate": "1/42",
+                    "url": "https://oldschool.runescape.wiki/w/Vet'ion"
+                    },
+                "Venenatis": {
+                    "droprate": "1/42",
+                    "url": "https://oldschool.runescape.wiki/w/Venenatis"
+                    },
+                "Red dragon": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Red_dragon"
+                    }
+            },
+            "other": {
+                "Fletching Rune darts": {
+                    "notes": "Rune dart tip and Feather",
+                    "rule": {
+                        "all": [
+                            { "has": 824 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "817": "187",
+            "5634": "5937",
+            "5641": "5940"
+        }
     },
     {
         "index": 3202,
@@ -25485,19 +26039,72 @@
         "index": 3203,
         "id": 817,
         "name": "Rune dart(p)",
-        "image": "rune_dart(p).png"
+        "image": "rune_dart(p).png",
+        "sources": {
+            "drops": {
+                "Mithril dragon": {
+                    "droprate": "1/18.29",
+                    "url": "https://oldschool.runescape.wiki/w/Mithril_dragon"
+                    },
+                "Steel dragon": {
+                    "droprate": "1/18.29",
+                    "url": "https://oldschool.runescape.wiki/w/Steel_dragon"
+                    },
+                "Iron dragon": {
+                    "droprate": "1/18.29",
+                    "url": "https://oldschool.runescape.wiki/w/Iron_dragon"
+                    }
+            },
+            "other": {
+                "Poisoning a Rune dart": {
+                    "notes": "Requires a Rune dart and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 811 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3204,
         "id": 5634,
         "name": "Rune dart(p+)",
-        "image": "rune_dart(p+).png"
+        "image": "rune_dart(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Rune dart": {
+                    "notes": "Requires a Rune dart and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 811 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3205,
         "id": 5641,
         "name": "Rune dart(p++)",
-        "image": "rune_dart(p++).png"
+        "image": "rune_dart(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Rune dart": {
+                    "notes": "Requires a Rune dart and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 811 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3206,
@@ -25539,7 +26146,20 @@
         "index": 3209,
         "id": 28214,
         "name": "Rune felling axe",
-        "image": "rune_felling_axe.png"
+        "image": "rune_felling_axe.png",
+        "sources": {
+            "other": {
+                "Creating an Rune felling axe": {
+                    "notes": "Requires a Rune axe and a Felling axe handle",
+                    "rule": {
+                        "all": [
+                            { "has": 1359 },
+                            { "has": 1357 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3210,
@@ -28465,7 +29085,120 @@
         "index": 3680,
         "id": 808,
         "name": "Steel dart",
-        "image": "steel_dart.png"
+        "image": "steel_dart.png",
+        "sources": {
+            "drops": {
+                "Balfrug Kreeyath": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Balfrug_Kreeyath"
+                    },
+                "Zakl'n Gritch": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Zakl'n_Gritch"
+                    },
+                "Tstanon Kerlak": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Tstanon_Kerlak"
+                    },
+                "Starlight": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Starlight"
+                    },
+                "Bree": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Bree"
+                    },
+                "Growler": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Growler"
+                    },
+                "Sergeant Strongstack": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Sergeant_Strongstack"
+                    },
+                "Sergeant Steelwill": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Sergeant_Steelwill"
+                    },
+                "Sergeant Grimspike": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Sergeant_Grimspike"
+                    },
+                "Flight Kilisa": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Flight_Kilisa"
+                    },
+                "Wingman Skree": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Wingman_Skree"
+                    },
+                "Flockleader Geerin": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Flockleader Geerin"
+                    },
+                "Zombie (Tarn's Lair)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_(Tarn's_Lair)"
+                    },
+                "Skeleton brute": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_brute"
+                    },
+                "Angry barbarian spirit": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Angry_barbarian_spirit"
+                    },
+                "Berserk barbarian spirit": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Berserk_barbarian_spirit"
+                    },
+                "Enraged barbarian spirit": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Enraged_barbarian_spirit"
+                    },
+                "Skeleton heavy": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_heavy"
+                    },
+                "Skeleton hero": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_hero"
+                    },
+                "Skeleton thug": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_thug"
+                    },
+                "Skeleton warlord": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_warlord"
+                    },
+                "Barrel (Shaman Caves)": {
+                    "droprate": "Rare",
+                    "url": "https://oldschool.runescape.wiki/w/Barrel_(Shaman_Caves)"
+                    },
+                "Ava's accumulator": {
+                    "droprate": "1/400",
+                    "url": "https://oldschool.runescape.wiki/w/Ava's_accumulator"
+                    }
+            },
+            "other": {
+                "Fletching Steel darts": {
+                    "notes": "Steel dart tip and Feather",
+                    "rule": {
+                        "all": [
+                            { "has": 821 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "814": "187",
+            "5630": "5937",
+            "5637": "5940"
+        }
     },
     {
         "index": 3681,
@@ -28477,19 +29210,58 @@
         "index": 3682,
         "id": 814,
         "name": "Steel dart(p)",
-        "image": "steel_dart(p).png"
+        "image": "steel_dart(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Steel dart": {
+                    "notes": "Requires a Steel dart and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 808 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3683,
         "id": 5630,
         "name": "Steel dart(p+)",
-        "image": "steel_dart(p+).png"
+        "image": "steel_dart(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Steel dart": {
+                    "notes": "Requires a Steel dart and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 808 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3684,
         "id": 5637,
         "name": "Steel dart(p++)",
-        "image": "steel_dart(p++).png"
+        "image": "steel_dart(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Steel dart": {
+                    "notes": "Requires a Steel dart and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 808 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3685,
@@ -28510,7 +29282,20 @@
         "index": 3686,
         "id": 28202,
         "name": "Steel felling axe",
-        "image": "steel_felling_axe.png"
+        "image": "steel_felling_axe.png",
+        "sources": {
+            "other": {
+                "Creating an Steel felling axe": {
+                    "notes": "Requires a Steel axe and a Felling axe handle",
+                    "rule": {
+                        "all": [
+                            { "has": 1353 },
+                            { "has": 1357 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3687,
