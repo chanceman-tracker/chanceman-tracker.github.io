@@ -1173,7 +1173,7 @@
             "drops": {
                 "K'ril Tsutsaroth": {
                     "droprate": "1/15.88",
-                    "url": "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth"
+                    "url": "https://oldschool.runescape.wiki/w/K'ril_Tsutsaroth"
                     },
                 "Maniacal Monkey Archer": {
                     "droprate": "1/20",
@@ -1270,7 +1270,7 @@
                     },
                 "Wyrm": {
                     "droprate": "1/38",
-                    "url": "https://oldschool.runescape.wiki/w/Wyrm#Wilderness_Slayer_Cave"
+                    "url": "https://oldschool.runescape.wiki/w/Wyrm"
                     },
                 "Dust devil": {
                     "droprate": "1/42",
@@ -6316,25 +6316,133 @@
         "index": 547,
         "id": 1217,
         "name": "Black dagger",
-        "image": "black_dagger.png"
+        "image": "black_dagger.png",
+        "sources": {
+            "drops": {
+                "Christmas cracker": {
+                    "droprate": "Always",
+                    "url": "https://oldschool.runescape.wiki/w/Christmas_cracker"
+                    },
+                "Bronze Chest": {
+                    "droprate": "1/16",
+                    "url": "https://oldschool.runescape.wiki/w/Bronze_Chest"
+                    },
+                "Cyclops (Warriors' Guild Basement)": {
+                    "droprate": "1/20",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops#Warriors'_Guild_Basement"
+                    },
+                "Reward casket (easy)": {
+                    "droprate": "1/36",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(easy)"
+                    },
+                "Spiritual warrior": {
+                    "droprate": "1/63.5",
+                    "url": "https://oldschool.runescape.wiki/w/Spiritual_warrior"
+                    },
+                "Cyclops (Warriors' Guild Top Floor)": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops#Warriors'_Guild_Top_Floor"
+                    },
+                "Cyclops (God Wars Dungeon)": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops_(God_Wars_Dungeon)"
+                    },
+                "Cyclops (Catacombs of Kourend)": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops_(Catacombs_of_Kourend)"
+                    },
+                "Salarin the twisted": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Salarin_the_twisted"
+                    },
+                "Chaos druid warrior": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Chaos_druid_warrior"
+                    },
+                "Reward casket (beginner)": {
+                    "droprate": "1/805.1",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(beginner)"
+                    }
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        },
+        "processable": {
+            "1233": "187",
+            "5682": "5937",
+            "5700": "5940"
+        }
     },
     {
         "index": 548,
         "id": 1233,
         "name": "Black dagger(p)",
-        "image": "black_dagger(p).png"
+        "image": "black_dagger(p).png",
+        "sources": {
+            "drops": {
+                "Bronze Chest": {
+                    "droprate": "1/19",
+                    "url": "https://oldschool.runescape.wiki/w/Bronze_Chest"
+                    },
+                "Shadow warrior": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Shadow_warrior"
+                    }
+            },
+            "other": {
+                "Poisoning a Black dagger": {
+                    "notes": "Requires a Black dagger and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 1217 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 549,
         "id": 5682,
         "name": "Black dagger(p+)",
-        "image": "black_dagger(p+).png"
+        "image": "black_dagger(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Black dagger": {
+                    "notes": "Requires a Black dagger and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 1217 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 550,
         "id": 5700,
         "name": "Black dagger(p++)",
-        "image": "black_dagger(p++).png"
+        "image": "black_dagger(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Black dagger": {
+                    "notes": "Requires a Black dagger and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 1217 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 551,
@@ -8240,25 +8348,81 @@
         "index": 761,
         "id": 8872,
         "name": "Bone dagger",
-        "image": "bone_dagger.png"
+        "image": "bone_dagger.png",
+        "sources": {
+            "drops": {
+                "Chest (Dorgesh-Kaan Average)": {
+                    "droprate": "1/23",
+                    "url": "https://oldschool.runescape.wiki/w/Chest_(Dorgesh-Kaan_Average)"
+                    }
+            },
+            "shops": {
+                "Yes": "canCompleteTheLostTribe"
+            }
+
+        },
+        "processable": {
+            "8874": "187",
+            "8876": "5937",
+            "8878": "5940"
+        }
     },
     {
         "index": 762,
         "id": 8874,
         "name": "Bone dagger (p)",
-        "image": "bone_dagger_(p).png"
+        "image": "bone_dagger_(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bone dagger": {
+                    "notes": "Requires a Bone dagger and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 8872 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 763,
         "id": 8876,
         "name": "Bone dagger (p+)",
-        "image": "bone_dagger_(p+).png"
+        "image": "bone_dagger_(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bone dagger": {
+                    "notes": "Requires a Bone dagger and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 8872 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 764,
         "id": 8878,
         "name": "Bone dagger (p++)",
-        "image": "bone_dagger_(p++).png"
+        "image": "bone_dagger_(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bone dagger": {
+                    "notes": "Requires a Bone dagger and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 8872 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 765,
@@ -8705,25 +8869,117 @@
         "index": 835,
         "id": 1205,
         "name": "Bronze dagger",
-        "image": "bronze_dagger.png"
+        "image": "bronze_dagger.png",
+        "sources": {
+            "drops": {
+                "Minotaur": {
+                    "droprate": "1/25.25",
+                    "url": "https://oldschool.runescape.wiki/w/Minotaur"
+                    },
+                "Ogre Coffin": {
+                    "droprate": "1/33.33",
+                    "url": "https://oldschool.runescape.wiki/w/Ogre_Coffin"
+                    },
+                "H.A.M. Member": {
+                    "droprate": "1/34",
+                    "url": "https://oldschool.runescape.wiki/w/H.A.M._Member"
+                    },
+                "H.A.M. Guard": {
+                    "droprate": "1/36.67",
+                    "url": "https://oldschool.runescape.wiki/w/H.A.M._Guard"
+                    },
+                "Guard (H.A.M. Storerooms)": {
+                    "droprate": "1/55.56",
+                    "url": "https://oldschool.runescape.wiki/w/Guard_(H.A.M._Storerooms)"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Smithing Bronze dagger": {
+                    "notes": "Bronze bar and Hammer",
+                    "rule": {
+                        "all": [
+                            { "has": 2349 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "1221": "187",
+            "5670": "5937",
+            "5688": "5940"
+        }
     },
     {
         "index": 836,
         "id": 1221,
         "name": "Bronze dagger(p)",
-        "image": "bronze_dagger(p).png"
+        "image": "bronze_dagger(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bronze dagger": {
+                    "notes": "Requires a Bronze dagger and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 1205 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 837,
         "id": 5670,
         "name": "Bronze dagger(p+)",
-        "image": "bronze_dagger(p+).png"
+        "image": "bronze_dagger(p+).png",
+        "sources": {
+            "drops": {
+                "Gorak": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Gorak"
+                    }
+            },
+            "other": {
+                "Poisoning a Bronze dagger": {
+                    "notes": "Requires a Bronze dagger and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 1205 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 838,
         "id": 5688,
         "name": "Bronze dagger(p++)",
-        "image": "bronze_dagger(p++).png"
+        "image": "bronze_dagger(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bronze dagger": {
+                    "notes": "Requires a Bronze dagger and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 1205 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 839,
@@ -11910,25 +12166,160 @@
         "index": 1299,
         "id": 1215,
         "name": "Dragon dagger",
-        "image": "dragon_dagger.png"
+        "image": "dragon_dagger.png",
+        "sources": {
+            "drops": {
+                "Tormented Demon": {
+                    "droprate": "1/17",
+                    "url": "https://oldschool.runescape.wiki/w/Tormented_Demon"
+                    },
+                "Crystal impling": {
+                    "droprate": "1/18",
+                    "url": "https://oldschool.runescape.wiki/w/Crystal_impling"
+                    },
+                "Magpie impling": {
+                    "droprate": "1/21",
+                    "url": "https://oldschool.runescape.wiki/w/Magpie_impling"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/30.3",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/32.3",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Venenatis": {
+                    "droprate": "1/63",
+                    "url": "https://oldschool.runescape.wiki/w/Venenatis"
+                    },
+                "Chaos Elemental": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Chaos_Elemental"
+                    },
+                "Gold Chest": {
+                    "droprate": "1/72",
+                    "url": "https://oldschool.runescape.wiki/w/Gold_Chest"
+                    },
+                "Wyrm": {
+                    "droprate": "1/76",
+                    "url": "https://oldschool.runescape.wiki/w/Wyrm"
+                    },
+                "Dust devil (Wilderness Slayer Cave)": {
+                    "droprate": "1/126",
+                    "url": "https://oldschool.runescape.wiki/w/Dust_devil#Wilderness_Slayer_Cave"
+                    },
+                "Dust devil": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Dust_devil"
+                    },
+                "Brutal black dragon": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Brutal_black_dragon"
+                    },
+                "Brutal blue dragon": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Brutal_blue_dragon"
+                    },
+                "Brutal red dragon": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Brutal_red_dragon"
+                    },
+                "Zombie Pirate's Locker": {
+                    "droprate": "1/173",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_Pirate's_Locker"
+                    },
+                "Zombie pirate": {
+                    "droprate": "1/1,260",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_pirate"
+                    },
+                "Revenants": {
+                    "droprate": "Varies",
+                    "url": "https://oldschool.runescape.wiki/w/Revenants"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        },
+        "processable": {
+            "1231": "187",
+            "5680": "5937",
+            "5698": "5940"
+        }
     },
     {
         "index": 1300,
         "id": 1231,
         "name": "Dragon dagger(p)",
-        "image": "dragon_dagger(p).png"
+        "image": "dragon_dagger(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Dragon dagger": {
+                    "notes": "Requires a Dragon dagger and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 1215 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1301,
         "id": 5680,
         "name": "Dragon dagger(p+)",
-        "image": "dragon_dagger(p+).png"
+        "image": "dragon_dagger(p+).png",
+        "sources": {
+            "drops": {
+                "Ninja impling": {
+                    "droprate": "1/19",
+                    "url": "https://oldschool.runescape.wiki/w/Ninja_impling"
+                    }
+            },
+            "other": {
+                "Poisoning a Dragon dagger": {
+                    "notes": "Requires a Dragon dagger and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 1215 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1302,
         "id": 5698,
         "name": "Dragon dagger(p++)",
-        "image": "dragon_dagger(p++).png"
+        "image": "dragon_dagger(p++).png",
+        "sources": {
+            "drops": {
+                "Dragon impling": {
+                    "droprate": "1/19",
+                    "url": "https://oldschool.runescape.wiki/w/Dragon_impling"
+                    },
+                "K'ril Tsutsaroth": {
+                    "droprate": "1/63.5",
+                    "url": "https://oldschool.runescape.wiki/w/K'ril_Tsutsaroth"
+                    }
+            },
+            "other": {
+                "Poisoning a Dragon dagger": {
+                    "notes": "Requires a Dragon dagger and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 1215 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1303,
@@ -17573,25 +17964,129 @@
         "index": 2038,
         "id": 1203,
         "name": "Iron dagger",
-        "image": "iron_dagger.png"
+        "image": "iron_dagger.png",
+        "sources": {
+            "drops": {
+                "Guard": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Guard"
+                    },
+                "Druid": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Druid"
+                    },
+                "Pirate": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Pirate"
+                    },
+                "Hill Giant": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Hill_Giant"
+                    },
+                "H.A.M. Member": {
+                    "droprate": "1/34",
+                    "url": "https://oldschool.runescape.wiki/w/H.A.M._Member"
+                    },
+                "H.A.M. Guard": {
+                    "droprate": "1/36.67",
+                    "url": "https://oldschool.runescape.wiki/w/H.A.M._Guard"
+                    },
+                "Man": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Man"
+                    },
+                "Al Kharid warrior": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/H.A.M._Guard"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Smithing Iron dagger": {
+                    "notes": "Iron bar and Hammer",
+                    "rule": {
+                        "all": [
+                            { "has": 2351 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "1219": "187",
+            "5668": "5937",
+            "5686": "5940"
+        }
     },
     {
         "index": 2039,
         "id": 1219,
         "name": "Iron dagger(p)",
-        "image": "iron_dagger(p).png"
+        "image": "iron_dagger(p).png",
+        "sources": {
+            "drops": {
+                "Rogue": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Rogue"
+                    }
+            },
+            "other": {
+                "Poisoning an Iron dagger": {
+                    "notes": "Requires an Iron dagger and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 1203 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2040,
         "id": 5668,
         "name": "Iron dagger(p+)",
-        "image": "iron_dagger(p+).png"
+        "image": "iron_dagger(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning an Iron dagger": {
+                    "notes": "Requires an Iron dagger and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 1203 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2041,
         "id": 5686,
         "name": "Iron dagger(p++)",
-        "image": "iron_dagger(p++).png"
+        "image": "iron_dagger(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning an Iron dagger": {
+                    "notes": "Requires an Iron dagger and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 1203 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2042,
@@ -20514,25 +21009,126 @@
         "index": 2457,
         "id": 1209,
         "name": "Mithril dagger",
-        "image": "mithril_dagger.png"
+        "image": "mithril_dagger.png",
+        "sources": {
+            "drops": {
+                "Bronze Chest": {
+                    "droprate": "1/19.72",
+                    "url": "https://oldschool.runescape.wiki/w/Bronze_Chest"
+                    },
+                "Moonlight Cockatrice": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Moonlight_Cockatrice"
+                    },
+                "Zombie pirate (Harmony Island)": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_pirate_(Harmony_Island)"
+                    },
+                "Zombie (Tarn's Lair)": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_(Tarn's_Lair)"
+                    },
+                "Cyclops (Warriors' Guild Top Floor)": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops#Warriors'_Guild_Top_Floor"
+                    },
+                "Cyclops (Warriors' Guild Basement)": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops#Warriors'_Guild_Basement"
+                    },
+                "Cyclops (God Wars Dungeon)": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops_(God_Wars_Dungeon)"
+                    },
+                "Tarnished chest": {
+                    "droprate": "Unknown 2 Dec 2025",
+                    "url": "https://oldschool.runescape.wiki/w/Tarnished_chest"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Smithing Mithril dagger": {
+                    "notes": "Mithril bar and Hammer",
+                    "rule": {
+                        "all": [
+                            { "has": 2359 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "1225": "187",
+            "5674": "5937",
+            "5692": "5940"
+        }
     },
     {
         "index": 2458,
         "id": 1225,
         "name": "Mithril dagger(p)",
-        "image": "mithril_dagger(p).png"
+        "image": "mithril_dagger(p).png",
+        "sources": {
+            "drops": {
+                "Bronze Chest": {
+                    "droprate": "1/24.67",
+                    "url": "https://oldschool.runescape.wiki/w/Bronze_Chest"
+                    }
+            },
+            "other": {
+                "Poisoning a Mithril dagger": {
+                    "notes": "Requires a Mithril dagger and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 1209 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2459,
         "id": 5674,
         "name": "Mithril dagger(p+)",
-        "image": "mithril_dagger(p+).png"
+        "image": "mithril_dagger(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Mithril dagger": {
+                    "notes": "Requires a Mithril dagger and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 1209 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2460,
         "id": 5692,
         "name": "Mithril dagger(p++)",
-        "image": "mithril_dagger(p++).png"
+        "image": "mithril_dagger(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Mithril dagger": {
+                    "notes": "Requires a Mithril dagger and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 1209 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2461,
@@ -25942,25 +26538,208 @@
         "index": 3197,
         "id": 1213,
         "name": "Rune dagger",
-        "image": "rune_dagger.png"
+        "image": "rune_dagger.png",
+        "sources": {
+            "drops": {
+                "Lost mahogany crate": {
+                    "droprate": "1/8",
+                    "url": "https://oldschool.runescape.wiki/w/Lost_mahogany_crate"
+                    },
+                "Vyrewatch Sentinel": {
+                    "droprate": "1/15.5",
+                    "url": "https://oldschool.runescape.wiki/w/Vyrewatch_Sentinel"
+                    },
+                "Vyrewatch": {
+                    "droprate": "1/16",
+                    "url": "https://oldschool.runescape.wiki/w/Vyrewatch"
+                    },
+                "Thermonuclear smoke devil": {
+                    "droprate": "1/21.4",
+                    "url": "https://oldschool.runescape.wiki/w/Thermonuclear_smoke_devil"
+                    },
+                "Zamorak warrior": {
+                    "droprate": "1/25",
+                    "url": "https://oldschool.runescape.wiki/w/Zamorak_warrior"
+                    },
+                "Reward casket (hard)": {
+                    "droprate": "1/27.1",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(hard)"
+                    },
+                "Bull shark": {
+                    "droprate": "1/33.33",
+                    "url": "https://oldschool.runescape.wiki/w/Bull_shark"
+                    },
+                "Tiger shark": {
+                    "droprate": "1/33.33",
+                    "url": "https://oldschool.runescape.wiki/w/Tiger_shark"
+                    },
+                "Araxyte": {
+                    "droprate": "1/42.33",
+                    "url": "https://oldschool.runescape.wiki/w/Tiger_shark"
+                    },
+                "Smoke devil": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Smoke_devil"
+                    },
+                "Basilisk Knight": {
+                    "droprate": "1/52",
+                    "url": "https://oldschool.runescape.wiki/w/Basilisk_Knight"
+                    },
+                "Ice Giant (Wilderness Slayer Cave)": {
+                    "droprate": "1/62",
+                    "url": "https://oldschool.runescape.wiki/w/Ice_giant#Wilderness_Slayer_Cave_drops"
+                    },
+                "Dust devil (Wilderness Slayer Cave)": {
+                    "droprate": "1/63",
+                    "url": "https://oldschool.runescape.wiki/w/Dust_devil#Wilderness_Slayer_Cave"
+                    },
+                "Dust devil": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Dust_devil"
+                    },
+                "Locust rider": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Locust_rider"
+                    },
+                "Scarab Mage": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Scarab_Mage"
+                    },
+                "Black demon (Wilderness Slayer Cave)": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Black_demon#Wilderness_Slayer_Cave"
+                    },
+                "Eclectic impling": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Eclectic_impling"
+                    },
+                "Temple spider": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Temple_spider"
+                    },
+                "Green dragon": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Green_dragon"
+                    },
+                "Blue dragon": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Green_dragon"
+                    },
+                "Turoth": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Turoth"
+                    },
+                "Basilisk": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Basilisk"
+                    },
+                "Cave horror": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Cave_horror"
+                    },
+                "Mutated Bloodveld": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Mutated_Bloodveld"
+                    }
+            },
+            "shops": {
+                "Yes": {
+                    "any": [
+                        "canCompleteIcthlarinsLittleHelper",
+                        "canCompleteSongOfTheElves"
+                    ]
+                }
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Smithing Rune dagger": {
+                    "notes": "Runite bar and Hammer",
+                    "rule": {
+                        "all": [
+                            { "has": 2363 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "1229": "187",
+            "5678": "5937",
+            "5696": "5940"
+        }
     },
     {
         "index": 3198,
         "id": 1229,
         "name": "Rune dagger(p)",
-        "image": "rune_dagger(p).png"
+        "image": "rune_dagger(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Rune dagger": {
+                    "notes": "Requires a Rune dagger and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 1213 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3199,
         "id": 5678,
         "name": "Rune dagger(p+)",
-        "image": "rune_dagger(p+).png"
+        "image": "rune_dagger(p+).png",
+        "sources": {
+            "drops": {
+                "Aviansie": {
+                    "droprate": "1/11.64",
+                    "url": "https://oldschool.runescape.wiki/w/Aviansie"
+                    }
+            },
+            "other": {
+                "Poisoning a Rune dagger": {
+                    "notes": "Requires a Rune dagger and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 1213 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3200,
         "id": 5696,
         "name": "Rune dagger(p++)",
-        "image": "rune_dagger(p++).png"
+        "image": "rune_dagger(p++).png",
+        "sources": {
+            "drops": {
+                "Barbarian Assault/Gambles (Low Gambles)": {
+                    "droprate": "1/11.64",
+                    "url": "https://oldschool.runescape.wiki/w/Barbarian_Assault/Gambles#Low_Gambles"
+                    }
+            },
+            "other": {
+                "Poisoning a Rune dagger": {
+                    "notes": "Requires a Rune dagger and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 1213 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3201,
@@ -29061,25 +29840,151 @@
         "index": 3676,
         "id": 1207,
         "name": "Steel dagger",
-        "image": "steel_dagger.png"
+        "image": "steel_dagger.png",
+        "sources": {
+            "drops": {
+                "Zamorak warrior": {
+                    "droprate": "1/25",
+                    "url": "https://oldschool.runescape.wiki/w/Zamorak_warrior"
+                    },
+                "Cyclops (Catacombs of Kourend)": {
+                    "droprate": "1/25",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops_(Catacombs_of_Kourend)"
+                    },
+                "Ork": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Ork"
+                    },
+                "Skeleton (Tarn's Lair)": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Tarn's_Lair)"
+                    },
+                "Ogre Coffin": {
+                    "droprate": "1/33.33",
+                    "url": "https://oldschool.runescape.wiki/w/Ogre_Coffin"
+                    },
+                "Cockatrice": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Cockatrice"
+                    },
+                "Kalphite Worker": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Kalphite_Worker"
+                    },
+                "Hobgoblin": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Hobgoblin"
+                    },
+                "Reward casket (beginner)": {
+                    "droprate": "1/44.73",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(beginner)"
+                    },
+                "Cyclops (Warriors' Guild Top Floor)": {
+                    "droprate": "1/50",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops#Warriors'_Guild_Top_Floor"
+                    },
+                "Cyclops (God Wars Dungeon)": {
+                    "droprate": "1/50",
+                    "url": "https://oldschool.runescape.wiki/w/Cyclops_(God_Wars_Dungeon)"
+                    },
+                "H.A.M. Member": {
+                    "droprate": "1/51",
+                    "url": "https://oldschool.runescape.wiki/w/H.A.M._Member"
+                    },
+                "H.A.M. Guard": {
+                    "droprate": "1/55",
+                    "url": "https://oldschool.runescape.wiki/w/H.A.M._Guard"
+                    },
+                "Guard (H.A.M. Storerooms)": {
+                    "droprate": "1/83.33",
+                    "url": "https://oldschool.runescape.wiki/w/Guard_(H.A.M._Storerooms)"
+                    },
+                "Rusty chest": {
+                    "droprate": "Unknown 2 Dec 2025",
+                    "url": "https://oldschool.runescape.wiki/w/Rusty_chest"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Smithing Steel dagger": {
+                    "notes": "Steel bar and Hammer",
+                    "rule": {
+                        "all": [
+                            { "has": 2353 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "1223": "187",
+            "5672": "5937",
+            "5690": "5940"
+        }
     },
     {
         "index": 3677,
         "id": 1223,
         "name": "Steel dagger(p)",
-        "image": "steel_dagger(p).png"
+        "image": "steel_dagger(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Steel dagger": {
+                    "notes": "Requires a Steel dagger and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 1207 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3678,
         "id": 5672,
         "name": "Steel dagger(p+)",
-        "image": "steel_dagger(p+).png"
+        "image": "steel_dagger(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Steel dagger": {
+                    "notes": "Requires a Steel dagger and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 1207 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3679,
         "id": 5690,
         "name": "Steel dagger(p++)",
-        "image": "steel_dagger(p++).png"
+        "image": "steel_dagger(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Steel dagger": {
+                    "notes": "Requires a Steel dagger and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 1207 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3680,
@@ -33343,7 +34248,12 @@
         "index": 4302,
         "id": 6609,
         "name": "White 2h sword",
-        "image": "white_2h_sword.png"
+        "image": "white_2h_sword.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4303,
@@ -33355,7 +34265,12 @@
         "index": 4304,
         "id": 6589,
         "name": "White battleaxe",
-        "image": "white_battleaxe.png"
+        "image": "white_battleaxe.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4305,
@@ -33403,7 +34318,12 @@
         "index": 4309,
         "id": 6619,
         "name": "White boots",
-        "image": "white_boots.png"
+        "image": "white_boots.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4310,
@@ -33424,37 +34344,96 @@
         "index": 4311,
         "id": 6615,
         "name": "White chainbody",
-        "image": "white_chainbody.png"
+        "image": "white_chainbody.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4312,
         "id": 6587,
         "name": "White claws",
-        "image": "white_claws.png"
+        "image": "white_claws.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4313,
         "id": 6591,
         "name": "White dagger",
-        "image": "white_dagger.png"
+        "image": "white_dagger.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        },
+        "processable": {
+            "6593": "187",
+            "6595": "5937",
+            "6597": "5940"
+        }
     },
     {
         "index": 4314,
         "id": 6593,
         "name": "White dagger(p)",
-        "image": "white_dagger(p).png"
+        "image": "white_dagger(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a White dagger": {
+                    "notes": "Requires a White dagger and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 6591 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4315,
         "id": 6595,
         "name": "White dagger(p+)",
-        "image": "white_dagger(p+).png"
+        "image": "white_dagger(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a White dagger": {
+                    "notes": "Requires a White dagger and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 6591 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4316,
         "id": 6597,
         "name": "White dagger(p++)",
-        "image": "white_dagger(p++).png"
+        "image": "white_dagger(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a White dagger": {
+                    "notes": "Requires a White dagger and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 6591 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4317,
@@ -33533,19 +34512,34 @@
         "index": 4322,
         "id": 6623,
         "name": "White full helm",
-        "image": "white_full_helm.png"
+        "image": "white_full_helm.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4323,
         "id": 6629,
         "name": "White gloves",
-        "image": "white_gloves.png"
+        "image": "white_gloves.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4324,
         "id": 6599,
         "name": "White halberd",
-        "image": "white_halberd.png"
+        "image": "white_halberd.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4325,
@@ -33566,7 +34560,12 @@
         "index": 4326,
         "id": 6633,
         "name": "White kiteshield",
-        "image": "white_kiteshield.png"
+        "image": "white_kiteshield.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4327,
@@ -33584,25 +34583,45 @@
         "index": 4329,
         "id": 6607,
         "name": "White longsword",
-        "image": "white_longsword.png"
+        "image": "white_longsword.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4330,
         "id": 6601,
         "name": "White mace",
-        "image": "white_mace.png"
+        "image": "white_mace.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4331,
         "id": 6603,
         "name": "White magic staff",
-        "image": "white_magic_staff.png"
+        "image": "white_magic_staff.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4332,
         "id": 6621,
         "name": "White med helm",
-        "image": "white_med_helm.png"
+        "image": "white_med_helm.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4333,
@@ -33614,37 +34633,67 @@
         "index": 4334,
         "id": 6617,
         "name": "White platebody",
-        "image": "white_platebody.png"
+        "image": "white_platebody.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4335,
         "id": 6625,
         "name": "White platelegs",
-        "image": "white_platelegs.png"
+        "image": "white_platelegs.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4336,
         "id": 6627,
         "name": "White plateskirt",
-        "image": "white_plateskirt.png"
+        "image": "white_plateskirt.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4337,
         "id": 6611,
         "name": "White scimitar",
-        "image": "white_scimitar.png"
+        "image": "white_scimitar.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4338,
         "id": 6631,
         "name": "White sq shield",
-        "image": "white_sq_shield.png"
+        "image": "white_sq_shield.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4339,
         "id": 6605,
         "name": "White sword",
-        "image": "white_sword.png"
+        "image": "white_sword.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4340,
@@ -33671,7 +34720,12 @@
         "index": 4342,
         "id": 6613,
         "name": "White warhammer",
-        "image": "white_warhammer.png"
+        "image": "white_warhammer.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteWanted"
+            }
+        }
     },
     {
         "index": 4343,

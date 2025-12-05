@@ -17,6 +17,9 @@ export const NPC_RULES = {
     "Angry barbarian spirit": [
         "canEnterAncientCavern"
     ],
+    "Araxyte": [
+        "canCompletePriestInPeril"
+    ],
     "Ava's accumulator": {
         "all": [
             "canCompleteAnimalMagnetism",
@@ -33,20 +36,32 @@ export const NPC_RULES = {
     "Ava's attractor": [
         "canCompleteAnimalMagnetism"
     ],
+    "Aviansie": [
+        "canShortrange"
+    ],
     "Balfrug Kreeyath": [
         "canDoKrilTsutsaroth"
     ],
     "Barrel (Shaman Caves)": [
-        "canDoLegendsQuest"
+        "canCompleteLegendsQuest"
     ],
     "Berserk barbarian spirit": [
         "canEnterAncientCavern"
+    ],
+    "Basilisk": [
+        "hasMirrorShield"
+    ],
+    "Basilisk Knight": [
+        "canCompleteTheFremennikExiles"
     ],
     "Black Chest": [
         "canDoShadesOfMortton"
     ],
     "Bree": [
         "canDoCommanderZilyana"
+    ],
+    "Bronze Chest": [
+        "canDoShadesOfMortton"
     ],
     "Bronze dragon": [
         "canKillDifficultDragons"
@@ -72,21 +87,30 @@ export const NPC_RULES = {
     "Cannonball stall": [
         "canCompletePandemonium"
     ],
+    "Cave horror": [
+        "canCompleteCabinFever"
+    ],
     "Chilled Jelly": [
         "canCompleteTheHeartOfDarkness"
     ],
+    "Chest (Dorgesh-Kaan Average)": {
+        "all": [
+            "canCompleteDeathToTheDorgeshuun",
+            "hasLockpick"
+        ]
+    },
     "Chewed bones": {
         "all": [
             "canKillDifficultDragons",
             "canEnterAncientCavern"
         ]
     },
-    "Crystal impling": {
-        "all": [
-            "canTrainHunter",
+    "Cockatrice": [
+        "hasMirrorShield"
+    ],
+    "Crystal impling": [
             "canCompleteSongOfTheElves"
-        ]
-    },
+    ],
     "Coffin (Hallowed Sepulchre)": [
         "canDoHallowedSepulchre"
     ],
@@ -107,6 +131,9 @@ export const NPC_RULES = {
     ],
     "Dust devil (Wilderness Slayer Cave)": [
         "hasFacemask"
+    ],
+    "Eclectic impling": [
+        "canTrainHunter"
     ],
     "Enraged barbarian spirit": [
         "canEnterAncientCavern"
@@ -155,6 +182,9 @@ export const NPC_RULES = {
     "Gryphon": [
         "canCompleteTroubledTortugans"
     ],
+    "Guard (H.A.M. Storerooms)": [
+        "canCompleteDeathToTheDorgeshuun"
+    ],
     "Hallowed sack": [
         "canDoHallowedSepulchre"
     ],
@@ -167,6 +197,9 @@ export const NPC_RULES = {
     "Kalphite Guardian": [
         "canEnterKalphiteLair"
     ],
+    "Kalphite Worker": [
+        "canEnterKalphiteLair"
+    ],
     "Kree'arra": [
         "canDoKreearra"
     ],
@@ -176,14 +209,23 @@ export const NPC_RULES = {
     "Large salvage": [
         "canDoSalvaging"
     ],
+    "Locust rider": [
+        "canCompleteIcthlarinsLittleHelper"
+    ],
     "Long-tailed Wyvern": [
         "canKillFossilIslandWyverns"
     ],
+    "Lost mahogany crate": [
+        "canCompletePandemonium"
+    ],
+    "Magpie impling": [
+        "canTrainHunter"
+    ],
     "Maniacal Monkey Archer": [
-        "CanCompleteMonkeyMadnessII"
+        "canCompleteMonkeyMadnessII"
     ],
     "Maniacal monkey": [
-        "CanCompleteMonkeyMadnessII"
+        "canCompleteMonkeyMadnessII"
     ],
     "Martial salvage": [
         "canDoSalvaging"
@@ -192,6 +234,12 @@ export const NPC_RULES = {
         "all": [
             "canKillDifficultDragons",
             "canEnterAncientCavern"
+        ]
+    },
+    "Moonlight Cockatrice": {
+        "all": [
+            "canStartPerilousMoons",
+            "hasMirrorShield"
         ]
     },
     "Narwhal": {
@@ -203,6 +251,12 @@ export const NPC_RULES = {
     "Ninja impling": [
         "canTrainHunter"
     ],
+    "Ogre Coffin": {
+        "all": [
+            "canCompleteZogreFleshEaters",
+            "hasOgreCoffinKey"
+        ]
+    },
     "Plundered salvage": [
         "canDoSalvaging"
     ],
@@ -221,6 +275,15 @@ export const NPC_RULES = {
     "Rewards Guardian": [
         "canDoGuardiansOfTheRift"
     ],
+    "Rusty chest": [
+        "canCompletePandemonium"
+    ],
+    "Salarin the twisted": [
+        "canCastStrikeSpells"
+    ],
+    "Scarab Mage": [
+        "canCompleteIcthlarinsLittleHelper"
+    ],
     "Sea Snake Hatchling": [
         "canCompleteRoyalTrouble"
     ],
@@ -235,6 +298,9 @@ export const NPC_RULES = {
     ],
     "Sergeant Strongstack": [
         "canDoGeneralGraardor"
+    ],
+    "Shadow warrior": [
+        "canCompleteLegendsQuest"
     ],
     "Shellbane Gryphon": [
         "canCompleteTroubledTortugans"
@@ -260,6 +326,9 @@ export const NPC_RULES = {
     "Skeleton warlord": [
         "canEnterAncientCavern"
     ],
+    "Smoke devil": [
+        "hasFacemask"
+    ],
     "Spined kraken": [
         "canDoSailingCombat"
     ],
@@ -281,11 +350,20 @@ export const NPC_RULES = {
     "Taloned Wyvern": [
         "canKillFossilIslandWyverns"
     ],
+    "Tarnished chest": [
+        "canCompletePandemonium"
+    ],
+    "Thermonuclear smoke devil": [
+        "hasFacemask"
+    ],
     "Tiger shark": [
         "canDoSailingCombat",
     ],
+    "Tormented Demon": [
+        "canCompleteWhileGuthixSleeps"
+    ],
     "Tortured gorilla": [
-        "CanCompleteMonkeyMadnessII"
+        "canCompleteMonkeyMadnessII"
     ],
     "Tree spirit": [
         "canCompleteFairytaleIGrowingPains"
@@ -301,6 +379,12 @@ export const NPC_RULES = {
     },
     "Vorkath": [
         "canCompleteDragonSlayerII",
+    ],
+    "Vyrewatch": [
+        "canCompleteATasteOfHope",
+    ],
+    "Vyrewatch Sentinel": [
+        "canCompleteSinsOfTheFather",
     ],
     "Waterfiend": {
         "any": [
@@ -319,5 +403,11 @@ export const NPC_RULES = {
     ],
     "Zombie (Tarn's Lair)": [
         "canCompletePriestInPeril"
+    ],
+    "Zombie pirate (Harmony Island)": [
+        "canCompleteTheGreatBrainRobbery"
+    ],
+    "Zombie Pirate's Locker": [
+        "hasZombiePirateKey"
     ]
 };

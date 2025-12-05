@@ -78,6 +78,27 @@ export const REQUIREMENT_CHECKS = {
     canCompleteSongOfTheElves(ctx) {
         return false; // TODO
     },
+    canCompleteWhileGuthixSleeps(ctx) {
+        return false; // TODO
+    },
+    canCompleteTheGreatBrainRobbery(ctx) {
+        return false; // TODO
+    },
+    canCompleteATasteOfHope(ctx) {
+        return false; // TODO
+    },
+    canCompleteSinsOfTheFather(ctx) {
+        return false; // TODO
+    },
+    canCompleteTheFremennikExiles(ctx) {
+        return false; // TODO
+    },
+    canCompleteCabinFever(ctx) {
+        return false; // TODO
+    },
+    canCompleteWanted(ctx) {
+        return false; // TODO
+    },
     canCompleteThroneOfMiscellania(ctx) {
         return canCompleteThroneOfMiscellania(ctx);
     },
@@ -86,6 +107,9 @@ export const REQUIREMENT_CHECKS = {
     },
     canCompleteTheHeartOfDarkness(ctx) {
         return canCompleteTheHeartOfDarkness(ctx);
+    },
+    canCompleteIcthlarinsLittleHelper(ctx) {
+        return canCompleteIcthlarinsLittleHelper(ctx);
     },
     canReachAbyssalSire(ctx) {
         return canCompleteEnterTheAbyss(ctx) || canCompleteFairytaleIGrowingPains(ctx);
@@ -123,7 +147,7 @@ export const REQUIREMENT_CHECKS = {
     canDoShadesOfMortton(ctx) {
         return canDoShadesOfMortton(ctx);
     },
-    CanCompleteMonkeyMadnessII(ctx) {
+    canCompleteMonkeyMadnessII(ctx) {
         return false; // TODO
     },
     canCompletePriestInPeril(ctx) {
@@ -165,6 +189,9 @@ export const REQUIREMENT_CHECKS = {
     canLongrange(ctx) {
         return canLongrange(ctx);
     },
+    canCastStrikeSpells(ctx) {
+        return canCastStrikeSpells(ctx);
+    },
     canShortrange(ctx) {
         return canShortrange(ctx);
     },
@@ -198,7 +225,7 @@ export const REQUIREMENT_CHECKS = {
     canCompletePandemonium(ctx) {
         return canCompletePandemonium(ctx);
     },
-    canDoLegendsQuest(ctx) {
+    canCompleteLegendsQuest(ctx) {
         return false; // TODO
     },
     canDoYama(ctx) {
@@ -213,11 +240,32 @@ export const REQUIREMENT_CHECKS = {
     canCompleteAnimalMagnetism(ctx) {
         return canCompleteAnimalMagnetism(ctx);
     },
+    canCompleteDeathToTheDorgeshuun(ctx) {
+        return canCompleteDeathToTheDorgeshuun(ctx);
+    },
+    canCompleteTheLostTribe(ctx) {
+        return canCompleteTheLostTribe(ctx);
+    },
+    canCompletePerilousMoons(ctx) {
+        return canCompletePerilousMoons(ctx);
+    },
     hasSteelArrow(ctx) {
         return has(ctx, 886);
     },
     hasMithrilArrow(ctx) {
         return has(ctx, 888);
+    },
+    hasLockpick(ctx) {
+        return has(ctx, 1523);
+    },
+    hasOgreCoffinKey(ctx) {
+        return has(ctx, 4850);
+    },
+    hasZombiePirateKey(ctx) {
+        return has(ctx, 29449);
+    },
+    hasMirrorShield(ctx) {
+        return has(ctx, 4156);
     },
     canDoGodWarsDungeon(ctx) {
         return false; // TODO
@@ -231,8 +279,8 @@ export const REQUIREMENT_CHECKS = {
     canDoKreearra(ctx) {
         return canDoKreearra(ctx);
     },
-    canDoKrilTsustaroth(ctx) {
-        return canDoKrilTsustaroth(ctx);
+    canDoKrilTsutsaroth(ctx) {
+        return canDoKrilTsutsaroth(ctx);
     },
     canDoNex(ctx) {
         return canDoNex(ctx);
@@ -251,7 +299,7 @@ function canDoKreearra(ctx) {
     return false; // TODO
 }
 
-function canDoKrilTsustaroth(ctx) {
+function canDoKrilTsutsaroth(ctx) {
     return false; // TODO
 }
 
@@ -315,6 +363,11 @@ function canLongrange(ctx) {
                 && has(ctx, 877)) // Bronze bolts
             || ((has(ctx, 556) || has(ctx, 4696) || has(ctx, 1381) || has(ctx, 1397)) // Air rune, Dust rune, Staff of air or Air battlestaff
                 && (has(ctx, 558) || has(ctx, 562) || has(ctx, 560) || has(ctx, 565))) // Mind rune, Chaos rune, Death rune or Blood rune
+}
+
+function canCastStrikeSpells(ctx) {
+    return ((has(ctx, 556) || has(ctx, 4696) || has(ctx, 1381) || has(ctx, 1397)) // Air rune, Dust rune, Staff of air or Air battlestaff
+                && has(ctx, 558)) // Mind rune
 }
 
 function canShortrange(ctx) {
@@ -410,6 +463,45 @@ function canCompleteAnimalMagnetism(ctx) {
                 || has(ctx, 6812)  // Wyvern bones
                 || has(ctx, 4812)  // Zogre bones
             );
+}
+
+function canCompleteDeathToTheDorgeshuun(ctx) {
+    return canCompleteTheLostTribe(ctx) //
+            && has(ctx, 4310) // Ham boots
+            && has(ctx, 4304) // Ham cloak
+            && has(ctx, 4308) // Ham gloves
+            && has(ctx, 4302) // Ham hood
+            && has(ctx, 4306) // Ham logo
+            && has(ctx, 4300) // Ham robe
+            && has(ctx, 4298); // Ham shirt
+}
+
+function canCompleteTheLostTribe(ctx) {
+    return canCompleteGoblinDiplomacy(ctx) //
+            && canCompleteRuneMysteries(ctx) //
+            && canTrainMining(ctx); //
+}
+
+function canCompleteGoblinDiplomacy(ctx) {
+    return has(ctx, 288) // Goblin mail
+            && has(ctx, 1769) // Orange dye
+            && has(ctx, 1767); // Blue dye
+}
+
+function canStartPerilousMoons(ctx) {
+    return canCompleteTwilightsPromise(ctx) //
+            && canTrainHunter(ctx) //
+            && canTrainFishing(ctx) //
+            && canTrainRunecraft(ctx) //
+            && canTrainConstruction(ctx);
+}
+
+function canCompletePerilousMoons(ctx) {
+    return canStartPerilousMoons(ctx) //
+            && has(ctx, 946)  // Knife
+            && has(ctx, 305)  // Big fishing net
+            && has(ctx, 954)  // Rope
+            && has(ctx, 233); // Pestle and mortar
 }
 
 function canCompleteEnterTheAbyss(ctx) {
@@ -568,6 +660,16 @@ function canCompletePandemonium(ctx) {
 
 function canCompleteTheHeartOfDarkness(ctx) {
     return canTrainMining(ctx);
+}
+
+function canCompleteIcthlarinsLittleHelper(ctx) {
+    return canCompleteGertrudesCat(ctx)
+            && has(ctx, 590) // Tinderbox
+            && has(ctx, 1519) // Willow logs
+            && (has(ctx, 4161) || (has(ctx, 1925) && has(ctx, 4689))) // Bag of salt or (Bucket and Pile of salt)
+            && has(ctx, 4687) // Bucket of sap
+            && has(ctx, 1823) // Waterskin(4)
+            && has(ctx, 4684); // Linen
 }
 
 function canCompletePriestInPeril(ctx) {
