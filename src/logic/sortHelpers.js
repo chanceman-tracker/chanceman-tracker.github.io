@@ -3,11 +3,40 @@ import { canDoOtherMethod, canReachNpc } from "./itemAvailability.js";
 export function isItemObtainable(item, ctx) {
     const src = item.sources || {};
 
-    // === Shops === (always obtainable if unlocked, or no rule needed)
-    if (src.shops) return true;
+    // === Shops ===
+    if (src.shops) {
+        for (const rule of Object.values(src.shops)) {
+
+            // "No requirements"
+            if (rule === "No requirements") return true;
+
+            // string → single rule
+            if (typeof rule === "string") {
+                if (canDoOtherMethod(rule, ctx)) return true;
+            }
+
+            // object → any/all
+            if (typeof rule === "object") {
+                if (canDoOtherMethod(rule, ctx)) return true;
+            }
+        }
+    }
 
     // === Spawns ===
-    if (src.spawns) return true;
+    if (src.spawns) {
+        for (const rule of Object.values(src.spawns)) {
+
+            if (rule === "No requirements") return true;
+
+            if (typeof rule === "string") {
+                if (canDoOtherMethod(rule, ctx)) return true;
+            }
+
+            if (typeof rule === "object") {
+                if (canDoOtherMethod(rule, ctx)) return true;
+            }
+        }
+    }
 
     // === Drops ===
     if (src.drops) {
@@ -16,11 +45,10 @@ export function isItemObtainable(item, ctx) {
         }
     }
 
-    // === Other methods ===
+    // === Other ===
     if (src.other) {
-        for (const key of Object.keys(src.other)) {
-            const rule = src.other[key].rule;
-            if (canDoOtherMethod(rule, ctx)) return true;
+        for (const obj of Object.values(src.other)) {
+            if (canDoOtherMethod(obj.rule, ctx)) return true;
         }
     }
 

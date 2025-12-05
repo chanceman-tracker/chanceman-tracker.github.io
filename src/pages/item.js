@@ -40,8 +40,7 @@ export default async function ItemPage() {
     SOURCES SECTIONS
    =========================================================== */
 function renderSources(sources = {}) {
-    // const sections = ["drops", "shops", "spawns", "other"]; TODO whenever i get around to this
-    const sections = ["drops", "other"];
+    const sections = ["drops", "other", "shops", "spawns"];
 
     return sections.map(section => `
         <div class="source-section">
@@ -84,7 +83,7 @@ function renderSourceTable(section, entries) {
                             <td>${data.droprate}</td>
                             <td>${obtainable}</td>
                         </tr>
-                    `
+                    `;
                 }).join("")}
             </table>
         `;
@@ -122,23 +121,88 @@ function renderSourceTable(section, entries) {
     }
 
     // ---------------------------
-    // OTHER TABLES (shops, spawns)
-    // Name in first column, clickable link icon in second column
+    // SHOPS TABLE
     // ---------------------------
-    // TODO: logic if the item is unlocked, so it can be picked up or purchased.
-    // return `
-    //     <table class="osrs-table">
-    //         ${Object.entries(entries).map(([name, url]) => `
-    //             <tr>
-    //                 <td>
-    //                     <a href="${url}" target="_blank">
-    //                         ${name}
-    //                     </a>
-    //                 </td>
-    //             </tr>
-    //         `).join("")}
-    //     </table>
-    // `;
+    if (section === "shops") {
+        return `
+            <table class="osrs-table">
+                <tr>
+                    <th>Requirement</th>
+                    <th>Obtainable?</th>
+                </tr>
+
+                ${Object.entries(entries).map(([label, rule]) => {
+
+                    // Determine if obtainable
+                    let obtainable = false;
+
+                    // Rule is a string
+                    if (typeof rule === "string") {
+                        if (rule === "No requirements") {
+                            obtainable = true;
+                        } else {
+                            obtainable = canDoOtherMethod(rule, fileStore);
+                        }
+                    }
+
+                    // Rule is an object (e.g. any/all)
+                    else if (typeof rule === "object") {
+                        obtainable = canDoOtherMethod(rule, fileStore);
+                    }
+
+                    return `
+                        <tr>
+                            <td>${formatRule(rule)}</td>
+                            <td>
+                                ${obtainable
+                                    ? `<span class="obtainable yes">✔</span>`
+                                    : `<span class="obtainable no">✘</span>`}
+                            </td>
+                        </tr>
+                    `;
+                }).join("")}
+            </table>
+        `;
+    }
+
+    // ---------------------------
+    // SPAWNS TABLE
+    // ---------------------------
+    if (section === "spawns") {
+        return `
+            <table class="osrs-table">
+                <tr>
+                    <th>Requirement</th>
+                    <th>Obtainable?</th>
+                </tr>
+
+                ${Object.entries(entries).map(([label, rule]) => {
+                    let obtainable = false;
+
+                    if (typeof rule === "string") {
+                        if (rule === "No requirements") {
+                            obtainable = true;
+                        } else {
+                            obtainable = canDoOtherMethod(rule, fileStore);
+                        }
+                    } else if (typeof rule === "object") {
+                        obtainable = canDoOtherMethod(rule, fileStore);
+                    }
+
+                    return `
+                        <tr>
+                            <td>${formatRule(rule)}</td>
+                            <td>
+                                ${obtainable
+                                    ? `<span class="obtainable yes">✔</span>`
+                                    : `<span class="obtainable no">✘</span>`}
+                            </td>
+                        </tr>
+                    `;
+                }).join("")}
+            </table>
+        `;
+    }
 }
 
 /* ===========================================================
@@ -176,4 +240,19 @@ function renderProcessable(processable = {}, allItems) {
             }).join("")}
         </table>
     `;
+}
+
+function formatRule(rule) {
+    if (!rule) return "";
+
+    if (typeof rule === "string")
+        return rule;
+
+    if (rule.any)
+        return "Any: " + rule.any.join(", ");
+
+    if (rule.all)
+        return "All: " + rule.all.map(r => typeof r === "object" ? JSON.stringify(r) : r).join(", ");
+
+    return JSON.stringify(rule);
 }

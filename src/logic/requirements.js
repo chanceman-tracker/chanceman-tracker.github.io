@@ -663,13 +663,18 @@ function canCompleteTheHeartOfDarkness(ctx) {
 }
 
 function canCompleteIcthlarinsLittleHelper(ctx) {
-    return canCompleteGertrudesCat(ctx)
+    return canCompleteGertrudesCat(ctx) //
             && has(ctx, 590) // Tinderbox
             && has(ctx, 1519) // Willow logs
             && (has(ctx, 4161) || (has(ctx, 1925) && has(ctx, 4689))) // Bag of salt or (Bucket and Pile of salt)
             && has(ctx, 4687) // Bucket of sap
             && has(ctx, 1823) // Waterskin(4)
             && has(ctx, 4684); // Linen
+}
+
+function canCompleteGertrudesCat(ctx) {
+    return has(ctx, 1927) // Bucket of milk
+            && has(ctx, 1552); // Seasoned sardine
 }
 
 function canCompletePriestInPeril(ctx) {

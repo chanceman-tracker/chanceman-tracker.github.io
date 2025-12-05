@@ -40,19 +40,25 @@ window.initItemsPage = function () {
     const data = window.__itemsPageData;
     if (!data) return; // Not on items page
 
-    const { items, rolled, unlocked } = data;
-
+    // Try to read DOM elements
     const searchInput = document.getElementById("itemSearch");
     const hideRolled = document.getElementById("hideRolled");
-    hideRolled.checked = true;
     const onlyUnlocked = document.getElementById("onlyUnlocked");
     const onlyObtainable = document.getElementById("onlyObtainable");
     const hideClue = document.getElementById("hideClueRewardOnly");
-    hideClue.checked = true;
-
     const grid = document.getElementById("itemGrid");
 
-    if (!grid) return; // Safety check
+    // If DOM hasn't been applied yet, defer + return
+    if (!searchInput || !hideRolled || !onlyUnlocked || !onlyObtainable || !hideClue || !grid) {
+        // Run again shortly (router just replaced DOM)
+        setTimeout(initItemsPage, 0);
+        return;
+    }
+
+    hideRolled.checked = true;
+    hideClue.checked = true;
+
+    const { items, rolled, unlocked } = data;
 
     function renderItems() {
         const search = searchInput?.value.toLowerCase() || "";
