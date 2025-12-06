@@ -117,6 +117,9 @@ export const NPC_RULES = {
     "Commander Zilyana": [
         "canDoCommanderZilyana"
     ],
+    "Deranged archaeologist": [
+        "canCompleteBoneVoyage"
+    ],
     "Dirty arrowtips": [
         "canDoValeTotems"
     ],
@@ -169,6 +172,9 @@ export const NPC_RULES = {
     "Gold Chest": [
         "canDoShadesOfMortton"
     ],
+    "Great white shark": [
+        "canCompletePandemonium"
+    ],
     "Greater abyssal demon": [
         "isNotSlayerLocked"
     ],
@@ -215,7 +221,19 @@ export const NPC_RULES = {
     "Long-tailed Wyvern": [
         "canKillFossilIslandWyverns"
     ],
+    "Lost camphor crate": [
+        "canCompletePandemonium"
+    ],
+    "Lost ironwood crate": [
+        "canCompletePandemonium"
+    ],
     "Lost mahogany crate": [
+        "canCompletePandemonium"
+    ],
+    "Lost oak crate": [
+        "canCompletePandemonium"
+    ],
+    "Lost wooden crate": [
         "canCompletePandemonium"
     ],
     "Magpie impling": [
@@ -251,6 +269,12 @@ export const NPC_RULES = {
     "Ninja impling": [
         "canTrainHunter"
     ],
+    "Orca": {
+        "all": [
+            "canDoSailingCombat",
+            "canSailToTheNorthernOcean"
+        ]
+    },
     "Ogre Coffin": {
         "all": [
             "canCompleteZogreFleshEaters",
@@ -325,6 +349,9 @@ export const NPC_RULES = {
     ],
     "Skeleton warlord": [
         "canEnterAncientCavern"
+    ],
+    "Small salvage": [
+        "canDoSalvaging"
     ],
     "Smoke devil": [
         "hasFacemask"

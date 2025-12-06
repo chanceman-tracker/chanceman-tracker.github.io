@@ -99,6 +99,9 @@ export const REQUIREMENT_CHECKS = {
     canCompleteWanted(ctx) {
         return false; // TODO
     },
+    canCompleteBoneVoyage(ctx) {
+        return canCompleteBoneVoyage(ctx);
+    },
     canCompleteThroneOfMiscellania(ctx) {
         return canCompleteThroneOfMiscellania(ctx);
     },

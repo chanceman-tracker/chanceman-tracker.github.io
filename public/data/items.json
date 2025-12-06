@@ -1089,7 +1089,7 @@
                     "droprate": "1/25",
                     "url": "https://oldschool.runescape.wiki/w/Ankou"
                     },
-                "Ice Warrior": {
+                "Ice warrior": {
                     "droprate": "1/64",
                     "url": "https://oldschool.runescape.wiki/w/Ice_warrior"
                     },
@@ -2981,25 +2981,89 @@
         "index": 169,
         "id": 21326,
         "name": "Amethyst arrow",
-        "image": "amethyst_arrow.png"
+        "image": "amethyst_arrow.png",
+        "sources": {
+            "drops": {
+                "Lost camphor crate": {
+                    "droprate": "1/8",
+                    "url": "https://oldschool.runescape.wiki/w/Lost_camphor_crate"
+                    }
+            },
+            "other": {
+                "Fletching Amethyst arrow": {
+                    "notes": "Amethyst arrowtips and Headless arrow",
+                    "rule": {
+                        "all": [
+                            { "has": 21350 },
+                            { "has": 53 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "21332": "187",
+            "21334": "5937",
+            "21336": "5940"
+        }
     },
     {
         "index": 170,
         "id": 21332,
         "name": "Amethyst arrow(p)",
-        "image": "amethyst_arrow(p).png"
+        "image": "amethyst_arrow(p).png",
+        "sources": {
+            "other": {
+                "Poisoning an Amethyst arrow": {
+                    "notes": "Requires an Amethyst arrow and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 21326 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 171,
         "id": 21334,
         "name": "Amethyst arrow(p+)",
-        "image": "amethyst_arrow(p+).png"
+        "image": "amethyst_arrow(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning an Amethyst arrow": {
+                    "notes": "Requires an Amethyst arrow and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 21326 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 172,
         "id": 21336,
         "name": "Amethyst arrow(p++)",
-        "image": "amethyst_arrow(p++).png"
+        "image": "amethyst_arrow(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning an Amethyst arrow": {
+                    "notes": "Requires an Amethyst arrow and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 21326 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 173,
@@ -8749,25 +8813,102 @@
         "index": 815,
         "id": 882,
         "name": "Bronze arrow",
-        "image": "bronze_arrow.png"
+        "image": "bronze_arrow.png",
+        "sources": {
+            "drops": {
+                "Man": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Man"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fletching Bronze arrow": {
+                    "notes": "Bronze arrowtips and headless arrow",
+                    "rule": {
+                        "all": [
+                            { "has": 819 },
+                            { "has": 53 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "p": "187",
+            "p+": "5937",
+            "p++": "5940"
+        }
+
     },
     {
         "index": 816,
         "id": 883,
         "name": "Bronze arrow(p)",
-        "image": "bronze_arrow(p).png"
+        "image": "bronze_arrow(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bronze arrow": {
+                    "notes": "Requires a Bronze arrow and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 882 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 817,
         "id": 5616,
         "name": "Bronze arrow(p+)",
-        "image": "bronze_arrow(p+).png"
+        "image": "bronze_arrow(p+).png",
+        "sources": {
+            "drops": {
+                "Spiritual ranger": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Spiritual_ranger"
+                    }
+            },
+            "other": {
+                "Poisoning a Bronze arrow": {
+                    "notes": "Requires a Bronze arrow and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 882 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 818,
         "id": 5622,
         "name": "Bronze arrow(p++)",
-        "image": "bronze_arrow(p++).png"
+        "image": "bronze_arrow(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bronze arrow": {
+                    "notes": "Requires a Bronze arrow and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 882 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 819,
@@ -11971,25 +12112,109 @@
         "index": 1271,
         "id": 11212,
         "name": "Dragon arrow",
-        "image": "dragon_arrow.png"
+        "image": "dragon_arrow.png",
+        "sources": {
+            "drops": {
+                "Reward Chest (The Gauntlet)": {
+                    "droprate": "3 × 1/24",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_Chest_(The_Gauntlet)"
+                    },
+                "Lost ironwood crate": {
+                    "droprate": "1/8",
+                    "url": "https://oldschool.runescape.wiki/w/Lost_ironwood_crate"
+                    },
+                "Ancient chest": {
+                    "droprate": "2 × 1/33",
+                    "url": "https://oldschool.runescape.wiki/w/Ancient_chest#Opened"
+                    },
+                "Dragon impling": {
+                    "droprate": "1/19",
+                    "url": "https://oldschool.runescape.wiki/w/Dragon_impling"
+                    },
+                "Crazy archaeologist": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Crazy_archaeologist"
+                    },
+                "Deranged archaeologist": {
+                    "droprate": "1/131",
+                    "url": "https://oldschool.runescape.wiki/w/Deranged_archaeologist"
+                    }
+            },
+            "other": {
+                "Fletching Dragon arrow": {
+                    "notes": "Dragon arrowtips and headless arrow",
+                    "rule": {
+                        "all": [
+                            { "has": 11237 },
+                            { "has": 53 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "11227": "187",
+            "11228": "5937",
+            "11229": "5940"
+        }
     },
     {
         "index": 1272,
         "id": 11227,
         "name": "Dragon arrow(p)",
-        "image": "dragon_arrow(p).png"
+        "image": "dragon_arrow(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Dragon arrow": {
+                    "notes": "Requires a Dragon arrow and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 11212 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1273,
         "id": 11228,
         "name": "Dragon arrow(p+)",
-        "image": "dragon_arrow(p+).png"
+        "image": "dragon_arrow(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Dragon arrow": {
+                    "notes": "Requires a Dragon arrow and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 11212 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1274,
         "id": 11229,
         "name": "Dragon arrow(p++)",
-        "image": "dragon_arrow(p++).png"
+        "image": "dragon_arrow(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Dragon arrow": {
+                    "notes": "Requires a Dragon arrow and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 11212 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1275,
@@ -12332,7 +12557,7 @@
                     "droprate": "1/7",
                     "url": "https://oldschool.runescape.wiki/w/Forgotten_lockbox"
                     },
-                "Dragon Impling": {
+                "Dragon impling": {
                     "droprate": "1/19",
                     "url": "https://oldschool.runescape.wiki/w/Dragon_impling"
                     }
@@ -17844,25 +18069,107 @@
         "index": 2018,
         "id": 884,
         "name": "Iron arrow",
-        "image": "iron_arrow.png"
+        "image": "iron_arrow.png",
+        "sources": {
+            "drops": {
+                "Ava's attractor": {
+                    "droprate": "1/1.013",
+                    "url": "https://oldschool.runescape.wiki/w/Ava's_attractor"
+                    },
+                "Minotaur": {
+                    "droprate": "1/10.1",
+                    "url": "https://oldschool.runescape.wiki/w/Minotaur"
+                    },
+                "Zombie": {
+                    "droprate": "1/18.9",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie#Level_13"
+                    },
+                "Hill Giant": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Hill_Giant"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fletching Iron arrow": {
+                    "notes": "Iron arrowtips and headless arrow",
+                    "rule": {
+                        "all": [
+                            { "has": 40 },
+                            { "has": 53 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "885": "187",
+            "5617": "5937",
+            "5623": "5940"
+        }
     },
     {
         "index": 2019,
         "id": 885,
         "name": "Iron arrow(p)",
-        "image": "iron_arrow(p).png"
+        "image": "iron_arrow(p).png",
+        "sources": {
+            "other": {
+                "Poisoning an Iron arrow": {
+                    "notes": "Requires an Iron arrow and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 884 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2020,
         "id": 5617,
         "name": "Iron arrow(p+)",
-        "image": "iron_arrow(p+).png"
+        "image": "iron_arrow(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning an Iron arrow": {
+                    "notes": "Requires an Iron arrow and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 884 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2021,
         "id": 5623,
         "name": "Iron arrow(p++)",
-        "image": "iron_arrow(p++).png"
+        "image": "iron_arrow(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning an Iron arrow": {
+                    "notes": "Requires an Iron arrow and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 884 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2022,
@@ -20889,25 +21196,152 @@
         "index": 2437,
         "id": 888,
         "name": "Mithril arrow",
-        "image": "mithril_arrow.png"
+        "image": "mithril_arrow.png",
+        "sources": {
+            "drops": {
+                "Ava's assembler": {
+                    "droprate": "1/1.013",
+                    "url": "https://oldschool.runescape.wiki/w/Ava's_assembler"
+                    },
+                "Tortoise (With riders)": {
+                    "droprate": "1/6.4",
+                    "url": "https://oldschool.runescape.wiki/w/Tortoise#With_riders"
+                    },
+                "Reward Chest (The Gauntlet)": {
+                    "droprate": "3 × 1/24",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_Chest_(The_Gauntlet)"
+                    },
+                "Lost oak crate": {
+                    "droprate": "1/8",
+                    "url": "https://oldschool.runescape.wiki/w/Lost_oak_crate"
+                    },
+                "Waterfiend": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/Waterfiend"
+                    },
+                "Ogress Shaman": {
+                    "droprate": "1/16.57",
+                    "url": "https://oldschool.runescape.wiki/w/Ogress_Shaman"
+                    },
+                "Ogress Warrior": {
+                    "droprate": "1/16.57",
+                    "url": "https://oldschool.runescape.wiki/w/Ogress_Warrior"
+                    },
+                "Zamorak ranger": {
+                    "droprate": "1/25",
+                    "url": "https://oldschool.runescape.wiki/w/Zamorak_ranger"
+                    },
+                "Catablepon": {
+                    "droprate": "1/25.25",
+                    "url": "https://oldschool.runescape.wiki/w/Catablepon"
+                    },
+                "Ice warrior": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Ice_warrior"
+                    },
+                "Skeleton (Shayzien Crypts)": {
+                    "droprate": "1/30",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Shayzien_Crypts)"
+                    },
+                "Zombie (Shayzien Crypts)": {
+                    "droprate": "1/30",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_(Shayzien_Crypts)"
+                    },
+                "Black Knight": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Black_Knight"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fletching Mithril arrow": {
+                    "notes": "Mithril arrowtips and headless arrow",
+                    "rule": {
+                        "all": [
+                            { "has": 42 },
+                            { "has": 53 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "p": "187",
+            "p+": "5937",
+            "p++": "5940"
+        }
     },
     {
         "index": 2438,
         "id": 889,
         "name": "Mithril arrow(p)",
-        "image": "mithril_arrow(p).png"
+        "image": "mithril_arrow(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Mithril arrow": {
+                    "notes": "Requires a Mithril arrow and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 888 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2439,
         "id": 5619,
         "name": "Mithril arrow(p+)",
-        "image": "mithril_arrow(p+).png"
+        "image": "mithril_arrow(p+).png",
+        "sources": {
+            "drops": {
+                "Spiritual ranger": {
+                    "droprate": "1/11.64",
+                    "url": "https://oldschool.runescape.wiki/w/Spiritual_ranger"
+                    }
+            },
+            "other": {
+                "Poisoning a Mithril arrow": {
+                    "notes": "Requires a Mithril arrow and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 888 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2440,
         "id": 5625,
         "name": "Mithril arrow(p++)",
-        "image": "mithril_arrow(p++).png"
+        "image": "mithril_arrow(p++).png",
+        "sources": {
+            "drops": {
+                "Gorak": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Gorak"
+                    }
+            },
+            "other": {
+                "Poisoning a Mithril arrow": {
+                    "notes": "Requires a Mithril arrow and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 888 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2441,
@@ -26445,25 +26879,160 @@
         "index": 3183,
         "id": 892,
         "name": "Rune arrow",
-        "image": "rune_arrow.png"
+        "image": "rune_arrow.png",
+        "sources": {
+            "drops": {
+                "Castle wars supply crate": {
+                    "droprate": "3 × 1/11",
+                    "url": "https://oldschool.runescape.wiki/w/Castle_wars_supply_crate"
+                    },
+                "Reward Chest (The Gauntlet)": {
+                    "droprate": "3 × 1/24",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_Chest_(The_Gauntlet)"
+                    },
+                "Lost mahogany crate": {
+                    "droprate": "1/8",
+                    "url": "https://oldschool.runescape.wiki/w/Lost_mahogany_crate"
+                    },
+                "Orca": {
+                    "droprate": "1/9.2",
+                    "url": "https://oldschool.runescape.wiki/w/Orca"
+                    },
+                "Drake": {
+                    "droprate": "1/9.3",
+                    "url": "https://oldschool.runescape.wiki/w/Drake"
+                    },
+                "Great white shark": {
+                    "droprate": "1/12.5",
+                    "url": "https://oldschool.runescape.wiki/w/Great_white_shark"
+                    },
+                "Narwhal": {
+                    "droprate": "1/15",
+                    "url": "https://oldschool.runescape.wiki/w/Narwhal"
+                    },
+                "Red dragon": {
+                    "droprate": "1/16",
+                    "url": "https://oldschool.runescape.wiki/w/Red_dragon"
+                    },
+                "Crystal impling": {
+                    "droprate": "1/18",
+                    "url": "https://oldschool.runescape.wiki/w/Crystal_impling"
+                    },
+                "Ankou (Wilderness Slayer Cave)": {
+                    "droprate": "1/23",
+                    "url": "https://oldschool.runescape.wiki/w/Ankou#Wilderness_Slayer_Cave_drops"
+                    },
+                "Martial salvage": {
+                    "droprate": "1/24.5",
+                    "url": "https://oldschool.runescape.wiki/w/Martial_salvage"
+                    },
+                "Dust devil (Wilderness Slayer Cave)": {
+                    "droprate": "1/25.2",
+                    "url": "https://oldschool.runescape.wiki/w/Dust_devil#Wilderness_Slayer_Cave"
+                    },
+                "Fire giant": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Fire_giant"
+                    },
+                "Chaos Elemental": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Chaos_Elemental"
+                    },
+                "Dust devil": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Dust_devil"
+                    },
+                "Barbarian Assault/Gambles (High Gambles)": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Barbarian_Assault/Gambles#High_Gambles"
+                    },
+                "Spiritual ranger": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Spiritual_ranger"
+                    },
+                "Smoke devil": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Smoke_devil"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fletching Rune arrow": {
+                    "notes": "Rune arrowtips and headless arrow",
+                    "rule": {
+                        "all": [
+                            { "has": 44 },
+                            { "has": 53 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "893": "187",
+            "5621": "5937",
+            "5627": "5940"
+        }
     },
     {
         "index": 3184,
         "id": 893,
         "name": "Rune arrow(p)",
-        "image": "rune_arrow(p).png"
+        "image": "rune_arrow(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Rune arrow": {
+                    "notes": "Requires a Rune arrow and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 892 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3185,
         "id": 5621,
         "name": "Rune arrow(p+)",
-        "image": "rune_arrow(p+).png"
+        "image": "rune_arrow(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Rune arrow": {
+                    "notes": "Requires a Rune arrow and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 892 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3186,
         "id": 5627,
         "name": "Rune arrow(p++)",
-        "image": "rune_arrow(p++).png"
+        "image": "rune_arrow(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Rune arrow": {
+                    "notes": "Requires a Rune arrow and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 892 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3187,
@@ -29720,25 +30289,213 @@
         "index": 3656,
         "id": 886,
         "name": "Steel arrow",
-        "image": "steel_arrow.png"
+        "image": "steel_arrow.png",
+        "sources": {
+            "drops": {
+                "Ava's accumulator": {
+                    "droprate": "1/1.013",
+                    "url": "https://oldschool.runescape.wiki/w/Ava's_accumulator"
+                    },
+                "Zombie (Stronghold of Security)": {
+                    "droprate": "1/5",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_(Stronghold_of_Security)"
+                    },
+                "Tortoise (No riders)": {
+                    "droprate": "1/6.4",
+                    "url": "https://oldschool.runescape.wiki/w/Tortoise#No_riders"
+                    },
+                "Lost wooden crate": {
+                    "droprate": "1/8",
+                    "url": "https://oldschool.runescape.wiki/w/Lost_wooden_crate"
+                    },
+                "Strange shrine": {
+                    "droprate": "1/9",
+                    "url": "https://oldschool.runescape.wiki/w/Strange_shrine"
+                    },
+                "Wallasaki": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/Wallasaki"
+                    },
+                "Rock lobster": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/Rock_lobster"
+                    },
+                "Dagannoth (Waterbirth_Island) (Level 88)": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/Dagannoth_(Waterbirth_Island)#Level_88"
+                    },
+                "Tortoise (With riders)": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/Tortoise#With_riders"
+                    },
+                "Ogress Shaman": {
+                    "droprate": "1/23.2",
+                    "url": "https://oldschool.runescape.wiki/w/Ogress_Shaman"
+                    },
+                "Ogress Warrior": {
+                    "droprate": "1/23.2",
+                    "url": "https://oldschool.runescape.wiki/w/Ogress_Warrior"
+                    },
+                "Zamorak warrior": {
+                    "droprate": "1/25",
+                    "url": "https://oldschool.runescape.wiki/w/Zamorak_ranger"
+                    },
+                "Mammoth": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Mammoth"
+                    },
+                "Dagannoth (Waterbirth_Island) (Level 90)": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Dagannoth_(Waterbirth_Island)#Level_90"
+                    },
+                "Guard": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Guard"
+                    },
+                "Zombie (Tarn's Lair)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_(Tarn's_Lair)"
+                    },
+                "Skeleton (Tarn's Lair)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Tarn's_Lair)"
+                    },
+                "H.A.M. Member": {
+                    "droprate": "1/51",
+                    "url": "https://oldschool.runescape.wiki/w/H.A.M._Member"
+                    },
+                "Canifis citizens, human forms": {
+                    "droprate": "1/51.2",
+                    "url": "https://oldschool.runescape.wiki/w/Canifis_citizen#Human_forms"
+                    },
+                "H.A.M. Guard": {
+                    "droprate": "1/55",
+                    "url": "https://oldschool.runescape.wiki/w/H.A.M._Guard"
+                    },
+                "Dagannoth": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Dagannoth"
+                    },
+                "Hill Giant": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Hill_Giant"
+                    },
+                "Zombie (Level 13)": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie#Level_13"
+                    },
+                "Guard (H.A.M. Storerooms)": {
+                    "droprate": "1/83.33",
+                    "url": "https://oldschool.runescape.wiki/w/Guard_(H.A.M._Storerooms)"
+                    },
+                "Small salvage": {
+                    "droprate": "1/86",
+                    "url": "https://oldschool.runescape.wiki/w/Small_salvage"
+                    },
+                "Moss giant": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Moss_giant"
+                    },
+                "Ava's attractor": {
+                    "droprate": "1/2,000",
+                    "url": "https://oldschool.runescape.wiki/w/Ava's_attractor"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fletching Steel arrow": {
+                    "notes": "Steel arrowtips and headless arrow",
+                    "rule": {
+                        "all": [
+                            { "has": 41 },
+                            { "has": 53 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "887": "187",
+            "5618": "5937",
+            "5624": "5940"
+        }
     },
     {
         "index": 3657,
         "id": 887,
         "name": "Steel arrow(p)",
-        "image": "steel_arrow(p).png"
+        "image": "steel_arrow(p).png",
+        "sources": {
+            "drops": {
+                "Canifis citizens, human forms": {
+                    "droprate": "1/51.2",
+                    "url": "https://oldschool.runescape.wiki/w/Canifis_citizen#Human_forms"
+                    },
+                "Tribesman": {
+                    "droprate": "1/69",
+                    "url": "https://oldschool.runescape.wiki/w/Tribesman"
+                    },
+                "Tribeswoman": {
+                    "droprate": "1/69",
+                    "url": "https://oldschool.runescape.wiki/w/Tribeswoman"
+                    }
+            },
+            "other": {
+                "Poisoning a Steel arrow": {
+                    "notes": "Requires a Steel arrow and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 886 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3658,
         "id": 5618,
         "name": "Steel arrow(p+)",
-        "image": "steel_arrow(p+).png"
+        "image": "steel_arrow(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Steel arrow": {
+                    "notes": "Requires a Steel arrow and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 886 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3659,
         "id": 5624,
         "name": "Steel arrow(p++)",
-        "image": "steel_arrow(p++).png"
+        "image": "steel_arrow(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Steel arrow": {
+                    "notes": "Requires a Steel arrow and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 886 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3660,
