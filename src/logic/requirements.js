@@ -129,6 +129,9 @@ export const REQUIREMENT_CHECKS = {
     canTrainMining(ctx) {
         return canTrainMining(ctx);
     },
+    canTrainCooking(ctx) {
+        return canTrainCooking(ctx);
+    },
     isNotSlayerLocked(ctx) {
         return true; // TODO implement slayer locked filter
     },
@@ -228,6 +231,9 @@ export const REQUIREMENT_CHECKS = {
     canCompletePandemonium(ctx) {
         return canCompletePandemonium(ctx);
     },
+    canCompleteEnchantedKey(ctx) {
+        return canCompleteMakingHistory(ctx);
+    },
     canCompleteLegendsQuest(ctx) {
         return false; // TODO
     },
@@ -287,6 +293,9 @@ export const REQUIREMENT_CHECKS = {
     },
     canDoNex(ctx) {
         return canDoNex(ctx);
+    },
+    canCompleteBarbarianHerblore(ctx) {
+        return canCompleteBarbarianHerblore(ctx);
     }
 };
 
@@ -334,6 +343,24 @@ function canCompleteBarbarianFiremaking(ctx) {
                 || has(ctx, 861) // Magic shortbow
                 || has(ctx, 859) // Magic longbow
             );
+}
+
+function canCompleteBarbarianFishing(ctx) {
+    return canTrainFishing(ctx);
+}
+
+function canCompleteBarbarianHerblore(ctx) {
+    return canCompleteDruidicRitual(ctx) //
+            && canCompleteBarbarianFiremaking(ctx) //
+            && canCompleteBarbarianFishing(ctx) //
+            && has(ctx, 123) // Attack potion(2)
+            && (has(ctx, 11324) || has(ctx, 11326)); // Roe or Caviar
+}
+
+function canCompleteMakingHistory(ctx) {
+    return canCompletePriestInPeril(ctx)
+            && has(ctx, 1694) //Sapphire amulet
+            && has(ctx, 952); // Spade
 }
 
 function canSailToTheNorthernOcean(ctx) {

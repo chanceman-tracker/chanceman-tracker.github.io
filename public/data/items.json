@@ -35959,37 +35959,106 @@
         "index": 4416,
         "id": 2914,
         "name": "Yellow boots",
-        "image": "yellow_boots.png"
+        "image": "yellow_boots.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompletePriestInPeril"
+                }
+            }
     },
     {
         "index": 4417,
         "id": 1023,
         "name": "Yellow cape",
-        "image": "yellow_cape.png"
+        "image": "yellow_cape.png",
+        "sources": {
+            "other": {
+                "Dye a cape": {
+                    "notes": "Requires yellow dye and any normal cape.",
+                    "rule":{
+                        "all": [
+                            { "has": 1765 }
+                        ]
+                    }
+                    }
+                    },
+            "shops": {
+                "Yes": "No requirements"
+                }
+            }
     },
     {
         "index": 4418,
         "id": 12761,
         "name": "Yellow dark bow paint",
-        "image": "yellow_dark_bow_paint.png"
+        "image": "yellow_dark_bow_paint.png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+                }
+        }
     },
     {
         "index": 4419,
         "id": 1765,
         "name": "Yellow dye",
-        "image": "yellow_dye.png"
+        "image": "yellow_dye.png",
+        "sources": {
+            "other": {
+                "Shelves_(Getting_Ahead)": {
+                    "notes": "Pick up the dye from the Shelves in the house of the Getting Ahead quest."
+                    },
+                "Make use of Aggie's or Ali the dyer's services": {
+                    "notes": "Bring 2 onions and some coins.",
+                    "rule":{
+                        "all": [
+                            { "has": 1957 }
+                        ]
+                    }
+                    }
+                    },
+            "shops": {
+                "Yes": "No requirements"
+                }
+            }
     },
     {
         "index": 4420,
         "id": 10090,
         "name": "Yellow feather",
-        "image": "yellow_feather.png"
+        "image": "yellow_feather.png",
+        "sources": {
+            "other": {
+                "Catching birds": {
+                    "notes": "Catch a golden warbler with a bird snare.",
+                    "rule": {
+                        "all": [
+                            { "has": 10006 },
+                            "canTrainHunter"
+                        ]
+                    }
+                    }
+                }
+            }
     },
     {
         "index": 4421,
         "id": 32360,
         "name": "Yellow fin",
-        "image": "yellow_fin.png"
+        "image": "yellow_fin.png",
+        "sources": {
+            "other": {
+                "Cutting fish": {
+                    "notes": "Requires raw yellowfin and a knife.",
+                    "rule": {
+                        "all": [
+                            { "has": 32325 },
+                            { "has": 946 }
+                        ]
+                    }
+                    }
+                }
+            }
     },
     {
         "index": 4422,
@@ -36001,43 +36070,103 @@
         "index": 4423,
         "id": 2922,
         "name": "Yellow gloves",
-        "image": "yellow_gloves.png"
+        "image": "yellow_gloves.png",
+        "sources": {
+            "drops": {
+                "Crawling Hand": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Crawling_Hand"
+                    },
+            "shops": {
+                "Yes": "canCompletePriestInPeril"
+                }
+            }
+        }
     },
     {
         "index": 4424,
         "id": 2920,
         "name": "Yellow hat",
-        "image": "yellow_hat.png"
+        "image": "yellow_hat.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompletePriestInPeril"
+                }
+            }
     },
     {
         "index": 4425,
         "id": 1040,
         "name": "Yellow partyhat",
-        "image": "yellow_partyhat.png"
+        "image": "yellow_partyhat.png",
+        "sources": {
+            "other": {
+                "Complete a Christmas holiday event": {}
+                }
+            }
     },
     {
         "index": 4426,
         "id": 2918,
         "name": "Yellow robe bottoms",
-        "image": "yellow_robe_bottoms.png"
+        "image": "yellow_robe_bottoms.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompletePriestInPeril"
+                }
+            }
     },
     {
         "index": 4427,
         "id": 2916,
         "name": "Yellow robe top",
-        "image": "yellow_robe_top.png"
+        "image": "yellow_robe_top.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompletePriestInPeril"
+                }
+            }
     },
     {
         "index": 4428,
         "id": 32328,
         "name": "Yellowfin",
-        "image": "yellowfin.png"
+        "image": "yellowfin.png",
+        "sources": {
+            "other": {
+                "Cooking fish": {
+                    "notes": "Requires raw yellowfin.",
+                    "rule": {
+                        "all": [
+                            { "has": 32325 },
+                            "canTrainCooking"
+                        ]
+                    }
+                    }
+                }
+            }
     },
     {
         "index": 4429,
         "id": 22198,
         "name": "Yew bird house",
-        "image": "yew_bird_house.png"
+        "image": "yew_bird_house.png",
+        "sources": {
+            "other": {
+                "Crafting bird houses": {
+                    "notes": "Requires yew logs, a clockwork, a chisel and a hammer.",
+                    "rule": {
+                        "all": [
+                            { "has": 1515 },
+                            { "has": 8792 },
+                            { "has": 1755 },
+                            { "has": 2347 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                    }
+                }
+            }
     },
     {
         "index": 4430,
@@ -36058,97 +36187,593 @@
         "index": 4431,
         "id": 6026,
         "name": "Yew leaves",
-        "image": "yew_leaves.png"
+        "image": "yew_leaves.png",
+        "sources": {
+            "other": {
+                "Cutting yew logs with a Forestry kit": {
+                    "notes": "Yew tree.",
+                    "rule": "canTrainWoodcutting"
+                    },
+                "Forestry events": {
+                    "notes": "Struggling Sapling or Friendly Ent.",
+                    "rule": "canTrainWoodcutting"
+                    },
+                "Using secateurs to cure a planted yew tree": {
+                    "notes": "Diseased planted yew tree.",
+                    "rule": {
+                        "all": [
+                            { "has": 5329 },
+                            "canTrainFarming"
+                        ]
+                    }
+                    }
+                }
+            }
+
     },
     {
         "index": 4432,
         "id": 1515,
         "name": "Yew logs",
-        "image": "yew_logs.png"
+        "image": "yew_logs.png",
+        "sources": {
+            "drops": {
+                "Skeleton brute": {
+                    "droprate": "1/10.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_brute"
+                    },
+                "Angry barbarian spirit": {
+                    "droprate": "1/10.67",
+                    "url": "https://oldschool.runescape.wiki/w/Angry_barbarian_spirit"
+                    },
+                "Berserk barbarian spirit": {
+                    "droprate": "1/10.67",
+                    "url": "https://oldschool.runescape.wiki/w/Berserk_barbarian_spirit"
+                    },
+                "Enraged barbarian spirit": {
+                    "droprate": "1/10.67",
+                    "url": "https://oldschool.runescape.wiki/w/Enraged_barbarian_spirit"
+                    },
+                "Skeleton heavy": {
+                    "droprate": "1/10.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_heavy"
+                    },
+                "Skeleton hero": {
+                    "droprate": "1/10.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_hero"
+                    },
+                "Skeleton thug": {
+                    "droprate": "1/10.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_thug"
+                    },
+                "Skeleton warlord": {
+                    "droprate": "1/10.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_warlord"
+                    },
+                "Zulrah": {
+                    "droprate": "2 × 1/24.9",
+                    "url": "https://oldschool.runescape.wiki/w/Zulrah"
+                    },
+                "King Black Dragon": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/King_Black_Dragon"
+                    },
+                "Giant Mole": {
+                    "droprate": "1/13.1",
+                    "url": "https://oldschool.runescape.wiki/w/Zulrah"
+                    },
+                "Black Chest": {
+                    "droprate": "1/22.03; 1/25.2",
+                    "url": "https://oldschool.runescape.wiki/w/Black_Chest_(red)"
+                    },
+                "Revenants": {
+                    "droprate": "Varies",
+                    "url": "https://oldschool.runescape.wiki/w/Revenants"
+                    },
+                "Dagannoth Supreme": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Dagannoth_Supreme"
+                    },
+                "Vampyre Juvinate": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Vampyre_Juvinate"
+                    },
+                "Former Vampyre": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Former_Vampyre"
+                    },
+                "Barbarian Assault/Gambles (medium)": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Barbarian_Assault/Gambles#Medium"
+                    },
+                "Araxxor": {
+                    "droprate": "1/38.33",
+                    "url": "https://oldschool.runescape.wiki/w/Araxxor"
+                    },
+                "Gold Chest": {
+                    "droprate": "1/39.98; 1/60",
+                    "url": "https://oldschool.runescape.wiki/w/Gold_Chest_(red)"
+                    },
+                "Vyrewatch Sentinel": {
+                    "droprate": "1/46.5",
+                    "url": "https://oldschool.runescape.wiki/w/Vyrewatch_Sentinel"
+                    },
+                "Silver Chest": {
+                    "droprate": "1/50.8; 1/84.7",
+                    "url": "https://oldschool.runescape.wiki/w/Silver_Chest_(red)"
+                    },
+                "Ferocious barbarian spirit": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Ferocious_barbarian_spirit"
+                    },
+                "Swamp Crab": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Swamp_Crab"
+                    },
+                "Barrel (Shaman Caves)": {
+                    "droprate": "Rare",
+                    "url": "https://oldschool.runescape.wiki/w/Barrel_(Shaman_Caves)"
+                    },
+                "Ent": {
+                    "droprate": "Varies",
+                    "url": "https://oldschool.runescape.wiki/w/Ent"
+                    },
+                "Extra supply crate (Wintertodt)": {
+                    "droprate": "Varies",
+                    "url": "https://oldschool.runescape.wiki/w/Extra_supply_crate"
+                    },
+                "Reward Cart (Wintertodt)": {
+                    "droprate": "Varies",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_Cart"
+                    },
+                "Hunters' loot sack": {
+                    "droprate": "Varies",
+                    "url": "https://oldschool.runescape.wiki/w/Hunters%27_loot_sack"
+                    },
+            "other": {
+                "Cutting yew logs": {
+                    "notes": "Yew tree.",
+                    "rule": "canTrainWoodcutting"
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4433,
         "id": 855,
         "name": "Yew longbow",
-        "image": "yew_longbow.png"
+        "image": "yew_longbow.png",
+        "sources": {
+            "drops": {
+                "Reward casket (medium)": {
+                    "droprate": "1/37.89",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(medium)"
+                    },
+                "Young impling": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Young_impling"
+                    }
+            },
+            "other": {
+                "Fletching a yew longbow": {
+                    "notes": "Requires a yew longbow (u) and a bow string.",
+                    "rule": {
+                        "all": [
+                            { "has": 66 },
+                            { "has": 1777 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "canCompleteSongOfTheElves"
+            }
+        }
     },
     {
         "index": 4434,
         "id": 66,
         "name": "Yew longbow (u)",
-        "image": "yew_longbow_(u).png"
+        "image": "yew_longbow_(u).png",
+        "sources": {
+            "drops": {
+                "Skeleton (Tarn's Lair)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Tarn%27s_Lair)#Medium_level"
+                    }
+            },
+            "other": {
+                "Fletching a yew longbow (u)": {
+                    "notes": "Requires a knife and yew logs.",
+                    "rule": {
+                        "all": [
+                            { "has": 946 },
+                            { "has": 1515 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4435,
         "id": 3446,
         "name": "Yew pyre logs",
-        "image": "yew_pyre_logs.png"
+        "image": "yew_pyre_logs.png",
+        "sources": {
+            "other": {
+                "Creating pyre logs": {
+                    "notes": "Requires yew logs and sacred oil(4).",
+                    "rule": {
+                        "all": [
+                            { "has": 1515 },
+                            { "has": 3430 },
+                            "canCompleteShadesOfMortton"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4436,
         "id": 6049,
         "name": "Yew roots",
-        "image": "yew_roots.png"
+        "image": "yew_roots.png",
+        "sources": {
+            "other": {
+                "Digging up a tree": {
+                    "notes": "Requires a spade and any axe.",
+                    "rule": {
+                        "all": [
+                            { "has": 952 },
+                            "canTrainFarming",
+                            "canTrainWoodcutting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4437,
         "id": 5373,
         "name": "Yew sapling",
-        "image": "yew_sapling.png"
+        "image": "yew_sapling.png",
+        "sources": {
+            "other": {
+                "Creating a sapling": {
+                    "notes": "Requires a filled plant pot and a yew seed.",
+                    "rule": {
+                        "all": [
+                            { "has": 5354 },
+                            { "has": 5315 },
+                            "canTrainFarming"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4438,
         "id": 5315,
         "name": "Yew seed",
-        "image": "yew_seed.png"
+        "image": "yew_seed.png",
+        "sources": {
+            "drops": {
+                "Lunar Chest": {
+                    "droprate": "6 × 1/30",
+                    "url": "https://oldschool.runescape.wiki/w/Lunar_Chest"
+                    },
+                "Lost camphor crate": {
+                    "droprate": "1/8",
+                    "url": "https://oldschool.runescape.wiki/w/Lost_camphor_crate"
+                    },
+                "Monumental chest": {
+                    "droprate": "3 × 1/30",
+                    "url": "https://oldschool.runescape.wiki/w/Monumental_chest"
+                    },
+                "Seed pack": {
+                    "droprate": "1/14.67",
+                    "url": "https://oldschool.runescape.wiki/w/Seed_pack#High_seed"
+                    },
+                "Elven Crystal Chest": {
+                    "droprate": "1/16",
+                    "url": "https://oldschool.runescape.wiki/w/Elven_Crystal_Chest"
+                    },
+                "Crystal impling": {
+                    "droprate": "1/18",
+                    "url": "https://oldschool.runescape.wiki/w/Crystal_impling"
+                    },
+                "Phantom Muspah": {
+                    "droprate": "2 × 1/47",
+                    "url": "https://oldschool.runescape.wiki/w/Phantom_Muspah"
+                    },
+                "Branda the Fire Queen": {
+                    "droprate": "2 × 1/55",
+                    "url": "https://oldschool.runescape.wiki/w/Branda_the_Fire_Queen"
+                    },
+                "Eldric the Ice King": {
+                    "droprate": "2 × 1/55",
+                    "url": "https://oldschool.runescape.wiki/w/Eldric_the_Ice_King"
+                    },
+                "Araxxor": {
+                    "droprate": "~1/28.75",
+                    "url": "https://oldschool.runescape.wiki/w/Araxxor"
+                    },
+                "Barbarian Assault/Gambles (medium)": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Barbarian_Assault/Gambles#Medium"
+                    },
+                "Bird nest (seeds)": {
+                    "droprate": "1/37.44",
+                    "url": "https://oldschool.runescape.wiki/w/Bird_nest_(seeds)"
+                    },
+                "Hespori": {
+                    "droprate": "1/40",
+                    "url": "https://oldschool.runescape.wiki/w/Hespori"
+                    },
+                "Void Knights' Reward Options (Seed pack)": {
+                    "droprate": "3 × 1/132.6",
+                    "url": "https://oldschool.runescape.wiki/w/Void_Knights'_Reward_Options#Seed_pack"
+                    },
+                "Ancient Wyvern": {
+                    "droprate": "1/66",
+                    "url": "https://oldschool.runescape.wiki/w/Ancient_Wyvern"
+                    },
+                "Vale offerings": {
+                    "droprate": "~1/72.4",
+                    "url": "https://oldschool.runescape.wiki/w/Vale_offerings#Level_90+"
+                    },
+                "Reward casket (master)": {
+                    "droprate": "1/91",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    },
+                "Reward casket (elite)": {
+                    "droprate": "1/96.9",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(elite)"
+                    },
+                "Sarachnis": {
+                    "droprate": "1/100",
+                    "url": "https://oldschool.runescape.wiki/w/Sarachnis"
+                    },
+                "Spitting Wyvern": {
+                    "droprate": "1/114.7",
+                    "url": "https://oldschool.runescape.wiki/w/Spitting_Wyvern"
+                    },
+                "Taloned Wyvern": {
+                    "droprate": "1/114.7",
+                    "url": "https://oldschool.runescape.wiki/w/Taloned_Wyvern"
+                    },
+                "Long-tailed Wyvern": {
+                    "droprate": "1/114.7",
+                    "url": "https://oldschool.runescape.wiki/w/Long-tailed_Wyvern"
+                    },
+                "Kree'arra": {
+                    "droprate": "1/127",
+                    "url": "https://oldschool.runescape.wiki/w/Kree'arra"
+                    },
+                "SarArtioachnis": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Artio"
+                    },
+                "Calvar'ion": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Calvar'ion"
+                    },
+                "Bird nest (Wyson)": {
+                    "droprate": "1/171",
+                    "url": "https://oldschool.runescape.wiki/w/Bird_nest_(Wyson)"
+                    },
+                "Demonic gorilla": {
+                    "droprate": "1/277.8",
+                    "url": "https://oldschool.runescape.wiki/w/Demonic_gorilla"
+                    },
+                "Manta ray (monster)": {
+                    "droprate": "1/343.8",
+                    "url": "https://oldschool.runescape.wiki/w/Manta_ray_(monster)"
+                    },
+                "Vorkath": {
+                    "droprate": "2 × 1/694.4",
+                    "url": "https://oldschool.runescape.wiki/w/Vorkath#Post-quest"
+                    },
+                "Alchemical Hydra": {
+                    "droprate": "2 × 1/701.4",
+                    "url": "https://oldschool.runescape.wiki/w/Alchemical_Hydra"
+                    },
+                "Tortured gorilla": {
+                    "droprate": "1/448",
+                    "url": "https://oldschool.runescape.wiki/w/Tortured_gorilla"
+                    },
+                "Lizardman shaman": {
+                    "droprate": "1/694.4",
+                    "url": "https://oldschool.runescape.wiki/w/Lizardman_shaman"
+                    },
+                "Tormented Demon": {
+                    "droprate": "~1/708.3",
+                    "url": "https://oldschool.runescape.wiki/w/Tormented_Demon"
+                    },
+                "Ancient Zygomite": {
+                    "droprate": "1/1,639",
+                    "url": "https://oldschool.runescape.wiki/w/Ancient_Zygomite"
+                    },
+                "Deranged archaeologist": {
+                    "droprate": "1/1,819",
+                    "url": "https://oldschool.runescape.wiki/w/Sarachnis"
+                    },
+                "Extra supply crate (Wintertodt)": {
+                    "droprate": "Varies",
+                    "url": "https://oldschool.runescape.wiki/w/Extra_supply_crate"
+                    },
+                "Reward Cart (Wintertodt)": {
+                    "droprate": "Varies",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_Cart"
+                    },
+                "Revenants": {
+                    "droprate": "Varies",
+                    "url": "https://oldschool.runescape.wiki/w/Revenants"
+                    }
+            }
+        }
     },
     {
         "index": 4439,
         "id": 22260,
         "name": "Yew shield",
-        "image": "yew_shield.png"
+        "image": "yew_shield.png",
+        "sources": {
+            "other": {
+                "Fletching a yew shield": {
+                    "notes": "Requires a knife and yew logs.",
+                    "rule": {
+                        "all": [
+                            { "has": 946 },
+                            { "has": 1515 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4440,
         "id": 857,
         "name": "Yew shortbow",
-        "image": "yew_shortbow.png"
+        "image": "yew_shortbow.png",
+        "sources": {
+            "other": {
+                "Fletching a yew shortbow": {
+                    "notes": "Requires a yew shortbow (u) and a bow string.",
+                    "rule": {
+                        "all": [
+                            { "has": 68 },
+                            { "has": 1777 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4441,
         "id": 68,
         "name": "Yew shortbow (u)",
-        "image": "yew_shortbow_(u).png"
+        "image": "yew_shortbow_(u).png",
+        "sources": {
+            "other": {
+                "Fletching a yew shortbow (u)": {
+                    "notes": "Requires a knife and yew logs.",
+                    "rule": {
+                        "all": [
+                            { "has": 946 },
+                            { "has": 1515 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4442,
         "id": 9452,
         "name": "Yew stock",
-        "image": "yew_stock.png"
+        "image": "yew_stock.png",
+        "sources": {
+            "other": {
+                "Fletching a yew stock": {
+                    "notes": "Requires a knife and yew logs.",
+                    "rule": {
+                        "all": [
+                            { "has": 946 },
+                            { "has": 1515 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4443,
         "id": 11240,
         "name": "Young impling jar",
-        "image": "young_impling_jar.png"
+        "image": "young_impling_jar.png",
+        "sources": {
+            "other": {
+                "Catching an impling": {
+                    "notes": "Requires an impling jar.",
+                    "rule": {
+                        "all": [
+                            { "has": 11260 },
+                            "canTrainHunter"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4444,
         "id": 23908,
         "name": "Zalcano shard",
-        "image": "zalcano_shard.png"
+        "image": "zalcano_shard.png",
+        "sources": {
+            "drops": {
+                "Zalcano": {
+                    "droprate": "1/750–1/1,500",
+                    "url": "https://oldschool.runescape.wiki/w/Zalcano"
+                    }
+            }
+        }
     },
     {
         "index": 4445,
         "id": 13044,
         "name": "Zamorak armour set (lg)",
-        "image": "zamorak_armour_set_(lg).png"
+        "image": "zamorak_armour_set_(lg).png",
+        "sources": {
+            "other": {
+                "Creating a set at the Grand Exchange": {
+                    "notes": "Requires a zamorak full helm, a zamorak platebody, zamorak platelegs and a zamorak kiteshield.",
+                    "rule": {
+                        "all": [
+                            { "has": 2657 },
+                            { "has": 2653 },
+                            { "has": 2655 },
+                            { "has": 2659 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4446,
         "id": 13046,
         "name": "Zamorak armour set (sk)",
-        "image": "zamorak_armour_set_(sk).png"
+        "image": "zamorak_armour_set_(sk).png",
+        "sources": {
+            "other": {
+                "Creating a set at the Grand Exchange": {
+                    "notes": "Requires a zamorak full helm, a zamorak platebody, a zamorak plateskirt and a zamorak kiteshield.",
+                    "rule": {
+                        "all": [
+                            { "has": 2657 },
+                            { "has": 2653 },
+                            { "has": 3478 },
+                            { "has": 2659 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4447,
@@ -36169,25 +36794,125 @@
         "index": 4448,
         "id": 193,
         "name": "Zamorak brew(1)",
-        "image": "zamorak_brew(1).png"
+        "image": "zamorak_brew(1).png",
+        "sources": {
+            "other": {
+                "Decanting a potion": {
+                    "notes": "Decanting a zamorak brew(2), zamorak brew(3) or zamorak brew(4).",
+                    "rule": {
+                        "any": [
+                            { "has": 191 },
+                            { "has": 189 },
+                            { "has": 2450 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4449,
         "id": 191,
         "name": "Zamorak brew(2)",
-        "image": "zamorak_brew(2).png"
+        "image": "zamorak_brew(2).png",
+        "sources": {
+            "drops": {
+                "Dagannoth Rex": {
+                    "droprate": "1/128",
+                    "url": "https://oldschool.runescape.wiki/w/Dagannoth_Rex"
+                    }
+            },
+            "other": {
+                "Decanting a potion": {
+                    "notes": "Decanting a zamorak brew(1), zamorak brew(3) or zamorak brew(4).",
+                    "rule": {
+                        "any": [
+                            { "has": 193 },
+                            { "has": 189 },
+                            { "has": 2450 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4450,
         "id": 189,
         "name": "Zamorak brew(3)",
-        "image": "zamorak_brew(3).png"
+        "image": "zamorak_brew(3).png",
+        "sources": {
+            "drops": {
+                "Expert potion pack": {
+                    "droprate": "4 × ~1/9.222",
+                    "url": "https://oldschool.runescape.wiki/w/Expert_potion_pack"
+                    },
+                "K'ril Tsutsaroth": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth"
+                    },
+                "The Nightmare": {
+                    "droprate": "1/20",
+                    "url": "https://oldschool.runescape.wiki/w/The_Nightmare"
+                    },
+                "Phosani's Nightmare": {
+                    "droprate": "1/20",
+                    "url": "https://oldschool.runescape.wiki/w/Phosani%27s_Nightmare"
+                    }
+            },
+            "other": {
+                "Mixing a potion": {
+                    "notes": "Requires a torstol potion (unf) and jangerberries.",
+                    "rule": {
+                        "all": [
+                            { "has": 111 },
+                            { "has": 247 },
+                            "canTrainHerblore"
+                        ]
+                    }
+                },
+                "Decanting a potion": {
+                    "notes": "Decanting a zamorak brew(1), zamorak brew(2) or zamorak brew(4).",
+                    "rule": {
+                        "any": [
+                            { "has": 193 },
+                            { "has": 191 },
+                            { "has": 2450 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4451,
         "id": 2450,
         "name": "Zamorak brew(4)",
-        "image": "zamorak_brew(4).png"
+        "image": "zamorak_brew(4).png",
+        "sources": {
+            "other": {
+                "Mixing a potion": {
+                    "notes": "Requires a torstol potion (unf) and jangerberries while wearing an amulet of chemistry or an alchemist's amulet.",
+                    "rule": {
+                        "all": [
+                            { "has": 111 },
+                            { "has": 247 },
+                            "canTrainHerblore"
+                        ]
+                    }
+                },
+                "Decanting a potion": {
+                    "notes": "Decanting a zamorak brew(1), zamorak brew(2) or zamorak brew(3).",
+                    "rule": {
+                        "any": [
+                            { "has": 193 },
+                            { "has": 191 },
+                            { "has": 189 }
+                            ]
+                        }
+                    }
+                }
+            }
     },
     {
         "index": 4452,
@@ -36298,7 +37023,22 @@
         "index": 4459,
         "id": 13161,
         "name": "Zamorak dragonhide set",
-        "image": "zamorak_dragonhide_set.png"
+        "image": "zamorak_dragonhide_set.png",
+        "sources": {
+            "other": {
+                "Creating a set at the Grand Exchange": {
+                    "notes": "Requires a zamorak coif, a zamorak d'hide body, zamorak chaps and zamorak bracers.",
+                    "rule": {
+                        "all": [
+                            { "has": 10374 },
+                            { "has": 10370 },
+                            { "has": 10372 },
+                            { "has": 10368 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4460,
@@ -36319,19 +37059,49 @@
         "index": 4461,
         "id": 11808,
         "name": "Zamorak godsword",
-        "image": "zamorak_godsword.png"
+        "image": "zamorak_godsword.png",
+        "sources": {
+            "other": {
+                "Creating a zamorak godsword": {
+                    "notes": "Requires a zamorak hilt and a godsword blade.",
+                    "rule": {
+                        "all": [
+                            { "has": 11816 },
+                            { "has": 11798 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4462,
         "id": 20077,
         "name": "Zamorak godsword ornament kit",
-        "image": "zamorak_godsword_ornament_kit.png"
+        "image": "zamorak_godsword_ornament_kit.png",
+        "tags": ["clue-reward-only"],
+        "sources": {
+            "drops": {
+                "Reward casket (master)": {
+                    "droprate": "1/3,404",
+                    "url": "https://oldschool.runescape.wiki/w/Reward_casket_(master)"
+                    }
+            }
+        }
     },
     {
         "index": 4463,
         "id": 11816,
         "name": "Zamorak hilt",
-        "image": "zamorak_hilt.png"
+        "image": "zamorak_hilt.png",
+        "sources": {
+            "drops": {
+                "K'ril Tsutsaroth": {
+                    "droprate": "1/508",
+                    "url": "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth"
+                    }
+            }
+        }
     },
     {
         "index": 4464,
@@ -36367,31 +37137,125 @@
         "index": 4466,
         "id": 11523,
         "name": "Zamorak mix(1)",
-        "image": "zamorak_mix(1).png"
+        "image": "zamorak_mix(1).png",
+        "sources": {
+            "other": {
+                "Drinking or decanting a barbarian potion": {
+                    "notes": "Drinking or decanting a zamorak mix(2).",
+                    "rule": {
+                        "all": [
+                            { "has": 11521 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4467,
         "id": 11521,
         "name": "Zamorak mix(2)",
-        "image": "zamorak_mix(2).png"
+        "image": "zamorak_mix(2).png",
+        "sources": {
+            "other": {
+                "Mixing a barbarian potion": {
+                    "notes": "Mixing a zamorak brew(2) with caviar.",
+                    "rule": {
+                        "all": [
+                            { "has": 191 },
+                            { "has": 11326 },
+                            "canCompleteBarbarianHerblore"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4468,
         "id": 6764,
         "name": "Zamorak mjolnir",
-        "image": "zamorak_mjolnir.png"
+        "image": "zamorak_mjolnir.png",
+        "sources": {
+            "other": {
+                "Found during the Enchanted Key miniquest": {
+                    "notes": "Can be found during the Enchanted Key miniquest.",
+                    "rule": {
+                        "all": [
+                            "canCompleteEnchantedKey"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4469,
         "id": 1033,
         "name": "Zamorak monk bottom",
-        "image": "zamorak_monk_bottom.png"
+        "image": "zamorak_monk_bottom.png",
+        "sources": {
+            "drops": {
+                "Disciple of Iban": {
+                    "droprate": "Always",
+                    "url": "https://oldschool.runescape.wiki/w/Disciple_of_Iban"
+                    },
+                "Monk of Zamorak": {
+                    "droprate": "1/20",
+                    "url": "https://oldschool.runescape.wiki/w/Monk_of_Zamorak"
+                    },
+                "Chaos Fanatic": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Chaos_Fanatic"
+                    },
+                "Zamorak wizard": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Zamorak_wizard"
+                    },
+                "Necromancer": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Necromancer"
+                    },
+                "Elder Chaos druid": {
+                    "droprate": "1/354.8",
+                    "url": "https://oldschool.runescape.wiki/w/Elder_Chaos_druid"
+                    }
+            }
+        }
     },
     {
         "index": 4470,
         "id": 1035,
         "name": "Zamorak monk top",
-        "image": "zamorak_monk_top.png"
+        "image": "zamorak_monk_top.png",
+        "sources": {
+            "drops": {
+                "Disciple of Iban": {
+                    "droprate": "Always",
+                    "url": "https://oldschool.runescape.wiki/w/Disciple_of_Iban"
+                    },
+                "Monk of Zamorak": {
+                    "droprate": "1/20",
+                    "url": "https://oldschool.runescape.wiki/w/Monk_of_Zamorak"
+                    },
+                "Chaos Fanatic": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Chaos_Fanatic"
+                    },
+                "Zamorak wizard": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Zamorak_wizard"
+                    },
+                "Necromancer": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Necromancer"
+                    },
+                "Elder Chaos druid": {
+                    "droprate": "1/354.8",
+                    "url": "https://oldschool.runescape.wiki/w/Elder_Chaos_druid"
+                    }
+            }
+        }
     },
     {
         "index": 4471,
@@ -36611,85 +37475,283 @@
         "index": 4481,
         "id": 20749,
         "name": "Zamorak's grapes",
-        "image": "zamorak's_grapes.png"
+        "image": "zamorak's_grapes.png",
+        "sources": {
+            "other": {
+                "Harvesting a grape vine": {
+                    "notes": "Requires a bologa's blessing from Tithe Farm.",
+                    "rule": {
+                        "all": [
+                            "canTrainFarming"
+                        ]
+                    }
+                }
+            }
+        }
+
     },
     {
         "index": 4482,
         "id": 11889,
         "name": "Zamorakian hasta",
-        "image": "zamorakian_hasta.png"
+        "image": "zamorakian_hasta.png",
+        "sources": {
+            "other": {
+                "Crafting a Zamorakian hasta": {
+                    "notes": "Requires a zamorakian spear and 300,000 coins.",
+                    "rule": {
+                        "all": [
+                            { "has": 11824 },
+                            "canCompleteBarbarianSmithing"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4483,
         "id": 11824,
         "name": "Zamorakian spear",
-        "image": "zamorakian_spear.png"
+        "image": "zamorakian_spear.png",
+        "sources": {
+            "drops": {
+                "K'ril Tsutsaroth": {
+                    "droprate": "1/127",
+                    "url": "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth"
+                    },
+                "Balfrug Kreeyath": {
+                    "droprate": "1/5,376",
+                    "url": "https://oldschool.runescape.wiki/w/Balfrug_Kreeyath"
+                    },
+                "Zakl'n Gritch": {
+                    "droprate": "1/5,376",
+                    "url": "https://oldschool.runescape.wiki/w/Zakl'n_Gritch"
+                    },
+                "Tstanon Karlak": {
+                    "droprate": "1/5,376",
+                    "url": "https://oldschool.runescape.wiki/w/Tstanon_Karlak"
+                    }
+            }
+        }
     },
     {
         "index": 4484,
         "id": 26374,
         "name": "Zaryte crossbow",
-        "image": "zaryte_crossbow.png"
+        "image": "zaryte_crossbow.png",
+        "sources": {
+            "other": {
+                "Crafting a Zaryte crossbow": {
+                    "notes": "Requires a nihil horn, an Armadyl crossbow and 250 nihil shards.",
+                    "rule": {
+                        "all": [
+                            { "has": 26372 },
+                            { "has": 11785 },
+                            { "has": 26231 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4485,
         "id": 26235,
         "name": "Zaryte vambraces",
-        "image": "zaryte_vambraces.png"
+        "image": "zaryte_vambraces.png",
+        "sources": {
+            "drops": {
+                "Nex": {
+                    "droprate": "1/172",
+                    "url": "https://oldschool.runescape.wiki/w/Nex"
+                    }
+            }
+        }
     },
     {
         "index": 4486,
         "id": 19493,
         "name": "Zenyte",
-        "image": "zenyte.png"
+        "image": "zenyte.png",
+        "sources": {
+            "other": {
+                "Cutting an uncut zenyte": {
+                    "notes": "Requires a uncut zenyte, and a chisel.",
+                    "rule": {
+                        "all": [
+                            { "has": 19496 },
+                            { "has": 1755 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4487,
         "id": 19541,
         "name": "Zenyte amulet",
-        "image": "zenyte_amulet.png"
+        "image": "zenyte_amulet.png",
+        "sources": {
+            "other": {
+                "Crafting a zenyte amulet": {
+                    "notes": "Requires a zenyte amulet (u), and a ball of wool.",
+                    "rule": {
+                        "all": [
+                            { "has": 19501 },
+                            { "has": 1759 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4488,
         "id": 19501,
         "name": "Zenyte amulet (u)",
-        "image": "zenyte_amulet_(u).png"
+        "image": "zenyte_amulet_(u).png",
+        "sources": {
+            "other": {
+                "Crafting a zenyte amulet (u)": {
+                    "notes": "Requires a gold bar, a zenyte, and a amulet mould.",
+                    "rule": {
+                        "all": [
+                            { "has": 2357 },
+                            { "has": 19493 },
+                            { "has": 1595 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4489,
         "id": 19532,
         "name": "Zenyte bracelet",
-        "image": "zenyte_bracelet.png"
+        "image": "zenyte_bracelet.png",
+        "sources": {
+            "other": {
+                "Crafting a zenyte bracelet": {
+                    "notes": "Requires a gold bar, a zenyte, and a bracelet mould.",
+                    "rule": {
+                        "all": [
+                            { "has": 2357 },
+                            { "has": 19493 },
+                            { "has": 11065 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4490,
         "id": 19535,
         "name": "Zenyte necklace",
-        "image": "zenyte_necklace.png"
+        "image": "zenyte_necklace.png",
+        "sources": {
+            "other": {
+                "Crafting a zenyte necklace": {
+                    "notes": "Requires a gold bar, a zenyte, and a necklace mould.",
+                    "rule": {
+                        "all": [
+                            { "has": 2357 },
+                            { "has": 19493 },
+                            { "has": 1597 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4491,
         "id": 19538,
         "name": "Zenyte ring",
-        "image": "zenyte_ring.png"
+        "image": "zenyte_ring.png",
+        "sources": {
+            "other": {
+                "Crafting a zenyte ring": {
+                    "notes": "Requires a gold bar, a zenyte, and a ring mould.",
+                    "rule": {
+                        "all": [
+                            { "has": 2357 },
+                            { "has": 19493 },
+                            { "has": 1592 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4492,
         "id": 19529,
         "name": "Zenyte shard",
-        "image": "zenyte_shard.png"
+        "image": "zenyte_shard.png",
+        "sources": {
+            "drops": {
+                "Demonic gorilla": {
+                    "droprate": "1/300",
+                    "url": "https://oldschool.runescape.wiki/w/Tortured_gorilla"
+                    },
+                "Tortured gorilla": {
+                    "droprate": "1/3,000",
+                    "url": "https://oldschool.runescape.wiki/w/Demonic_gorilla"
+                    }
+            }
+        }
     },
     {
         "index": 4493,
         "id": 4812,
         "name": "Zogre bones",
-        "image": "zogre_bones.png"
+        "image": "zogre_bones.png",
+        "sources": {
+            "drops": {
+                "Zogre": {
+                    "droprate": "Always",
+                    "url": "https://oldschool.runescape.wiki/w/Zogre"
+                    },
+                "Skogre": {
+                    "droprate": "Always",
+                    "url": "https://oldschool.runescape.wiki/w/Skogre"
+                    },
+                "Ogre Coffin": {
+                    "droprate": "1/2",
+                    "url": "https://oldschool.runescape.wiki/w/Ogre_Coffin"
+                    }
+            }
+        }
     },
     {
         "index": 4494,
         "id": 28810,
         "name": "Zombie axe",
-        "image": "zombie_axe.png"
+        "image": "zombie_axe.png",
+        "sources": {
+            "other": {
+                "Repairing a broken zombie axe": {
+                    "notes": "Requires a broken zombie axe and a hammer.",
+                    "rule": {
+                        "all": [
+                            { "has": 28813 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4495,
@@ -36710,30 +37772,82 @@
         "index": 4496,
         "id": 30321,
         "name": "Zombie helmet",
-        "image": "zombie_helmet.png"
+        "image": "zombie_helmet.png",
+        "sources": {
+            "other": {
+                "Repairing a broken zombie helmet": {
+                    "notes": "Requires a broken zombie helmet and a hammer.",
+                    "rule": {
+                        "all": [
+                            { "has": 30324 },
+                            { "has": 2347 },
+                            "canTrainSmithing"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4497,
         "id": 29449,
         "name": "Zombie pirate key",
-        "image": "zombie_pirate_key.png"
+        "image": "zombie_pirate_key.png",
+        "sources": {
+            "drops": {
+                "Zombie pirate": {
+                    "droprate": "1/78.75",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_pirate"
+                    }
+            }
+        }
     },
     {
         "index": 4498,
         "id": 12938,
         "name": "Zul-andra teleport",
-        "image": "zul-andra_teleport.png"
+        "image": "zul-andra_teleport.png",
+        "sources": {
+            "drops": {
+                "Zulrah": {
+                    "droprate": "2 × 1/16.6",
+                    "url": "https://oldschool.runescape.wiki/w/Zulrah"
+                    }
+            }
+        }
     },
     {
         "index": 4499,
         "id": 12934,
         "name": "Zulrah's scales",
-        "image": "zulrah's_scales.png"
+        "image": "zulrah's_scales.png",
+        "sources": {
+            "drops": {
+                "Zulrah": {
+                    "droprate": "Always",
+                    "url": "https://oldschool.runescape.wiki/w/Zulrah"
+                    }
+            },
+            "other": {
+                "Dissecting sacred eels": {
+                    "notes": "Requires a knife, fishing rod and fishing bait.",
+                    "rule": {
+                        "all": [
+                            { "has": 946 },
+                            { "has": 307 },
+                            { "has": 313 },
+                            "canTrainFishing"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4500,
         "id": 22647,
         "name": "Zuriel's staff",
-        "image": "zuriel's_staff.png"
+        "image": "zuriel's_staff.png",
+        "tags": ["deadman"]
     }
 ]
