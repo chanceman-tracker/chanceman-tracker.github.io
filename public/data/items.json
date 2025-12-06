@@ -1044,7 +1044,7 @@
                     "droprate": "1/50",
                     "url": "https://oldschool.runescape.wiki/w/Silver_Chest"
                     },
-                "Lava Dragon": {
+                "Lava dragon": {
                     "droprate": "1/64",
                     "url": "https://oldschool.runescape.wiki/w/Lava_dragon"
                     },
@@ -5848,7 +5848,20 @@
         "index": 475,
         "id": 881,
         "name": "Barbed bolts",
-        "image": "barbed_bolts.png"
+        "image": "barbed_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Bronze bolt": {
+                    "notes": "Requires a Bronze bolt and a Barb bolttip.",
+                    "rule": {
+                        "all": [
+                            { "has": 877 },
+                            { "has": 47 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 476,
@@ -8938,25 +8951,147 @@
         "index": 823,
         "id": 877,
         "name": "Bronze bolts",
-        "image": "bronze_bolts.png"
+        "image": "bronze_bolts.png",
+        "sources": {
+            "drops": {
+                "Crossbow stall": {
+                    "droprate": "1/1.739",
+                    "url": "https://oldschool.runescape.wiki/w/Crossbow_stall"
+                    },
+                "Mugger": {
+                    "droprate": "1/4.741",
+                    "url": "https://oldschool.runescape.wiki/w/Mugger"
+                    },
+                "Man": {
+                    "droprate": "1/5.818",
+                    "url": "https://oldschool.runescape.wiki/w/Man"
+                    },
+                "Woman": {
+                    "droprate": "1/5.818",
+                    "url": "https://oldschool.runescape.wiki/w/Woman"
+                    },
+                "Al Kharid warrior": {
+                    "droprate": "1/5.818",
+                    "url": "https://oldschool.runescape.wiki/w/Al_Kharid_warrior"
+                    },
+                "Thief": {
+                    "droprate": "1/5.818",
+                    "url": "https://oldschool.runescape.wiki/w/Thief"
+                    },
+                "Chest (Maze)": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Chest_(Maze)"
+                    },
+                "Imp": {
+                    "droprate": "1/16",
+                    "url": "https://oldschool.runescape.wiki/w/Imp"
+                    },
+                "Dwarf": {
+                    "droprate": "1/18.29",
+                    "url": "https://oldschool.runescape.wiki/w/Dwarf"
+                    },
+                "Black Guard (level 25)": {
+                    "droprate": "1/18.29",
+                    "url": "https://oldschool.runescape.wiki/w/Black_Guard#Level_25"
+                    },
+                "Goblin": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Goblin"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fletching Bronze bolts": {
+                    "notes": "Bronze bolts (unf) and feather",
+                    "rule": {
+                        "all": [
+                            { "has": 9375 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "878": "187",
+            "6061": "5937",
+            "6062": "5940",
+            "879": "45",
+            "881": "47"
+        }
     },
     {
         "index": 824,
         "id": 878,
         "name": "Bronze bolts (p)",
-        "image": "bronze_bolts_(p).png"
+        "image": "bronze_bolts_(p).png",
+        "sources": {
+            "drops": {
+                "Tribesman": {
+                    "droprate": "1/69",
+                    "url": "https://oldschool.runescape.wiki/w/Tribesman"
+                    },
+                "Tribeswoman": {
+                    "droprate": "1/69",
+                    "url": "https://oldschool.runescape.wiki/w/Tribeswoman"
+                    }
+            },
+            "other": {
+                "Poisoning a Bronze bolt": {
+                    "notes": "Requires a Bronze bolt and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 877 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 825,
         "id": 6061,
         "name": "Bronze bolts (p+)",
-        "image": "bronze_bolts_(p+).png"
+        "image": "bronze_bolts_(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bronze bolt": {
+                    "notes": "Requires a Bronze bolt and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 877 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 826,
         "id": 6062,
         "name": "Bronze bolts (p++)",
-        "image": "bronze_bolts_(p++).png"
+        "image": "bronze_bolts_(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Bronze bolt": {
+                    "notes": "Requires a Bronze bolt and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 877 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 827,
@@ -11787,7 +11922,20 @@
         "index": 1221,
         "id": 9340,
         "name": "Diamond bolts",
-        "image": "diamond_bolts.png"
+        "image": "diamond_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping an Adamant bolt": {
+                    "notes": "Requires an Adamant bolt and a Diamond bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 9143 },
+                            { "has": 9192 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1222,
@@ -11805,7 +11953,20 @@
         "index": 1224,
         "id": 21969,
         "name": "Diamond dragon bolts",
-        "image": "diamond_dragon_bolts.png"
+        "image": "diamond_dragon_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and a Diamond bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 9192 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1225,
@@ -12268,25 +12429,93 @@
         "index": 1283,
         "id": 21905,
         "name": "Dragon bolts",
-        "image": "dragon_bolts.png"
+        "image": "dragon_bolts.png",
+        "sources": {
+            "other": {
+                "Fletching Dragon bolts": {
+                    "notes": "Dragon bolts (unf) and feather",
+                    "rule": {
+                        "all": [
+                            { "has": 21930 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "21924": "187",
+            "21926": "5937",
+            "21928": "5940",
+            "21969": "9192",
+            "21971": "9193",
+            "21965": "9190",
+            "21957": "9187",
+            "21973": "9194",
+            "21955": "45",
+            "21959": "46",
+            "21967": "9191",
+            "21963": "9189",
+            "21961": "9188"
+        }
     },
     {
         "index": 1284,
         "id": 21924,
         "name": "Dragon bolts (p)",
-        "image": "dragon_bolts_(p).png"
+        "image": "dragon_bolts_(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1285,
         "id": 21926,
         "name": "Dragon bolts (p+)",
-        "image": "dragon_bolts_(p+).png"
+        "image": "dragon_bolts_(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1286,
         "id": 21928,
         "name": "Dragon bolts (p++)",
-        "image": "dragon_bolts_(p++).png"
+        "image": "dragon_bolts_(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1287,
@@ -13126,7 +13355,26 @@
         "index": 1375,
         "id": 9341,
         "name": "Dragonstone bolts",
-        "image": "dragonstone_bolts.png"
+        "image": "dragonstone_bolts.png",
+        "sources": {
+            "drops": {
+                "Dragon impling": {
+                    "droprate": "1/19",
+                    "url": "https://oldschool.runescape.wiki/w/Dragon_impling"
+                    }
+            },
+            "other": {
+                "Tipping a Runite bolt": {
+                    "notes": "Requires a Runite bolt and a Dragonstone bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 9144 },
+                            { "has": 9193 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1376,
@@ -13150,7 +13398,20 @@
         "index": 1379,
         "id": 21971,
         "name": "Dragonstone dragon bolts",
-        "image": "dragonstone_dragon_bolts.png"
+        "image": "dragonstone_dragon_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and a Dragonstone bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 9193 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1380,
@@ -13729,7 +13990,20 @@
         "index": 1474,
         "id": 9338,
         "name": "Emerald bolts",
-        "image": "emerald_bolts.png"
+        "image": "emerald_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Mithril bolt": {
+                    "notes": "Requires a Mithril bolt and an Emerald bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 9142 },
+                            { "has": 9190 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1475,
@@ -13747,7 +14021,20 @@
         "index": 1477,
         "id": 21965,
         "name": "Emerald dragon bolts",
-        "image": "emerald_dragon_bolts.png"
+        "image": "emerald_dragon_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and an Emerald bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 9190 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1478,
@@ -18199,25 +18486,109 @@
         "index": 2026,
         "id": 9140,
         "name": "Iron bolts",
-        "image": "iron_bolts.png"
+        "image": "iron_bolts.png",
+        "sources": {
+            "drops": {
+                "Guard": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/Guard"
+                    },
+                "Pirate": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/Pirate"
+                    },
+                "Storage crate": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/Storage_crate"
+                    },
+                "Highwayman": {
+                    "droprate": "1/20",
+                    "url": "https://oldschool.runescape.wiki/w/Highwayman"
+                    },
+                "Skeleton (Tarn's Lair)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Tarn's_Lair)"
+                    }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fletching Iron bolts": {
+                    "notes": "Iron bolts (unf) and feather",
+                    "rule": {
+                        "all": [
+                            { "has": 9377 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "9287": "187",
+            "9294": "5937",
+            "9301": "5940",
+            "880": "46"
+        }
     },
     {
         "index": 2027,
         "id": 9287,
         "name": "Iron bolts (p)",
-        "image": "iron_bolts_(p).png"
+        "image": "iron_bolts_(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Iron bolt": {
+                    "notes": "Requires a Iron bolt and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 9140 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2028,
         "id": 9294,
         "name": "Iron bolts (p+)",
-        "image": "iron_bolts_(p+).png"
+        "image": "iron_bolts_(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Iron bolt": {
+                    "notes": "Requires a Iron bolt and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 9140 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2029,
         "id": 9301,
         "name": "Iron bolts (p++)",
-        "image": "iron_bolts_(p++).png"
+        "image": "iron_bolts_(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Iron bolt": {
+                    "notes": "Requires a Iron bolt and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 9140 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2030,
@@ -18304,7 +18675,7 @@
                     },
                 "Al Kharid warrior": {
                     "droprate": "1/128",
-                    "url": "https://oldschool.runescape.wiki/w/H.A.M._Guard"
+                    "url": "https://oldschool.runescape.wiki/w/Al_Kharid_warrior"
                     }
             },
             "shops": {
@@ -19050,7 +19421,20 @@
         "index": 2117,
         "id": 21957,
         "name": "Jade dragon bolts",
-        "image": "jade_dragon_bolts.png"
+        "image": "jade_dragon_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and a Jade bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 9187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2118,
@@ -21371,25 +21755,123 @@
         "index": 2445,
         "id": 9142,
         "name": "Mithril bolts",
-        "image": "mithril_bolts.png"
+        "image": "mithril_bolts.png",
+        "sources": {
+            "drops": {
+                "Hallowed sack": {
+                    "droprate": "5 × 1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Hallowed_sack"
+                    },
+                "Coffin (Hallowed Sepulchre)": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Coffin_(Hallowed_Sepulchre)"
+                    },
+                "Bronze dragon": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Bronze_dragon"
+                    },
+                "Elder Chaos druid": {
+                    "droprate": "1/21.5",
+                    "url": "https://oldschool.runescape.wiki/w/Elder_Chaos_druid"
+                    },
+                "Gnome Restaurant Tips": {
+                    "droprate": "1/25.51",
+                    "url": "https://oldschool.runescape.wiki/w/King_Bolren#Gnome_Restaurant_Tips"
+                    },
+                "Crossbow stall": {
+                    "droprate": "1/26.67",
+                    "url": "https://oldschool.runescape.wiki/w/Crossbow_stall"
+                    },
+                "Chaos druid": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Chaos_druid"
+                    },
+                "Sarachnis": {
+                    "droprate": "1/50",
+                    "url": "https://oldschool.runescape.wiki/w/Sarachnis"
+                    },
+                "Forgotten Soul": {
+                    "droprate": "1/64",
+                    "url": "https://oldschool.runescape.wiki/w/Forgotten_Soul"
+                    }
+            },
+            "other": {
+                "Fletching Mithril bolts": {
+                    "notes": "Mithril bolts (unf) and feather",
+                    "rule": {
+                        "all": [
+                            { "has": 9379 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "9289": "187",
+            "9296": "5937",
+            "9303": "5940",
+            "9338": "9190",
+            "9337": "9189"
+        }
     },
     {
         "index": 2446,
         "id": 9289,
         "name": "Mithril bolts (p)",
-        "image": "mithril_bolts_(p).png"
+        "image": "mithril_bolts_(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Mithril bolt": {
+                    "notes": "Requires a Mithril bolt and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 9142 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2447,
         "id": 9296,
         "name": "Mithril bolts (p+)",
-        "image": "mithril_bolts_(p+).png"
+        "image": "mithril_bolts_(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Mithril bolt": {
+                    "notes": "Requires a Mithril bolt and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 9142 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2448,
         "id": 9303,
         "name": "Mithril bolts (p++)",
-        "image": "mithril_bolts_(p++).png"
+        "image": "mithril_bolts_(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Mithril bolt": {
+                    "notes": "Requires a Mithril bolt and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 9142 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2449,
@@ -23534,7 +24016,38 @@
         "index": 2721,
         "id": 9342,
         "name": "Onyx bolts",
-        "image": "onyx_bolts.png"
+        "image": "onyx_bolts.png",
+        "sources": {
+            "drops": {
+                "Reward Chest (Fortis Colosseum)": {
+                    "droprate": "Varies",
+                    "url": "https://oldschool.runescape.wiki/w/Rewards_Chest_(Fortis_Colosseum)"
+                    },
+                "Ninja impling": {
+                    "droprate": "1/19",
+                    "url": "https://oldschool.runescape.wiki/w/Ninja_impling"
+                    },
+                "Doom of Mokhaiotl": {
+                    "droprate": "1/20.8",
+                    "url": "https://oldschool.runescape.wiki/w/Doom_of_Mokhaiotl"
+                    },
+                "Chest (moon key)": {
+                    "droprate": "1/20.8",
+                    "url": "https://oldschool.runescape.wiki/w/Chest_(moon_key)"
+                    }
+            },
+            "other": {
+                "Tipping a Runite bolt": {
+                    "notes": "Requires a Runite bolt and an Onyx bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 9144 },
+                            { "has": 9194 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2722,
@@ -23552,7 +24065,20 @@
         "index": 2724,
         "id": 21973,
         "name": "Onyx dragon bolts",
-        "image": "onyx_dragon_bolts.png"
+        "image": "onyx_dragon_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and an Onyx bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 9194 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2725,
@@ -23600,7 +24126,20 @@
         "index": 2732,
         "id": 879,
         "name": "Opal bolts",
-        "image": "opal_bolts.png"
+        "image": "opal_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Bronze bolt": {
+                    "notes": "Requires a Bronze bolt and an Opal bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 877 },
+                            { "has": 45 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2733,
@@ -23618,7 +24157,20 @@
         "index": 2735,
         "id": 21955,
         "name": "Opal dragon bolts",
-        "image": "opal_dragon_bolts.png"
+        "image": "opal_dragon_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and an Opal bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 45 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2736,
@@ -23901,7 +24453,23 @@
         "index": 2775,
         "id": 880,
         "name": "Pearl bolts",
-        "image": "pearl_bolts.png"
+        "image": "pearl_bolts.png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Tipping an Iron bolt": {
+                    "notes": "Requires an Iron bolt and a Pearl bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 9140 },
+                            { "has": 46 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2776,
@@ -23913,7 +24481,20 @@
         "index": 2777,
         "id": 21959,
         "name": "Pearl dragon bolts",
-        "image": "pearl_dragon_bolts.png"
+        "image": "pearl_dragon_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and a Pearl bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 46 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2778,
@@ -26795,7 +27376,20 @@
         "index": 3169,
         "id": 9339,
         "name": "Ruby bolts",
-        "image": "ruby_bolts.png"
+        "image": "ruby_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping an Adamant bolt": {
+                    "notes": "Requires an Adamant bolt and a Ruby bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 9143 },
+                            { "has": 9191 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3170,
@@ -26813,7 +27407,20 @@
         "index": 3172,
         "id": 21967,
         "name": "Ruby dragon bolts",
-        "image": "ruby_dragon_bolts.png"
+        "image": "ruby_dragon_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and a Ruby bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 9191 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3173,
@@ -27329,7 +27936,7 @@
                     "droprate": "1/19",
                     "url": "https://oldschool.runescape.wiki/w/Ninja_impling"
                     },
-                "Lava Dragon": {
+                "Lava dragon": {
                     "droprate": "1/21.33",
                     "url": "https://oldschool.runescape.wiki/w/Lava_dragon"
                     },
@@ -28161,25 +28768,175 @@
         "index": 3280,
         "id": 9144,
         "name": "Runite bolts",
-        "image": "runite_bolts.png"
+        "image": "runite_bolts.png",
+        "sources": {
+            "drops": {
+                "Spoils of war": {
+                    "droprate": "3 × 1/9",
+                    "url": "https://oldschool.runescape.wiki/w/Spoils_of_war"
+                    },
+                "Hallowed sack": {
+                    "droprate": "2 × 1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Hallowed_sack"
+                    },
+                "Coffin (Hallowed Sepulchre)": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Coffin_(Hallowed_Sepulchre)"
+                    },
+                "Grand Hallowed Coffin": {
+                    "droprate": "1/10",
+                    "url": "https://oldschool.runescape.wiki/w/Grand_Hallowed_Coffin"
+                    },
+                "Great white shark": {
+                    "droprate": "1/12.5",
+                    "url": "https://oldschool.runescape.wiki/w/Great_white_shark"
+                    },
+                "King Black Dragon": {
+                    "droprate": "1/12.8",
+                    "url": "https://oldschool.runescape.wiki/w/King_Black_Dragon"
+                    },
+                "Kree'arra": {
+                    "droprate": "1/15.88",
+                    "url": "https://oldschool.runescape.wiki/w/Kree'arra"
+                    },
+                "Demonic gorilla": {
+                    "droprate": "1/20",
+                    "url": "https://oldschool.runescape.wiki/w/Demonic_gorilla"
+                    },
+                "Mithril dragon": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Mithril_dragon"
+                    },
+                "Steel dragon": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Steel_dragon"
+                    },
+                "Chewed bones": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Chewed_bones"
+                    },
+                "Lava dragon": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Lava_dragon"
+                    },
+                "Corporeal Beast": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Corporeal_beast"
+                    },
+                "Dagannoth Supreme": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Dagannoth_Supreme"
+                    },
+                "Smoke devil": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Smoke_devil"
+                    },
+                "Ferocious barbarian spirit": {
+                    "droprate": "1/32",
+                    "url": "https://oldschool.runescape.wiki/w/Ferocious_barbarian_spirit"
+                    },
+                "Skeletal wyvern": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeletal_Wyvern"
+                    },
+                "Gnome Restaurant Tips": {
+                    "droprate": "1/102",
+                    "url": "https://oldschool.runescape.wiki/w/King_Bolren#Gnome_Restaurant_Tips"
+                    },
+                "Spitting Wyvern": {
+                    "droprate": "1/123",
+                    "url": "https://oldschool.runescape.wiki/w/Spitting_Wyvern"
+                    },
+                "Taloned Wyvern": {
+                    "droprate": "1/123",
+                    "url": "https://oldschool.runescape.wiki/w/Taloned_Wyvern"
+                    },
+                "Long-tailed Wyvern": {
+                    "droprate": "1/123",
+                    "url": "https://oldschool.runescape.wiki/w/Long-tailed_Wyvern"
+                    },
+                "Ancient Wyvern": {
+                    "droprate": "1/123",
+                    "url": "https://oldschool.runescape.wiki/w/Ancient_Wyvern"
+                    }
+            },
+            "other": {
+                "Fletching Runite bolts": {
+                    "notes": "Runite bolts (unf) and feather",
+                    "rule": {
+                        "all": [
+                            { "has": 9381 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "9291": "187",
+            "9298": "5937",
+            "9305": "5940",
+            "9341": "9193",
+            "9342": "9194"
+        }
     },
     {
         "index": 3281,
         "id": 9291,
         "name": "Runite bolts (p)",
-        "image": "runite_bolts_(p).png"
+        "image": "runite_bolts_(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Runite bolt": {
+                    "notes": "Requires a Runite bolt and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 9144 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3282,
         "id": 9298,
         "name": "Runite bolts (p+)",
-        "image": "runite_bolts_(p+).png"
+        "image": "runite_bolts_(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Runite bolt": {
+                    "notes": "Requires a Runite bolt and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 9144 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3283,
         "id": 9305,
         "name": "Runite bolts (p++)",
-        "image": "runite_bolts_(p++).png"
+        "image": "runite_bolts_(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Runite bolt": {
+                    "notes": "Requires a Runite bolt and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 9144 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3284,
@@ -28464,7 +29221,26 @@
         "index": 3321,
         "id": 9337,
         "name": "Sapphire bolts",
-        "image": "sapphire_bolts.png"
+        "image": "sapphire_bolts.png",
+        "sources": {
+            "drops": {
+                "Waterfiend": {
+                    "droprate": "1/25.6",
+                    "url": "https://oldschool.runescape.wiki/w/Waterfiend"
+                    }
+            },
+            "other": {
+                "Tipping a Mithril bolt": {
+                    "notes": "Requires a Mithril bolt and a Sapphire bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 9142 },
+                            { "has": 9189 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3322,
@@ -28482,7 +29258,20 @@
         "index": 3324,
         "id": 21963,
         "name": "Sapphire dragon bolts",
-        "image": "sapphire_dragon_bolts.png"
+        "image": "sapphire_dragon_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and a Sapphire bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 9189 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3325,
@@ -29506,25 +30295,125 @@
         "index": 3530,
         "id": 9145,
         "name": "Silver bolts",
-        "image": "silver_bolts.png"
+        "image": "silver_bolts.png",
+        "sources": {
+            "drops": {
+                "Chewed bones": {
+                    "droprate": "1/21.33",
+                    "url": "https://oldschool.runescape.wiki/w/Chewed_bones"
+                    },
+                "Skeleton brute": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_brute"
+                    },
+                "Angry barbarian spirit": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Angry_barbarian_spirit"
+                    },
+                "Berserk barbarian spirit": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Berserk_barbarian_spirit"
+                    },
+                "Enraged barbarian spirit": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Enraged_barbarian_spirit"
+                    },
+                "Skeleton heavy": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_heavy"
+                    },
+                "Skeleton hero": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_hero"
+                    },
+                "Skeleton thug": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_thug"
+                    },
+                "Skeleton warlord": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_warlord"
+                    },
+                "Skeleton (Tarn's Lair)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Tarn's_Lair)"
+                    }
+            },
+            "other": {
+                "Fletching Silver bolts": {
+                    "notes": "Silver bolts (unf) and feather",
+                    "rule": {
+                        "all": [
+                            { "has": 9382 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "9292": "187",
+            "9299": "5937",
+            "9306": "5940"
+        }
     },
     {
         "index": 3531,
         "id": 9292,
         "name": "Silver bolts (p)",
-        "image": "silver_bolts_(p).png"
+        "image": "silver_bolts_(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Silver bolt": {
+                    "notes": "Requires a Silver bolt and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 9145 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3532,
         "id": 9299,
         "name": "Silver bolts (p+)",
-        "image": "silver_bolts_(p+).png"
+        "image": "silver_bolts_(p+).png",
+        "sources": {
+            "other": {
+                "Poisoning a Silver bolt": {
+                    "notes": "Requires a Silver bolt and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 9145 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3533,
         "id": 9306,
         "name": "Silver bolts (p++)",
-        "image": "silver_bolts_(p++).png"
+        "image": "silver_bolts_(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Silver bolt": {
+                    "notes": "Requires a Silver bolt and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 9145 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3534,
@@ -30525,25 +31414,96 @@
         "index": 3664,
         "id": 9141,
         "name": "Steel bolts",
-        "image": "steel_bolts.png"
+        "image": "steel_bolts.png",
+        "sources": {
+            "drops": {
+                "Zombie pirate (Harmony Island)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Zombie_pirate_(Harmony_Island)"
+                    }
+            },
+            "other": {
+                "Fletching Steel bolts": {
+                    "notes": "Steel bolts (unf) and feather",
+                    "rule": {
+                        "all": [
+                            { "has": 9378 },
+                            { "has": 314 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        },
+        "processable": {
+            "9288": "187",
+            "9295": "5937",
+            "9302": "5940",
+            "9336": "9188"
+        }
     },
     {
         "index": 3665,
         "id": 9288,
         "name": "Steel bolts (p)",
-        "image": "steel_bolts_(p).png"
+        "image": "steel_bolts_(p).png",
+        "sources": {
+            "other": {
+                "Poisoning a Steel bolt": {
+                    "notes": "Requires a Steel bolt and a Weapon poison",
+                    "rule": {
+                        "all": [
+                            { "has": 9141 },
+                            { "has": 187 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3666,
         "id": 9295,
         "name": "Steel bolts (p+)",
-        "image": "steel_bolts_(p+).png"
+        "image": "steel_bolts_(p+).png",
+        "sources": {
+            "drops": {
+                "Skeleton (Tarn's Lair)": {
+                    "droprate": "1/42.67",
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Tarn's_Lair)"
+                    }
+            },
+            "other": {
+                "Poisoning a Steel bolt": {
+                    "notes": "Requires a Steel bolt and a Weapon poison(+)",
+                    "rule": {
+                        "all": [
+                            { "has": 9141 },
+                            { "has": 5937 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3667,
         "id": 9302,
         "name": "Steel bolts (p++)",
-        "image": "steel_bolts_(p++).png"
+        "image": "steel_bolts_(p++).png",
+        "sources": {
+            "other": {
+                "Poisoning a Steel bolt": {
+                    "notes": "Requires a Steel bolt and a Weapon poison(++)",
+                    "rule": {
+                        "all": [
+                            { "has": 9141 },
+                            { "has": 5940 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3668,
@@ -33195,7 +34155,20 @@
         "index": 4016,
         "id": 9336,
         "name": "Topaz bolts",
-        "image": "topaz_bolts.png"
+        "image": "topaz_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Steel bolt": {
+                    "notes": "Requires a Steel bolt and a Topaz bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 9141 },
+                            { "has": 9188 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4017,
@@ -33213,7 +34186,20 @@
         "index": 4019,
         "id": 21961,
         "name": "Topaz dragon bolts",
-        "image": "topaz_dragon_bolts.png"
+        "image": "topaz_dragon_bolts.png",
+        "sources": {
+            "other": {
+                "Tipping a Dragon bolt": {
+                    "notes": "Requires a Dragon bolt and a Topaz bolt tip.",
+                    "rule": {
+                        "all": [
+                            { "has": 21905 },
+                            { "has": 9188 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4020,
@@ -36328,7 +37314,7 @@
                     },
                 "Hunters' loot sack": {
                     "droprate": "Varies",
-                    "url": "https://oldschool.runescape.wiki/w/Hunters%27_loot_sack"
+                    "url": "https://oldschool.runescape.wiki/w/Hunters'_loot_sack"
                     },
             "other": {
                 "Cutting yew logs": {
@@ -36381,7 +37367,7 @@
             "drops": {
                 "Skeleton (Tarn's Lair)": {
                     "droprate": "1/42.67",
-                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Tarn%27s_Lair)#Medium_level"
+                    "url": "https://oldschool.runescape.wiki/w/Skeleton_(Tarn's_Lair)"
                     }
             },
             "other": {
@@ -36849,7 +37835,7 @@
                     },
                 "K'ril Tsutsaroth": {
                     "droprate": "1/15.88",
-                    "url": "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth"
+                    "url": "https://oldschool.runescape.wiki/w/K'ril_Tsutsaroth"
                     },
                 "The Nightmare": {
                     "droprate": "1/20",
@@ -36857,7 +37843,7 @@
                     },
                 "Phosani's Nightmare": {
                     "droprate": "1/20",
-                    "url": "https://oldschool.runescape.wiki/w/Phosani%27s_Nightmare"
+                    "url": "https://oldschool.runescape.wiki/w/Phosani's_Nightmare"
                     }
             },
             "other": {
@@ -37098,7 +38084,7 @@
             "drops": {
                 "K'ril Tsutsaroth": {
                     "droprate": "1/508",
-                    "url": "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth"
+                    "url": "https://oldschool.runescape.wiki/w/K'ril_Tsutsaroth"
                     }
             }
         }
@@ -37518,7 +38504,7 @@
             "drops": {
                 "K'ril Tsutsaroth": {
                     "droprate": "1/127",
-                    "url": "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth"
+                    "url": "https://oldschool.runescape.wiki/w/K'ril_Tsutsaroth"
                     },
                 "Balfrug Kreeyath": {
                     "droprate": "1/5,376",

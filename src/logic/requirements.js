@@ -99,6 +99,9 @@ export const REQUIREMENT_CHECKS = {
     canCompleteWanted(ctx) {
         return false; // TODO
     },
+    canCompleteTheFinalDawn(ctx) {
+        return false; // TODO
+    },
     canCompleteBoneVoyage(ctx) {
         return canCompleteBoneVoyage(ctx);
     },
@@ -276,6 +279,18 @@ export const REQUIREMENT_CHECKS = {
     hasMirrorShield(ctx) {
         return has(ctx, 4156);
     },
+    hasAirRuneSource(ctx) {
+        return hasAirRuneSource(ctx);
+    },
+    hasWaterRuneSource(ctx) {
+        return hasWaterRuneSource(ctx);
+    },
+    hasEarthRuneSource(ctx) {
+        return hasEarthRuneSource(ctx);
+    },
+    hasFireRuneSource(ctx) {
+        return hasFireRuneSource(ctx);
+    },
     canDoGodWarsDungeon(ctx) {
         return false; // TODO
     },
@@ -298,6 +313,74 @@ export const REQUIREMENT_CHECKS = {
         return canCompleteBarbarianHerblore(ctx);
     }
 };
+
+function hasAirRuneSource(ctx) {
+    return has(ctx, 556) // Air rune
+            || has(ctx, 4696) // Dust rune
+            || has(ctx, 4697) // Smoke rune
+            || has(ctx, 4695) // Mist rune
+            || has(ctx, 1381) // Staff of air
+            || has(ctx, 1397) // Air battlestaff
+            || has(ctx, 1405) // Mystic air staff
+            || has(ctx, 20736) // Dust battlestaff
+            || has(ctx, 20739) // Mystic dust staff
+            || has(ctx, 11998) // Smoke battlestaff
+            || has(ctx, 12000) // Mystic smoke staff
+            || has(ctx, 20730) // Mist battlestaff
+            || has(ctx, 20733); // Mystic mist staff
+}
+
+function hasWaterRuneSource(ctx) {
+    return has(ctx, 555) // Water rune
+            || has(ctx, 4698) // Mud rune
+            || has(ctx, 4694) // Steam rune
+            || has(ctx, 4695) // Mist rune
+            || has(ctx, 1383) // Staff of water
+            || has(ctx, 1395) // Water battlestaff
+            || has(ctx, 1403) // Mystic water staff
+            || has(ctx, 6562) // Mud battlestaff
+            || has(ctx, 6563) // Mystic mud staff
+            || has(ctx, 11787) // Steam battlestaff
+            || has(ctx, 11789) // Mystic steam staff
+            || has(ctx, 20730) // Mist battlestaff
+            || has(ctx, 20733) // Mystic mist staff
+            || (has(ctx, 25576) && has(ctx, 25578)); // Tome of water and Soaked page
+}
+
+function hasEarthRuneSource(ctx) {
+    return has(ctx, 557) // Earth rune
+            || has(ctx, 4696) // Dust rune
+            || has(ctx, 4698) // Mud rune
+            || has(ctx, 4699) // Lava rune
+            || has(ctx, 1385) // Staff of earth
+            || has(ctx, 1399) // Earth battlestaff
+            || has(ctx, 1407) // Mystic earth staff
+            || has(ctx, 20736) // Dust battlestaff
+            || has(ctx, 20739) // Mystic dust staff
+            || has(ctx, 6562) // Mud battlestaff
+            || has(ctx, 6563) // Mystic mud staff
+            || has(ctx, 3053) // Lava battlestaff
+            || has(ctx, 3054) // Mystic lava staff
+            || (has(ctx, 30066) && has(ctx, 30068)); // Tome of earth and Soiled page
+}
+
+function hasFireRuneSource(ctx) {
+    return has(ctx, 554) // Fire rune
+            || has(ctx, 4699) // Lava rune
+            || has(ctx, 4697) // Smoke rune
+            || has(ctx, 4694) // Steam rune
+            || has(ctx, 28929) // Sunfire rune
+            || has(ctx, 1387) // Staff of fire
+            || has(ctx, 1393) // Fire battlestaff
+            || has(ctx, 1401) // Mystic fire staff
+            || has(ctx, 3053) // Lava battlestaff
+            || has(ctx, 3054) // Mystic lava staff
+            || has(ctx, 11998) // Smoke battlestaff
+            || has(ctx, 12000) // Mystic smoke staff
+            || has(ctx, 11787) // Steam battlestaff
+            || has(ctx, 11789) // Mystic steam staff
+            || (has(ctx, 20716) && has(ctx, 20718)); // Tome of fire and Burnt page
+}
 
 function canDoCommanderZilyana(ctx) {
     return false; // TODO

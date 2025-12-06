@@ -14,6 +14,9 @@ export const NPC_RULES = {
     "Adamant dragon": [
         "canCompleteDragonSlayerII"
     ],
+    "Ancient Wyvern": [
+        "canKillFossilIslandWyverns"
+    ],
     "Angry barbarian spirit": [
         "canEnterAncientCavern"
     ],
@@ -99,6 +102,13 @@ export const NPC_RULES = {
             "hasLockpick"
         ]
     },
+    "Chest (moon key)": {
+        "any": [
+            "canTrainMining",
+            "canTrainWoodcutting",
+            "canTrainFishing"
+        ]
+    },
     "Chewed bones": {
         "all": [
             "canKillDifficultDragons",
@@ -122,6 +132,9 @@ export const NPC_RULES = {
     ],
     "Dirty arrowtips": [
         "canDoValeTotems"
+    ],
+    "Doom of Mokhaiotl": [
+        "canCompleteTheFinalDawn"
     ],
     "Dragon impling": [
         "canTrainHunter"
