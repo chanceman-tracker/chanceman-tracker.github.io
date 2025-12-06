@@ -54,11 +54,10 @@ function capitalize(s) {
     return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
-/* ===========================================================
-    ONLY DROPS GET SPECIAL TABLE WITH DROPRATE
-    ALL OTHER SECTIONS GET NORMAL TABLE: name + link
-   =========================================================== */
 function renderSourceTable(section, entries) {
+    const params = new URLSearchParams(window.location.search);
+    const id = Number(params.get("id"));
+
     if (!entries || Object.keys(entries).length === 0)
         return `<p><em>No data.</em></p>`;
 
@@ -132,16 +131,16 @@ function renderSourceTable(section, entries) {
                 </tr>
 
                 ${Object.entries(entries).map(([label, rule]) => {
-
-                    // Determine if obtainable
                     let obtainable = false;
 
                     // Rule is a string
-                    if (typeof rule === "string") {
-                        if (rule === "No requirements") {
-                            obtainable = true;
-                        } else {
-                            obtainable = canDoOtherMethod(rule, fileStore);
+                    if (fileStore.unlocked.includes(id)) {
+                        if (typeof rule === "string") {
+                            if (rule === "No requirements") {
+                                obtainable = true;
+                            } else {
+                                obtainable = canDoOtherMethod(rule, fileStore);
+                            }
                         }
                     }
 
@@ -179,14 +178,16 @@ function renderSourceTable(section, entries) {
                 ${Object.entries(entries).map(([label, rule]) => {
                     let obtainable = false;
 
-                    if (typeof rule === "string") {
-                        if (rule === "No requirements") {
-                            obtainable = true;
-                        } else {
+                    if (fileStore.unlocked.includes(id)) {
+                        if (typeof rule === "string") {
+                            if (rule === "No requirements") {
+                                obtainable = true;
+                            } else {
+                                obtainable = canDoOtherMethod(rule, fileStore);
+                            }
+                        } else if (typeof rule === "object") {
                             obtainable = canDoOtherMethod(rule, fileStore);
                         }
-                    } else if (typeof rule === "object") {
-                        obtainable = canDoOtherMethod(rule, fileStore);
                     }
 
                     return `

@@ -1,39 +1,42 @@
+import { fileStore } from "../storage/fileStore.js";
 import { canDoOtherMethod, canReachNpc } from "./itemAvailability.js";
 
 export function isItemObtainable(item, ctx) {
     const src = item.sources || {};
 
-    // === Shops ===
-    if (src.shops) {
-        for (const rule of Object.values(src.shops)) {
+    if (fileStore.unlocked.includes(item.id)) {
+        // === Shops ===
+        if (src.shops) {
+            for (const rule of Object.values(src.shops)) {
 
-            // "No requirements"
-            if (rule === "No requirements") return true;
+                // "No requirements"
+                if (rule === "No requirements") return true;
 
-            // string → single rule
-            if (typeof rule === "string") {
-                if (canDoOtherMethod(rule, ctx)) return true;
-            }
+                // string → single rule
+                if (typeof rule === "string") {
+                    if (canDoOtherMethod(rule, ctx)) return true;
+                }
 
-            // object → any/all
-            if (typeof rule === "object") {
-                if (canDoOtherMethod(rule, ctx)) return true;
+                // object → any/all
+                if (typeof rule === "object") {
+                    if (canDoOtherMethod(rule, ctx)) return true;
+                }
             }
         }
-    }
 
-    // === Spawns ===
-    if (src.spawns) {
-        for (const rule of Object.values(src.spawns)) {
+        // === Spawns ===
+        if (src.spawns) {
+            for (const rule of Object.values(src.spawns)) {
 
-            if (rule === "No requirements") return true;
+                if (rule === "No requirements") return true;
 
-            if (typeof rule === "string") {
-                if (canDoOtherMethod(rule, ctx)) return true;
-            }
+                if (typeof rule === "string") {
+                    if (canDoOtherMethod(rule, ctx)) return true;
+                }
 
-            if (typeof rule === "object") {
-                if (canDoOtherMethod(rule, ctx)) return true;
+                if (typeof rule === "object") {
+                    if (canDoOtherMethod(rule, ctx)) return true;
+                }
             }
         }
     }
