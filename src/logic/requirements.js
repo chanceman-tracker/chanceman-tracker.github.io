@@ -578,6 +578,12 @@ function canCompleteAnimalMagnetism(ctx) {
             );
 }
 
+function canCompleteErnestTheChicken(ctx) {
+    return has(ctx, 952) // Spade
+            && has(ctx, 272) // Fish food
+            && has(ctx, 273); // Poison (item)
+}
+
 function canCompleteDeathToTheDorgeshuun(ctx) {
     return canCompleteTheLostTribe(ctx) //
             && has(ctx, 4310) // Ham boots
