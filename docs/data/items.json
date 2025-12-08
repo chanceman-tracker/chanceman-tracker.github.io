@@ -5856,7 +5856,8 @@
                     "rule": {
                         "all": [
                             { "has": 877 },
-                            { "has": 47 }
+                            { "has": 47 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -11930,7 +11931,8 @@
                     "rule": {
                         "all": [
                             { "has": 9143 },
-                            { "has": 9192 }
+                            { "has": 9192 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -11961,7 +11963,8 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9192 }
+                            { "has": 9192 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -13369,7 +13372,8 @@
                     "rule": {
                         "all": [
                             { "has": 9144 },
-                            { "has": 9193 }
+                            { "has": 9193 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -13406,7 +13410,8 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9193 }
+                            { "has": 9193 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -13998,7 +14003,8 @@
                     "rule": {
                         "all": [
                             { "has": 9142 },
-                            { "has": 9190 }
+                            { "has": 9190 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -14029,7 +14035,8 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9190 }
+                            { "has": 9190 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -19429,7 +19436,8 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9187 }
+                            { "has": 9187 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -24042,7 +24050,8 @@
                     "rule": {
                         "all": [
                             { "has": 9144 },
-                            { "has": 9194 }
+                            { "has": 9194 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -24073,7 +24082,8 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9194 }
+                            { "has": 9194 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -24134,7 +24144,8 @@
                     "rule": {
                         "all": [
                             { "has": 877 },
-                            { "has": 45 }
+                            { "has": 45 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -24165,7 +24176,8 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 45 }
+                            { "has": 45 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -24464,7 +24476,8 @@
                     "rule": {
                         "all": [
                             { "has": 9140 },
-                            { "has": 46 }
+                            { "has": 46 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -24489,7 +24502,8 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 46 }
+                            { "has": 46 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -27384,7 +27398,8 @@
                     "rule": {
                         "all": [
                             { "has": 9143 },
-                            { "has": 9191 }
+                            { "has": 9191 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -27415,7 +27430,8 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9191 }
+                            { "has": 9191 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -29235,7 +29251,8 @@
                     "rule": {
                         "all": [
                             { "has": 9142 },
-                            { "has": 9189 }
+                            { "has": 9189 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -29266,7 +29283,8 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9189 }
+                            { "has": 9189 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -34163,7 +34181,8 @@
                     "rule": {
                         "all": [
                             { "has": 9141 },
-                            { "has": 9188 }
+                            { "has": 9188 },
+                            "canTrainFletching"
                         ]
                     }
                 }
@@ -34194,7 +34213,8 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9188 }
+                            { "has": 9188 },
+                            "canTrainFletching"
                         ]
                     }
                 }
