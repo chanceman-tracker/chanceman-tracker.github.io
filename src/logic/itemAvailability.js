@@ -1,7 +1,9 @@
 import { NPC_RULES } from "./npcRules.js";
 import { REQUIREMENT_CHECKS } from "./requirements.js";
 
-export function canReachNpc(npcName, ctx) {
+export async function canReachNpc(npcName, ctx) {
+    await ctx.ensureItemsLoaded();
+
     const rule = NPC_RULES[npcName];
 
     // No rule means killable by default
@@ -10,11 +12,13 @@ export function canReachNpc(npcName, ctx) {
     return evaluateRule(rule, ctx);
 }
 
-export function canDoOtherMethod(ruleName, ctx) {
+export async function canDoOtherMethod(ruleName, ctx) {
     return evaluateRule(ruleName, ctx);
 }
 
-export function evaluateRule(rule, ctx) {
+export async function evaluateRule(rule, ctx) {
+    await ctx.ensureItemsLoaded();
+
     // Empty or undefined means automatically obtainable
     if (!rule) return true;
 

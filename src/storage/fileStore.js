@@ -39,6 +39,16 @@ async function loadFromDB(key) {
 
 // ---- Public API ----
 export const fileStore = {
+    rolled: null,
+    unlocked: null,
+    items: null,
+
+    async ensureItemsLoaded() {
+        if (!this.items) {
+            this.items = await fetch("/data/items.json").then(r => r.json());
+        }
+    },
+
     async init() {
         memory.rolled = await loadFromDB("rolled");
         memory.unlocked = await loadFromDB("unlocked");

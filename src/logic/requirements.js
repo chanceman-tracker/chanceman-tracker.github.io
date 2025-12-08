@@ -102,6 +102,9 @@ export const REQUIREMENT_CHECKS = {
     canCompleteTheFinalDawn(ctx) {
         return false; // TODO
     },
+    canCompleteShadesOfMortton(ctx) {
+        return false; // TODO
+    },
     canCompleteBoneVoyage(ctx) {
         return canCompleteBoneVoyage(ctx);
     },
@@ -311,6 +314,15 @@ export const REQUIREMENT_CHECKS = {
     },
     canCompleteBarbarianHerblore(ctx) {
         return canCompleteBarbarianHerblore(ctx);
+    },
+    canCompleteBarbarianSmithing(ctx) {
+        return canCompleteBarbarianSmithing(ctx);
+    },
+    canTrainHerblore(ctx) {
+        return canTrainHerblore(ctx);
+    },
+    canTrainCrafting(ctx) {
+        return canTrainCrafting(ctx);
     }
 };
 
@@ -438,6 +450,24 @@ function canCompleteBarbarianHerblore(ctx) {
             && canCompleteBarbarianFishing(ctx) //
             && has(ctx, 123) // Attack potion(2)
             && (has(ctx, 11324) || has(ctx, 11326)); // Roe or Caviar
+}
+
+function canCompleteBarbarianSmithing(ctx) {
+    return canCompleteBarbarianFishing(ctx) //
+            && canCompleteTaiBwoWannaiTrio(ctx) //
+            && canTrainSmithing(ctx) //
+            && ( //
+                (has(ctx, 2349) && has(ctx, 1511)) // Bronze bar & Logs
+                || (has(ctx, 2351) && has(ctx, 1521)) // Iron bar & Oak Logs
+                || (has(ctx, 2353) && has(ctx, 1519)) // Steel bar & Willow Logs
+                || (has(ctx, 2359) && has(ctx, 1517)) // Mithril bar & Maple Logs
+                || (has(ctx, 2361) && has(ctx, 1515)) // Adamantite bar & Yew Logs
+                || (has(ctx, 2363) && has(ctx, 1513)) // Runite bar & Magic Logs
+            )
+}
+
+function canCompleteTaiBwoWannaiTrio(ctx) {
+    return false; // TODO
 }
 
 function canCompleteMakingHistory(ctx) {

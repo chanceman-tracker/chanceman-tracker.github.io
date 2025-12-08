@@ -3,6 +3,7 @@ import { NPC_WIKI_LINKS } from "../logic/npcWikiLinks.js";
 import { fileStore } from "../storage/fileStore.js";
 
 export default async function ItemPage() {
+    await fileStore.ensureItemsLoaded();
     const rolled = fileStore.rolled;
     const unlocked = fileStore.unlocked;
 
