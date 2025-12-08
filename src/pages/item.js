@@ -1,4 +1,5 @@
 import { canDoOtherMethod, canReachNpc } from "../logic/itemAvailability.js";
+import { NPC_WIKI_LINKS } from "../logic/npcWikiLinks.js";
 import { fileStore } from "../storage/fileStore.js";
 
 export default async function ItemPage() {
@@ -78,7 +79,7 @@ function renderSourceTable(section, entries) {
                         : `<span class="obtainable no">✘</span>`;
                     return `
                         <tr>
-                            <td><a href="${data.url}" target="_blank">${name}</a></td>
+                            <td><a href="${NPC_WIKI_LINKS[name] || "#"}" target="_blank">${name}</a></td>
                             <td>${data.droprate}</td>
                             <td>${obtainable}</td>
                         </tr>
