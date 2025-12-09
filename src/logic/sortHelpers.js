@@ -65,17 +65,69 @@ export async function isItemObtainable(item, ctx) {
 */
 export async function getObtainabilityRank(item, ctx) {
     const src = item.sources || {};
-    const obtainable = await isItemObtainable(item, ctx);
+    const name = item.name.toLowerCase();
+    const id = item.id;
 
-    if (!obtainable)
-        return { rank: 99, type: "zzz", name: item.name.toLowerCase() };
+    // 1. Shops
+    if (src.shops) {
+        for (const rule of Object.values(src.shops)) {
+            if (fileStore.unlocked.includes(id)) {
+                // Rule is a string
+                if (typeof rule === "string") {
+                    if (rule === "No requirements") {
+                        return { rank: 1, type: "shop", name };
+                    }
+                    if (await canDoOtherMethod(rule, ctx)) {
+                        return { rank: 1, type: "shop", name };
+                    }
+                }
+                // Rule is an object (e.g. any/all)
+                else if (typeof rule === "object") {
+                    if (await canDoOtherMethod(rule, ctx)) {
+                        return { rank: 1, type: "shop", name };
+                    }
+                }
+            }
+        }
+    }
 
-    // Now categorize by source priority:
-    if (src.shops)   return { rank: 1, type: "shop",  name: item.name.toLowerCase() };
-    if (src.spawns)  return { rank: 2, type: "spawn", name: item.name.toLowerCase() };
-    if (src.drops)   return { rank: 3, type: "drop",  name: item.name.toLowerCase() };
-    if (src.other)   return { rank: 4, type: "other", name: item.name.toLowerCase() };
+    // 2. Spawns
+    if (src.spawns) {
+        for (const rule of Object.values(src.spawns)) {
+            if (fileStore.unlocked.includes(id)) {
+                if (typeof rule === "string") {
+                    if (rule === "No requirements") {
+                        return { rank: 2, type: "spawn", name };
+                    }
+                    if (await canDoOtherMethod(rule, ctx)) {
+                        return { rank: 2, type: "spawn", name };
+                    }
+                }
+                else if (typeof rule === "object") {
+                    if (await canDoOtherMethod(rule, ctx)) {
+                        return { rank: 2, type: "spawn", name };
+                    }
+                }
+            }
+        }
+    }
 
-    // Fallback (should never happen)
-    return { rank: 10, type: "other", name: item.name.toLowerCase() };
+    // 3. Drops
+    if (src.drops) {
+        for (const npc of Object.keys(src.drops)) {
+            if (await canReachNpc(npc, ctx))
+                return { rank: 3, type: "drop", name };
+        }
+    }
+
+    // 4. Other methods (crafting, etc.)
+    if (src.other) {
+        for (const obj of Object.values(src.other)) {
+            if (await canDoOtherMethod(obj.rule, ctx))
+                return { rank: 4, type: "other", name };
+        }
+    }
+
+    // 5. Unobtainable
+    return { rank: 99, type: "unobtainable", name };
 }
