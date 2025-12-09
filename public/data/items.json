@@ -854,7 +854,7 @@
         "image": "achey_tree_logs.png",
         "sources": {
             "other": {
-                "Cutting Achey logs": {
+                "Chopping Achey logs": {
                     "notes": "Achey tree.",
                     "rule": "canTrainWoodcutting"
                 }
@@ -2727,7 +2727,20 @@
         "index": 163,
         "id": 5527,
         "name": "Air tiara",
-        "image": "air_tiara.png"
+        "image": "air_tiara.png",
+        "sources": {
+            "other": {
+                "Crafting a tiara": {
+                    "notes": "Requires a tiara and an air talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 5525 },
+                            { "has": 1438 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 164,
@@ -3825,7 +3838,26 @@
         "index": 273,
         "id": 12775,
         "name": "Annakarl teleport (tablet)",
-        "image": "annakarl_teleport_(tablet).png"
+        "image": "annakarl_teleport_(tablet).png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Crafting an Ancient teleport tablet": {
+                    "notes": "Requires a law rune, blood rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 565 },
+                            { "has": 1761 },
+                            "canCompleteDesertTreasure"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 274,
@@ -4055,7 +4087,23 @@
         "index": 309,
         "id": 19631,
         "name": "Ape atoll teleport (tablet)",
-        "image": "ape_atoll_teleport_(tablet).png"
+        "image": "ape_atoll_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting an Arceuus teleport tablet": {
+                    "notes": "Requires a law rune, soul rune, blood rune and a dark essence block (which requires a chisel and pickaxe)",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 566 },
+                            { "has": 565 },
+                            { "has": 1755 },
+                            "canTrainMining"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 310,
@@ -4167,7 +4215,22 @@
         "index": 325,
         "id": 19613,
         "name": "Arceuus library teleport (tablet)",
-        "image": "arceuus_library_teleport_(tablet).png"
+        "image": "arceuus_library_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting an Arceuus teleport tablet": {
+                    "notes": "Requires a law rune, earth rune, and a dark essence block (which requires a chisel and pickaxe)",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 557 },
+                            { "has": 1755 },
+                            "canTrainMining"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 326,
@@ -5501,7 +5564,23 @@
         "index": 474,
         "id": 24955,
         "name": "Barbarian teleport (tablet)",
-        "image": "barbarian_teleport_(tablet).png"
+        "image": "barbarian_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting a Lunar teleport tablet": {
+                    "notes": "Requires a law rune, fire rune, astral rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 554 },
+                            { "has": 9075 },
+                            { "has": 1761 },
+                            "canCompleteLunarDiplomacy"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 475,
@@ -5515,8 +5594,7 @@
                     "rule": {
                         "all": [
                             { "has": 877 },
-                            { "has": 47 },
-                            "canTrainFletching"
+                            { "has": 47 }
                         ]
                     }
                 }
@@ -5575,7 +5653,23 @@
         "index": 484,
         "id": 19629,
         "name": "Barrows teleport (tablet)",
-        "image": "barrows_teleport_(tablet).png"
+        "image": "barrows_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting an Arceuus teleport tablet": {
+                    "notes": "Requires a law rune, soul rune, blood rune and a dark essence block (which requires a chisel and pickaxe)",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 566 },
+                            { "has": 565 },
+                            { "has": 1755 },
+                            "canTrainMining"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 485,
@@ -5641,7 +5735,23 @@
         "index": 495,
         "id": 22949,
         "name": "Battlefront teleport (tablet)",
-        "image": "battlefront_teleport_(tablet).png"
+        "image": "battlefront_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting an Arceuus teleport tablet": {
+                    "notes": "Requires a law rune, earth rune, fire rune, and a dark essence block (which requires a chisel and pickaxe)",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 557 },
+                            { "has": 554 },
+                            { "has": 1755 },
+                            "canTrainMining"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 496,
@@ -5864,7 +5974,14 @@
         "index": 528,
         "id": 1474,
         "name": "Black bead",
-        "image": "black_bead.png"
+        "image": "black_bead.png",
+        "sources": {
+            "drops": {
+                "Imp": {
+                    "droprate": "1/25.6"
+                }
+            }
+        }
     },
     {
         "index": 529,
@@ -6958,7 +7075,23 @@
         "index": 629,
         "id": 2524,
         "name": "Black toy horsey",
-        "image": "black_toy_horsey.png"
+        "image": "black_toy_horsey.png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Crafting a toy horsey": {
+                    "notes": "Requires plank",
+                    "rule": {
+                        "all": [
+                            { "has": 960 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 630,
@@ -7304,7 +7437,21 @@
         "index": 680,
         "id": 5549,
         "name": "Blood tiara",
-        "image": "blood_tiara.png"
+        "image": "blood_tiara.png",
+        "sources": {
+            "other": {
+                "Crafting a tiara": {
+                    "notes": "Requires a tiara and a blood talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 5525 },
+                            { "has": 1450 },
+                            "canCompleteSinsOfTheFather"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 681,
@@ -7490,7 +7637,12 @@
         "index": 703,
         "id": 12757,
         "name": "Blue dark bow paint",
-        "image": "blue_dark_bow_paint.png"
+        "image": "blue_dark_bow_paint.png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 704,
@@ -7634,7 +7786,12 @@
         "index": 717,
         "id": 1055,
         "name": "Blue halloween mask",
-        "image": "blue_halloween_mask.png"
+        "image": "blue_halloween_mask.png",
+        "sources": {
+            "other": {
+                "Complete a Halloween holiday event": {}
+            }
+        }
     },
     {
         "index": 718,
@@ -7708,7 +7865,12 @@
         "index": 728,
         "id": 1042,
         "name": "Blue partyhat",
-        "image": "blue_partyhat.png"
+        "image": "blue_partyhat.png",
+        "sources": {
+            "other": {
+                "Complete a Christmas holiday event": {}
+            }
+        }
     },
     {
         "index": 729,
@@ -7940,7 +8102,20 @@
         "index": 752,
         "id": 5533,
         "name": "Body tiara",
-        "image": "body_tiara.png"
+        "image": "body_tiara.png",
+        "sources": {
+            "other": {
+                "Crafting a tiara": {
+                    "notes": "Requires a tiara and a body talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 5525 },
+                            { "has": 1446 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 753,
@@ -9386,7 +9561,23 @@
         "index": 907,
         "id": 2520,
         "name": "Brown toy horsey",
-        "image": "brown_toy_horsey.png"
+        "image": "brown_toy_horsey.png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Crafting a toy horsey": {
+                    "notes": "Requires plank",
+                    "rule": {
+                        "all": [
+                            { "has": 960 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 908,
@@ -9785,7 +9976,26 @@
         "index": 967,
         "id": 12776,
         "name": "Carrallanger teleport (tablet)",
-        "image": "carrallanger_teleport_(tablet).png"
+        "image": "carrallanger_teleport_(tablet).png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Crafting an Ancient teleport tablet": {
+                    "notes": "Requires a law rune, soul rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 566 },
+                            { "has": 1761 },
+                            "canCompleteDesertTreasure"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 968,
@@ -9865,7 +10075,23 @@
         "index": 979,
         "id": 24961,
         "name": "Catherby teleport (tablet)",
-        "image": "catherby_teleport_(tablet).png"
+        "image": "catherby_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting a Lunar teleport tablet": {
+                    "notes": "Requires a law rune, water rune, astral rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 555 },
+                            { "has": 9075 },
+                            { "has": 1761 },
+                            "canCompleteLunarDiplomacy"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 980,
@@ -9913,7 +10139,23 @@
         "index": 987,
         "id": 19627,
         "name": "Cemetery teleport (tablet)",
-        "image": "cemetery_teleport_(tablet).png"
+        "image": "cemetery_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting an Arceuus teleport tablet": {
+                    "notes": "Requires a law rune, soul rune, blood rune and a dark essence block (which requires a chisel and pickaxe)",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 566 },
+                            { "has": 565 },
+                            { "has": 1755 },
+                            "canTrainMining"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 988,
@@ -9937,7 +10179,20 @@
         "index": 991,
         "id": 5543,
         "name": "Chaos tiara",
-        "image": "chaos_tiara.png"
+        "image": "chaos_tiara.png",
+        "sources": {
+            "other": {
+                "Crafting a tiara": {
+                    "notes": "Requires a tiara and a chaos talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 1452 },
+                            { "has": 1446 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 992,
@@ -10143,7 +10398,12 @@
         "index": 1022,
         "id": 962,
         "name": "Christmas cracker",
-        "image": "christmas_cracker.png"
+        "image": "christmas_cracker.png",
+        "sources": {
+            "other": {
+                "Complete a Christmas holiday event": {}
+            }
+        }
     },
     {
         "index": 1023,
@@ -10209,7 +10469,23 @@
         "index": 1033,
         "id": 28824,
         "name": "Civitas illa fortis teleport (tablet)",
-        "image": "civitas_illa_fortis_teleport_(tablet).png"
+        "image": "civitas_illa_fortis_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting a teleport tablet": {
+                    "notes": "Requires a law rune, earth rune, fire rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 557 },
+                            { "has": 554 },
+                            { "has": 1761 },
+                            "canCompleteTwilightsPromise"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1034,
@@ -10727,7 +11003,21 @@
         "index": 1118,
         "id": 5539,
         "name": "Cosmic tiara",
-        "image": "cosmic_tiara.png"
+        "image": "cosmic_tiara.png",
+        "sources": {
+            "other": {
+                "Crafting a tiara": {
+                    "notes": "Requires a tiara and a cosmic talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 1452 },
+                            { "has": 1454 },
+                            "canCompleteLostCity"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1119,
@@ -11042,7 +11332,27 @@
         "index": 1166,
         "id": 12777,
         "name": "Dareeyak teleport (tablet)",
-        "image": "dareeyak_teleport_(tablet).png"
+        "image": "dareeyak_teleport_(tablet).png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Crafting an Ancient teleport tablet": {
+                    "notes": "Requires a law rune, air rune, fire rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 556 },
+                            { "has": 554 },
+                            { "has": 1761 },
+                            "canCompleteDesertTreasure"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 1167,
@@ -11188,7 +11498,21 @@
         "index": 1181,
         "id": 5547,
         "name": "Death tiara",
-        "image": "death_tiara.png"
+        "image": "death_tiara.png",
+        "sources": {
+            "other": {
+                "Crafting a tiara": {
+                    "notes": "Requires a tiara and a death talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 1452 },
+                            { "has": 1456 },
+                            "canCompleteMourningsEndPartII"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1182,
@@ -11433,8 +11757,7 @@
                     "rule": {
                         "all": [
                             { "has": 9143 },
-                            { "has": 9192 },
-                            "canTrainFletching"
+                            { "has": 9192 }
                         ]
                     }
                 }
@@ -11465,8 +11788,7 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9192 },
-                            "canTrainFletching"
+                            { "has": 9192 }
                         ]
                     }
                 }
@@ -12830,8 +13152,7 @@
                     "rule": {
                         "all": [
                             { "has": 9144 },
-                            { "has": 9193 },
-                            "canTrainFletching"
+                            { "has": 9193 }
                         ]
                     }
                 }
@@ -12868,8 +13189,7 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9193 },
-                            "canTrainFletching"
+                            { "has": 9193 }
                         ]
                     }
                 }
@@ -12934,7 +13254,23 @@
         "index": 1389,
         "id": 19615,
         "name": "Draynor manor teleport (tablet)",
-        "image": "draynor_manor_teleport_(tablet).png"
+        "image": "draynor_manor_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting an Arceuus teleport tablet": {
+                    "notes": "Requires a law rune, earth rune, water rune, and a dark essence block (which requires a chisel and pickaxe)",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 557 },
+                            { "has": 555 },
+                            { "has": 1755 },
+                            "canTrainMining"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1390,
@@ -13110,7 +13446,20 @@
         "index": 1417,
         "id": 5535,
         "name": "Earth tiara",
-        "image": "earth_tiara.png"
+        "image": "earth_tiara.png",
+        "sources": {
+            "other": {
+                "Crafting a tiara": {
+                    "notes": "Requires a tiara and an earth talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 1452 },
+                            { "has": 1440 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1418,
@@ -13122,7 +13471,12 @@
         "index": 1419,
         "id": 1961,
         "name": "Easter egg",
-        "image": "easter_egg.png"
+        "image": "easter_egg.png",
+        "sources": {
+            "other": {
+                "Complete an Easter holiday event": {}
+            }
+        }
     },
     {
         "index": 1420,
@@ -13460,8 +13814,7 @@
                     "rule": {
                         "all": [
                             { "has": 9142 },
-                            { "has": 9190 },
-                            "canTrainFletching"
+                            { "has": 9190 }
                         ]
                     }
                 }
@@ -13492,8 +13845,7 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9190 },
-                            "canTrainFletching"
+                            { "has": 9190 }
                         ]
                     }
                 }
@@ -14216,7 +14568,23 @@
         "index": 1583,
         "id": 19621,
         "name": "Fenkenstrain's castle teleport (tablet)",
-        "image": "fenkenstrain's_castle_teleport_(tablet).png"
+        "image": "fenkenstrain's_castle_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting an Arceuus teleport tablet": {
+                    "notes": "Requires a law rune, soul rune, earth rune and a dark essence block (which requires a chisel and pickaxe)",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 566 },
+                            { "has": 557 },
+                            { "has": 1755 },
+                            "canTrainMining"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1584,
@@ -14288,7 +14656,20 @@
         "index": 1595,
         "id": 5537,
         "name": "Fire tiara",
-        "image": "fire_tiara.png"
+        "image": "fire_tiara.png",
+        "sources": {
+            "other": {
+                "Crafting a tiara": {
+                    "notes": "Requires a tiara and a fire talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 1452 },
+                            { "has": 1442 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1596,
@@ -14366,7 +14747,23 @@
         "index": 1608,
         "id": 24959,
         "name": "Fishing guild teleport (tablet)",
-        "image": "fishing_guild_teleport_(tablet).png"
+        "image": "fishing_guild_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting a Lunar teleport tablet": {
+                    "notes": "Requires a law rune, water rune, astral rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 555 },
+                            { "has": 9075 },
+                            { "has": 1761 },
+                            "canCompleteLunarDiplomacy"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1609,
@@ -14793,7 +15190,26 @@
         "index": 1675,
         "id": 12778,
         "name": "Ghorrock teleport (tablet)",
-        "image": "ghorrock_teleport_(tablet).png"
+        "image": "ghorrock_teleport_(tablet).png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Crafting an Ancient teleport tablet": {
+                    "notes": "Requires a law rune, water rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 555 },
+                            { "has": 1761 },
+                            "canCompleteDesertTreasure"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 1676,
@@ -15902,7 +16318,12 @@
         "index": 1795,
         "id": 12759,
         "name": "Green dark bow paint",
-        "image": "green_dark_bow_paint.png"
+        "image": "green_dark_bow_paint.png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 1796,
@@ -16028,7 +16449,12 @@
         "index": 1806,
         "id": 1053,
         "name": "Green halloween mask",
-        "image": "green_halloween_mask.png"
+        "image": "green_halloween_mask.png",
+        "sources": {
+            "other": {
+                "Complete a Halloween holiday event": {}
+            }
+        }
     },
     {
         "index": 1807,
@@ -16054,7 +16480,12 @@
         "index": 1809,
         "id": 1044,
         "name": "Green partyhat",
-        "image": "green_partyhat.png"
+        "image": "green_partyhat.png",
+        "sources": {
+            "other": {
+                "Complete a Christmas holiday event": {}
+            }
+        }
     },
     {
         "index": 1810,
@@ -16156,7 +16587,23 @@
         "index": 1826,
         "id": 2526,
         "name": "Grey toy horsey",
-        "image": "grey_toy_horsey.png"
+        "image": "grey_toy_horsey.png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Crafting a toy horsey": {
+                    "notes": "Requires plank",
+                    "rule": {
+                        "all": [
+                            { "has": 960 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1827,
@@ -16896,7 +17343,12 @@
         "index": 1912,
         "id": 13175,
         "name": "Halloween mask set",
-        "image": "halloween_mask_set.png"
+        "image": "halloween_mask_set.png",
+        "sources": {
+            "other": {
+                "Complete a Halloween holiday event": {}
+            }
+        }
     },
     {
         "index": 1913,
@@ -17000,7 +17452,23 @@
         "index": 1928,
         "id": 19625,
         "name": "Harmony island teleport (tablet)",
-        "image": "harmony_island_teleport_(tablet).png"
+        "image": "harmony_island_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting an Arceuus teleport tablet": {
+                    "notes": "Requires a law rune, soul rune, nature rune, and a dark essence block (which requires a chisel and pickaxe)",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 566 },
+                            { "has": 561 },
+                            { "has": 1755 },
+                            "canTrainMining"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1929,
@@ -17426,7 +17894,23 @@
         "index": 1983,
         "id": 24963,
         "name": "Ice plateau teleport (tablet)",
-        "image": "ice_plateau_teleport_(tablet).png"
+        "image": "ice_plateau_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting a Lunar teleport tablet": {
+                    "notes": "Requires a law rune, water rune, astral rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 555 },
+                            { "has": 9075 },
+                            { "has": 1761 },
+                            "canCompleteLunarDiplomacy"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 1984,
@@ -18702,8 +19186,7 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9187 },
-                            "canTrainFletching"
+                            { "has": 9187 }
                         ]
                     }
                 }
@@ -19091,13 +19574,48 @@
         "index": 2180,
         "id": 12779,
         "name": "Kharyrll teleport (tablet)",
-        "image": "kharyrll_teleport_(tablet).png"
+        "image": "kharyrll_teleport_(tablet).png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Crafting an Ancient teleport tablet": {
+                    "notes": "Requires a law rune, blood rune, and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 565 },
+                            { "has": 1761 },
+                            "canCompleteDesertTreasure"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 2181,
         "id": 24957,
         "name": "Khazard teleport (tablet)",
-        "image": "khazard_teleport_(tablet).png"
+        "image": "khazard_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting a Lunar teleport tablet": {
+                    "notes": "Requires a law rune, water rune, astral rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 555 },
+                            { "has": 9075 },
+                            { "has": 1761 },
+                            "canCompleteLunarDiplomacy"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2182,
@@ -19367,7 +19885,26 @@
         "index": 2226,
         "id": 12780,
         "name": "Lassar teleport (tablet)",
-        "image": "lassar_teleport_(tablet).png"
+        "image": "lassar_teleport_(tablet).png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Crafting an Ancient teleport tablet": {
+                    "notes": "Requires a law rune, water rune, and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 556 },
+                            { "has": 1761 },
+                            "canCompleteDesertTreasure"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 2227,
@@ -20719,7 +21256,22 @@
         "index": 2420,
         "id": 19617,
         "name": "Mind altar teleport (tablet)",
-        "image": "mind_altar_teleport_(tablet).png"
+        "image": "mind_altar_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting an Arceuus teleport tablet": {
+                    "notes": "Requires a law rune, mind rune, and a dark essence block (which requires a chisel and pickaxe)",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 558 },
+                            { "has": 1755 },
+                            "canTrainMining"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2421,
@@ -20761,7 +21313,20 @@
         "index": 2427,
         "id": 5529,
         "name": "Mind tiara",
-        "image": "mind_tiara.png"
+        "image": "mind_tiara.png",
+        "sources": {
+            "other": {
+                "Crafting a tiara": {
+                    "notes": "Requires a tiara and a mind talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 1452 },
+                            { "has": 1448 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2428,
@@ -21965,7 +22530,23 @@
         "index": 2546,
         "id": 24949,
         "name": "Moonclan teleport (tablet)",
-        "image": "moonclan_teleport_(tablet).png"
+        "image": "moonclan_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting a Lunar teleport tablet": {
+                    "notes": "Requires a law rune, earth rune, astral rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 557 },
+                            { "has": 9075 },
+                            { "has": 1761 },
+                            "canCompleteLunarDiplomacy"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2547,
@@ -22569,7 +23150,20 @@
         "index": 2626,
         "id": 5541,
         "name": "Nature tiara",
-        "image": "nature_tiara.png"
+        "image": "nature_tiara.png",
+        "sources": {
+            "other": {
+                "Crafting a tiara": {
+                    "notes": "Requires a tiara and a nature talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 1452 },
+                            { "has": 1462 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2627,
@@ -23201,8 +23795,7 @@
                     "rule": {
                         "all": [
                             { "has": 9144 },
-                            { "has": 9194 },
-                            "canTrainFletching"
+                            { "has": 9194 }
                         ]
                     }
                 }
@@ -23233,8 +23826,7 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9194 },
-                            "canTrainFletching"
+                            { "has": 9194 }
                         ]
                     }
                 }
@@ -23295,8 +23887,7 @@
                     "rule": {
                         "all": [
                             { "has": 877 },
-                            { "has": 45 },
-                            "canTrainFletching"
+                            { "has": 45 }
                         ]
                     }
                 }
@@ -23327,8 +23918,7 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 45 },
-                            "canTrainFletching"
+                            { "has": 45 }
                         ]
                     }
                 }
@@ -23467,7 +24057,23 @@
         "index": 2756,
         "id": 24951,
         "name": "Ourania teleport (tablet)",
-        "image": "ourania_teleport_(tablet).png"
+        "image": "ourania_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting a Lunar teleport tablet": {
+                    "notes": "Requires a law rune, earth rune, astral rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 557 },
+                            { "has": 9075 },
+                            { "has": 1761 },
+                            "canCompleteLunarDiplomacy"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 2757,
@@ -23497,7 +24103,27 @@
         "index": 2761,
         "id": 12781,
         "name": "Paddewwa teleport (tablet)",
-        "image": "paddewwa_teleport_(tablet).png"
+        "image": "paddewwa_teleport_(tablet).png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Crafting an Ancient teleport tablet": {
+                    "notes": "Requires a law rune, air rune, fire rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 556 },
+                            { "has": 554 },
+                            { "has": 1761 },
+                            "canCompleteDesertTreasure"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 2762,
@@ -23559,7 +24185,12 @@
         "index": 2770,
         "id": 13173,
         "name": "Partyhat set",
-        "image": "partyhat_set.png"
+        "image": "partyhat_set.png",
+        "sources": {
+            "other": {
+                "Complete a Christmas holiday event": {}
+            }
+        }
     },
     {
         "index": 2771,
@@ -23620,8 +24251,7 @@
                     "rule": {
                         "all": [
                             { "has": 9140 },
-                            { "has": 46 },
-                            "canTrainFletching"
+                            { "has": 46 }
                         ]
                     }
                 }
@@ -23646,8 +24276,7 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 46 },
-                            "canTrainFletching"
+                            { "has": 46 }
                         ]
                     }
                 }
@@ -24550,7 +25179,12 @@
         "index": 2906,
         "id": 1959,
         "name": "Pumpkin",
-        "image": "pumpkin.png"
+        "image": "pumpkin.png",
+        "sources": {
+            "other": {
+                "Complete a Halloween holiday event": {}
+            }
+        }
     },
     {
         "index": 2907,
@@ -24694,7 +25328,12 @@
         "index": 2920,
         "id": 1046,
         "name": "Purple partyhat",
-        "image": "purple_partyhat.png"
+        "image": "purple_partyhat.png",
+        "sources": {
+            "other": {
+                "Complete a Christmas holiday event": {}
+            }
+        }
     },
     {
         "index": 2921,
@@ -25481,7 +26120,14 @@
         "index": 3040,
         "id": 1470,
         "name": "Red bead",
-        "image": "red_bead.png"
+        "image": "red_bead.png",
+        "sources": {
+            "drops": {
+                "Imp": {
+                    "droprate": "1/25.6"
+                }
+            }
+        }
     },
     {
         "index": 3041,
@@ -25777,7 +26423,12 @@
         "index": 3070,
         "id": 1057,
         "name": "Red halloween mask",
-        "image": "red_halloween_mask.png"
+        "image": "red_halloween_mask.png",
+        "sources": {
+            "other": {
+                "Complete a Halloween holiday event": {}
+            }
+        }
     },
     {
         "index": 3071,
@@ -25803,7 +26454,12 @@
         "index": 3073,
         "id": 1038,
         "name": "Red partyhat",
-        "image": "red_partyhat.png"
+        "image": "red_partyhat.png",
+        "sources": {
+            "other": {
+                "Complete a Christmas holiday event": {}
+            }
+        }
     },
     {
         "index": 3074,
@@ -26470,8 +27126,7 @@
                     "rule": {
                         "all": [
                             { "has": 9143 },
-                            { "has": 9191 },
-                            "canTrainFletching"
+                            { "has": 9191 }
                         ]
                     }
                 }
@@ -26502,8 +27157,7 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9191 },
-                            "canTrainFletching"
+                            { "has": 9191 }
                         ]
                     }
                 }
@@ -28002,7 +28656,22 @@
         "index": 3296,
         "id": 19619,
         "name": "Salve graveyard teleport (tablet)",
-        "image": "salve_graveyard_teleport_(tablet).png"
+        "image": "salve_graveyard_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting an Arceuus teleport tablet": {
+                    "notes": "Requires a law rune, soul rune, and a dark essence block (which requires a chisel and pickaxe)",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 566 },
+                            { "has": 1755 },
+                            "canTrainMining"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 3297,
@@ -28165,7 +28834,12 @@
         "index": 3316,
         "id": 1050,
         "name": "Santa hat",
-        "image": "santa_hat.png"
+        "image": "santa_hat.png",
+        "sources": {
+            "other": {
+                "Complete a Christmas holiday event": {}
+            }
+        }
     },
     {
         "index": 3317,
@@ -28208,8 +28882,7 @@
                     "rule": {
                         "all": [
                             { "has": 9142 },
-                            { "has": 9189 },
-                            "canTrainFletching"
+                            { "has": 9189 }
                         ]
                     }
                 }
@@ -28240,8 +28913,7 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9189 },
-                            "canTrainFletching"
+                            { "has": 9189 }
                         ]
                     }
                 }
@@ -28839,7 +29511,26 @@
         "index": 3387,
         "id": 12782,
         "name": "Senntisten teleport (tablet)",
-        "image": "senntisten_teleport_(tablet).png"
+        "image": "senntisten_teleport_(tablet).png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Crafting an Ancient teleport tablet": {
+                    "notes": "Requires a law rune, soul rune, and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 566 },
+                            { "has": 1761 },
+                            "canCompleteDesertTreasure"
+                        ]
+                    }
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 3388,
@@ -32100,13 +32791,24 @@
         "index": 3877,
         "id": 24336,
         "name": "Target teleport",
-        "image": "target_teleport.png"
+        "image": "target_teleport.png",
+        "sources": {
+            "drops": {},
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 3878,
         "id": 12846,
         "name": "Target teleport scroll",
-        "image": "target_teleport_scroll.png"
+        "image": "target_teleport_scroll.png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 3879,
@@ -32982,8 +33684,7 @@
                     "rule": {
                         "all": [
                             { "has": 9141 },
-                            { "has": 9188 },
-                            "canTrainFletching"
+                            { "has": 9188 }
                         ]
                     }
                 }
@@ -33014,8 +33715,7 @@
                     "rule": {
                         "all": [
                             { "has": 21905 },
-                            { "has": 9188 },
-                            "canTrainFletching"
+                            { "has": 9188 }
                         ]
                     }
                 }
@@ -34285,7 +34985,22 @@
         "index": 4220,
         "id": 8007,
         "name": "Varrock teleport (tablet)",
-        "image": "varrock_teleport_(tablet).png"
+        "image": "varrock_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting a teleport tablet": {
+                    "notes": "Requires a law rune, air rune, fire rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 556 },
+                            { "has": 554 },
+                            { "has": 1761 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4221,
@@ -34671,7 +35386,60 @@
         "index": 4281,
         "id": 8012,
         "name": "Watchtower teleport (tablet)",
-        "image": "watchtower_teleport_(tablet).png"
+        "image": "watchtower_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting a teleport tablet": {
+                    "notes": "Requires a law rune, earth rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 557 },
+                            { "has": 1761 },
+                            "canCompleteWatchtower"
+                        ]
+                    }
+                },
+                "Reward from completing the miniquest Daddy's Home": {
+                    "notes": "Requires planks, bolt of cloth, any nails, a hammer and a saw.",
+                    "rule": {
+                        "all": [
+                            { "has": 960 },
+                            { "has": 8790 },
+                            "canCompletePandemonium",
+                            {
+                                "any": [
+                                    {
+                                        "has": 4819
+                                    },
+                                    {
+                                        "has": 4821
+                                    },
+                                    {
+                                        "has": 4820
+                                    },
+                                    {
+                                        "has": 1539
+                                    },
+                                    {
+                                        "has": 4822
+                                    },
+                                    {
+                                        "has": 4823
+                                    },
+                                    {
+                                        "has": 4824
+                                    },
+                                    {
+                                        "has": 31406
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4282,
@@ -34695,103 +35463,305 @@
         "index": 4285,
         "id": 1444,
         "name": "Water talisman",
-        "image": "water_talisman.png"
+        "image": "water_talisman.png",
+        "sources": {
+            "drops": {},
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Empty a watering can (8)": {
+                    "notes": "You can get a watering can (8) from killing a farmer."
+                }
+            }
+        }
     },
     {
         "index": 4286,
         "id": 5531,
         "name": "Water tiara",
-        "image": "water_tiara.png"
+        "image": "water_tiara.png",
+        "sources": {
+            "other": {
+                "Creating a tiara": {
+                    "notes": "Requires a tiara and a water talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 5525 },
+                            { "has": 1444 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4287,
         "id": 24953,
         "name": "Waterbirth teleport (tablet)",
-        "image": "waterbirth_teleport_(tablet).png"
+        "image": "waterbirth_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting a Lunar teleport tablet": {
+                    "notes": "Requires a law rune, water rune, astral rune and soft clay",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 555 },
+                            { "has": 9075 },
+                            { "has": 1761 },
+                            "canCompleteLunarDiplomacy"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4288,
         "id": 5331,
         "name": "Watering can",
-        "image": "watering_can.png"
+        "image": "watering_can.png",
+        "sources": {
+            "drops": {},
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Empty a watering can (8)": {
+                    "notes": "You can get a watering can (8) from killing a farmer."
+                }
+            }
+        }
     },
     {
         "index": 4289,
         "id": 5982,
         "name": "Watermelon",
-        "image": "watermelon.png"
+        "image": "watermelon.png",
+        "sources": {
+            "drops": {}
+        }
     },
     {
         "index": 4290,
         "id": 5321,
         "name": "Watermelon seed",
-        "image": "watermelon_seed.png"
+        "image": "watermelon_seed.png",
+        "sources": {
+            "drops": {}
+        }
     },
     {
         "index": 4291,
         "id": 5984,
         "name": "Watermelon slice",
-        "image": "watermelon_slice.png"
+        "image": "watermelon_slice.png",
+        "sources": {
+            "other": {
+                "Use a knife on a watermelon": {
+                    "notes": "Requires a knife and a watermelon.",
+                    "rule": {
+                        "all": [
+                            { "has": 946 },
+                            { "has": 5982 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4292,
         "id": 1831,
         "name": "Waterskin(0)",
-        "image": "waterskin(0).png"
+        "image": "waterskin(0).png",
+        "sources": {
+            "drops": {},
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Empty a waterskin(3) (untradable, purchasable in Polnivneach) by standing in the desert": {
+                    "notes": "You can train agility to level 66 to access the desert."
+                }
+            }
+        }
     },
     {
         "index": 4293,
         "id": 1823,
         "name": "Waterskin(4)",
-        "image": "waterskin(4).png"
+        "image": "waterskin(4).png",
+        "sources": {
+            "drops": {},
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fill a waterskin(3) (untradable, purchasable in Polnivneach) on a water source": {
+                    "notes": "You can train agility to level 66 to access the desert."
+                }
+            }
+        }
     },
     {
         "index": 4294,
         "id": 23387,
         "name": "Watson teleport",
-        "image": "watson_teleport.png"
+        "image": "watson_teleport.png",
+        "sources": {
+            "other": {
+                "Exchange a empty master scroll book with Watson": {
+                    "notes": "Requires an empty master scroll book.",
+                    "rule": {
+                        "all": [
+                            { "has": 21387 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4295,
         "id": 187,
         "name": "Weapon poison",
-        "image": "weapon_poison.png"
+        "image": "weapon_poison.png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Mixing a potion": {
+                    "notes": "Requires Kwuarm potion (unf) and Dragon scale dust.",
+                    "rule": {
+                        "all": [
+                            { "has": 105 },
+                            { "has": 241 },
+                            "canTrainHerblore"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4296,
         "id": 5937,
         "name": "Weapon poison(+)",
-        "image": "weapon_poison.png"
+        "image": "weapon_poison.png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Mixing a potion": {
+                    "notes": "Requires coconut milk and cactus spine for weapon poison+ (unf), and Red spiders' eggs.",
+                    "rule": {
+                        "all": [
+                            { "has": 5935 },
+                            { "has": 6016 },
+                            { "has": 223 },
+                            "canTrainHerblore"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4297,
         "id": 5940,
         "name": "Weapon poison(++)",
-        "image": "weapon_poison.png"
+        "image": "weapon_poison.png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Mixing a potion": {
+                    "notes": "Requires coconut milk for weapon poison++ (unf), and poison ivy berries.",
+                    "rule": {
+                        "all": [
+                            { "has": 5935 },
+                            { "has": 6018 },
+                            "canTrainHerblore"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4298,
         "id": 27652,
         "name": "Webweaver bow (u)",
-        "image": "webweaver_bow_(u).png"
+        "image": "webweaver_bow_(u).png",
+        "sources": {
+            "other": {
+                "Fletching a webweaver bow (u)": {
+                    "notes": "Requires a Craw's bow (u) and Fangs of venenatis",
+                    "rule": {
+                        "all": [
+                            { "has": 22547 },
+                            { "has": 27670 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4299,
         "id": 6055,
         "name": "Weeds",
-        "image": "weeds.png"
+        "image": "weeds.png",
+        "sources": {
+            "other": {
+                "Raking a farming patch": {
+                    "notes": "Use a rake on a farming patch.",
+                    "rule": {
+                        "all": [
+                            { "has": 5341 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4300,
         "id": 19623,
         "name": "West ardougne teleport (tablet)",
-        "image": "west_ardougne_teleport_(tablet).png"
+        "image": "west_ardougne_teleport_(tablet).png",
+        "sources": {
+            "other": {
+                "Crafting an Arceuus teleport tablet": {
+                    "notes": "Requires a law rune, soul rune, and a dark essence block (which requires a chisel and pickaxe)",
+                    "rule": {
+                        "all": [
+                            { "has": 563 },
+                            { "has": 566 },
+                            { "has": 1755 },
+                            "canTrainMining"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4301,
         "id": 2017,
         "name": "Whisky",
-        "image": "whisky.png"
+        "image": "whisky.png",
+        "sources": {
+            "drops": {},
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4302,
@@ -34808,7 +35778,15 @@
         "index": 4303,
         "id": 1005,
         "name": "White apron",
-        "image": "white_apron.png"
+        "image": "white_apron.png",
+        "sources": {
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4304,
@@ -34825,7 +35803,14 @@
         "index": 4305,
         "id": 1476,
         "name": "White bead",
-        "image": "white_bead.png"
+        "image": "white_bead.png",
+        "sources": {
+            "drops": {
+                "Imp": {
+                    "droprate": "1/25.6"
+                }
+            }
+        }
     },
     {
         "index": 4306,
@@ -34845,7 +35830,19 @@
         "index": 4307,
         "id": 239,
         "name": "White berries",
-        "image": "white_berries.png"
+        "image": "white_berries.png",
+        "sources": {
+            "drops": {},
+            "other": {
+                "Harvesting a plant": {
+                    "notes": "Harvest a Whiteberry bush.",
+                    "rule": "canTrainFarming"
+                }
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4308,
@@ -34985,7 +35982,12 @@
         "index": 4317,
         "id": 12763,
         "name": "White dark bow paint",
-        "image": "white_dark_bow_paint.png"
+        "image": "white_dark_bow_paint.png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4318,
@@ -35165,7 +36167,12 @@
         "index": 4333,
         "id": 1048,
         "name": "White partyhat",
-        "image": "white_partyhat.png"
+        "image": "white_partyhat.png",
+        "sources": {
+            "other": {
+                "Complete a Christmas holiday event": {}
+            }
+        }
     },
     {
         "index": 4334,
@@ -35237,7 +36244,23 @@
         "index": 4340,
         "id": 2522,
         "name": "White toy horsey",
-        "image": "white_toy_horsey.png"
+        "image": "white_toy_horsey.png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Crafting a toy horsey": {
+                    "notes": "Requires plank",
+                    "rule": {
+                        "all": [
+                            { "has": 960 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4341,
@@ -35268,61 +36291,134 @@
         "index": 4343,
         "id": 5105,
         "name": "Whiteberry seed",
-        "image": "whiteberry_seed.png"
+        "image": "whiteberry_seed.png",
+        "sources": {
+            "drops": {}
+        }
     },
     {
         "index": 4344,
         "id": 7208,
         "name": "Wild pie",
-        "image": "wild_pie.png"
+        "image": "wild_pie.png",
+        "sources": {
+            "drops": {}
+        }
     },
     {
         "index": 4345,
         "id": 6002,
         "name": "Wildblood hops",
-        "image": "wildblood_hops.png"
+        "image": "wildblood_hops.png",
+        "sources": {
+            "other": {
+                "Harvesting a plant": {
+                    "notes": "Requires a spade.",
+                    "rule": {
+                        "all": [
+                            { "has": 952 },
+                            "canTrainFarming"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4346,
         "id": 5311,
         "name": "Wildblood seed",
-        "image": "wildblood_seed.png"
+        "image": "wildblood_seed.png",
+        "sources": {
+            "drops": {}
+        }
     },
     {
         "index": 4347,
         "id": 24251,
         "name": "Wilderness crabs teleport",
-        "image": "wilderness_crabs_teleport.png"
+        "image": "wilderness_crabs_teleport.png",
+        "sources": {
+            "drops": {},
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4348,
         "id": 21518,
         "name": "Willow bird house",
-        "image": "willow_bird_house.png"
+        "image": "willow_bird_house.png",
+        "sources": {
+            "other": {
+                "Crafting bird houses": {
+                    "notes": "Requires willow logs, a clockwork, a chisel and a hammer.",
+                    "rule": {
+                        "all": [
+                            { "has": 1519 },
+                            { "has": 8792 },
+                            { "has": 1755 },
+                            { "has": 2347 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4349,
         "id": 4600,
         "name": "Willow blackjack",
-        "image": "willow_blackjack.png"
+        "image": "willow_blackjack.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteTheFeud"
+            }
+        }
     },
     {
         "index": 4350,
         "id": 6414,
         "name": "Willow blackjack(d)",
-        "image": "willow_blackjack(d).png"
+        "image": "willow_blackjack(d).png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteTheFeud"
+            }
+        }
     },
     {
         "index": 4351,
         "id": 6412,
         "name": "Willow blackjack(o)",
-        "image": "willow_blackjack(o).png"
+        "image": "willow_blackjack(o).png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteTheFeud"
+            }
+        }
     },
     {
         "index": 4352,
         "id": 5933,
         "name": "Willow branch",
-        "image": "willow_branch.png"
+        "image": "willow_branch.png",
+        "sources": {
+            "other": {
+                "Using secateurs on a planted willow tree": {
+                    "notes": "Use secateurs on a planted willow tree.",
+                    "rule": {
+                        "all": [
+                            { "has": 5329 },
+                            { "has": 5371 },
+                            "canTrainFarming"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4353,
@@ -35342,43 +36438,189 @@
         "index": 4354,
         "id": 6024,
         "name": "Willow leaves",
-        "image": "willow_leaves.png"
+        "image": "willow_leaves.png",
+        "sources": {
+            "other": {
+                "Chopping willow logs with a Forestry kit": {
+                    "notes": "Willow tree.",
+                    "rule": "canTrainWoodcutting"
+                },
+                "Forestry events": {
+                    "notes": "Struggling Sapling or Friendly Ent.",
+                    "rule": "canTrainWoodcutting"
+                },
+                "Using secateurs to cure a planted willow tree": {
+                    "notes": "Diseased planted willow tree.",
+                    "rule": {
+                        "all": [
+                            { "has": 5329 },
+                            { "has": 5371 },
+                            "canTrainFarming"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4355,
         "id": 1519,
         "name": "Willow logs",
-        "image": "willow_logs.png"
+        "image": "willow_logs.png",
+        "sources": {
+            "drops": {
+                "Steel Chest": {
+                    "droprate": "1/13.43"
+                },
+                "Black Chest": {
+                    "droprate": "1/14.69; 1/16.8"
+                },
+                "Vampyre Juvinate": {
+                    "droprate": "1/16"
+                },
+                "Former Vampyre": {
+                    "droprate": "1/16"
+                },
+                "Serum 208": {
+                    "droprate": "1/64"
+                },
+                "Swamp Crab": {
+                    "droprate": "1/128"
+                },
+                "Barrel (Shaman Caves)": {
+                    "droprate": "Rare"
+                },
+                "Ent": {
+                    "droprate": "Varies"
+                },
+                "Extra supply crate (Wintertodt)": {
+                    "droprate": "Varies"
+                },
+                "Reward Cart (Wintertodt)": {
+                    "droprate": "Varies"
+                }
+            },
+            "other": {
+                "Chopping willow logs": {
+                    "notes": "Willow tree.",
+                    "rule": "canTrainWoodcutting"
+                }
+            }
+        }
     },
     {
         "index": 4356,
         "id": 847,
         "name": "Willow longbow",
-        "image": "willow_longbow.png"
+        "image": "willow_longbow.png",
+        "sources": {
+            "drops": {
+                "Archer (Burthorpe)": {
+                    "droprate": "1/32"
+                },
+                "Reward casket (easy)": {
+                    "droprate": "1/40"
+                },
+                "Zamorak ranger": {
+                    "droprate": "1/50"
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fletching a willow longbow": {
+                    "notes": "Requires willow longbow (u) and a bow string.",
+                    "rule": {
+                        "all": [
+                            { "has": 58 },
+                            { "has": 1777 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4357,
         "id": 58,
         "name": "Willow longbow (u)",
-        "image": "willow_longbow_(u).png"
+        "image": "willow_longbow_(u).png",
+        "sources": {
+            "other": {
+                "Fletching a willow longbow (u)": {
+                    "notes": "Requires willow logs and a knife.",
+                    "rule": {
+                        "all": [
+                            { "has": 1519 },
+                            { "has": 1511 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4358,
         "id": 3442,
         "name": "Willow pyre logs",
-        "image": "willow_pyre_logs.png"
+        "image": "willow_pyre_logs.png",
+        "sources": {
+            "other": {
+                "Creating pyre logs": {
+                    "notes": "Requires willow logs and sacred oil(4).",
+                    "rule": {
+                        "all": [
+                            { "has": 1519 },
+                            { "has": 3430 },
+                            "canCompleteShadesOfMortton"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4359,
         "id": 6045,
         "name": "Willow roots",
-        "image": "willow_roots.png"
+        "image": "willow_roots.png",
+        "sources": {
+            "other": {
+                "Digging up a tree": {
+                    "notes": "Requires a spade and any axe.",
+                    "rule": {
+                        "all": [
+                            { "has": 952 },
+                            "canTrainFarming",
+                            "canTrainWoodcutting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4360,
         "id": 5371,
         "name": "Willow sapling",
-        "image": "willow_sapling.png"
+        "image": "willow_sapling.png",
+        "sources": {
+            "other": {
+                "Creating a sapling": {
+                    "notes": "Requires a filled plant pot and a willow seed.",
+                    "rule": {
+                        "all": [
+                            { "has": 5354 },
+                            { "has": 5313 },
+                            "canTrainFarming"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4361,
@@ -35390,37 +36632,197 @@
         "index": 4362,
         "id": 22254,
         "name": "Willow shield",
-        "image": "willow_shield.png"
+        "image": "willow_shield.png",
+        "sources": {
+            "other": {
+                "Fletching a willow shield": {
+                    "notes": "Requires willow logs and a knife.",
+                    "rule": {
+                        "all": [
+                            { "has": 1519 },
+                            { "has": 1511 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4363,
         "id": 849,
         "name": "Willow shortbow",
-        "image": "willow_shortbow.png"
+        "image": "willow_shortbow.png",
+        "sources": {
+            "drops": {
+                "Adventurer Jon (sharpshooter)": {
+                    "droprate": "Always"
+                },
+                "Zamorak ranger": {
+                    "droprate": "1/25"
+                },
+                "Reward casket (easy)": {
+                    "droprate": "1/36"
+                },
+                "Zombie (Tarn's Lair)": {
+                    "droprate": "1/42.67"
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fletching a willow shortbow": {
+                    "notes": "Requires willow shortbow (u) and a bow string.",
+                    "rule": {
+                        "all": [
+                            { "has": 60 },
+                            { "has": 1777 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4364,
         "id": 60,
         "name": "Willow shortbow (u)",
-        "image": "willow_shortbow_(u).png"
+        "image": "willow_shortbow_(u).png",
+        "sources": {
+            "other": {
+                "Fletching a willow shortbow (u)": {
+                    "notes": "Requires willow logs and a knife.",
+                    "rule": {
+                        "all": [
+                            { "has": 1519 },
+                            { "has": 1511 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4365,
         "id": 9444,
         "name": "Willow stock",
-        "image": "willow_stock.png"
+        "image": "willow_stock.png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Fletching a willow stock": {
+                    "notes": "Requires willow logs and a knife.",
+                    "rule": {
+                        "all": [
+                            { "has": 1519 },
+                            { "has": 1511 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4366,
         "id": 245,
         "name": "Wine of zamorak",
-        "image": "wine_of_zamorak.png"
+        "image": "wine_of_zamorak.png",
+        "sources": {
+            "drops": {
+                "The Mimic": {
+                    "droprate": "1/5.144; 1/5.14"
+                },
+                "Chest (alchemist's signet)": {
+                    "droprate": "1/8.333"
+                },
+                "Monumental chest": {
+                    "droprate": "3 × 1/30"
+                },
+                "Kalphite Queen": {
+                    "droprate": "1/12.6"
+                },
+                "Balfrug Kreeyath": {
+                    "droprate": "1/15.88"
+                },
+                "Zakl'n Gritch": {
+                    "droprate": "1/15.88"
+                },
+                "Tstanon Karlak": {
+                    "droprate": "1/15.88"
+                },
+                "Nex": {
+                    "droprate": "Common"
+                },
+                "Chaos Fanatic": {
+                    "droprate": "1/21.33"
+                },
+                "Nechryarch": {
+                    "droprate": "3 × 1/64"
+                },
+                "Vet'ion": {
+                    "droprate": "1/25.2"
+                },
+                "Calvar'ion": {
+                    "droprate": "1/25.6"
+                },
+                "Cerberus": {
+                    "droprate": "1/26"
+                },
+                "Reward casket (master)": {
+                    "droprate": "1/30.3"
+                },
+                "Araxxor": {
+                    "droprate": "~1/38.33"
+                },
+                "Undead Druid": {
+                    "droprate": "1/50"
+                },
+                "Greater Nechryael": {
+                    "droprate": "1/56"
+                },
+                "Canifis citizens, human forms": {
+                    "droprate": "1/256"
+                }
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4367,
         "id": 2054,
         "name": "Wizard blizzard",
-        "image": "wizard_blizzard.png"
+        "image": "wizard_blizzard.png",
+        "sources": {
+            "drops": {
+                "Ocean Man": {
+                    "droprate": "1/7"
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            },
+            "other": {
+                "Making a wizard blizzard": {
+                    "notes": "Requires pineapple chunks, lime slices, and a cocktail glass.",
+                    "rule": {
+                        "all": [
+                            { "has": 2128 },
+                            { "has": 2124 },
+                            { "has": 2026 },
+                            "canTrainCooking"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4368,
@@ -35440,31 +36842,159 @@
         "index": 4369,
         "id": 1017,
         "name": "Wizard hat",
-        "image": "wizard_hat.png"
+        "image": "wizard_hat.png",
+        "sources": {
+            "drops": {
+                "Drink troll": {
+                    "droprate": "1/10"
+                }
+            },
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4370,
         "id": 1907,
         "name": "Wizard's mind bomb",
-        "image": "wizard's_mind_bomb.png"
+        "image": "wizard's_mind_bomb.png",
+        "sources": {
+            "drops": {
+                "Drink troll": {
+                    "droprate": "1/10"
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4371,
         "id": 1793,
         "name": "Woad leaf",
-        "image": "woad_leaf.png"
+        "image": "woad_leaf.png",
+        "sources": {
+            "other": {
+                "Harvesting a plant": {
+                    "notes": "Harvest a Woad plant.",
+                    "rule": "canTrainFarming"
+                }
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4372,
         "id": 5099,
         "name": "Woad seed",
-        "image": "woad_seed.png"
+        "image": "woad_seed.png",
+        "sources": {
+            "drops": {
+                "Seed Pack": {
+                    "droprate": "1/30"
+                },
+                "Master Farmer": {
+                    "droprate": "1/68.9"
+                },
+                "Wise Old Man tasks": {
+                    "droprate": "Uncommon"
+                },
+                "Mammoth": {
+                    "droprate": "1/64"
+                },
+                "Cockathrice": {
+                    "droprate": "3 × 1/435"
+                },
+                "Giant rockslug": {
+                    "droprate": "3 × 1/842"
+                },
+                "Sergeant (Shayzien)": {
+                    "droprate": "1/448"
+                },
+                "Obor (Members)": {
+                    "droprate": "1/547"
+                },
+                "Black Knight Titan": {
+                    "droprate": "1/587"
+                },
+                "Tortoise": {
+                    "droprate": "1/811"
+                },
+                "Vyrewatch": {
+                    "droprate": "1/6,943"
+                },
+                "Skeleton (Shayzien Crypts)": {
+                    "droprate": "1/10,910"
+                },
+                "Zombie (Shayzien Crypts)": {
+                    "droprate": "1/10,910"
+                },
+                "Skeleton (Lucien's camp)": {
+                    "droprate": "1/10,910"
+                },
+                "other": {
+                    "Forestry events": {
+                        "notes": "Flowering Tree event.",
+                        "rule": "canTrainWoodcutting"
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4373,
         "id": 2859,
         "name": "Wolf bones",
-        "image": "wolf_bones.png"
+        "image": "wolf_bones.png",
+        "sources": {
+            "drops": {
+                "Werewolf": {
+                    "droprate": "Always"
+                },
+                "Big Wolf": {
+                    "droprate": "Always"
+                },
+                "Wolf": {
+                    "droprate": "Always"
+                },
+                "White wolf": {
+                    "droprate": "Always"
+                },
+                "Ice wolf": {
+                    "droprate": "Always"
+                },
+                "Dire Wolf": {
+                    "droprate": "Always"
+                },
+                "Dire Wolf Alpha": {
+                    "droprate": "Always"
+                },
+                "Jungle Wolf": {
+                    "droprate": "Always"
+                },
+                "Desert Wolf": {
+                    "droprate": "Always"
+                },
+                "Canifis citizens, human forms": {
+                    "droprate": "Always"
+                }
+            },
+            "spawns": {
+                "Yes": {
+                    "any": [
+                        "canCompleteMakingFriendsWithMyArm",
+                        "canCompletePriestInPeril"
+                    ]
+                }
+            }
+        }
     },
     {
         "index": 4374,
@@ -35498,61 +37028,203 @@
         "index": 4376,
         "id": 2861,
         "name": "Wolfbone arrowtips",
-        "image": "wolfbone_arrowtips.png"
+        "image": "wolfbone_arrowtips.png",
+        "sources": {
+            "other": {
+                "Crafting wolfbone arrowtips": {
+                    "notes": "Requires wolf bones and a chisel.",
+                    "rule": {
+                        "all": [
+                            { "has": 2859 },
+                            { "has": 1755 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4377,
         "id": 10055,
         "name": "Wood camo legs",
-        "image": "wood_camo_legs.png"
+        "image": "wood_camo_legs.png",
+        "sources": {
+            "other": {
+                "Crafting armor": {
+                    "notes": "Requires common kebbit fur.",
+                    "rule": {
+                        "all": [
+                            { "has": 10121 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4379,
         "id": 10053,
         "name": "Wood camo top",
-        "image": "wood_camo_top.png"
+        "image": "wood_camo_top.png",
+        "sources": {
+            "other": {
+                "Crafting armor": {
+                    "notes": "Requires common kebbit fur.",
+                    "rule": {
+                        "all": [
+                            { "has": 10121 }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4381,
         "id": 8548,
         "name": "Wood dining table (flatpack)",
-        "image": "wood_dining_table_(flatpack).png"
+        "image": "wood_dining_table_(flatpack).png",
+        "sources": {
+            "other": {
+                "Constructing a flatpack": {
+                    "notes": "Requires planks and steel nails.",
+                    "rule": {
+                        "all": [
+                            { "has": 960 },
+                            { "has": 1539 },
+                            "canCompletePandemonium"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4382,
         "id": 8576,
         "name": "Wooden bed (flatpack)",
-        "image": "wooden_bed_(flatpack).png"
+        "image": "wooden_bed_(flatpack).png",
+        "sources": {
+            "other": {
+                "Constructing a flatpack": {
+                    "notes": "Requires planks, steel nails and a bolt of cloth.",
+                    "rule": {
+                        "all": [
+                            { "has": 960 },
+                            { "has": 1539 },
+                            { "has": 8790 },
+                            "canCompletePandemonium"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4383,
         "id": 8562,
         "name": "Wooden bench (flatpack)",
-        "image": "wooden_bench_(flatpack).png"
+        "image": "wooden_bench_(flatpack).png",
+        "sources": {
+            "other": {
+                "Constructing a flatpack": {
+                    "notes": "Requires planks and steel nails.",
+                    "rule": {
+                        "all": [
+                            { "has": 960 },
+                            { "has": 1539 },
+                            "canCompletePandemonium"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4384,
         "id": 10891,
         "name": "Wooden cat",
-        "image": "wooden_cat.png"
+        "image": "wooden_cat.png",
+        "sources": {
+            "other": {
+                "Crafting a wooden cat": {
+                    "notes": "Requires planks and fur, bear fur, or grey wolf fur.",
+                    "rule": {
+                        "all": [
+                            { "has": 960 },
+                            "canTrainCrafting",
+                            {
+                                "any": [
+                                    {
+                                        "has": 6814
+                                    },
+                                    {
+                                        "has": 948
+                                    },
+                                    {
+                                        "has": 958
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4385,
         "id": 8498,
         "name": "Wooden chair (flatpack)",
-        "image": "wooden_chair_(flatpack).png"
+        "image": "wooden_chair_(flatpack).png",
+        "sources": {
+            "other": {
+                "Constructing a flatpack": {
+                    "notes": "Requires planks and steel nails.",
+                    "rule": {
+                        "all": [
+                            { "has": 960 },
+                            { "has": 1539 },
+                            "canCompletePandemonium"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4386,
         "id": 32041,
         "name": "Wooden hull parts",
-        "image": "wooden_hull_parts.png"
+        "image": "wooden_hull_parts.png",
+        "sources": {
+            "other": {
+                "Constructing some wooden hull parts": {
+                    "notes": "Requires planks.",
+                    "rule": {
+                        "all": [
+                            { "has": 960 },
+                            "canCompletePandemonium"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4387,
         "id": 1171,
         "name": "Wooden shield",
-        "image": "wooden_shield.png"
+        "image": "wooden_shield.png",
+        "sources": {
+            "spawns": {
+                "Yes": "No requirements"
+            },
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4388,
@@ -35572,19 +37244,56 @@
         "index": 4389,
         "id": 7433,
         "name": "Wooden spoon",
-        "image": "wooden_spoon.png"
+        "image": "wooden_spoon.png",
+        "sources": {
+            "shops": {
+                "Yes": "canCompleteRecipeForDisaster"
+            }
+        }
     },
     {
         "index": 4390,
         "id": 9440,
         "name": "Wooden stock",
-        "image": "wooden_stock.png"
+        "image": "wooden_stock.png",
+        "sources": {
+            "drops": {
+                "Crossbow stall": {
+                    "droprate": "1/6.667"
+                },
+                "Storage crate": {
+                    "droprate": "1/19.5"
+                }
+            },
+            "other": {
+                "Fletching a wooden stock": {
+                    "notes": "Requires logs and a knife.",
+                    "rule": {
+                        "all": [
+                            { "has": 946 },
+                            { "has": 1511 },
+                            "canTrainFletching"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4391,
         "id": 1737,
         "name": "Wool",
-        "image": "wool.png"
+        "image": "wool.png",
+        "sources": {
+            "other": {
+                "Shearing sheep or alpacas": {
+                    "notes": "Requires shears.",
+                    "rule": {
+                        "has": 1735
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4392,
@@ -35602,133 +37311,473 @@
         "index": 4394,
         "id": 2191,
         "name": "Worm hole",
-        "image": "worm_hole.png"
+        "image": "worm_hole.png",
+        "sources": {
+            "other": {
+                "Making a worm hole": {
+                    "notes": "Requires Equa leaves.",
+                    "rule": {
+                        "has": 2128
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4395,
         "id": 5028,
         "name": "Woven top (blue)",
-        "image": "woven_top_(blue).png"
+        "image": "woven_top_(blue).png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4396,
         "id": 5024,
         "name": "Woven top (brown)",
-        "image": "woven_top_(brown).png"
+        "image": "woven_top_(brown).png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4397,
         "id": 5026,
         "name": "Woven top (yellow)",
-        "image": "woven_top_(yellow).png"
+        "image": "woven_top_(yellow).png",
+        "sources": {
+            "shops": {
+                "Yes": "No requirements"
+            }
+        }
     },
     {
         "index": 4398,
         "id": 2341,
         "name": "Wrapped oomlie",
-        "image": "wrapped_oomlie.png"
+        "image": "wrapped_oomlie.png",
+        "sources": {
+            "other": {
+                "Making a wrapped oomlie": {
+                    "notes": "Requires a raw oomlie.",
+                    "rule": {
+                        "all": [
+                            { "has": 2337 },
+                            "canTrainCooking"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4399,
         "id": 21880,
         "name": "Wrath rune",
-        "image": "wrath_rune.png"
+        "image": "wrath_rune.png",
+        "sources": {
+            "drops": {
+                "Lost ironwood crate": {
+                    "droprate": "1/8"
+                },
+                "Adamant dragon": {
+                    "droprate": "1/13.75"
+                },
+                "Rune dragon": {
+                    "droprate": "1/15.88"
+                },
+                "Vorkath": {
+                    "droprate": "2 × 1/50"
+                },
+                "Yama": {
+                    "droprate": "1/95.11"
+                }
+            },
+            "other": {
+                "Crafting a wrath rune": {
+                    "notes": "Requires a wrath tiara or a wrath talisman, and pure essence or daeyalt essence.",
+                    "rule": {
+                        "all": [
+                            {
+                                "any": [
+                                    {
+                                        "has": 22121
+                                    },
+                                    {
+                                        "has": 22118
+                                    }
+                                ]
+                            },
+                            {
+                                "any": [
+                                    {
+                                        "has": 7936
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4400,
         "id": 22118,
         "name": "Wrath talisman",
-        "image": "wrath_talisman.png"
+        "image": "wrath_talisman.png",
+        "sources": {
+            "drops": {
+                "Vorkath": {
+                    "droprate": "2 × 1/50"
+                },
+                "Adamant dragon": {
+                    "droprate": "1/110"
+                },
+                "Rune dragon": {
+                    "droprate": "1/127"
+                }
+            }
+        }
     },
     {
         "index": 4401,
         "id": 22121,
         "name": "Wrath tiara",
-        "image": "wrath_tiara.png"
+        "image": "wrath_tiara.png",
+        "sources": {
+            "other": {
+                "Crafting a tiara": {
+                    "notes": "Requires a tiara and a wrath talisman.",
+                    "rule": {
+                        "all": [
+                            { "has": 5525 },
+                            { "has": 22118 },
+                            "canCompleteDragonSlayerII"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4402,
         "id": 22780,
         "name": "Wyrm bones",
-        "image": "wyrm_bones.png"
+        "image": "wyrm_bones.png",
+        "sources": {
+            "drops": {
+                "Wyrm": {
+                    "droprate": "Always"
+                },
+                "Shadow Wyrm": {
+                    "droprate": "Always"
+                }
+            }
+        }
     },
     {
         "index": 4403,
         "id": 28899,
         "name": "Wyrmling bones",
-        "image": "wyrmling_bones.png"
+        "image": "wyrmling_bones.png",
+        "sources": {
+            "drops": {
+                "Wyrmling": {
+                    "droprate": "Always"
+                },
+                "Lunar Chest": {
+                    "droprate": "6 × 1/30"
+                }
+            }
+        }
     },
     {
         "index": 4404,
         "id": 6812,
         "name": "Wyvern bones",
-        "image": "wyvern_bones.png"
+        "image": "wyvern_bones.png",
+        "sources": {
+            "drops": {
+                "Skeletal Wyvern": {
+                    "droprate": "Always"
+                },
+                "Ancient Wyvern": {
+                    "droprate": "Always"
+                },
+                "Spitting Wyvern": {
+                    "droprate": "Always"
+                },
+                "Taloned Wyvern": {
+                    "droprate": "Always"
+                },
+                "Long-tailed Wyvern": {
+                    "droprate": "Always"
+                }
+            }
+        }
     },
     {
         "index": 4405,
         "id": 21637,
         "name": "Wyvern visage",
-        "image": "wyvern_visage.png"
+        "image": "wyvern_visage.png",
+        "sources": {
+            "drops": {
+                "Ancient Wyvern": {
+                    "droprate": "1/10,000"
+                },
+                "Spitting Wyvern": {
+                    "droprate": "1/12,000"
+                },
+                "Taloned Wyvern": {
+                    "droprate": "1/12,000"
+                },
+                "Long-tailed Wyvern": {
+                    "droprate": "1/12,000"
+                }
+            }
+        }
     },
     {
         "index": 4406,
         "id": 13383,
         "name": "Xerician fabric",
-        "image": "xerician_fabric.png"
+        "image": "xerician_fabric.png",
+        "sources": {
+            "drops": {
+                "Stone chest": {
+                    "droprate": "1/4.545"
+                },
+                "Lizardman brute": {
+                    "droprate": "1/8.375"
+                },
+                "Lizardman Level 62": {
+                    "droprate": "1/9.75"
+                },
+                "Lizardman shaman": {
+                    "droprate": "1/12.5"
+                },
+                "Lizardman Level 53": {
+                    "droprate": "1/14.5"
+                }
+            }
+        }
     },
     {
         "index": 4407,
         "id": 13385,
         "name": "Xerician hat",
-        "image": "xerician_hat.png"
+        "image": "xerician_hat.png",
+        "sources": {
+            "other": {
+                "Crafting armor": {
+                    "notes": "Requires Xerician fabric.",
+                    "rule": {
+                        "all": [
+                            { "has": 13383 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4408,
         "id": 13389,
         "name": "Xerician robe",
-        "image": "xerician_robe.png"
+        "image": "xerician_robe.png",
+        "sources": {
+            "other": {
+                "Crafting armor": {
+                    "notes": "Requires Xerician fabric.",
+                    "rule": {
+                        "all": [
+                            { "has": 13383 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4409,
         "id": 13387,
         "name": "Xerician top",
-        "image": "xerician_top.png"
+        "image": "xerician_top.png",
+        "sources": {
+            "other": {
+                "Crafting armor": {
+                    "notes": "Requires Xerician fabric.",
+                    "rule": {
+                        "all": [
+                            { "has": 13383 },
+                            "canTrainCrafting"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4410,
         "id": 10818,
         "name": "Yak-hide",
-        "image": "yak-hide.png"
+        "image": "yak-hide.png",
+        "sources": {
+            "drops": {
+                "Yak": {
+                    "droprate": "Always"
+                }
+            },
+            "shops": {
+                "Yes": "canCompleteTheFremennikIsles"
+            }
+        }
     },
     {
         "index": 4411,
         "id": 10824,
         "name": "Yak-hide armour (legs)",
-        "image": "yak-hide_armour_(legs).png"
+        "image": "yak-hide_armour_(legs).png",
+        "sources": {
+            "other": {
+                "Crafting armor": {
+                    "notes": "Requires Cured yak-hide.",
+                    "rule": {
+                        "all": [
+                            { "has": 10820 },
+                            "canTrainCrafting",
+                            "canCompleteTheFremennikIsles"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4412,
         "id": 10822,
         "name": "Yak-hide armour (top)",
-        "image": "yak-hide_armour_(top).png"
+        "image": "yak-hide_armour_(top).png",
+        "sources": {
+            "other": {
+                "Crafting armor": {
+                    "notes": "Requires Cured yak-hide.",
+                    "rule": {
+                        "all": [
+                            { "has": 10820 },
+                            "canTrainCrafting",
+                            "canCompleteTheFremennikIsles"
+                        ]
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4413,
         "id": 5998,
         "name": "Yanillian hops",
-        "image": "yanillian_hops.png"
+        "image": "yanillian_hops.png",
+        "sources": {
+            "other": {
+                "Harvesting a plant": {
+                    "notes": "Harvest a Yanillian Hops plant.",
+                    "rule": "canTrainFarming"
+                }
+            }
+        }
     },
     {
         "index": 4414,
         "id": 5309,
         "name": "Yanillian seed",
-        "image": "yanillian_seed.png"
+        "image": "yanillian_seed.png",
+        "sources": {
+            "drops": {
+                "Seed Stall": {
+                    "droprate": "1/21.28"
+                },
+                "Master Farmer": {
+                    "droprate": "1/36.1"
+                },
+                "Wise Old Man tasks": {
+                    "droprate": "Uncommon"
+                },
+                "Mammoth": {
+                    "droprate": "1/64"
+                },
+                "Cockathrice": {
+                    "droprate": "3 × 1/228"
+                },
+                "Giant rockslug": {
+                    "droprate": "3 × 1/441"
+                },
+                "Sergeant (Shayzien)": {
+                    "droprate": "1/215"
+                },
+                "Obor (Members)": {
+                    "droprate": "1/286"
+                },
+                "Black Knight Titan": {
+                    "droprate": "1/308"
+                },
+                "Tortoise": {
+                    "droprate": "1/365"
+                },
+                "Cyclops (Ardougne Zoo)": {
+                    "droprate": "1/465"
+                },
+                "Grimy Lizard": {
+                    "droprate": "1/1,134"
+                },
+                "Vyrewatch": {
+                    "droprate": "1/3,638"
+                },
+                "Sulphur Lizard": {
+                    "droprate": "1/4,158"
+                },
+                "Skeleton (Shayzien Crypts)": {
+                    "droprate": "1/5,717"
+                },
+                "Zombie (Shayzien Crypts)": {
+                    "droprate": "1/5,717"
+                },
+                "Skeleton (Lucien's camp)": {
+                    "droprate": "1/5,717"
+                },
+                "Moonlight Cockatrice": {
+                    "droprate": "1/6,113"
+                },
+                "other": {
+                    "Forestry events": {
+                        "notes": "Flowering Tree event.",
+                        "rule": "canTrainWoodcutting"
+                    }
+                }
+            }
+        }
     },
     {
         "index": 4415,
         "id": 1472,
         "name": "Yellow bead",
-        "image": "yellow_bead.png"
+        "image": "yellow_bead.png",
+        "sources": {
+            "drops": {
+                "Imp": {
+                    "droprate": "1/25.6"
+                }
+            }
+        }
     },
     {
         "index": 4416,
@@ -35963,7 +38012,7 @@
         "image": "yew_leaves.png",
         "sources": {
             "other": {
-                "Cutting yew logs with a Forestry kit": {
+                "Chopping yew logs with a Forestry kit": {
                     "notes": "Yew tree.",
                     "rule": "canTrainWoodcutting"
                 },
@@ -35976,6 +38025,7 @@
                     "rule": {
                         "all": [
                             { "has": 5329 },
+                            { "has": 5373 },
                             "canTrainFarming"
                         ]
                     }
@@ -36075,7 +38125,7 @@
                     "droprate": "Varies"
                 },
                 "other": {
-                    "Cutting yew logs": {
+                    "Chopping yew logs": {
                         "notes": "Yew tree.",
                         "rule": "canTrainWoodcutting"
                     }
