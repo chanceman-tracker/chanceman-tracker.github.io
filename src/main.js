@@ -52,8 +52,12 @@ window.initItemsPage = function () {
         return;
     }
 
-    hideRolled.checked = true;
-    hideClue.checked = true;
+    const f = fileStore.filters;
+    searchInput.value = f.search ?? "";
+    hideRolled.checked = f.hideRolled ?? true;
+    onlyUnlocked.checked = f.onlyUnlocked ?? false;
+    onlyObtainable.checked = f.onlyObtainable ?? false;
+    hideClue.checked = f.hideClue ?? true;
 
     const { items, rolled, unlocked } = data;
 
@@ -115,15 +119,43 @@ window.initItemsPage = function () {
         setTimeout(() => initLazyImages(), 0);
     }
 
-    searchInput.addEventListener("input", () => renderItems());
-    hideRolled.addEventListener("input", () => renderItems());
-    onlyUnlocked.addEventListener("input", () => renderItems());
-    onlyObtainable.addEventListener("input", () => renderItems());
-    hideClue.addEventListener("input", () => renderItems());
+    function saveFilters() {
+        fileStore.setFilters({
+            search: searchInput.value,
+            hideRolled: hideRolled.checked,
+            onlyUnlocked: onlyUnlocked.checked,
+            onlyObtainable: onlyObtainable.checked,
+            hideClue: hideClue.checked
+        });
+    }
+
+    searchInput.addEventListener("input", () => {
+        saveFilters();
+        renderItems();
+    });
+
+    hideRolled.addEventListener("input", () => {
+        saveFilters();
+        renderItems();
+    });
+
+    onlyUnlocked.addEventListener("input", () => {
+        saveFilters();
+        renderItems();
+    });
+
+    onlyObtainable.addEventListener("input", () => {
+        saveFilters();
+        renderItems();
+    });
+
+    hideClue.addEventListener("input", () => {
+        saveFilters();
+        renderItems();
+    });
 
     renderItems();
 };
-
 
 window.addEventListener("DOMContentLoaded", async () => {
     await fileStore.init();

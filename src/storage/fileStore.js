@@ -4,6 +4,13 @@ const STORE_NAME = "files";
 let memory = {
     rolled: null,
     unlocked: null,
+    filters: {
+        search: "",
+        hideRolled: true,
+        onlyUnlocked: false,
+        onlyObtainable: false,
+        hideClue: true
+    }
 };
 
 // ---- IndexedDB helpers ----
@@ -52,6 +59,11 @@ export const fileStore = {
     async init() {
         memory.rolled = await loadFromDB("rolled");
         memory.unlocked = await loadFromDB("unlocked");
+
+        const loadedFilters = await loadFromDB("filters");
+        if (loadedFilters) {
+            memory.filters = loadedFilters;
+        }
     },
 
     async setRolled(json) {
@@ -64,6 +76,11 @@ export const fileStore = {
         await saveToDB("unlocked", json);
     },
 
+    async setFilters(filters) {
+        memory.filters = filters;
+        await saveToDB("filters", filters);
+    },
+
     get rolled() {
         return memory.rolled;
     },
@@ -71,4 +88,8 @@ export const fileStore = {
     get unlocked() {
         return memory.unlocked;
     },
+
+    get filters() {
+        return memory.filters;
+    }
 };
