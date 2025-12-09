@@ -4,6 +4,7 @@ import { fileStore } from "../storage/fileStore.js";
 
 export default async function ItemPage() {
     await fileStore.ensureItemsLoaded();
+
     const rolled = fileStore.rolled;
     const unlocked = fileStore.unlocked;
 
@@ -20,6 +21,9 @@ export default async function ItemPage() {
 
     if (!item) return `<h1>Item not found</h1>`;
 
+    const sourcesHtml = await renderSources(item.sources);
+    const processableHtml = renderProcessable(item.processable, items);
+
     return `
         <h1>${item.name}</h1>
 
@@ -31,42 +35,67 @@ export default async function ItemPage() {
         </div>
 
         <h2>Where to get it</h2>
-        ${renderSources(item.sources)}
+        ${sourcesHtml}
 
         <h2>Processable into:</h2>
-        ${renderProcessable(item.processable, items)}
+        ${processableHtml}
     `;
 }
 
+
 /* ===========================================================
-    SOURCES SECTIONS
+   SOURCE SECTIONS
    =========================================================== */
-function renderSources(sources = {}) {
+async function renderSources(sources = {}) {
     const sections = ["drops", "other", "shops", "spawns"];
 
-    return sections.map(section => `
-        <div class="source-section">
-            <h3>${capitalize(section)}</h3>
-            ${renderSourceTable(section, sources[section])}
-        </div>
-    `).join("");
+    const htmlParts = [];
+
+    for (const section of sections) {
+        htmlParts.push(`
+            <div class="source-section">
+                <h3>${capitalize(section)}</h3>
+                ${await renderSourceTable(section, sources[section])}
+            </div>
+        `);
+    }
+
+    return htmlParts.join("");
 }
 
 function capitalize(s) {
     return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
-function renderSourceTable(section, entries) {
-    const params = new URLSearchParams(window.location.search);
-    const id = Number(params.get("id"));
 
+/* ===========================================================
+   INDIVIDUAL TABLE RENDERING
+   =========================================================== */
+async function renderSourceTable(section, entries) {
     if (!entries || Object.keys(entries).length === 0)
         return `<p><em>No data.</em></p>`;
+
+    const params = new URLSearchParams(window.location.search);
+    const id = Number(params.get("id"));
 
     // ---------------------------
     // DROPS TABLE
     // ---------------------------
     if (section === "drops") {
+        const rows = [];
+
+        for (const [name, data] of Object.entries(entries)) {
+            const obtainable = await canReachNpc(name, fileStore);
+
+            rows.push(`
+                <tr>
+                    <td><a href="${NPC_WIKI_LINKS[name] || "#"}" target="_blank">${name}</a></td>
+                    <td>${data.droprate}</td>
+                    <td>${obtainable ? yes() : no()}</td>
+                </tr>
+            `);
+        }
+
         return `
             <table class="osrs-table">
                 <tr>
@@ -74,18 +103,7 @@ function renderSourceTable(section, entries) {
                     <th>Droprate</th>
                     <th>Obtainable?</th>
                 </tr>
-                ${Object.entries(entries).map(([name, data]) => {
-                    const obtainable = canReachNpc(name, fileStore)
-                        ? `<span class="obtainable yes">✔</span>`
-                        : `<span class="obtainable no">✘</span>`;
-                    return `
-                        <tr>
-                            <td><a href="${NPC_WIKI_LINKS[name] || "#"}" target="_blank">${name}</a></td>
-                            <td>${data.droprate}</td>
-                            <td>${obtainable}</td>
-                        </tr>
-                    `;
-                }).join("")}
+                ${rows.join("")}
             </table>
         `;
     }
@@ -95,121 +113,120 @@ function renderSourceTable(section, entries) {
     // OTHER TABLE
     // ---------------------------
     if (section === "other") {
-    return `
+        const rows = [];
+
+        for (const [method, info] of Object.entries(entries)) {
+            const { notes, rule } = info;
+
+            const obtainable = await canDoOtherMethod(rule, fileStore);
+
+            rows.push(`
+                <tr>
+                    <td>${method}</td>
+                    <td>${notes || ""}</td>
+                    <td>${obtainable ? yes() : no()}</td>
+                </tr>
+            `);
+        }
+
+        return `
             <table class="osrs-table">
                 <tr>
                     <th>How</th>
                     <th>Notes</th>
                     <th>Obtainable?</th>
                 </tr>
-                ${Object.entries(entries).map(([method, info]) => {
-                    const { notes, rule } = info;
-
-                    const obtainable = canDoOtherMethod(rule, fileStore)
-                        ? `<span class="obtainable yes">✔</span>`
-                        : `<span class="obtainable no">✘</span>`;
-
-                    return `
-                        <tr>
-                            <td>${method}</td>
-                            <td>${notes}</td>
-                            <td>${obtainable}</td>
-                        </tr>
-                    `;
-                }).join("")}
+                ${rows.join("")}
             </table>
         `;
     }
 
+
     // ---------------------------
-    // SHOPS TABLE
+    // SHOPS
     // ---------------------------
     if (section === "shops") {
+        const rows = [];
+
+        for (const [label, rule] of Object.entries(entries)) {
+            let obtainable = false;
+
+            if (fileStore.unlocked.includes(id)) {
+                // Rule is a string
+                if (typeof rule === "string") {
+                    if (rule === "No requirements") {
+                        obtainable = true;
+                    } else {
+                        obtainable = await canDoOtherMethod(rule, fileStore);
+                    }
+                }
+                // Rule is an object (e.g. any/all)
+                else if (typeof rule === "object") {
+                    obtainable = await canDoOtherMethod(rule, fileStore);
+                }
+            }
+
+            rows.push(`
+                <tr>
+                    <td>${formatRule(rule)}</td>
+                    <td>${obtainable ? yes() : no()}</td>
+                </tr>
+            `);
+        }
+
         return `
             <table class="osrs-table">
-                <tr>
-                    <th>Requirement</th>
-                    <th>Obtainable?</th>
-                </tr>
-
-                ${Object.entries(entries).map(([label, rule]) => {
-                    let obtainable = false;
-
-                    // Rule is a string
-                    if (fileStore.unlocked.includes(id)) {
-                        if (typeof rule === "string") {
-                            if (rule === "No requirements") {
-                                obtainable = true;
-                            } else {
-                                obtainable = canDoOtherMethod(rule, fileStore);
-                            }
-                        }
-                    }
-
-                    // Rule is an object (e.g. any/all)
-                    else if (typeof rule === "object") {
-                        obtainable = canDoOtherMethod(rule, fileStore);
-                    }
-
-                    return `
-                        <tr>
-                            <td>${formatRule(rule)}</td>
-                            <td>
-                                ${obtainable
-                                    ? `<span class="obtainable yes">✔</span>`
-                                    : `<span class="obtainable no">✘</span>`}
-                            </td>
-                        </tr>
-                    `;
-                }).join("")}
+                <tr><th>Requirement</th><th>Obtainable?</th></tr>
+                ${rows.join("")}
             </table>
         `;
     }
 
+
     // ---------------------------
-    // SPAWNS TABLE
+    // SPAWNS
     // ---------------------------
     if (section === "spawns") {
+        const rows = [];
+
+        for (const [label, rule] of Object.entries(entries)) {
+            let obtainable = false;
+
+            if (fileStore.unlocked.includes(id)) {
+                // Rule is a string
+                if (typeof rule === "string") {
+                    if (rule === "No requirements") {
+                        obtainable = true;
+                    } else {
+                        obtainable = await canDoOtherMethod(rule, fileStore);
+                    }
+                }
+                // Rule is an object (e.g. any/all)
+                else if (typeof rule === "object") {
+                    obtainable = await canDoOtherMethod(rule, fileStore);
+                }
+            }
+
+            rows.push(`
+                <tr>
+                    <td>${formatRule(rule)}</td>
+                    <td>${obtainable ? yes() : no()}</td>
+                </tr>
+            `);
+        }
+
         return `
             <table class="osrs-table">
-                <tr>
-                    <th>Requirement</th>
-                    <th>Obtainable?</th>
-                </tr>
-
-                ${Object.entries(entries).map(([label, rule]) => {
-                    let obtainable = false;
-
-                    if (fileStore.unlocked.includes(id)) {
-                        if (typeof rule === "string") {
-                            if (rule === "No requirements") {
-                                obtainable = true;
-                            } else {
-                                obtainable = canDoOtherMethod(rule, fileStore);
-                            }
-                        } else if (typeof rule === "object") {
-                            obtainable = canDoOtherMethod(rule, fileStore);
-                        }
-                    }
-
-                    return `
-                        <tr>
-                            <td>${formatRule(rule)}</td>
-                            <td>
-                                ${obtainable
-                                    ? `<span class="obtainable yes">✔</span>`
-                                    : `<span class="obtainable no">✘</span>`}
-                            </td>
-                        </tr>
-                    `;
-                }).join("")}
+                <tr><th>Requirement</th><th>Obtainable?</th></tr>
+                ${rows.join("")}
             </table>
         `;
     }
 }
 
+
 /* ===========================================================
-   PROCESSABLE TABLE
+   PROCESSABLE SECTION
    =========================================================== */
 function renderProcessable(processable = {}, allItems) {
     if (!processable || Object.keys(processable).length === 0)
@@ -217,10 +234,7 @@ function renderProcessable(processable = {}, allItems) {
 
     return `
         <table class="osrs-table">
-            <tr>
-                <th>Creates</th>
-                <th>Ingredients</th>
-            </tr>
+            <tr><th>Creates</th><th>Ingredients</th></tr>
             ${Object.entries(processable).map(([resultId, components]) => {
                 const resultItem = allItems.find(x => x.id == resultId);
                 const ingredientIds = components.split(",");
@@ -234,9 +248,7 @@ function renderProcessable(processable = {}, allItems) {
 
                 return `
                     <tr>
-                        <td>
-                            <a onclick="navigate('/item?id=${resultId}')">${resultItem.name}</a>
-                        </td>
+                        <td><a onclick="navigate('/item?id=${resultId}')">${resultItem.name}</a></td>
                         <td>${ingredients}</td>
                     </tr>
                 `;
@@ -245,17 +257,30 @@ function renderProcessable(processable = {}, allItems) {
     `;
 }
 
+
+/* ===========================================================
+   HELPERS
+   =========================================================== */
+function yes() {
+    return `<span class="obtainable yes">✔</span>`;
+}
+
+function no() {
+    return `<span class="obtainable no">✘</span>`;
+}
+
 function formatRule(rule) {
     if (!rule) return "";
-
-    if (typeof rule === "string")
-        return rule;
+    if (typeof rule === "string") return rule;
 
     if (rule.any)
         return "Any: " + rule.any.join(", ");
 
     if (rule.all)
         return "All: " + rule.all.map(r => typeof r === "object" ? JSON.stringify(r) : r).join(", ");
+
+    if (rule.has !== undefined)
+        return `Has item ${rule.has}`;
 
     return JSON.stringify(rule);
 }

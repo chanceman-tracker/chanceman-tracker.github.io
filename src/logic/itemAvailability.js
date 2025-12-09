@@ -1,53 +1,91 @@
 import { NPC_RULES } from "./npcRules.js";
-import { REQUIREMENT_CHECKS } from "./requirements.js";
+import { canObtainItem, REQUIREMENT_CHECKS } from "./requirements.js";
+
+/* ===========================================================
+   NPC ACCESS
+   =========================================================== */
 
 export async function canReachNpc(npcName, ctx) {
     await ctx.ensureItemsLoaded();
 
     const rule = NPC_RULES[npcName];
 
-    // No rule means killable by default
+    // No rule = always killable
     if (!rule) return true;
 
-    return evaluateRule(rule, ctx);
+    return await evaluateRule(rule, ctx);
 }
 
-export async function canDoOtherMethod(ruleName, ctx) {
-    return evaluateRule(ruleName, ctx);
+
+/* ===========================================================
+   OTHER METHODS
+   =========================================================== */
+
+export async function canDoOtherMethod(rule, ctx) {
+    return await evaluateRule(rule, ctx);
 }
+
+
+/* ===========================================================
+   CORE RULE EVALUATION
+   =========================================================== */
 
 export async function evaluateRule(rule, ctx) {
     await ctx.ensureItemsLoaded();
 
-    // Empty or undefined means automatically obtainable
+    // Empty or null = always allowed
     if (!rule) return true;
 
-    // If rule is a string -> reference to requirement function
+    // String → requirement function
     if (typeof rule === "string") {
         const fn = REQUIREMENT_CHECKS[rule];
         if (!fn) {
             console.warn("Unknown rule:", rule);
             return false;
         }
-        return fn(ctx);
+        return await fn(ctx);
     }
 
-    // If rule is an array -> OR logic
+    // Array → OR
     if (Array.isArray(rule)) {
-        return rule.some(r => evaluateRule(r, ctx));
+        for (const r of rule) {
+            if (await evaluateRule(r, ctx)) return true;
+        }
+        return false;
     }
 
-    // If rule is an object -> structural rule
-    if (rule.has) {
-        return ctx.unlocked.includes(rule.has);
-    }
+    // Object structures
+    if (typeof rule === "object") {
 
-    if (rule.any) {
-        return rule.any.some(sub => evaluateRule(sub, ctx));
-    }
+        // has {id}
+        if (rule.has !== undefined) {
+            const id = rule.has;
+            const item = ctx.items.find(i => i.id === id);
 
-    if (rule.all) {
-        return rule.all.every(sub => evaluateRule(sub, ctx));
+            if (!item) return false;
+
+            // must be unlocked AND obtainable
+            return (
+                ctx.unlocked.includes(id) &&
+                (await canObtainItem(item, ctx, ctx.items))
+            );
+        }
+
+        // any
+        if (rule.any) {
+            for (const sub of rule.any) {
+                if (await evaluateRule(sub, ctx)) return true;
+            }
+            return false;
+        }
+
+        // all
+        if (rule.all) {
+            for (const sub of rule.all) {
+                if (!(await evaluateRule(sub, ctx))) return false;
+            }
+            return true;
+        }
     }
 
     console.warn("Unknown rule structure:", rule);

@@ -1,7 +1,8 @@
 import { fileStore } from "../storage/fileStore.js";
 import { canDoOtherMethod, canReachNpc } from "./itemAvailability.js";
 
-export function isItemObtainable(item, ctx) {
+export async function isItemObtainable(item, ctx) {
+    await ctx.ensureItemsLoaded();
     const src = item.sources || {};
 
     if (fileStore.unlocked.includes(item.id)) {
@@ -14,12 +15,12 @@ export function isItemObtainable(item, ctx) {
 
                 // string → single rule
                 if (typeof rule === "string") {
-                    if (canDoOtherMethod(rule, ctx)) return true;
+                    if (await canDoOtherMethod(rule, ctx)) return true;
                 }
 
                 // object → any/all
                 if (typeof rule === "object") {
-                    if (canDoOtherMethod(rule, ctx)) return true;
+                    if (await canDoOtherMethod(rule, ctx)) return true;
                 }
             }
         }
@@ -31,11 +32,11 @@ export function isItemObtainable(item, ctx) {
                 if (rule === "No requirements") return true;
 
                 if (typeof rule === "string") {
-                    if (canDoOtherMethod(rule, ctx)) return true;
+                    if (await canDoOtherMethod(rule, ctx)) return true;
                 }
 
                 if (typeof rule === "object") {
-                    if (canDoOtherMethod(rule, ctx)) return true;
+                    if (await canDoOtherMethod(rule, ctx)) return true;
                 }
             }
         }
@@ -44,14 +45,14 @@ export function isItemObtainable(item, ctx) {
     // === Drops ===
     if (src.drops) {
         for (const npc of Object.keys(src.drops)) {
-            if (canReachNpc(npc, ctx)) return true;
+            if (await canReachNpc(npc, ctx)) return true;
         }
     }
 
     // === Other ===
     if (src.other) {
         for (const obj of Object.values(src.other)) {
-            if (canDoOtherMethod(obj.rule, ctx)) return true;
+            if (await canDoOtherMethod(obj.rule, ctx)) return true;
         }
     }
 
@@ -62,9 +63,9 @@ export function isItemObtainable(item, ctx) {
     LOWER rank = appears first.
     Obtainable → shop/spawn > drop > other → alphabetical
 */
-export function getObtainabilityRank(item, ctx) {
+export async function getObtainabilityRank(item, ctx) {
     const src = item.sources || {};
-    const obtainable = isItemObtainable(item, ctx);
+    const obtainable = await isItemObtainable(item, ctx);
 
     if (!obtainable)
         return { rank: 99, type: "zzz", name: item.name.toLowerCase() };

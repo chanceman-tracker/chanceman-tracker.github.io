@@ -38,9 +38,8 @@ function initLazyImages() {
 
 window.initItemsPage = function () {
     const data = window.__itemsPageData;
-    if (!data) return; // Not on items page
+    if (!data) return;
 
-    // Try to read DOM elements
     const searchInput = document.getElementById("itemSearch");
     const hideRolled = document.getElementById("hideRolled");
     const onlyUnlocked = document.getElementById("onlyUnlocked");
@@ -48,9 +47,7 @@ window.initItemsPage = function () {
     const hideClue = document.getElementById("hideClueRewardOnly");
     const grid = document.getElementById("itemGrid");
 
-    // If DOM hasn't been applied yet, defer + return
     if (!searchInput || !hideRolled || !onlyUnlocked || !onlyObtainable || !hideClue || !grid) {
-        // Run again shortly (router just replaced DOM)
         setTimeout(initItemsPage, 0);
         return;
     }
@@ -60,77 +57,72 @@ window.initItemsPage = function () {
 
     const { items, rolled, unlocked } = data;
 
-    function renderItems() {
-        const search = searchInput?.value.toLowerCase() || "";
-        const hideR = hideRolled?.checked || false;
-        const onlyU = onlyUnlocked?.checked || false;
-        const onlyO = onlyObtainable?.checked || false;
-        const hideCl = hideClue?.checked || false;
+    async function renderItems() {
+        const search = searchInput.value.toLowerCase();
+        const hideR = hideRolled.checked;
+        const onlyU = onlyUnlocked.checked;
+        const onlyO = onlyObtainable.checked;
+        const hideCl = hideClue.checked;
 
-        // FILTER
-        let filtered = items.filter(item => {
-            const nameMatch = item.name.toLowerCase().includes(search);
-            if (!nameMatch) return false;
+        let filtered = [];
+
+        for (const item of items) {
+            if (!item.name.toLowerCase().includes(search)) continue;
 
             const isRolled = rolled.includes(item.id);
             const isUnlocked = unlocked.includes(item.id);
 
-            if (hideR && isRolled) return false;
-            if (onlyU && !isUnlocked) return false;
+            if (hideR && isRolled) continue;
+            if (onlyU && !isUnlocked) continue;
+
+            if (hideCl && item.tags?.includes("clue-reward-only")) continue;
+
             if (onlyO) {
-                const obtainable = isItemObtainable(item, fileStore);
-                if (!obtainable) return false;
+                const obtainable = await isItemObtainable(item, fileStore);
+                if (!obtainable) continue;
             }
-            if (hideCl && item.tags?.includes("clue-reward-only")) return false;
 
-            return true;
+            filtered.push(item);
+        }
+
+        // sort async
+        filtered = await Promise.all(
+            filtered.map(async item => ({
+                item,
+                sort: await getObtainabilityRank(item, fileStore)
+            }))
+        );
+
+        filtered.sort((a, b) => {
+            if (a.sort.rank !== b.sort.rank) return a.sort.rank - b.sort.rank;
+            return a.sort.name.localeCompare(b.sort.name);
         });
 
-        // SORT
-        filtered = filtered.sort((a, b) => {
-            const ra = getObtainabilityRank(a, fileStore);
-            const rb = getObtainabilityRank(b, fileStore);
-
-            if (ra.rank !== rb.rank) return ra.rank - rb.rank;
-            return ra.name.localeCompare(rb.name);
-        });
-
-        // RENDER
-        grid.innerHTML = filtered.map(item => {
+        grid.innerHTML = filtered.map(({ item }) => {
             const isRolled = rolled.includes(item.id);
             const isUnlocked = unlocked.includes(item.id);
 
             return `
                 <div class="item-card" onclick="navigate('/item?id=${item.id}')">
-
                     ${isRolled ? `<span class="badge rolled">Rolled</span>` : ""}
                     ${isUnlocked ? `<span class="badge unlocked">Unlocked</span>` : ""}
-
-                    <img
-                        class="lazy-img item-image"
-                        data-src="/images/${item.image}"
-                        src="/images/placeholder.png"
-                    >
-
+                    <img class="lazy-img item-image" data-src="/images/${item.image}" src="/images/placeholder.png">
                     ${item.name}
                 </div>
             `;
         }).join("");
 
-        // Re-init lazy loading after render
         setTimeout(() => initLazyImages(), 0);
     }
 
-    // Wire up filters
-    searchInput?.addEventListener("input", renderItems);
-    hideRolled?.addEventListener("input", renderItems);
-    onlyUnlocked?.addEventListener("input", renderItems);
-    onlyObtainable?.addEventListener("input", renderItems);
-    hideClue?.addEventListener("input", renderItems);
+    searchInput.addEventListener("input", () => renderItems());
+    hideRolled.addEventListener("input", () => renderItems());
+    onlyUnlocked.addEventListener("input", () => renderItems());
+    onlyObtainable.addEventListener("input", () => renderItems());
+    hideClue.addEventListener("input", () => renderItems());
 
-    // Initial render
     renderItems();
-}
+};
 
 
 window.addEventListener("DOMContentLoaded", async () => {

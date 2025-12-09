@@ -6,7 +6,7 @@ function has(ctx, id) {
     return ctx.unlocked.includes(id) && canObtainItem(item, ctx, ctx.items);
 }
 
-function canObtainItem(item, ctx, allItems, visited = new Set()) {
+export function canObtainItem(item, ctx, allItems, visited = new Set()) {
     if (!item) return false;
 
     // Stop cycles

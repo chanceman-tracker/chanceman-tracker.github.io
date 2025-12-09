@@ -1,16 +1,7 @@
 export const NPC_RULES = {
-    "Abyssal demon (standard)": [
-        "isNotSlayerLocked"
+    "Abyssal Sire": [
+        "canReachAbyssalSire"
     ],
-    "Abyssal demon (Wilderness Slayer Cave)": [
-        "isNotSlayerLocked"
-    ],
-    "Abyssal Sire": {
-        "all": [
-            "isNotSlayerLocked",
-            "canReachAbyssalSire"
-        ]
-    },
     "Adamant dragon": [
         "canCompleteDragonSlayerII"
     ],
@@ -57,13 +48,46 @@ export const NPC_RULES = {
     "Basilisk Knight": [
         "canCompleteTheFremennikExiles"
     ],
+    "Basilisk Sentinel": [
+        "canCompleteTheFremennikExiles"
+    ],
     "Black Chest": [
+        "canDoShadesOfMortton"
+    ],
+    "Black Chest (black)": [
+        "canDoShadesOfMortton"
+    ],
+    "Black Chest (brown)": [
+        "canDoShadesOfMortton"
+    ],
+    "Black Chest (crimson)": [
+        "canDoShadesOfMortton"
+    ],
+    "Black Chest (purple)": [
+        "canDoShadesOfMortton"
+    ],
+    "Black Chest (red)": [
         "canDoShadesOfMortton"
     ],
     "Bree": [
         "canDoCommanderZilyana"
     ],
     "Bronze Chest": [
+        "canDoShadesOfMortton"
+    ],
+    "Bronze Chest (black)": [
+        "canDoShadesOfMortton"
+    ],
+    "Bronze Chest (brown)": [
+        "canDoShadesOfMortton"
+    ],
+    "Bronze Chest (crimson)": [
+        "canDoShadesOfMortton"
+    ],
+    "Bronze Chest (purple)": [
+        "canDoShadesOfMortton"
+    ],
+    "Bronze Chest (red)": [
         "canDoShadesOfMortton"
     ],
     "Bronze dragon": [
@@ -93,10 +117,22 @@ export const NPC_RULES = {
     "Cave horror": [
         "canCompleteCabinFever"
     ],
-    "Chilled Jelly": [
+    "Chilled jelly": [
         "canCompleteTheHeartOfDarkness"
     ],
-    "Chest (Dorgesh-Kaan Average)": {
+    "Chest (Dorgesh-Kaan Average) Normal": {
+        "all": [
+            "canCompleteDeathToTheDorgeshuun",
+            "hasLockpick"
+        ]
+    },
+    "Chest (Dorgesh-Kaan Average) Oldak's house": {
+        "all": [
+            "canCompleteDeathToTheDorgeshuun",
+            "hasLockpick"
+        ]
+    },
+    "Chest (Dorgesh-Kaan Average) Zanik's house": {
         "all": [
             "canCompleteDeathToTheDorgeshuun",
             "hasLockpick"
@@ -121,7 +157,16 @@ export const NPC_RULES = {
     "Crystal impling": [
             "canCompleteSongOfTheElves"
     ],
-    "Coffin (Hallowed Sepulchre)": [
+    "Crystal impling jar": [
+            "canCompleteSongOfTheElves"
+    ],
+    "Coffin (Hallowed Sepulchre) High": [
+        "canDoHallowedSepulchre"
+    ],
+    "Coffin (Hallowed Sepulchre) Low": [
+        "canDoHallowedSepulchre"
+    ],
+    "Coffin (Hallowed Sepulchre) Mid": [
         "canDoHallowedSepulchre"
     ],
     "Commander Zilyana": [
@@ -130,7 +175,19 @@ export const NPC_RULES = {
     "Deranged archaeologist": [
         "canCompleteBoneVoyage"
     ],
-    "Dirty arrowtips": [
+    "Dirty arrowtips Level < 50": [
+        "canDoValeTotems"
+    ],
+    "Dirty arrowtips Level 50-64": [
+        "canDoValeTotems"
+    ],
+    "Dirty arrowtips Level 65-79": [
+        "canDoValeTotems"
+    ],
+    "Dirty arrowtips Level 80-89": [
+        "canDoValeTotems"
+    ],
+    "Dirty arrowtips Level 90+": [
         "canDoValeTotems"
     ],
     "Doom of Mokhaiotl": [
@@ -139,16 +196,22 @@ export const NPC_RULES = {
     "Dragon impling": [
         "canTrainHunter"
     ],
+    "Dragon impling jar": [
+        "canTrainHunter"
+    ],
     "Duke Sucellus": [
         "canCompleteDesertTreasureII"
     ],
-    "Dust devil": [
+    "Dust devil Regular": [
         "hasFacemask"
     ],
-    "Dust devil (Wilderness Slayer Cave)": [
+    "Dust devil Wilderness Slayer Cave": [
         "hasFacemask"
     ],
     "Eclectic impling": [
+        "canTrainHunter"
+    ],
+    "Eclectic impling jar": [
         "canTrainHunter"
     ],
     "Enraged barbarian spirit": [
@@ -179,10 +242,82 @@ export const NPC_RULES = {
     "Giant Sea Snake": [
         "canCompleteRoyalTrouble"
     ],
-    "Gnome Restaurant Tips": [
+    "Ambassador Ferrnook": [
+        "canDoGnomeRestaurant"
+    ],
+    "Ambassador Gimblewap": [
+        "canDoGnomeRestaurant"
+    ],
+    "Ambassador Spanfipple": [
+        "canDoGnomeRestaurant"
+    ],
+    "Brambickle": [
+        "canDoGnomeRestaurant"
+    ],
+    "Captain Bleemadge": [
+        "canDoGnomeRestaurant"
+    ],
+    "Captain Daerkin": [
+        "canDoGnomeRestaurant"
+    ],
+    "Captain Dalbur": [
+        "canDoGnomeRestaurant"
+    ],
+    "Captain Klemfoodle": [
+        "canDoGnomeRestaurant"
+    ],
+    "Captain Ninto": [
+        "canDoGnomeRestaurant"
+    ],
+    "G.L.O. Caranock": [
+        "canDoGnomeRestaurant"
+    ],
+    "Garkor": [
+        "canDoGnomeRestaurant"
+    ],
+    "Gnormadium Avlafrim": [
+        "canDoGnomeRestaurant"
+    ],
+    "Hazelmere": [
+        "canDoGnomeRestaurant"
+    ],
+    "King Bolren": [
+        "canDoGnomeRestaurant"
+    ],
+    "Lieutenant Schepbur": [
+        "canDoGnomeRestaurant"
+    ],
+    "Penwie": [
+        "canDoGnomeRestaurant"
+    ],
+    "Professor Imblewyn": [
+        "canDoGnomeRestaurant"
+    ],
+    "Professor Manglethorp": [
+        "canDoGnomeRestaurant"
+    ],
+    "Professor Onglewip": [
+        "canDoGnomeRestaurant"
+    ],
+    "Wingstone": [
         "canDoGnomeRestaurant"
     ],
     "Gold Chest": [
+        "canDoShadesOfMortton"
+    ],
+    "Gold Chest (black)": [
+        "canDoShadesOfMortton"
+    ],
+    "Gold Chest (brown)": [
+        "canDoShadesOfMortton"
+    ],
+    "Gold Chest (crimson)": [
+        "canDoShadesOfMortton"
+    ],
+    "Gold Chest (purple)": [
+        "canDoShadesOfMortton"
+    ],
+    "Gold Chest (red)": [
         "canDoShadesOfMortton"
     ],
     "Great white shark": [
@@ -207,7 +342,7 @@ export const NPC_RULES = {
     "Hallowed sack": [
         "canDoHallowedSepulchre"
     ],
-    "Iron dragon": [
+    "Iron dragon Standard": [
         "canKillDifficultDragons"
     ],
     "K'ril Tsutsaroth": [
@@ -252,10 +387,16 @@ export const NPC_RULES = {
     "Magpie impling": [
         "canTrainHunter"
     ],
+    "Magpie impling jar": [
+        "canTrainHunter"
+    ],
     "Maniacal Monkey Archer": [
         "canCompleteMonkeyMadnessII"
     ],
     "Maniacal monkey": [
+        "canCompleteMonkeyMadnessII"
+    ],
+    "Maniacal monkey (Hunter)": [
         "canCompleteMonkeyMadnessII"
     ],
     "Martial salvage": [
@@ -280,6 +421,9 @@ export const NPC_RULES = {
         ]
     },
     "Ninja impling": [
+        "canTrainHunter"
+    ],
+    "Ninja impling jar": [
         "canTrainHunter"
     ],
     "Orca": {
@@ -307,6 +451,9 @@ export const NPC_RULES = {
         ]
     },
     "Reward Chest (The Gauntlet)": [
+        "canCompleteSongOfTheElves"
+    ],
+    "Reward Chest (The Gauntlet) (Corrupted)": [
         "canCompleteSongOfTheElves"
     ],
     "Rewards Guardian": [
@@ -339,10 +486,25 @@ export const NPC_RULES = {
     "Shadow warrior": [
         "canCompleteLegendsQuest"
     ],
-    "Shellbane Gryphon": [
+    "Shellbane gryphon": [
         "canCompleteTroubledTortugans"
     ],
     "Silver Chest": [
+        "canDoShadesOfMortton"
+    ],
+    "Silver Chest (black)": [
+        "canDoShadesOfMortton"
+    ],
+    "Silver Chest (brown)": [
+        "canDoShadesOfMortton"
+    ],
+    "Silver Chest (crimson)": [
+        "canDoShadesOfMortton"
+    ],
+    "Silver Chest (purple)": [
+        "canDoShadesOfMortton"
+    ],
+    "Silver Chest (red)": [
         "canDoShadesOfMortton"
     ],
     "Skeletal wyvern": [
@@ -381,7 +543,22 @@ export const NPC_RULES = {
     "Steel Chest": [
         "canDoShadesOfMortton"
     ],
-    "Steel dragon": [
+    "Steel Chest (black)": [
+        "canDoShadesOfMortton"
+    ],
+    "Steel Chest (brown)": [
+        "canDoShadesOfMortton"
+    ],
+    "Steel Chest (crimson)": [
+        "canDoShadesOfMortton"
+    ],
+    "Steel Chest (purple)": [
+        "canDoShadesOfMortton"
+    ],
+    "Steel Chest (red)": [
+        "canDoShadesOfMortton"
+    ],
+    "Steel dragon Standard": [
         "canKillDifficultDragons"
     ],
     "Storage crate": [
@@ -441,7 +618,13 @@ export const NPC_RULES = {
     "Zakl'n Gritch": [
         "canDoKrilTsutsaroth"
     ],
-    "Zombie (Tarn's Lair)": [
+    "Zombie (Tarn's Lair) High level": [
+        "canCompletePriestInPeril"
+    ],
+    "Zombie (Tarn's Lair) Low level": [
+        "canCompletePriestInPeril"
+    ],
+    "Zombie (Tarn's Lair) Medium level": [
         "canCompletePriestInPeril"
     ],
     "Zombie pirate (Harmony Island)": [
