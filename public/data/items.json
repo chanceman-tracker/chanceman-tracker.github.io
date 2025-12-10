@@ -10280,7 +10280,14 @@
     "index": 400,
     "id": 31088,
     "name": "Avernic treads",
-    "image": "avernic_treads.png"
+    "image": "avernic_treads.png",
+    "sources": {
+      "drops": {
+        "Doom of Mokhaiotl": {
+          "droprate": "1/1350–1/540"
+        }
+      }
+    }
   },
   {
     "index": 401,
@@ -10383,9 +10390,9 @@
     "name": "Bagged bluebells",
     "image": "bagged_bluebells.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10394,9 +10401,9 @@
     "name": "Bagged daffodils",
     "image": "bagged_daffodils.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10405,9 +10412,9 @@
     "name": "Bagged dead tree",
     "image": "bagged_dead_tree.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10416,9 +10423,9 @@
     "name": "Bagged flower",
     "image": "bagged_flower.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10427,9 +10434,9 @@
     "name": "Bagged magic tree",
     "image": "bagged_magic_tree.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10438,9 +10445,9 @@
     "name": "Bagged maple tree",
     "image": "bagged_maple_tree.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10449,9 +10456,9 @@
     "name": "Bagged marigolds",
     "image": "bagged_marigolds.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10460,9 +10467,9 @@
     "name": "Bagged nice tree",
     "image": "bagged_nice_tree.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10471,9 +10478,9 @@
     "name": "Bagged oak tree",
     "image": "bagged_oak_tree.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10482,9 +10489,9 @@
     "name": "Bagged plant 1",
     "image": "bagged_plant_1.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10493,9 +10500,9 @@
     "name": "Bagged plant 2",
     "image": "bagged_plant_2.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10504,9 +10511,9 @@
     "name": "Bagged plant 3",
     "image": "bagged_plant_3.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10515,9 +10522,9 @@
     "name": "Bagged roses",
     "image": "bagged_roses.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10526,9 +10533,9 @@
     "name": "Bagged sunflower",
     "image": "bagged_sunflower.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10537,9 +10544,9 @@
     "name": "Bagged willow tree",
     "image": "bagged_willow_tree.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -10548,9 +10555,9 @@
     "name": "Bagged yew tree",
     "image": "bagged_yew_tree.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -18024,9 +18031,9 @@
     "name": "Blue boots",
     "image": "blue_boots.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -18396,9 +18403,9 @@
     "name": "Blue hat",
     "image": "blue_hat.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -18536,11 +18543,10 @@
     "name": "Blue robe bottoms",
     "image": "blue_robe_bottoms.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
-       
   },
   {
     "index": 730,
@@ -18548,9 +18554,9 @@
     "name": "Blue robe top",
     "image": "blue_robe_top.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -28269,7 +28275,7 @@
     "sources": {
       "drops": {
         "Common kebbit": {
-          "droprate": "Common kebbit"
+          "droprate": "Always"
         }
       }
     }
@@ -29657,9 +29663,9 @@
     "name": "Cream boots",
     "image": "cream_boots.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -29668,9 +29674,9 @@
     "name": "Cream hat",
     "image": "cream_hat.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -29679,9 +29685,9 @@
     "name": "Cream robe bottoms",
     "image": "cream_robe_bottoms.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -29690,9 +29696,9 @@
     "name": "Cream robe top",
     "image": "cream_robe_top.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -37398,7 +37404,17 @@
     "index": 1447,
     "id": 24517,
     "name": "Eldritch orb",
-    "image": "eldritch_orb.png"
+    "image": "eldritch_orb.png",
+    "sources": {
+      "drops": {
+        "Phosani's Nightmare": {
+          "droprate": "1/1600"
+        },
+        "The Nightmare": {
+          "droprate": "1/960–1/548.7"
+        }
+      }
+    }
   },
   {
     "index": 1448,
@@ -39262,7 +39278,14 @@
     "index": 1565,
     "id": 31115,
     "name": "Eye of ayak (uncharged)",
-    "image": "eye_of_ayak_(uncharged).png"
+    "image": "eye_of_ayak_(uncharged).png",
+    "sources": {
+      "drops": {
+        "Doom of Mokhaiotl": {
+          "droprate": "1/2000–1/540"
+        }
+      }
+    }
   },
   {
     "index": 1566,
@@ -39437,9 +39460,9 @@
     "name": "Fancy hedge (bagged)",
     "image": "fancy_hedge_(bagged).png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -44273,9 +44296,9 @@
     "name": "Green boots",
     "image": "green_boots.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -44632,9 +44655,9 @@
     "name": "Green hat",
     "image": "green_hat.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -44675,9 +44698,9 @@
     "name": "Green robe bottoms",
     "image": "green_robe_bottoms.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -44686,9 +44709,9 @@
     "name": "Green robe top",
     "image": "green_robe_top.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -44890,42 +44913,54 @@
     "id": 31205,
     "name": "Grid master altar icon scroll",
     "image": "grid_master_altar_icon_scroll.png",
-    "tags": ["gridmaster"]
+    "tags": [
+      "gridmaster"
+    ]
   },
   {
     "index": 1829,
     "id": 31181,
     "name": "Grid master tabard",
     "image": "grid_master_tabard.png",
-    "tags": ["gridmaster"]
+    "tags": [
+      "gridmaster"
+    ]
   },
   {
     "index": 1830,
     "id": 31184,
     "name": "Grid master tabard (b)",
     "image": "grid_master_tabard_(b).png",
-    "tags": ["gridmaster"]
+    "tags": [
+      "gridmaster"
+    ]
   },
   {
     "index": 1831,
     "id": 31190,
     "name": "Grid master tabard (g)",
     "image": "grid_master_tabard_(g).png",
-    "tags": ["gridmaster"]
+    "tags": [
+      "gridmaster"
+    ]
   },
   {
     "index": 1832,
     "id": 31187,
     "name": "Grid master tabard (p)",
     "image": "grid_master_tabard_(p).png",
-    "tags": ["gridmaster"]
+    "tags": [
+      "gridmaster"
+    ]
   },
   {
     "index": 1833,
     "id": 31208,
     "name": "Grid master torch scroll",
     "image": "grid_master_torch_scroll.png",
-    "tags": ["gridmaster"]
+    "tags": [
+      "gridmaster"
+    ]
   },
   {
     "index": 1834,
@@ -56151,7 +56186,44 @@
     "index": 1855,
     "id": 5291,
     "name": "Guam seed",
-    "image": "guam_seed.png"
+    "image": "guam_seed.png",
+    "sources": {
+      "drops": {
+        "Seed pack Low seed": {
+          "droprate": "1/30"
+        },
+        "Martin the Master Gardener": {
+          "droprate": "1/65.1"
+        },
+        "Obor Members": {
+          "droprate": "1/517"
+        },
+        "Black Knight Titan": {
+          "droprate": "1/555"
+        },
+        "Vyrewatch": {
+          "droprate": "1/6562"
+        },
+        "Skeleton (Lucien's camp)": {
+          "droprate": "1/10312"
+        },
+        "Skeleton (Shayzien Crypts)": {
+          "droprate": "1/10312"
+        },
+        "Zombie (Shayzien Crypts)": {
+          "droprate": "1/10312"
+        },
+        "Flowering Tree (Forestry event)": {
+          "droprate": "Uncommon"
+        },
+        "Master Farmer": {
+          "droprate": "1/58.36–1/67.2"
+        },
+        "Wise Old Man tasks": {
+          "droprate": "Uncommon"
+        }
+      }
+    }
   },
   {
     "index": 1856,
@@ -57278,7 +57350,17 @@
     "index": 1927,
     "id": 24511,
     "name": "Harmonised orb",
-    "image": "harmonised_orb.png"
+    "image": "harmonised_orb.png",
+    "sources": {
+      "drops": {
+        "Phosani's Nightmare": {
+          "droprate": "1/1600"
+        },
+        "The Nightmare": {
+          "droprate": "1/960–1/548.7"
+        }
+      }
+    }
   },
   {
     "index": 1928,
@@ -58647,25 +58729,65 @@
     "index": 2006,
     "id": 24419,
     "name": "Inquisitor's great helm",
-    "image": "inquisitor's_great_helm.png"
+    "image": "inquisitor's_great_helm.png",
+    "sources": {
+      "drops": {
+        "Phosani's Nightmare": {
+          "droprate": "1/700"
+        },
+        "The Nightmare": {
+          "droprate": "1/420–1/240.1"
+        }
+      }
+    }
   },
   {
     "index": 2007,
     "id": 24420,
     "name": "Inquisitor's hauberk",
-    "image": "inquisitor's_hauberk.png"
+    "image": "inquisitor's_hauberk.png",
+    "sources": {
+      "drops": {
+        "Phosani's Nightmare": {
+          "droprate": "1/700"
+        },
+        "The Nightmare": {
+          "droprate": "1/420–1/240.1"
+        }
+      }
+    }
   },
   {
     "index": 2008,
     "id": 24417,
     "name": "Inquisitor's mace",
-    "image": "inquisitor's_mace.png"
+    "image": "inquisitor's_mace.png",
+    "sources": {
+      "drops": {
+        "Phosani's Nightmare": {
+          "droprate": "1/1250"
+        },
+        "The Nightmare": {
+          "droprate": "1/750–1/428.7"
+        }
+      }
+    }
   },
   {
     "index": 2009,
     "id": 24421,
     "name": "Inquisitor's plateskirt",
-    "image": "inquisitor's_plateskirt.png"
+    "image": "inquisitor's_plateskirt.png",
+    "sources": {
+      "drops": {
+        "Phosani's Nightmare": {
+          "droprate": "1/700"
+        },
+        "The Nightmare": {
+          "droprate": "1/420–1/240.1"
+        }
+      }
+    }
   },
   {
     "index": 2010,
@@ -64385,7 +64507,302 @@
     "index": 2221,
     "id": 23490,
     "name": "Larran's key",
-    "image": "larran's_key.png"
+    "image": "larran's_key.png",
+    "sources": {
+      "drops": {
+        "Choke devil Wilderness Slayer Cave superior": {
+          "droprate": "Always"
+        },
+        "Greater abyssal demon Wilderness Slayer Cave superior": {
+          "droprate": "Always"
+        },
+        "Nechryarch Wilderness Slayer Cave": {
+          "droprate": "Always"
+        },
+        "Vitreous Jelly Wilderness Slayer Cave superior": {
+          "droprate": "Always"
+        },
+        "Muddy chest (m)": {
+          "droprate": "1/46.667"
+        },
+        "Callisto": {
+          "droprate": "1/50"
+        },
+        "Venenatis": {
+          "droprate": "1/50"
+        },
+        "Vet'ion": {
+          "droprate": "1/50"
+        },
+        "Artio": {
+          "droprate": "1/55"
+        },
+        "Greater Nechryael Wilderness Slayer Cave": {
+          "droprate": "1/55"
+        },
+        "Chaos Elemental": {
+          "droprate": "1/58"
+        },
+        "Spindel": {
+          "droprate": "1/58"
+        },
+        "Black dragon Wilderness Slayer Cave": {
+          "droprate": "1/59"
+        },
+        "Greater Skeleton Hellhound (Vet'ion)": {
+          "droprate": "1/62"
+        },
+        "Abyssal demon Wilderness Slayer Cave": {
+          "droprate": "1/65"
+        },
+        "Calvar'ion": {
+          "droprate": "1/65"
+        },
+        "Lava dragon": {
+          "droprate": "1/67"
+        },
+        "Black demon Wilderness Slayer Cave": {
+          "droprate": "1/68"
+        },
+        "Dust devil Wilderness Slayer Cave": {
+          "droprate": "1/69"
+        },
+        "Porazdir": {
+          "droprate": "1/70"
+        },
+        "Black dragon Regular": {
+          "droprate": "1/72"
+        },
+        "Scorpia": {
+          "droprate": "1/72"
+        },
+        "Jelly Wilderness Slayer Cave": {
+          "droprate": "1/73"
+        },
+        "Skeleton Hellhound (Vet'ion)": {
+          "droprate": "1/74"
+        },
+        "Spiritual mage": {
+          "droprate": "1/75"
+        },
+        "Chaos Fanatic": {
+          "droprate": "1/76"
+        },
+        "Crazy archaeologist": {
+          "droprate": "1/76"
+        },
+        "Hellhound Wilderness Slayer Cave": {
+          "droprate": "1/76"
+        },
+        "Greater demon Wilderness Slayer Cave": {
+          "droprate": "1/81"
+        },
+        "Ankou Wilderness Slayer Cave": {
+          "droprate": "1/82"
+        },
+        "Black demon Regular": {
+          "droprate": "1/82"
+        },
+        "Bloodveld": {
+          "droprate": "1/82"
+        },
+        "Lesser demon Wilderness Slayer Cave": {
+          "droprate": "1/83"
+        },
+        "Green dragon Wilderness Slayer Cave": {
+          "droprate": "1/84"
+        },
+        "Dark warrior High level": {
+          "droprate": "1/87"
+        },
+        "Greater Skeleton Hellhound (Calvar'ion)": {
+          "droprate": "1/88"
+        },
+        "Revenant dragon": {
+          "droprate": "1/89"
+        },
+        "Revenant maledictus": {
+          "droprate": "1/89"
+        },
+        "Rogue Level 135": {
+          "droprate": "1/89"
+        },
+        "Elder Chaos druid": {
+          "droprate": "1/90"
+        },
+        "Revenant knight": {
+          "droprate": "1/90"
+        },
+        "Hellhound Regular": {
+          "droprate": "1/91"
+        },
+        "Revenant dark beast": {
+          "droprate": "1/91"
+        },
+        "Skeleton Hellhound (Calvar'ion)": {
+          "droprate": "1/92"
+        },
+        "Revenant ork": {
+          "droprate": "1/94"
+        },
+        "Revenant demon": {
+          "droprate": "1/95"
+        },
+        "Greater demon Regular (m)": {
+          "droprate": "1/96"
+        },
+        "Revenant hellhound": {
+          "droprate": "1/97"
+        },
+        "Ankou Level 86": {
+          "droprate": "1/98"
+        },
+        "Fire giant": {
+          "droprate": "1/98"
+        },
+        "Lesser demon Regular (m)": {
+          "droprate": "1/98"
+        },
+        "Revenant cyclops": {
+          "droprate": "1/98"
+        },
+        "Green dragon Regular": {
+          "droprate": "1/100"
+        },
+        "Mammoth": {
+          "droprate": "1/100"
+        },
+        "Ice giant Wilderness Slayer Cave": {
+          "droprate": "1/130"
+        },
+        "Poison spider": {
+          "droprate": "1/176"
+        },
+        "Ice spider": {
+          "droprate": "1/208"
+        },
+        "Revenant hobgoblin": {
+          "droprate": "1/220"
+        },
+        "Ice warrior (m)": {
+          "droprate": "1/258"
+        },
+        "Ice giant Regular (m)": {
+          "droprate": "1/318"
+        },
+        "Revenant pyrefiend": {
+          "droprate": "1/335"
+        },
+        "Shadow spider": {
+          "droprate": "1/335"
+        },
+        "Earth warrior": {
+          "droprate": "1/352"
+        },
+        "Scorpia's guardian": {
+          "droprate": "1/426"
+        },
+        "Magic axe": {
+          "droprate": "1/533"
+        },
+        "Moss giant Regular": {
+          "droprate": "1/533"
+        },
+        "Black Heather (m)": {
+          "droprate": "1/734"
+        },
+        "Deadly red spider (m)": {
+          "droprate": "1/734"
+        },
+        "Donny the lad (m)": {
+          "droprate": "1/734"
+        },
+        "Speedy Keith (m)": {
+          "droprate": "1/734"
+        },
+        "Black Knight": {
+          "droprate": "1/762"
+        },
+        "King Scorpion (m)": {
+          "droprate": "1/791"
+        },
+        "Hill Giant Regular": {
+          "droprate": "1/911"
+        },
+        "Pirate Pirate's Cove": {
+          "droprate": "1/1074"
+        },
+        "Bandit (m)": {
+          "droprate": "1/1109"
+        },
+        "Guard Bandit (m)": {
+          "droprate": "1/1109"
+        },
+        "Grizzly bear (m)": {
+          "droprate": "1/1144"
+        },
+        "Skeleton (Wilderness Agility Course)": {
+          "droprate": "1/1253"
+        },
+        "Zombie (Wilderness)": {
+          "droprate": "1/1253"
+        },
+        "Revenant goblin": {
+          "droprate": "1/1367"
+        },
+        "Rogue Level 15": {
+          "droprate": "1/1367"
+        },
+        "Scorpia's offspring (monster)": {
+          "droprate": "1/1367"
+        },
+        "Scorpion (m)": {
+          "droprate": "1/1406"
+        },
+        "Chaos druid": {
+          "droprate": "1/1446"
+        },
+        "Dark warrior Low level (m)": {
+          "droprate": "1/1655"
+        },
+        "Revenant imp": {
+          "droprate": "1/1698"
+        },
+        "Spider (m)": {
+          "droprate": "1/1972"
+        },
+        "Aviansie": {
+          "droprate": "1/136–1/88"
+        },
+        "Bandit Level 130": {
+          "droprate": "1/90; 1/78"
+        },
+        "Giant spider (m)": {
+          "droprate": "1/1925; 1/942"
+        },
+        "Skeleton Armed": {
+          "droprate": "1/1144–1/467"
+        },
+        "Skeleton Plain": {
+          "droprate": "1/1144–1/467"
+        },
+        "Skeleton Unarmed": {
+          "droprate": "1/1109–1/467"
+        },
+        "Spiritual ranger": {
+          "droprate": "1/76–1/90"
+        },
+        "Spiritual warrior": {
+          "droprate": "1/76–1/89"
+        },
+        "Zombie pirate Diary": {
+          "droprate": "1/1109–1/734"
+        },
+        "Zombie pirate Regular": {
+          "droprate": "1/1109–1/734"
+        }
+      }
+    }
   },
   {
     "index": 2222,
@@ -75970,9 +76387,9 @@
     "name": "Nice hedge (bagged)",
     "image": "nice_hedge_(bagged).png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -75992,7 +76409,17 @@
     "index": 2636,
     "id": 24422,
     "name": "Nightmare staff",
-    "image": "nightmare_staff.png"
+    "image": "nightmare_staff.png",
+    "sources": {
+      "drops": {
+        "Phosani's Nightmare": {
+          "droprate": "1/533"
+        },
+        "The Nightmare": {
+          "droprate": "1/300–1/171.5"
+        }
+      }
+    }
   },
   {
     "index": 2637,
@@ -77206,7 +77633,17 @@
     "index": 2717,
     "id": 6573,
     "name": "Onyx",
-    "image": "onyx.png"
+    "image": "onyx.png",
+    "sources": {
+      "drops": {
+        "Shop Counter (gems)": {
+          "droprate": "1/150000"
+        },
+        "Tekton": {
+          "droprate": "1/450–1/70"
+        }
+      }
+    }
   },
   {
     "index": 2718,
@@ -79081,11 +79518,10 @@
           "droprate": "1/128"
         }
       },
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
       }
-    
+    }
   },
   {
     "index": 2805,
@@ -79163,9 +79599,9 @@
     "name": "Pink hat",
     "image": "pink_hat.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -79195,9 +79631,9 @@
           "droprate": "1/128"
         }
       },
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -79211,9 +79647,9 @@
           "droprate": "1/128"
         }
       },
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -82027,7 +82463,374 @@
     "index": 2963,
     "id": 5295,
     "name": "Ranarr seed",
-    "image": "ranarr_seed.png"
+    "image": "ranarr_seed.png",
+    "sources": {
+      "drops": {
+        "Hallowed sack": {
+          "droprate": "2 × 1/10"
+        },
+        "Elder aquanite": {
+          "droprate": "3 × 1/16"
+        },
+        "Rewards Chest (Fortis Colosseum) Wave 9": {
+          "droprate": "1/6.792"
+        },
+        "Lost teak crate": {
+          "droprate": "1/8"
+        },
+        "Chest (Tombs of Amascut)": {
+          "droprate": "3 × 1/27"
+        },
+        "Coffin (Hallowed Sepulchre) High": {
+          "droprate": "1/10"
+        },
+        "Grand Hallowed Coffin": {
+          "droprate": "1/10"
+        },
+        "Seed pack High seed": {
+          "droprate": "1/11"
+        },
+        "Eldric the Ice King": {
+          "droprate": "2 × 1/28"
+        },
+        "Commander Zilyana": {
+          "droprate": "1/15.875"
+        },
+        "Aquanite": {
+          "droprate": "1/16"
+        },
+        "Void Knights' Reward Options Seed pack": {
+          "droprate": "3 × 1/53.05"
+        },
+        "Crystal impling": {
+          "droprate": "1/18"
+        },
+        "Crystal impling jar": {
+          "droprate": "1/18"
+        },
+        "Phantom Muspah": {
+          "droprate": "2 × 1/47"
+        },
+        "Chest (alchemist's signet)": {
+          "droprate": "1/25"
+        },
+        "Callisto": {
+          "droprate": "1/25.2"
+        },
+        "Artio": {
+          "droprate": "1/25.6"
+        },
+        "Ferocious barbarian spirit": {
+          "droprate": "1/25.6"
+        },
+        "Frozen cache": {
+          "droprate": "1/26.667"
+        },
+        "Barbarian Assault/Gambles High": {
+          "droprate": "1/32"
+        },
+        "The Hueycoatl": {
+          "droprate": "1/34"
+        },
+        "Hespori": {
+          "droprate": "1/40"
+        },
+        "Giant Mole": {
+          "droprate": "1/43.667"
+        },
+        "Butterfly ray": {
+          "droprate": "1/50"
+        },
+        "Eagle ray": {
+          "droprate": "1/50.4"
+        },
+        "Doom of Mokhaiotl": {
+          "droprate": "1/52"
+        },
+        "Thermonuclear smoke devil": {
+          "droprate": "1/53.5"
+        },
+        "Long-tailed Wyvern": {
+          "droprate": "1/58"
+        },
+        "Spitting Wyvern": {
+          "droprate": "1/58"
+        },
+        "Taloned Wyvern": {
+          "droprate": "1/58"
+        },
+        "Brimstone chest": {
+          "droprate": "1/60"
+        },
+        "Larran's big chest": {
+          "droprate": "1/60"
+        },
+        "Larran's small chest": {
+          "droprate": "1/60"
+        },
+        "Rewards Chest (Fortis Colosseum) Wave 7": {
+          "droprate": "1/60.741"
+        },
+        "Skeletal Wyvern": {
+          "droprate": "1/64"
+        },
+        "Cerberus": {
+          "droprate": "1/65"
+        },
+        "Stingray": {
+          "droprate": "1/67.2"
+        },
+        "Manta ray (monster)": {
+          "droprate": "1/88.7"
+        },
+        "Bryophyta Members": {
+          "droprate": "1/98.3"
+        },
+        "Moss Giant (Iorwerth Dungeon)": {
+          "droprate": "1/98.3"
+        },
+        "Moss giant Regular (m)": {
+          "droprate": "1/98.3"
+        },
+        "Nature impling": {
+          "droprate": "1/100"
+        },
+        "Nature impling jar": {
+          "droprate": "1/100"
+        },
+        "Corporeal Beast": {
+          "droprate": "1/102.4"
+        },
+        "Dreadborn Araxyte": {
+          "droprate": "3 × 1/341.3"
+        },
+        "Araxxor": {
+          "droprate": "1/115"
+        },
+        "Lizardman brute": {
+          "droprate": "1/120"
+        },
+        "Ice giant Wilderness Slayer Cave": {
+          "droprate": "1/128.2"
+        },
+        "Ancient Wyvern": {
+          "droprate": "1/132"
+        },
+        "Lizardman Level 62": {
+          "droprate": "1/139.7"
+        },
+        "Lizardman Level 53": {
+          "droprate": "1/155.9"
+        },
+        "Demonic gorilla": {
+          "droprate": "1/166.7"
+        },
+        "Bird nest (Wyson)": {
+          "droprate": "1/171"
+        },
+        "Mogre (Sailing)": {
+          "droprate": "1/172"
+        },
+        "Skeleton fremennik": {
+          "droprate": "1/172"
+        },
+        "Tortured soul": {
+          "droprate": "1/172"
+        },
+        "Arrg": {
+          "droprate": "1/181"
+        },
+        "Berry": {
+          "droprate": "1/181"
+        },
+        "City guard": {
+          "droprate": "1/181"
+        },
+        "Enclave guard": {
+          "droprate": "1/181"
+        },
+        "Feral Vampyre": {
+          "droprate": "1/181"
+        },
+        "Gorad": {
+          "droprate": "1/181"
+        },
+        "Ice troll male Variant 2": {
+          "droprate": "1/181"
+        },
+        "Ice troll runt Variant 2": {
+          "droprate": "1/181"
+        },
+        "Mountain troll": {
+          "droprate": "1/181"
+        },
+        "Ogre": {
+          "droprate": "1/181"
+        },
+        "Ogre chieftain": {
+          "droprate": "1/181"
+        },
+        "Thrower Troll": {
+          "droprate": "1/181"
+        },
+        "Troll spectator": {
+          "droprate": "1/181"
+        },
+        "Twig": {
+          "droprate": "1/181"
+        },
+        "Earth warrior": {
+          "droprate": "1/191.1"
+        },
+        "Ice warrior (m)": {
+          "droprate": "1/191.1"
+        },
+        "Vorkath Post-quest": {
+          "droprate": "2 × 1/416.7"
+        },
+        "Alchemical Hydra": {
+          "droprate": "2 × 1/420.8"
+        },
+        "Undead Druid": {
+          "droprate": "1/223.9"
+        },
+        "Jogre": {
+          "droprate": "1/231.1"
+        },
+        "Abyssal Sire": {
+          "droprate": "1/231.7"
+        },
+        "Giant Sea Snake": {
+          "droprate": "1/245.7"
+        },
+        "Sea Snake Young": {
+          "droprate": "1/245.7"
+        },
+        "Mogre": {
+          "droprate": "1/264.6"
+        },
+        "Tortured gorilla": {
+          "droprate": "1/268.8"
+        },
+        "Hobgoblin Armed (m)": {
+          "droprate": "1/286.6"
+        },
+        "Martin the Master Gardener": {
+          "droprate": "1/302"
+        },
+        "Ice troll female Variant 1": {
+          "droprate": "1/312.7"
+        },
+        "Ice troll grunt": {
+          "droprate": "1/312.7"
+        },
+        "Ice troll male Variant 1": {
+          "droprate": "1/312.7"
+        },
+        "Ice troll runt Variant 1": {
+          "droprate": "1/312.7"
+        },
+        "Sourhog": {
+          "droprate": "1/328.4"
+        },
+        "Araxyte Level 146": {
+          "droprate": "1/341.3"
+        },
+        "Araxyte Level 96": {
+          "droprate": "1/341.3"
+        },
+        "Chest (Aldarin Villas)": {
+          "droprate": "1/373.5"
+        },
+        "Lizardman shaman": {
+          "droprate": "1/416.7"
+        },
+        "Tormented Demon": {
+          "droprate": "1/425"
+        },
+        "Ice giant Regular (m)": {
+          "droprate": "1/429.9"
+        },
+        "Temple Spider": {
+          "droprate": "1/447.9"
+        },
+        "Chest (Bryophyta's lair) Members": {
+          "droprate": "1/528.5"
+        },
+        "Stone chest": {
+          "droprate": "1/537.4"
+        },
+        "Pygmy kraken": {
+          "droprate": "1/542.8"
+        },
+        "Ogress Shaman (m)": {
+          "droprate": "1/623.4"
+        },
+        "Ogress Warrior (m)": {
+          "droprate": "1/623.4"
+        },
+        "Lobstrosity": {
+          "droprate": "1/792.7"
+        },
+        "Cyclops Warriors' Guild Basement": {
+          "droprate": "1/895.7"
+        },
+        "Ancient Zygomite": {
+          "droprate": "1/983.3"
+        },
+        "Deranged archaeologist": {
+          "droprate": "1/1091.7"
+        },
+        "Armoured kraken": {
+          "droprate": "1/1582"
+        },
+        "Obor Members": {
+          "droprate": "1/2400"
+        },
+        "Ankou Wilderness Slayer Cave": {
+          "droprate": "1/2472.2"
+        },
+        "Vyrewatch Sentinel": {
+          "droprate": "1/2499.1"
+        },
+        "Black Knight Titan": {
+          "droprate": "1/2576"
+        },
+        "Ankou Regular": {
+          "droprate": "1/2687.2"
+        },
+        "Cyclops (Catacombs of Kourend)": {
+          "droprate": "1/2687.2"
+        },
+        "Cyclops (God Wars Dungeon)": {
+          "droprate": "1/2687.2"
+        },
+        "Cyclops Warriors' Guild Rooftop": {
+          "droprate": "1/2687.2"
+        },
+        "Vyrewatch": {
+          "droprate": "1/30434"
+        },
+        "Skeleton (Lucien's camp)": {
+          "droprate": "1/47826"
+        },
+        "Skeleton (Shayzien Crypts)": {
+          "droprate": "1/47826"
+        },
+        "Zombie (Shayzien Crypts)": {
+          "droprate": "1/47826"
+        },
+        "Extra supply crate": {
+          "droprate": "Varies"
+        },
+        "Reward Cart": {
+          "droprate": "Varies"
+        },
+        "Master Farmer": {
+          "droprate": "1/268.75–1/555.83"
+        }
+      }
+    }
   },
   {
     "index": 2964,
@@ -94411,7 +95214,302 @@
     "index": 3559,
     "id": 21257,
     "name": "Slayer's enchantment",
-    "image": "slayer's_enchantment.png"
+    "image": "slayer's_enchantment.png",
+    "sources": {
+      "drops": {
+        "Artio": {
+          "droprate": "1/30"
+        },
+        "Callisto": {
+          "droprate": "1/30"
+        },
+        "Calvar'ion": {
+          "droprate": "1/30"
+        },
+        "Chaos Elemental": {
+          "droprate": "1/30"
+        },
+        "Chaos Fanatic": {
+          "droprate": "1/30"
+        },
+        "Crazy archaeologist": {
+          "droprate": "1/30"
+        },
+        "Scorpia": {
+          "droprate": "1/30"
+        },
+        "Spindel": {
+          "droprate": "1/30"
+        },
+        "Venenatis": {
+          "droprate": "1/30"
+        },
+        "Vet'ion": {
+          "droprate": "1/30"
+        },
+        "Choke devil Wilderness Slayer Cave superior": {
+          "droprate": "1/80"
+        },
+        "Greater abyssal demon Wilderness Slayer Cave superior": {
+          "droprate": "1/80"
+        },
+        "Nechryarch Wilderness Slayer Cave": {
+          "droprate": "1/80"
+        },
+        "Porazdir": {
+          "droprate": "1/80"
+        },
+        "Black dragon Wilderness Slayer Cave": {
+          "droprate": "1/120"
+        },
+        "Lava dragon": {
+          "droprate": "1/136"
+        },
+        "Greater Nechryael Wilderness Slayer Cave": {
+          "droprate": "1/156"
+        },
+        "Black demon Wilderness Slayer Cave": {
+          "droprate": "1/160"
+        },
+        "Black dragon Regular": {
+          "droprate": "1/168"
+        },
+        "Greater Skeleton Hellhound (Vet'ion)": {
+          "droprate": "1/168"
+        },
+        "Vitreous Jelly Wilderness Slayer Cave superior": {
+          "droprate": "1/168"
+        },
+        "Black demon Regular": {
+          "droprate": "1/195"
+        },
+        "Bandit Level 130": {
+          "droprate": "1/196"
+        },
+        "Revenant dragon": {
+          "droprate": "1/196"
+        },
+        "Revenant maledictus": {
+          "droprate": "1/196"
+        },
+        "Abyssal demon Wilderness Slayer Cave": {
+          "droprate": "1/200"
+        },
+        "Elder Chaos druid": {
+          "droprate": "1/200"
+        },
+        "Hellhound Wilderness Slayer Cave": {
+          "droprate": "1/200"
+        },
+        "Revenant knight": {
+          "droprate": "1/206"
+        },
+        "Revenant dark beast": {
+          "droprate": "1/208"
+        },
+        "Dark warrior High level": {
+          "droprate": "1/211"
+        },
+        "Bloodveld": {
+          "droprate": "1/213"
+        },
+        "Mammoth": {
+          "droprate": "1/216"
+        },
+        "Rogue Level 135": {
+          "droprate": "1/220"
+        },
+        "Greater demon Wilderness Slayer Cave": {
+          "droprate": "1/224"
+        },
+        "Hellhound Regular": {
+          "droprate": "1/228"
+        },
+        "Fire giant": {
+          "droprate": "1/232"
+        },
+        "Lesser demon Wilderness Slayer Cave": {
+          "droprate": "1/232"
+        },
+        "Revenant cyclops": {
+          "droprate": "1/232"
+        },
+        "Skeleton Hellhound (Vet'ion)": {
+          "droprate": "1/232"
+        },
+        "Dust devil Wilderness Slayer Cave": {
+          "droprate": "1/236"
+        },
+        "Ent": {
+          "droprate": "1/236"
+        },
+        "Revenant ork": {
+          "droprate": "1/236"
+        },
+        "Ankou Wilderness Slayer Cave": {
+          "droprate": "1/240"
+        },
+        "Green dragon Wilderness Slayer Cave": {
+          "droprate": "1/240"
+        },
+        "Ice giant Wilderness Slayer Cave": {
+          "droprate": "1/240"
+        },
+        "Greater demon Regular (m)": {
+          "droprate": "1/249"
+        },
+        "Lesser demon Regular (m)": {
+          "droprate": "1/256"
+        },
+        "Revenant demon": {
+          "droprate": "1/256"
+        },
+        "Revenant hellhound": {
+          "droprate": "1/256"
+        },
+        "Green dragon Regular": {
+          "droprate": "1/260"
+        },
+        "Jelly Wilderness Slayer Cave": {
+          "droprate": "1/260"
+        },
+        "Revenant hobgoblin": {
+          "droprate": "1/263"
+        },
+        "Ankou Level 86": {
+          "droprate": "1/264"
+        },
+        "Ice giant Regular (m)": {
+          "droprate": "1/264"
+        },
+        "Scorpia's guardian": {
+          "droprate": "1/264"
+        },
+        "Ice spider": {
+          "droprate": "1/268"
+        },
+        "Poison spider": {
+          "droprate": "1/269"
+        },
+        "Moss giant Regular": {
+          "droprate": "1/272"
+        },
+        "Ice warrior (m)": {
+          "droprate": "1/273"
+        },
+        "Shadow spider": {
+          "droprate": "1/276"
+        },
+        "Earth warrior": {
+          "droprate": "1/277"
+        },
+        "Revenant pyrefiend": {
+          "droprate": "1/282"
+        },
+        "Magic axe": {
+          "droprate": "1/284"
+        },
+        "Black Knight": {
+          "droprate": "1/287"
+        },
+        "Black Heather (m)": {
+          "droprate": "1/291"
+        },
+        "Donny the lad (m)": {
+          "droprate": "1/291"
+        },
+        "Speedy Keith (m)": {
+          "droprate": "1/291"
+        },
+        "Deadly red spider (m)": {
+          "droprate": "1/292"
+        },
+        "Hill Giant Regular": {
+          "droprate": "1/292"
+        },
+        "Greater Skeleton Hellhound (Calvar'ion)": {
+          "droprate": "1/296"
+        },
+        "King Scorpion (m)": {
+          "droprate": "1/296"
+        },
+        "Skeleton Hellhound (Calvar'ion)": {
+          "droprate": "1/296"
+        },
+        "Bandit (m)": {
+          "droprate": "1/299"
+        },
+        "Grizzly bear (m)": {
+          "droprate": "1/299"
+        },
+        "Guard Bandit (m)": {
+          "droprate": "1/299"
+        },
+        "Zombie (Wilderness)": {
+          "droprate": "1/301"
+        },
+        "Chaos druid": {
+          "droprate": "1/304"
+        },
+        "Pirate Pirate's Cove": {
+          "droprate": "1/304"
+        },
+        "Dark warrior Low level (m)": {
+          "droprate": "1/307"
+        },
+        "Rogue Level 15": {
+          "droprate": "1/307"
+        },
+        "Scorpion (m)": {
+          "droprate": "1/307"
+        },
+        "Skeleton (Wilderness Agility Course)": {
+          "droprate": "1/307"
+        },
+        "Revenant goblin": {
+          "droprate": "1/309"
+        },
+        "Revenant imp": {
+          "droprate": "1/312"
+        },
+        "Scorpia's offspring (monster)": {
+          "droprate": "1/319"
+        },
+        "Spider (m)": {
+          "droprate": "1/319"
+        },
+        "Aviansie": {
+          "droprate": "1/264–1/221"
+        },
+        "Giant spider (m)": {
+          "droprate": "1/316; 1/295"
+        },
+        "Skeleton Armed": {
+          "droprate": "1/301–1/273"
+        },
+        "Skeleton Plain": {
+          "droprate": "1/301–1/273"
+        },
+        "Skeleton Unarmed": {
+          "droprate": "1/301–1/273"
+        },
+        "Spiritual mage": {
+          "droprate": "1/260–1/236"
+        },
+        "Spiritual ranger": {
+          "droprate": "1/249–1/216"
+        },
+        "Spiritual warrior": {
+          "droprate": "1/242–1/216"
+        },
+        "Zombie pirate Diary": {
+          "droprate": "1/296–1/288"
+        },
+        "Zombie pirate Regular": {
+          "droprate": "1/296–1/288"
+        }
+      }
+    }
   },
   {
     "index": 3560,
@@ -94487,9 +95585,9 @@
     "name": "Small box hedge (bagged)",
     "image": "small_box_hedge_(bagged).png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -94794,7 +95892,485 @@
     "index": 3584,
     "id": 5300,
     "name": "Snapdragon seed",
-    "image": "snapdragon_seed.png"
+    "image": "snapdragon_seed.png",
+    "sources": {
+      "drops": {
+        "Rewards Chest (Fortis Colosseum) Wave 5": {
+          "droprate": "1/7.064"
+        },
+        "Rewards Chest (Fortis Colosseum) Wave 6": {
+          "droprate": "1/7.074"
+        },
+        "Rewards Chest (Fortis Colosseum) Wave 7": {
+          "droprate": "1/7.874"
+        },
+        "Rewards Chest (Fortis Colosseum) Wave 8": {
+          "droprate": "1/7.894"
+        },
+        "Chest (Tombs of Amascut)": {
+          "droprate": "3 × 1/27"
+        },
+        "Seed pack High seed": {
+          "droprate": "1/11"
+        },
+        "General Graardor": {
+          "droprate": "1/15.875"
+        },
+        "Dragon impling": {
+          "droprate": "1/19"
+        },
+        "Dragon impling jar": {
+          "droprate": "1/19"
+        },
+        "Frozen cache": {
+          "droprate": "1/20"
+        },
+        "Magpie impling": {
+          "droprate": "1/21"
+        },
+        "Magpie impling jar": {
+          "droprate": "1/21"
+        },
+        "Callisto": {
+          "droprate": "1/25.2"
+        },
+        "Artio": {
+          "droprate": "1/25.6"
+        },
+        "Phantom Muspah": {
+          "droprate": "2 × 1/58.75"
+        },
+        "Barbarian Assault/Gambles High": {
+          "droprate": "1/32"
+        },
+        "Phosani's Nightmare": {
+          "droprate": "1/33.333"
+        },
+        "The Nightmare": {
+          "droprate": "1/33.333"
+        },
+        "Hespori": {
+          "droprate": "1/40"
+        },
+        "Nechryarch Normal": {
+          "droprate": "3 × 1/152.7"
+        },
+        "Abhorrent spectre": {
+          "droprate": "3 × 1/159.6"
+        },
+        "Thermonuclear smoke devil": {
+          "droprate": "1/53.5"
+        },
+        "Vorkath Post-quest": {
+          "droprate": "2 × 1/112.3"
+        },
+        "Cave abomination": {
+          "droprate": "3 × 1/168.5"
+        },
+        "Spiked Turoth": {
+          "droprate": "3 × 1/168.5"
+        },
+        "Brimstone chest": {
+          "droprate": "1/60"
+        },
+        "Larran's big chest": {
+          "droprate": "1/60"
+        },
+        "Larran's small chest": {
+          "droprate": "1/60"
+        },
+        "Zulrah": {
+          "droprate": "2 × 1/124.5"
+        },
+        "Repugnant spectre": {
+          "droprate": "3 × 1/189.6"
+        },
+        "Skeletal Wyvern": {
+          "droprate": "1/64"
+        },
+        "King kurask": {
+          "droprate": "3 × 1/195.9"
+        },
+        "Rewards Chest (Fortis Colosseum) Wave 3": {
+          "droprate": "1/70"
+        },
+        "Rewards Chest (Fortis Colosseum) Wave 4": {
+          "droprate": "1/70.569"
+        },
+        "Nechryael": {
+          "droprate": "2 × 1/152.7"
+        },
+        "Screaming twisted banshee": {
+          "droprate": "3 × 1/233.3"
+        },
+        "Dark beast": {
+          "droprate": "1/113.6"
+        },
+        "Araxxor": {
+          "droprate": "1/115"
+        },
+        "Aberrant spectre": {
+          "droprate": "1/159.6"
+        },
+        "Cave horror": {
+          "droprate": "1/168.5"
+        },
+        "Dagannoth": {
+          "droprate": "1/168.5"
+        },
+        "Turoth": {
+          "droprate": "1/168.5"
+        },
+        "Bird nest (Wyson)": {
+          "droprate": "1/171"
+        },
+        "Iorwerth Archer": {
+          "droprate": "1/178.4"
+        },
+        "Iorwerth Warrior Iorwerth Camp": {
+          "droprate": "1/178.4"
+        },
+        "Demonic gorilla": {
+          "droprate": "1/178.6"
+        },
+        "Deviant spectre": {
+          "droprate": "1/189.6"
+        },
+        "Kurask": {
+          "droprate": "1/195.9"
+        },
+        "Shadow Wyrm": {
+          "droprate": "3 × 1/600.3"
+        },
+        "Nechryarch Greater": {
+          "droprate": "3 × 1/606.6"
+        },
+        "Tree spirit": {
+          "droprate": "1/216.6"
+        },
+        "Manta ray (monster)": {
+          "droprate": "1/221"
+        },
+        "Alchemical Hydra": {
+          "droprate": "2 × 1/450.9"
+        },
+        "Twisted Banshee": {
+          "droprate": "1/233.3"
+        },
+        "Abyssal Sire": {
+          "droprate": "1/248.2"
+        },
+        "Colossal Hydra": {
+          "droprate": "3 × 1/758.3"
+        },
+        "Night beast": {
+          "droprate": "3 × 1/758.3"
+        },
+        "Tortured gorilla": {
+          "droprate": "1/288"
+        },
+        "Greater Nechryael Regular": {
+          "droprate": "2 × 1/606.6"
+        },
+        "Spined kraken": {
+          "droprate": "1/316.9"
+        },
+        "Armoured kraken": {
+          "droprate": "1/339.9"
+        },
+        "Vampyre kraken": {
+          "droprate": "1/349.5"
+        },
+        "Butterfly ray": {
+          "droprate": "1/390.4"
+        },
+        "Eagle ray": {
+          "droprate": "1/393"
+        },
+        "Stingray": {
+          "droprate": "1/394.9"
+        },
+        "Dagannoth Prime": {
+          "droprate": "1/433.3"
+        },
+        "Dagannoth Supreme": {
+          "droprate": "1/433.3"
+        },
+        "Lizardman shaman": {
+          "droprate": "1/446.4"
+        },
+        "Tormented Demon": {
+          "droprate": "1/455.4"
+        },
+        "Greater Nechryael Wilderness Slayer Cave": {
+          "droprate": "1/530.8"
+        },
+        "Lobstrosity": {
+          "droprate": "1/559.2"
+        },
+        "Ancient Wyvern": {
+          "droprate": "1/589.3"
+        },
+        "Wyrm": {
+          "droprate": "1/600.3"
+        },
+        "Grimy Lizard": {
+          "droprate": "1/606.6"
+        },
+        "Guardian Drake": {
+          "droprate": "3 × 1/2203.7"
+        },
+        "Hydra": {
+          "droprate": "1/758.3"
+        },
+        "Waterfiend": {
+          "droprate": "1/758.3"
+        },
+        "Bryophyta Members": {
+          "droprate": "1/766.5"
+        },
+        "Moss Giant (Iorwerth Dungeon)": {
+          "droprate": "1/766.5"
+        },
+        "Moss giant Regular (m)": {
+          "droprate": "1/766.5"
+        },
+        "Cave kraken": {
+          "droprate": "1/789.9"
+        },
+        "Dreadborn Araxyte": {
+          "droprate": "3 × 1/2661.9"
+        },
+        "Lizardman brute": {
+          "droprate": "1/936.2"
+        },
+        "Ice giant Wilderness Slayer Cave": {
+          "droprate": "1/999.6"
+        },
+        "Opulent salvage": {
+          "droprate": "1/1004.7"
+        },
+        "Ancient Zygomite": {
+          "droprate": "1/1053.6"
+        },
+        "Lizardman Level 62": {
+          "droprate": "1/1089.9"
+        },
+        "Long-tailed Wyvern": {
+          "droprate": "1/1098.2"
+        },
+        "Spitting Wyvern": {
+          "droprate": "1/1098.2"
+        },
+        "Taloned Wyvern": {
+          "droprate": "1/1098.2"
+        },
+        "Deranged archaeologist": {
+          "droprate": "1/1169.6"
+        },
+        "Sarachnis": {
+          "droprate": "1/1184.8"
+        },
+        "Undead Druid": {
+          "droprate": "1/1184.8"
+        },
+        "Lizardman Level 53": {
+          "droprate": "1/1215.7"
+        },
+        "Mogre (Sailing)": {
+          "droprate": "1/1341.4"
+        },
+        "Skeleton fremennik": {
+          "droprate": "1/1341.4"
+        },
+        "Tortured soul": {
+          "droprate": "1/1341.4"
+        },
+        "Arrg": {
+          "droprate": "1/1412"
+        },
+        "Berry": {
+          "droprate": "1/1412"
+        },
+        "City guard": {
+          "droprate": "1/1412"
+        },
+        "Enclave guard": {
+          "droprate": "1/1412"
+        },
+        "Feral Vampyre": {
+          "droprate": "1/1412"
+        },
+        "Gorad": {
+          "droprate": "1/1412"
+        },
+        "Ice troll male Variant 2": {
+          "droprate": "1/1412"
+        },
+        "Ice troll runt Variant 2": {
+          "droprate": "1/1412"
+        },
+        "Mountain troll": {
+          "droprate": "1/1412"
+        },
+        "Ogre": {
+          "droprate": "1/1412"
+        },
+        "Ogre chieftain": {
+          "droprate": "1/1412"
+        },
+        "Thrower Troll": {
+          "droprate": "1/1412"
+        },
+        "Troll spectator": {
+          "droprate": "1/1412"
+        },
+        "Twig": {
+          "droprate": "1/1412"
+        },
+        "Earth warrior": {
+          "droprate": "1/1490.5"
+        },
+        "Ice warrior (m)": {
+          "droprate": "1/1490.5"
+        },
+        "Locust rider": {
+          "droprate": "1/1516.5"
+        },
+        "Scarab Mage": {
+          "droprate": "1/1516.5"
+        },
+        "Jogre": {
+          "droprate": "1/1802.6"
+        },
+        "Giant Sea Snake": {
+          "droprate": "1/1916.3"
+        },
+        "Sea Snake Young": {
+          "droprate": "1/1916.3"
+        },
+        "Mogre": {
+          "droprate": "1/2063.8"
+        },
+        "Martin the Master Gardener": {
+          "droprate": "1/2083"
+        },
+        "Drake": {
+          "droprate": "1/2203.7"
+        },
+        "Hobgoblin Armed (m)": {
+          "droprate": "1/2235.7"
+        },
+        "Ice troll female Variant 1": {
+          "droprate": "1/2439"
+        },
+        "Ice troll grunt": {
+          "droprate": "1/2439"
+        },
+        "Ice troll male Variant 1": {
+          "droprate": "1/2439"
+        },
+        "Ice troll runt Variant 1": {
+          "droprate": "1/2439"
+        },
+        "Sourhog": {
+          "droprate": "1/2561.8"
+        },
+        "Araxyte Level 146": {
+          "droprate": "1/2661.9"
+        },
+        "Araxyte Level 96": {
+          "droprate": "1/2661.9"
+        },
+        "Chest (Aldarin Villas)": {
+          "droprate": "1/2913.4"
+        },
+        "Dagannoth (Waterbirth Island) Level 88": {
+          "droprate": "1/3033"
+        },
+        "Dagannoth (Waterbirth Island) Level 90": {
+          "droprate": "1/3033"
+        },
+        "Giant Rock Crab": {
+          "droprate": "1/3033"
+        },
+        "King Sand Crab": {
+          "droprate": "1/3033"
+        },
+        "Wallasalki": {
+          "droprate": "1/3033"
+        },
+        "Ice giant Regular (m)": {
+          "droprate": "1/3353.6"
+        },
+        "Temple Spider": {
+          "droprate": "1/3493.3"
+        },
+        "Chest (Bryophyta's lair) Members": {
+          "droprate": "1/4122.1"
+        },
+        "Stone chest": {
+          "droprate": "1/4192"
+        },
+        "Pygmy kraken": {
+          "droprate": "1/4233.9"
+        },
+        "Ogress Shaman (m)": {
+          "droprate": "1/4862.7"
+        },
+        "Ogress Warrior (m)": {
+          "droprate": "1/4862.7"
+        },
+        "Cyclops Warriors' Guild Basement": {
+          "droprate": "1/6986.7"
+        },
+        "Obor Members": {
+          "droprate": "1/16562"
+        },
+        "Black Knight Titan": {
+          "droprate": "1/17777"
+        },
+        "Ankou Wilderness Slayer Cave": {
+          "droprate": "1/19283.2"
+        },
+        "Vyrewatch Sentinel": {
+          "droprate": "1/19492.8"
+        },
+        "Ankou Regular": {
+          "droprate": "1/20960"
+        },
+        "Cyclops (Catacombs of Kourend)": {
+          "droprate": "1/20960"
+        },
+        "Cyclops (God Wars Dungeon)": {
+          "droprate": "1/20960"
+        },
+        "Cyclops Warriors' Guild Rooftop": {
+          "droprate": "1/20960"
+        },
+        "Vyrewatch": {
+          "droprate": "1/209999"
+        },
+        "Skeleton (Lucien's camp)": {
+          "droprate": "1/330000"
+        },
+        "Skeleton (Shayzien Crypts)": {
+          "droprate": "1/330000"
+        },
+        "Zombie (Shayzien Crypts)": {
+          "droprate": "1/330000"
+        },
+        "Extra supply crate": {
+          "droprate": "Varies"
+        },
+        "Reward Cart": {
+          "droprate": "Varies"
+        },
+        "Master Farmer": {
+          "droprate": "1/1854.4–1/3835.23"
+        }
+      }
+    }
   },
   {
     "index": 3585,
@@ -100389,7 +101965,14 @@
     "index": 3748,
     "id": 24740,
     "name": "Strange old lockpick (full)",
-    "image": "strange_old_lockpick_(full).png"
+    "image": "strange_old_lockpick_(full).png",
+    "sources": {
+      "drops": {
+        "Coffin (Hallowed Sepulchre)": {
+          "droprate": "1/200–1/40"
+        }
+      }
+    }
   },
   {
     "index": 3749,
@@ -102873,11 +104456,10 @@
     "name": "Swift blade",
     "image": "swift_blade.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
-            
   },
   {
     "index": 3865,
@@ -102951,28 +104533,36 @@
     "id": 31193,
     "name": "Swords and emblem",
     "image": "swords_and_emblem.png",
-    "tags": ["gridmaster"]
+    "tags": [
+      "gridmaster"
+    ]
   },
   {
     "index": 3867,
     "id": 31196,
     "name": "Swords and emblem (b)",
     "image": "swords_and_emblem_(b).png",
-    "tags": ["gridmaster"]
+    "tags": [
+      "gridmaster"
+    ]
   },
   {
     "index": 3868,
     "id": 31202,
     "name": "Swords and emblem (g)",
     "image": "swords_and_emblem_(g).png",
-    "tags": ["gridmaster"]
+    "tags": [
+      "gridmaster"
+    ]
   },
   {
     "index": 3869,
     "id": 31199,
     "name": "Swords and emblem (p)",
     "image": "swords_and_emblem_(p).png",
-    "tags": ["gridmaster"]
+    "tags": [
+      "gridmaster"
+    ]
   },
   {
     "index": 3870,
@@ -102980,17 +104570,19 @@
     "name": "Swordtip squid",
     "image": "swordtip_squid.png",
     "sources": {
-        "other": {
-            "Cooking": {
-            "notes": "Requires raw swordtip squid.",
-            "rule": {
-                "all": [
-                {"has": 31553},
-                "canTrainCooking"
-                ]
-            }
-            }
+      "other": {
+        "Cooking": {
+          "notes": "Requires raw swordtip squid.",
+          "rule": {
+            "all": [
+              {
+                "has": 31553
+              },
+              "canTrainCooking"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -103033,9 +104625,9 @@
     "name": "Tall box hedge (bagged)",
     "image": "tall_box_hedge_(bagged).png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -103044,9 +104636,9 @@
     "name": "Tall fancy hedge (bagged)",
     "image": "tall_fancy_hedge_(bagged).png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -104462,9 +106054,9 @@
     "name": "Thorny hedge (bagged)",
     "image": "thorny_hedge_(bagged).png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -106037,11 +107629,10 @@
     "name": "Topiary hedge (bagged)",
     "image": "topiary_hedge_(bagged).png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
-            
   },
   {
     "index": 4024,
@@ -106182,20 +107773,28 @@
     "name": "Tormented bracelet",
     "image": "tormented_bracelet.png",
     "sources": {
-        "other": {
-            "Creating a tormented bracelet": {
-            "notes": "Requires a zenyte bracelet, cosmic rune, soul rune, and a blood rune.",
-            "rule": {
-                "all": [
-                {"has": 19532},
-                {"has": 564},
-                {"has": 566},
-                {"has": 565},
-                "canTrainCrafting"
-                ]
-            }
-            }
+      "other": {
+        "Creating a tormented bracelet": {
+          "notes": "Requires a zenyte bracelet, cosmic rune, soul rune, and a blood rune.",
+          "rule": {
+            "all": [
+              {
+                "has": 19532
+              },
+              {
+                "has": 564
+              },
+              {
+                "has": 566
+              },
+              {
+                "has": 565
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -106305,7 +107904,449 @@
     "index": 4039,
     "id": 5304,
     "name": "Torstol seed",
-    "image": "torstol_seed.png"
+    "image": "torstol_seed.png",
+    "sources": {
+      "drops": {
+        "Chest (Tombs of Amascut)": {
+          "droprate": "3 × 1/27"
+        },
+        "Frozen cache": {
+          "droprate": "1/16"
+        },
+        "Seed pack High seed": {
+          "droprate": "1/22"
+        },
+        "Phantom Muspah": {
+          "droprate": "2 × 1/47"
+        },
+        "Kalphite Queen": {
+          "droprate": "1/31.5"
+        },
+        "Barbarian Assault/Gambles High": {
+          "droprate": "1/32"
+        },
+        "The Hueycoatl": {
+          "droprate": "1/34"
+        },
+        "Hespori": {
+          "droprate": "1/40"
+        },
+        "Vorkath Post-quest": {
+          "droprate": "2 × 1/118.7"
+        },
+        "Brimstone chest": {
+          "droprate": "1/60"
+        },
+        "Larran's big chest": {
+          "droprate": "1/60"
+        },
+        "Larran's small chest": {
+          "droprate": "1/60"
+        },
+        "Zulrah": {
+          "droprate": "2 × 1/124.5"
+        },
+        "Cerberus": {
+          "droprate": "1/65"
+        },
+        "Nature impling": {
+          "droprate": "1/100"
+        },
+        "Nature impling jar": {
+          "droprate": "1/100"
+        },
+        "Kraken": {
+          "droprate": "1/128"
+        },
+        "Bird nest (Wyson)": {
+          "droprate": "1/171"
+        },
+        "Demonic gorilla": {
+          "droprate": "1/227.3"
+        },
+        "Nechryarch Normal": {
+          "droprate": "3 × 1/780.5"
+        },
+        "Abhorrent spectre": {
+          "droprate": "3 × 1/815.9"
+        },
+        "Manta ray (monster)": {
+          "droprate": "1/281.3"
+        },
+        "Alchemical Hydra": {
+          "droprate": "2 × 1/573.9"
+        },
+        "Cave abomination": {
+          "droprate": "3 × 1/861.2"
+        },
+        "Spiked Turoth": {
+          "droprate": "3 × 1/861.2"
+        },
+        "Abyssal Sire": {
+          "droprate": "1/315.9"
+        },
+        "Repugnant spectre": {
+          "droprate": "3 × 1/968.9"
+        },
+        "King kurask": {
+          "droprate": "3 × 1/1001.2"
+        },
+        "Tortured gorilla": {
+          "droprate": "1/366.6"
+        },
+        "Nechryael": {
+          "droprate": "2 × 1/780.5"
+        },
+        "Screaming twisted banshee": {
+          "droprate": "3 × 1/1192.5"
+        },
+        "Lizardman shaman": {
+          "droprate": "1/568.2"
+        },
+        "Tormented Demon": {
+          "droprate": "1/579.5"
+        },
+        "Ancient Wyvern": {
+          "droprate": "1/750"
+        },
+        "Aberrant spectre": {
+          "droprate": "1/815.9"
+        },
+        "Cave horror": {
+          "droprate": "1/861.2"
+        },
+        "Dagannoth": {
+          "droprate": "1/861.2"
+        },
+        "Turoth": {
+          "droprate": "1/861.2"
+        },
+        "Iorwerth Archer": {
+          "droprate": "1/911.9"
+        },
+        "Iorwerth Warrior Iorwerth Camp": {
+          "droprate": "1/911.9"
+        },
+        "Deviant spectre": {
+          "droprate": "1/968.9"
+        },
+        "Kurask": {
+          "droprate": "1/1001.2"
+        },
+        "Shadow Wyrm": {
+          "droprate": "3 × 1/3068.1"
+        },
+        "Nechryarch Greater": {
+          "droprate": "3 × 1/3100.4"
+        },
+        "Tree spirit": {
+          "droprate": "1/1107.3"
+        },
+        "Twisted Banshee": {
+          "droprate": "1/1192.5"
+        },
+        "Colossal Hydra": {
+          "droprate": "3 × 1/3875.6"
+        },
+        "Night beast": {
+          "droprate": "3 × 1/3875.6"
+        },
+        "Araxxor": {
+          "droprate": "1/1306.8"
+        },
+        "Ancient Zygomite": {
+          "droprate": "1/1340.9"
+        },
+        "Long-tailed Wyvern": {
+          "droprate": "1/1397.7"
+        },
+        "Spitting Wyvern": {
+          "droprate": "1/1397.7"
+        },
+        "Taloned Wyvern": {
+          "droprate": "1/1397.7"
+        },
+        "Deranged archaeologist": {
+          "droprate": "1/1488.6"
+        },
+        "Greater Nechryael Regular": {
+          "droprate": "2 × 1/3100.4"
+        },
+        "Spined kraken": {
+          "droprate": "1/1619.9"
+        },
+        "Armoured kraken": {
+          "droprate": "1/1736"
+        },
+        "Vampyre kraken": {
+          "droprate": "1/1786.4"
+        },
+        "Butterfly ray": {
+          "droprate": "1/1951.9"
+        },
+        "Eagle ray": {
+          "droprate": "1/1965"
+        },
+        "Stingray": {
+          "droprate": "1/2018.5"
+        },
+        "Dagannoth Prime": {
+          "droprate": "1/2214.6"
+        },
+        "Dagannoth Supreme": {
+          "droprate": "1/2214.6"
+        },
+        "Greater Nechryael Wilderness Slayer Cave": {
+          "droprate": "1/2712.9"
+        },
+        "Lobstrosity": {
+          "droprate": "1/2858.2"
+        },
+        "Wyrm": {
+          "droprate": "1/3068.1"
+        },
+        "Grimy Lizard": {
+          "droprate": "1/3100.4"
+        },
+        "Guardian Drake": {
+          "droprate": "3 × 1/11263.3"
+        },
+        "Bryophyta Members": {
+          "droprate": "1/3832.7"
+        },
+        "Moss Giant (Iorwerth Dungeon)": {
+          "droprate": "1/3832.7"
+        },
+        "Moss giant Regular (m)": {
+          "droprate": "1/3832.7"
+        },
+        "Hydra": {
+          "droprate": "1/3875.6"
+        },
+        "Waterfiend": {
+          "droprate": "1/3875.6"
+        },
+        "Cave kraken": {
+          "droprate": "1/4037"
+        },
+        "Dreadborn Araxyte": {
+          "droprate": "3 × 1/13309.6"
+        },
+        "Lizardman brute": {
+          "droprate": "1/4681.1"
+        },
+        "Ice giant Wilderness Slayer Cave": {
+          "droprate": "1/4998.2"
+        },
+        "Opulent salvage": {
+          "droprate": "1/5135.1"
+        },
+        "Dark beast": {
+          "droprate": "1/5167.4"
+        },
+        "Lizardman Level 62": {
+          "droprate": "1/5449.6"
+        },
+        "Sarachnis": {
+          "droprate": "1/6055.6"
+        },
+        "Undead Druid": {
+          "droprate": "1/6055.6"
+        },
+        "Lizardman Level 53": {
+          "droprate": "1/6078.4"
+        },
+        "Mogre (Sailing)": {
+          "droprate": "1/6707.2"
+        },
+        "Skeleton fremennik": {
+          "droprate": "1/6707.2"
+        },
+        "Tortured soul": {
+          "droprate": "1/6707.2"
+        },
+        "Arrg": {
+          "droprate": "1/7060.2"
+        },
+        "Berry": {
+          "droprate": "1/7060.2"
+        },
+        "City guard": {
+          "droprate": "1/7060.2"
+        },
+        "Enclave guard": {
+          "droprate": "1/7060.2"
+        },
+        "Feral Vampyre": {
+          "droprate": "1/7060.2"
+        },
+        "Gorad": {
+          "droprate": "1/7060.2"
+        },
+        "Ice troll male Variant 2": {
+          "droprate": "1/7060.2"
+        },
+        "Ice troll runt Variant 2": {
+          "droprate": "1/7060.2"
+        },
+        "Mountain troll": {
+          "droprate": "1/7060.2"
+        },
+        "Ogre": {
+          "droprate": "1/7060.2"
+        },
+        "Ogre chieftain": {
+          "droprate": "1/7060.2"
+        },
+        "Thrower Troll": {
+          "droprate": "1/7060.2"
+        },
+        "Troll spectator": {
+          "droprate": "1/7060.2"
+        },
+        "Twig": {
+          "droprate": "1/7060.2"
+        },
+        "Earth warrior": {
+          "droprate": "1/7452.4"
+        },
+        "Ice warrior (m)": {
+          "droprate": "1/7452.4"
+        },
+        "Locust rider": {
+          "droprate": "1/7751.1"
+        },
+        "Scarab Mage": {
+          "droprate": "1/7751.1"
+        },
+        "Jogre": {
+          "droprate": "1/9012.8"
+        },
+        "Giant Sea Snake": {
+          "droprate": "1/9581.7"
+        },
+        "Sea Snake Young": {
+          "droprate": "1/9581.7"
+        },
+        "Mogre": {
+          "droprate": "1/10318.8"
+        },
+        "Martin the Master Gardener": {
+          "droprate": "1/10417"
+        },
+        "Hobgoblin Armed (m)": {
+          "droprate": "1/11178.7"
+        },
+        "Drake": {
+          "droprate": "1/11263.3"
+        },
+        "Ice troll female Variant 1": {
+          "droprate": "1/12194.9"
+        },
+        "Ice troll grunt": {
+          "droprate": "1/12194.9"
+        },
+        "Ice troll male Variant 1": {
+          "droprate": "1/12194.9"
+        },
+        "Ice troll runt Variant 1": {
+          "droprate": "1/12194.9"
+        },
+        "Sourhog": {
+          "droprate": "1/12808.9"
+        },
+        "Araxyte Level 146": {
+          "droprate": "1/13309.6"
+        },
+        "Araxyte Level 96": {
+          "droprate": "1/13309.6"
+        },
+        "Chest (Aldarin Villas)": {
+          "droprate": "1/14567.2"
+        },
+        "Dagannoth (Waterbirth Island) Level 88": {
+          "droprate": "1/15502.2"
+        },
+        "Dagannoth (Waterbirth Island) Level 90": {
+          "droprate": "1/15502.2"
+        },
+        "Giant Rock Crab": {
+          "droprate": "1/15502.2"
+        },
+        "King Sand Crab": {
+          "droprate": "1/15502.2"
+        },
+        "Wallasalki": {
+          "droprate": "1/15502.2"
+        },
+        "Ice giant Regular (m)": {
+          "droprate": "1/16768"
+        },
+        "Temple Spider": {
+          "droprate": "1/17466.7"
+        },
+        "Chest (Bryophyta's lair) Members": {
+          "droprate": "1/20610.7"
+        },
+        "Stone chest": {
+          "droprate": "1/20960"
+        },
+        "Pygmy kraken": {
+          "droprate": "1/21169.6"
+        },
+        "Ogress Shaman (m)": {
+          "droprate": "1/24313.6"
+        },
+        "Ogress Warrior (m)": {
+          "droprate": "1/24313.6"
+        },
+        "Cyclops Warriors' Guild Basement": {
+          "droprate": "1/34933.3"
+        },
+        "Obor Members": {
+          "droprate": "1/82812"
+        },
+        "Black Knight Titan": {
+          "droprate": "1/88888"
+        },
+        "Ankou Wilderness Slayer Cave": {
+          "droprate": "1/96416"
+        },
+        "Vyrewatch Sentinel": {
+          "droprate": "1/97464"
+        },
+        "Ankou Regular": {
+          "droprate": "1/104800"
+        },
+        "Cyclops (Catacombs of Kourend)": {
+          "droprate": "1/104800"
+        },
+        "Cyclops (God Wars Dungeon)": {
+          "droprate": "1/104800"
+        },
+        "Cyclops Warriors' Guild Rooftop": {
+          "droprate": "1/104800"
+        },
+        "Vyrewatch": {
+          "droprate": "1/1050000"
+        },
+        "Skeleton (Lucien's camp)": {
+          "droprate": "1/1650000"
+        },
+        "Skeleton (Shayzien Crypts)": {
+          "droprate": "1/1650000"
+        },
+        "Zombie (Shayzien Crypts)": {
+          "droprate": "1/1650000"
+        },
+        "Reward Cart": {
+          "droprate": "Varies"
+        },
+        "Master Farmer": {
+          "droprate": "1/9271.98–1/19176.14"
+        }
+      }
+    }
   },
   {
     "index": 4040,
@@ -106455,18 +108496,22 @@
     "name": "Toxic blowpipe (empty)",
     "image": "toxic_blowpipe_(empty).png",
     "sources": {
-        "other": {
-            "Creating an uncharged toxic staff": {
-            "notes": "Requires a tanzanite fang and a chisel.",
-            "rule": {
-                "all": [
-                {"has": 12922},
-                {"has": 1755},
-                "canTrainFletching"
-                ]
-            }
-            }
+      "other": {
+        "Creating an uncharged toxic staff": {
+          "notes": "Requires a tanzanite fang and a chisel.",
+          "rule": {
+            "all": [
+              {
+                "has": 12922
+              },
+              {
+                "has": 1755
+              },
+              "canTrainFletching"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -106475,19 +108520,25 @@
     "name": "Toxic staff (uncharged)",
     "image": "toxic_staff_(uncharged).png",
     "sources": {
-        "other": {
-            "Creating an uncharged toxic staff": {
-            "notes": "Requires a staff of the dead, a magic fang, and a chisel.",
-            "rule": {
-                "all": [
-                {"has": 11791},
-                {"has": 12932},
-                {"has": 1755},
-                "canTrainCrafting"
-                ]
-            }
-            }
+      "other": {
+        "Creating an uncharged toxic staff": {
+          "notes": "Requires a staff of the dead, a magic fang, and a chisel.",
+          "rule": {
+            "all": [
+              {
+                "has": 11791
+              },
+              {
+                "has": 12932
+              },
+              {
+                "has": 1755
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -106497,17 +108548,21 @@
     "image": "toy_cat.png",
     "sources": {
       "other": {
-            "Craft a toy cat": {
-            "notes": "Requires a plank and a clockwork.",
-            "rule": {
-                "all": [
-                {"has": 960},
-                {"has": 8792},
-                "canTrainCrafting"
-                ]
-            }
-            }
+        "Craft a toy cat": {
+          "notes": "Requires a plank and a clockwork.",
+          "rule": {
+            "all": [
+              {
+                "has": 960
+              },
+              {
+                "has": 8792
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -106517,17 +108572,21 @@
     "image": "toy_doll.png",
     "sources": {
       "other": {
-            "Craft a toy doll": {
-            "notes": "Requires a plank and a clockwork.",
-            "rule": {
-                "all": [
-                {"has": 960},
-                {"has": 8792},
-                "canTrainCrafting"
-                ]
-            }
-            }
+        "Craft a toy doll": {
+          "notes": "Requires a plank and a clockwork.",
+          "rule": {
+            "all": [
+              {
+                "has": 960
+              },
+              {
+                "has": 8792
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -106537,15 +108596,17 @@
     "image": "toy_doll.png",
     "sources": {
       "other": {
-            "Wind a toy doll": {
-            "notes": "Requires a toy doll.",
-            "rule": {
-                "all": [
-                {"has": 7763}
-                ]
-            }
-            }
+        "Wind a toy doll": {
+          "notes": "Requires a toy doll.",
+          "rule": {
+            "all": [
+              {
+                "has": 7763
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -106566,17 +108627,21 @@
         }
       },
       "other": {
-            "Craft a toy mouse": {
-            "notes": "Requires a plank and a clockwork.",
-            "rule": {
-                "all": [
-                {"has": 960},
-                {"has": 8792},
-                "canTrainCrafting"
-                ]
-            }
-            }
+        "Craft a toy mouse": {
+          "notes": "Requires a plank and a clockwork.",
+          "rule": {
+            "all": [
+              {
+                "has": 960
+              },
+              {
+                "has": 8792
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -106597,15 +108662,17 @@
         }
       },
       "other": {
-            "Wind a toy mouse": {
-            "notes": "Requires a toy mouse.",
-            "rule": {
-                "all": [
-                {"has": 7767}
-                ]
-            }
-            }
+        "Wind a toy mouse": {
+          "notes": "Requires a toy mouse.",
+          "rule": {
+            "all": [
+              {
+                "has": 7767
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -106614,18 +108681,22 @@
     "name": "Toy soldier",
     "image": "toy_soldier.png",
     "sources": {
-        "other": {
-            "Craft a toy soldier": {
-            "notes": "Requires a plank and a clockwork.",
-            "rule": {
-                "all": [
-                {"has": 960},
-                {"has": 8792},
-                "canTrainCrafting"
-                ]
-            }
-            }
+      "other": {
+        "Craft a toy soldier": {
+          "notes": "Requires a plank and a clockwork.",
+          "rule": {
+            "all": [
+              {
+                "has": 960
+              },
+              {
+                "has": 8792
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -106634,16 +108705,18 @@
     "name": "Toy soldier (wound)",
     "image": "toy_soldier.png",
     "sources": {
-        "other": {
-            "Wind a toy soldier": {
-            "notes": "Requires a toy soldier.",
-            "rule": {
-                "all": [
-                {"has": 7759}
-                ]
-            }
-            }
+      "other": {
+        "Wind a toy soldier": {
+          "notes": "Requires a toy soldier.",
+          "rule": {
+            "all": [
+              {
+                "has": 7759
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -106666,14 +108739,14 @@
           "droprate": "1/8"
         }
       },
-        "other": {
-            "Sell gems to Gabooty": {
-            "notes": "Requires any gems."
-            },
-            "Tai Bwo Wannai Cleanup": {
-            "notes": "Reward from the minigame."
-            }
+      "other": {
+        "Sell gems to Gabooty": {
+          "notes": "Requires any gems."
+        },
+        "Tai Bwo Wannai Cleanup": {
+          "notes": "Reward from the minigame."
         }
+      }
     }
   },
   {
@@ -106681,337 +108754,428 @@
     "id": 25056,
     "name": "Trailblazer banner",
     "image": "trailblazer_banner.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4060,
     "id": 25037,
     "name": "Trailblazer boots (t1)",
     "image": "trailblazer_boots_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4061,
     "id": 25025,
     "name": "Trailblazer boots (t2)",
     "image": "trailblazer_boots_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4062,
     "id": 25010,
     "name": "Trailblazer boots (t3)",
     "image": "trailblazer_boots_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4063,
     "id": 25013,
     "name": "Trailblazer cane",
     "image": "trailblazer_cane.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4064,
     "id": 25093,
     "name": "Trailblazer globe",
     "image": "trailblazer_globe.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4065,
     "id": 25099,
     "name": "Trailblazer graceful ornament kit",
     "image": "trailblazer_graceful_ornament_kit.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4066,
     "id": 25028,
     "name": "Trailblazer hood (t1)",
     "image": "trailblazer_hood_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4067,
     "id": 25016,
     "name": "Trailblazer hood (t2)",
     "image": "trailblazer_hood_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4068,
     "id": 25001,
     "name": "Trailblazer hood (t3)",
     "image": "trailblazer_hood_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4069,
     "id": 25380,
     "name": "Trailblazer relic hunter (t1) armour set",
     "image": "trailblazer_relic_hunter_(t1)_armour_set.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4070,
     "id": 25383,
     "name": "Trailblazer relic hunter (t2) armour set",
     "image": "trailblazer_relic_hunter_(t2)_armour_set.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4071,
     "id": 25386,
     "name": "Trailblazer relic hunter (t3) armour set",
     "image": "trailblazer_relic_hunter_(t3)_armour_set.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4072,
     "id": 28693,
     "name": "Trailblazer reloaded alchemy scroll",
     "image": "trailblazer_reloaded_alchemy_scroll.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4073,
     "id": 28702,
     "name": "Trailblazer reloaded banner",
     "image": "trailblazer_reloaded_banner.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4074,
     "id": 28690,
     "name": "Trailblazer reloaded blowpipe ornament kit",
     "image": "trailblazer_reloaded_blowpipe_ornament_kit.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4075,
     "id": 28721,
     "name": "Trailblazer reloaded boots (t1)",
     "image": "trailblazer_reloaded_boots_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4076,
     "id": 28733,
     "name": "Trailblazer reloaded boots (t2)",
     "image": "trailblazer_reloaded_boots_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4077,
     "id": 28745,
     "name": "Trailblazer reloaded boots (t3)",
     "image": "trailblazer_reloaded_boots_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4078,
     "id": 28684,
     "name": "Trailblazer reloaded bulwark ornament kit",
     "image": "trailblazer_reloaded_bulwark_ornament_kit.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4079,
     "id": 28699,
     "name": "Trailblazer reloaded death scroll",
     "image": "trailblazer_reloaded_death_scroll.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4080,
     "id": 28712,
     "name": "Trailblazer reloaded headband (t1)",
     "image": "trailblazer_reloaded_headband_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4081,
     "id": 28724,
     "name": "Trailblazer reloaded headband (t2)",
     "image": "trailblazer_reloaded_headband_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4082,
     "id": 28736,
     "name": "Trailblazer reloaded headband (t3)",
     "image": "trailblazer_reloaded_headband_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4083,
     "id": 28705,
     "name": "Trailblazer reloaded home teleport scroll",
     "image": "trailblazer_reloaded_home_teleport_scroll.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4084,
     "id": 28708,
     "name": "Trailblazer reloaded rejuvenation pool scroll",
     "image": "trailblazer_reloaded_rejuvenation_pool_scroll.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4085,
     "id": 28777,
     "name": "Trailblazer reloaded relic hunter (t1) armour set",
     "image": "trailblazer_reloaded_relic_hunter_(t1)_armour_set.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4086,
     "id": 28780,
     "name": "Trailblazer reloaded relic hunter (t2) armour set",
     "image": "trailblazer_reloaded_relic_hunter_(t2)_armour_set.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4087,
     "id": 28783,
     "name": "Trailblazer reloaded relic hunter (t3) armour set",
     "image": "trailblazer_reloaded_relic_hunter_(t3)_armour_set.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4088,
     "id": 28715,
     "name": "Trailblazer reloaded top (t1)",
     "image": "trailblazer_reloaded_top_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4089,
     "id": 28727,
     "name": "Trailblazer reloaded top (t2)",
     "image": "trailblazer_reloaded_top_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4090,
     "id": 28739,
     "name": "Trailblazer reloaded top (t3)",
     "image": "trailblazer_reloaded_top_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4091,
     "id": 28748,
     "name": "Trailblazer reloaded torch",
     "image": "trailblazer_reloaded_torch.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4092,
     "id": 28718,
     "name": "Trailblazer reloaded trousers (t1)",
     "image": "trailblazer_reloaded_trousers_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4093,
     "id": 28730,
     "name": "Trailblazer reloaded trousers (t2)",
     "image": "trailblazer_reloaded_trousers_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4094,
     "id": 28742,
     "name": "Trailblazer reloaded trousers (t3)",
     "image": "trailblazer_reloaded_trousers_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4095,
     "id": 28696,
     "name": "Trailblazer reloaded vengeance scroll",
     "image": "trailblazer_reloaded_vengeance_scroll.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4096,
     "id": 25096,
     "name": "Trailblazer rug",
     "image": "trailblazer_rug.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4097,
     "id": 25087,
     "name": "Trailblazer teleport scroll",
     "image": "trailblazer_teleport_scroll.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4098,
     "id": 25090,
     "name": "Trailblazer tool ornament kit",
     "image": "trailblazer_tool_ornament_kit.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4099,
     "id": 25031,
     "name": "Trailblazer top (t1)",
     "image": "trailblazer_top_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4100,
     "id": 25019,
     "name": "Trailblazer top (t2)",
     "image": "trailblazer_top_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4101,
     "id": 25004,
     "name": "Trailblazer top (t3)",
     "image": "trailblazer_top_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4102,
     "id": 25034,
     "name": "Trailblazer trousers (t1)",
     "image": "trailblazer_trousers_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4103,
     "id": 25022,
     "name": "Trailblazer trousers (t2)",
     "image": "trailblazer_trousers_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4104,
     "id": 25007,
     "name": "Trailblazer trousers (t3)",
     "image": "trailblazer_trousers_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4105,
     "id": 29277,
     "name": "Trapper's tipple",
     "image": "trapper's_tipple.png",
-    "sources": { 
-        "spawns": {
-                    "Yes": "canTrainHunter"
-        },
-        "shops": {
-                    "Yes": "canTrainHunter"
-        }
+    "sources": {
+      "spawns": {
+        "Yes": "canTrainHunter"
+      },
+      "shops": {
+        "Yes": "canTrainHunter"
+      }
     }
-            
   },
   {
     "index": 4106,
@@ -107099,9 +109263,11 @@
     "name": "Tribal top (blue)",
     "image": "tribal_top_(blue).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -107110,9 +109276,11 @@
     "name": "Tribal top (brown)",
     "image": "tribal_top_(brown).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -107121,9 +109289,11 @@
     "name": "Tribal top (pink)",
     "image": "tribal_top_(pink).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -107132,9 +109302,11 @@
     "name": "Tribal top (yellow)",
     "image": "tribal_top_(yellow).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -107192,9 +109364,9 @@
     "name": "Trousers (blue)",
     "image": "trousers_(blue).png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -107203,9 +109375,9 @@
     "name": "Trousers (brown)",
     "image": "trousers_(brown).png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -107214,11 +109386,10 @@
     "name": "Trousers (lilac)",
     "image": "trousers_(lilac).png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
-            
   },
   {
     "index": 4123,
@@ -107258,17 +109429,19 @@
           "droprate": "1/50.5"
         }
       },
-        "other": {
-            "Cooking": {
-            "notes": "Requires raw trout.",
-            "rule": {
-                "all": [
-                {"has": 335},
-                "canTrainCooking"
-                ]
-            }
-            }
+      "other": {
+        "Cooking": {
+          "notes": "Requires raw trout.",
+          "rule": {
+            "all": [
+              {
+                "has": 335
+              },
+              "canTrainCooking"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -107315,9 +109488,9 @@
           "droprate": "1/1790.3"
         }
       },
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -107380,20 +109553,22 @@
           "droprate": "1/42.667"
         }
       },
-        "shops": {
-                    "Yes": "No requirements"
-        },
-        "other": {
-            "Cooking": {
-            "notes": "Requires raw tuna.",
-            "rule": {
-                "all": [
-                {"has": 359},
-                "canTrainCooking"
-                ]
-            }
-            }
+      "shops": {
+        "Yes": "No requirements"
+      },
+      "other": {
+        "Cooking": {
+          "notes": "Requires raw tuna.",
+          "rule": {
+            "all": [
+              {
+                "has": 359
+              },
+              "canTrainCooking"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -107402,29 +109577,48 @@
     "name": "Tuna and corn",
     "image": "tuna_and_corn.png",
     "sources": {
-        "other": {
-            "Cooking": {
-            "notes": "Requires sweetcorn (bowl) and tuna, or sweetcorn (bowl) and chopped tuna, or cooked sweetcorn and chopped tuna.",
-            "rule": {
-              "any":[
-                {"all": [
-                {"has": 7088},
-                {"has": 361},
-                "canTrainCooking"
-                ]},
-                {"all": [
-                {"has": 7088},
-                {"has": 7086},
-                "canTrainCooking"
-                ]},
-              {"all": [
-                {"has": 5988},
-                {"has": 7086},
-                "canTrainCooking"
-                ]}]
-            }
-            }
+      "other": {
+        "Cooking": {
+          "notes": "Requires sweetcorn (bowl) and tuna, or sweetcorn (bowl) and chopped tuna, or cooked sweetcorn and chopped tuna.",
+          "rule": {
+            "any": [
+              {
+                "all": [
+                  {
+                    "has": 7088
+                  },
+                  {
+                    "has": 361
+                  },
+                  "canTrainCooking"
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "has": 7088
+                  },
+                  {
+                    "has": 7086
+                  },
+                  "canTrainCooking"
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "has": 5988
+                  },
+                  {
+                    "has": 7086
+                  },
+                  "canTrainCooking"
+                ]
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -107459,18 +109653,22 @@
           "droprate": "1/35.667"
         }
       },
-        "other": {
-            "Cooking": {
-            "notes": "Requires Tuna and corn, and Potato with butter.",
-            "rule": {
-                "all": [
-                {"has": 7068},
-                {"has": 6703},
-                "canTrainCooking"
-                ]
-            }
-            }
+      "other": {
+        "Cooking": {
+          "notes": "Requires Tuna and corn, and Potato with butter.",
+          "rule": {
+            "all": [
+              {
+                "has": 7068
+              },
+              {
+                "has": 6703
+              },
+              "canTrainCooking"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -107479,9 +109677,9 @@
     "name": "Turquoise boots",
     "image": "turquoise_boots.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -107490,9 +109688,9 @@
     "name": "Turquoise hat",
     "image": "turquoise_hat.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -107501,9 +109699,9 @@
     "name": "Turquoise robe bottoms",
     "image": "turquoise_robe_bottoms.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -107512,11 +109710,10 @@
     "name": "Turquoise robe top",
     "image": "turquoise_robe_top.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
-          
   },
   {
     "index": 4133,
@@ -107524,55 +109721,70 @@
     "name": "Twinflame staff",
     "image": "twinflame_staff.png",
     "sources": {
-        "other": {
-            "Creating a twinflame staff": {
-            "notes": "Requires a Battlestaff, an ice element staff crown and a fire element staff crown.",
-            "rule": {
-                "all": [
-                {"has": 1391},
-                {"has": 30628},
-                {"has": 30631}
-                ]
-            }
-            }
+      "other": {
+        "Creating a twinflame staff": {
+          "notes": "Requires a Battlestaff, an ice element staff crown and a fire element staff crown.",
+          "rule": {
+            "all": [
+              {
+                "has": 1391
+              },
+              {
+                "has": 30628
+              },
+              {
+                "has": 30631
+              }
+            ]
+          }
         }
+      }
     }
-          
   },
   {
     "index": 4134,
     "id": 24413,
     "name": "Twisted banner",
     "image": "twisted_banner.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4135,
     "id": 24463,
     "name": "Twisted blueprints",
     "image": "twisted_blueprints.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4136,
     "id": 24411,
     "name": "Twisted boots (t1)",
     "image": "twisted_boots_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4137,
     "id": 24403,
     "name": "Twisted boots (t2)",
     "image": "twisted_boots_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4138,
     "id": 24393,
     "name": "Twisted boots (t3)",
     "image": "twisted_boots_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4139,
@@ -107605,77 +109817,99 @@
     "id": 24395,
     "name": "Twisted cane",
     "image": "twisted_cane.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4142,
     "id": 24407,
     "name": "Twisted coat (t1)",
     "image": "twisted_coat_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4143,
     "id": 24399,
     "name": "Twisted coat (t2)",
     "image": "twisted_coat_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4144,
     "id": 24389,
     "name": "Twisted coat (t3)",
     "image": "twisted_coat_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4145,
     "id": 24405,
     "name": "Twisted hat (t1)",
     "image": "twisted_hat_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4146,
     "id": 24397,
     "name": "Twisted hat (t2)",
     "image": "twisted_hat_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4147,
     "id": 24387,
     "name": "Twisted hat (t3)",
     "image": "twisted_hat_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4148,
     "id": 24466,
     "name": "Twisted horns",
     "image": "twisted_horns.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4149,
     "id": 24469,
     "name": "Twisted relic hunter (t1) armour set",
     "image": "twisted_relic_hunter_(t1)_armour_set.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4150,
     "id": 24472,
     "name": "Twisted relic hunter (t2) armour set",
     "image": "twisted_relic_hunter_(t2)_armour_set.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4151,
     "id": 24475,
     "name": "Twisted relic hunter (t3) armour set",
     "image": "twisted_relic_hunter_(t3)_armour_set.png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4152,
@@ -107688,21 +109922,27 @@
     "id": 24409,
     "name": "Twisted trousers (t1)",
     "image": "twisted_trousers_(t1).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4154,
     "id": 24401,
     "name": "Twisted trousers (t2)",
     "image": "twisted_trousers_(t2).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4155,
     "id": 24391,
     "name": "Twisted trousers (t3)",
     "image": "twisted_trousers_(t3).png",
-    "tags": ["leagues"]
+    "tags": [
+      "leagues"
+    ]
   },
   {
     "index": 4156,
@@ -107726,9 +109966,9 @@
     "name": "Tyras helm",
     "image": "tyras_helm.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -107737,9 +109977,9 @@
     "name": "Tzhaar-ket-em",
     "image": "tzhaar-ket-em.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -107756,9 +109996,9 @@
           "droprate": "1/512"
         }
       },
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -107783,22 +110023,35 @@
     "name": "Ugthanki & onion",
     "image": "ugthanki_&_onion.png",
     "sources": {
-        "other": {
-            "Cooking meat": {
-            "notes": "Requires Chopped onion and Ugthanki meat or an onion and chopped ugthanki.",
-            "rule": {
-              "any":[
-                {"all": [
-                {"has": 1871},
-                {"has": 1861}
-                ]},
-                {"all": [
-                {"has": 1957},
-                {"has": 1873}
-                ]}]
-            }
-            }
+      "other": {
+        "Cooking meat": {
+          "notes": "Requires Chopped onion and Ugthanki meat or an onion and chopped ugthanki.",
+          "rule": {
+            "any": [
+              {
+                "all": [
+                  {
+                    "has": 1871
+                  },
+                  {
+                    "has": 1861
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "has": 1957
+                  },
+                  {
+                    "has": 1873
+                  }
+                ]
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -107807,22 +110060,35 @@
     "name": "Ugthanki & tomato",
     "image": "ugthanki_&_tomato.png",
     "sources": {
-        "other": {
-            "Cooking meat": {
-            "notes": "Requires Chopped tomato and Ugthanki meat or a tomato and chopped ugthanki.",
-            "rule": {
-              "any":[
-                {"all": [
-                {"has": 1869},
-                {"has": 1861}
-                ]},
-                {"all": [
-                {"has": 1982},
-                {"has": 1873}
-                ]}]
-            }
-            }
+      "other": {
+        "Cooking meat": {
+          "notes": "Requires Chopped tomato and Ugthanki meat or a tomato and chopped ugthanki.",
+          "rule": {
+            "any": [
+              {
+                "all": [
+                  {
+                    "has": 1869
+                  },
+                  {
+                    "has": 1861
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "has": 1982
+                  },
+                  {
+                    "has": 1873
+                  }
+                ]
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -107857,17 +110123,21 @@
           "droprate": "1/107"
         }
       },
-        "other": {
-            "Cooking a kebab": {
-            "notes": "Requires kebab mix and pitta bread.",
-            "rule": {
-                "all": [
-                {"has": 1881},
-                {"has": 1865}
-                ]
-            }
-            }
+      "other": {
+        "Cooking a kebab": {
+          "notes": "Requires kebab mix and pitta bread.",
+          "rule": {
+            "all": [
+              {
+                "has": 1881
+              },
+              {
+                "has": 1865
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -107876,16 +110146,18 @@
     "name": "Ugthanki meat",
     "image": "ugthanki_meat.png",
     "sources": {
-        "other": {
-            "Cooking meat": {
-            "notes": "Requires Raw ugthanki meat.",
-            "rule": {
-                "all": [
-                {"has": 1859}
-                ]
-            }
-            }
+      "other": {
+        "Cooking meat": {
+          "notes": "Requires Raw ugthanki meat.",
+          "rule": {
+            "all": [
+              {
+                "has": 1859
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -107894,19 +110166,25 @@
     "name": "Ultor ring",
     "image": "ultor_ring.png",
     "sources": {
-        "other": {
-            "Creating an ultor ring": {
-            "notes": "Requires a ultor icon and a chromium ingot.",
-            "rule": {
-                "all": [
-                {"has": 565},
-                {"has": 28295},
-                {"has": 28276},
-                "canTrainCrafting"
-                ]
-            }
-            }
+      "other": {
+        "Creating an ultor ring": {
+          "notes": "Requires a ultor icon and a chromium ingot.",
+          "rule": {
+            "all": [
+              {
+                "has": 565
+              },
+              {
+                "has": 28295
+              },
+              {
+                "has": 28276
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -107914,20 +110192,23 @@
     "id": 21483,
     "name": "Ultracompost",
     "image": "ultracompost.png",
-    "sources": { 
-        "other": {
-            "Creating ultracompost": {
-            "notes": "Requires supercompost and volcanic ash.",
-            "rule": {
-                "all": [
-                {"has": 6034},
-                {"has": 21622}
-                ]
-            }
-            }
+    "sources": {
+      "other": {
+        "Creating ultracompost": {
+          "notes": "Requires supercompost and volcanic ash.",
+          "rule": {
+            "all": [
+              {
+                "has": 6034
+              },
+              {
+                "has": 21622
+              }
+            ]
+          }
         }
+      }
     }
-            
   },
   {
     "index": 4167,
@@ -108054,16 +110335,20 @@
         }
       },
       "other": {
-            "Creating an unblessed symbol": {
-            "notes": "Requires an Unstrung symbol and a ball of wool",
-            "rule": {
-                "all": [
-                {"has": 1714},
-                {"has": 1759}
-                ]
-            }
-            }
+        "Creating an unblessed symbol": {
+          "notes": "Requires an Unstrung symbol and a ball of wool",
+          "rule": {
+            "all": [
+              {
+                "has": 1714
+              },
+              {
+                "has": 1759
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -108072,19 +110357,25 @@
     "name": "Uncharged toxic trident",
     "image": "uncharged_toxic_trident.png",
     "sources": {
-        "other": {
-            "Creating an uncharged toxic trident": {
-            "notes": "Requires an uncharged trident, a magic fang and a chisel.",
-            "rule": {
-                "all": [
-                {"has": 11908},
-                {"has": 12932},
-                {"has": 1755},
-                "canTrainCrafting"
-                ]
-            }
-            }
+      "other": {
+        "Creating an uncharged toxic trident": {
+          "notes": "Requires an uncharged trident, a magic fang and a chisel.",
+          "rule": {
+            "all": [
+              {
+                "has": 11908
+              },
+              {
+                "has": 12932
+              },
+              {
+                "has": 1755
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -108093,17 +110384,21 @@
     "name": "Uncharged toxic trident (e)",
     "image": "uncharged_toxic_trident_(e).png",
     "sources": {
-        "other": {
-            "Creating an uncharged toxic trident (e)": {
-            "notes": "Requires an uncharged toxic trident and a kraken tentacle.",
-            "rule": {
-                "all": [
-                {"has": 12900},
-                {"has": 12004}
-                ]
-            }
-            }
+      "other": {
+        "Creating an uncharged toxic trident (e)": {
+          "notes": "Requires an uncharged toxic trident and a kraken tentacle.",
+          "rule": {
+            "all": [
+              {
+                "has": 12900
+              },
+              {
+                "has": 12004
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -108125,17 +110420,21 @@
     "name": "Uncharged trident (e)",
     "image": "uncharged_trident_(e).png",
     "sources": {
-        "other": {
-            "Creating an uncharged trident (e)": {
-            "notes": "Requires an uncharged trident and a kraken tentacle.",
-            "rule": {
-                "all": [
-                {"has": 11908},
-                {"has": 12004}
-                ]
-            }
-            }
+      "other": {
+        "Creating an uncharged trident (e)": {
+          "notes": "Requires an uncharged trident and a kraken tentacle.",
+          "rule": {
+            "all": [
+              {
+                "has": 11908
+              },
+              {
+                "has": 12004
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -108144,18 +110443,22 @@
     "name": "Uncooked apple pie",
     "image": "uncooked_apple_pie.png",
     "sources": {
-        "other": {
-            "Creating an uncooked pie": {
-            "notes": "Requires a cooking apple and a pie shell.",
-            "rule": {
-                "all": [
-                {"has": 1955},
-                {"has": 2315},
-                "canTrainCooking"
-                ]
-            }
-            }
+      "other": {
+        "Creating an uncooked pie": {
+          "notes": "Requires a cooking apple and a pie shell.",
+          "rule": {
+            "all": [
+              {
+                "has": 1955
+              },
+              {
+                "has": 2315
+              },
+              "canTrainCooking"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -108164,18 +110467,22 @@
     "name": "Uncooked berry pie",
     "image": "uncooked_berry_pie.png",
     "sources": {
-        "other": {
-            "Creating an uncooked pie": {
-            "notes": "Requires Redberries and a pie shell.",
-            "rule": {
-                "all": [
-                {"has": 1951},
-                {"has": 2315},
-                "canTrainCooking"
-                ]
-            }
-            }
+      "other": {
+        "Creating an uncooked pie": {
+          "notes": "Requires Redberries and a pie shell.",
+          "rule": {
+            "all": [
+              {
+                "has": 1951
+              },
+              {
+                "has": 2315
+              },
+              "canTrainCooking"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -108184,18 +110491,22 @@
     "name": "Uncooked botanical pie",
     "image": "uncooked_botanical_pie.png",
     "sources": {
-        "other": {
-            "Creating an uncooked pie": {
-            "notes": "Requires a Golovanova fruit top and a pie shell.",
-            "rule": {
-                "all": [
-                {"has": 19653},
-                {"has": 2315},
-                "canTrainCooking"
-                ]
-            }
-            }
+      "other": {
+        "Creating an uncooked pie": {
+          "notes": "Requires a Golovanova fruit top and a pie shell.",
+          "rule": {
+            "all": [
+              {
+                "has": 19653
+              },
+              {
+                "has": 2315
+              },
+              "canTrainCooking"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -108204,18 +110515,22 @@
     "name": "Uncooked dragonfruit pie",
     "image": "uncooked_dragonfruit_pie.png",
     "sources": {
-        "other": {
-            "Creating an uncooked pie": {
-            "notes": "Requires a Dragonfruit and a pie shell.",
-            "rule": {
-                "all": [
-                {"has": 22929},
-                {"has": 2315},
-                "canTrainCooking"
-                ]
-            }
-            }
+      "other": {
+        "Creating an uncooked pie": {
+          "notes": "Requires a Dragonfruit and a pie shell.",
+          "rule": {
+            "all": [
+              {
+                "has": 22929
+              },
+              {
+                "has": 2315
+              },
+              "canTrainCooking"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -108224,18 +110539,22 @@
     "name": "Uncooked egg",
     "image": "uncooked_egg.png",
     "sources": {
-        "other": {
-            "Creating an uncooked egg": {
-            "notes": "Requires an egg and a bowl.",
-            "rule": {
-                "all": [
-                {"has": 1944},
-                {"has": 1923},
-                "canTrainCooking"
-                ]
-            }
-            }
+      "other": {
+        "Creating an uncooked egg": {
+          "notes": "Requires an egg and a bowl.",
+          "rule": {
+            "all": [
+              {
+                "has": 1944
+              },
+              {
+                "has": 1923
+              },
+              "canTrainCooking"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -108244,21 +110563,29 @@
     "name": "Uncooked meat pie",
     "image": "uncooked_meat_pie.png",
     "sources": {
-        "other": {
-            "Creating an uncooked pie": {
-            "notes": "Requires a cooked meat or chicken and a pie shell.",
-            "rule": {
-                "all": [
-                  {"any": [
-                    {"has": 2142},
-                    {"has": 2140}
-                  ]},
-                {"has": 2315},
-                "canTrainCooking"
+      "other": {
+        "Creating an uncooked pie": {
+          "notes": "Requires a cooked meat or chicken and a pie shell.",
+          "rule": {
+            "all": [
+              {
+                "any": [
+                  {
+                    "has": 2142
+                  },
+                  {
+                    "has": 2140
+                  }
                 ]
-            }
-            }
+              },
+              {
+                "has": 2315
+              },
+              "canTrainCooking"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -108267,18 +110594,22 @@
     "name": "Uncooked mushroom pie",
     "image": "uncooked_mushroom_pie.png",
     "sources": {
-        "other": {
-            "Creating an uncooked mushroom pie": {
-            "notes": "Requires a Sulliuscep cap and a pie shell.",
-            "rule": {
-                "all": [
-                {"has": 21626},
-                {"has": 2315},
-                "canTrainCooking"
-                ]
-            }
-            }
+      "other": {
+        "Creating an uncooked mushroom pie": {
+          "notes": "Requires a Sulliuscep cap and a pie shell.",
+          "rule": {
+            "all": [
+              {
+                "has": 21626
+              },
+              {
+                "has": 2315
+              },
+              "canTrainCooking"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -109062,9 +111393,9 @@
           "droprate": "Uncommon"
         }
       },
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -109178,19 +111509,27 @@
         }
       },
       "other": {
-            "Panning at the Dig Site": {
-            "notes": "Requires a cup of tea or cup of tea (nettle)",
-            "rule": {
-                "any": [
-                {"has": 1978},
-                {"all": [
-                  {"has": 1980},
-                  {"has": 1921}
-                ]}
-              ]
-            }
-            }
+        "Panning at the Dig Site": {
+          "notes": "Requires a cup of tea or cup of tea (nettle)",
+          "rule": {
+            "any": [
+              {
+                "has": 1978
+              },
+              {
+                "all": [
+                  {
+                    "has": 1980
+                  },
+                  {
+                    "has": 1921
+                  }
+                ]
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -109225,9 +111564,9 @@
           "droprate": "40 × 1/100000000"
         }
       },
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -109344,19 +111683,27 @@
         }
       },
       "other": {
-            "Panning at the Dig Site": {
-            "notes": "Requires a cup of tea or cup of tea (nettle)",
-            "rule": {
-                "any": [
-                {"has": 1978},
-                {"all": [
-                  {"has": 1980},
-                  {"has": 1921}
-                ]}
-              ]
-            }
-            }
+        "Panning at the Dig Site": {
+          "notes": "Requires a cup of tea or cup of tea (nettle)",
+          "rule": {
+            "any": [
+              {
+                "has": 1978
+              },
+              {
+                "all": [
+                  {
+                    "has": 1980
+                  },
+                  {
+                    "has": 1921
+                  }
+                ]
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -109503,10 +111850,10 @@
         }
       },
       "other": {
-            "Searching boxes": {
-            "notes": "Various decorative scenery objects can be searched for a 1/1,000 chance to receive an uncut red topaz."
-            }
+        "Searching boxes": {
+          "notes": "Various decorative scenery objects can be searched for a 1/1,000 chance to receive an uncut red topaz."
         }
+      }
     }
   },
   {
@@ -109875,11 +112222,11 @@
         }
       },
       "spawns": {
-                    "Yes": "canCompletePandemonium"
-        },
-        "shops": {
-                    "Yes": "No requirements"
-        }
+        "Yes": "canCompletePandemonium"
+      },
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -110191,11 +112538,11 @@
         }
       },
       "spawns": {
-                    "Yes": "No requirements"
-        },
-        "shops": {
-                    "Yes": "No requirements"
-        }
+        "Yes": "No requirements"
+      },
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -110453,17 +112800,19 @@
           "droprate": "1/26"
         }
       },
-        "other": {
-            "Creating an unholy symbol": {
-            "notes": "Requires an unpowered symbol.",
-            "rule": {
-                "all": [
-                {"has": 1722},
-                "canCompleteHorrorFromTheDeep"
-                ]
-            }
-            }
+      "other": {
+        "Creating an unholy symbol": {
+          "notes": "Requires an unpowered symbol.",
+          "rule": {
+            "all": [
+              {
+                "has": 1722
+              },
+              "canCompleteHorrorFromTheDeep"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -110541,17 +112890,21 @@
           "droprate": "1/64"
         }
       },
-        "other": {
-            "Creating unicorn horn dust": {
-            "notes": "Requires a unicorn horn and a pestle and mortar.",
-            "rule": {
-                "all": [
-                {"has": 237},
-                {"has": 233}
-                ]
-            }
-            }
+      "other": {
+        "Creating unicorn horn dust": {
+          "notes": "Requires a unicorn horn and a pestle and mortar.",
+          "rule": {
+            "all": [
+              {
+                "has": 237
+              },
+              {
+                "has": 233
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -110559,15 +112912,14 @@
     "id": 7051,
     "name": "Unlit bug lantern",
     "image": "unlit_bug_lantern.png",
-    "sources": { 
-        "spawns": {
-                    "Yes": "canCompleteTheHeartOfDarkness"
-        },
-        "shops": {
-                    "Yes": "No requirements"
-        }
+    "sources": {
+      "spawns": {
+        "Yes": "canCompleteTheHeartOfDarkness"
+      },
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
-            
   },
   {
     "index": 4206,
@@ -110597,13 +112949,13 @@
         "Barrel (Shaman Caves)": {
           "droprate": "1/100"
         }
-      }, 
-        "spawns": {
-                    "Yes": "No requirements"
-        },
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      },
+      "spawns": {
+        "Yes": "No requirements"
+      },
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -110629,18 +112981,22 @@
           "droprate": "1/64"
         }
       },
-        "other": {
-            "Creating an unpowered orb": {
-            "notes": "Requires molten glass and a glassblowing pipe.",
-            "rule": {
-                "all": [
-                {"has": 1775},
-                {"has": 1785},
-                "canTrainCrafting"
-                ]
-            }
-            }
+      "other": {
+        "Creating an unpowered orb": {
+          "notes": "Requires molten glass and a glassblowing pipe.",
+          "rule": {
+            "all": [
+              {
+                "has": 1775
+              },
+              {
+                "has": 1785
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -110649,17 +113005,21 @@
     "name": "Unpowered symbol",
     "image": "unpowered_symbol.png",
     "sources": {
-        "other": {
-            "Creating an unpowered symbol": {
-            "notes": "Requires an unstrung emblem and a ball of wool.",
-            "rule": {
-                "all": [
-                {"has": 1720},
-                {"has": 1759}
-                ]
-            }
-            }
+      "other": {
+        "Creating an unpowered symbol": {
+          "notes": "Requires an unstrung emblem and a ball of wool.",
+          "rule": {
+            "all": [
+              {
+                "has": 1720
+              },
+              {
+                "has": 1759
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -110668,16 +113028,16 @@
     "name": "Unstrung comp bow",
     "image": "unstrung_comp_bow.png",
     "sources": {
-        "other": {
-            "Creating an unstrung comp bow": {
-            "notes": "Requires achey tree logs and wolf bones.",
-            "rule": {
-                "all": [
-                "canCompleteZogreFleshEaters"
-                ]
-            }
-            }
+      "other": {
+        "Creating an unstrung comp bow": {
+          "notes": "Requires achey tree logs and wolf bones.",
+          "rule": {
+            "all": [
+              "canCompleteZogreFleshEaters"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -110686,17 +113046,19 @@
     "name": "Unstrung emblem",
     "image": "unstrung_emblem.png",
     "sources": {
-        "other": {
-            "Creating an unstrung emblem": {
-            "notes": "Requires a silver bar and an unholy mould.",
-            "rule": {
-                "all": [
-                {"has": 2355},
-                "canTrainCrafting"
-                ]
-            }
-            }
+      "other": {
+        "Creating an unstrung emblem": {
+          "notes": "Requires a silver bar and an unholy mould.",
+          "rule": {
+            "all": [
+              {
+                "has": 2355
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -110705,18 +113067,22 @@
     "name": "Unstrung heavy ballista",
     "image": "unstrung_heavy_ballista.png",
     "sources": {
-        "other": {
-            "Creating a heavy ballista": {
-            "notes": "Requires a Incomplete heavy ballista and a Ballista spring.",
-            "rule": {
-                "all": [
-                {"has": 19598},
-                {"has": 19601},
-                "canTrainFletching"
-                ]
-            }
-            }
+      "other": {
+        "Creating a heavy ballista": {
+          "notes": "Requires a Incomplete heavy ballista and a Ballista spring.",
+          "rule": {
+            "all": [
+              {
+                "has": 19598
+              },
+              {
+                "has": 19601
+              },
+              "canTrainFletching"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -110725,18 +113091,22 @@
     "name": "Unstrung light ballista",
     "image": "unstrung_light_ballista.png",
     "sources": {
-        "other": {
-            "Creating a light ballista": {
-            "notes": "Requires a Incomplete light ballista and a Ballista spring.",
-            "rule": {
-                "all": [
-                {"has": 19595},
-                {"has": 19601},
-                "canTrainFletching"
-                ]
-            }
-            }
+      "other": {
+        "Creating a light ballista": {
+          "notes": "Requires a Incomplete light ballista and a Ballista spring.",
+          "rule": {
+            "all": [
+              {
+                "has": 19595
+              },
+              {
+                "has": 19601
+              },
+              "canTrainFletching"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -110750,21 +113120,25 @@
           "droprate": "1/64"
         }
       },
-        "shops": {
-                    "Yes": "No requirements"
-        },
-        "other": {
-            "Creating an unstrung symbol": {
-            "notes": "Requires a silver bar and a holy mould.",
-            "rule": {
-                "all": [
-                {"has": 2355},
-                {"has": 1599},
-                "canTrainCrafting"
-                ]
-            }
-            }
+      "shops": {
+        "Yes": "No requirements"
+      },
+      "other": {
+        "Creating an unstrung symbol": {
+          "notes": "Requires a silver bar and a holy mould.",
+          "rule": {
+            "all": [
+              {
+                "has": 2355
+              },
+              {
+                "has": 1599
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -110802,19 +113176,22 @@
     "name": "Ursine chainmace (u)",
     "image": "ursine_chainmace_(u).png",
     "sources": {
-        "other": {
-            "Creating an Ursine chainmace": {
-            "notes": "Requires a Viggora's chainmace (u) and Claws of callisto.",
-            "rule": {
-                "all": [
-                {"has": 22542},
-                {"has": 27667}
-                ]
-            }
-            }
+      "other": {
+        "Creating an Ursine chainmace": {
+          "notes": "Requires a Viggora's chainmace (u) and Claws of callisto.",
+          "rule": {
+            "all": [
+              {
+                "has": 22542
+              },
+              {
+                "has": 27667
+              }
+            ]
+          }
         }
+      }
     }
-        
   },
   {
     "index": 4217,
@@ -110860,11 +113237,10 @@
     "name": "Varlamorian kebab",
     "image": "varlamorian_kebab.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
-        
   },
   {
     "index": 4220,
@@ -110905,14 +113281,24 @@
         "Making a veg ball": {
           "notes": "Requires an unfinished bowl Equa leaves.",
           "rule": {
-                "all": [
-                {"has": 2166},                
-                {"has": 2171},
-                {"has": 1942},
-                {"has": 1957},
-                {"has": 2128}
-                ]
-            }
+            "all": [
+              {
+                "has": 2166
+              },
+              {
+                "has": 2171
+              },
+              {
+                "has": 1942
+              },
+              {
+                "has": 1957
+              },
+              {
+                "has": 2128
+              }
+            ]
+          }
         }
       }
     }
@@ -110923,23 +113309,39 @@
     "name": "Vegetable batta",
     "image": "vegetable_batta.png",
     "sources": {
-        "other": {
-            "Creating a vegetable batta": {
-            "notes": "Requires an unfinished batta and Equa leaves.",
-            "rule": {
-                "all": [
-                {"has": 2171},
-                {"has": 1982},
-                {"has": 1985},
-                {"has": 2126},
-                {"has": 1957},
-                {"has": 1965},
-                {"has": 2164},
-                {"has": 2128}
-                ]
-            }
-            }
+      "other": {
+        "Creating a vegetable batta": {
+          "notes": "Requires an unfinished batta and Equa leaves.",
+          "rule": {
+            "all": [
+              {
+                "has": 2171
+              },
+              {
+                "has": 1982
+              },
+              {
+                "has": 1985
+              },
+              {
+                "has": 2126
+              },
+              {
+                "has": 1957
+              },
+              {
+                "has": 1965
+              },
+              {
+                "has": 2164
+              },
+              {
+                "has": 2128
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -110948,16 +113350,18 @@
     "name": "Venator bow (uncharged)",
     "image": "venator_bow_(uncharged).png",
     "sources": {
-        "other": {
-            "Creating a venator bow": {
-            "notes": "Requires a Venator shard.",
-            "rule": {
-                "all": [
-                {"has": 27614}
-                ]
-            }
-            }
+      "other": {
+        "Creating a venator bow": {
+          "notes": "Requires a Venator shard.",
+          "rule": {
+            "all": [
+              {
+                "has": 27614
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -110966,21 +113370,26 @@
     "name": "Venator ring",
     "image": "venator_ring.png",
     "sources": {
-        "other": {
-            "Creating a venator ring": {
-            "notes": "Requires a venator icon and a chromium ingot.",
-            "rule": {
-                "all": [
-                {"has": 565},
-                {"has": 28298},
-                {"has": 28276},
-                "canTrainCrafting"
-                ]
-            }
-            }
+      "other": {
+        "Creating a venator ring": {
+          "notes": "Requires a venator icon and a chromium ingot.",
+          "rule": {
+            "all": [
+              {
+                "has": 565
+              },
+              {
+                "has": 28298
+              },
+              {
+                "has": 28276
+              },
+              "canTrainCrafting"
+            ]
+          }
         }
+      }
     }
-        
   },
   {
     "index": 4225,
@@ -111225,18 +113634,18 @@
         "Serum 207": {
           "droprate": "1/25.6"
         }
-      }, 
-        "spawns": {
-                    "Yes": "No requirements"
-                },
-        "shops": {
-                    "Yes": "No requirements"
-                },
-        "other": {
-          "Empty any filled vial":{
-            "Notes": "Requires any potion or filled vial"
-          }
+      },
+      "spawns": {
+        "Yes": "No requirements"
+      },
+      "shops": {
+        "Yes": "No requirements"
+      },
+      "other": {
+        "Empty any filled vial": {
+          "Notes": "Requires any potion or filled vial"
         }
+      }
     }
   },
   {
@@ -111376,13 +113785,13 @@
         "Tortured soul": {
           "droprate": "1/128"
         }
-      }, 
-        "spawns": {
-                    "Yes": "No requirements"
-                },
-        "shops": {
-                    "Yes": "No requirements"
-                }
+      },
+      "spawns": {
+        "Yes": "No requirements"
+      },
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -111555,9 +113964,11 @@
     "name": "Villager armband (blue)",
     "image": "villager_armband_(blue).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111566,9 +113977,11 @@
     "name": "Villager armband (brown)",
     "image": "villager_armband_(brown).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111577,9 +113990,11 @@
     "name": "Villager armband (pink)",
     "image": "villager_armband_(pink).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111588,9 +114003,11 @@
     "name": "Villager armband (yellow)",
     "image": "villager_armband_(yellow).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111599,9 +114016,11 @@
     "name": "Villager hat (blue)",
     "image": "villager_hat_(blue).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111610,9 +114029,11 @@
     "name": "Villager hat (brown)",
     "image": "villager_hat_(brown).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111621,9 +114042,11 @@
     "name": "Villager hat (pink)",
     "image": "villager_hat_(pink).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111632,9 +114055,11 @@
     "name": "Villager hat (yellow)",
     "image": "villager_hat_(yellow).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111643,9 +114068,11 @@
     "name": "Villager robe (blue)",
     "image": "villager_robe_(blue).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111654,9 +114081,11 @@
     "name": "Villager robe (brown)",
     "image": "villager_robe_(brown).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111665,9 +114094,11 @@
     "name": "Villager robe (pink)",
     "image": "villager_robe_(pink).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111676,9 +114107,11 @@
     "name": "Villager robe (yellow)",
     "image": "villager_robe_(yellow).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111687,9 +114120,11 @@
     "name": "Villager sandals (blue)",
     "image": "villager_sandals_(blue).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111698,9 +114133,11 @@
     "name": "Villager sandals (brown)",
     "image": "villager_sandals_(brown).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111709,9 +114146,11 @@
     "name": "Villager sandals (pink)",
     "image": "villager_sandals_(pink).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111720,9 +114159,11 @@
     "name": "Villager sandals (yellow)",
     "image": "villager_sandals_(yellow).png",
     "sources": {
-        "shops": {
-                    "Yes": {"has": 6306}
-                }
+      "shops": {
+        "Yes": {
+          "has": 6306
+        }
+      }
     }
   },
   {
@@ -111831,9 +114272,9 @@
           "droprate": "1/10"
         }
       },
-        "shops": {
-                    "Yes": "No requirements"
-                }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -111842,18 +114283,24 @@
     "name": "Voidwaker",
     "image": "voidwaker.png",
     "sources": {
-        "other": {
-            "Creating a voidwaker": {
-            "notes": "Requires a voidwaker blade, voidwaker hilt, and voidwaker gem.",
-            "rule": {
-                "all": [
-                {"has": 27684},
-                {"has": 27681},
-                {"has": 27687}
-                ]
-            }
-            }
+      "other": {
+        "Creating a voidwaker": {
+          "notes": "Requires a voidwaker blade, voidwaker hilt, and voidwaker gem.",
+          "rule": {
+            "all": [
+              {
+                "has": 27684
+              },
+              {
+                "has": 27681
+              },
+              {
+                "has": 27687
+              }
+            ]
+          }
         }
+      }
     }
   },
   {
@@ -111911,11 +114358,11 @@
     "image": "volatile_orb.png",
     "sources": {
       "drops": {
-        "The Nightmare": {
-          "droprate": "1/960–1/549"
-        },
         "Phosani's Nightmare": {
-          "droprate": "1/1,600"
+          "droprate": "1/1600"
+        },
+        "The Nightmare": {
+          "droprate": "1/960–1/548.7"
         }
       }
     }
@@ -111949,14 +114396,14 @@
           "droprate": "1/61.5"
         }
       },
-        "shops": {
-                    "Yes": {
-                      "all": [
-                      "canCompleteBoneVoyage",
-                      "canTrainMining"
-                      ]
-                    }
-                }
+      "shops": {
+        "Yes": {
+          "all": [
+            "canCompleteBoneVoyage",
+            "canTrainMining"
+          ]
+        }
+      }
     }
   },
   {
@@ -111965,9 +114412,9 @@
     "name": "Volcanic whip mix",
     "image": "volcanic_whip_mix.png",
     "sources": {
-        "shops": {
-                    "Yes": "No requirements"
-                }
+      "shops": {
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -111985,9 +114432,9 @@
     "name": "Vyrewatch legs",
     "image": "vyrewatch_legs.png",
     "sources": {
-        "shops": {
-                    "Yes": "canCompleteDarknessOfHallowvale"
-                }
+      "shops": {
+        "Yes": "canCompleteDarknessOfHallowvale"
+      }
     }
   },
   {
@@ -111996,9 +114443,9 @@
     "name": "Vyrewatch shoes",
     "image": "vyrewatch_shoes.png",
     "sources": {
-        "shops": {
-                    "Yes": "canCompleteDarknessOfHallowvale"
-                }
+      "shops": {
+        "Yes": "canCompleteDarknessOfHallowvale"
+      }
     }
   },
   {
@@ -112007,9 +114454,9 @@
     "name": "Vyrewatch top",
     "image": "vyrewatch_top.png",
     "sources": {
-        "shops": {
-                    "Yes": "canCompleteDarknessOfHallowvale"
-                }
+      "shops": {
+        "Yes": "canCompleteDarknessOfHallowvale"
+      }
     }
   },
   {
@@ -112052,10 +114499,10 @@
     "name": "Ward upgrade kit",
     "image": "ward_upgrade_kit.png",
     "sources": {
-                "shops": {
-                    "Yes": "No requirements"
-                }
-        }
+      "shops": {
+        "Yes": "No requirements"
+      }
+    }
   },
   {
     "index": 4276,
@@ -112121,9 +114568,9 @@
           "droprate": "1/2048"
         }
       },
-            "shops": {
-                "Yes": "canCompleteTheFremennikTrials"
-            }
+      "shops": {
+        "Yes": "canCompleteTheFremennikTrials"
+      }
     }
   },
   {
@@ -112857,11 +115304,11 @@
         }
       },
       "shops": {
-                "Yes": "No requirements"
-            },
+        "Yes": "No requirements"
+      },
       "spawns": {
-                "Yes": "No requirements"
-            }    
+        "Yes": "No requirements"
+      }
     }
   },
   {
@@ -116577,14 +119024,24 @@
         "Making a worm hole": {
           "notes": "Requires an unfinished bowl Equa leaves.",
           "rule": {
-                "all": [
-                {"has": 2166},
-                {"has": 2162},
-                {"has": 1957},
-                {"has": 2171},
-                {"has": 2128}
-                ]
-            }
+            "all": [
+              {
+                "has": 2166
+              },
+              {
+                "has": 2162
+              },
+              {
+                "has": 1957
+              },
+              {
+                "has": 2171
+              },
+              {
+                "has": 2128
+              }
+            ]
+          }
         }
       }
     }
@@ -118044,7 +120501,14 @@
     "index": 4444,
     "id": 23908,
     "name": "Zalcano shard",
-    "image": "zalcano_shard.png"
+    "image": "zalcano_shard.png",
+    "sources": {
+      "drops": {
+        "Zalcano": {
+          "droprate": "1/750–1/1500"
+        }
+      }
+    }
   },
   {
     "index": 4445,
