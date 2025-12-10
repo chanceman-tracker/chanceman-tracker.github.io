@@ -5111,9 +5111,16 @@
     "name": "Ahrim's hood 0",
     "image": "ahrim's_hood_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Ahrim's hood": {
+          "notes": "Requires a Ahrim's hood.",
+          "rule": {
+            "all": [
+              {
+                "has": 4708
+              }
+            ]
+          }
         }
       }
     }
@@ -5137,9 +5144,16 @@
     "name": "Ahrim's robeskirt 0",
     "image": "ahrim's_robeskirt_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Ahrim's robeskirt": {
+          "notes": "Requires a Ahrim's robeskirt.",
+          "rule": {
+            "all": [
+              {
+                "has": 4714
+              }
+            ]
+          }
         }
       }
     }
@@ -5163,9 +5177,16 @@
     "name": "Ahrim's robetop 0",
     "image": "ahrim's_robetop_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Ahrim's robetop": {
+          "notes": "Requires a Ahrim's robetop.",
+          "rule": {
+            "all": [
+              {
+                "has": 4712
+              }
+            ]
+          }
         }
       }
     }
@@ -5189,9 +5210,16 @@
     "name": "Ahrim's staff 0",
     "image": "ahrim's_staff_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Ahrim's staff": {
+          "notes": "Requires a Ahrim's staff.",
+          "rule": {
+            "all": [
+              {
+                "has": 4710
+              }
+            ]
+          }
         }
       }
     }
@@ -31642,9 +31670,16 @@
     "name": "Dharok's greataxe 0",
     "image": "dharok's_greataxe_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Dharok's greataxe": {
+          "notes": "Requires a Dharok's greataxe.",
+          "rule": {
+            "all": [
+              {
+                "has": 4718
+              }
+            ]
+          }
         }
       }
     }
@@ -31668,9 +31703,16 @@
     "name": "Dharok's helm 0",
     "image": "dharok's_helm_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Dharok's helm": {
+          "notes": "Requires a Dharok's helm.",
+          "rule": {
+            "all": [
+              {
+                "has": 4716
+              }
+            ]
+          }
         }
       }
     }
@@ -31694,9 +31736,16 @@
     "name": "Dharok's platebody 0",
     "image": "dharok's_platebody_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Dharok's platebody": {
+          "notes": "Requires a Dharok's platebody.",
+          "rule": {
+            "all": [
+              {
+                "has": 4720
+              }
+            ]
+          }
         }
       }
     }
@@ -31720,9 +31769,16 @@
     "name": "Dharok's platelegs 0",
     "image": "dharok's_platelegs_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Dharok's platelegs": {
+          "notes": "Requires a Dharok's platelegs.",
+          "rule": {
+            "all": [
+              {
+                "has": 4722
+              }
+            ]
+          }
         }
       }
     }
@@ -56262,9 +56318,16 @@
     "name": "Guthan's chainskirt 0",
     "image": "guthan's_chainskirt_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Guthan's chainskirt": {
+          "notes": "Requires a Guthan's chainskirt.",
+          "rule": {
+            "all": [
+              {
+                "has": 4730
+              }
+            ]
+          }
         }
       }
     }
@@ -56288,9 +56351,16 @@
     "name": "Guthan's helm 0",
     "image": "guthan's_helm_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Guthan's helm": {
+          "notes": "Requires a Guthan's helm.",
+          "rule": {
+            "all": [
+              {
+                "has": 4724
+              }
+            ]
+          }
         }
       }
     }
@@ -56314,9 +56384,16 @@
     "name": "Guthan's platebody 0",
     "image": "guthan's_platebody_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Guthan's platebody": {
+          "notes": "Requires a Guthan's platebody.",
+          "rule": {
+            "all": [
+              {
+                "has": 4728
+              }
+            ]
+          }
         }
       }
     }
@@ -56340,9 +56417,16 @@
     "name": "Guthan's warspear 0",
     "image": "guthan's_warspear_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Guthan's warspear": {
+          "notes": "Requires a Guthan's warspear.",
+          "rule": {
+            "all": [
+              {
+                "has": 4726
+              }
+            ]
+          }
         }
       }
     }
@@ -62935,9 +63019,16 @@
     "name": "Karil's coif 0",
     "image": "karil's_coif_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Karil's coif": {
+          "notes": "Requires a Karil's coif.",
+          "rule": {
+            "all": [
+              {
+                "has": 4732
+              }
+            ]
+          }
         }
       }
     }
@@ -62961,9 +63052,16 @@
     "name": "Karil's crossbow 0",
     "image": "karil's_crossbow_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Karil's crossbow": {
+          "notes": "Requires a Karil's crossbow.",
+          "rule": {
+            "all": [
+              {
+                "has": 4734
+              }
+            ]
+          }
         }
       }
     }
@@ -62987,9 +63085,16 @@
     "name": "Karil's leatherskirt 0",
     "image": "karil's_leatherskirt_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Karil's leatherskirt": {
+          "notes": "Requires a Karil's leatherskirt.",
+          "rule": {
+            "all": [
+              {
+                "has": 4738
+              }
+            ]
+          }
         }
       }
     }
@@ -63013,9 +63118,16 @@
     "name": "Karil's leathertop 0",
     "image": "karil's_leathertop_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Karil's leathertop": {
+          "notes": "Requires a Karil's leathertop.",
+          "rule": {
+            "all": [
+              {
+                "has": 4736
+              }
+            ]
+          }
         }
       }
     }
@@ -107682,9 +107794,16 @@
     "name": "Torag's hammers 0",
     "image": "torag's_hammers_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Torag's hammers": {
+          "notes": "Requires a Torag's hammers.",
+          "rule": {
+            "all": [
+              {
+                "has": 4747
+              }
+            ]
+          }
         }
       }
     }
@@ -107708,9 +107827,16 @@
     "name": "Torag's helm 0",
     "image": "torag's_helm_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Torag's helm": {
+          "notes": "Requires a Torag's helm.",
+          "rule": {
+            "all": [
+              {
+                "has": 4745
+              }
+            ]
+          }
         }
       }
     }
@@ -107734,9 +107860,16 @@
     "name": "Torag's platebody 0",
     "image": "torag's_platebody_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Torag's platebody": {
+          "notes": "Requires a Torag's platebody.",
+          "rule": {
+            "all": [
+              {
+                "has": 4749
+              }
+            ]
+          }
         }
       }
     }
@@ -107760,9 +107893,16 @@
     "name": "Torag's platelegs 0",
     "image": "torag's_platelegs_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Torag's platelegs": {
+          "notes": "Requires a Torag's platelegs.",
+          "rule": {
+            "all": [
+              {
+                "has": 4751
+              }
+            ]
+          }
         }
       }
     }
@@ -113455,9 +113595,16 @@
     "name": "Verac's brassard 0",
     "image": "verac's_brassard_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Verac's brassard": {
+          "notes": "Requires a Verac's brassard.",
+          "rule": {
+            "all": [
+              {
+                "has": 4757
+              }
+            ]
+          }
         }
       }
     }
@@ -113481,9 +113628,16 @@
     "name": "Verac's flail 0",
     "image": "verac's_flail_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Verac's flail": {
+          "notes": "Requires a Verac's flail.",
+          "rule": {
+            "all": [
+              {
+                "has": 4755
+              }
+            ]
+          }
         }
       }
     }
@@ -113507,9 +113661,16 @@
     "name": "Verac's helm 0",
     "image": "verac's_helm_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Verac's helm": {
+          "notes": "Requires a Verac's helm.",
+          "rule": {
+            "all": [
+              {
+                "has": 4753
+              }
+            ]
+          }
         }
       }
     }
@@ -113533,9 +113694,16 @@
     "name": "Verac's plateskirt 0",
     "image": "verac's_plateskirt_0.png",
     "sources": {
-      "drops": {
-        "Chest (Barrows)": {
-          "droprate": "7 × 1/2448"
+      "other": {
+        "Degrading a Verac's plateskirt": {
+          "notes": "Requires a Verac's plateskirt.",
+          "rule": {
+            "all": [
+              {
+                "has": 4759
+              }
+            ]
+          }
         }
       }
     }

@@ -75,6 +75,15 @@ export const REQUIREMENT_CHECKS = {
     canCompleteDesertTreasureII(ctx) {
         return false; // TODO
     },
+    canCompleteDesertTreasureI(ctx) {
+        return false; // TODO
+    },
+    canCompleteInAidOfTheMyreque(ctx) {
+        return false; // TODO
+    },
+    canCompleteShadowsOfCustodia(ctx) {
+        return false; // TODO
+    },
     canCompleteSongOfTheElves(ctx) {
         return false; // TODO
     },
@@ -104,6 +113,66 @@ export const REQUIREMENT_CHECKS = {
     },
     canCompleteShadesOfMortton(ctx) {
         return false; // TODO
+    },
+    canCompleteSleepingGiants(ctx) {
+        return false; // TODO
+    },
+    canCompleteBelowIceMountain(ctx) {
+        return false; // TODO
+    },
+    canCompleteAKingdomDivided(ctx) {
+        return false; // TODO
+    },
+    canCompleteTheTouristTrap(ctx) {
+        return false; // TODO
+    },
+    canCompleteAPorcineOfInterest(ctx) {
+        return false; // TODO
+    },
+    canCompleteInSearchOfTheMyreque(ctx) {
+        return false; // TODO
+    },
+    canEnterNightmareZone(ctx) {
+        return false; // TODO
+    },
+    canEnterLumbridgeSwampCaves(ctx) {
+        return false; // TODO
+    },
+    canCompleteMakingFriendsWithMyArm(ctx) {
+        return false; // TODO
+    },
+    canCompleteSwanSong(ctx) {
+        return false; // TODO
+    },
+    canCompleteGrimTales(ctx) {
+        return false; // TODO
+    },
+    canCompleteRegicide(ctx) {
+        return false; // TODO
+    },
+    canCompleteMourningsEndPartII(ctx) {
+        return false; // TODO
+    },
+    canCompleteDarknessOfHallowvale(ctx) {
+        return false; // TODO
+    },
+    canCompleteSecretsOfTheNorth(ctx) {
+        return false; // TODO
+    },
+    canEnterBraindeathIsland(ctx) {
+        return false; // TODO
+    },
+    canDoMixology(ctx) {
+        return false; // TODO
+    },
+    canCompleteTheFrozenDoor(ctx) {
+        return canCompleteTheFrozenDoor(ctx);
+    },
+    canStartPerilousMoons(ctx) {
+        return canStartPerilousMoons(ctx);
+    },
+    canCompleteFairytaleIGrowingPains(ctx) {
+        return canCompleteFairytaleIGrowingPains(ctx)
     },
     canCompleteBoneVoyage(ctx) {
         return canCompleteBoneVoyage(ctx);
@@ -162,6 +231,9 @@ export const REQUIREMENT_CHECKS = {
     canCompleteMonkeyMadnessII(ctx) {
         return false; // TODO
     },
+    canCompleteMonkeyMadnessI(ctx) {
+        return false; // TODO
+    },
     canCompletePriestInPeril(ctx) {
         return canCompletePriestInPeril(ctx);
     },
@@ -172,7 +244,7 @@ export const REQUIREMENT_CHECKS = {
         return canEnterKaruulmSlayerDungeon(ctx);
     },
     hasFacemask(ctx) {
-    return has(ctx, 4164);
+        return has(ctx, 4164);
     },
     canKillGargoyles(ctx) {
         return canKillGargoyles(ctx);
@@ -222,6 +294,9 @@ export const REQUIREMENT_CHECKS = {
     canSailToYnysdail(ctx) {
         return canSailToYnysdail(ctx);
     },
+    canSailToGrimstone(ctx) {
+        return canSailToGrimstone(ctx);
+    },
     canEnterAncientCavern(ctx) {
         return canEnterAncientCavern(ctx);
     },
@@ -244,6 +319,15 @@ export const REQUIREMENT_CHECKS = {
         return false; // TODO
     },
     canDoYama(ctx) {
+        return false; // TODO
+    },
+    canDoNex(ctx) {
+        return canCompleteTheFrozenDoor(ctx) && false; // TODO
+    },
+    canCompleteTheFrozenDoor(ctx) {
+        return canCompleteTheFrozenDoor(ctx);
+    },
+    canDoZulrah(ctx) {
         return false; // TODO
     },
     canTrainHunter(ctx) {
@@ -270,6 +354,9 @@ export const REQUIREMENT_CHECKS = {
     hasMithrilArrow(ctx) {
         return has(ctx, 888);
     },
+    hasSecateurs(ctx) {
+        return has(ctx, 5329);
+    },
     hasLockpick(ctx) {
         return has(ctx, 1523);
     },
@@ -281,6 +368,51 @@ export const REQUIREMENT_CHECKS = {
     },
     hasMirrorShield(ctx) {
         return has(ctx, 4156);
+    },
+    hasSpinyHelmet(ctx) {
+        return has(ctx, 4551);
+    },
+    hasSlayerBell(ctx) {
+        return has(ctx, 10952);
+    },
+    hasCrystalKey(ctx) {
+        return has(ctx, 989);
+    },
+    hasSpade(ctx) {
+        return has(ctx, 952);
+    },
+    hasWillowSapling(ctx) {
+        return has(ctx, 5371);
+    },
+    hasOakSapling(ctx) {
+        return has(ctx, 5370);
+    },
+    hasYewSapling(ctx) {
+        return has(ctx, 5373);
+    },
+    hasMapleSapling(ctx) {
+        return has(ctx, 5372);
+    },
+    hasMagicSapling(ctx) {
+        return has(ctx, 5374);
+    },
+    hasBananaSapling(ctx) {
+        return has(ctx, 5497);
+    },
+    hasAppleSapling(ctx) {
+        return has(ctx, 5496);
+    },
+    hasCupOfTea(ctx) {
+        return hasCupOfTea(ctx);
+    },
+    hasSlashWeapon(ctx) {
+        return true; // TODO
+    },
+    hasAnyGuthixBalance(ctx) {
+        return hasAnyGuthixBalance(ctx);
+    },
+    hasAnySerum207(ctx) {
+        return hasAnySerum207(ctx);
     },
     hasAirRuneSource(ctx) {
         return hasAirRuneSource(ctx);
@@ -323,75 +455,97 @@ export const REQUIREMENT_CHECKS = {
     },
     canTrainCrafting(ctx) {
         return canTrainCrafting(ctx);
+    },
+    never(ctx) {
+        return false;
     }
 };
 
+function hasCupOfTea(ctx) {
+    return has(ctx, 1978) // Cup of tea
+        || (has(ctx, 1980) && has(ctx, 1921)) // Empty cup and Bowl of water
+}
+
+function hasAnyGuthixBalance(ctx) {
+    return has(ctx, 7660) // Guthix balance(4)
+        || has(ctx, 7662) // Guthix balance(3)
+        || has(ctx, 7664) // Guthix balance(2)
+        || has(ctx, 7666) // Guthix balance(1)
+}
+
+function hasAnySerum207(ctx) {
+    return has(ctx, 3408) // Serum 207(4)
+        || has(ctx, 3410) // Serum 207(3)
+        || has(ctx, 3412) // Serum 207(2)
+        || has(ctx, 3414) // Serum 207(1)
+}
+
 function hasAirRuneSource(ctx) {
     return has(ctx, 556) // Air rune
-            || has(ctx, 4696) // Dust rune
-            || has(ctx, 4697) // Smoke rune
-            || has(ctx, 4695) // Mist rune
-            || has(ctx, 1381) // Staff of air
-            || has(ctx, 1397) // Air battlestaff
-            || has(ctx, 1405) // Mystic air staff
-            || has(ctx, 20736) // Dust battlestaff
-            || has(ctx, 20739) // Mystic dust staff
-            || has(ctx, 11998) // Smoke battlestaff
-            || has(ctx, 12000) // Mystic smoke staff
-            || has(ctx, 20730) // Mist battlestaff
-            || has(ctx, 20733); // Mystic mist staff
+        || has(ctx, 4696) // Dust rune
+        || has(ctx, 4697) // Smoke rune
+        || has(ctx, 4695) // Mist rune
+        || has(ctx, 1381) // Staff of air
+        || has(ctx, 1397) // Air battlestaff
+        || has(ctx, 1405) // Mystic air staff
+        || has(ctx, 20736) // Dust battlestaff
+        || has(ctx, 20739) // Mystic dust staff
+        || has(ctx, 11998) // Smoke battlestaff
+        || has(ctx, 12000) // Mystic smoke staff
+        || has(ctx, 20730) // Mist battlestaff
+        || has(ctx, 20733); // Mystic mist staff
 }
 
 function hasWaterRuneSource(ctx) {
     return has(ctx, 555) // Water rune
-            || has(ctx, 4698) // Mud rune
-            || has(ctx, 4694) // Steam rune
-            || has(ctx, 4695) // Mist rune
-            || has(ctx, 1383) // Staff of water
-            || has(ctx, 1395) // Water battlestaff
-            || has(ctx, 1403) // Mystic water staff
-            || has(ctx, 6562) // Mud battlestaff
-            || has(ctx, 6563) // Mystic mud staff
-            || has(ctx, 11787) // Steam battlestaff
-            || has(ctx, 11789) // Mystic steam staff
-            || has(ctx, 20730) // Mist battlestaff
-            || has(ctx, 20733) // Mystic mist staff
-            || (has(ctx, 25576) && has(ctx, 25578)); // Tome of water and Soaked page
+        || has(ctx, 4698) // Mud rune
+        || has(ctx, 4694) // Steam rune
+        || has(ctx, 4695) // Mist rune
+        || has(ctx, 1383) // Staff of water
+        || has(ctx, 1395) // Water battlestaff
+        || has(ctx, 1403) // Mystic water staff
+        || has(ctx, 6562) // Mud battlestaff
+        || has(ctx, 6563) // Mystic mud staff
+        || has(ctx, 11787) // Steam battlestaff
+        || has(ctx, 11789) // Mystic steam staff
+        || has(ctx, 20730) // Mist battlestaff
+        || has(ctx, 20733) // Mystic mist staff
+        || (has(ctx, 25576) && has(ctx, 25578)); // Tome of water and Soaked page
 }
 
 function hasEarthRuneSource(ctx) {
     return has(ctx, 557) // Earth rune
-            || has(ctx, 4696) // Dust rune
-            || has(ctx, 4698) // Mud rune
-            || has(ctx, 4699) // Lava rune
-            || has(ctx, 1385) // Staff of earth
-            || has(ctx, 1399) // Earth battlestaff
-            || has(ctx, 1407) // Mystic earth staff
-            || has(ctx, 20736) // Dust battlestaff
-            || has(ctx, 20739) // Mystic dust staff
-            || has(ctx, 6562) // Mud battlestaff
-            || has(ctx, 6563) // Mystic mud staff
-            || has(ctx, 3053) // Lava battlestaff
-            || has(ctx, 3054) // Mystic lava staff
-            || (has(ctx, 30066) && has(ctx, 30068)); // Tome of earth and Soiled page
+        || has(ctx, 4696) // Dust rune
+        || has(ctx, 4698) // Mud rune
+        || has(ctx, 4699) // Lava rune
+        || has(ctx, 1385) // Staff of earth
+        || has(ctx, 1399) // Earth battlestaff
+        || has(ctx, 1407) // Mystic earth staff
+        || has(ctx, 20736) // Dust battlestaff
+        || has(ctx, 20739) // Mystic dust staff
+        || has(ctx, 6562) // Mud battlestaff
+        || has(ctx, 6563) // Mystic mud staff
+        || has(ctx, 3053) // Lava battlestaff
+        || has(ctx, 3054) // Mystic lava staff
+        || (has(ctx, 30066) && has(ctx, 30068)); // Tome of earth and Soiled page
 }
 
 function hasFireRuneSource(ctx) {
     return has(ctx, 554) // Fire rune
-            || has(ctx, 4699) // Lava rune
-            || has(ctx, 4697) // Smoke rune
-            || has(ctx, 4694) // Steam rune
-            || has(ctx, 28929) // Sunfire rune
-            || has(ctx, 1387) // Staff of fire
-            || has(ctx, 1393) // Fire battlestaff
-            || has(ctx, 1401) // Mystic fire staff
-            || has(ctx, 3053) // Lava battlestaff
-            || has(ctx, 3054) // Mystic lava staff
-            || has(ctx, 11998) // Smoke battlestaff
-            || has(ctx, 12000) // Mystic smoke staff
-            || has(ctx, 11787) // Steam battlestaff
-            || has(ctx, 11789) // Mystic steam staff
-            || (has(ctx, 20716) && has(ctx, 20718)); // Tome of fire and Burnt page
+        || has(ctx, 4699) // Lava rune
+        || has(ctx, 4697) // Smoke rune
+        || has(ctx, 4694) // Steam rune
+        || has(ctx, 28929) // Sunfire rune
+        || has(ctx, 1387) // Staff of fire
+        || has(ctx, 1393) // Fire battlestaff
+        || has(ctx, 1401) // Mystic fire staff
+        || has(ctx, 3053) // Lava battlestaff
+        || has(ctx, 3054) // Mystic lava staff
+        || has(ctx, 11998) // Smoke battlestaff
+        || has(ctx, 12000) // Mystic smoke staff
+        || has(ctx, 11787) // Steam battlestaff
+        || has(ctx, 11789) // Mystic steam staff
+        || (has(ctx, 20716) && has(ctx, 20718)); // Tome of fire and Burnt page
 }
 
 function canDoCommanderZilyana(ctx) {
@@ -424,20 +578,20 @@ function canEnterAncientCavern(ctx) {
 
 function canCompleteBarbarianFiremaking(ctx) {
     return has(ctx, 1521) // Oak logs
-            && ( //
-                has(ctx, 841) // Shortbow
-                || has(ctx, 839) // Longbow
-                || has(ctx, 843) // Oak shortbow
-                || has(ctx, 845) // Oak longbow
-                || has(ctx, 849) // Willow shortbow
-                || has(ctx, 847) // Willow longbow
-                || has(ctx, 853) // Maple shortbow
-                || has(ctx, 851) // Maple longbow
-                || has(ctx, 857) // Yew shortbow
-                || has(ctx, 855) // Yew longbow
-                || has(ctx, 861) // Magic shortbow
-                || has(ctx, 859) // Magic longbow
-            );
+        && ( //
+            has(ctx, 841) // Shortbow
+            || has(ctx, 839) // Longbow
+            || has(ctx, 843) // Oak shortbow
+            || has(ctx, 845) // Oak longbow
+            || has(ctx, 849) // Willow shortbow
+            || has(ctx, 847) // Willow longbow
+            || has(ctx, 853) // Maple shortbow
+            || has(ctx, 851) // Maple longbow
+            || has(ctx, 857) // Yew shortbow
+            || has(ctx, 855) // Yew longbow
+            || has(ctx, 861) // Magic shortbow
+            || has(ctx, 859) // Magic longbow
+        );
 }
 
 function canCompleteBarbarianFishing(ctx) {
@@ -446,48 +600,59 @@ function canCompleteBarbarianFishing(ctx) {
 
 function canCompleteBarbarianHerblore(ctx) {
     return canCompleteDruidicRitual(ctx) //
-            && canCompleteBarbarianFiremaking(ctx) //
-            && canCompleteBarbarianFishing(ctx) //
-            && has(ctx, 123) // Attack potion(2)
-            && (has(ctx, 11324) || has(ctx, 11326)); // Roe or Caviar
+        && canCompleteBarbarianFiremaking(ctx) //
+        && canCompleteBarbarianFishing(ctx) //
+        && has(ctx, 123) // Attack potion(2)
+        && (has(ctx, 11324) || has(ctx, 11326)); // Roe or Caviar
 }
 
 function canCompleteBarbarianSmithing(ctx) {
     return canCompleteBarbarianFishing(ctx) //
-            && canCompleteTaiBwoWannaiTrio(ctx) //
-            && canTrainSmithing(ctx) //
-            && ( //
-                (has(ctx, 2349) && has(ctx, 1511)) // Bronze bar & Logs
-                || (has(ctx, 2351) && has(ctx, 1521)) // Iron bar & Oak Logs
-                || (has(ctx, 2353) && has(ctx, 1519)) // Steel bar & Willow Logs
-                || (has(ctx, 2359) && has(ctx, 1517)) // Mithril bar & Maple Logs
-                || (has(ctx, 2361) && has(ctx, 1515)) // Adamantite bar & Yew Logs
-                || (has(ctx, 2363) && has(ctx, 1513)) // Runite bar & Magic Logs
-            )
+        && canCompleteTaiBwoWannaiTrio(ctx) //
+        && canTrainSmithing(ctx) //
+        && ( //
+            (has(ctx, 2349) && has(ctx, 1511)) // Bronze bar & Logs
+            || (has(ctx, 2351) && has(ctx, 1521)) // Iron bar & Oak Logs
+            || (has(ctx, 2353) && has(ctx, 1519)) // Steel bar & Willow Logs
+            || (has(ctx, 2359) && has(ctx, 1517)) // Mithril bar & Maple Logs
+            || (has(ctx, 2361) && has(ctx, 1515)) // Adamantite bar & Yew Logs
+            || (has(ctx, 2363) && has(ctx, 1513)) // Runite bar & Magic Logs
+        )
 }
 
 function canCompleteTaiBwoWannaiTrio(ctx) {
     return false; // TODO
 }
 
+function canCompleteTheFrozenDoor(ctx) {
+    return canDoKreearra(ctx) //
+        && canDoGeneralGraardor(ctx) //
+        && canDoCommanderZilyana(ctx) //
+        && canDoKrilTsutsaroth(ctx);
+}
+
 function canCompleteMakingHistory(ctx) {
     return canCompletePriestInPeril(ctx)
-            && has(ctx, 1694) //Sapphire amulet
-            && has(ctx, 952); // Spade
+        && has(ctx, 1694) //Sapphire amulet
+        && has(ctx, 952); // Spade
 }
 
 function canSailToTheNorthernOcean(ctx) {
     return canCompletePandemonium(ctx) //
-            && false; // TODO sailing stuff
+        && false; // TODO sailing stuff
 }
 
 function canSailToTheWesternOcean(ctx) {
     return canCompletePandemonium(ctx) //
-            && false; // TODO sailing stuff
+        && false; // TODO sailing stuff
 }
 
 function canSailToYnysdail(ctx) {
     return canSailToTheWesternOcean(ctx);
+}
+
+function canSailToGrimstone(ctx) {
+    return canSailToTheNorthernOcean(ctx);
 }
 
 function canSailToBrittleIsle(ctx) {
@@ -496,59 +661,59 @@ function canSailToBrittleIsle(ctx) {
 
 function canEnterTheCharredDungeon(ctx) {
     return canCompletePandemonium(ctx) //
-            && has(ctx, 954); // Rope
+        && has(ctx, 954); // Rope
 }
 
 function canLongrange(ctx) {
     return ((has(ctx, 841) || has(ctx, 839)) // Shortbow or Longbow
-                && (has(ctx, 882) || has(ctx, 884))) // Bronze arrow or Iron arrow
-            || ((has(ctx, 837) || has(ctx, 9174)) // Crossbow or Bronze crossbow
-                && has(ctx, 877)) // Bronze bolts
-            || ((has(ctx, 556) || has(ctx, 4696) || has(ctx, 1381) || has(ctx, 1397)) // Air rune, Dust rune, Staff of air or Air battlestaff
-                && (has(ctx, 558) || has(ctx, 562) || has(ctx, 560) || has(ctx, 565))) // Mind rune, Chaos rune, Death rune or Blood rune
+        && (has(ctx, 882) || has(ctx, 884))) // Bronze arrow or Iron arrow
+        || ((has(ctx, 837) || has(ctx, 9174)) // Crossbow or Bronze crossbow
+            && has(ctx, 877)) // Bronze bolts
+        || ((has(ctx, 556) || has(ctx, 4696) || has(ctx, 1381) || has(ctx, 1397)) // Air rune, Dust rune, Staff of air or Air battlestaff
+            && (has(ctx, 558) || has(ctx, 562) || has(ctx, 560) || has(ctx, 565))) // Mind rune, Chaos rune, Death rune or Blood rune
 }
 
 function canCastStrikeSpells(ctx) {
     return ((has(ctx, 556) || has(ctx, 4696) || has(ctx, 1381) || has(ctx, 1397)) // Air rune, Dust rune, Staff of air or Air battlestaff
-                && has(ctx, 558)) // Mind rune
+        && has(ctx, 558)) // Mind rune
 }
 
 function canShortrange(ctx) {
     return canLongrange(ctx) //
-            || has(ctx, 864) // Bronze knife
-            || has(ctx, 870) // Bronze knife(p)
-            || has(ctx, 863) // Iron knife
-            || has(ctx, 865) // Steel knife
-            || has(ctx, 869) // Black knife
-            || has(ctx, 866) // Mithril knife
-            || has(ctx, 867) // Adamant knife
-            || has(ctx, 868) // Rune knife
-            || has(ctx, 5667) // Rune knife(p++)
-            || has(ctx, 806) // Bronze dart
-            || has(ctx, 807) // Iron dart
-            || has(ctx, 813) // Iron dart(p)
-            || has(ctx, 808) // Steel dart
-            || has(ctx, 3093) // Black dart
-            || has(ctx, 809) // Mithril dart
-            || has(ctx, 810) // Adamant dart
-            || has(ctx, 816) // Adamant dart(p)
-            || has(ctx, 811) // Rune dart
-            || has(ctx, 817) // Rune dart(p)
-            || has(ctx, 6522) // Toktz-xil-ul
-            || has(ctx, 10033) // Chinchompa
-            || has(ctx, 10034) // Red chinchompa
-            || has(ctx, 11959) // Black chinchompa
-            || has(ctx, 800) // Bronze thrownaxe
-            || has(ctx, 801) // Iron thrownaxe
-            || has(ctx, 802) // Steel thrownaxe
-            || has(ctx, 803) // Mithril thrownaxe
-            || has(ctx, 804) // Adamant thrownaxe
-            || has(ctx, 805); // Rune thrownaxe
+        || has(ctx, 864) // Bronze knife
+        || has(ctx, 870) // Bronze knife(p)
+        || has(ctx, 863) // Iron knife
+        || has(ctx, 865) // Steel knife
+        || has(ctx, 869) // Black knife
+        || has(ctx, 866) // Mithril knife
+        || has(ctx, 867) // Adamant knife
+        || has(ctx, 868) // Rune knife
+        || has(ctx, 5667) // Rune knife(p++)
+        || has(ctx, 806) // Bronze dart
+        || has(ctx, 807) // Iron dart
+        || has(ctx, 813) // Iron dart(p)
+        || has(ctx, 808) // Steel dart
+        || has(ctx, 3093) // Black dart
+        || has(ctx, 809) // Mithril dart
+        || has(ctx, 810) // Adamant dart
+        || has(ctx, 816) // Adamant dart(p)
+        || has(ctx, 811) // Rune dart
+        || has(ctx, 817) // Rune dart(p)
+        || has(ctx, 6522) // Toktz-xil-ul
+        || has(ctx, 10033) // Chinchompa
+        || has(ctx, 10034) // Red chinchompa
+        || has(ctx, 11959) // Black chinchompa
+        || has(ctx, 800) // Bronze thrownaxe
+        || has(ctx, 801) // Iron thrownaxe
+        || has(ctx, 802) // Steel thrownaxe
+        || has(ctx, 803) // Mithril thrownaxe
+        || has(ctx, 804) // Adamant thrownaxe
+        || has(ctx, 805); // Rune thrownaxe
 }
 
 function canKillGargoyles(ctx) {
     return has(ctx, 4162)       // Rock hammer
-            || has(ctx, 21754); // Rock thrownhammer
+        || has(ctx, 21754); // Rock thrownhammer
 }
 
 function canKillDifficultDragons(ctx) {
@@ -557,7 +722,7 @@ function canKillDifficultDragons(ctx) {
 
 function canEnterKaruulmSlayerDungeon(ctx) {
     return has(ctx, 23037) // Boots of stone
-            || (canKillFossilIslandWyverns(ctx) && has(ctx, 21643)); // Granite boots
+        || has(ctx, 21643); // Granite boots
 }
 
 function canKillFossilIslandWyverns(ctx) {
@@ -566,91 +731,95 @@ function canKillFossilIslandWyverns(ctx) {
 
 function hasAccessToWyvernProtection(ctx) {
     return canCompleteElementalWorkshopI(ctx) //
-                && (has(ctx, 2890) // Elemental shield
-                    || (has(ctx, 9731) && canCompleteElementalWorkshopII(ctx)) // Mind shield
-                    );
+        && (has(ctx, 2890) // Elemental shield
+            || (has(ctx, 9731) && canCompleteElementalWorkshopII(ctx)) // Mind shield
+        );
 }
 
 function canCompleteAnimalMagnetism(ctx) {
     return canCompleteErnestTheChicken(ctx) //
-            && canCompletePriestInPeril(ctx) //
-            && has(ctx, 1355) // Mithril axe
-            && has(ctx, 2351) // Iron bar
-            && has(ctx, 2347) // Hammer
-            && has(ctx, 1743) // Hard leather
-            && has(ctx, 1718) // Holy symbol
-            && has(ctx, 10496) // Polished buttons
-            && has(ctx, 1931) // Pot
-            && ( // Bones for Ecto-tokens
-                has(ctx, 534)      // Babydragon bones
-                || has(ctx, 530)   // Bat bones
-                || has(ctx, 532)   // Big bones
-                || has(ctx, 526)   // Bones
-                || has(ctx, 528)   // Burnt bones
-                || has(ctx, 6729)  // Dagannoth bones
-                || has(ctx, 536)   // Dragon bones
-                || has(ctx, 22783) // Drake bones
-                || has(ctx, 31729) // Frost dragon bones
-                || has(ctx, 22786) // Hydra bones
-                || has(ctx, 3125)  // Jogre bones
-                || has(ctx, 11943) // Lava dragon bones
-                || has(ctx, 3183)  // Monkey bones
-                || has(ctx, 4834)  // Ourg bones
-                || has(ctx, 4832)  // Raurg bones
-                || has(ctx, 3123)  // Shaikahan bones
-                || has(ctx, 31726) // Strykewyrm bones
-                || has(ctx, 22124) // Superior dragon bones
-                || has(ctx, 2859)  // Wolf bones
-                || has(ctx, 22780) // Wyrm bones
-                || has(ctx, 28899) // Wyrmling bones
-                || has(ctx, 6812)  // Wyvern bones
-                || has(ctx, 4812)  // Zogre bones
-            );
+        && canCompletePriestInPeril(ctx) //
+        && has(ctx, 1355) // Mithril axe
+        && has(ctx, 2351) // Iron bar
+        && has(ctx, 2347) // Hammer
+        && has(ctx, 1743) // Hard leather
+        && has(ctx, 1718) // Holy symbol
+        && has(ctx, 10496) // Polished buttons
+        && has(ctx, 1931) // Pot
+        && ( // Bones for Ecto-tokens
+            has(ctx, 534)      // Babydragon bones
+            || has(ctx, 530)   // Bat bones
+            || has(ctx, 532)   // Big bones
+            || has(ctx, 526)   // Bones
+            || has(ctx, 528)   // Burnt bones
+            || has(ctx, 6729)  // Dagannoth bones
+            || has(ctx, 536)   // Dragon bones
+            || has(ctx, 22783) // Drake bones
+            || has(ctx, 31729) // Frost dragon bones
+            || has(ctx, 22786) // Hydra bones
+            || has(ctx, 3125)  // Jogre bones
+            || has(ctx, 11943) // Lava dragon bones
+            || has(ctx, 3183)  // Monkey bones
+            || has(ctx, 4834)  // Ourg bones
+            || has(ctx, 4832)  // Raurg bones
+            || has(ctx, 3123)  // Shaikahan bones
+            || has(ctx, 31726) // Strykewyrm bones
+            || has(ctx, 22124) // Superior dragon bones
+            || has(ctx, 2859)  // Wolf bones
+            || has(ctx, 22780) // Wyrm bones
+            || has(ctx, 28899) // Wyrmling bones
+            || has(ctx, 6812)  // Wyvern bones
+            || has(ctx, 4812)  // Zogre bones
+        );
 }
 
 function canCompleteErnestTheChicken(ctx) {
     return has(ctx, 952) // Spade
-            && has(ctx, 272) // Fish food
-            && has(ctx, 273); // Poison (item)
+        && has(ctx, 272) // Fish food
+        && has(ctx, 273); // Poison (item)
 }
 
 function canCompleteDeathToTheDorgeshuun(ctx) {
     return canCompleteTheLostTribe(ctx) //
-            && has(ctx, 4310) // Ham boots
-            && has(ctx, 4304) // Ham cloak
-            && has(ctx, 4308) // Ham gloves
-            && has(ctx, 4302) // Ham hood
-            && has(ctx, 4306) // Ham logo
-            && has(ctx, 4300) // Ham robe
-            && has(ctx, 4298); // Ham shirt
+        && has(ctx, 4310) // Ham boots
+        && has(ctx, 4304) // Ham cloak
+        && has(ctx, 4308) // Ham gloves
+        && has(ctx, 4302) // Ham hood
+        && has(ctx, 4306) // Ham logo
+        && has(ctx, 4300) // Ham robe
+        && has(ctx, 4298); // Ham shirt
 }
 
 function canCompleteTheLostTribe(ctx) {
     return canCompleteGoblinDiplomacy(ctx) //
-            && canCompleteRuneMysteries(ctx) //
-            && canTrainMining(ctx); //
+        && canCompleteRuneMysteries(ctx) //
+        && canTrainMining(ctx); //
 }
 
 function canCompleteGoblinDiplomacy(ctx) {
     return has(ctx, 288) // Goblin mail
-            && has(ctx, 1769) // Orange dye
-            && has(ctx, 1767); // Blue dye
+        && has(ctx, 1769) // Orange dye
+        && has(ctx, 1767); // Blue dye
 }
 
 function canStartPerilousMoons(ctx) {
     return canCompleteTwilightsPromise(ctx) //
-            && canTrainHunter(ctx) //
-            && canTrainFishing(ctx) //
-            && canTrainRunecraft(ctx) //
-            && canTrainConstruction(ctx);
+        && canTrainHunter(ctx) //
+        && canTrainFishing(ctx) //
+        && canTrainRunecraft(ctx) //
+        && canTrainConstruction(ctx);
+}
+
+function canCompleteTwilightsPromise(ctx) {
+    return false; //TODO
 }
 
 function canCompletePerilousMoons(ctx) {
     return canStartPerilousMoons(ctx) //
-            && has(ctx, 946)  // Knife
-            && has(ctx, 305)  // Big fishing net
-            && has(ctx, 954)  // Rope
-            && has(ctx, 233); // Pestle and mortar
+        && has(ctx, 946)  // Knife
+        && has(ctx, 305)  // Big fishing net
+        && has(ctx, 954)  // Rope
+        && has(ctx, 233); // Pestle and mortar
 }
 
 function canCompleteEnterTheAbyss(ctx) {
@@ -663,116 +832,116 @@ function canCompleteRuneMysteries(ctx) {
 
 function canCompleteFairytaleIGrowingPains(ctx) {
     return canCompleteLostCity(ctx) //
-            && canCompleteNatureSpirit(ctx) //
-            && has(ctx, 5329) // Secateurs
-            && has(ctx, 952)  // Spade
-            // TODO other item reqs?
-            ;
+        && canCompleteNatureSpirit(ctx) //
+        && has(ctx, 5329) // Secateurs
+        && has(ctx, 952)  // Spade
+        // TODO other item reqs?
+        ;
 }
 
 function canCompleteLostCity(ctx) {
     return has(ctx, 1351)     // Bronze axe
-            && has(ctx, 946)  // Knife
-            && canTrainCrafting(ctx);
+        && has(ctx, 946)  // Knife
+        && canTrainCrafting(ctx);
 }
 
 function canCompleteNatureSpirit(ctx) {
     return has(ctx, 2961)     // Silver sickle
-            && has(ctx, 2355) // Silver bar
-            && has(ctx, 2976) // Sickle mould
-            && canTrainCrafting(ctx);
+        && has(ctx, 2355) // Silver bar
+        && has(ctx, 2976) // Sickle mould
+        && canTrainCrafting(ctx);
 }
 
 function canCompleteTempleOfTheEye(ctx) {
     return has(ctx, 1929)     // Bucket of water
-            && has(ctx, 1755) // Chisel
-            && (has(ctx, 1265) || has(ctx, 1267)) // A bronze or iron pickaxe
-            && canTrainRunecraft(ctx);
+        && has(ctx, 1755) // Chisel
+        && (has(ctx, 1265) || has(ctx, 1267)) // A bronze or iron pickaxe
+        && canTrainRunecraft(ctx);
 }
 
 function canCompleteDeathPlateau(ctx) {
     return has(ctx, 2309)      // Bread
-            && has(ctx, 333)   // Trout
-            && has(ctx, 2351)  // Iron bar
-            && has(ctx, 1905)  // Asgarnian ale
-            && has(ctx, 3105); // Climbing boots
+        && has(ctx, 333)   // Trout
+        && has(ctx, 2351)  // Iron bar
+        && has(ctx, 1905)  // Asgarnian ale
+        && has(ctx, 3105); // Climbing boots
 }
 
 function canCompleteRoyalTrouble(ctx) {
     return canCompleteThroneOfMiscellania(ctx) //
-            && has(ctx, 954) // Rope
-            && has(ctx, 453) // Coal
-            && has(ctx, 960); // Plank
+        && has(ctx, 954) // Rope
+        && has(ctx, 453) // Coal
+        && has(ctx, 960); // Plank
 }
 
 function canCompleteTouristTrap(ctx) {
     return canTrainFletching(ctx) //
-            && canTrainSmithing(ctx) //
-            && has(ctx, 1833) // Desert shirt
-            && has(ctx, 1835) // Desert robe
-            && has(ctx, 1837) // Desert boots
-            && has(ctx, 2347) // Hammer
-            && has(ctx, 2349) // Bronze bar
-            && has(ctx, 314); // Feather
+        && canTrainSmithing(ctx) //
+        && has(ctx, 1833) // Desert shirt
+        && has(ctx, 1835) // Desert robe
+        && has(ctx, 1837) // Desert boots
+        && has(ctx, 2347) // Hammer
+        && has(ctx, 2349) // Bronze bar
+        && has(ctx, 314); // Feather
 }
 
 function canCompleteThroneOfMiscellania(ctx) {
     return canCompleteHeroesQuest(ctx) //
-            && canCompleteTheFremennikTrials(ctx) //
-            && has(ctx, 2351)      // Iron bar
-            && (has(ctx, 1635)     // Gold ring
-                || has(ctx, 1637)  // Sapphire ring
-                || has(ctx, 1639)  // Emerald ring
-                || has(ctx, 1641)  // Ruby ring
-                || has(ctx, 1643)) // Diamond ring
-            && has(ctx, 1511); // Logs
+        && canCompleteTheFremennikTrials(ctx) //
+        && has(ctx, 2351)      // Iron bar
+        && (has(ctx, 1635)     // Gold ring
+            || has(ctx, 1637)  // Sapphire ring
+            || has(ctx, 1639)  // Emerald ring
+            || has(ctx, 1641)  // Ruby ring
+            || has(ctx, 1643)) // Diamond ring
+        && has(ctx, 1511); // Logs
 }
 
 function canCompleteHeroesQuest(ctx) { // TODO quest points
     return canCompleteLostCity(ctx) //
-            && canCompleteMerlinsCrystal(ctx) //
-            && canCompleteDragonSlayerI(ctx) //
-            && canTrainMining(ctx) //
-            && canTrainHerblore(ctx) //
-            && canTrainFishing(ctx) //
-            && canTrainCooking(ctx) //
-            && has(ctx, 307) // Fishing rod
-            && has(ctx, 313) // Fishing bait
-            && has(ctx, 97)  // Harralander potion (unf)
-            && has(ctx, 255) // Harralander
-            && has(ctx, 227); // Vial of water
+        && canCompleteMerlinsCrystal(ctx) //
+        && canCompleteDragonSlayerI(ctx) //
+        && canTrainMining(ctx) //
+        && canTrainHerblore(ctx) //
+        && canTrainFishing(ctx) //
+        && canTrainCooking(ctx) //
+        && has(ctx, 307) // Fishing rod
+        && has(ctx, 313) // Fishing bait
+        && has(ctx, 97)  // Harralander potion (unf)
+        && has(ctx, 255) // Harralander
+        && has(ctx, 227); // Vial of water
 }
 
 function canCompleteTheDigSite(ctx) {
     return canCompleteDruidicRitual(ctx) //
-            && has(ctx, 233) // Pestle and mortar
-            && has(ctx, 229) // Vial
-            && has(ctx, 590) // Tinderbox
-            && (has(ctx, 1978) || has(ctx, 1921)) // Cup of tea or Bowl of water (for nettle tea)
-            && has(ctx, 954) // Rope
-            && (has(ctx, 1609) || has(ctx, 1625)) // Opal or Uncut opal
-            && has(ctx, 973); // Charcoal
+        && has(ctx, 233) // Pestle and mortar
+        && has(ctx, 229) // Vial
+        && has(ctx, 590) // Tinderbox
+        && hasCupOfTea(ctx) //
+        && has(ctx, 954) // Rope
+        && (has(ctx, 1609) || has(ctx, 1625)) // Opal or Uncut opal
+        && has(ctx, 973); // Charcoal
 }
 
 function canCompleteMerlinsCrystal(ctx) {
     return has(ctx, 2309)     // Bread
-            && has(ctx, 590)  // Tinderbox
-            && has(ctx, 30)   // Bucket of wax
-            && has(ctx, 1925) // Bucket
-            && has(ctx, 28)   // Insect repellent
-            && has(ctx, 530); // Bat bones
+        && has(ctx, 590)  // Tinderbox
+        && has(ctx, 30)   // Bucket of wax
+        && has(ctx, 1925) // Bucket
+        && has(ctx, 28)   // Insect repellent
+        && has(ctx, 530); // Bat bones
 }
 
 function canCompleteDragonSlayerI(ctx) { // TODO quest points
     return has(ctx, 1791)      // Unfired bowl
-            && has(ctx, 1761)  // Soft clay
-            && has(ctx, 1907)  // Wizards mind bomb
-            && has(ctx, 301)   // Lobster pot
-            && has(ctx, 950)   // Silk
-            && has(ctx, 1540)  // Anti-dragon shield
-            && has(ctx, 2347)  // Hammer
-            && has(ctx, 1539)  // Steel nails
-            && has(ctx, 960);  // Plank
+        && has(ctx, 1761)  // Soft clay
+        && has(ctx, 1907)  // Wizards mind bomb
+        && has(ctx, 301)   // Lobster pot
+        && has(ctx, 950)   // Silk
+        && has(ctx, 1540)  // Anti-dragon shield
+        && has(ctx, 2347)  // Hammer
+        && has(ctx, 1539)  // Steel nails
+        && has(ctx, 960);  // Plank
 }
 
 function canCompleteDwarfCannon(ctx) {
@@ -781,30 +950,30 @@ function canCompleteDwarfCannon(ctx) {
 
 function canCompleteTroubledTortugans(ctx) {
     return canTrainCrafting(ctx) //
-            && canTrainHunter(ctx) //
-            && canTrainWoodcutting(ctx) //
-            && canTrainConstruction(ctx) //
-            && canCompletePandemonium(ctx) //
-            && has(ctx, 401);     // Seaweed
+        && canTrainHunter(ctx) //
+        && canTrainWoodcutting(ctx) //
+        && canTrainConstruction(ctx) //
+        && canCompletePandemonium(ctx) //
+        && has(ctx, 401);     // Seaweed
 }
 
 function canCompleteTheFremennikTrials(ctx) {
     return has(ctx, 1917)      // Beer
-            && has(ctx, 590)   // Tinderbox
-            && (has(ctx, 383) // Raw shark
-                || (canTrainFishing(ctx) && (has(ctx, 389) || has(ctx, 395))))  // Raw manta ray or Raw sea turtle
+        && has(ctx, 590)   // Tinderbox
+        && (has(ctx, 383) // Raw shark
+            || (canTrainFishing(ctx) && (has(ctx, 389) || has(ctx, 395))))  // Raw manta ray or Raw sea turtle
 }
 
 function canCompleteDruidicRitual(ctx) {
     return has(ctx, 2136)      // Raw bear meat
-            && has(ctx, 2134)  // Raw rat meat
-            && has(ctx, 2132)  // Raw beef
-            && has(ctx, 2138); // Raw chicken
+        && has(ctx, 2134)  // Raw rat meat
+        && has(ctx, 2132)  // Raw beef
+        && has(ctx, 2138); // Raw chicken
 }
 
 function canCompletePandemonium(ctx) {
     return has(ctx, 2347)      // Hammer
-            && has(ctx, 8794); // Saw
+        && has(ctx, 8794); // Saw
 }
 
 function canCompleteTheHeartOfDarkness(ctx) {
@@ -813,24 +982,24 @@ function canCompleteTheHeartOfDarkness(ctx) {
 
 function canCompleteIcthlarinsLittleHelper(ctx) {
     return canCompleteGertrudesCat(ctx) //
-            && has(ctx, 590) // Tinderbox
-            && has(ctx, 1519) // Willow logs
-            && (has(ctx, 4161) || (has(ctx, 1925) && has(ctx, 4689))) // Bag of salt or (Bucket and Pile of salt)
-            && has(ctx, 4687) // Bucket of sap
-            && has(ctx, 1823) // Waterskin(4)
-            && has(ctx, 4684); // Linen
+        && has(ctx, 590) // Tinderbox
+        && has(ctx, 1519) // Willow logs
+        && (has(ctx, 4161) || (has(ctx, 1925) && has(ctx, 4689))) // Bag of salt or (Bucket and Pile of salt)
+        && has(ctx, 4687) // Bucket of sap
+        && has(ctx, 1823) // Waterskin(4)
+        && has(ctx, 4684); // Linen
 }
 
 function canCompleteGertrudesCat(ctx) {
     return has(ctx, 1927) // Bucket of milk
-            && has(ctx, 1552); // Seasoned sardine
+        && has(ctx, 1552); // Seasoned sardine
 }
 
 function canCompletePriestInPeril(ctx) {
     return has(ctx, 1925)      // Bucket
-            && (has(ctx, 7936) // Pure essence
-                || has(ctx, 1436) // or Rune essence
-                );
+        && (has(ctx, 7936) // Pure essence
+            || has(ctx, 1436) // or Rune essence
+        );
 }
 
 function canCompleteBoneVoyage(ctx) {
@@ -839,12 +1008,12 @@ function canCompleteBoneVoyage(ctx) {
 
 function canCompleteElementalWorkshopI(ctx) {
     return canTrainMining(ctx) //
-            && canTrainCrafting(ctx) //
-            && has(ctx, 2347) // Hammer
-            && has(ctx, 1733) // Needle
-            && has(ctx, 1734) // Thread
-            && has(ctx, 1741) // Leather
-            && has(ctx, 453); // Coal
+        && canTrainCrafting(ctx) //
+        && has(ctx, 2347) // Hammer
+        && has(ctx, 1733) // Needle
+        && has(ctx, 1734) // Thread
+        && has(ctx, 1741) // Leather
+        && has(ctx, 453); // Coal
 }
 
 function canCompleteElementalWorkshopII(ctx) {
@@ -853,8 +1022,8 @@ function canCompleteElementalWorkshopII(ctx) {
 
 function canCompleteZogreFleshEaters(ctx) {
     return canCompleteBigChompyBirdHunting(ctx) //
-            && canCompleteJunglePotion(ctx) //
-            && canTrainSmithing(ctx);
+        && canCompleteJunglePotion(ctx) //
+        && canTrainSmithing(ctx);
 }
 
 function canCompleteJunglePotion(ctx) {
@@ -863,24 +1032,24 @@ function canCompleteJunglePotion(ctx) {
 
 function canCompleteBigChompyBirdHunting(ctx) {
     return canTrainFletching(ctx) //
-            && canTrainCooking(ctx) //
-            && canTrainWoodcutting(ctx) //
-            && has(ctx, 314)  // Feather
-            && has(ctx, 946)  // Knife
-            && has(ctx, 1755) // Chisel
-            && has(ctx, 1965) // Cabbage
-            && has(ctx, 1982) // Tomato
-            && has(ctx, 1957) // Onion
-            && has(ctx, 1942) // Potato
-            && has(ctx, 2128) // Equa leaves
-            && has(ctx, 1573) // Doogle leaves
-            && has(ctx, 2862) // Achey tree logs
-            && has(ctx, 2864) // Ogre arrow shaft
-            && has(ctx, 2865) // Flighted ogre arrow
-            && has(ctx, 2859) // Wolf bones
-            && has(ctx, 2861) // Wolfbone arrowtips
-            && has(ctx, 2866) // Ogre arrow
-            && has(ctx, 2876);// Raw chompy
+        && canTrainCooking(ctx) //
+        && canTrainWoodcutting(ctx) //
+        && has(ctx, 314)  // Feather
+        && has(ctx, 946)  // Knife
+        && has(ctx, 1755) // Chisel
+        && has(ctx, 1965) // Cabbage
+        && has(ctx, 1982) // Tomato
+        && has(ctx, 1957) // Onion
+        && has(ctx, 1942) // Potato
+        && has(ctx, 2128) // Equa leaves
+        && has(ctx, 1573) // Doogle leaves
+        && has(ctx, 2862) // Achey tree logs
+        && has(ctx, 2864) // Ogre arrow shaft
+        && has(ctx, 2865) // Flighted ogre arrow
+        && has(ctx, 2859) // Wolf bones
+        && has(ctx, 2861) // Wolfbone arrowtips
+        && has(ctx, 2866) // Ogre arrow
+        && has(ctx, 2876);// Raw chompy
 }
 
 function canTrainCrafting(ctx) {
@@ -889,77 +1058,77 @@ function canTrainCrafting(ctx) {
 
 function canTrainRunecraft(ctx) {
     return canCompleteRuneMysteries(ctx) &&
-            (
-                has(ctx, 5525)    // Tiara
-                || has(ctx, 1436) // Rune essence
-                || has(ctx, 7936) // Pure essence
-            );
+        (
+            has(ctx, 5525)    // Tiara
+            || has(ctx, 1436) // Rune essence
+            || has(ctx, 7936) // Pure essence
+        );
 }
 
 function canTrainWoodcutting(ctx) {
     return has(ctx, 1351)      // Bronze axe
-            || has(ctx, 1349)  // Iron axe
-            || has(ctx, 1353); // Steel axe
+        || has(ctx, 1349)  // Iron axe
+        || has(ctx, 1353); // Steel axe
 }
 
 function canTrainMining(ctx) {
     return has(ctx, 1265)      // Bronze pickaxe
-            || has(ctx, 1267)  // Iron pickaxe
-            || has(ctx, 1269); // Steel pickaxe
+        || has(ctx, 1267)  // Iron pickaxe
+        || has(ctx, 1269); // Steel pickaxe
 }
 
 function canTrainHerblore(ctx) {
     return canCompleteDruidicRitual(ctx) //
-            && has(ctx, 199)  // Grimy guam leaf
-            && has(ctx, 201)  // Grimy marrentill
-            && has(ctx, 203); // Grimy tarromin
+        && has(ctx, 199)  // Grimy guam leaf
+        && has(ctx, 201)  // Grimy marrentill
+        && has(ctx, 203); // Grimy tarromin
 }
 
 function canTrainFishing(ctx) {
     return has(ctx, 303)     // Small fishing net
-            && has(ctx, 305) // Big fishing net
-            && (has(ctx, 307) && has(ctx, 313)); // Fishing rod & Fishing bait
+        && has(ctx, 305) // Big fishing net
+        && (has(ctx, 307) && has(ctx, 313)); // Fishing rod & Fishing bait
 }
 
 function canTrainHunter(ctx) {
     return has(ctx, 10006)     // Bird snare
-            && has(ctx, 10150) // Noose wand
-            && has(ctx, 10010) // Butterfly net
-            ; // TODO or the player's lvl allows for barehanding butterflies (lvl 25)
+        && has(ctx, 10150) // Noose wand
+        && has(ctx, 10010) // Butterfly net
+        ; // TODO or the player's lvl allows for barehanding butterflies (lvl 25)
 }
 
 function canTrainCooking(ctx) {
     return has(ctx, 25833)    // Raw boar meat
-            && has(ctx, 2132) // Raw beef
-            && has(ctx, 2136) // Raw bear meat
-            && has(ctx, 2134) // Raw rat meat
-            && has(ctx, 2138) // Raw chicken
-            && has(ctx, 317)  // Raw shrimps
-            && has(ctx, 3226) // Raw rabbit
-            && has(ctx, 327)  // Raw sardine
-            && has(ctx, 321)  // Raw anchovies
-            && has(ctx, 1859) // Raw ugthanki meat
-            && has(ctx, 2307) // Bread dough
-            && has(ctx, 345); // Raw herring
+        && has(ctx, 2132) // Raw beef
+        && has(ctx, 2136) // Raw bear meat
+        && has(ctx, 2134) // Raw rat meat
+        && has(ctx, 2138) // Raw chicken
+        && has(ctx, 317)  // Raw shrimps
+        && has(ctx, 3226) // Raw rabbit
+        && has(ctx, 327)  // Raw sardine
+        && has(ctx, 321)  // Raw anchovies
+        && has(ctx, 1859) // Raw ugthanki meat
+        && has(ctx, 2307) // Bread dough
+        && has(ctx, 345); // Raw herring
 }
 
 function canTrainFarming(ctx) {
     return has(ctx, 5341)     // Rake
-            || has(ctx, 8431) // Bagged plant 1
+        || has(ctx, 8431) // Bagged plant 1
 }
 
 function canTrainConstruction(ctx) {
     return has(ctx, 8431) // Bagged plant 1
-            && (
-                (has(ctx, 2347) && has(ctx, 8794)) // Hammer and Saw
+        && (
+            (has(ctx, 2347) && has(ctx, 8794)) // Hammer and Saw
                 (has(ctx, 2351) || has(ctx, 960))  // Iron bar or Plank and any nails
-            );
+        );
 }
 
 function canTrainFletching(ctx) {
     return (has(ctx, 946) && has(ctx, 1511)) // Knife & Logs
-            || (has(ctx, 52) && has(ctx, 314)) // Arrow shaft & Feather
-            || (has(ctx, 53) && has(ctx, 39)) // Headless arrow & Bronze arrowtip
+        || (has(ctx, 52) && has(ctx, 314)) // Arrow shaft & Feather
+        || (has(ctx, 53) && has(ctx, 39)) // Headless arrow & Bronze arrowtip
 }
 
 function canTrainFiremaking(ctx) {
@@ -972,60 +1141,60 @@ function canTrainSmithing(ctx) {
 
 function canDoGnomeRestaurant(ctx) {
     return canTrainCooking(ctx) //
-            && ( //
-                ( // Crunchies
-                    (has(ctx, 2171) && has(ctx, 2165) && has(ctx, 2169)) // Gianne dough, Crunchy tray & Gnome spice
-                    && (
-                        (has(ctx, 2128) && has(ctx, 2217)) // Toad crunchies
-                        || (has(ctx, 2128) && has(ctx, 2213)) // Spicy crunchies
-                        || (has(ctx, 2128) && has(ctx, 2162) && has(ctx, 2205)) // Worm crunchies
-                        || (has(ctx, 1973) && has(ctx, 1975) && has(ctx, 2209)) // Chocchip crunchies
-                    )
-                ) //
-                || ( // Battas
-                    (has(ctx, 2171) && has(ctx, 2164) && has(ctx, 2128)) // Gianne dough, Batta tin & Equa leaves
-                    && (
-                        (has(ctx, 2120) && has(ctx, 2122) && has(ctx, 2108) && has(ctx, 2110) && has(ctx, 2114) && has(ctx, 2116) && has(ctx, 2169) && has(ctx, 2277)) // Fruit batta
-                        || (has(ctx, 2169) && has(ctx, 1985) && has(ctx, 2152) && has(ctx, 2255)) // Toad Batta
-                        || (has(ctx, 2169) && has(ctx, 1985) && has(ctx, 2162) && has(ctx, 2253)) // Worm Batta
-                        || (has(ctx, 1982) && has(ctx, 2126) && has(ctx, 1957) && has(ctx, 1985) && has(ctx, 1965) && has(ctx, 2281)) // Vegetable Batta
-                        || (has(ctx, 1982) && has(ctx, 1985) && has(ctx, 2259)) // Cheese+tom batta
-                    )
+        && ( //
+            ( // Crunchies
+                (has(ctx, 2171) && has(ctx, 2165) && has(ctx, 2169)) // Gianne dough, Crunchy tray & Gnome spice
+                && (
+                    (has(ctx, 2128) && has(ctx, 2217)) // Toad crunchies
+                    || (has(ctx, 2128) && has(ctx, 2213)) // Spicy crunchies
+                    || (has(ctx, 2128) && has(ctx, 2162) && has(ctx, 2205)) // Worm crunchies
+                    || (has(ctx, 1973) && has(ctx, 1975) && has(ctx, 2209)) // Chocchip crunchies
                 )
-                || ( // Gnomebowls
-                    (has(ctx, 2171) && has(ctx, 2166) && has(ctx, 2128)) // Gianne dough, Gnomebowl & Equa leaves
-                    && (
-                        (has(ctx, 2162) && has(ctx, 1957) && has(ctx, 2169) && has(ctx, 2191)) // Worm hole
-                        || (has(ctx, 1957) && has(ctx, 1942) && has(ctx, 2152) && has(ctx, 2195)) // Veg bowl
-                        || (has(ctx, 2152) && has(ctx, 2169) && has(ctx, 1985) && has(ctx, 2126) && has(ctx, 2187)) // Tangled toad's legs
-                        || (has(ctx, 1973) && has(ctx, 1975) && has(ctx, 2130) && has(ctx, 2185)) // Chocolate bomb
-                    )
+            ) //
+            || ( // Battas
+                (has(ctx, 2171) && has(ctx, 2164) && has(ctx, 2128)) // Gianne dough, Batta tin & Equa leaves
+                && (
+                    (has(ctx, 2120) && has(ctx, 2122) && has(ctx, 2108) && has(ctx, 2110) && has(ctx, 2114) && has(ctx, 2116) && has(ctx, 2169) && has(ctx, 2277)) // Fruit batta
+                    || (has(ctx, 2169) && has(ctx, 1985) && has(ctx, 2152) && has(ctx, 2255)) // Toad Batta
+                    || (has(ctx, 2169) && has(ctx, 1985) && has(ctx, 2162) && has(ctx, 2253)) // Worm Batta
+                    || (has(ctx, 1982) && has(ctx, 2126) && has(ctx, 1957) && has(ctx, 1985) && has(ctx, 1965) && has(ctx, 2281)) // Vegetable Batta
+                    || (has(ctx, 1982) && has(ctx, 1985) && has(ctx, 2259)) // Cheese+tom batta
                 )
-                || ( // Cocktails
-                    (has(ctx, 2025) && has(ctx, 2026)) // Cocktail shaker & Cocktail glass
-                    && (
-                        (has(ctx, 2114) && has(ctx, 2102) && has(ctx, 2108) && has(ctx, 2106) && has(ctx, 2084)) // Fruit blast
-                        || (has(ctx, 2114) && has(ctx, 2102) && has(ctx, 2108) && has(ctx, 2120) && has(ctx, 2122) && has(ctx, 2116) && has(ctx, 2112) && has(ctx, 2048)) // Pineapple punch
-                        || (has(ctx, 2015) && has(ctx, 2019) && has(ctx, 2120) && has(ctx, 2102) && has(ctx, 2114) && has(ctx, 2108) && has(ctx, 2116) && has(ctx, 2124) && has(ctx, 2054)) // Wizard blizzard
-                        || (has(ctx, 2015) && has(ctx, 2120) && has(ctx, 2124) && has(ctx, 2128) && has(ctx, 2080)) // Short green guy
-                        || (has(ctx, 2015) && has(ctx, 2019) && has(ctx, 2126) && has(ctx, 2114) && has(ctx, 2116) && has(ctx, 2130) && has(ctx, 2092)) // Drunk dragon
-                        || (has(ctx, 2017) && has(ctx, 1973) && has(ctx, 2128) && has(ctx, 1927) && has(ctx, 1975) && has(ctx, 2130) && has(ctx, 2074)) // Choc saturday
-                        || (has(ctx, 2015) && has(ctx, 2021) && has(ctx, 2019) && has(ctx, 2102) && has(ctx, 2104) && has(ctx, 2108) && has(ctx, 2110) && has(ctx, 2128) && has(ctx, 2120) && has(ctx, 2124) && has(ctx, 2064)) // Blurberry special
-                    )
+            )
+            || ( // Gnomebowls
+                (has(ctx, 2171) && has(ctx, 2166) && has(ctx, 2128)) // Gianne dough, Gnomebowl & Equa leaves
+                && (
+                    (has(ctx, 2162) && has(ctx, 1957) && has(ctx, 2169) && has(ctx, 2191)) // Worm hole
+                    || (has(ctx, 1957) && has(ctx, 1942) && has(ctx, 2152) && has(ctx, 2195)) // Veg bowl
+                    || (has(ctx, 2152) && has(ctx, 2169) && has(ctx, 1985) && has(ctx, 2126) && has(ctx, 2187)) // Tangled toad's legs
+                    || (has(ctx, 1973) && has(ctx, 1975) && has(ctx, 2130) && has(ctx, 2185)) // Chocolate bomb
                 )
-            );
+            )
+            || ( // Cocktails
+                (has(ctx, 2025) && has(ctx, 2026)) // Cocktail shaker & Cocktail glass
+                && (
+                    (has(ctx, 2114) && has(ctx, 2102) && has(ctx, 2108) && has(ctx, 2106) && has(ctx, 2084)) // Fruit blast
+                    || (has(ctx, 2114) && has(ctx, 2102) && has(ctx, 2108) && has(ctx, 2120) && has(ctx, 2122) && has(ctx, 2116) && has(ctx, 2112) && has(ctx, 2048)) // Pineapple punch
+                    || (has(ctx, 2015) && has(ctx, 2019) && has(ctx, 2120) && has(ctx, 2102) && has(ctx, 2114) && has(ctx, 2108) && has(ctx, 2116) && has(ctx, 2124) && has(ctx, 2054)) // Wizard blizzard
+                    || (has(ctx, 2015) && has(ctx, 2120) && has(ctx, 2124) && has(ctx, 2128) && has(ctx, 2080)) // Short green guy
+                    || (has(ctx, 2015) && has(ctx, 2019) && has(ctx, 2126) && has(ctx, 2114) && has(ctx, 2116) && has(ctx, 2130) && has(ctx, 2092)) // Drunk dragon
+                    || (has(ctx, 2017) && has(ctx, 1973) && has(ctx, 2128) && has(ctx, 1927) && has(ctx, 1975) && has(ctx, 2130) && has(ctx, 2074)) // Choc saturday
+                    || (has(ctx, 2015) && has(ctx, 2021) && has(ctx, 2019) && has(ctx, 2102) && has(ctx, 2104) && has(ctx, 2108) && has(ctx, 2110) && has(ctx, 2128) && has(ctx, 2120) && has(ctx, 2124) && has(ctx, 2064)) // Blurberry special
+                )
+            )
+        );
 }
 
 function canDoValeTotems(ctx) {
     return canTrainFletching(ctx) //
-            && has(ctx, 946) // Knife
-            || ((
-                has(ctx, 843) // Oak shortbow
-                || has(ctx, 845) // Oak longbow
-                || has(ctx, 9442) // Oak stock
-                || has(ctx, 22251) // Oak shield
-                || (has(ctx, 1521) && (has(ctx, 54) || has(ctx, 56))) // Oak logs & either Oak shortbow (u) or Oak longbow (u)
-            ) //
+        && has(ctx, 946) // Knife
+        && ((
+            has(ctx, 843) // Oak shortbow
+            || has(ctx, 845) // Oak longbow
+            || has(ctx, 9442) // Oak stock
+            || has(ctx, 22251) // Oak shield
+            || (has(ctx, 1521) && (has(ctx, 54) || has(ctx, 56))) // Oak logs & either Oak shortbow (u) or Oak longbow (u)
+        ) //
             || (
                 has(ctx, 849) // Willow shortbow
                 || has(ctx, 847) // Willow longbow
@@ -1049,7 +1218,7 @@ function canDoValeTotems(ctx) {
 
 function canDoWintertodt(ctx) {
     return canTrainFiremaking(ctx) //
-            && canTrainWoodcutting(ctx);
+        && canTrainWoodcutting(ctx);
 }
 
 function canDoSalvaging(ctx) {
