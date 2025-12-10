@@ -112,7 +112,7 @@ export const REQUIREMENT_CHECKS = {
         return false; // TODO
     },
     canCompleteShadesOfMortton(ctx) {
-        return false; // TODO
+        return canCompleteShadesOfMortton(ctx);
     },
     canCompleteSleepingGiants(ctx) {
         return false; // TODO
@@ -150,10 +150,31 @@ export const REQUIREMENT_CHECKS = {
     canCompleteRegicide(ctx) {
         return false; // TODO
     },
+    canCompleteDefenderOfVarrock(ctx) {
+        return false; // TODO
+    },
+    canCompleteTheCurseOfArrav(ctx) {
+        return false; // TODO
+    },
+    canCompleteDreamMentor(ctx) {
+        return false; // TODO
+    },
+    canCompleteTrollRomance(ctx) {
+        return false; // TODO
+    },
     canCompleteMourningsEndPartII(ctx) {
         return false; // TODO
     },
     canCompleteDarknessOfHallowvale(ctx) {
+        return false; // TODO
+    },
+    canCompleteShadowOfTheStorm(ctx) {
+        return false; // TODO
+    },
+    canCompleteASoulsBane(ctx) {
+        return false; // TODO
+    },
+    canCompleteRecipeForDisaster(ctx) {
         return false; // TODO
     },
     canCompleteSecretsOfTheNorth(ctx) {
@@ -224,9 +245,6 @@ export const REQUIREMENT_CHECKS = {
     },
     canDoSalvaging(ctx) {
         return canDoSalvaging(ctx);
-    },
-    canDoShadesOfMortton(ctx) {
-        return canDoShadesOfMortton(ctx);
     },
     canCompleteMonkeyMadnessII(ctx) {
         return false; // TODO
@@ -402,17 +420,50 @@ export const REQUIREMENT_CHECKS = {
     hasAppleSapling(ctx) {
         return has(ctx, 5496);
     },
+    hasAsgarnianSeed(ctx) {
+        return has(ctx, 5308);
+    },
     hasCupOfTea(ctx) {
         return hasCupOfTea(ctx);
     },
     hasSlashWeapon(ctx) {
         return true; // TODO
     },
+    hasPoison(ctx) {
+        return has(ctx, 273);
+    },
     hasAnyGuthixBalance(ctx) {
         return hasAnyGuthixBalance(ctx);
     },
     hasAnySerum207(ctx) {
         return hasAnySerum207(ctx);
+    },
+    hasFullAdamantArmour(ctx) {
+        return has(ctx, 1161) && has(ctx, 1123) && has(ctx, 1073);
+    },
+    hasFullBlackArmour(ctx) {
+        return has(ctx, 1165) && has(ctx, 1125) && has(ctx, 1077);
+    },
+    hasFullBronzeArmour(ctx) {
+        return has(ctx, 1155) && has(ctx, 1117) && has(ctx, 1075);
+    },
+    hasFullIronArmour(ctx) {
+        return has(ctx, 1153) && has(ctx, 1115) && has(ctx, 1067);
+    },
+    hasFullMithrilArmour(ctx) {
+        return has(ctx, 1159) && has(ctx, 1121) && has(ctx, 1071);
+    },
+    hasFullRuneArmour(ctx) {
+        return has(ctx, 1163) && has(ctx, 1127) && has(ctx, 1079);
+    },
+    hasFullSteelArmour(ctx) {
+        return has(ctx, 1157) && has(ctx, 1119) && has(ctx, 1069);
+    },
+    canPlantTrees(ctx) {
+        return canPlantTrees(ctx);
+    },
+    canPlantPlants(ctx) {
+        return canPlantPlants(ctx);
     },
     hasAirRuneSource(ctx) {
         return hasAirRuneSource(ctx);
@@ -456,10 +507,118 @@ export const REQUIREMENT_CHECKS = {
     canTrainCrafting(ctx) {
         return canTrainCrafting(ctx);
     },
+    canBurnLoarShades(ctx) {
+        return canBurnLoarShades(ctx);
+    },
+    canBurnPhrinShades(ctx) {
+        return canBurnPhrinShades(ctx);
+    },
+    canBurnRiylShades(ctx) {
+        return canBurnRiylShades(ctx);
+    },
+    canBurnAsynShades(ctx) {
+        return canBurnAsynShades(ctx);
+    },
+    canBurnFiyrShades(ctx) {
+        return canBurnFiyrShades(ctx);
+    },
+    canBurnUriumShades(ctx) {
+        return canBurnUriumShades(ctx);
+    },
     never(ctx) {
         return false;
     }
 };
+
+function canCompleteShadesOfMortton(ctx) {
+    return canCompletePriestInPeril(ctx) //
+        && canTrainCrafting(ctx) //
+        && canTrainHerblore(ctx) //
+        && canTrainFiremaking(ctx) //
+        && has(ctx, 3410)  // Serum 207 (3)
+        && has(ctx, 95)    // Tarromin potion (unf) (might not be needed?)
+        && has(ctx, 592)   // Ashes (might not be needed?)
+        && has(ctx, 590)   // Tinderbox (might not be needed?)
+        && has(ctx, 1511)  // Logs (might not be needed?)
+        && (has(ctx, 2347) || has(ctx, 3678)) // Hammer of Flamtaer hammer
+        && (
+            has(ctx, 3438)     // Pyre logs
+            || has(ctx, 3440)  // Oak pyre logs
+            || has(ctx, 3442)  // Willow pyre logs
+            || has(ctx, 6211)  // Teak pyre logs
+            || has(ctx, 10808) // Arctic pyre logs
+            || has(ctx, 3444)  // Maple pyre logs
+            || has(ctx, 6213)  // Mahogany pyre logs
+            || has(ctx, 31383) // Camphor pyre logs
+            || has(ctx, 3446)  // Yew pyre logs
+            || has(ctx, 3448)  // Magic pyre logs
+            || has(ctx, 31386) // Ironwood pyre logs
+            || has(ctx, 19672) // Redwood pyre logs
+            || has(ctx, 31389) // Rosewood pyre logs
+        )
+        && has(ctx, 3396); // Loar remains
+
+}
+
+function canBurnLoarShades(ctx) {
+    return canCompleteShadesOfMortton(ctx);
+}
+
+function canBurnPhrinShades(ctx) {
+    return canBurnLoarShades(ctx) //
+        && has(ctx, 3398); // Phrin remains
+}
+
+function canBurnRiylShades(ctx) {
+    return canBurnPhrinShades(ctx) //
+        && has(ctx, 3400) // Riyl remains
+        && (
+            has(ctx, 3442)     // Willow pyre logs
+            || has(ctx, 6211)  // Teak pyre logs
+            || has(ctx, 10808) // Arctic pyre logs
+            || has(ctx, 3444)  // Maple pyre logs
+            || has(ctx, 6213)  // Mahogany pyre logs
+            || has(ctx, 31383) // Camphor pyre logs
+            || has(ctx, 3446)  // Yew pyre logs
+            || has(ctx, 3448)  // Magic pyre logs
+            || has(ctx, 31386) // Ironwood pyre logs
+            || has(ctx, 19672) // Redwood pyre logs
+            || has(ctx, 31389) // Rosewood pyre logs
+        );
+}
+
+function canBurnAsynShades(ctx) {
+    return canBurnRiylShades(ctx) //
+        && has(ctx, 3402) // Asyn remains
+        && (
+            has(ctx, 31383)    // Camphor pyre logs
+            || has(ctx, 3446)  // Yew pyre logs
+            || has(ctx, 3448)  // Magic pyre logs
+            || has(ctx, 31386) // Ironwood pyre logs
+            || has(ctx, 19672) // Redwood pyre logs
+            || has(ctx, 31389) // Rosewood pyre logs
+        );
+}
+
+function canBurnFiyrShades(ctx) {
+    return canBurnAsynShades(ctx) //
+        && has(ctx, 3404) // Fiyr remains
+        && (
+            has(ctx, 3448)     // Magic pyre logs
+            || has(ctx, 31386) // Ironwood pyre logs
+            || has(ctx, 19672) // Redwood pyre logs
+            || has(ctx, 31389) // Rosewood pyre logs
+        );
+}
+
+function canBurnUriumShades(ctx) {
+    return canBurnFiyrShades(ctx) //
+        && has(ctx, 25419) // Urium remains
+        && (
+            has(ctx, 19672) // Redwood pyre logs
+            || has(ctx, 31389) // Rosewood pyre logs
+        );
+}
 
 function hasCupOfTea(ctx) {
     return has(ctx, 1978) // Cup of tea
@@ -1113,8 +1272,18 @@ function canTrainCooking(ctx) {
 }
 
 function canTrainFarming(ctx) {
-    return has(ctx, 5341)     // Rake
-        || has(ctx, 8431) // Bagged plant 1
+    return has(ctx, 5341) // Rake
+        || has(ctx, 8431);// Bagged plant 1
+}
+
+function canPlantTrees(ctx) {
+    return has(ctx, 5341) // Rake
+        && has(ctx, 952); // Spade
+}
+
+function canPlantPlants(ctx) {
+    return has(ctx, 5341) // Rake
+        && has(ctx, 5343); // Seed dibber
 }
 
 function canTrainConstruction(ctx) {
@@ -1227,8 +1396,4 @@ function canDoSalvaging(ctx) {
 
 function canDoSailingCombat(ctx) {
     return canCompletePandemonium(ctx) && false; // TODO sailing combat
-}
-
-function canDoShadesOfMortton(ctx) {
-    return false; // TODO
 }
