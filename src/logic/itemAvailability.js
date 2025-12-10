@@ -1,4 +1,4 @@
-import { NPC_RULES } from "./npcRules.js";
+import { NPC_DATA } from "./npcData.js";
 import { canObtainItem, REQUIREMENT_CHECKS } from "./requirements.js";
 
 /* ===========================================================
@@ -8,7 +8,7 @@ import { canObtainItem, REQUIREMENT_CHECKS } from "./requirements.js";
 export async function canReachNpc(npcName, ctx) {
     await ctx.ensureItemsLoaded();
 
-    const rule = NPC_RULES[npcName];
+    const rule = NPC_DATA[npcName].rule;
 
     // No rule = always killable
     if (!rule) return true;

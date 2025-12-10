@@ -1,5 +1,5 @@
 import { canDoOtherMethod, canReachNpc } from "../logic/itemAvailability.js";
-import { NPC_WIKI_LINKS } from "../logic/npcWikiLinks.js";
+import { NPC_DATA } from "../logic/npcData.js";
 import { fileStore } from "../storage/fileStore.js";
 
 export default async function ItemPage() {
@@ -89,7 +89,7 @@ async function renderSourceTable(section, entries) {
 
             rows.push(`
                 <tr>
-                    <td><a href="${NPC_WIKI_LINKS[name] || "#"}" target="_blank">${name}</a></td>
+                    <td><a href="${NPC_DATA[name]?.wiki || "#"}" target="_blank">${name}</a></td>
                     <td>${data.droprate}</td>
                     <td>${obtainable ? yes() : no()}</td>
                 </tr>
@@ -236,23 +236,23 @@ function renderProcessable(processable = {}, allItems) {
         <table class="osrs-table">
             <tr><th>Creates</th><th>Ingredients</th></tr>
             ${Object.entries(processable).map(([resultId, components]) => {
-                const resultItem = allItems.find(x => x.id == resultId);
-                const ingredientIds = components.split(",");
+        const resultItem = allItems.find(x => x.id == resultId);
+        const ingredientIds = components.split(",");
 
-                const ingredients = ingredientIds.map(cid => {
-                    const ing = allItems.find(x => x.id == cid);
-                    return ing
-                        ? `<a onclick="navigate('/item?id=${cid}')">${ing.name}</a>`
-                        : cid;
-                }).join(", ");
+        const ingredients = ingredientIds.map(cid => {
+            const ing = allItems.find(x => x.id == cid);
+            return ing
+                ? `<a onclick="navigate('/item?id=${cid}')">${ing.name}</a>`
+                : cid;
+        }).join(", ");
 
-                return `
+        return `
                     <tr>
                         <td><a onclick="navigate('/item?id=${resultId}')">${resultItem.name}</a></td>
                         <td>${ingredients}</td>
                     </tr>
                 `;
-            }).join("")}
+    }).join("")}
         </table>
     `;
 }
