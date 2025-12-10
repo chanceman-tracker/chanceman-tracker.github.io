@@ -10381,97 +10381,177 @@
     "index": 409,
     "id": 8455,
     "name": "Bagged bluebells",
-    "image": "bagged_bluebells.png"
+    "image": "bagged_bluebells.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 410,
     "id": 8453,
     "name": "Bagged daffodils",
-    "image": "bagged_daffodils.png"
+    "image": "bagged_daffodils.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 411,
     "id": 8417,
     "name": "Bagged dead tree",
-    "image": "bagged_dead_tree.png"
+    "image": "bagged_dead_tree.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 412,
     "id": 8451,
     "name": "Bagged flower",
-    "image": "bagged_flower.png"
+    "image": "bagged_flower.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 413,
     "id": 8429,
     "name": "Bagged magic tree",
-    "image": "bagged_magic_tree.png"
+    "image": "bagged_magic_tree.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 414,
     "id": 8425,
     "name": "Bagged maple tree",
-    "image": "bagged_maple_tree.png"
+    "image": "bagged_maple_tree.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 415,
     "id": 8459,
     "name": "Bagged marigolds",
-    "image": "bagged_marigolds.png"
+    "image": "bagged_marigolds.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 416,
     "id": 8419,
     "name": "Bagged nice tree",
-    "image": "bagged_nice_tree.png"
+    "image": "bagged_nice_tree.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 417,
     "id": 8421,
     "name": "Bagged oak tree",
-    "image": "bagged_oak_tree.png"
+    "image": "bagged_oak_tree.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 418,
     "id": 8431,
     "name": "Bagged plant 1",
-    "image": "bagged_plant_1.png"
+    "image": "bagged_plant_1.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 419,
     "id": 8433,
     "name": "Bagged plant 2",
-    "image": "bagged_plant_2.png"
+    "image": "bagged_plant_2.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 420,
     "id": 8435,
     "name": "Bagged plant 3",
-    "image": "bagged_plant_3.png"
+    "image": "bagged_plant_3.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 421,
     "id": 8461,
     "name": "Bagged roses",
-    "image": "bagged_roses.png"
+    "image": "bagged_roses.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 422,
     "id": 8457,
     "name": "Bagged sunflower",
-    "image": "bagged_sunflower.png"
+    "image": "bagged_sunflower.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 423,
     "id": 8423,
     "name": "Bagged willow tree",
-    "image": "bagged_willow_tree.png"
+    "image": "bagged_willow_tree.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 424,
     "id": 8427,
     "name": "Bagged yew tree",
-    "image": "bagged_yew_tree.png"
+    "image": "bagged_yew_tree.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 425,
@@ -17942,7 +18022,12 @@
     "index": 691,
     "id": 630,
     "name": "Blue boots",
-    "image": "blue_boots.png"
+    "image": "blue_boots.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 692,
@@ -18309,7 +18394,12 @@
     "index": 718,
     "id": 660,
     "name": "Blue hat",
-    "image": "blue_hat.png"
+    "image": "blue_hat.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 719,
@@ -18444,13 +18534,24 @@
     "index": 729,
     "id": 650,
     "name": "Blue robe bottoms",
-    "image": "blue_robe_bottoms.png"
+    "image": "blue_robe_bottoms.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
+       
   },
   {
     "index": 730,
     "id": 640,
     "name": "Blue robe top",
-    "image": "blue_robe_top.png"
+    "image": "blue_robe_top.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 731,
@@ -29554,25 +29655,45 @@
     "index": 1125,
     "id": 632,
     "name": "Cream boots",
-    "image": "cream_boots.png"
+    "image": "cream_boots.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 1126,
     "id": 662,
     "name": "Cream hat",
-    "image": "cream_hat.png"
+    "image": "cream_hat.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 1127,
     "id": 652,
     "name": "Cream robe bottoms",
-    "image": "cream_robe_bottoms.png"
+    "image": "cream_robe_bottoms.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 1128,
     "id": 642,
     "name": "Cream robe top",
-    "image": "cream_robe_top.png"
+    "image": "cream_robe_top.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 1129,
@@ -39314,7 +39435,12 @@
     "index": 1570,
     "id": 8445,
     "name": "Fancy hedge (bagged)",
-    "image": "fancy_hedge_(bagged).png"
+    "image": "fancy_hedge_(bagged).png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 1571,
@@ -44145,7 +44271,12 @@
     "index": 1785,
     "id": 628,
     "name": "Green boots",
-    "image": "green_boots.png"
+    "image": "green_boots.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 1786,
@@ -44499,7 +44630,12 @@
     "index": 1807,
     "id": 658,
     "name": "Green hat",
-    "image": "green_hat.png"
+    "image": "green_hat.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 1808,
@@ -44537,13 +44673,23 @@
     "index": 1810,
     "id": 648,
     "name": "Green robe bottoms",
-    "image": "green_robe_bottoms.png"
+    "image": "green_robe_bottoms.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 1811,
     "id": 638,
     "name": "Green robe top",
-    "image": "green_robe_top.png"
+    "image": "green_robe_top.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 1812,
@@ -44743,37 +44889,43 @@
     "index": 1828,
     "id": 31205,
     "name": "Grid master altar icon scroll",
-    "image": "grid_master_altar_icon_scroll.png"
+    "image": "grid_master_altar_icon_scroll.png",
+    "tags": ["gridmaster"]
   },
   {
     "index": 1829,
     "id": 31181,
     "name": "Grid master tabard",
-    "image": "grid_master_tabard.png"
+    "image": "grid_master_tabard.png",
+    "tags": ["gridmaster"]
   },
   {
     "index": 1830,
     "id": 31184,
     "name": "Grid master tabard (b)",
-    "image": "grid_master_tabard_(b).png"
+    "image": "grid_master_tabard_(b).png",
+    "tags": ["gridmaster"]
   },
   {
     "index": 1831,
     "id": 31190,
     "name": "Grid master tabard (g)",
-    "image": "grid_master_tabard_(g).png"
+    "image": "grid_master_tabard_(g).png",
+    "tags": ["gridmaster"]
   },
   {
     "index": 1832,
     "id": 31187,
     "name": "Grid master tabard (p)",
-    "image": "grid_master_tabard_(p).png"
+    "image": "grid_master_tabard_(p).png",
+    "tags": ["gridmaster"]
   },
   {
     "index": 1833,
     "id": 31208,
     "name": "Grid master torch scroll",
-    "image": "grid_master_torch_scroll.png"
+    "image": "grid_master_torch_scroll.png",
+    "tags": ["gridmaster"]
   },
   {
     "index": 1834,
@@ -75816,7 +75968,12 @@
     "index": 2634,
     "id": 8439,
     "name": "Nice hedge (bagged)",
-    "image": "nice_hedge_(bagged).png"
+    "image": "nice_hedge_(bagged).png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 2635,
@@ -78923,8 +79080,12 @@
         "Tortoise With riders": {
           "droprate": "1/128"
         }
+      },
+        "shops": {
+                    "Yes": "No requirements"
+        }
       }
-    }
+    
   },
   {
     "index": 2805,
@@ -79000,7 +79161,12 @@
     "index": 2810,
     "id": 656,
     "name": "Pink hat",
-    "image": "pink_hat.png"
+    "image": "pink_hat.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 2811,
@@ -79028,7 +79194,10 @@
         "Tortoise With riders": {
           "droprate": "1/128"
         }
-      }
+      },
+        "shops": {
+                    "Yes": "No requirements"
+        }
     }
   },
   {
@@ -79041,7 +79210,10 @@
         "Tortoise With riders": {
           "droprate": "1/128"
         }
-      }
+      },
+        "shops": {
+                    "Yes": "No requirements"
+        }
     }
   },
   {
@@ -94313,7 +94485,12 @@
     "index": 3568,
     "id": 8441,
     "name": "Small box hedge (bagged)",
-    "image": "small_box_hedge_(bagged).png"
+    "image": "small_box_hedge_(bagged).png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 3569,
@@ -102694,7 +102871,13 @@
     "index": 3864,
     "id": 24219,
     "name": "Swift blade",
-    "image": "swift_blade.png"
+    "image": "swift_blade.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
+            
   },
   {
     "index": 3865,
@@ -102767,31 +102950,48 @@
     "index": 3866,
     "id": 31193,
     "name": "Swords and emblem",
-    "image": "swords_and_emblem.png"
+    "image": "swords_and_emblem.png",
+    "tags": ["gridmaster"]
   },
   {
     "index": 3867,
     "id": 31196,
     "name": "Swords and emblem (b)",
-    "image": "swords_and_emblem_(b).png"
+    "image": "swords_and_emblem_(b).png",
+    "tags": ["gridmaster"]
   },
   {
     "index": 3868,
     "id": 31202,
     "name": "Swords and emblem (g)",
-    "image": "swords_and_emblem_(g).png"
+    "image": "swords_and_emblem_(g).png",
+    "tags": ["gridmaster"]
   },
   {
     "index": 3869,
     "id": 31199,
     "name": "Swords and emblem (p)",
-    "image": "swords_and_emblem_(p).png"
+    "image": "swords_and_emblem_(p).png",
+    "tags": ["gridmaster"]
   },
   {
     "index": 3870,
     "id": 31556,
     "name": "Swordtip squid",
-    "image": "swordtip_squid.png"
+    "image": "swordtip_squid.png",
+    "sources": {
+        "other": {
+            "Cooking": {
+            "notes": "Requires raw swordtip squid.",
+            "rule": {
+                "all": [
+                {"has": 31553},
+                "canTrainCooking"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 3871,
@@ -102831,13 +103031,23 @@
     "index": 3872,
     "id": 8449,
     "name": "Tall box hedge (bagged)",
-    "image": "tall_box_hedge_(bagged).png"
+    "image": "tall_box_hedge_(bagged).png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 3873,
     "id": 8447,
     "name": "Tall fancy hedge (bagged)",
-    "image": "tall_fancy_hedge_(bagged).png"
+    "image": "tall_fancy_hedge_(bagged).png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 3874,
@@ -104250,7 +104460,12 @@
     "index": 3984,
     "id": 8437,
     "name": "Thorny hedge (bagged)",
-    "image": "thorny_hedge_(bagged).png"
+    "image": "thorny_hedge_(bagged).png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 3985,
@@ -105820,13 +106035,42 @@
     "index": 4023,
     "id": 8443,
     "name": "Topiary hedge (bagged)",
-    "image": "topiary_hedge_(bagged).png"
+    "image": "topiary_hedge_(bagged).png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
+            
   },
   {
     "index": 4024,
     "id": 12879,
     "name": "Torag's armour set",
-    "image": "torag's_armour_set.png"
+    "image": "torag's_armour_set.png",
+    "sources": {
+      "other": {
+        "Creating a set at the Grand Exchange": {
+          "notes": "Requires torag's helm, platebody, platelegs and hammers.",
+          "rule": {
+            "all": [
+              {
+                "has": 4745
+              },
+              {
+                "has": 4749
+              },
+              {
+                "has": 4751
+              },
+              {
+                "has": 4747
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4025,
@@ -105936,7 +106180,23 @@
     "index": 4033,
     "id": 19544,
     "name": "Tormented bracelet",
-    "image": "tormented_bracelet.png"
+    "image": "tormented_bracelet.png",
+    "sources": {
+        "other": {
+            "Creating a tormented bracelet": {
+            "notes": "Requires a zenyte bracelet, cosmic rune, soul rune, and a blood rune.",
+            "rule": {
+                "all": [
+                {"has": 19532},
+                {"has": 564},
+                {"has": 566},
+                {"has": 565},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4034,
@@ -106002,6 +106262,18 @@
         "Reward casket (master)": {
           "droprate": "1/13616"
         }
+      },
+      "other": {
+        "Cleaning a herb": {
+          "notes": "Can be cleaned in Nardah. Requires a grimy torstol.",
+          "rule": {
+            "all": [
+              {
+                "has": 219
+              }
+            ]
+          }
+        }
       }
     }
   },
@@ -106009,7 +106281,25 @@
     "index": 4038,
     "id": 111,
     "name": "Torstol potion (unf)",
-    "image": "torstol_potion_(unf).png"
+    "image": "torstol_potion_(unf).png",
+    "sources": {
+      "other": {
+        "Mixing a potion": {
+          "notes": "Requires vial of water and a torstol.",
+          "rule": {
+            "all": [
+              {
+                "has": 227
+              },
+              {
+                "has": 269
+              },
+              "canTrainHerblore"
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4039,
@@ -106059,7 +106349,27 @@
     "index": 4042,
     "id": 31145,
     "name": "Torva armour set",
-    "image": "torva_armour_set.png"
+    "image": "torva_armour_set.png",
+    "sources": {
+      "other": {
+        "Creating a set at the Grand Exchange": {
+          "notes": "Requires torva full helm, platebody and legs.",
+          "rule": {
+            "all": [
+              {
+                "has": 26382
+              },
+              {
+                "has": 26384
+              },
+              {
+                "has": 26386
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4043,
@@ -106143,31 +106453,100 @@
     "index": 4049,
     "id": 12924,
     "name": "Toxic blowpipe (empty)",
-    "image": "toxic_blowpipe_(empty).png"
+    "image": "toxic_blowpipe_(empty).png",
+    "sources": {
+        "other": {
+            "Creating an uncharged toxic staff": {
+            "notes": "Requires a tanzanite fang and a chisel.",
+            "rule": {
+                "all": [
+                {"has": 12922},
+                {"has": 1755},
+                "canTrainFletching"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4050,
     "id": 12902,
     "name": "Toxic staff (uncharged)",
-    "image": "toxic_staff_(uncharged).png"
+    "image": "toxic_staff_(uncharged).png",
+    "sources": {
+        "other": {
+            "Creating an uncharged toxic staff": {
+            "notes": "Requires a staff of the dead, a magic fang, and a chisel.",
+            "rule": {
+                "all": [
+                {"has": 11791},
+                {"has": 12932},
+                {"has": 1755},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4051,
     "id": 7771,
     "name": "Toy cat",
-    "image": "toy_cat.png"
+    "image": "toy_cat.png",
+    "sources": {
+      "other": {
+            "Craft a toy cat": {
+            "notes": "Requires a plank and a clockwork.",
+            "rule": {
+                "all": [
+                {"has": 960},
+                {"has": 8792},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4052,
     "id": 7763,
     "name": "Toy doll",
-    "image": "toy_doll.png"
+    "image": "toy_doll.png",
+    "sources": {
+      "other": {
+            "Craft a toy doll": {
+            "notes": "Requires a plank and a clockwork.",
+            "rule": {
+                "all": [
+                {"has": 960},
+                {"has": 8792},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4053,
     "id": 7765,
     "name": "Toy doll (wound)",
-    "image": "toy_doll.png"
+    "image": "toy_doll.png",
+    "sources": {
+      "other": {
+            "Wind a toy doll": {
+            "notes": "Requires a toy doll.",
+            "rule": {
+                "all": [
+                {"has": 7763}
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4054,
@@ -106185,7 +106564,19 @@
         "Ranging cape accumulator": {
           "droprate": "1/2000"
         }
-      }
+      },
+      "other": {
+            "Craft a toy mouse": {
+            "notes": "Requires a plank and a clockwork.",
+            "rule": {
+                "all": [
+                {"has": 960},
+                {"has": 8792},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
     }
   },
   {
@@ -106204,20 +106595,56 @@
         "Ranging cape accumulator": {
           "droprate": "1/2000"
         }
-      }
+      },
+      "other": {
+            "Wind a toy mouse": {
+            "notes": "Requires a toy mouse.",
+            "rule": {
+                "all": [
+                {"has": 7767}
+                ]
+            }
+            }
+        }
     }
   },
   {
     "index": 4056,
     "id": 7759,
     "name": "Toy soldier",
-    "image": "toy_soldier.png"
+    "image": "toy_soldier.png",
+    "sources": {
+        "other": {
+            "Craft a toy soldier": {
+            "notes": "Requires a plank and a clockwork.",
+            "rule": {
+                "all": [
+                {"has": 960},
+                {"has": 8792},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4057,
     "id": 7761,
     "name": "Toy soldier (wound)",
-    "image": "toy_soldier.png"
+    "image": "toy_soldier.png",
+    "sources": {
+        "other": {
+            "Wind a toy soldier": {
+            "notes": "Requires a toy soldier.",
+            "rule": {
+                "all": [
+                {"has": 7759}
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4058,
@@ -106238,290 +106665,353 @@
         "Hobgoblin Unarmed": {
           "droprate": "1/8"
         }
-      }
+      },
+        "other": {
+            "Sell gems to Gabooty": {
+            "notes": "Requires any gems."
+            },
+            "Tai Bwo Wannai Cleanup": {
+            "notes": "Reward from the minigame."
+            }
+        }
     }
   },
   {
     "index": 4059,
     "id": 25056,
     "name": "Trailblazer banner",
-    "image": "trailblazer_banner.png"
+    "image": "trailblazer_banner.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4060,
     "id": 25037,
     "name": "Trailblazer boots (t1)",
-    "image": "trailblazer_boots_(t1).png"
+    "image": "trailblazer_boots_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4061,
     "id": 25025,
     "name": "Trailblazer boots (t2)",
-    "image": "trailblazer_boots_(t2).png"
+    "image": "trailblazer_boots_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4062,
     "id": 25010,
     "name": "Trailblazer boots (t3)",
-    "image": "trailblazer_boots_(t3).png"
+    "image": "trailblazer_boots_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4063,
     "id": 25013,
     "name": "Trailblazer cane",
-    "image": "trailblazer_cane.png"
+    "image": "trailblazer_cane.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4064,
     "id": 25093,
     "name": "Trailblazer globe",
-    "image": "trailblazer_globe.png"
+    "image": "trailblazer_globe.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4065,
     "id": 25099,
     "name": "Trailblazer graceful ornament kit",
-    "image": "trailblazer_graceful_ornament_kit.png"
+    "image": "trailblazer_graceful_ornament_kit.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4066,
     "id": 25028,
     "name": "Trailblazer hood (t1)",
-    "image": "trailblazer_hood_(t1).png"
+    "image": "trailblazer_hood_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4067,
     "id": 25016,
     "name": "Trailblazer hood (t2)",
-    "image": "trailblazer_hood_(t2).png"
+    "image": "trailblazer_hood_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4068,
     "id": 25001,
     "name": "Trailblazer hood (t3)",
-    "image": "trailblazer_hood_(t3).png"
+    "image": "trailblazer_hood_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4069,
     "id": 25380,
     "name": "Trailblazer relic hunter (t1) armour set",
-    "image": "trailblazer_relic_hunter_(t1)_armour_set.png"
+    "image": "trailblazer_relic_hunter_(t1)_armour_set.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4070,
     "id": 25383,
     "name": "Trailblazer relic hunter (t2) armour set",
-    "image": "trailblazer_relic_hunter_(t2)_armour_set.png"
+    "image": "trailblazer_relic_hunter_(t2)_armour_set.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4071,
     "id": 25386,
     "name": "Trailblazer relic hunter (t3) armour set",
-    "image": "trailblazer_relic_hunter_(t3)_armour_set.png"
+    "image": "trailblazer_relic_hunter_(t3)_armour_set.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4072,
     "id": 28693,
     "name": "Trailblazer reloaded alchemy scroll",
-    "image": "trailblazer_reloaded_alchemy_scroll.png"
+    "image": "trailblazer_reloaded_alchemy_scroll.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4073,
     "id": 28702,
     "name": "Trailblazer reloaded banner",
-    "image": "trailblazer_reloaded_banner.png"
+    "image": "trailblazer_reloaded_banner.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4074,
     "id": 28690,
     "name": "Trailblazer reloaded blowpipe ornament kit",
-    "image": "trailblazer_reloaded_blowpipe_ornament_kit.png"
+    "image": "trailblazer_reloaded_blowpipe_ornament_kit.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4075,
     "id": 28721,
     "name": "Trailblazer reloaded boots (t1)",
-    "image": "trailblazer_reloaded_boots_(t1).png"
+    "image": "trailblazer_reloaded_boots_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4076,
     "id": 28733,
     "name": "Trailblazer reloaded boots (t2)",
-    "image": "trailblazer_reloaded_boots_(t2).png"
+    "image": "trailblazer_reloaded_boots_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4077,
     "id": 28745,
     "name": "Trailblazer reloaded boots (t3)",
-    "image": "trailblazer_reloaded_boots_(t3).png"
+    "image": "trailblazer_reloaded_boots_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4078,
     "id": 28684,
     "name": "Trailblazer reloaded bulwark ornament kit",
-    "image": "trailblazer_reloaded_bulwark_ornament_kit.png"
+    "image": "trailblazer_reloaded_bulwark_ornament_kit.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4079,
     "id": 28699,
     "name": "Trailblazer reloaded death scroll",
-    "image": "trailblazer_reloaded_death_scroll.png"
+    "image": "trailblazer_reloaded_death_scroll.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4080,
     "id": 28712,
     "name": "Trailblazer reloaded headband (t1)",
-    "image": "trailblazer_reloaded_headband_(t1).png"
+    "image": "trailblazer_reloaded_headband_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4081,
     "id": 28724,
     "name": "Trailblazer reloaded headband (t2)",
-    "image": "trailblazer_reloaded_headband_(t2).png"
+    "image": "trailblazer_reloaded_headband_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4082,
     "id": 28736,
     "name": "Trailblazer reloaded headband (t3)",
-    "image": "trailblazer_reloaded_headband_(t3).png"
+    "image": "trailblazer_reloaded_headband_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4083,
     "id": 28705,
     "name": "Trailblazer reloaded home teleport scroll",
-    "image": "trailblazer_reloaded_home_teleport_scroll.png"
+    "image": "trailblazer_reloaded_home_teleport_scroll.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4084,
     "id": 28708,
     "name": "Trailblazer reloaded rejuvenation pool scroll",
-    "image": "trailblazer_reloaded_rejuvenation_pool_scroll.png"
+    "image": "trailblazer_reloaded_rejuvenation_pool_scroll.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4085,
     "id": 28777,
     "name": "Trailblazer reloaded relic hunter (t1) armour set",
-    "image": "trailblazer_reloaded_relic_hunter_(t1)_armour_set.png"
+    "image": "trailblazer_reloaded_relic_hunter_(t1)_armour_set.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4086,
     "id": 28780,
     "name": "Trailblazer reloaded relic hunter (t2) armour set",
-    "image": "trailblazer_reloaded_relic_hunter_(t2)_armour_set.png"
+    "image": "trailblazer_reloaded_relic_hunter_(t2)_armour_set.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4087,
     "id": 28783,
     "name": "Trailblazer reloaded relic hunter (t3) armour set",
-    "image": "trailblazer_reloaded_relic_hunter_(t3)_armour_set.png"
+    "image": "trailblazer_reloaded_relic_hunter_(t3)_armour_set.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4088,
     "id": 28715,
     "name": "Trailblazer reloaded top (t1)",
-    "image": "trailblazer_reloaded_top_(t1).png"
+    "image": "trailblazer_reloaded_top_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4089,
     "id": 28727,
     "name": "Trailblazer reloaded top (t2)",
-    "image": "trailblazer_reloaded_top_(t2).png"
+    "image": "trailblazer_reloaded_top_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4090,
     "id": 28739,
     "name": "Trailblazer reloaded top (t3)",
-    "image": "trailblazer_reloaded_top_(t3).png"
+    "image": "trailblazer_reloaded_top_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4091,
     "id": 28748,
     "name": "Trailblazer reloaded torch",
-    "image": "trailblazer_reloaded_torch.png"
+    "image": "trailblazer_reloaded_torch.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4092,
     "id": 28718,
     "name": "Trailblazer reloaded trousers (t1)",
-    "image": "trailblazer_reloaded_trousers_(t1).png"
+    "image": "trailblazer_reloaded_trousers_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4093,
     "id": 28730,
     "name": "Trailblazer reloaded trousers (t2)",
-    "image": "trailblazer_reloaded_trousers_(t2).png"
+    "image": "trailblazer_reloaded_trousers_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4094,
     "id": 28742,
     "name": "Trailblazer reloaded trousers (t3)",
-    "image": "trailblazer_reloaded_trousers_(t3).png"
+    "image": "trailblazer_reloaded_trousers_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4095,
     "id": 28696,
     "name": "Trailblazer reloaded vengeance scroll",
-    "image": "trailblazer_reloaded_vengeance_scroll.png"
+    "image": "trailblazer_reloaded_vengeance_scroll.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4096,
     "id": 25096,
     "name": "Trailblazer rug",
-    "image": "trailblazer_rug.png"
+    "image": "trailblazer_rug.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4097,
     "id": 25087,
     "name": "Trailblazer teleport scroll",
-    "image": "trailblazer_teleport_scroll.png"
+    "image": "trailblazer_teleport_scroll.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4098,
     "id": 25090,
     "name": "Trailblazer tool ornament kit",
-    "image": "trailblazer_tool_ornament_kit.png"
+    "image": "trailblazer_tool_ornament_kit.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4099,
     "id": 25031,
     "name": "Trailblazer top (t1)",
-    "image": "trailblazer_top_(t1).png"
+    "image": "trailblazer_top_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4100,
     "id": 25019,
     "name": "Trailblazer top (t2)",
-    "image": "trailblazer_top_(t2).png"
+    "image": "trailblazer_top_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4101,
     "id": 25004,
     "name": "Trailblazer top (t3)",
-    "image": "trailblazer_top_(t3).png"
+    "image": "trailblazer_top_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4102,
     "id": 25034,
     "name": "Trailblazer trousers (t1)",
-    "image": "trailblazer_trousers_(t1).png"
+    "image": "trailblazer_trousers_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4103,
     "id": 25022,
     "name": "Trailblazer trousers (t2)",
-    "image": "trailblazer_trousers_(t2).png"
+    "image": "trailblazer_trousers_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4104,
     "id": 25007,
     "name": "Trailblazer trousers (t3)",
-    "image": "trailblazer_trousers_(t3).png"
+    "image": "trailblazer_trousers_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4105,
     "id": 29277,
     "name": "Trapper's tipple",
-    "image": "trapper's_tipple.png"
+    "image": "trapper's_tipple.png",
+    "sources": { 
+        "spawns": {
+                    "Yes": "canTrainHunter"
+        },
+        "shops": {
+                    "Yes": "canTrainHunter"
+        }
+    }
+            
   },
   {
     "index": 4106,
@@ -106607,25 +107097,45 @@
     "index": 4111,
     "id": 6351,
     "name": "Tribal top (blue)",
-    "image": "tribal_top_(blue).png"
+    "image": "tribal_top_(blue).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4112,
     "id": 6341,
     "name": "Tribal top (brown)",
-    "image": "tribal_top_(brown).png"
+    "image": "tribal_top_(brown).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4113,
     "id": 6371,
     "name": "Tribal top (pink)",
-    "image": "tribal_top_(pink).png"
+    "image": "tribal_top_(pink).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4114,
     "id": 6361,
     "name": "Tribal top (yellow)",
-    "image": "tribal_top_(yellow).png"
+    "image": "tribal_top_(yellow).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4115,
@@ -106644,43 +107154,71 @@
     "index": 4116,
     "id": 28567,
     "name": "Trinket of advanced weaponry",
-    "image": "trinket_of_advanced_weaponry.png"
+    "image": "trinket_of_advanced_weaponry.png",
+    "tags": [
+      "deadman"
+    ]
   },
   {
     "index": 4117,
     "id": 28564,
     "name": "Trinket of fairies",
-    "image": "trinket_of_fairies.png"
+    "image": "trinket_of_fairies.png",
+    "tags": [
+      "deadman"
+    ]
   },
   {
     "index": 4118,
     "id": 28570,
     "name": "Trinket of undead",
-    "image": "trinket_of_undead.png"
+    "image": "trinket_of_undead.png",
+    "tags": [
+      "deadman"
+    ]
   },
   {
     "index": 4119,
     "id": 28561,
     "name": "Trinket of vengeance",
-    "image": "trinket_of_vengeance.png"
+    "image": "trinket_of_vengeance.png",
+    "tags": [
+      "deadman"
+    ]
   },
   {
     "index": 4120,
     "id": 5040,
     "name": "Trousers (blue)",
-    "image": "trousers_(blue).png"
+    "image": "trousers_(blue).png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 4121,
     "id": 5036,
     "name": "Trousers (brown)",
-    "image": "trousers_(brown).png"
+    "image": "trousers_(brown).png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 4122,
     "id": 5038,
     "name": "Trousers (lilac)",
-    "image": "trousers_(lilac).png"
+    "image": "trousers_(lilac).png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
+            
   },
   {
     "index": 4123,
@@ -106719,7 +107257,18 @@
         "Catablepon": {
           "droprate": "1/50.5"
         }
-      }
+      },
+        "other": {
+            "Cooking": {
+            "notes": "Requires raw trout.",
+            "rule": {
+                "all": [
+                {"has": 335},
+                "canTrainCooking"
+                ]
+            }
+            }
+        }
     }
   },
   {
@@ -106765,7 +107314,10 @@
         "Green dragon Wilderness Slayer Cave": {
           "droprate": "1/1790.3"
         }
-      }
+      },
+        "shops": {
+                    "Yes": "No requirements"
+        }
     }
   },
   {
@@ -106827,14 +107379,53 @@
         "Tyras guard": {
           "droprate": "1/42.667"
         }
-      }
+      },
+        "shops": {
+                    "Yes": "No requirements"
+        },
+        "other": {
+            "Cooking": {
+            "notes": "Requires raw tuna.",
+            "rule": {
+                "all": [
+                {"has": 359},
+                "canTrainCooking"
+                ]
+            }
+            }
+        }
     }
   },
   {
     "index": 4127,
     "id": 7068,
     "name": "Tuna and corn",
-    "image": "tuna_and_corn.png"
+    "image": "tuna_and_corn.png",
+    "sources": {
+        "other": {
+            "Cooking": {
+            "notes": "Requires sweetcorn (bowl) and tuna, or sweetcorn (bowl) and chopped tuna, or cooked sweetcorn and chopped tuna.",
+            "rule": {
+              "any":[
+                {"all": [
+                {"has": 7088},
+                {"has": 361},
+                "canTrainCooking"
+                ]},
+                {"all": [
+                {"has": 7088},
+                {"has": 7086},
+                "canTrainCooking"
+                ]},
+              {"all": [
+                {"has": 5988},
+                {"has": 7086},
+                "canTrainCooking"
+                ]}]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4128,
@@ -106867,68 +107458,121 @@
         "Thermonuclear smoke devil": {
           "droprate": "1/35.667"
         }
-      }
+      },
+        "other": {
+            "Cooking": {
+            "notes": "Requires Tuna and corn, and Potato with butter.",
+            "rule": {
+                "all": [
+                {"has": 7068},
+                {"has": 6703},
+                "canTrainCooking"
+                ]
+            }
+            }
+        }
     }
   },
   {
     "index": 4129,
     "id": 634,
     "name": "Turquoise boots",
-    "image": "turquoise_boots.png"
+    "image": "turquoise_boots.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 4130,
     "id": 664,
     "name": "Turquoise hat",
-    "image": "turquoise_hat.png"
+    "image": "turquoise_hat.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 4131,
     "id": 654,
     "name": "Turquoise robe bottoms",
-    "image": "turquoise_robe_bottoms.png"
+    "image": "turquoise_robe_bottoms.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 4132,
     "id": 644,
     "name": "Turquoise robe top",
-    "image": "turquoise_robe_top.png"
+    "image": "turquoise_robe_top.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
+          
   },
   {
     "index": 4133,
     "id": 30634,
     "name": "Twinflame staff",
-    "image": "twinflame_staff.png"
+    "image": "twinflame_staff.png",
+    "sources": {
+        "other": {
+            "Creating a twinflame staff": {
+            "notes": "Requires a Battlestaff, an ice element staff crown and a fire element staff crown.",
+            "rule": {
+                "all": [
+                {"has": 1391},
+                {"has": 30628},
+                {"has": 30631}
+                ]
+            }
+            }
+        }
+    }
+          
   },
   {
     "index": 4134,
     "id": 24413,
     "name": "Twisted banner",
-    "image": "twisted_banner.png"
+    "image": "twisted_banner.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4135,
     "id": 24463,
     "name": "Twisted blueprints",
-    "image": "twisted_blueprints.png"
+    "image": "twisted_blueprints.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4136,
     "id": 24411,
     "name": "Twisted boots (t1)",
-    "image": "twisted_boots_(t1).png"
+    "image": "twisted_boots_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4137,
     "id": 24403,
     "name": "Twisted boots (t2)",
-    "image": "twisted_boots_(t2).png"
+    "image": "twisted_boots_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4138,
     "id": 24393,
     "name": "Twisted boots (t3)",
-    "image": "twisted_boots_(t3).png"
+    "image": "twisted_boots_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4139,
@@ -106960,67 +107604,78 @@
     "index": 4141,
     "id": 24395,
     "name": "Twisted cane",
-    "image": "twisted_cane.png"
+    "image": "twisted_cane.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4142,
     "id": 24407,
     "name": "Twisted coat (t1)",
-    "image": "twisted_coat_(t1).png"
+    "image": "twisted_coat_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4143,
     "id": 24399,
     "name": "Twisted coat (t2)",
-    "image": "twisted_coat_(t2).png"
+    "image": "twisted_coat_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4144,
     "id": 24389,
     "name": "Twisted coat (t3)",
-    "image": "twisted_coat_(t3).png"
+    "image": "twisted_coat_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4145,
     "id": 24405,
     "name": "Twisted hat (t1)",
-    "image": "twisted_hat_(t1).png"
+    "image": "twisted_hat_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4146,
     "id": 24397,
     "name": "Twisted hat (t2)",
-    "image": "twisted_hat_(t2).png"
+    "image": "twisted_hat_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4147,
     "id": 24387,
     "name": "Twisted hat (t3)",
-    "image": "twisted_hat_(t3).png"
+    "image": "twisted_hat_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4148,
     "id": 24466,
     "name": "Twisted horns",
-    "image": "twisted_horns.png"
+    "image": "twisted_horns.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4149,
     "id": 24469,
     "name": "Twisted relic hunter (t1) armour set",
-    "image": "twisted_relic_hunter_(t1)_armour_set.png"
+    "image": "twisted_relic_hunter_(t1)_armour_set.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4150,
     "id": 24472,
     "name": "Twisted relic hunter (t2) armour set",
-    "image": "twisted_relic_hunter_(t2)_armour_set.png"
+    "image": "twisted_relic_hunter_(t2)_armour_set.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4151,
     "id": 24475,
     "name": "Twisted relic hunter (t3) armour set",
-    "image": "twisted_relic_hunter_(t3)_armour_set.png"
+    "image": "twisted_relic_hunter_(t3)_armour_set.png",
+    "tags": ["leagues"]
   },
   {
     "index": 4152,
@@ -107032,19 +107687,22 @@
     "index": 4153,
     "id": 24409,
     "name": "Twisted trousers (t1)",
-    "image": "twisted_trousers_(t1).png"
+    "image": "twisted_trousers_(t1).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4154,
     "id": 24401,
     "name": "Twisted trousers (t2)",
-    "image": "twisted_trousers_(t2).png"
+    "image": "twisted_trousers_(t2).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4155,
     "id": 24391,
     "name": "Twisted trousers (t3)",
-    "image": "twisted_trousers_(t3).png"
+    "image": "twisted_trousers_(t3).png",
+    "tags": ["leagues"]
   },
   {
     "index": 4156,
@@ -107066,13 +107724,23 @@
     "index": 4157,
     "id": 9629,
     "name": "Tyras helm",
-    "image": "tyras_helm.png"
+    "image": "tyras_helm.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 4158,
     "id": 6527,
     "name": "Tzhaar-ket-em",
-    "image": "tzhaar-ket-em.png"
+    "image": "tzhaar-ket-em.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
   },
   {
     "index": 4159,
@@ -107087,7 +107755,10 @@
         "TzHaar-Ket Level 221": {
           "droprate": "1/512"
         }
-      }
+      },
+        "shops": {
+                    "Yes": "No requirements"
+        }
     }
   },
   {
@@ -107110,13 +107781,49 @@
     "index": 4161,
     "id": 1877,
     "name": "Ugthanki & onion",
-    "image": "ugthanki_&_onion.png"
+    "image": "ugthanki_&_onion.png",
+    "sources": {
+        "other": {
+            "Cooking meat": {
+            "notes": "Requires Chopped onion and Ugthanki meat or an onion and chopped ugthanki.",
+            "rule": {
+              "any":[
+                {"all": [
+                {"has": 1871},
+                {"has": 1861}
+                ]},
+                {"all": [
+                {"has": 1957},
+                {"has": 1873}
+                ]}]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4162,
     "id": 1879,
     "name": "Ugthanki & tomato",
-    "image": "ugthanki_&_tomato.png"
+    "image": "ugthanki_&_tomato.png",
+    "sources": {
+        "other": {
+            "Cooking meat": {
+            "notes": "Requires Chopped tomato and Ugthanki meat or a tomato and chopped ugthanki.",
+            "rule": {
+              "any":[
+                {"all": [
+                {"has": 1869},
+                {"has": 1861}
+                ]},
+                {"all": [
+                {"has": 1982},
+                {"has": 1873}
+                ]}]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4163,
@@ -107149,26 +107856,78 @@
         "Thermonuclear smoke devil": {
           "droprate": "1/107"
         }
-      }
+      },
+        "other": {
+            "Cooking a kebab": {
+            "notes": "Requires kebab mix and pitta bread.",
+            "rule": {
+                "all": [
+                {"has": 1881},
+                {"has": 1865}
+                ]
+            }
+            }
+        }
     }
   },
   {
     "index": 4164,
     "id": 1861,
     "name": "Ugthanki meat",
-    "image": "ugthanki_meat.png"
+    "image": "ugthanki_meat.png",
+    "sources": {
+        "other": {
+            "Cooking meat": {
+            "notes": "Requires Raw ugthanki meat.",
+            "rule": {
+                "all": [
+                {"has": 1859}
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4165,
     "id": 28307,
     "name": "Ultor ring",
-    "image": "ultor_ring.png"
+    "image": "ultor_ring.png",
+    "sources": {
+        "other": {
+            "Creating an ultor ring": {
+            "notes": "Requires a ultor icon and a chromium ingot.",
+            "rule": {
+                "all": [
+                {"has": 565},
+                {"has": 28295},
+                {"has": 28276},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4166,
     "id": 21483,
     "name": "Ultracompost",
-    "image": "ultracompost.png"
+    "image": "ultracompost.png",
+    "sources": { 
+        "other": {
+            "Creating ultracompost": {
+            "notes": "Requires supercompost and volcanic ash.",
+            "rule": {
+                "all": [
+                {"has": 6034},
+                {"has": 21622}
+                ]
+            }
+            }
+        }
+    }
+            
   },
   {
     "index": 4167,
@@ -107263,7 +108022,25 @@
     "index": 4169,
     "id": 31668,
     "name": "Umbral potion (unf)",
-    "image": "umbral_potion_(unf).png"
+    "image": "umbral_potion_(unf).png",
+    "sources": {
+      "other": {
+        "Mixing a potion": {
+          "notes": "Requires vial of water and an umbral coral.",
+          "rule": {
+            "all": [
+              {
+                "has": 227
+              },
+              {
+                "has": 31487
+              },
+              "canTrainHerblore"
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4170,
@@ -107275,20 +108052,59 @@
         "Skeleton (Tarn's Lair) Low level": {
           "droprate": "1/42.667"
         }
-      }
+      },
+      "other": {
+            "Creating an unblessed symbol": {
+            "notes": "Requires an Unstrung symbol and a ball of wool",
+            "rule": {
+                "all": [
+                {"has": 1714},
+                {"has": 1759}
+                ]
+            }
+            }
+        }
     }
   },
   {
     "index": 4171,
     "id": 12900,
     "name": "Uncharged toxic trident",
-    "image": "uncharged_toxic_trident.png"
+    "image": "uncharged_toxic_trident.png",
+    "sources": {
+        "other": {
+            "Creating an uncharged toxic trident": {
+            "notes": "Requires an uncharged trident, a magic fang and a chisel.",
+            "rule": {
+                "all": [
+                {"has": 11908},
+                {"has": 12932},
+                {"has": 1755},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4172,
     "id": 22294,
     "name": "Uncharged toxic trident (e)",
-    "image": "uncharged_toxic_trident_(e).png"
+    "image": "uncharged_toxic_trident_(e).png",
+    "sources": {
+        "other": {
+            "Creating an uncharged toxic trident (e)": {
+            "notes": "Requires an uncharged toxic trident and a kraken tentacle.",
+            "rule": {
+                "all": [
+                {"has": 12900},
+                {"has": 12004}
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4173,
@@ -107307,49 +108123,163 @@
     "index": 4174,
     "id": 22290,
     "name": "Uncharged trident (e)",
-    "image": "uncharged_trident_(e).png"
+    "image": "uncharged_trident_(e).png",
+    "sources": {
+        "other": {
+            "Creating an uncharged trident (e)": {
+            "notes": "Requires an uncharged trident and a kraken tentacle.",
+            "rule": {
+                "all": [
+                {"has": 11908},
+                {"has": 12004}
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4175,
     "id": 2317,
     "name": "Uncooked apple pie",
-    "image": "uncooked_apple_pie.png"
+    "image": "uncooked_apple_pie.png",
+    "sources": {
+        "other": {
+            "Creating an uncooked pie": {
+            "notes": "Requires a cooking apple and a pie shell.",
+            "rule": {
+                "all": [
+                {"has": 1955},
+                {"has": 2315},
+                "canTrainCooking"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4176,
     "id": 2321,
     "name": "Uncooked berry pie",
-    "image": "uncooked_berry_pie.png"
+    "image": "uncooked_berry_pie.png",
+    "sources": {
+        "other": {
+            "Creating an uncooked pie": {
+            "notes": "Requires Redberries and a pie shell.",
+            "rule": {
+                "all": [
+                {"has": 1951},
+                {"has": 2315},
+                "canTrainCooking"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4177,
     "id": 19656,
     "name": "Uncooked botanical pie",
-    "image": "uncooked_botanical_pie.png"
+    "image": "uncooked_botanical_pie.png",
+    "sources": {
+        "other": {
+            "Creating an uncooked pie": {
+            "notes": "Requires a Golovanova fruit top and a pie shell.",
+            "rule": {
+                "all": [
+                {"has": 19653},
+                {"has": 2315},
+                "canTrainCooking"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4178,
     "id": 22789,
     "name": "Uncooked dragonfruit pie",
-    "image": "uncooked_dragonfruit_pie.png"
+    "image": "uncooked_dragonfruit_pie.png",
+    "sources": {
+        "other": {
+            "Creating an uncooked pie": {
+            "notes": "Requires a Dragonfruit and a pie shell.",
+            "rule": {
+                "all": [
+                {"has": 22929},
+                {"has": 2315},
+                "canTrainCooking"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4179,
     "id": 7076,
     "name": "Uncooked egg",
-    "image": "uncooked_egg.png"
+    "image": "uncooked_egg.png",
+    "sources": {
+        "other": {
+            "Creating an uncooked egg": {
+            "notes": "Requires an egg and a bowl.",
+            "rule": {
+                "all": [
+                {"has": 1944},
+                {"has": 1923},
+                "canTrainCooking"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4180,
     "id": 2319,
     "name": "Uncooked meat pie",
-    "image": "uncooked_meat_pie.png"
+    "image": "uncooked_meat_pie.png",
+    "sources": {
+        "other": {
+            "Creating an uncooked pie": {
+            "notes": "Requires a cooked meat or chicken and a pie shell.",
+            "rule": {
+                "all": [
+                  {"any": [
+                    {"has": 2142},
+                    {"has": 2140}
+                  ]},
+                {"has": 2315},
+                "canTrainCooking"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4181,
     "id": 21684,
     "name": "Uncooked mushroom pie",
-    "image": "uncooked_mushroom_pie.png"
+    "image": "uncooked_mushroom_pie.png",
+    "sources": {
+        "other": {
+            "Creating an uncooked mushroom pie": {
+            "notes": "Requires a Sulliuscep cap and a pie shell.",
+            "rule": {
+                "all": [
+                {"has": 21626},
+                {"has": 2315},
+                "canTrainCooking"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4182,
@@ -108131,7 +109061,10 @@
         "Wise Old Man tasks": {
           "droprate": "Uncommon"
         }
-      }
+      },
+        "shops": {
+                    "Yes": "No requirements"
+        }
     }
   },
   {
@@ -108243,7 +109176,21 @@
         "Wise Old Man tasks": {
           "droprate": "Uncommon"
         }
-      }
+      },
+      "other": {
+            "Panning at the Dig Site": {
+            "notes": "Requires a cup of tea or cup of tea (nettle)",
+            "rule": {
+                "any": [
+                {"has": 1978},
+                {"all": [
+                  {"has": 1980},
+                  {"has": 1921}
+                ]}
+              ]
+            }
+            }
+        }
     }
   },
   {
@@ -108277,7 +109224,10 @@
         "Bag full of gems": {
           "droprate": "40 × 1/100000000"
         }
-      }
+      },
+        "shops": {
+                    "Yes": "No requirements"
+        }
     }
   },
   {
@@ -108392,7 +109342,21 @@
         "Wise Old Man tasks": {
           "droprate": "Uncommon"
         }
-      }
+      },
+      "other": {
+            "Panning at the Dig Site": {
+            "notes": "Requires a cup of tea or cup of tea (nettle)",
+            "rule": {
+                "any": [
+                {"has": 1978},
+                {"all": [
+                  {"has": 1980},
+                  {"has": 1921}
+                ]}
+              ]
+            }
+            }
+        }
     }
   },
   {
@@ -108537,7 +109501,12 @@
         "Mysterious glow": {
           "droprate": "Unknown"
         }
-      }
+      },
+      "other": {
+            "Searching boxes": {
+            "notes": "Various decorative scenery objects can be searched for a 1/1,000 chance to receive an uncut red topaz."
+            }
+        }
     }
   },
   {
@@ -108904,7 +109873,13 @@
         "Wise Old Man tasks": {
           "droprate": "Uncommon"
         }
-      }
+      },
+      "spawns": {
+                    "Yes": "canCompletePandemonium"
+        },
+        "shops": {
+                    "Yes": "No requirements"
+        }
     }
   },
   {
@@ -109214,14 +110189,37 @@
         "Wise Old Man tasks": {
           "droprate": "Uncommon"
         }
-      }
+      },
+      "spawns": {
+                    "Yes": "No requirements"
+        },
+        "shops": {
+                    "Yes": "No requirements"
+        }
     }
   },
   {
     "index": 4191,
     "id": 19496,
     "name": "Uncut zenyte",
-    "image": "uncut_zenyte.png"
+    "image": "uncut_zenyte.png",
+    "sources": {
+      "other": {
+        "Crafting an uncut zenyte": {
+          "notes": "Requires an onyx and a zenyte shard.",
+          "rule": {
+            "all": [
+              {
+                "has": 6573
+              },
+              {
+                "has": 19529
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4192,
@@ -109240,43 +110238,146 @@
     "index": 4193,
     "id": 3406,
     "name": "Unfinished potion",
-    "image": "unfinished_potion.png"
+    "image": "unfinished_potion.png",
+    "sources": {
+      "other": {
+        "Crafting an unfinished potion": {
+          "notes": "Requires ashes and a vial of water.",
+          "rule": {
+            "all": [
+              {
+                "has": 592
+              },
+              {
+                "has": 227
+              },
+              "canCompleteShadesOfMortton"
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4194,
     "id": 1791,
     "name": "Unfired bowl",
-    "image": "unfired_bowl.png"
+    "image": "unfired_bowl.png",
+    "sources": {
+      "other": {
+        "Crafting an unfired bowl": {
+          "notes": "Requires soft clay.",
+          "rule": {
+            "all": [
+              {
+                "has": 1761
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4195,
     "id": 28193,
     "name": "Unfired cup",
-    "image": "unfired_cup.png"
+    "image": "unfired_cup.png",
+    "sources": {
+      "other": {
+        "Crafting an unfired cup": {
+          "notes": "Requires soft clay.",
+          "rule": {
+            "all": [
+              {
+                "has": 1761
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4196,
     "id": 1789,
     "name": "Unfired pie dish",
-    "image": "unfired_pie_dish.png"
+    "image": "unfired_pie_dish.png",
+    "sources": {
+      "other": {
+        "Crafting an unfired pie dish": {
+          "notes": "Requires soft clay.",
+          "rule": {
+            "all": [
+              {
+                "has": 1761
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4197,
     "id": 5352,
     "name": "Unfired plant pot",
-    "image": "unfired_plant_pot.png"
+    "image": "unfired_plant_pot.png",
+    "sources": {
+      "other": {
+        "Crafting an unfired pot": {
+          "notes": "Requires soft clay.",
+          "rule": {
+            "all": [
+              {
+                "has": 1761
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4198,
     "id": 1787,
     "name": "Unfired pot",
-    "image": "unfired_pot.png"
+    "image": "unfired_pot.png",
+    "sources": {
+      "other": {
+        "Crafting an unfired pot": {
+          "notes": "Requires soft clay.",
+          "rule": {
+            "all": [
+              {
+                "has": 1761
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4199,
     "id": 4438,
     "name": "Unfired pot lid",
-    "image": "unfired_pot_lid.png"
+    "image": "unfired_pot_lid.png",
+    "sources": {
+      "other": {
+        "Crafting an unfired pot lid": {
+          "notes": "Requires soft clay.",
+          "rule": {
+            "all": [
+              {
+                "has": 1761
+              },
+              "canCompleteOneSmallFavor"
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4200,
@@ -109316,7 +110417,30 @@
     "index": 4201,
     "id": 13151,
     "name": "Unholy book page set",
-    "image": "unholy_book_page_set.png"
+    "image": "unholy_book_page_set.png",
+    "sources": {
+      "other": {
+        "Creating a set at the Grand Exchange": {
+          "notes": "Requires Zamorak pages 1, 2, 3 and 4.",
+          "rule": {
+            "all": [
+              {
+                "has": 3831
+              },
+              {
+                "has": 3832
+              },
+              {
+                "has": 3833
+              },
+              {
+                "has": 3834
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4202,
@@ -109328,7 +110452,18 @@
         "Cerberus": {
           "droprate": "1/26"
         }
-      }
+      },
+        "other": {
+            "Creating an unholy symbol": {
+            "notes": "Requires an unpowered symbol.",
+            "rule": {
+                "all": [
+                {"has": 1722},
+                "canCompleteHorrorFromTheDeep"
+                ]
+            }
+            }
+        }
     }
   },
   {
@@ -109405,14 +110540,34 @@
         "Chaos druid warrior": {
           "droprate": "1/64"
         }
-      }
+      },
+        "other": {
+            "Creating unicorn horn dust": {
+            "notes": "Requires a unicorn horn and a pestle and mortar.",
+            "rule": {
+                "all": [
+                {"has": 237},
+                {"has": 233}
+                ]
+            }
+            }
+        }
     }
   },
   {
     "index": 4205,
     "id": 7051,
     "name": "Unlit bug lantern",
-    "image": "unlit_bug_lantern.png"
+    "image": "unlit_bug_lantern.png",
+    "sources": { 
+        "spawns": {
+                    "Yes": "canCompleteTheHeartOfDarkness"
+        },
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
+            
   },
   {
     "index": 4206,
@@ -109442,7 +110597,13 @@
         "Barrel (Shaman Caves)": {
           "droprate": "1/100"
         }
-      }
+      }, 
+        "spawns": {
+                    "Yes": "No requirements"
+        },
+        "shops": {
+                    "Yes": "No requirements"
+        }
     }
   },
   {
@@ -109467,38 +110628,116 @@
         "Skeletal Wyvern": {
           "droprate": "1/64"
         }
-      }
+      },
+        "other": {
+            "Creating an unpowered orb": {
+            "notes": "Requires molten glass and a glassblowing pipe.",
+            "rule": {
+                "all": [
+                {"has": 1775},
+                {"has": 1785},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
     }
   },
   {
     "index": 4208,
     "id": 1722,
     "name": "Unpowered symbol",
-    "image": "unpowered_symbol.png"
+    "image": "unpowered_symbol.png",
+    "sources": {
+        "other": {
+            "Creating an unpowered symbol": {
+            "notes": "Requires an unstrung emblem and a ball of wool.",
+            "rule": {
+                "all": [
+                {"has": 1720},
+                {"has": 1759}
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4209,
     "id": 4825,
     "name": "Unstrung comp bow",
-    "image": "unstrung_comp_bow.png"
+    "image": "unstrung_comp_bow.png",
+    "sources": {
+        "other": {
+            "Creating an unstrung comp bow": {
+            "notes": "Requires achey tree logs and wolf bones.",
+            "rule": {
+                "all": [
+                "canCompleteZogreFleshEaters"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4210,
     "id": 1720,
     "name": "Unstrung emblem",
-    "image": "unstrung_emblem.png"
+    "image": "unstrung_emblem.png",
+    "sources": {
+        "other": {
+            "Creating an unstrung emblem": {
+            "notes": "Requires a silver bar and an unholy mould.",
+            "rule": {
+                "all": [
+                {"has": 2355},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4211,
     "id": 19607,
     "name": "Unstrung heavy ballista",
-    "image": "unstrung_heavy_ballista.png"
+    "image": "unstrung_heavy_ballista.png",
+    "sources": {
+        "other": {
+            "Creating a heavy ballista": {
+            "notes": "Requires a Incomplete heavy ballista and a Ballista spring.",
+            "rule": {
+                "all": [
+                {"has": 19598},
+                {"has": 19601},
+                "canTrainFletching"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4212,
     "id": 19604,
     "name": "Unstrung light ballista",
-    "image": "unstrung_light_ballista.png"
+    "image": "unstrung_light_ballista.png",
+    "sources": {
+        "other": {
+            "Creating a light ballista": {
+            "notes": "Requires a Incomplete light ballista and a Ballista spring.",
+            "rule": {
+                "all": [
+                {"has": 19595},
+                {"has": 19601},
+                "canTrainFletching"
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4213,
@@ -109510,7 +110749,22 @@
         "Skeleton (Tarn's Lair) Low level": {
           "droprate": "1/64"
         }
-      }
+      },
+        "shops": {
+                    "Yes": "No requirements"
+        },
+        "other": {
+            "Creating an unstrung symbol": {
+            "notes": "Requires a silver bar and a holy mould.",
+            "rule": {
+                "all": [
+                {"has": 2355},
+                {"has": 1599},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
     }
   },
   {
@@ -109546,7 +110800,21 @@
     "index": 4216,
     "id": 27657,
     "name": "Ursine chainmace (u)",
-    "image": "ursine_chainmace_(u).png"
+    "image": "ursine_chainmace_(u).png",
+    "sources": {
+        "other": {
+            "Creating an Ursine chainmace": {
+            "notes": "Requires a Viggora's chainmace (u) and Claws of callisto.",
+            "rule": {
+                "all": [
+                {"has": 22542},
+                {"has": 27667}
+                ]
+            }
+            }
+        }
+    }
+        
   },
   {
     "index": 4217,
@@ -109590,7 +110858,13 @@
     "index": 4219,
     "id": 29900,
     "name": "Varlamorian kebab",
-    "image": "varlamorian_kebab.png"
+    "image": "varlamorian_kebab.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+        }
+    }
+        
   },
   {
     "index": 4220,
@@ -109625,25 +110899,88 @@
     "index": 4221,
     "id": 2195,
     "name": "Veg ball",
-    "image": "veg_ball.png"
+    "image": "veg_ball.png",
+    "sources": {
+      "other": {
+        "Making a veg ball": {
+          "notes": "Requires an unfinished bowl Equa leaves.",
+          "rule": {
+                "all": [
+                {"has": 2166},                
+                {"has": 2171},
+                {"has": 1942},
+                {"has": 1957},
+                {"has": 2128}
+                ]
+            }
+        }
+      }
+    }
   },
   {
     "index": 4222,
     "id": 2281,
     "name": "Vegetable batta",
-    "image": "vegetable_batta.png"
+    "image": "vegetable_batta.png",
+    "sources": {
+        "other": {
+            "Creating a vegetable batta": {
+            "notes": "Requires an unfinished batta and Equa leaves.",
+            "rule": {
+                "all": [
+                {"has": 2171},
+                {"has": 1982},
+                {"has": 1985},
+                {"has": 2126},
+                {"has": 1957},
+                {"has": 1965},
+                {"has": 2164},
+                {"has": 2128}
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4223,
     "id": 27612,
     "name": "Venator bow (uncharged)",
-    "image": "venator_bow_(uncharged).png"
+    "image": "venator_bow_(uncharged).png",
+    "sources": {
+        "other": {
+            "Creating a venator bow": {
+            "notes": "Requires a Venator shard.",
+            "rule": {
+                "all": [
+                {"has": 27614}
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4224,
     "id": 28310,
     "name": "Venator ring",
-    "image": "venator_ring.png"
+    "image": "venator_ring.png",
+    "sources": {
+        "other": {
+            "Creating a venator ring": {
+            "notes": "Requires a venator icon and a chromium ingot.",
+            "rule": {
+                "all": [
+                {"has": 565},
+                {"has": 28298},
+                {"has": 28276},
+                "canTrainCrafting"
+                ]
+            }
+            }
+        }
+    }
+        
   },
   {
     "index": 4225,
@@ -109665,7 +111002,30 @@
     "index": 4226,
     "id": 12875,
     "name": "Verac's armour set",
-    "image": "verac's_armour_set.png"
+    "image": "verac's_armour_set.png",
+    "sources": {
+      "other": {
+        "Creating a set at the Grand Exchange": {
+          "notes": "Requires a Verac's brassard, Verac's flail, Verac's helm and a verac's plateskirt.",
+          "rule": {
+            "all": [
+              {
+                "has": 4757
+              },
+              {
+                "has": 4755
+              },
+              {
+                "has": 4753
+              },
+              {
+                "has": 4759
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4227,
@@ -109772,18 +111132,6 @@
     }
   },
   {
-    "index": 4235,
-    "id": 22613,
-    "name": "Vesta's longsword",
-    "image": "vesta's_longsword.png"
-  },
-  {
-    "index": 4236,
-    "id": 22610,
-    "name": "Vesta's spear",
-    "image": "vesta's_spear.png"
-  },
-  {
     "index": 4237,
     "id": 229,
     "name": "Vial",
@@ -109877,7 +111225,18 @@
         "Serum 207": {
           "droprate": "1/25.6"
         }
-      }
+      }, 
+        "spawns": {
+                    "Yes": "No requirements"
+                },
+        "shops": {
+                    "Yes": "No requirements"
+                },
+        "other": {
+          "Empty any filled vial":{
+            "Notes": "Requires any potion or filled vial"
+          }
+        }
     }
   },
   {
@@ -110017,7 +111376,13 @@
         "Tortured soul": {
           "droprate": "1/128"
         }
-      }
+      }, 
+        "spawns": {
+                    "Yes": "No requirements"
+                },
+        "shops": {
+                    "Yes": "No requirements"
+                }
     }
   },
   {
@@ -110188,103 +111553,203 @@
     "index": 4242,
     "id": 6359,
     "name": "Villager armband (blue)",
-    "image": "villager_armband_(blue).png"
+    "image": "villager_armband_(blue).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4243,
     "id": 6347,
     "name": "Villager armband (brown)",
-    "image": "villager_armband_(brown).png"
+    "image": "villager_armband_(brown).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4244,
     "id": 6379,
     "name": "Villager armband (pink)",
-    "image": "villager_armband_(pink).png"
+    "image": "villager_armband_(pink).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4245,
     "id": 6369,
     "name": "Villager armband (yellow)",
-    "image": "villager_armband_(yellow).png"
+    "image": "villager_armband_(yellow).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4246,
     "id": 6355,
     "name": "Villager hat (blue)",
-    "image": "villager_hat_(blue).png"
+    "image": "villager_hat_(blue).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4247,
     "id": 6345,
     "name": "Villager hat (brown)",
-    "image": "villager_hat_(brown).png"
+    "image": "villager_hat_(brown).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4248,
     "id": 6375,
     "name": "Villager hat (pink)",
-    "image": "villager_hat_(pink).png"
+    "image": "villager_hat_(pink).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4249,
     "id": 6365,
     "name": "Villager hat (yellow)",
-    "image": "villager_hat_(yellow).png"
+    "image": "villager_hat_(yellow).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4250,
     "id": 6353,
     "name": "Villager robe (blue)",
-    "image": "villager_robe_(blue).png"
+    "image": "villager_robe_(blue).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4251,
     "id": 6343,
     "name": "Villager robe (brown)",
-    "image": "villager_robe_(brown).png"
+    "image": "villager_robe_(brown).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4252,
     "id": 6373,
     "name": "Villager robe (pink)",
-    "image": "villager_robe_(pink).png"
+    "image": "villager_robe_(pink).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4253,
     "id": 6363,
     "name": "Villager robe (yellow)",
-    "image": "villager_robe_(yellow).png"
+    "image": "villager_robe_(yellow).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4254,
     "id": 6357,
     "name": "Villager sandals (blue)",
-    "image": "villager_sandals_(blue).png"
+    "image": "villager_sandals_(blue).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4255,
     "id": 6349,
     "name": "Villager sandals (brown)",
-    "image": "villager_sandals_(brown).png"
+    "image": "villager_sandals_(brown).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4256,
     "id": 6377,
     "name": "Villager sandals (pink)",
-    "image": "villager_sandals_(pink).png"
+    "image": "villager_sandals_(pink).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4257,
     "id": 6367,
     "name": "Villager sandals (yellow)",
-    "image": "villager_sandals_(yellow).png"
+    "image": "villager_sandals_(yellow).png",
+    "sources": {
+        "shops": {
+                    "Yes": {"has": 6306}
+                }
+    }
   },
   {
     "index": 4258,
     "id": 31148,
     "name": "Virtus armour set",
-    "image": "virtus_armour_set.png"
+    "image": "virtus_armour_set.png",
+    "sources": {
+      "other": {
+        "Creating a set at the Grand Exchange": {
+          "notes": "Requires a virtus mask, virtus robe top, and virtus robe bottom.",
+          "rule": {
+            "all": [
+              {
+                "has": 26241
+              },
+              {
+                "has": 26245
+              },
+              {
+                "has": 26243
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4259,
@@ -110365,14 +111830,31 @@
         "Drink troll": {
           "droprate": "1/10"
         }
-      }
+      },
+        "shops": {
+                    "Yes": "No requirements"
+                }
     }
   },
   {
     "index": 4263,
     "id": 27690,
     "name": "Voidwaker",
-    "image": "voidwaker.png"
+    "image": "voidwaker.png",
+    "sources": {
+        "other": {
+            "Creating a voidwaker": {
+            "notes": "Requires a voidwaker blade, voidwaker hilt, and voidwaker gem.",
+            "rule": {
+                "all": [
+                {"has": 27684},
+                {"has": 27681},
+                {"has": 27687}
+                ]
+            }
+            }
+        }
+    }
   },
   {
     "index": 4264,
@@ -110426,7 +111908,17 @@
     "index": 4267,
     "id": 24514,
     "name": "Volatile orb",
-    "image": "volatile_orb.png"
+    "image": "volatile_orb.png",
+    "sources": {
+      "drops": {
+        "The Nightmare": {
+          "droprate": "1/960–1/549"
+        },
+        "Phosani's Nightmare": {
+          "droprate": "1/1,600"
+        }
+      }
+    }
   },
   {
     "index": 4268,
@@ -110456,38 +111948,69 @@
         "Taloned Wyvern": {
           "droprate": "1/61.5"
         }
-      }
+      },
+        "shops": {
+                    "Yes": {
+                      "all": [
+                      "canCompleteBoneVoyage",
+                      "canTrainMining"
+                      ]
+                    }
+                }
     }
   },
   {
     "index": 4269,
     "id": 12771,
     "name": "Volcanic whip mix",
-    "image": "volcanic_whip_mix.png"
+    "image": "volcanic_whip_mix.png",
+    "sources": {
+        "shops": {
+                    "Yes": "No requirements"
+                }
+    }
   },
   {
     "index": 4270,
     "id": 30685,
     "name": "Vulnerability charm",
-    "image": "vulnerability_charm.png"
+    "image": "vulnerability_charm.png",
+    "tags": [
+      "deadman"
+    ]
   },
   {
     "index": 4271,
     "id": 9636,
     "name": "Vyrewatch legs",
-    "image": "vyrewatch_legs.png"
+    "image": "vyrewatch_legs.png",
+    "sources": {
+        "shops": {
+                    "Yes": "canCompleteDarknessOfHallowvale"
+                }
+    }
   },
   {
     "index": 4272,
     "id": 9638,
     "name": "Vyrewatch shoes",
-    "image": "vyrewatch_shoes.png"
+    "image": "vyrewatch_shoes.png",
+    "sources": {
+        "shops": {
+                    "Yes": "canCompleteDarknessOfHallowvale"
+                }
+    }
   },
   {
     "index": 4273,
     "id": 9634,
     "name": "Vyrewatch top",
-    "image": "vyrewatch_top.png"
+    "image": "vyrewatch_top.png",
+    "sources": {
+        "shops": {
+                    "Yes": "canCompleteDarknessOfHallowvale"
+                }
+    }
   },
   {
     "index": 4274,
@@ -110527,7 +112050,12 @@
     "index": 4275,
     "id": 12802,
     "name": "Ward upgrade kit",
-    "image": "ward_upgrade_kit.png"
+    "image": "ward_upgrade_kit.png",
+    "sources": {
+                "shops": {
+                    "Yes": "No requirements"
+                }
+        }
   },
   {
     "index": 4276,
@@ -110592,14 +112120,34 @@
         "Dagannoth (Waterbirth Island) Level 90": {
           "droprate": "1/2048"
         }
-      }
+      },
+            "shops": {
+                "Yes": "canCompleteTheFremennikTrials"
+            }
     }
   },
   {
     "index": 4279,
     "id": 28301,
     "name": "Warrior icon",
-    "image": "warrior_icon.png"
+    "image": "warrior_icon.png",
+    "sources": {
+      "other": {
+        "Creating a warrior icon": {
+          "notes": "Requires a chisel and a warrior ring.",
+          "rule": {
+            "all": [
+              {
+                "has": 1755
+              },
+              {
+                "has": 6735
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   {
     "index": 4280,
@@ -110747,6 +112295,21 @@
         "Forgotten Soul": {
           "droprate": "1/128"
         }
+      },
+      "other": {
+        "Creating a water battlestaff": {
+          "notes": "Requires a water orb and a battlestaff.",
+          "rule": {
+            "all": [
+              {
+                "has": 571
+              },
+              {
+                "has": 1391
+              }
+            ]
+          }
+        }
       }
     }
   },
@@ -110786,6 +112349,24 @@
         },
         "Cave kraken": {
           "droprate": "1/50"
+        }
+      },
+      "other": {
+        "Creating a water orb": {
+          "notes": "Requires an unpowered orb, a water rune and a cosmic rune.",
+          "rule": {
+            "all": [
+              {
+                "has": 567
+              },
+              {
+                "has": 555
+              },
+              {
+                "has": 564
+              }
+            ]
+          }
         }
       }
     }
@@ -111274,7 +112855,13 @@
         "Wise Old Man tasks": {
           "droprate": "Common"
         }
-      }
+      },
+      "shops": {
+                "Yes": "No requirements"
+            },
+      "spawns": {
+                "Yes": "No requirements"
+            }    
     }
   },
   {
@@ -111373,12 +112960,7 @@
         }
       },
       "shops": {
-        "Yes": "No requirements"
-      },
-      "other": {
-        "Empty a watering can (8)": {
-          "notes": "You can get a watering can (8) from killing a farmer."
-        }
+        "Yes": "canCompleteTempleOfTheEye"
       }
     }
   },
@@ -114343,9 +115925,6 @@
           "droprate": "1/7"
         }
       },
-      "shops": {
-        "Yes": "No requirements"
-      },
       "other": {
         "Making a wizard blizzard": {
           "notes": "Requires pineapple chunks, lime slices, and a cocktail glass.",
@@ -114996,10 +116575,16 @@
     "sources": {
       "other": {
         "Making a worm hole": {
-          "notes": "Requires Equa leaves.",
+          "notes": "Requires an unfinished bowl Equa leaves.",
           "rule": {
-            "has": 2128
-          }
+                "all": [
+                {"has": 2166},
+                {"has": 2162},
+                {"has": 1957},
+                {"has": 2171},
+                {"has": 2128}
+                ]
+            }
         }
       }
     }
