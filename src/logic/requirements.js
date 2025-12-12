@@ -180,11 +180,41 @@ export const REQUIREMENT_CHECKS = {
     canCompleteSecretsOfTheNorth(ctx) {
         return false; // TODO
     },
+    canCompleteLunarDiplomacy(ctx) {
+        return false; // TODO
+    },
+    canCompleteEaglesPeak(ctx) {
+        return false; // TODO
+    },
+    canCompleteUndergroundPass(ctx) {
+        return false; // TODO
+    },
+    canCompleteEnakhrasLament(ctx) {
+        return false; // TODO
+    },
+    canCompleteTheGrandTree(ctx) {
+        return false; // TODO
+    },
     canEnterBraindeathIsland(ctx) {
         return false; // TODO
     },
     canDoMixology(ctx) {
         return false; // TODO
+    },
+    canCatchImplingsInJars(ctx) {
+        return canCatchImplingsInJars(ctx);
+    },
+    canDeadfallTrap(ctx) {
+        return canDeadfallTrap(ctx);
+    },
+    canDoBirdhouses(ctx) {
+        return canDoBirdhouses(ctx);
+    },
+    canCatchSalamanders(ctx) {
+        return canCatchSalamanders(ctx);
+    },
+    canCatchCrabs(ctx) {
+        return canCatchCrabs(ctx);
     },
     canCompleteTheFrozenDoor(ctx) {
         return canCompleteTheFrozenDoor(ctx);
@@ -212,6 +242,12 @@ export const REQUIREMENT_CHECKS = {
     },
     canReachAbyssalSire(ctx) {
         return canCompleteEnterTheAbyss(ctx) || canCompleteFairytaleIGrowingPains(ctx);
+    },
+    canReachTrollheim(ctx) {
+        return canReachTrollheim(ctx);
+    },
+    canGetBirdNestWyson(ctx) {
+        return canGetBirdNestWyson(ctx);
     },
     canDoGuardiansOfTheRift(ctx) {
         return canCompleteTempleOfTheEye(ctx);
@@ -414,14 +450,86 @@ export const REQUIREMENT_CHECKS = {
     hasMagicSapling(ctx) {
         return has(ctx, 5374);
     },
+    hasRedwoodSapling(ctx) {
+        return has(ctx, 22859);
+    },
+    hasTeakSapling(ctx) {
+        return has(ctx, 21477);
+    },
+    hasMahoganySapling(ctx) {
+        return has(ctx, 21480);
+    },
+    hasCamphorSapling(ctx) {
+        return has(ctx, 31502);
+    },
+    hasIronwoodSapling(ctx) {
+        return has(ctx, 31505);
+    },
+    hasRosewoodSapling(ctx) {
+        return has(ctx, 31508);
+    },
     hasBananaSapling(ctx) {
         return has(ctx, 5497);
     },
     hasAppleSapling(ctx) {
         return has(ctx, 5496);
     },
+    hasRosemarySeed(ctx) {
+        return has(ctx, 5097);
+    },
+    hasCabbageSeed(ctx) {
+        return has(ctx, 5324);
+    },
+    hasBarleySeed(ctx) {
+        return has(ctx, 5305);
+    },
+    hasJuteSeed(ctx) {
+        return has(ctx, 5306);
+    },
+    hasHammerstoneSeed(ctx) {
+        return has(ctx, 5307);
+    },
     hasAsgarnianSeed(ctx) {
         return has(ctx, 5308);
+    },
+    hasYanillianSeed(ctx) {
+        return has(ctx, 5309);
+    },
+    hasKrandorianSeed(ctx) {
+        return has(ctx, 5310);
+    },
+    hasWildbloodSeed(ctx) {
+        return has(ctx, 5311);
+    },
+    hasMushroomSpore(ctx) {
+        return has(ctx, 5282);
+    },
+    hasSeaweedSpore(ctx) {
+        return has(ctx, 21490);
+    },
+    hasCactusSeed(ctx) {
+        return has(ctx, 5280);
+    },
+    hasPotatoCactusSeed(ctx) {
+        return has(ctx, 22873);
+    },
+    hasWhiteLilySeed(ctx) {
+        return has(ctx, 22887);
+    },
+    hasCottonSeed(ctx) {
+        return has(ctx, 31545);
+    },
+    hasHempSeed(ctx) {
+        return has(ctx, 31543);
+    },
+    hasElkhornFrag(ctx) {
+        return has(ctx, 31511);
+    },
+    hasPillarFrag(ctx) {
+        return has(ctx, 31513);
+    },
+    hasUmbralFrag(ctx) {
+        return has(ctx, 31515);
     },
     hasCupOfTea(ctx) {
         return hasCupOfTea(ctx);
@@ -461,6 +569,9 @@ export const REQUIREMENT_CHECKS = {
     },
     canPlantTrees(ctx) {
         return canPlantTrees(ctx);
+    },
+    canPlantHardwoodTrees(ctx) {
+        return canPlantHardwoodTrees(ctx);
     },
     canPlantPlants(ctx) {
         return canPlantPlants(ctx);
@@ -707,6 +818,15 @@ function hasFireRuneSource(ctx) {
         || (has(ctx, 20716) && has(ctx, 20718)); // Tome of fire and Burnt page
 }
 
+function canReachTrollheim(ctx) {
+    return canCompleteDeathPlateau(ctx); // TODO achievement diaries
+}
+
+function canGetBirdNestWyson(ctx) {
+    return has(ctx, 7418)  // Mole skin
+        && has(ctx, 7416); // Mole claw
+}
+
 function canDoCommanderZilyana(ctx) {
     return false; // TODO
 }
@@ -725,6 +845,56 @@ function canDoKrilTsutsaroth(ctx) {
 
 function canDoNex(ctx) {
     return false; // TODO
+}
+
+function canCatchImplingsInJars(ctx) {
+    return canTrainHunter(ctx) //
+        && has(ctx, 10010) // Butterfly net
+        && has(ctx, 11260);// Impling jar
+}
+
+function canDeadfallTrap(ctx) {
+    return canTrainHunter(ctx) //
+        && has(ctx, 946) // Knife
+        && (
+            has(ctx, 1511)     // logs
+            || has(ctx, 1521)  // Oak logs
+            || has(ctx, 1519)  // Willow logs
+            || has(ctx, 6333)  // Teak logs
+            || has(ctx, 1517)  // Maple logs
+            || has(ctx, 6332)  // Mahogany logs
+            || has(ctx, 32904) // Camphor logs
+            || has(ctx, 1515)  // Yew logs
+            || has(ctx, 1513)  // Magic logs
+            || has(ctx, 32907) // Ironwood logs
+            || has(ctx, 32910) // Rosewood logs
+            || canTrainWoodcutting(ctx) // for untradable Juniper logs
+        );
+}
+
+function canCatchSalamanders(ctx) {
+    return canTrainHunter(ctx) //
+        && has(ctx, 954) // Rope
+        && has(ctx, 303); // Small fishing net
+}
+
+function canCatchCrabs(ctx) {
+    return canTrainConstruction(ctx) //
+        && canTrainHunter(ctx) //
+        && has(ctx, 2347)      // Hammer
+        && has(ctx, 8794)      // Saw
+        && has(ctx, 1925)      // Bucket
+        && has(ctx, 960)       // Plank
+        && (
+            has(ctx, 4819)     // Bronze nails
+            || has(ctx, 4820)  // Iron nails
+            || has(ctx, 1539)  // Steel nails
+            || has(ctx, 4821)  // Black nails
+            || has(ctx, 4822)  // Mithril nails
+            || has(ctx, 4823)  // Adamantite nails
+            || has(ctx, 4824)  // Rune nails
+            || has(ctx, 31406) // Dragon nails
+        );
 }
 
 function canEnterKalphiteLair(ctx) {
@@ -1012,14 +1182,14 @@ function canCompleteNatureSpirit(ctx) {
 }
 
 function canCompleteTempleOfTheEye(ctx) {
-    return has(ctx, 1929)     // Bucket of water
+    return has(ctx, 1929) // Bucket of water
         && has(ctx, 1755) // Chisel
         && (has(ctx, 1265) || has(ctx, 1267)) // A bronze or iron pickaxe
         && canTrainRunecraft(ctx);
 }
 
 function canCompleteDeathPlateau(ctx) {
-    return has(ctx, 2309)      // Bread
+    return has(ctx, 2309)  // Bread
         && has(ctx, 333)   // Trout
         && has(ctx, 2351)  // Iron bar
         && has(ctx, 1905)  // Asgarnian ale
@@ -1028,8 +1198,8 @@ function canCompleteDeathPlateau(ctx) {
 
 function canCompleteRoyalTrouble(ctx) {
     return canCompleteThroneOfMiscellania(ctx) //
-        && has(ctx, 954) // Rope
-        && has(ctx, 453) // Coal
+        && has(ctx, 954)  // Rope
+        && has(ctx, 453)  // Coal
         && has(ctx, 960); // Plank
 }
 
@@ -1124,14 +1294,14 @@ function canCompleteTheFremennikTrials(ctx) {
 }
 
 function canCompleteDruidicRitual(ctx) {
-    return has(ctx, 2136)      // Raw bear meat
+    return has(ctx, 2136)  // Raw bear meat
         && has(ctx, 2134)  // Raw rat meat
         && has(ctx, 2132)  // Raw beef
         && has(ctx, 2138); // Raw chicken
 }
 
 function canCompletePandemonium(ctx) {
-    return has(ctx, 2347)      // Hammer
+    return has(ctx, 2347)  // Hammer
         && has(ctx, 8794); // Saw
 }
 
@@ -1277,12 +1447,23 @@ function canTrainFarming(ctx) {
 }
 
 function canPlantTrees(ctx) {
-    return has(ctx, 5341) // Rake
+    return canTrainFarming(ctx) //
+        && has(ctx, 5341) // Rake
         && has(ctx, 952); // Spade
 }
 
+function canPlantHardwoodTrees(ctx) {
+    return canPlantTrees(ctx) //
+        && (
+            canCompleteBoneVoyage(ctx) //
+            || canTrainWoodcutting(ctx) //
+            || canCompletePandemonium(ctx) //
+        );
+}
+
 function canPlantPlants(ctx) {
-    return has(ctx, 5341) // Rake
+    return canTrainFarming(ctx) //
+        && has(ctx, 5341) // Rake
         && has(ctx, 5343); // Seed dibber
 }
 

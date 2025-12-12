@@ -8414,7 +8414,7 @@
         "Chest (Observatory Dungeon, antipoison)": {
           "droprate": "Always"
         },
-        "Bandit (Bandit Camp)": {
+        "Bandit (Bandit Camp) (thieving)": {
           "droprate": "1/7"
         },
         "Chest (The Lost Tribe)": {
@@ -67252,7 +67252,7 @@
         "Scavenger beast": {
           "droprate": "2 × 1/9"
         },
-        "Bandit (Bandit Camp)": {
+        "Bandit (Bandit Camp) (thieving)": {
           "droprate": "1/7"
         },
         "Young impling": {
