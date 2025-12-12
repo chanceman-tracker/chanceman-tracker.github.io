@@ -201,6 +201,12 @@ export const REQUIREMENT_CHECKS = {
     canDoMixology(ctx) {
         return false; // TODO
     },
+    canDoTombsOfAmascut(ctx) {
+        return canDoTombsOfAmascut(ctx);
+    },
+    canBirdSnare(ctx) {
+        return canBirdSnare(ctx);
+    },
     canCatchImplingsInJars(ctx) {
         return canCatchImplingsInJars(ctx);
     },
@@ -402,6 +408,12 @@ export const REQUIREMENT_CHECKS = {
     canCompletePerilousMoons(ctx) {
         return canCompletePerilousMoons(ctx);
     },
+    canCompletePiratesTreasure(ctx) {
+        return canCompletePiratesTreasure(ctx);
+    },
+    canFishFromRewardPool(ctx) {
+        return canFishFromRewardPool(ctx);
+    },
     hasSteelArrow(ctx) {
         return has(ctx, 886);
     },
@@ -501,6 +513,9 @@ export const REQUIREMENT_CHECKS = {
     hasWildbloodSeed(ctx) {
         return has(ctx, 5311);
     },
+    hasCadavaberrySeed(ctx) {
+        return has(ctx, 5102);
+    },
     hasMushroomSpore(ctx) {
         return has(ctx, 5282);
     },
@@ -512,6 +527,9 @@ export const REQUIREMENT_CHECKS = {
     },
     hasPotatoCactusSeed(ctx) {
         return has(ctx, 22873);
+    },
+    hasCalquatSapling(ctx) {
+        return has(ctx, 5503);
     },
     hasWhiteLilySeed(ctx) {
         return has(ctx, 22887);
@@ -536,6 +554,15 @@ export const REQUIREMENT_CHECKS = {
     },
     hasSlashWeapon(ctx) {
         return true; // TODO
+    },
+    hasHammer(ctx) {
+        return has(ctx, 2347);
+    },
+    hasRope(ctx) {
+        return has(ctx, 954);
+    },
+    hasCasket(ctx) {
+        return has(ctx, 405);
     },
     hasPoison(ctx) {
         return has(ctx, 273);
@@ -640,6 +667,50 @@ export const REQUIREMENT_CHECKS = {
         return false;
     }
 };
+
+function canDoTombsOfAmascut(ctx) {
+    return canCompleteBeneathCursedSands(ctx) //
+        && canTrainMining(ctx);
+}
+
+function canCompleteBeneathCursedSands(ctx) {
+    return canCompleteContact(ctx) //
+        && canTrainCrafting(ctx) //
+        && canTrainFiremaking(ctx) //
+        && has(ctx, 453) // Coal
+        && has(ctx, 2351) // Iron bar
+        && has(ctx, 590) // Tinderbox
+        && has(ctx, 952) // Spade
+        && (
+            has(ctx, 2136)     // Raw bear meat
+            || has(ctx, 2134)  // Raw rat meat
+            || has(ctx, 2132)  // Raw beef
+            || has(ctx, 2138)  // Raw chicken
+            || has(ctx, 3226)  // Raw rabbit
+            || has(ctx, 25833) // Raw boar meat
+            || has(ctx, 1859)  // Raw ugthanki meat
+            || has(ctx, 9978)  // Raw bird meat
+        );
+}
+
+function canCompleteContact(ctx) {
+    return canCompletePrinceAliRescue(ctx) //
+        && canCompleteIcthlarinsLittleHelper(ctx); //
+}
+
+function canCompletePrinceAliRescue(ctx) {
+    return has(ctx, 1761) // Soft clay
+        && has(ctx, 1759) // Ball of wool
+        && has(ctx, 1765) // Yellow dye
+        && has(ctx, 1951) // Redberries
+        && has(ctx, 592)  // Ashes
+        && (has(ctx, 1929) || has(ctx, 1937) || has(ctx, 1921)) // Bucket of water or Jug of water or Bowl of water
+        && has(ctx, 1933) // Pot of flour
+        && has(ctx, 2349) // Bronze bar
+        && has(ctx, 1013) // Pink skirt
+        && has(ctx, 1917) // Beer
+        && has(ctx, 954); //  Rope
+}
 
 function canCompleteShadesOfMortton(ctx) {
     return canCompletePriestInPeril(ctx) //
@@ -847,10 +918,15 @@ function canDoNex(ctx) {
     return false; // TODO
 }
 
+function canBirdSnare(ctx) {
+    return canTrainHunter(ctx) //
+        && has(ctx, 10006); // Bird snare
+}
+
 function canCatchImplingsInJars(ctx) {
     return canTrainHunter(ctx) //
-        && has(ctx, 10010) // Butterfly net
-        && has(ctx, 11260);// Impling jar
+        && has(ctx, 10010)  // Butterfly net
+        && has(ctx, 11260); // Impling jar
 }
 
 function canDeadfallTrap(ctx) {
@@ -1149,6 +1225,17 @@ function canCompletePerilousMoons(ctx) {
         && has(ctx, 305)  // Big fishing net
         && has(ctx, 954)  // Rope
         && has(ctx, 233); // Pestle and mortar
+}
+
+function canCompletePiratesTreasure(ctx) {
+    return has(ctx, 1005)  // White apron
+        && has(ctx, 952)   // Spade
+        && has(ctx, 1963); // Banana
+}
+
+function canFishFromRewardPool(ctx) {
+    return has(ctx, 305)  // Big fishing net
+        || has(ctx, 303); // Small fishing net
 }
 
 function canCompleteEnterTheAbyss(ctx) {
