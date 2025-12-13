@@ -123,6 +123,9 @@ export const REQUIREMENT_CHECKS = {
     canCompleteAKingdomDivided(ctx) {
         return false; // TODO
     },
+    canCompleteTaleOfTheRighteous(ctx) {
+        return false; // TODO
+    },
     canCompleteTheTouristTrap(ctx) {
         return false; // TODO
     },
@@ -130,6 +133,15 @@ export const REQUIREMENT_CHECKS = {
         return false; // TODO
     },
     canCompleteInSearchOfTheMyreque(ctx) {
+        return false; // TODO
+    },
+    canCompleteTheCorsairCurse(ctx) {
+        return false; // TODO
+    },
+    canCompleteRFDFreeingPiratePete(ctx) {
+        return false; // TODO
+    },
+    canCompleteRFDSirAmikVarse(ctx) {
         return false; // TODO
     },
     canEnterNightmareZone(ctx) {
@@ -177,6 +189,9 @@ export const REQUIREMENT_CHECKS = {
     canCompleteRecipeForDisaster(ctx) {
         return false; // TODO
     },
+    canCompleteRumDeal(ctx) {
+        return false; // TODO
+    },
     canCompleteSecretsOfTheNorth(ctx) {
         return false; // TODO
     },
@@ -187,6 +202,15 @@ export const REQUIREMENT_CHECKS = {
         return false; // TODO
     },
     canCompleteUndergroundPass(ctx) {
+        return false; // TODO
+    },
+    canCompleteWatchtower(ctx) {
+        return false; // TODO
+    },
+    canCompleteFairytaleIICureAQueen(ctx) {
+        return false; // TODO
+    },
+    canCompleteRecipeForDisaster(ctx) {
         return false; // TODO
     },
     canCompleteEnakhrasLament(ctx) {
@@ -204,8 +228,14 @@ export const REQUIREMENT_CHECKS = {
     canDoTombsOfAmascut(ctx) {
         return canDoTombsOfAmascut(ctx);
     },
+    canCompleteHeroesQuest(ctx) {
+        return canCompleteHeroesQuest(ctx);
+    },
     canBirdSnare(ctx) {
         return canBirdSnare(ctx);
+    },
+    canNooseWand(ctx) {
+        return canNooseWand(ctx);
     },
     canCatchImplingsInJars(ctx) {
         return canCatchImplingsInJars(ctx);
@@ -233,6 +263,9 @@ export const REQUIREMENT_CHECKS = {
     },
     canCompleteBoneVoyage(ctx) {
         return canCompleteBoneVoyage(ctx);
+    },
+    canCompleteBigChompyBirdHunting(ctx) {
+        return canCompleteBigChompyBirdHunting(ctx);
     },
     canCompleteThroneOfMiscellania(ctx) {
         return canCompleteThroneOfMiscellania(ctx);
@@ -375,6 +408,9 @@ export const REQUIREMENT_CHECKS = {
     canCompleteEnchantedKey(ctx) {
         return canCompleteMakingHistory(ctx);
     },
+    canStartLegendsQuest(ctx) {
+        return false; // TODO
+    },
     canCompleteLegendsQuest(ctx) {
         return false; // TODO
     },
@@ -485,6 +521,9 @@ export const REQUIREMENT_CHECKS = {
     },
     hasAppleSapling(ctx) {
         return has(ctx, 5496);
+    },
+    hasCurrySapling(ctx) {
+        return has(ctx, 5499);
     },
     hasRosemarySeed(ctx) {
         return has(ctx, 5097);
@@ -615,7 +654,7 @@ export const REQUIREMENT_CHECKS = {
     hasFireRuneSource(ctx) {
         return hasFireRuneSource(ctx);
     },
-    canDoGodWarsDungeon(ctx) {
+    canEnterGodWarsDungeon(ctx) {
         return false; // TODO
     },
     canDoCommanderZilyana(ctx) {
@@ -921,6 +960,11 @@ function canDoNex(ctx) {
 function canBirdSnare(ctx) {
     return canTrainHunter(ctx) //
         && has(ctx, 10006); // Bird snare
+}
+
+function canNooseWand(ctx) {
+    return canTrainHunter(ctx) //
+        && has(ctx, 10150); // Bird snare
 }
 
 function canCatchImplingsInJars(ctx) {
