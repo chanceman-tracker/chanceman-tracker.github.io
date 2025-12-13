@@ -72,6 +72,9 @@ export const REQUIREMENT_CHECKS = {
     canCompleteDragonSlayerII(ctx) {
         return false; // TODO
     },
+    canCompleteDragonSlayerI(ctx) {
+        return false; // TODO
+    },
     canCompleteDesertTreasureII(ctx) {
         return false; // TODO
     },
@@ -186,6 +189,15 @@ export const REQUIREMENT_CHECKS = {
     canCompleteASoulsBane(ctx) {
         return false; // TODO
     },
+    canCompleteMerlinsCrystal(ctx) {
+        return false; // TODO
+    },
+    canCompleteFremennikTrials(ctx) {
+        return false; // TODO
+    },
+    canCompleteTheFeud(ctx) {
+        return false; // TODO
+    },
     canCompleteRecipeForDisaster(ctx) {
         return false; // TODO
     },
@@ -293,6 +305,9 @@ export const REQUIREMENT_CHECKS = {
     },
     canTrainFarming(ctx) {
         return canTrainFarming(ctx);
+    },
+    canTrainFishing(ctx) {
+        return canTrainFishing(ctx);
     },
     canTrainWoodcutting(ctx) {
         return canTrainWoodcutting(ctx);

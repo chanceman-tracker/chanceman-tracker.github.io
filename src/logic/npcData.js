@@ -3556,7 +3556,7 @@ export const NPC_DATA = {
     },
     "Chompy bird": {
         "wiki": "https://oldschool.runescape.wiki/w/Chompy_bird",
-        "rule": ["canCompleteBigChompyBirdhunting"],
+        "rule": ["canCompleteBigChompyBirdHunting"],
         "skill": [],
         "level": [],
         "tags": [],
@@ -3758,7 +3758,7 @@ export const NPC_DATA = {
     },
     "Copper longtail": {
         "wiki": "https://oldschool.runescape.wiki/w/Copper_longtail",
-        "rule": ["canBirdsnare"],
+        "rule": ["canBirdSnare"],
         "skill": ["hunter"],
         "level": [9],
         "tags": [],
