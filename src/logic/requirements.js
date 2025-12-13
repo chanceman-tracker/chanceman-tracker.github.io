@@ -642,6 +642,9 @@ export const REQUIREMENT_CHECKS = {
     canPlantPlants(ctx) {
         return canPlantPlants(ctx);
     },
+    hasHunterMeat(ctx) {
+        return hasHunterMeat(ctx);
+    },
     hasAirRuneSource(ctx) {
         return hasAirRuneSource(ctx);
     },
@@ -930,6 +933,18 @@ function hasFireRuneSource(ctx) {
 
 function canReachTrollheim(ctx) {
     return canCompleteDeathPlateau(ctx); // TODO achievement diaries
+}
+
+function hasHunterMeat(ctx) {
+    return has(ctx, 29104)
+        || has(ctx, 29122)
+        || has(ctx, 29101)
+        || has(ctx, 29119)
+        || has(ctx, 29125)
+        || has(ctx, 29110)
+        || has(ctx, 29116)
+        || has(ctx, 29107)
+        || has(ctx, 29113)
 }
 
 function canGetBirdNestWyson(ctx) {
