@@ -3906,12 +3906,15 @@ function canCompleteDreamMentor(ctx) {
 }
 
 function canCompleteDruidicRitual(ctx) {
-    return allTrue([
+    return (
+        allTrue([
         has(ctx, 2136), // Raw bear meat
         has(ctx, 2134), // Raw rat meat
         has(ctx, 2132), // Raw beef
         has(ctx, 2138), // Raw chicken
-    ]);
+    ]) ||
+        ctx.player.quests["Druidic Ritual"] === 2 // already completed quest
+    );
 }
 
 function canCompleteDwarfCannon(ctx) {
@@ -4751,10 +4754,13 @@ function canCompleteOneSmallFavour(ctx) {
 }
 
 function canCompletePandemonium(ctx) {
-    return allTrue([
-        has(ctx, 2347), // Hammer
-        has(ctx, 8794), // Saw
-    ]);
+    return (
+        allTrue([
+            has(ctx, 2347), // Hammer
+            has(ctx, 8794), // Saw
+        ]) ||
+        ctx.player.quests["Pandemonium"] === 2 // already completed quest
+    );
 }
 
 function canCompletePerilousMoons(ctx) {
@@ -4795,10 +4801,13 @@ function canCompletePlagueCity(ctx) {
 }
 
 function canCompletePriestInPeril(ctx) {
-    return allTrue([
+    return (
+        allTrue([
         has(ctx, 1925), // Bucket
         hasAnyItems(ctx, [7936, 1436]),
-    ]);
+    ]) ||
+        ctx.player.quests["Priest in Peril"] === 2 // already completed quest
+    );
 }
 
 function canCompletePrinceAliRescue(ctx) {
@@ -5113,7 +5122,10 @@ function canCompleteRumDeal(ctx) {
 }
 
 function canCompleteRuneMysteries(ctx) {
-    return (hasRolledButNotObtained(ctx, 1438) || has(ctx, 1438)); // Air talisman
+    return (
+        (hasRolledButNotObtained(ctx, 1438) || has(ctx, 1438)) || // Air talisman
+        ctx.player.quests["Priest In Peril"] === 2 // already completed quest
+    );
 }
 
 function canCompleteScorpionCatcher(ctx) {
