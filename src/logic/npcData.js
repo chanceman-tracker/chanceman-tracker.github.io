@@ -10613,6 +10613,7 @@ export const NPC_DATA = {
     },
     "Myre Blamish Snail Pointed": {
         "wiki": "https://oldschool.runescape.wiki/w/Myre_Blamish_Snail#Pointed",
+        "note": "You can attack the snails from across the river with a long-range attack.",
         "rule": {
             "any": [
                 "canCompletePriestInPeril",
@@ -10626,6 +10627,7 @@ export const NPC_DATA = {
     },
     "Myre Blamish Snail Round": {
         "wiki": "https://oldschool.runescape.wiki/w/Myre_Blamish_Snail#Round",
+        "note": "You can attack the snails from across the river with a long-range attack.",
         "rule": {
             "any": [
                 "canCompletePriestInPeril",
@@ -11051,6 +11053,7 @@ export const NPC_DATA = {
     },
     "Ochre Blamish Snail Pointed": {
         "wiki": "https://oldschool.runescape.wiki/w/Ochre_Blamish_Snail#Pointed",
+        "note": "You can attack the snails from across the river with a long-range attack.",
         "rule": {
             "any": [
                 "canCompletePriestInPeril",
@@ -11064,6 +11067,7 @@ export const NPC_DATA = {
     },
     "Ochre Blamish Snail Round": {
         "wiki": "https://oldschool.runescape.wiki/w/Ochre_Blamish_Snail#Round",
+        "note": "You can attack the snails from across the river with a long-range attack.",
         "rule": {
             "any": [
                 "canCompletePriestInPeril",
@@ -11085,6 +11089,7 @@ export const NPC_DATA = {
     },
     "Ogre Coffin": {
         "wiki": "https://oldschool.runescape.wiki/w/Ogre_Coffin",
+        "note": "Use Ogre Coffin Key on chest (don't just click the chest).",
         "rule": ["hasOgreCoffinKey"],
         "skill": [],
         "level": [],
