@@ -687,8 +687,8 @@ export function hasNonBoostableSkillLevel(ctx, skill, level, options = {}) {
     return false;
 }
 
-export function has(ctx, id) {
-    return hasItem(ctx, id);
+export function has(ctx, id, options = {}) {
+    return hasItem(ctx, id, options);
 }
 
 function hasQuestPoints(ctx, required) {
@@ -7384,7 +7384,7 @@ function canEnterNightmareZone(ctx) {
 }
 
 function hasKnifeOrNarwhalKnife(ctx) {
-    if (has(ctx, 946)) return true; // Knife
+    if (has(ctx, 946, { trackMissing: false })) return true; // Knife
     if (hasNarwhalKnife(ctx)) return true;
 
     addMissingItemOptionGroup(ctx, [[946], [31954, 1755]]);
@@ -7393,8 +7393,8 @@ function hasKnifeOrNarwhalKnife(ctx) {
 
 function hasNarwhalKnife(ctx) {
     return hasSkillLevel(ctx, "Crafting", 51)
-        && has(ctx, 31954) // Narwhal horn
-        && has(ctx, 1755); // Chisel
+        && has(ctx, 31954, { trackMissing: false }) // Narwhal horn
+        && has(ctx, 1755, { trackMissing: false }); // Chisel
 }
 
 function hasAnyCookedMeatFish(ctx) {
