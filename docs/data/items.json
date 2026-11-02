@@ -8386,6 +8386,16 @@
               }
             ]
           }
+        },
+        "Empying an Amulet of glory(4)": {
+          "notes": "Requires an Amulet of glory(4).",
+          "rule": {
+            "all": [
+              {
+                "has": 1712
+              }
+            ]
+          }
         }
       }
     },
@@ -8402,16 +8412,22 @@
     "name": "Amulet of glory (t)",
     "image": "amulet_of_glory_(t).png",
     "tags": [
-      "clue-reward-only",
       "Melee armours",
       "Ranged armours",
       "Magic armours",
       "Prayer armours"
     ],
     "sources": {
-      "drops": {
-        "Reward casket (hard)": {
-          "droprate": "1/1625"
+      "other": {
+        "Emptying an Amulet of Glory(t4)": {
+          "notes": "Requires an Amulet of glory(t4).",
+          "rule": {
+            "all": [
+              {
+                "has": 10354
+              }
+            ]
+          }
         }
       }
     }
@@ -8451,9 +8467,22 @@
       "Prayer armours"
     ],
     "sources": {
-      "drops": {
-        "Reward casket (hard)": {
-          "droprate": "1/1625"
+      "other": {
+        "Charging an Amulet of Glory(t)": {
+          "notes": "Requires an Amulet of glory(t) or (t4).",
+          "rule": {
+            "all": [
+                {"any": [
+                {
+                  "has": 10362
+                },
+                {
+                  "has": 10354
+                }
+              ]},
+              "canCompleteHeroesQuest"
+            ]
+          }
         }
       }
     }
@@ -8494,12 +8523,17 @@
     "sources": {
       "other": {
         "Charging an Amulet of Glory at the Fountain of Rune": {
-          "notes": "Requires an Amulet of glory.",
+          "notes": "Requires an Amulet of glory or (4).",
           "rule": {
             "all": [
-              {
-                "has": 1704
-              },
+              {"any": [
+                {
+                  "has": 1704
+                },
+                {
+                  "has": 1712
+                }
+              ]},
               "canCompleteHeroesQuest"
             ]
           }

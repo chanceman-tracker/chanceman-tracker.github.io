@@ -10120,8 +10120,8 @@ export const NPC_DATA = {
     "Mature custodian stalker": {
         "wiki": "https://oldschool.runescape.wiki/w/Mature_custodian_stalker",
         "rule": ["canCompleteShadowsOfCustodia"],
-        "skill": [67],
-        "level": ["Slayer"],
+        "skill": ["Slayer"],
+        "level": [67],
         "tags": [],
         "f2p": false
     },
