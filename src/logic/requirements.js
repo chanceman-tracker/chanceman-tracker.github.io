@@ -1104,6 +1104,9 @@ export const REQUIREMENT_CHECKS = {
     canCompleteTaiBwoWannaiTrio(ctx) {
         return canCompleteTaiBwoWannaiTrio(ctx);
     },
+    GertrudesCatTinderboxWaterskin4(ctx) {
+        return GertrudesCatTinderboxWaterskin4(ctx);
+    },
     canCompleteGertrudesCat(ctx) {
         return canCompleteGertrudesCat(ctx);
     },
@@ -4180,6 +4183,14 @@ function canCompleteGertrudesCat(ctx) {
         has(ctx, 1552), // Seasoned sardine
         has(ctx, 327),  // Raw sardine
         has(ctx, 1573), // Doogle leaves
+    ]);
+}
+
+function GertrudesCatTinderboxWaterskin4(ctx) {
+    return allTrue([
+        requiresQuest(ctx, "canCompleteGertrudesCat", canCompleteGertrudesCat),
+        has(ctx, 590), // Tinderbox
+        has(ctx, 1823), // Waterskin(4)
     ]);
 }
 
