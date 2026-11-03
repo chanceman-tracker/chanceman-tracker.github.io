@@ -8749,7 +8749,7 @@
   {
     "index": 4620,
     "id": 34762,
-    "name": "Amulet of Sight",
+    "name": "Amulet of sight",
     "image": "Amulet_of_sight.png",
     "tags": [
       "Ranged"
@@ -8757,7 +8757,7 @@
     "sources": {
       "other": {
         "Questing": {
-            "notes": "Obtained as a reward for completing The Writings on the Wall.",
+            "notes": "Obtained as a reward for completing The Writing's on the Wall.",
             "rule": "canCompleteTheWritingsOnTheWall"
           }
       }

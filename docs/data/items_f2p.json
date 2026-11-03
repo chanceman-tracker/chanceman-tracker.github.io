@@ -928,7 +928,7 @@
   {
     "index": 131,
     "id": 1287,
-    "name": "Adamant sword",
+    "name": "Adamant shortsword",
     "image": "adamant_sword.png",
     "tags": [
       "Melee"
@@ -1143,6 +1143,11 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other":{
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
+        }
       }
     }
   },
@@ -2814,7 +2819,7 @@
   {
     "index": 627,
     "id": 1283,
-    "name": "Black sword",
+    "name": "Black shortsword",
     "image": "black_sword.png",
     "tags": [
       "Melee"
@@ -3841,6 +3846,11 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other":{
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
+        }
       }
     }
   },
@@ -4708,7 +4718,7 @@
   {
     "index": 893,
     "id": 1277,
-    "name": "Bronze sword",
+    "name": "Bronze shortsword",
     "image": "bronze_sword.png",
     "tags": [
       "Melee"
@@ -4734,6 +4744,9 @@
               }
             ]
           }
+        },
+        "Tutor": {
+          "notes": "Obtained from tutor during Mudfoot's Big Adventure."
         }
       }
     }
@@ -8645,6 +8658,9 @@
               }
             ]
           }
+        },
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
         }
       }
     }
@@ -9149,6 +9165,9 @@
               }
             ]
           }
+        },
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
         }
       }
     }
@@ -9258,7 +9277,7 @@
   {
     "index": 2097,
     "id": 1279,
-    "name": "Iron sword",
+    "name": "Iron shortsword",
     "image": "iron_sword.png",
     "tags": [
       "Melee"
@@ -10316,6 +10335,11 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other":{
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
+        }
       }
     }
   },
@@ -11243,7 +11267,7 @@
   {
     "index": 2516,
     "id": 1285,
-    "name": "Mithril sword",
+    "name": "Mithril shortsword",
     "image": "mithril_sword.png",
     "tags": [
       "Melee"
@@ -13844,7 +13868,7 @@
   {
     "index": 3272,
     "id": 1289,
-    "name": "Rune sword",
+    "name": "Rune shortsword",
     "image": "rune_sword.png",
     "tags": [
       "Melee"
@@ -14382,6 +14406,11 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other":{
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
+        }
       }
     }
   },
@@ -14659,6 +14688,11 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other":{
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
+        }
       }
     }
   },
@@ -15761,7 +15795,7 @@
   {
     "index": 3736,
     "id": 1281,
-    "name": "Steel sword",
+    "name": "Steel shortsword",
     "image": "steel_sword.png",
     "tags": [
       "Melee"
@@ -18002,6 +18036,11 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other": {
+        "Tutor": {
+          "notes": "Obtained from tutor during Mudfoot's Big Adventure."
+        }
       }
     }
   },
