@@ -23088,11 +23088,13 @@
     "image": "black_warlock_mix_(2).png",
     "sources": {
       "other": {
-        "Mixing a potion": {
-          "notes": "Mixing a Black warlock (item) with some raw hunter creature meat.",
+        "Mixing a hunter potion": {
+          "notes": "Using a pestle and mortar to combine a Black warlock (item) with some raw hunter creature meat.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              {
+                "has": 233
+              },
               {
                 "has": 10014
               },
@@ -107688,11 +107690,13 @@
     "image": "moonlight_moth_mix_(2).png",
     "sources": {
       "other": {
-        "Mixing a barbarian potion": {
-          "notes": "Mixing a Moonlight moth (item) with some raw hunter creature meat.",
+        "Mixing a hunter potion": {
+          "notes": "Using a pestle and mortar to combine Moonlight moth (item) with some raw hunter creature meat.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              {
+                "has": 233
+              },
               {
                 "has": 28893
               },
@@ -128401,11 +128405,13 @@
     "image": "ruby_harvest_mix_(2).png",
     "sources": {
       "other": {
-        "Mixing a barbarian potion": {
-          "notes": "Mixing a Ruby harvest (item) with some raw hunter creature meat.",
+        "Mixing a hunter potion": {
+          "notes": "Using a pestle and mortar to combine a Ruby harvest (item) with some raw hunter creature meat.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              {
+                "has": 233
+              },
               {
                 "has": 10020
               },
@@ -136126,11 +136132,13 @@
     "image": "sapphire_glacialis_mix_(2).png",
     "sources": {
       "other": {
-        "Mixing a barbarian potion": {
-          "notes": "Mixing a Sapphire glacialis (item) with some raw hunter creature meat.",
+        "Mixing a hunter potion": {
+          "notes": "Using a pestle and mortar to combine a Sapphire glacialis (item) with some raw hunter creature meat.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              {
+                "has": 233
+              },
               {
                 "has": 10018
               },
@@ -142628,11 +142636,13 @@
     "image": "snowy_knight_mix_(2).png",
     "sources": {
       "other": {
-        "Mixing a barbarian potion": {
-          "notes": "Mixing a Snowy knight (item) with some raw hunter creature meat.",
+        "Mixing a hunter potion": {
+          "notes": "Using a pestle and mortar to combine Snowy knight (item) with some raw hunter creature meat.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              {
+                "has": 233
+              },
               {
                 "has": 10016
               },
@@ -143794,18 +143804,7 @@
       "other": {
         "Crafting a Split log": {
           "notes": "Requires Arctic pine logs and any axe and level 56 Woodcutting.",
-          "rule": {
-            "all": [
-              {
-                "has": 10810
-              },
-              {
-                "skill": "Woodcutting",
-                "level": 56
-              },
-              "canMakeSplitLog"
-            ]
-          }
+          "rule": "canMakeSplitLog"
         }
       }
     }
@@ -151681,11 +151680,13 @@
     "image": "sunlight_moth_mix_(2).png",
     "sources": {
       "other": {
-        "Mixing a barbarian potion": {
-          "notes": "Mixing a Sunlight moth (item) with some raw hunter creature meat.",
+        "Mixing a hunter potion": {
+          "notes": "Using a pestle and mortar to combine Sunlight moth (item) with some raw hunter creature meat.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              {
+                "has": 233
+              },
               {
                 "has": 28890
               },

@@ -7549,8 +7549,7 @@ function canMakeSplitLog(ctx) {
     return canAccessNeitiznot(ctx) // to get to neitiznot
         && hasSkillLevel(ctx, "Woodcutting", 56) //
         && hasUsableAxe(ctx) // any axe
-        && has(ctx, 10810) // Arctic pine logs
-        && has(ctx, 954);  // Rope
+        && has(ctx, 10810); // Arctic pine logs
 }
 
 function canMakeNeitiznotShield(ctx) {
