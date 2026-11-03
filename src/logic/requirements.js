@@ -3120,6 +3120,12 @@ export const REQUIREMENT_CHECKS = {
     isBossDrop(ctx) {
         return isBossDrop(ctx);
     },
+    canCompleteTheWritingsOnTheWall(ctx) {
+        return canCompleteTheWritingsOnTheWall(ctx);
+    },
+    canCompleteMudfootsBigAdventure(ctx) {
+        return true;
+    },
     never(ctx) {
         return false;
     }
@@ -3134,6 +3140,13 @@ function hasAnyArrow(ctx) {
 function canAccessWyrmscraigIsland (ctx) {
     return allTrue([
         hasSkillLevel(ctx, "Sailing", 62), //
+    ]);
+}
+
+function canCompleteTheWritingsOnTheWall(ctx) {
+    return allTrue([
+        hasNonBoostableSkillLevel(ctx, "Agility", 22), //
+        hasNonBoostableSkillLevel(ctx, "Thieving", 20) //
     ]);
 }
 

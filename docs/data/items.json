@@ -5362,7 +5362,7 @@
   {
     "index": 131,
     "id": 1287,
-    "name": "Adamant sword",
+    "name": "Adamant shortsword",
     "image": "adamant_sword.png",
     "tags": [
       "Melee"
@@ -7292,6 +7292,9 @@
           "rule": {
             "has": 7936
           }
+        },
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
         }
       }
     }
@@ -8742,6 +8745,23 @@
       "Melee armours",
       "Prayer armours"
     ]
+  },
+  {
+    "index": 4620,
+    "id": 34762,
+    "name": "Amulet of Sight",
+    "image": "Amulet_of_sight.png",
+    "tags": [
+      "Ranged"
+    ],
+    "sources": {
+      "other": {
+        "Questing": {
+            "notes": "Obtained as a reward for completing The Writings on the Wall.",
+            "rule": "canCompleteTheWritingsOnTheWall"
+          }
+      }
+    }
   },
   {
     "index": 206,
@@ -22728,7 +22748,7 @@
   {
     "index": 627,
     "id": 1283,
-    "name": "Black sword",
+    "name": "Black shortsword",
     "image": "black_sword.png",
     "tags": [
       "Melee"
@@ -30588,6 +30608,9 @@
               }
             ]
           }
+        },
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
         }
       }
     },
@@ -33491,7 +33514,7 @@
   {
     "index": 893,
     "id": 1277,
-    "name": "Bronze sword",
+    "name": "Bronze shortsword",
     "image": "bronze_sword.png",
     "tags": [
       "Melee"
@@ -33528,6 +33551,9 @@
               }
             ]
           }
+        },
+        "Tutor": {
+          "notes": "Obtained from tutor during Mudfoot's Big Adventure."
         }
       }
     }
@@ -34398,6 +34424,12 @@
         "Chest (Dorgesh-Kaan Average) Zanik's house": {
           "droprate": "1/23"
         }
+      },
+      "shops": {
+        "Yes": "canCompleteDeathToTheDorgeshuun"
+      },
+      "spawns": {
+        "Yes": "canCompleteSinsOfTheFather"
       },
       "other": {
         "Crafting a Bullseye lantern": {
@@ -52031,7 +52063,7 @@
   {
     "index": 1360,
     "id": 21009,
-    "name": "Dragon sword",
+    "name": "Dragon shortsword",
     "image": "dragon_sword.png",
     "sources": {
       "drops": {
@@ -87090,6 +87122,9 @@
               }
             ]
           }
+        },
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
         }
       }
     }
@@ -88364,6 +88399,9 @@
               }
             ]
           }
+        },
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
         }
       }
     }
@@ -88640,7 +88678,7 @@
   {
     "index": 2097,
     "id": 1279,
-    "name": "Iron sword",
+    "name": "Iron shortsword",
     "image": "iron_sword.png",
     "tags": [
       "Melee"
@@ -101931,6 +101969,9 @@
           "rule": {
             "has": 7936
           }
+        },
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
         }
       }
     }
@@ -106566,7 +106607,7 @@
   {
     "index": 2516,
     "id": 1285,
-    "name": "Mithril sword",
+    "name": "Mithril shortsword",
     "image": "mithril_sword.png",
     "tags": [
       "Melee"
@@ -133535,7 +133576,7 @@
   {
     "index": 3272,
     "id": 1289,
-    "name": "Rune sword",
+    "name": "Rune shortsword",
     "image": "rune_sword.png",
     "tags": [
       "Melee"
@@ -139136,6 +139177,9 @@
         "Yes": "No requirements"
       },
       "other": {
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
+        },
         "Fletching bows": {
           "notes": "Requires a Shortbow (u) and a Bowstring and level 5 Fletching.",
           "rule": {
@@ -144122,6 +144166,11 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other": {
+        "Questing": {
+          "notes": "Obtained during Mudfoot's Big Adventure."
+        }
       }
     }
   },
@@ -149456,7 +149505,7 @@
   {
     "index": 3736,
     "id": 1281,
-    "name": "Steel sword",
+    "name": "Steel shortsword",
     "image": "steel_sword.png",
     "tags": [
       "Melee"
@@ -169257,7 +169306,7 @@
   {
     "index": 4339,
     "id": 6605,
-    "name": "White sword",
+    "name": "White shortsword",
     "image": "white_sword.png",
     "sources": {
       "shops": {
@@ -171457,6 +171506,11 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other": {
+        "Tutor": {
+          "notes": "Obtained from tutor during Mudfoot's Big Adventure."
+        }
       }
     }
   },

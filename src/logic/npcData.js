@@ -3053,6 +3053,7 @@ export const NPC_DATA = {
         "rule": ["canShortrange"],
         "skill": ["Slayer"],
         "level": [87],
+        "boostable": false,
         "tags": ["slayer-task-only"],
         "f2p": false
     },
@@ -9254,6 +9255,7 @@ export const NPC_DATA = {
         "rule": ["canShortrange"],
         "skill": ["Slayer"],
         "level": [87],
+        "boostable": false,
         "tags": ["boss", "slayer-task-only"],
         "f2p": false
     },
