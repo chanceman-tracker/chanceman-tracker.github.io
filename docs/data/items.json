@@ -119693,6 +119693,9 @@
     "name": "Premade choc s'dy",
     "image": "premade_choc_s'dy.png",
     "sources": {
+      "spawns": {
+        "Yes": "No requirements"
+      },
       "shops": {
         "Yes": "No requirements"
       }
