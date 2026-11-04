@@ -4756,7 +4756,6 @@ function canCompleteMyArmsBigAdventure(ctx) {
         has(ctx, 6034), // Supercompost
         has(ctx, 952), // Spade
         has(ctx, 5341), // Rake
-        has(ctx, 5343), // Seed dibber
         canReachTrollheim(ctx),
     ]);
 }

@@ -17515,19 +17515,10 @@
                     "quests": {
                         "Children of the Sun": "completed"
                     },
-                    "items": [
-                        {
-                            "id": 303,
-                            "name": "Small fishing net"
-                        },
-                        {
-                            "id": 954,
-                            "name": "Rope"
-                        }
-                    ],
+                    "items": [],
                     "untracked": [],
                     "itemsAny": [],
-                    "rulesAll": [],
+                    "rulesAll": ["canCatchSalamanders"],
                     "rulesAny": []
                 }
             },

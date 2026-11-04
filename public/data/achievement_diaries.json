@@ -463,19 +463,10 @@
                             "Hunter": 59
                         },
                         "quests": {},
-                        "items": [
-                            {
-                                "id": 954,
-                                "name": "Rope"
-                            },
-                            {
-                                "id": 303,
-                                "name": "Small fishing net"
-                            }
-                        ],
+                        "items": [],
                         "untracked": [],
                         "itemsAny": [],
-                        "rulesAll": [],
+                        "rulesAll": ["canCatchSalamanders"],
                         "rulesAny": []
                     }
                 },
@@ -1035,19 +1026,10 @@
                             "Hunter": 47
                         },
                         "quests": {},
-                        "items": [
-                            {
-                                "id": 954,
-                                "name": "Rope"
-                            },
-                            {
-                                "id": 303,
-                                "name": "Small fishing net"
-                            }
-                        ],
+                        "items": [],
                         "untracked": [],
                         "itemsAny": [],
-                        "rulesAll": [],
+                        "rulesAll": ["canCatchSalamanders"],
                         "rulesAny": []
                     }
                 },
@@ -6388,19 +6370,10 @@
                         "quests": {
                             "Priest in Peril": "completed"
                         },
-                        "items": [
-                            {
-                                "id": 954,
-                                "name": "Rope"
-                            },
-                            {
-                                "id": 303,
-                                "name": "Small fishing net"
-                            }
-                        ],
+                        "items": [],
                         "untracked": [],
                         "itemsAny": [],
-                        "rulesAll": [],
+                        "rulesAll": ["canCatchSalamanders"],
                         "rulesAny": []
                     }
                 },
