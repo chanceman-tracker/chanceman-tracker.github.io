@@ -2345,7 +2345,13 @@ export const REQUIREMENT_CHECKS = {
         return canMakeAdamantKeelOrBetterOrBetter(ctx);
     },
     canMakeMithrilHelmOrBetter(ctx) {
-        canMakeMithrilHelmOrBetter(ctx);
+        return canMakeMithrilHelmOrBetter(ctx);
+    },
+    canMakeAdamantHelmOrBetter(ctx) {
+        return canMakeAdamantHelmOrBetter(ctx);
+    },
+    canMakeEternalBrazier(ctx) {
+        return canMakeEternalBrazier(ctx);
     },
     canMakeOakMastOrBetter(ctx) {
         return canMakeOakMastOrBetter(ctx);
@@ -7045,13 +7051,7 @@ function canStartAtFirstLight(ctx) {
 function canSailToTheNorthernOcean(ctx) {
     return requiresQuest(ctx, "canCompletePandemonium", canCompletePandemonium) //
         && hasSkillLevel(ctx, "Construction", 72) //
-        && has(ctx, 31435) // Ironwood plank
-        && has(ctx, 4824)  // Rune nails
-        && has(ctx, 32892) // Cupronickel bar
-        && has(ctx, 22593) // Te salt
-        && has(ctx, 22595) // Efh salt
-        && has(ctx, 22597) // Urt salt
-        && has(ctx, 2363); // Runite bar
+        && canMakeEternalBrazier(ctx); //
 }
 
 function canSailToGrimstone(ctx) {
@@ -7498,7 +7498,11 @@ function canEnterBraindeathIsland(ctx) {
 
 function canAccessSunbleakIsland(ctx) {
     return requiresQuest(ctx, "canCompletePandemonium", canCompletePandemonium) //
-        && (
+        && canMakeAdamantHelmOrBetter(ctx) //
+}
+
+function canMakeAdamantHelmOrBetter(ctx) {
+    return (
             ( // Adamant helm
                 has(ctx, 31432) // Camphor plank
                 && has(ctx, 2361) // Adamantite bar
@@ -7512,6 +7516,20 @@ function canAccessSunbleakIsland(ctx) {
                 && hasSkillLevel(ctx, "Construction", 81) //
             )
         );
+}
+
+function canMakeEternalBrazier(ctx) { //Eternal Brazier
+    return (
+        has(ctx, 31435) // Ironwood plank
+        && has(ctx, 4824)  // Rune nails
+        && has(ctx, 32892) // Cupronickel bar
+        && has(ctx, 22593) // Te salt
+        && has(ctx, 22595) // Efh salt
+        && has(ctx, 22597) // Urt salt
+        && has(ctx, 2363) // Runite bar
+        && hasSkillLevel(ctx, "Sailing", 78) //
+        && hasSkillLevel(ctx, "Construction", 72) //
+    )
 }
 
 function canAccessOnyxCrest(ctx) {

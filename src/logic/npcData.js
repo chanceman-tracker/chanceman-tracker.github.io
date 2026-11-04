@@ -10097,7 +10097,12 @@ export const NPC_DATA = {
     },
     "Martial salvage": {
         "wiki": "https://oldschool.runescape.wiki/w/Martial_salvage",
-        "rule": ["canDoSalvaging"],
+        "rule": {
+            "all": [
+                "canDoSalvaging",
+                "canMakeAdamantHelmOrBetter"
+            ]
+        },
         "skill": ["sailing"],
         "level": [73],
         "tags": [],
