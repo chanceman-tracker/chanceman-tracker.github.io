@@ -15625,22 +15625,11 @@
     "name": "Baby impling jar",
     "image": "baby_impling_jar.png",
     "sources": {
-      "other": {
-        "Catching a Baby impling": {
-          "notes": "Requires an Impling jar and level 27 Hunter (or level 17 with a butterfly net).",
-          "rule": {
-            "all": [
-              {
-                "has": 11260
-              },
-              {
-                "skill": "Hunter",
-                "level": 27
-              }
-            ]
-          }
+        "drops": {
+            "Baby impling (catch in jar)": {
+                "droprate": "Always"
+            }
         }
-      }
     }
   },
   {
@@ -50570,22 +50559,11 @@
     "name": "Dragon impling jar",
     "image": "dragon_impling_jar.png",
     "sources": {
-      "other": {
-        "Catching a Dragon impling": {
-          "notes": "Requires an Impling jar and level 93 Hunter (or level 83 with a butterfly net).",
-          "rule": {
-            "all": [
-              {
-                "has": 11260
-              },
-              {
-                "skill": "Hunter",
-                "level": 93
-              }
-            ]
-          }
+        "drops": {
+            "Dragon impling (catch in jar)": {
+                "droprate": "Always"
+            }
         }
-      }
     }
   },
   {
@@ -54431,22 +54409,11 @@
     "name": "Earth impling jar",
     "image": "earth_impling_jar.png",
     "sources": {
-      "other": {
-        "Catching an Earth impling": {
-          "notes": "Requires an Impling jar and level 46 Hunter (or level 36 with a butterfly net).",
-          "rule": {
-            "all": [
-              {
-                "has": 11260
-              },
-              {
-                "skill": "Hunter",
-                "level": 46
-              }
-            ]
-          }
+        "drops": {
+            "Earth impling (catch in jar)": {
+                "droprate": "Always"
+            }
         }
-      }
     }
   },
   {
@@ -55339,22 +55306,11 @@
     "name": "Eclectic impling jar",
     "image": "eclectic_impling_jar.png",
     "sources": {
-      "other": {
-        "Catching an Eclectic impling": {
-          "notes": "Requires an Impling jar and level 60 Hunter (or level 50 with a butterfly net).",
-          "rule": {
-            "all": [
-              {
-                "has": 11260
-              },
-              {
-                "skill": "Hunter",
-                "level": 60
-              }
-            ]
-          }
+        "drops": {
+            "Eclectic impling (catch in jar)": {
+                "droprate": "Always"
+            }
         }
-      }
     }
   },
   {
@@ -58551,22 +58507,11 @@
     "name": "Essence impling jar",
     "image": "essence_impling_jar.png",
     "sources": {
-      "other": {
-        "Catching an Essence impling": {
-          "notes": "Requires an Impling jar and level 52 Hunter (or level 42 with a butterfly net).",
-          "rule": {
-            "all": [
-              {
-                "has": 11260
-              },
-              {
-                "skill": "Hunter",
-                "level": 52
-              }
-            ]
-          }
+        "drops": {
+            "Essence impling (catch in jar)": {
+                "droprate": "Always"
+            }
         }
-      }
     }
   },
   {
@@ -66714,22 +66659,11 @@
     "name": "Gourmet impling jar",
     "image": "gourmet_impling_jar.png",
     "sources": {
-      "other": {
-        "Catching a Gourmet impling": {
-          "notes": "Requires an Impling jar and level 38 Hunter (or level 28 with a butterfly net).",
-          "rule": {
-            "all": [
-              {
-                "has": 11260
-              },
-              {
-                "skill": "Hunter",
-                "level": 38
-              }
-            ]
-          }
+        "drops": {
+            "Gourmet impling (catch in jar)": {
+                "droprate": "Always"
+            }
         }
-      }
     }
   },
   {
@@ -98356,22 +98290,11 @@
     "name": "Magpie impling jar",
     "image": "magpie_impling_jar.png",
     "sources": {
-      "other": {
-        "Catching a Magpie impling": {
-          "notes": "Requires an Impling jar and level 75 Hunter (or level 65 with a butterfly net).",
-          "rule": {
-            "all": [
-              {
-                "has": 11260
-              },
-              {
-                "skill": "Hunter",
-                "level": 75
-              }
-            ]
-          }
+        "drops": {
+            "Magpie impling (catch in jar)": {
+                "droprate": "Always"
+            }
         }
-      }
     }
   },
   {
@@ -109691,22 +109614,11 @@
     "name": "Nature impling jar",
     "image": "nature_impling_jar.png",
     "sources": {
-      "other": {
-        "Catching a Nature impling": {
-          "notes": "Requires an Impling jar and level 68 Hunter (or level 58 with a butterfly net).",
-          "rule": {
-            "all": [
-              {
-                "has": 11260
-              },
-              {
-                "skill": "Hunter",
-                "level": 68
-              }
-            ]
-          }
+        "drops": {
+            "Nature impling (catch in jar)": {
+                "droprate": "Always"
+            }
         }
-      }
     }
   },
   {
@@ -111036,22 +110948,11 @@
     "name": "Ninja impling jar",
     "image": "ninja_impling_jar.png",
     "sources": {
-      "other": {
-        "Catching a Ninja impling": {
-          "notes": "Requires an Impling jar and level 84 Hunter (or level 74 with a butterfly net).",
-          "rule": {
-            "all": [
-              {
-                "has": 11260
-              },
-              {
-                "skill": "Hunter",
-                "level": 84
-              }
-            ]
-          }
+        "drops": {
+            "Ninja impling (catch in jar)": {
+                "droprate": "Always"
+            }
         }
-      }
     }
   },
   {
@@ -173942,22 +173843,11 @@
     "name": "Young impling jar",
     "image": "young_impling_jar.png",
     "sources": {
-      "other": {
-        "Catching a Young impling": {
-          "notes": "Requires an Impling jar and level 32 Hunter (or level 22 with a butterfly net).",
-          "rule": {
-            "all": [
-              {
-                "has": 11260
-              },
-              {
-                "skill": "Hunter",
-                "level": 32
-              }
-            ]
-          }
+        "drops": {
+            "Young impling (catch in jar)": {
+                "droprate": "Always"
+            }
         }
-      }
     }
   },
   {

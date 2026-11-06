@@ -1639,6 +1639,9 @@ export const REQUIREMENT_CHECKS = {
     canCatchButterflies(ctx) {
         return canCatchButterflies(ctx);
     },
+    hasButterflyNet(ctx) {
+        return hasButterflyNet(ctx);
+    },
     hasRabbitSnare(ctx) {
         return has(ctx, 10031);
     },
@@ -2212,6 +2215,9 @@ export const REQUIREMENT_CHECKS = {
     hasGrubbyKey(ctx) {
         return has(ctx, 23499);
     },
+    canCatchImplings(ctx) {
+        return true;
+    },
     hasBabyImplingJar(ctx) {
         return has(ctx, 11238);
     },
@@ -2247,6 +2253,9 @@ export const REQUIREMENT_CHECKS = {
     },
     hasYoungImplingJar(ctx) {
         return has(ctx, 11240);
+    },
+    hasImplingJar(ctx) {
+        return has(ctx, 11260);
     },
     hasLockpick(ctx) {
         return has(ctx, 1523);
@@ -6978,6 +6987,13 @@ function canCatchRainbowCrabs(ctx) {
 function canCatchButterflies(ctx) {
     return canTrainHunter(ctx) //
         && has(ctx, 10012);    // Butterfly jar
+}
+
+export function hasButterflyNet(ctx) {
+    return has(ctx, 10010) ||// Butterfly net
+        (has(ctx, 11242) //gourmet impling jar
+        && has(ctx, 11244)//earth imp jar
+        && has(ctx, 11246));//essence imp jar
 }
 
 function hasAnyNails(ctx) {

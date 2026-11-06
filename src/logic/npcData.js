@@ -1079,7 +1079,15 @@ export const NPC_DATA = {
     },
     "Baby impling": {
         "wiki": "https://oldschool.runescape.wiki/w/Baby_impling",
-        "rule": null,
+        "rule": "canCatchImplings",
+        "skill": ["hunter"],
+        "level": [27],
+        "tags": [],
+        "f2p": false
+    },
+    "Baby impling (catch in jar)": {
+        "wiki": "https://oldschool.runescape.wiki/w/Baby_impling",
+        "rule": "hasImplingJar",
         "skill": ["hunter"],
         "level": [27],
         "tags": [],
@@ -1393,7 +1401,7 @@ export const NPC_DATA = {
     },
     "Barracuda salvage": {
         "wiki": "https://oldschool.runescape.wiki/w/Barracuda_salvage",
-        "rule": ["canDoSalvaging"],
+        "rule": ["canCompletePandemonium"],
         "skill": ["sailing"],
         "level": [35],
         "tags": [],
@@ -1949,7 +1957,7 @@ export const NPC_DATA = {
         "wiki": "https://oldschool.runescape.wiki/w/Black_warlock",
         "rule": ["canCatchButterflies"],
         "skill": ["hunter"],
-        "level": [45],
+        "level": [55],
         "tags": [],
         "f2p": false
     },
@@ -4880,7 +4888,15 @@ export const NPC_DATA = {
     },
     "Dragon impling": {
         "wiki": "https://oldschool.runescape.wiki/w/Dragon_impling",
-        "rule": null,
+        "rule": "canCatchImplings",
+        "skill": ["hunter"],
+        "level": [93],
+        "tags": [],
+        "f2p": false
+    },
+    "Dragon impling (catch in jar)": {
+        "wiki": "https://oldschool.runescape.wiki/w/Dragon_impling",
+        "rule": "hasImplingJar",
         "skill": ["hunter"],
         "level": [93],
         "tags": [],
@@ -5234,7 +5250,15 @@ export const NPC_DATA = {
     },
     "Earth impling": {
         "wiki": "https://oldschool.runescape.wiki/w/Earth_impling",
-        "rule": null,
+        "rule": "canCatchImplings",
+        "skill": ["hunter"],
+        "level": [46],
+        "tags": [],
+        "f2p": false
+    },
+    "Earth impling (catch in jar)": {
+        "wiki": "https://oldschool.runescape.wiki/w/Earth_impling",
+        "rule": "hasImplingJar",
         "skill": ["hunter"],
         "level": [46],
         "tags": [],
@@ -5282,7 +5306,15 @@ export const NPC_DATA = {
     },
     "Eclectic impling": {
         "wiki": "https://oldschool.runescape.wiki/w/Eclectic_impling",
-        "rule": null,
+        "rule": "canCatchImplings",
+        "skill": ["hunter"],
+        "level": [60],
+        "tags": [],
+        "f2p": false
+    },
+    "Eclectic impling (catch in jar)": {
+        "wiki": "https://oldschool.runescape.wiki/w/Eclectic_impling",
+        "rule": "hasImplingJar",
         "skill": ["hunter"],
         "level": [60],
         "tags": [],
@@ -5555,7 +5587,15 @@ export const NPC_DATA = {
     },
     "Essence impling": {
         "wiki": "https://oldschool.runescape.wiki/w/Essence_impling",
-        "rule": null,
+        "rule": "canCatchImplings",
+        "skill": ["hunter"],
+        "level": [52],
+        "tags": [],
+        "f2p": false
+    },
+    "Essence impling (catch in jar)": {
+        "wiki": "https://oldschool.runescape.wiki/w/Essence_impling",
+        "rule": "hasImplingJar",
         "skill": ["hunter"],
         "level": [52],
         "tags": [],
@@ -6178,7 +6218,7 @@ export const NPC_DATA = {
     },
     "Fishy salvage": {
         "wiki": "https://oldschool.runescape.wiki/w/Fishy_salvage",
-        "rule": ["canDoSalvaging"],
+        "rule": ["canCompletePandemonium"],
         "skill": ["sailing"],
         "level": [26],
         "tags": [],
@@ -6351,7 +6391,7 @@ export const NPC_DATA = {
     },
     "Fremennik salvage": {
         "wiki": "https://oldschool.runescape.wiki/w/Fremennik_salvage",
-        "rule": ["canDoSalvaging"],
+        "rule": ["canCompletePandemonium"],
         "skill": ["sailing"],
         "level": [80],
         "tags": [],
@@ -7103,7 +7143,15 @@ export const NPC_DATA = {
     },
     "Gourmet impling": {
         "wiki": "https://oldschool.runescape.wiki/w/Gourmet_impling",
-        "rule": null,
+        "rule": "canCatchImplings",
+        "skill": ["hunter"],
+        "level": [38],
+        "tags": [],
+        "f2p": false
+    },
+    "Gourmet impling (catch in jar)": {
+        "wiki": "https://oldschool.runescape.wiki/w/Gourmet_impling",
+        "rule": "hasImplingJar",
         "skill": ["hunter"],
         "level": [38],
         "tags": [],
@@ -9314,7 +9362,7 @@ export const NPC_DATA = {
     },
     "Large salvage": {
         "wiki": "https://oldschool.runescape.wiki/w/Large_salvage",
-        "rule": ["canDoSalvaging"],
+        "rule": ["canCompletePandemonium"],
         "skill": ["sailing"],
         "level": [53],
         "tags": [],
@@ -9834,7 +9882,15 @@ export const NPC_DATA = {
     },
     "Magpie impling": {
         "wiki": "https://oldschool.runescape.wiki/w/Magpie_impling",
-        "rule": null,
+        "rule": "canCatchImplings",
+        "skill": ["hunter"],
+        "level": [75],
+        "tags": [],
+        "f2p": false
+    },
+    "Magpie impling (catch in jar)": {
+        "wiki": "https://oldschool.runescape.wiki/w/Magpie_impling",
+        "rule": "hasImplingJar",
         "skill": ["hunter"],
         "level": [75],
         "tags": [],
@@ -10398,7 +10454,7 @@ export const NPC_DATA = {
         "wiki": "https://oldschool.runescape.wiki/w/Moonlight_moth",
         "rule": ["canCatchButterflies"],
         "skill": ["hunter"],
-        "level": [75],
+        "level": [85],
         "tags": [],
         "f2p": false
     },
@@ -10748,7 +10804,15 @@ export const NPC_DATA = {
     },
     "Nature impling": {
         "wiki": "https://oldschool.runescape.wiki/w/Nature_impling",
-        "rule": null,
+        "rule": "canCatchImplings",
+        "skill": ["hunter"],
+        "level": [68],
+        "tags": [],
+        "f2p": false
+    },
+    "Nature impling (catch in jar)": {
+        "wiki": "https://oldschool.runescape.wiki/w/Nature_impling",
+        "rule": "hasImplingJar",
         "skill": ["hunter"],
         "level": [68],
         "tags": [],
@@ -10909,7 +10973,15 @@ export const NPC_DATA = {
     },
     "Ninja impling": {
         "wiki": "https://oldschool.runescape.wiki/w/Ninja_impling",
-        "rule": null,
+        "rule": "canCatchImplings",
+        "skill": ["hunter"],
+        "level": [84],
+        "tags": [],
+        "f2p": false
+    },
+    "Ninja impling (catch in jar)": {
+        "wiki": "https://oldschool.runescape.wiki/w/Ninja_impling",
+        "rule": "hasImplingJar",
         "skill": ["hunter"],
         "level": [84],
         "tags": [],
@@ -11203,7 +11275,11 @@ export const NPC_DATA = {
     },
     "Opulent salvage": {
         "wiki": "https://oldschool.runescape.wiki/w/Opulent_salvage",
-        "rule": ["canDoSalvaging"],
+        "rule": {
+            "any": [
+                "canDoSalvaging",
+                "canMakeAdamantHelmOrBetter"
+            ]},
         "skill": ["sailing"],
         "level": [87],
         "tags": [],
@@ -11664,7 +11740,7 @@ export const NPC_DATA = {
     },
     "Plundered salvage": {
         "wiki": "https://oldschool.runescape.wiki/w/Plundered_salvage",
-        "rule": ["canDoSalvaging"],
+        "rule": ["canCompletePandemonium"],
         "skill": ["sailing"],
         "level": [64],
         "tags": [],
@@ -13002,7 +13078,7 @@ export const NPC_DATA = {
         "wiki": "https://oldschool.runescape.wiki/w/Sapphire_glacialis",
         "rule": ["canCatchButterflies"],
         "skill": ["hunter"],
-        "level": [25],
+        "level": [35],
         "tags": [],
         "f2p": false
     },
@@ -14113,7 +14189,7 @@ export const NPC_DATA = {
         "wiki": "https://oldschool.runescape.wiki/w/Snowy_knight",
         "rule": ["canCatchButterflies"],
         "skill": ["hunter"],
-        "level": [35],
+        "level": [45],
         "tags": [],
         "f2p": false
     },
@@ -14692,7 +14768,7 @@ export const NPC_DATA = {
         "wiki": "https://oldschool.runescape.wiki/w/Sunlight_Moth",
         "rule": ["canCatchButterflies"],
         "skill": ["hunter"],
-        "level": [65],
+        "level": [75],
         "tags": [],
         "f2p": false
     },
@@ -16780,7 +16856,15 @@ export const NPC_DATA = {
     },
     "Young impling": {
         "wiki": "https://oldschool.runescape.wiki/w/Young_impling",
-        "rule": null,
+        "rule": "canCatchImplings",
+        "skill": ["hunter"],
+        "level": [32],
+        "tags": [],
+        "f2p": false
+    },
+    "Young impling (catch in jar)": {
+        "wiki": "https://oldschool.runescape.wiki/w/Young_impling",
+        "rule": "hasImplingJar",
         "skill": ["hunter"],
         "level": [32],
         "tags": [],
