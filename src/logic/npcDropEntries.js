@@ -122,12 +122,13 @@ export async function buildNpcDropEntries({
         }
     }
 
-    const entries = [];
-    for (const [npcName, npcItems] of itemsByNpc.entries()) {
-        if (!npcItems.length) continue;
-        if (!(await isNpcObtainable(npcName, ctx))) continue;
+        const entries = [];
+        for (const [npcName, npcItems] of itemsByNpc.entries()) {
+            if (!npcItems.length) continue;
 
-        let totalRateScore = 0;
+            const obtainable = await isNpcObtainable(npcName, ctx);
+
+            let totalRateScore = 0;
         for (const item of npcItems) {
             const drops = item.sources?.drops?.[npcName];
             if (!drops) continue;
@@ -143,7 +144,12 @@ export async function buildNpcDropEntries({
             totalRateScore += normalizeRateScore(bestRate);
         }
 
-        entries.push({ npcName, items: npcItems, totalRateScore });
+        entries.push({
+            npcName,
+            items: npcItems,
+            totalRateScore,
+            obtainable
+        });
     }
 
     entries.sort((a, b) => {

@@ -2368,3 +2368,19 @@ body.route-loading .route-loading-overlay {
     font-size: 0.86rem;
 }
 /* End slayer masters page */
+
+.item-drop-wiki-column {
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*update npc page to show unobtainable npcs*/
+.npc-drop-card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}

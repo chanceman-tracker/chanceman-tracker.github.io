@@ -25,8 +25,20 @@ export default async function NpcsPage() {
 
     await fileStore.ensureItemsLoaded();
 
+    const requestedNpc = new URLSearchParams(window.location.search)
+        .get("npcSearch");
+
+    if (requestedNpc) {
+        await fileStore.setFilters({
+            ...fileStore.filters,
+            npcSearch: requestedNpc
+        });
+        window.history.replaceState({}, "", window.location.pathname);
+    }
+
     const filters = fileStore.filters || {};
     const collapseDrops = Boolean(filters.npcCollapseDrops);
+
     const { entries: results, rolledSet } = await buildNpcDropEntries({
         items: fileStore.items || [],
         obtained: fileStore.obtained || [],
@@ -35,7 +47,11 @@ export default async function NpcsPage() {
         filters
     });
 
-    const cards = results.map((entry) => {
+    const visibleResults = filters.npcHideInaccessible
+        ? results.filter(entry => entry.obtainable)
+        : results;
+
+    const cards = visibleResults.map((entry) => {
         const itemCount = entry.items.length;
         const itemLabel = itemCount === 1 ? "item" : "items";
         const npcWiki = NPC_DATA[entry.npcName]?.wiki;
@@ -74,9 +90,19 @@ export default async function NpcsPage() {
         const itemNames = entry.items.map((item) => item.name.toLowerCase()).join(" ");
 
         return `
-            <article class="npc-drop-card" data-name="${escapeHtml(entry.npcName.toLowerCase())}" data-items="${escapeHtml(itemNames)}">
+            <article
+                class="npc-drop-card"
+                style="${!entry.obtainable ? 'border: 1px solid #dc2626; opacity: 0.8' : ''}"
+                data-name="${escapeHtml(entry.npcName.toLowerCase())}"
+                data-items="${escapeHtml(itemNames)}"
+            >
                 <header class="npc-drop-card-header">
-                    <h2 class="npc-drop-name">${npcNameHtml}</h2>
+                    <div class="npc-drop-card-title">
+                        <h2 class="npc-drop-name">${!entry.obtainable
+                            ? `❌`
+                            : ""} ${npcNameHtml}</h2>
+                        
+                    </div>
                     <span class="npc-drop-count">${itemCount} ${itemLabel}</span>
                 </header>
                 <div class="npc-drop-rate">Chance to get a new roll: ${formatCumulativeRate(entry.totalRateScore)}${clueRollInfoHtml}</div>
@@ -89,7 +115,7 @@ export default async function NpcsPage() {
         `;
     }).join("");
 
-    const emptyDisplay = results.length ? "none" : "";
+    const emptyDisplay = visibleResults.length ? "none" : "";
 
     return `
         <h1>NPC drops</h1>
@@ -115,6 +141,10 @@ export default async function NpcsPage() {
                 <input type="checkbox" id="npcCollapseDropsToggle">
                 <span>Collapse drops</span>
             </label>
+            <label class="npc-drop-filter npc-drop-filter--checkbox">
+                <input type="checkbox" id="npcHideInaccessibleToggle">
+                <span>Hide inaccessible NPCs</span>
+            </label>
             <div class="npc-filter" id="npcFilter">
                 <button type="button" id="npcFilterToggle">Hide specific NPCs</button>
                 <div class="npc-filter-panel" id="npcFilterPanel">
@@ -130,7 +160,7 @@ export default async function NpcsPage() {
                 </div>
             </div>
         </div>
-        <p class="empty-state" id="npcEmptyState" style="display: ${emptyDisplay};">No reachable NPCs with remaining drops for your current filters.</p>
+        <p class="empty-state" id="npcEmptyState" style="display: ${emptyDisplay};">No NPCs with remaining drops for your current filters.</p>
         <section class="npc-drop-list" id="npcDropList">
             ${cards}
         </section>
@@ -178,12 +208,25 @@ export function init() {
     if (onlyRolledToggle) {
         onlyRolledToggle.checked = Boolean(fileStore.filters?.npcOnlyRolled);
     }
+    const hideInaccessibleToggle = document.getElementById("npcHideInaccessibleToggle");
+    if (hideInaccessibleToggle) {
+        hideInaccessibleToggle.checked = Boolean(fileStore.filters?.npcHideInaccessible);
+    }
     const collapseDropsToggle = document.getElementById("npcCollapseDropsToggle");
     if (collapseDropsToggle) {
         collapseDropsToggle.checked = Boolean(fileStore.filters?.npcCollapseDrops);
     }
     initNpcFilterUI(() => window.dispatchEvent(new PopStateEvent("popstate")));
+    const onNpcHideInaccessibleInput = async (event) => {
+        if (event.target.id !== "npcHideInaccessibleToggle") return;
 
+        await fileStore.setFilters({
+            ...fileStore.filters,
+            npcHideInaccessible: event.target.checked
+        });
+
+        window.dispatchEvent(new PopStateEvent("popstate"));
+    };
     const onNpcSearchInput = (event) => {
         if (event.target.id !== "npcSearch") return;
         const nextFilters = {
@@ -228,12 +271,14 @@ export function init() {
     document.addEventListener("input", onNpcSearchInput);
     document.addEventListener("input", onNpcSortInput);
     document.addEventListener("input", onNpcOnlyRolledInput);
+    document.addEventListener("input", onNpcHideInaccessibleInput);
     document.addEventListener("input", onNpcCollapseDropsInput);
 
     teardownNpcsHandlers = () => {
         document.removeEventListener("input", onNpcSearchInput);
         document.removeEventListener("input", onNpcSortInput);
         document.removeEventListener("input", onNpcOnlyRolledInput);
+        document.removeEventListener("input", onNpcHideInaccessibleInput);
         document.removeEventListener("input", onNpcCollapseDropsInput);
     };
 }

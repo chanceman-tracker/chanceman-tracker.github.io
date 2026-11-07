@@ -1,4 +1,4 @@
-import{f as e}from"./index-Bphi3e5Z.js";function l(){const o=e.obtained&&e.rolled,s=e.player?.name;return`
+import{f as e}from"./index-Bb0iHhTT.js";function l(){const o=e.obtained&&e.rolled,s=e.player?.name;return`
         <h1>Chanceman Tracker</h1>
         <p>Track your progress, filter for your ruleset, and plan what to chase next.</p>
 
@@ -26,6 +26,9 @@ import{f as e}from"./index-Bphi3e5Z.js";function l(){const o=e.obtained&&e.rolle
                 <li><strong>Achievement diaries</strong> - completion and incompletable filters.</li>
                 <li><strong>Clue steps</strong> - search and feasibility filters for clue progress.</li>
                 <li><strong>Quests</strong> - completion filters and missing item requirements.</li>
+                <li><strong>Slayer masters</strong> - see which monsters can be assigned to you so you don't get slayer-locked.</li>
+                <li><strong>Sailing</strong> - see your obtainable boat upgrades.</li>
+                <li><strong>Construction</strong> - see what you can build in your house.</li>
                 <li><strong>Report a bug</strong> - bugs or wrong data report form, feel free to leave suggestions too.</li>
             </ul>
         </div>
@@ -35,7 +38,6 @@ import{f as e}from"./index-Bphi3e5Z.js";function l(){const o=e.obtained&&e.rolle
             <ul class="home-list">
                 <li><strong>Ironman / F2P</strong> - adapt sources and rules to your account type.</li>
                 <li><strong>NPC visibility</strong> - include or exclude specific NPC drops globally.</li>
-                <li><strong>Overrides</strong> - preview what lamping a skill would unlock.</li>
                 <li><strong>Highlight changes</strong> - optionally glow new items or source changes after filters update.</li>
             </ul>
         </div>

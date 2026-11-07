@@ -122,22 +122,30 @@ async function renderSourceTable(section, entries, item) {
             return a.name.localeCompare(b.name);
         });
 
-        
-        
-        const htmlRows = rows.map(({ name, data, obtainable }) => {
-            const note = NPC_DATA[name]?.note;
+    const htmlRows = rows.map(({ name, data, obtainable }) => {
+    const note = NPC_DATA[name]?.note;
 
-            const noteHtml = note
-                ? ` <span class="clue-step-info quest-info source-info"
-                    tabindex="0"
-                    aria-label="Source information"
-                    title="${escapeHtml(note)}">i</span>`
-                : "";
+    const noteHtml = note
+        ? ` <span class="clue-step-info quest-info source-info"
+            tabindex="0"
+            aria-label="Source information"
+            title="${escapeHtml(note)}">i</span>`
+        : "";
 
             return `
                 <tr>
+                    <td class="item-drop-wiki-column">
+                        <a href="${NPC_DATA[name]?.wiki || "#"}"
+                        target="_blank"
+                        rel="noreferrer">
+                            <img src="/images/wiki.png" alt="Wiki"
+                                style="width: 32px">
+                        </a>
+                    </td>
                     <td>
-                        <a href="${NPC_DATA[name]?.wiki || "#"}" target="_blank">${name}</a>${noteHtml}
+                        <a href="/npcs?npcSearch=${encodeURIComponent(name)}">
+                            ${escapeHtml(name)}
+                        </a>${noteHtml}
                     </td>
                     <td>${data.droprate}</td>
                     <td>${obtainable ? yes() : no()}</td>
@@ -148,6 +156,7 @@ async function renderSourceTable(section, entries, item) {
         return `
             <table class="osrs-table">
                 <tr>
+                    <th class="item-drop-wiki-column">Wiki</th>
                     <th>Source</th>
                     <th>Droprate</th>
                     <th>Obtainable?</th>
