@@ -2,6 +2,7 @@ import { REQUIREMENT_CHECKS, canTrainSkill, hasElementalRuneRules, isElementalRu
 import { canMeetRequirementWithBoost } from "../logic/skillBoosts.js";
 import { router } from "../router.js";
 import { fileStore } from "../storage/fileStore.js";
+import { buildNpcDropEntries, formatCumulativeRate } from "../logic/npcDropEntries.js";
 
 const CLUE_TIERS = ["Beginner", "Easy", "Medium", "Hard", "Elite", "Master"];
 function escapeHtml(value) {
@@ -230,9 +231,31 @@ export default async function ClueStepsPage() {
         await fileStore.ensureItemsLoaded();
     }
     const itemsById = new Map((fileStore.items || []).map(item => [item.id, item.name]));
+    const ctx = buildRequirementContext();
 
     const tiers = clueData?.tiers || {};
     const tierSections = [];
+
+    const { entries: npcDropEntries } = await buildNpcDropEntries({
+        items: fileStore.items || [],
+        obtained: fileStore.obtained || [],
+        rolled: fileStore.rolled || [],
+        player: fileStore.player,
+        filters: fileStore.filters || {}
+    });
+
+    const casketNames = {
+        Beginner: "Reward casket (beginner)",
+        Easy: "Reward casket (easy) Standard",
+        Medium: "Reward casket (medium) Standard",
+        Hard: "Reward casket (hard)",
+        Elite: "Reward casket (elite)",
+        Master: "Reward casket (master)"
+    };
+
+    const casketEntries = new Map(
+        npcDropEntries.map(entry => [entry.npcName, entry])
+    );
 
     for (const tier of CLUE_TIERS) {
         const steps = tiers?.[tier] || [];
@@ -242,6 +265,12 @@ export default async function ClueStepsPage() {
         let countableStepCount = 0;
         const typesInOrder = [];
         const rowsByType = new Map();
+
+        const casket = casketEntries.get(casketNames[tier]);
+
+        const dropInfo = casket
+            ? `· Chance to get a new roll: ${formatCumulativeRate(casket.totalRateScore)} · Potential rolls: ${casket.items.length}`
+            : "· Chance to get a new roll: 0% · no rolls";
 
         for (const step of steps) {
             const countableForTotals = !hasPlayer || shouldCountStepForPlayer(step, fileStore.player);
@@ -293,7 +322,6 @@ export default async function ClueStepsPage() {
                         doableCount += 1;
                     }
                 } else {
-                    const ctx = buildRequirementContext();
 
                     let requirements = step.requirements;
 
@@ -374,7 +402,7 @@ export default async function ClueStepsPage() {
                     <button class="clue-toggle clue-tier-toggle" type="button" aria-expanded="true">Hide</button>
                     <span>${tier}</span>
                     <span class="clue-tier-counts">
-                        (${percentCompletable}% completable, ${doableCount}/${totalCount})
+                        (${percentCompletable}% completable, ${doableCount}/${totalCount} steps ${dropInfo})
                     </span>
                 </h3>
                 <div class="clue-tier-body">
