@@ -241,7 +241,10 @@ export default async function ClueStepsPage() {
         obtained: fileStore.obtained || [],
         rolled: fileStore.rolled || [],
         player: fileStore.player,
-        filters: fileStore.filters || {}
+        filters: {
+            ...fileStore.filters,
+            hideClue: false
+        }
     });
 
     const casketNames = {
