@@ -78,7 +78,13 @@ const CONSTRUCTION_ROOMS = [{
             "useful": false,
             "note": null,
             "requirement": null,
-            "tools": []
+            "tools": [{
+                "name": "Hammer",
+                "quantity": 1
+            }, {
+                "name": "Saw",
+                "quantity": 1
+            }]
         }],
         "meta": {
             "fLabel": null,
