@@ -1639,9 +1639,6 @@ export const REQUIREMENT_CHECKS = {
     canCatchButterflies(ctx) {
         return canCatchButterflies(ctx);
     },
-    hasButterflyNet(ctx) {
-        return hasButterflyNet(ctx);
-    },
     hasRabbitSnare(ctx) {
         return has(ctx, 10031);
     },
@@ -3135,11 +3132,20 @@ export const REQUIREMENT_CHECKS = {
     isBossDrop(ctx) {
         return isBossDrop(ctx);
     },
+    hasInsectNet(ctx) {
+        return hasInsectNet(ctx);
+    },
     canCompleteTheWritingsOnTheWall(ctx) {
         return canCompleteTheWritingsOnTheWall(ctx);
     },
     canCompleteMudfootsBigAdventure(ctx) {
         return true;
+    },
+    canCompleteTheBirdsAndTheWasps(ctx) {
+        return canCompleteTheBirdsAndTheWasps(ctx);
+    },
+    canCompleteAShellOfAFriend(ctx) {
+        return canCompleteAShellOfAFriend(ctx);
     },
     never(ctx) {
         return false;
@@ -3156,6 +3162,38 @@ function canAccessWyrmscraigIsland (ctx) {
     return allTrue([
         hasSkillLevel(ctx, "Sailing", 62), //
     ]);
+}
+
+function canCompleteAShellOfAFriend(ctx) {
+    return allTrue([
+        hasNonBoostableSkillLevel(ctx, "Construction", 15), //
+        hasNonBoostableSkillLevel(ctx, "Herblore", 16), //
+        requiresQuest(ctx, "canCompletePriestInPeril", canCompletePriestInPeril), //
+        requiresQuest(ctx, "canCompleteDruidicRitual", canCompleteDruidicRitual), //
+        hasUsableAxe(ctx),
+    ])
+}
+
+function canCompleteTheBirdsAndTheWasps(ctx) {
+    return allTrue([
+        hasInsectNet(ctx),
+        has(ctx, 10006), // Bird snare
+        has(ctx, 28), // Insect repellent
+    ])
+}
+
+export function hasInsectNet(ctx) {
+    if (has(ctx, 10010, { trackMissing: false })) return true; // Insect net
+    if (hasMagicButterflyNet(ctx)) return true;
+
+    addMissingItemOptionGroup(ctx, [[10010], [11242, 11244, 11246]]);
+    return false;
+}
+
+function hasMagicButterflyNet(ctx) {
+        hasItem(ctx, 11242, { trackMissing: false }) && // Gourmet impling jar
+        hasItem(ctx, 11244, { trackMissing: false }) && // Earth impling jar
+        hasItem(ctx, 11246, { trackMissing: false }); // Essence impling jar
 }
 
 function canCompleteTheWritingsOnTheWall(ctx) {
@@ -6891,7 +6929,7 @@ function canBirdSnare(ctx) {
 
 function canNooseWand(ctx) {
     return canTrainHunter(ctx) //
-        && has(ctx, 10150); // Bird snare
+        && has(ctx, 10150); // Noose wand
 }
 
 function canDeadfallTrap(ctx) {
@@ -6990,7 +7028,7 @@ function canCatchButterflies(ctx) {
 }
 
 export function hasButterflyNet(ctx) {
-    return has(ctx, 10010) ||// Butterfly net
+    return has(ctx, 10010) ||// Insect net
         (has(ctx, 11242) //gourmet impling jar
         && has(ctx, 11244)//earth imp jar
         && has(ctx, 11246));//essence imp jar

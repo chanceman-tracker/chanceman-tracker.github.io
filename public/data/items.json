@@ -34625,7 +34625,7 @@
   {
     "index": 928,
     "id": 10010,
-    "name": "Butterfly net",
+    "name": "Insect net",
     "image": "butterfly_net.png",
     "sources": {
       "drops": {
@@ -34649,6 +34649,9 @@
             "skill": "Hunter",
             "level": 17
           }
+        },
+        "Questing": {
+          "notes": "Received at the start of the quest The Birds and the Wasps."
         }
       }
     },
@@ -40996,15 +40999,9 @@
       },
       "other": {
         "Cooking a Coconut milk": {
-          "notes": "Requires a Vial and a half Coconut.",
+          "notes": "Requires a Coconut, then go to Zahur or Wesley.",
           "rule": {
             "all": [
-              {
-                "has": 229
-              },
-              {
-                "has": 2347
-              },
               {
                 "has": 5974
               }
@@ -84296,6 +84293,11 @@
     "sources": {
       "spawns": {
         "Yes": "No requirements"
+      },
+      "other": {
+        "Questing": {
+          "notes": "Received at the start of the quest The Birds and the Wasps."
+        }
       }
     }
   },

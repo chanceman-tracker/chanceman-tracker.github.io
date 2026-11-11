@@ -273,7 +273,7 @@ export default async function ClueStepsPage() {
 
         const dropInfo = casket
             ? `· Chance to get a new roll: ${formatCumulativeRate(casket.totalRateScore)} · Potential rolls: ${casket.items.length}`
-            : "· Chance to get a new roll: 0% · no rolls";
+            : "· Chance to get a new roll: 0%";
 
         for (const step of steps) {
             const countableForTotals = !hasPlayer || shouldCountStepForPlayer(step, fileStore.player);
