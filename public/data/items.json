@@ -33906,6 +33906,19 @@
     }
   },
   {
+    "index": 4622,
+    "id": 34783,
+    "name": "Brown feather",
+    "image": "Brown_feather.png",
+    "sources": {
+      "drops": {
+        "Honey buzzard": {
+          "droprate": "Always"
+        }
+      }
+    }
+  },
+  {
     "index": 906,
     "id": 2649,
     "name": "Brown headband",
@@ -116963,6 +116976,20 @@
       },
       "shops": {
         "Yes": "No requirements"
+      }
+    }
+  },
+  {
+    "index": 4621,
+    "id": 34801,
+    "name": "Pink snelm",
+    "image": "Pink_snelm.png",
+    "sources": {
+      "other": {
+        "Questing": {
+          "notes": "Received at the end of A Shell of a Friend.",
+          "rule": "canCompleteAShellOfAFriend"
+        }
       }
     }
   },

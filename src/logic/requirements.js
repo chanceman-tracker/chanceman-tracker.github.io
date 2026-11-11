@@ -3179,6 +3179,7 @@ function canCompleteTheBirdsAndTheWasps(ctx) {
         hasInsectNet(ctx),
         has(ctx, 10006), // Bird snare
         has(ctx, 28), // Insect repellent
+        (hasRolledButNotObtained(ctx, 34783) || has(ctx, 34783)) // brown feather
     ])
 }
 

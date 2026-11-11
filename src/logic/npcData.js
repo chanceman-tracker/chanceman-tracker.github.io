@@ -8221,6 +8221,14 @@ export const NPC_DATA = {
         "tags": ["quest"],
         "f2p": false
     },
+    "Honey buzzard": {
+        "wiki": "https://oldschool.runescape.wiki/w/Honey_buzzard",
+        "rule": ["canCompleteTheBirdsAndTheWasps"],
+        "skill": [],
+        "level": [],
+        "tags": [],
+        "f2p": false
+    },
     "Hoop Snake": {
         "wiki": "https://oldschool.runescape.wiki/w/Hoop_Snake",
         "rule": ["canCompleteBoneVoyage"],
