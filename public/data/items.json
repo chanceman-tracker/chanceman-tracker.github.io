@@ -30700,6 +30700,11 @@
     "name": "Bronze arrowtips",
     "image": "bronze_arrowtips.png",
     "sources": {
+      "drops": {
+        "Bea's supplies": {
+          "droprate": "1/7.5"
+        }
+      },
       "spawns": {
         "Yes": "No requirements"
       },
@@ -31651,6 +31656,9 @@
         },
         "Barrel (Shaman Caves)": {
           "droprate": "Uncommon"
+        },
+        "Bea's supplies": {
+          "droprate": "1/7.5"
         }
       },
       "spawns": {
@@ -81739,6 +81747,9 @@
         },
         "Blood-starved venator": {
           "droprate": "3 x Unknown"
+        },
+        "Bea's supplies": {
+          "droprate": "1/20"
         }
       },
       "other": {
@@ -82340,6 +82351,9 @@
         },
         "Broken arrow": {
           "droprate": "1/20"
+        },
+        "Bea's supplies": {
+          "droprate": "1/3.75"
         }
       },
       "spawns": {
@@ -85163,6 +85177,9 @@
         },
         "Ava's attractor": {
           "droprate": "1/2000"
+        },
+        "Bea's supplies": {
+          "droprate": "1/12"
         }
       },
       "shops": {
@@ -86287,6 +86304,9 @@
         },
         "Barrel (Shaman Caves)": {
           "droprate": "Rare"
+        },
+        "Bea's supplies": {
+          "droprate": "1/12"
         }
       },
       "spawns": {
@@ -94644,6 +94664,11 @@
       "Crafting"
     ],
     "sources": {
+      "drops": {
+        "Bea's supplies": {
+          "droprate": "1/12"
+        }
+      },
       "other": {
         "Tanning a Cowhide": {
           "notes": "Requires Cowhide.",
@@ -145426,6 +145451,9 @@
         },
         "Ranging cape accumulator": {
           "droprate": "1/2000"
+        },
+        "Bea's supplies": {
+          "droprate": "1/60"
         }
       },
       "spawns": {
@@ -146909,6 +146937,9 @@
         },
         "Barrel (Shaman Caves)": {
           "droprate": "Rare"
+        },
+        "Bea's supplies": {
+          "droprate": "1/60"
         }
       },
       "other": {

@@ -1561,6 +1561,14 @@ export const NPC_DATA = {
         "tags": [],
         "f2p": false
     },
+    "Bea's supplies": {
+        "wiki": "https://oldschool.runescape.wiki/w/Bea's_supplies",
+        "rule": ["canCompleteTheBirdsAndTheWasps"],
+        "skill": [],
+        "level": [],
+        "tags": [],
+        "f2p": false
+    },
     "Bear Cub": {
         "wiki": "https://oldschool.runescape.wiki/w/Bear_Cub",
         "rule": null,
