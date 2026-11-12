@@ -6862,7 +6862,7 @@ function hasHunterMeat(ctx) {
 
 function canGetBirdNestWyson(ctx) {
     return has(ctx, 7418)  // Mole skin
-        && has(ctx, 7416); // Mole claw
+        || has(ctx, 7416); // Mole claw
 }
 
 function hasRope(ctx) {
