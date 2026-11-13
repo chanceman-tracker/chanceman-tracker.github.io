@@ -10725,31 +10725,31 @@
     "image": "angler's_paint.png",
     "sources": {
       "drops": {
-        "Shimmering shoal": {
+        "Shimmering shoal (trawling net)": {
           "droprate": "1/16200"
         },
-        "Glistening shoal": {
+        "Glistening shoal (trawling net)": {
           "droprate": "1/16200"
         },
-        "Vibrant shoal": {
+        "Vibrant shoal (trawling net)": {
           "droprate": "1/16200"
         },
-        "Giant krill shoal": {
+        "Giant krill shoal (trawling net)": {
           "droprate": "1/18000"
         },
-        "Haddock shoal": {
+        "Haddock shoal (trawling net)": {
           "droprate": "1/18000"
         },
-        "Yellowfin shoal": {
+        "Yellowfin shoal (trawling net)": {
           "droprate": "1/18000"
         },
-        "Halibut shoal": {
+        "Halibut shoal (trawling net)": {
           "droprate": "1/18000"
         },
-        "Marlin shoal": {
+        "Marlin shoal (trawling net)": {
           "droprate": "1/18000"
         },
-        "Bluefin shoal": {
+        "Bluefin shoal (trawling net)": {
           "droprate": "1/18000"
         }
       }
