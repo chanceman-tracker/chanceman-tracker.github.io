@@ -461,7 +461,13 @@ export async function init() {
 
     if (isProfile) {
         const profileRoot = app.querySelector("#chancebook-profile-content");
-        const slug = decodeURIComponent(profilePath.slice("/chancebook/".length));
+        const pathParts = profilePath
+            .slice("/chancebook/".length)
+            .split("/")
+            .filter(Boolean);
+
+        const slug = decodeURIComponent(pathParts[0] || "");
+        const isItemHistory = pathParts[1] === "item-history";
         if (!profileRoot) return;
         try {
             const supabase = await getClient();
@@ -472,7 +478,9 @@ export async function init() {
                 profileRoot.innerHTML = `<h1>Player not found</h1><p>This profile may be private or may no longer be contributing.</p>`;
                 return;
             }
-            profileRoot.innerHTML = renderProfile(result.profile);
+            profileRoot.innerHTML = isItemHistory
+                ? renderItemHistory(result.profile, slug)
+                : renderProfile(result.profile, slug);
         } catch (error) {
             profileRoot.innerHTML = `<h1>Player profile</h1><p class="chancebook-error">${escapeHtml(error.message || "Could not load this profile.")}</p>`;
         }
@@ -520,13 +528,27 @@ async function fetchPublicData(supabase, params = {}) {
     return data;
 }
 
-function renderProfile(profile) {
+function renderProfile(profile, slug) {
     const player = profile.player || {};
     const levels = player.levels || {};
+    const rolledItemIds = new Set(
+    (profile.rolledIds || []).map(Number)
+);
+
     const achievements = [
-        ["Herblore unlocked", "Druidic Ritual"],
-        ["Sailing unlocked", "Pandemonium"],
-        ["Morytania unlocked", "Priest in Peril"]
+        {
+            label: "Herblore unlocked",
+            itemIds: [2136, 2134, 2138, 2132]
+        },
+        {
+            label: "Sailing unlocked",
+            itemIds: [8794, 2347]
+        },
+        {
+            label: "Morytania unlocked",
+            itemIds: [1925],
+            alternativeItemIds: [7936, 1436]
+        }
     ];
     const recent = Array.isArray(profile.recentRolls)
     ? profile.recentRolls
@@ -541,7 +563,14 @@ function renderProfile(profile) {
     const totalLevel = SKILLS.reduce((sum, skill) => sum + (Number(levels[skill]) || 0), 0);
     return `
         <div class="chancebook-profile-heading">
-            <div><h1>${escapeHtml(profile.name)}</h1></div>
+            <div>
+                <h1>${escapeHtml(profile.name)}</h1>
+                ${profile.lastUpdated ? `
+                    <p class="chancebook-muted chancebook-small">
+                        Last updated: ${escapeHtml(new Date(profile.lastUpdated).toLocaleDateString())}
+                    </p>
+                ` : ""}
+            </div>
         </div>
         <div class="chancebook-profile-stats">
             <div><strong>${number(profile.rolledCount)}</strong><span>Items rolled</span></div>
@@ -552,16 +581,57 @@ function renderProfile(profile) {
         <section class="chancebook-panel">
             <h2>Achievements</h2>
             <div class="chancebook-achievements">
-                ${achievements.map(([label, quest]) => {
-                    const complete = Number(player.quests?.[quest]) >= 2;
+                ${achievements.map(achievement => {
+                    const {
+                        label,
+                        itemIds,
+                        alternativeItemIds
+                    } = achievement;
+
+                    let complete;
+                    let progress = "";
+
+                    if (alternativeItemIds) {
+                        const bucketRolled = rolledItemIds.has(1925);
+                        const essenceRolled = alternativeItemIds.some(id =>
+                            rolledItemIds.has(id)
+                        );
+
+                        complete = bucketRolled && essenceRolled;
+
+                        if (!complete) {
+                            if (bucketRolled) {
+                                progress = "Bucket rolled, missing essence";
+                            } else if (essenceRolled) {
+                                progress = "Essence rolled, bucket missing";
+                            } else {
+                                progress = "0/2 requirements rolled";
+                            }
+                        }
+                    } else {
+                        const rolledCount = itemIds.filter(id =>
+                            rolledItemIds.has(id)
+                        ).length;
+
+                        complete = rolledCount === itemIds.length;
+
+                        if (!complete) {
+                            progress = `${rolledCount}/${itemIds.length} items rolled`;
+                        }
+                    }
+
                     const displayLabel = complete
                         ? label
                         : label.replace("unlocked", "still locked");
 
                     return `
                         <div class="chancebook-achievement ${complete ? "is-unlocked" : "is-locked"}">
-                            <span>${complete ? "✓" : "○"}</span>
-                            ${displayLabel}
+                            <div>
+                                <div><span>${complete ? "✓" : "○"}</span>${displayLabel}</div>
+                                ${!complete ? `
+                                    <small class="chancebook-muted">${progress}</small>
+                                ` : ""}
+                            </div>
                         </div>
                     `;
                 }).join("")}
@@ -571,6 +641,11 @@ function renderProfile(profile) {
             <h2>Rules of this account</h2>
             ${renderProfileRulesets(profile.chancebookRulesets)}
         </section>
+        <div class="chancebook-history-link">
+            <a data-link href="/chancebook/${encodeURIComponent(slug)}/item-history">
+                View full item history →
+            </a>
+        </div>
         <div class="chancebook-recent-grid">
         <section class="chancebook-panel">
             <h2>Recently obtained</h2>
@@ -605,6 +680,81 @@ function renderProfile(profile) {
                 }).join("")}
             </div>
         </section>
+    `;
+}
+
+function renderHistoryList(title, ids) {
+    const itemIds = Array.isArray(ids) ? ids : [];
+
+    return `
+        <section class="chancebook-panel">
+            <h2>${title} <small>(${number(itemIds.length)})</small></h2>
+
+            ${itemIds.length ? `
+                <div style="display:grid; gap:8px; max-height:700px; overflow-y:auto;">
+                    ${itemIds.map((id, index) => {
+                        const item = itemsById.get(Number(id));
+
+                        return `
+                            <a
+                                data-link
+                                href="/item?id=${Number(id)}"
+                                class="chancebook-history-item"
+                                style="display:flex; align-items:center; gap:10px; padding:6px 8px;"
+                            >
+                                <span class="chancebook-muted">${index + 1}.</span>
+                                ${item ? `
+                                    <img
+                                        src="/images/${encodeURIComponent(item.image)}"
+                                        alt=""
+                                        style="width:32px; height:32px; object-fit:contain;"
+                                    >
+                                    <span>${escapeHtml(item.name)}</span>
+                                ` : `
+                                    <span>Pressed roll button</span>
+                                `}
+                            </a>
+                        `;
+                    }).join("")}
+                </div>
+            ` : `
+                <p class="chancebook-muted">No item history available.</p>
+            `}
+        </section>
+    `;
+}
+
+function renderItemHistory(profile, slug) {
+    const obtainedIds = Array.isArray(profile.obtainedIds)
+        ? profile.obtainedIds
+        : [];
+
+    const rolledIds = Array.isArray(profile.rolledIds)
+        ? profile.rolledIds
+        : [];
+
+    return `
+        <div class="chancebook-profile-heading">
+            <div>
+                <h1>${escapeHtml(profile.name)} - Item History</h1>
+                ${profile.lastUpdated ? `
+                    <p class="chancebook-muted chancebook-small">
+                        Last updated: ${escapeHtml(new Date(profile.lastUpdated).toLocaleDateString())}
+                    </p>
+                ` : ""}
+            </div>
+        </div>
+
+        <div class="chancebook-history-link">
+            <a data-link href="/chancebook/${encodeURIComponent(slug)}">
+                ← Back to player profile
+            </a>
+        </div>
+
+        <div class="chancebook-recent-grid">
+            ${renderHistoryList("Obtained items", obtainedIds)}
+            ${renderHistoryList("Rolled items", rolledIds)}
+        </div>
     `;
 }
 

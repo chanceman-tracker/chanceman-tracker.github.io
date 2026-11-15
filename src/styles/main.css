@@ -2760,3 +2760,21 @@ body.route-loading .route-loading-overlay {
 .chancebook-fun-stats-link small {
     color: var(--text-muted, inherit);
 }
+
+.chancebook-history-link {
+    margin: 12px 0 20px;
+    text-align: center;
+}
+
+.chancebook-history-link a {
+    font-weight: 600;
+}
+
+.chancebook-history-item {
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.chancebook-history-item:hover {
+    background: var(--hover-background, rgba(128, 128, 128, 0.12));
+}
