@@ -211,27 +211,74 @@ function itemStatCard(title, record, emptyText) {
     return `
         <section class="chancebook-stat-card">
             <h3>${title}</h3>
-            ${record ? itemMarkup(record.itemId, record.count) : `<p class="chancebook-muted">${emptyText}</p>`}
-            ${record ? `<small>${number(record.count)} contributing players</small>` : ""}
+            ${record
+                ? itemMarkup(record.itemId, record.count)
+                : `<p class="chancebook-muted">${emptyText}</p>`
+            }
+            ${record ? `
+                ${record.tiedCount > 1
+                    ? `<small>+ ${number(record.tiedCount - 1)} other items tied for this spot for ${number(record.count)} players</small>`
+                    : ""
+                }
+                <small>${number(record.count)} contributing players</small>
+            ` : ""}
         </section>
     `;
 }
 
 function pickItemStat(counts = [], mode = "max") {
-    const entries = counts.filter((entry) =>
-        itemsById.has(Number(entry.itemId)) && Number(entry.count) > 0
+    const entries = counts
+        .filter((entry) =>
+            itemsById.has(Number(entry.itemId)) && Number(entry.count) > 0
+        );
+
+    if (!entries.length) return null;
+
+    const targetCount = mode === "max"
+        ? Math.max(...entries.map(entry => Number(entry.count)))
+        : Math.min(...entries.map(entry => Number(entry.count)));
+
+    const tiedEntries = entries.filter(
+        entry => Number(entry.count) === targetCount
     );
 
-    entries.sort((a, b) => mode === "max"
-        ? b.count - a.count || a.itemId - b.itemId
-        : a.count - b.count || a.itemId - b.itemId
-    );
+    const randomIndex = Math.floor(Math.random() * tiedEntries.length);
+    const selected = tiedEntries[randomIndex];
 
-    return entries[0] ?? null;
+    return {
+        ...selected,
+        count: targetCount,
+        tiedCount: tiedEntries.length
+    };
 }
 
 let hiscoresPage = 0;
 let hiscoresFreeToPlayOnly = false;
+
+function hiscoreAccountIcon(row) {
+    const icons = {
+        ironman: "Ironman_chat_badge.webp",
+        hardcore_ironman: "Hardcore_ironman_chat_badge.webp",
+        ultimate_ironman: "Ultimate_ironman_chat_badge.webp",
+        group_ironman: "Group_ironman_chat_badge.webp",
+        hardcore_group_ironman: "Hardcore_group_ironman_chat_badge.webp",
+        unranked_group_ironman: "Unranked_group_ironman_chat_badge.webp",
+    };
+
+    const icon = icons[row.accountType];
+
+    if (!row.isIronman || !icon) return "";
+
+    return `
+        <img
+            class="chancebook-ironman-icon"
+            src="/images/ironman/${icon}"
+            alt=""
+            aria-hidden="true"
+            title="${escapeHtml(row.accountType.replaceAll("_", " "))}"
+        >
+    `;
+}
 
 function renderHiscoresSection(container, rows = []) {
     const filteredRows = hiscoresFreeToPlayOnly
@@ -273,9 +320,14 @@ function renderHiscoresSection(container, rows = []) {
                         ${pageRows.map((row, index) => `
                             <tr>
                                 <td>${start + index + 1}</td>
-                                <td>${row.profileUrl
-                                    ? `<a data-link href="${escapeHtml(row.profileUrl)}">${escapeHtml(row.name)}</a>`
-                                    : escapeHtml(row.name || "Anonymous")}</td>
+                                <td>
+                                    <span class="chancebook-hiscore-player">
+                                        ${row.profileUrl
+                                            ? `<a data-link href="${escapeHtml(row.profileUrl)}">${escapeHtml(row.name)}</a>`
+                                            : escapeHtml(row.name || "Anonymous")}
+                                        ${hiscoreAccountIcon(row)}
+                                    </span>
+                                </td>
                                 <td>${number(row.rolledCount)}</td>
                                 <td>${number(row.obtainedCount)}</td>
                                 <td>${number(row.questPoints)}</td>
@@ -373,6 +425,15 @@ export default async function ChancebookPage() {
             <div id="chancebook-load-status" class="chancebook-muted" role="status">Loading community statistics...</div>
             <div id="chancebook-statistics" hidden>
                 <div class="chancebook-stat-grid" id="chancebook-stat-grid"></div>
+                <div class="chancebook-fun-stats-link">
+                    <a data-link href="/chancebook/fun-stats">
+                        <span>
+                            <strong>Fun Stats!</strong>
+                            <small>Explore community totals, tool ownership and more.</small>
+                        </span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
                 <section class="chancebook-panel">
                     <h2>Community Hiscores</h2>
                     <div id="chancebook-hiscores"></div>
