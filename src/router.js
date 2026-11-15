@@ -57,6 +57,9 @@ const routeDefinitions = {
     },
     "/bug": {
         load: async () => import("./pages/reportABug.js")
+    },
+    "/chancebook": {
+        load: async () => import("./pages/chancebook.js")
     }
 };
 
@@ -130,7 +133,10 @@ export async function router() {
     const path = window.location.pathname;
 
     const basePath = path.split("?")[0];
-    const routeDefinition = routeDefinitions[basePath] || notFoundRouteDefinition;
+    const isChancebookProfile = basePath.startsWith("/chancebook/");
+    const routeDefinition = (isChancebookProfile
+        ? routeDefinitions["/chancebook"]
+        : routeDefinitions[basePath]) || notFoundRouteDefinition;
     const routeModule = await routeDefinition.load();
     const page = routeModule.default;
     const routeInit = routeDefinition.init || routeModule.init;

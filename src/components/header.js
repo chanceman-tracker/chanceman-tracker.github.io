@@ -29,6 +29,7 @@ function isActiveLink(currentPath, href) {
         return currentPath === "/" || currentPath === "/home";
     }
 
+    if (href === "/chancebook") return currentPath === "/chancebook" || currentPath.startsWith("/chancebook/");
     return currentPath === href;
 }
 

@@ -1,0 +1,4 @@
+# Public statistics endpoint is read-only and returns only aggregated statistics
+# or profiles whose owner explicitly enabled public username display.
+[functions.chancebook-public-data]
+verify_jwt = false
