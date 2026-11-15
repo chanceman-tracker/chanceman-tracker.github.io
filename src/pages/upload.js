@@ -1,5 +1,6 @@
 import { saveImportedTrackerState } from "./playerImportHelpers.js";
 import { consumeTrackerSyncBridgeImport } from "./trackerSyncBridge.js";
+import { syncChancebookContribution } from "../chancebook/autoSync.js";
 
 function getReturnPath() {
     const stored = sessionStorage.getItem("uploadReturnPath");
@@ -106,6 +107,9 @@ export function init() {
                 status.textContent = message;
             }
         });
+
+        // Update Chancebook after the local tracker data has been saved.
+        await syncChancebookContribution();
     };
 
     const onUploadClick = async (event) => {

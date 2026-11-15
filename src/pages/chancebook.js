@@ -1,5 +1,6 @@
 import { fileStore } from "../storage/fileStore.js";
 import { CHANCEBOOK_SUPABASE_URL, CHANCEBOOK_SUPABASE_ANON_KEY } from "../chancebook/config.js";
+import { getChancebookClient } from "../chancebook/client.js";
 
 const SKILLS = [
     "Attack", "Hitpoints", "Mining", "Strength", "Agility", "Smithing",
@@ -470,7 +471,7 @@ export async function init() {
         const isItemHistory = pathParts[1] === "item-history";
         if (!profileRoot) return;
         try {
-            const supabase = await getClient();
+            const supabase = await getChancebookClient();
             if (!supabase) throw new Error("Chancebook is not configured yet.");
             const result = await fetchPublicData(supabase, { profile: slug });
             if (!alive) return;
@@ -489,7 +490,7 @@ export async function init() {
 
     const status = app.querySelector("#chancebook-load-status");
     try {
-        const supabase = await getClient();
+        const supabase = await getChancebookClient();
         if (!supabase) {
             status.innerHTML = `Chancebook needs its Supabase project settings. Add <code>VITE_SUPABASE_URL</code> and <code>VITE_SUPABASE_ANON_KEY</code> to your local <code>.env.local</code> file before building.`;
         } else {
@@ -832,7 +833,7 @@ function bindContribution(app) {
         submit.disabled = true;
         status.textContent = "Submitting...";
         try {
-            const supabase = await getClient();
+            const supabase = await getChancebookClient();
             if (!supabase) throw new Error("Chancebook is not configured yet. Please try again after the site configuration is added.");
             const { data: authData, error: authError } = await supabase.auth.getSession();
             if (authError) throw authError;
@@ -858,8 +859,24 @@ function bindContribution(app) {
             status.textContent = "Your statistics have been submitted.";
             app.querySelector("#cb-manage").hidden = false;
         } catch (error) {
-            status.textContent = error.message || "Could not submit your statistics.";
-        } finally {
+    console.error("Chancebook submission failed:", error);
+
+    if (error?.context) {
+        try {
+            const responseText = await error.context.clone().text();
+
+            console.error(
+                "Chancebook Edge Function response:",
+                error.context.status,
+                responseText
+            );
+        } catch (responseError) {
+            console.error("Could not read submission error response:", responseError);
+        }
+    }
+
+    status.textContent = error.message || "Could not submit your statistics.";
+} finally {
             submit.disabled = !share.checked;
         }
     };
@@ -868,7 +885,7 @@ function bindContribution(app) {
         const button = app.querySelector("#cb-withdraw");
         button.disabled = true;
         try {
-            const supabase = await getClient();
+            const supabase = await getChancebookClient();
             const { error } = await supabase.functions.invoke("withdraw-player-data", {
                 body: { action: "withdraw" }
             });
@@ -884,7 +901,7 @@ function bindContribution(app) {
 
     const checkExistingContribution = async () => {
         try {
-            const supabase = await getClient();
+            const supabase = await getChancebookClient();
             if (!supabase || !manage) return;
 
             // Don't create a new anonymous session just to check.

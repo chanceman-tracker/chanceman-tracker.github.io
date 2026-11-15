@@ -1,6 +1,7 @@
 import { invalidateLogicCaches } from "../items/logicCache.js";
 import { saveImportedTrackerState } from "./playerImportHelpers.js";
 import { fileStore } from "../storage/fileStore.js";
+import { syncChancebookContribution } from "../chancebook/autoSync.js";
 
 function getReturnPath() {
     const stored = sessionStorage.getItem("uploadReturnPath");
@@ -110,6 +111,9 @@ export function init() {
                     status.textContent = message;
                 }
             });
+
+            // Update Chancebook after the local tracker data has been saved.
+            await syncChancebookContribution();
 
             // Clear any state
             invalidateLogicCaches(fileStore);
