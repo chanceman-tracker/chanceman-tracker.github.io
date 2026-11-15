@@ -135,7 +135,7 @@ export async function router() {
     await new Promise(requestAnimationFrame);
     const path = window.location.pathname;
 
-    const basePath = path.split("?")[0];
+    const basePath = normalizePath(path).replace(/\/+$/, "") || "/";
     const isChancebookProfile = basePath.startsWith("/chancebook/")
         && !routeDefinitions[basePath];
 
