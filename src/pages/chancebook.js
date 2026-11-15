@@ -32,19 +32,14 @@ const CUSTOM_RULES = [
         id: "questOfChance",
         label: "I play with the Quest of Chance ruleset by Maclay",
         info: [
-            "Completing a quest grants one (1) quest item roll.",
-            "Completing 5 combat achievements grants one (1) quest item roll (OR 10, 15 or 1 tier (Easy, Medium, Hard etc) depending on your wanted skill lvl).",
-            "For untradeable combination items that require one or more tradable items, those tradable items are listed individually (for hangover cure: snape grass, chocolate dust and bucket of milk are on the list).",
-            "For tradable combination items, only the combination item is listed (Potatoes(10) is listed instead of potato and sack).",
-            "When a non-specified item is needed (for instance, an axe), the lowest tier version of the item is listed (e.g. bronze axe).",
-            "When eventually Jagex adds more quests they might need another quest item roll, then it is added to the list to be rolled."
+            "Watch Maclay's Youtube series for an explanation.",
         ]
     },
     {
         id: "luckOfShuk",
         label: "I play with LuckOfShuk's ruleset",
         info: [
-            "Unlock Herblore, Morytania and Sailing by default."
+            "Watch LuckOfShuk's Youtube series for an explanation.",
         ]
     }
 ];
@@ -208,7 +203,8 @@ function itemMarkup(itemId, count, label) {
     `;
 }
 
-function itemStatCard(title, record, emptyText) {
+
+function itemStatCard(title, record, emptyText, itemsPageHref, itemsPageLabel) {
     return `
         <section class="chancebook-stat-card">
             <h3>${title}</h3>
@@ -218,11 +214,13 @@ function itemStatCard(title, record, emptyText) {
             }
             ${record ? `
                 ${record.tiedCount > 1
-                    ? `<small>+ ${number(record.tiedCount - 1)} other items tied for this spot for ${number(record.count)} players</small>`
+                    ? `<small>+ ${number(record.tiedCount - 1)} other items tied for this spot</small>`
                     : ""
                 }
-                <small>${number(record.count)} contributing players</small>
             ` : ""}
+            <a data-link href="${itemsPageHref}" class="chancebook-item-stat-link">
+                ${itemsPageLabel} →
+            </a>
         </section>
     `;
 }
@@ -502,12 +500,38 @@ export async function init() {
             contributorNote.className = "chancebook-muted chancebook-small";
             contributorNote.textContent = `${number(result.contributorCount)} players currently contribute statistics.`;
             app.querySelector("#chancebook-statistics").prepend(contributorNote);
+            
             app.querySelector("#chancebook-stat-grid").innerHTML = [
-                itemStatCard("Most commonly rolled item", pickItemStat(result.rolledItemCounts, "max"), "No rolled items yet."),
-                itemStatCard("Most commonly obtained item", pickItemStat(result.obtainedItemCounts, "max"), "No obtained items yet."),
-                itemStatCard("Least commonly rolled item", pickItemStat(result.rolledItemCounts, "min"), "No rolled items yet."),
-                itemStatCard("Least commonly obtained item", pickItemStat(result.obtainedItemCounts, "min"), "No obtained items yet.")
+                itemStatCard(
+                    "Most commonly rolled item",
+                    pickItemStat(result.rolledItemCounts, "max"),
+                    "No rolled items yet.",
+                    "/chancebook/rolled-items",
+                    "View all rolled items"
+                ),
+                itemStatCard(
+                    "Most commonly obtained item",
+                    pickItemStat(result.obtainedItemCounts, "max"),
+                    "No obtained items yet.",
+                    "/chancebook/obtained-items",
+                    "View all obtained items"
+                ),
+                itemStatCard(
+                    "Least commonly rolled item",
+                    pickItemStat(result.rolledItemCounts, "min"),
+                    "No rolled items yet.",
+                    "/chancebook/rolled-items",
+                    "View all rolled items"
+                ),
+                itemStatCard(
+                    "Least commonly obtained item",
+                    pickItemStat(result.obtainedItemCounts, "min"),
+                    "No obtained items yet.",
+                    "/chancebook/obtained-items",
+                    "View all obtained items"
+                )
             ].join("");
+
             renderHiscoresSection(app.querySelector("#chancebook-hiscores"), result.hiscores);
         }
     } catch (error) {

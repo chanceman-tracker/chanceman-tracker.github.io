@@ -63,6 +63,12 @@ const routeDefinitions = {
     },
     "/chancebook/fun-stats": {
         load: async () => import("./pages/chancebookFunStats.js")
+    },
+    "/chancebook/rolled-items": {
+        load: async () => import("./chancebook/rolled-items.js")
+    },
+    "/chancebook/obtained-items": {
+        load: async () => import("./chancebook/obtained-items.js")
     }
 };
 

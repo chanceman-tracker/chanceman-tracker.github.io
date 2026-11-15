@@ -2778,3 +2778,10 @@ body.route-loading .route-loading-overlay {
 .chancebook-history-item:hover {
     background: var(--hover-background, rgba(128, 128, 128, 0.12));
 }
+
+.chancebook-item-stat-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
