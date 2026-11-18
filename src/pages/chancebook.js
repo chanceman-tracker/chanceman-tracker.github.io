@@ -1,3 +1,4 @@
+
 import { fileStore } from "../storage/fileStore.js";
 import { CHANCEBOOK_SUPABASE_URL, CHANCEBOOK_SUPABASE_ANON_KEY } from "../chancebook/config.js";
 import { getChancebookClient } from "../chancebook/client.js";
@@ -10,6 +11,7 @@ const SKILLS = [
 ];
 
 const RULESET_STORAGE_KEY = "chancebookRulesets";
+const COMMUNITY_STATS_CACHE_KEY = "chancebookCommunityStatsCache";
 
 const PLUGIN_RULES = [
     { id: "freeToPlayOnly", label: "I am free to play only" },
@@ -202,7 +204,6 @@ function itemMarkup(itemId, count, label) {
         </a>
     `;
 }
-
 
 function itemStatCard(title, record, emptyText, itemsPageHref, itemsPageLabel) {
     return `
@@ -500,7 +501,7 @@ export async function init() {
             contributorNote.className = "chancebook-muted chancebook-small";
             contributorNote.textContent = `${number(result.contributorCount)} players currently contribute statistics.`;
             app.querySelector("#chancebook-statistics").prepend(contributorNote);
-            
+
             app.querySelector("#chancebook-stat-grid").innerHTML = [
                 itemStatCard(
                     "Most commonly rolled item",
@@ -542,23 +543,126 @@ export async function init() {
     teardownHandler = () => { alive = false; };
 }
 
-async function fetchPublicData(supabase, params = {}) {
+// Read the locally cached community statistics.
+function getCachedCommunityStats() {
+    try {
+        const cached = JSON.parse(
+            localStorage.getItem(COMMUNITY_STATS_CACHE_KEY) || "null"
+        );
+
+        if (
+            cached &&
+            cached.version !== undefined &&
+            cached.data &&
+            typeof cached.data === "object"
+        ) {
+            return cached;
+        }
+    } catch (error) {
+        console.warn("Could not read cached Chancebook statistics.", error);
+    }
+
+    return null;
+}
+
+// Save the latest community statistics locally.
+function saveCachedCommunityStats(data) {
+    if (!data || data.version === undefined) return;
+
+    try {
+        localStorage.setItem(
+            COMMUNITY_STATS_CACHE_KEY,
+            JSON.stringify({
+                version: data.version,
+                updatedAt: data.updatedAt ?? null,
+                data
+            })
+        );
+    } catch (error) {
+        console.warn("Could not cache Chancebook statistics.", error);
+    }
+}
+
+// Make a request to the public data Edge Function.
+async function requestPublicData(params = {}) {
     const query = new URLSearchParams(params);
     const url = `${CHANCEBOOK_SUPABASE_URL}/functions/v1/chancebook-public-data${query.toString() ? `?${query}` : ""}`;
+
     const response = await fetch(url, {
         headers: { apikey: CHANCEBOOK_SUPABASE_ANON_KEY }
     });
+
     const data = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(data.error || `Chancebook request failed (${response.status}).`);
+
+    if (!response.ok) {
+        throw new Error(
+            data.error || `Chancebook request failed (${response.status}).`
+        );
+    }
+
     return data;
+}
+
+// Fetch public data. Individual profiles are never cached.
+// Community statistics are cached and checked against the server version.
+async function fetchPublicData(supabase, params = {}) {
+    // Profile requests bypass the community statistics cache.
+    if (params.profile || Object.keys(params).length > 0) {
+        return requestPublicData(params);
+    }
+
+    const cached = getCachedCommunityStats();
+
+    // First check whether the server has generated a newer statistics snapshot.
+    try {
+        const versionData = await requestPublicData({
+            versionOnly: "true"
+        });
+
+        // The local cache is still current. Avoid downloading the full payload.
+        if (
+            cached &&
+            String(cached.version) === String(versionData.version)
+        ) {
+            return cached.data;
+        }
+    } catch (error) {
+        console.warn("Could not check the Chancebook statistics version.", error);
+
+        // If the server cannot be reached, use the existing cache.
+        if (cached) {
+            return cached.data;
+        }
+    }
+
+    // No cache exists or the server has a newer version.
+    try {
+        const data = await requestPublicData();
+
+        saveCachedCommunityStats(data);
+
+        return data;
+    } catch (error) {
+        // Keep the page usable if refreshing the cache fails.
+        if (cached) {
+            console.warn(
+                "Could not refresh Chancebook statistics. Using cached data.",
+                error
+            );
+
+            return cached.data;
+        }
+
+        throw error;
+    }
 }
 
 function renderProfile(profile, slug) {
     const player = profile.player || {};
     const levels = player.levels || {};
     const rolledItemIds = new Set(
-    (profile.rolledIds || []).map(Number)
-);
+        (profile.rolledIds || []).map(Number)
+    );
 
     const achievements = [
         {
@@ -575,17 +679,24 @@ function renderProfile(profile, slug) {
             alternativeItemIds: [7936, 1436]
         }
     ];
+
     const recent = Array.isArray(profile.recentRolls)
-    ? profile.recentRolls
-    : Array.isArray(player.recentRolls)
-        ? player.recentRolls
-        : [];
+        ? profile.recentRolls
+        : Array.isArray(player.recentRolls)
+            ? player.recentRolls
+            : [];
+
     const recentObtained = Array.isArray(profile.recentObtained)
-    ? profile.recentObtained
-    : Array.isArray(player.recentObtained)
-        ? player.recentObtained
-        : [];
-    const totalLevel = SKILLS.reduce((sum, skill) => sum + (Number(levels[skill]) || 0), 0);
+        ? profile.recentObtained
+        : Array.isArray(player.recentObtained)
+            ? player.recentObtained
+            : [];
+
+    const totalLevel = SKILLS.reduce(
+        (sum, skill) => sum + (Number(levels[skill]) || 0),
+        0
+    );
+
     return `
         <div class="chancebook-profile-heading">
             <div>
@@ -793,7 +904,8 @@ function bindContribution(app) {
 
     if (manage) manage.hidden = true;
     if (!share || !name || !hiscores || !submit) return;
-        // Restore previously saved ruleset selections.
+
+    // Restore previously saved ruleset selections.
     const savedRulesets = getSavedRulesets();
 
     app.querySelectorAll("[data-ruleset-group]").forEach((checkbox) => {
@@ -859,15 +971,20 @@ function bindContribution(app) {
         try {
             const supabase = await getChancebookClient();
             if (!supabase) throw new Error("Chancebook is not configured yet. Please try again after the site configuration is added.");
+
             const { data: authData, error: authError } = await supabase.auth.getSession();
             if (authError) throw authError;
+
             let session = authData.session;
+
             if (!session) {
                 const { data, error } = await supabase.auth.signInAnonymously();
                 if (error) throw error;
                 session = data.session;
             }
+
             const profile = JSON.parse(fileStore.playerBlobText || "");
+
             const { data, error } = await supabase.functions.invoke("submit-player-data", {
                 body: {
                     rolledIds: fileStore.rolled,
@@ -879,28 +996,30 @@ function bindContribution(app) {
                     leaderboardOptIn: hiscores.checked
                 }
             });
+
             if (error) throw error;
+
             status.textContent = "Your statistics have been submitted.";
             app.querySelector("#cb-manage").hidden = false;
         } catch (error) {
-    console.error("Chancebook submission failed:", error);
+            console.error("Chancebook submission failed:", error);
 
-    if (error?.context) {
-        try {
-            const responseText = await error.context.clone().text();
+            if (error?.context) {
+                try {
+                    const responseText = await error.context.clone().text();
 
-            console.error(
-                "Chancebook Edge Function response:",
-                error.context.status,
-                responseText
-            );
-        } catch (responseError) {
-            console.error("Could not read submission error response:", responseError);
-        }
-    }
+                    console.error(
+                        "Chancebook Edge Function response:",
+                        error.context.status,
+                        responseText
+                    );
+                } catch (responseError) {
+                    console.error("Could not read submission error response:", responseError);
+                }
+            }
 
-    status.textContent = error.message || "Could not submit your statistics.";
-} finally {
+            status.textContent = error.message || "Could not submit your statistics.";
+        } finally {
             submit.disabled = !share.checked;
         }
     };
@@ -908,12 +1027,15 @@ function bindContribution(app) {
     const onWithdraw = async () => {
         const button = app.querySelector("#cb-withdraw");
         button.disabled = true;
+
         try {
             const supabase = await getChancebookClient();
             const { error } = await supabase.functions.invoke("withdraw-player-data", {
                 body: { action: "withdraw" }
             });
+
             if (error) throw error;
+
             status.textContent = "Your Chancebook contribution has been withdrawn.";
             app.querySelector("#cb-manage").hidden = true;
         } catch (error) {
