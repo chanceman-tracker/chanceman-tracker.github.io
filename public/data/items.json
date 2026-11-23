@@ -156443,42 +156443,6 @@
     }
   },
   {
-    "index": 3866,
-    "id": 31193,
-    "name": "Swords and emblem",
-    "image": "swords_and_emblem.png",
-    "tags": [
-      "gridmaster"
-    ]
-  },
-  {
-    "index": 3867,
-    "id": 31196,
-    "name": "Swords and emblem (b)",
-    "image": "swords_and_emblem_(b).png",
-    "tags": [
-      "gridmaster"
-    ]
-  },
-  {
-    "index": 3868,
-    "id": 31202,
-    "name": "Swords and emblem (g)",
-    "image": "swords_and_emblem_(g).png",
-    "tags": [
-      "gridmaster"
-    ]
-  },
-  {
-    "index": 3869,
-    "id": 31199,
-    "name": "Swords and emblem (p)",
-    "image": "swords_and_emblem_(p).png",
-    "tags": [
-      "gridmaster"
-    ]
-  },
-  {
     "index": 3870,
     "id": 31556,
     "name": "Swordtip squid",

@@ -1,15 +1,18 @@
-import{C,a as S}from"./config-BS53vI6F.js";let u=null;function h(e){return Number(e||0).toLocaleString()}function y(e){return String(e??"").replace(/[&<>"']/g,t=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[t])}async function R(){const e=await fetch("/data/items.json");if(!e.ok)throw new Error("Could not load the item database.");return e.json()}async function j(){const e=await fetch(`${C}/functions/v1/chancebook-public-data`,{headers:{apikey:S}}),t=await e.json().catch(()=>({}));if(!e.ok)throw new Error(t.error||`Chancebook request failed (${e.status}).`);return t}function z(e,t,c){const b=new Map((t||[]).map(o=>[Number(o.itemId),Number(o.count||0)]));return e.map(o=>{const i=b.get(Number(o.id))||0,p=c>0?i/c*100:0;return{...o,playerCount:i,percentage:p}}).map(o=>`
+import{C as E,a as N}from"./config-BS53vI6F.js";let u=null;function h(e){return Number(e||0).toLocaleString()}function y(e){return String(e??"").replace(/[&<>"']/g,n=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[n])}async function U(){const e=await fetch("/data/items.json");if(!e.ok)throw new Error("Could not load the item database.");return e.json()}async function _(){const e=await fetch(`${E}/functions/v1/chancebook-public-data`,{headers:{apikey:N}}),n=await e.json().catch(()=>({}));if(!e.ok)throw new Error(n.error||`Chancebook request failed (${e.status}).`);return n}function K(e,n,i){const b=new Map((n||[]).map(t=>[Number(t.itemId),Number(t.count||0)]));return e.map(t=>{const s=b.get(Number(t.id))||0,p=i>0?s/i*100:0;return{...t,playerCount:s,percentage:p}}).map(t=>`
         <a
             class="chancebook-item-count-row"
             data-link
-            href="/item?id=${encodeURIComponent(o.id)}"
-            data-item-name="${y(String(o.name||"").toLowerCase())}"
-            data-count="${o.playerCount}"
-            data-percentage="${o.percentage}"
+            href="/item?id=${encodeURIComponent(t.id)}"
+            data-item-name="${y(String(t.name||"").toLowerCase())}"
+            data-itemset="${(t.tags||[]).includes("itemset")}"
+            data-flatpack="${(t.tags||[]).includes("flatpack")}"
+            data-poisoned="${/\((?:p\+{0,2}|kp)\)$/i.test(String(t.name||"").trim())}"
+            data-count="${t.playerCount}"
+            data-percentage="${t.percentage}"
         >
             <span class="chancebook-item-count-image-wrap">
                 <img
-                    src="/images/${encodeURIComponent(o.image||"")}"
+                    src="/images/${encodeURIComponent(t.image||"")}"
                     alt=""
                     loading="lazy"
                     onerror="this.hidden = true"
@@ -17,15 +20,15 @@ import{C,a as S}from"./config-BS53vI6F.js";let u=null;function h(e){return Numbe
             </span>
 
             <span class="chancebook-item-count-name">
-                ${y(o.name)}
+                ${y(t.name)}
             </span>
 
             <span class="chancebook-item-count-details">
-                <strong>${h(o.playerCount)} / ${h(c)}</strong>
-                <small>${o.percentage.toFixed(1)}%</small>
+                <strong>${h(t.playerCount)} / ${h(i)}</strong>
+                <small>${t.percentage.toFixed(1)}%</small>
             </span>
         </a>
-    `).join("")}async function P(){return`
+    `).join("")}async function W(){return`
         <style>
             .chancebook-item-count-page {
                 width: 100%;
@@ -206,23 +209,23 @@ import{C,a as S}from"./config-BS53vI6F.js";let u=null;function h(e){return Numbe
 
             <div class="chancebook-heading">
                 <div>
-                    <h1>Rolled Items</h1>
-                    <p>How many participating chancers have rolled each item.</p>
+                    <h1>Obtained Items</h1>
+                    <p>How many participating chancers have obtained each item.</p>
                 </div>
             </div>
 
             <div
-                id="chancebook-rolled-items-status"
+                id="chancebook-obtained-items-status"
                 class="chancebook-muted"
                 role="status"
             >
-                Loading rolled item statistics...
+                Loading obtained item statistics...
             </div>
 
-            <div id="chancebook-rolled-items-content" hidden>
+            <div id="chancebook-obtained-items-content" hidden>
                 <div class="chancebook-item-count-controls">
                     <input
-                        id="chancebook-rolled-items-search"
+                        id="chancebook-obtained-items-search"
                         class="chancebook-item-count-search"
                         type="search"
                         placeholder="Search items..."
@@ -231,7 +234,7 @@ import{C,a as S}from"./config-BS53vI6F.js";let u=null;function h(e){return Numbe
 
                     <label class="chancebook-item-count-sort">
                         <span>Sort:</span>
-                        <select id="chancebook-rolled-items-sort">
+                        <select id="chancebook-obtained-items-sort">
                             <option value="desc">Most to least</option>
                             <option value="asc">Least to most</option>
                         </select>
@@ -240,35 +243,58 @@ import{C,a as S}from"./config-BS53vI6F.js";let u=null;function h(e){return Numbe
                     <div class="chancebook-item-count-filters">
                         <label>
                             <input
-                                id="chancebook-rolled-items-hide-full"
+                                id="chancebook-obtained-items-hide-full"
                                 type="checkbox"
                             >
-                            Hide items rolled by 100% of players
+                            Hide items obtained by 100% of players
                         </label>
 
                         <label>
                             <input
-                                id="chancebook-rolled-items-only-zero"
+                                id="chancebook-obtained-items-only-zero"
                                 type="checkbox"
                             >
-                            Only show items rolled by 0 players
+                            Only show items obtained by 0 players
+                        </label>
+                        <label>
+                            <input
+                                id="chancebook-obtained-items-hide-itemsets"
+                                type="checkbox"
+                            >
+                            Hide item sets
+                        </label>
+
+                        <label>
+                            <input
+                                id="chancebook-obtained-items-hide-flatpacks"
+                                type="checkbox"
+                            >
+                            Hide flatpacks
+                        </label>
+                        
+                        <label>
+                            <input
+                                id="chancebook-obtained-items-hide-poisoned"
+                                type="checkbox"
+                            >
+                            Hide poisoned weapons
                         </label>
                     </div>
                 </div>
 
                 <p
-                    id="chancebook-rolled-items-summary"
+                    id="chancebook-obtained-items-summary"
                     class="chancebook-item-count-summary"
                 ></p>
 
                 <div
-                    id="chancebook-rolled-items-list"
+                    id="chancebook-obtained-items-list"
                     class="chancebook-item-count-list"
                 ></div>
             </div>
         </div>
-    `}async function U(){H();const e=document.getElementById("app");if(!e)return;let t=!0;u=()=>{t=!1};const c=e.querySelector("#chancebook-rolled-items-status"),b=e.querySelector("#chancebook-rolled-items-content"),g=e.querySelector("#chancebook-rolled-items-search"),o=e.querySelector("#chancebook-rolled-items-sort"),i=e.querySelector("#chancebook-rolled-items-hide-full"),p=e.querySelector("#chancebook-rolled-items-only-zero"),N=e.querySelector("#chancebook-rolled-items-summary"),r=e.querySelector("#chancebook-rolled-items-list");try{let s=function(){const $=g.value.trim().toLowerCase(),q=o.value,L=i.checked,I=p.checked;[...f].sort((n,l)=>{const d=Number(n.dataset.count),m=Number(l.dataset.count);return d!==m?q==="asc"?d-m:m-d:n.dataset.itemName.localeCompare(l.dataset.itemName)}).forEach(n=>{const l=Number(n.dataset.count),d=n.dataset.itemName.includes($),m=x>0&&l>=x,A=d&&!(L&&m)&&!(I&&!(l===0));n.hidden=!A,r.appendChild(n)});const v=f.filter(n=>!n.hidden).length;N.textContent=`Showing ${h(v)} of ${h(f.length)} items`;let a=r.querySelector(".chancebook-item-count-empty");v===0?a||(a=document.createElement("p"),a.className="chancebook-item-count-empty",a.textContent="No items match your filters.",r.appendChild(a)):a&&a.remove()};const[k,w]=await Promise.all([R(),j()]);if(!t)return;const x=Number(w.contributorCount||0),E=z(k,w.rolledItemCounts,x);r.innerHTML=E;const f=[...r.querySelectorAll(".chancebook-item-count-row")];g.addEventListener("input",s),o.addEventListener("change",s),i.addEventListener("change",s),p.addEventListener("change",s),s(),b.hidden=!1,c.hidden=!0}catch(k){if(!t)return;c.innerHTML=`
+    `}async function Y(){Z();const e=document.getElementById("app");if(!e)return;let n=!0;u=()=>{n=!1};const i=e.querySelector("#chancebook-obtained-items-status"),b=e.querySelector("#chancebook-obtained-items-content"),k=e.querySelector("#chancebook-obtained-items-search"),t=e.querySelector("#chancebook-obtained-items-sort"),s=e.querySelector("#chancebook-obtained-items-hide-full"),p=e.querySelector("#chancebook-obtained-items-only-zero"),w=e.querySelector("#chancebook-obtained-items-hide-itemsets"),v=e.querySelector("#chancebook-obtained-items-hide-flatpacks"),S=e.querySelector("#chancebook-obtained-items-hide-poisoned"),q=e.querySelector("#chancebook-obtained-items-summary"),r=e.querySelector("#chancebook-obtained-items-list");try{let a=function(){const L=k.value.trim().toLowerCase(),H=t.value,A=s.checked,O=p.checked,j=w.checked,z=v.checked,P=S.checked;[...f].sort((o,d)=>{const l=Number(o.dataset.count),m=Number(d.dataset.count);return l!==m?H==="asc"?l-m:m-l:o.dataset.itemName.localeCompare(d.dataset.itemName)}).forEach(o=>{const d=Number(o.dataset.count),l=o.dataset.itemName.includes(L),m=x>0&&d>=x,B=d===0,R=o.dataset.itemset==="true",F=o.dataset.flatpack==="true",M=l&&!(A&&m)&&!(O&&!B)&&!(j&&R)&&!(z&&F)&&!(P&&o.dataset.poisoned==="true");o.hidden=!M,r.appendChild(o)});const $=f.filter(o=>!o.hidden).length;q.textContent=`Showing ${h($)} of ${h(f.length)} items`;let c=r.querySelector(".chancebook-item-count-empty");$===0?c||(c=document.createElement("p"),c.className="chancebook-item-count-empty",c.textContent="No items match your filters.",r.appendChild(c)):c&&c.remove()};const[g,C]=await Promise.all([U(),_()]);if(!n)return;const x=Number(C.contributorCount||0),I=K(g,C.obtainedItemCounts,x);r.innerHTML=I;const f=[...r.querySelectorAll(".chancebook-item-count-row")];k.addEventListener("input",a),t.addEventListener("change",a),s.addEventListener("change",a),p.addEventListener("change",a),w.addEventListener("change",a),v.addEventListener("change",a),S.addEventListener("change",a),a(),b.hidden=!1,i.hidden=!0}catch(g){if(!n)return;i.innerHTML=`
             <span class="chancebook-error">
-                ${y(k.message||"Could not load rolled item statistics.")}
+                ${y(g.message||"Could not load obtained item statistics.")}
             </span>
-        `}}function H(){typeof u=="function"&&(u(),u=null)}export{P as default,U as init,H as teardown};
+        `}}function Z(){typeof u=="function"&&(u(),u=null)}export{W as default,Y as init,Z as teardown};

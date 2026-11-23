@@ -25,7 +25,7 @@ const PLUGIN_RULES = [
 const CUSTOM_RULES = [
     { id: "skill99Rolls", label: "I roll an item when I reach level 99 in a skill" },
     { id: "petRolls", label: "I roll 5 items when I obtain a pet" },
-    { id: "otherPlayersHouses", label: "I get rolls from other player's houses" },
+    { id: "otherchancersHouses", label: "I get rolls from other player's houses" },
     { id: "allowTelegrab", label: "I allow telegrab for rolls" },
     { id: "rerollThirdAge", label: "I reroll third age items" },
     { id: "rerollGilded", label: "I reroll gilded items" },
@@ -269,7 +269,7 @@ function renderHiscoresSection(container, rows = []) {
 
     container.innerHTML = `
         <div class="chancebook-hiscores-header">
-            <p class="chancebook-muted chancebook-small">Players who have opted into the hiscores. Up to 10 entries are shown.</p>
+            <p class="chancebook-muted chancebook-small">Each chancer has their own ruleset, so feel free to click into their profile and have a look!</p>
             <label class="chancebook-check">
                 <input type="checkbox" id="chancebook-f2p-filter"
                     ${hiscoresFreeToPlayOnly ? "checked" : ""}>
@@ -311,7 +311,7 @@ function renderHiscoresSection(container, rows = []) {
                     </tbody>
                 </table>
             </div>
-        ` : `<p class="chancebook-muted">No players found${hiscoresFreeToPlayOnly ? " with Free to Play selected" : ""}.</p>`}
+        ` : `<p class="chancebook-muted">No chancers found${hiscoresFreeToPlayOnly ? " with Free to Play selected" : ""}.</p>`}
 
         ${totalPages > 1 ? `
             <div class="chancebook-hiscores-pagination">
@@ -513,7 +513,7 @@ export async function init() {
             const contributorNote = document.createElement("p");
             contributorNote.className = "chancebook-muted chancebook-small";
             contributorNote.textContent =
-                `${number(result.contributorCount)} players currently contribute statistics.`;
+                `${number(result.contributorCount)} chancers currently contribute statistics.`;
 
             app.querySelector("#chancebook-statistics").prepend(contributorNote);
 

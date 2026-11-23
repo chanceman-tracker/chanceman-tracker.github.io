@@ -78,6 +78,9 @@ function renderItemRows(items, counts, contributorCount) {
             data-link
             href="/item?id=${encodeURIComponent(item.id)}"
             data-item-name="${escapeHtml(String(item.name || "").toLowerCase())}"
+            data-itemset="${(item.tags || []).includes("itemset")}"
+            data-flatpack="${(item.tags || []).includes("flatpack")}"
+            data-poisoned="${/\((?:p\+{0,2}|kp)\)$/i.test(String(item.name || "").trim())}"
             data-count="${item.playerCount}"
             data-percentage="${item.percentage}"
         >
@@ -331,6 +334,29 @@ export default async function ChancebookObtainedItemsPage() {
                             >
                             Only show items obtained by 0 players
                         </label>
+                        <label>
+                            <input
+                                id="chancebook-obtained-items-hide-itemsets"
+                                type="checkbox"
+                            >
+                            Hide item sets
+                        </label>
+
+                        <label>
+                            <input
+                                id="chancebook-obtained-items-hide-flatpacks"
+                                type="checkbox"
+                            >
+                            Hide flatpacks
+                        </label>
+                        
+                        <label>
+                            <input
+                                id="chancebook-obtained-items-hide-poisoned"
+                                type="checkbox"
+                            >
+                            Hide poisoned weapons
+                        </label>
                     </div>
                 </div>
 
@@ -366,6 +392,9 @@ export async function init() {
     const sort = app.querySelector("#chancebook-obtained-items-sort");
     const hideFull = app.querySelector("#chancebook-obtained-items-hide-full");
     const onlyZero = app.querySelector("#chancebook-obtained-items-only-zero");
+    const hideItemsets = app.querySelector("#chancebook-obtained-items-hide-itemsets");
+    const hideFlatpacks = app.querySelector("#chancebook-obtained-items-hide-flatpacks");
+    const hidePoisoned = app.querySelector("#chancebook-obtained-items-hide-poisoned");
     const summary = app.querySelector("#chancebook-obtained-items-summary");
     const list = app.querySelector("#chancebook-obtained-items-list");
 
@@ -398,6 +427,9 @@ export async function init() {
             const direction = sort.value;
             const hideAllPlayers = hideFull.checked;
             const showOnlyZero = onlyZero.checked;
+            const hideItemSets = hideItemsets.checked;
+            const hideFlatpackItems = hideFlatpacks.checked;
+            const hidePoisonedWeapons = hidePoisoned.checked;
 
             const sortedRows = [...allRows].sort((a, b) => {
                 const countA = Number(a.dataset.count);
@@ -418,9 +450,15 @@ export async function init() {
                 const isFull = contributorCount > 0 && count >= contributorCount;
                 const isZero = count === 0;
 
+                const isItemset = row.dataset.itemset === "true";
+                const isFlatpack = row.dataset.flatpack === "true";
+
                 const visible = nameMatches
                     && !(hideAllPlayers && isFull)
-                    && !(showOnlyZero && !isZero);
+                    && !(showOnlyZero && !isZero)
+                    && !(hideItemSets && isItemset)
+                    && !(hideFlatpackItems && isFlatpack)
+                    && !(hidePoisonedWeapons && row.dataset.poisoned === "true");
 
                 row.hidden = !visible;
                 list.appendChild(row);
@@ -449,6 +487,9 @@ export async function init() {
         sort.addEventListener("change", updateList);
         hideFull.addEventListener("change", updateList);
         onlyZero.addEventListener("change", updateList);
+        hideItemsets.addEventListener("change", updateList);
+        hideFlatpacks.addEventListener("change", updateList);
+        hidePoisoned.addEventListener("change", updateList);
 
         updateList();
 
