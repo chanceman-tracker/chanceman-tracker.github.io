@@ -18,6 +18,7 @@ const TOOL_NAMES = [
     "Pestle and mortar",
     "Vial of water",
     "Rake",
+    "Rope",
     "Lockpick",
     "Gardening trowel",
     "Secateurs",

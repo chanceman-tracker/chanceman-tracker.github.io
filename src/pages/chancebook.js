@@ -226,32 +226,6 @@ function itemStatCard(title, record, emptyText, itemsPageHref, itemsPageLabel) {
     `;
 }
 
-function pickItemStat(counts = [], mode = "max") {
-    const entries = counts
-        .filter((entry) =>
-            itemsById.has(Number(entry.itemId)) && Number(entry.count) > 0
-        );
-
-    if (!entries.length) return null;
-
-    const targetCount = mode === "max"
-        ? Math.max(...entries.map(entry => Number(entry.count)))
-        : Math.min(...entries.map(entry => Number(entry.count)));
-
-    const tiedEntries = entries.filter(
-        entry => Number(entry.count) === targetCount
-    );
-
-    const randomIndex = Math.floor(Math.random() * tiedEntries.length);
-    const selected = tiedEntries[randomIndex];
-
-    return {
-        ...selected,
-        count: targetCount,
-        tiedCount: tiedEntries.length
-    };
-}
-
 let hiscoresPage = 0;
 let hiscoresFreeToPlayOnly = false;
 
@@ -446,6 +420,7 @@ export default async function ChancebookPage() {
 
 export async function init() {
     teardown();
+
     const app = document.getElementById("app");
     if (!app) return;
 
@@ -453,11 +428,10 @@ export async function init() {
     const isProfile = profilePath.startsWith("/chancebook/");
     let alive = true;
 
-    try {
-        await loadItems();
-    } catch (error) {
-        console.warn("Chancebook item data could not be loaded.", error);
-    }
+    // Register teardown immediately, including while requests are pending.
+    teardownHandler = () => {
+        alive = false;
+    };
 
     if (isProfile) {
         const profileRoot = app.querySelector("#chancebook-profile-content");
@@ -468,79 +442,131 @@ export async function init() {
 
         const slug = decodeURIComponent(pathParts[0] || "");
         const isItemHistory = pathParts[1] === "item-history";
+
         if (!profileRoot) return;
+
         try {
-            const supabase = await getChancebookClient();
-            if (!supabase) throw new Error("Chancebook is not configured yet.");
-            const result = await fetchPublicData(supabase, { profile: slug });
+            if (!CHANCEBOOK_SUPABASE_URL || !CHANCEBOOK_SUPABASE_ANON_KEY) {
+                throw new Error("Chancebook is not configured yet.");
+            }
+
+            // Load item metadata and the profile simultaneously.
+            const [, result] = await Promise.all([
+                loadItems().catch((error) => {
+                    console.warn("Chancebook item data could not be loaded.", error);
+                }),
+                requestPublicData({ profile: slug })
+            ]);
+
             if (!alive) return;
+
             if (!result.profile) {
-                profileRoot.innerHTML = `<h1>Player not found</h1><p>This profile may be private or may no longer be contributing.</p>`;
+                profileRoot.innerHTML = `
+                    <h1>Player not found</h1>
+                    <p>This profile may be private or may no longer be contributing.</p>
+                `;
                 return;
             }
+
             profileRoot.innerHTML = isItemHistory
                 ? renderItemHistory(result.profile, slug)
                 : renderProfile(result.profile, slug);
+
         } catch (error) {
-            profileRoot.innerHTML = `<h1>Player profile</h1><p class="chancebook-error">${escapeHtml(error.message || "Could not load this profile.")}</p>`;
+            if (!alive) return;
+
+            profileRoot.innerHTML = `
+                <h1>Player profile</h1>
+                <p class="chancebook-error">
+                    ${escapeHtml(error.message || "Could not load this profile.")}
+                </p>
+            `;
         }
+
         return;
     }
 
     const status = app.querySelector("#chancebook-load-status");
+
     try {
-        const supabase = await getChancebookClient();
-        if (!supabase) {
-            status.innerHTML = `Chancebook needs its Supabase project settings. Add <code>VITE_SUPABASE_URL</code> and <code>VITE_SUPABASE_ANON_KEY</code> to your local <code>.env.local</code> file before building.`;
+        if (!CHANCEBOOK_SUPABASE_URL || !CHANCEBOOK_SUPABASE_ANON_KEY) {
+            status.innerHTML = `
+                Chancebook needs its Supabase project settings.
+                Add <code>VITE_SUPABASE_URL</code> and
+                <code>VITE_SUPABASE_ANON_KEY</code> to your local
+                <code>.env.local</code> file before building.
+            `;
         } else {
-            const result = await fetchPublicData(supabase);
+            // Start both requests immediately instead of waiting for items.json.
+            const [, result] = await Promise.all([
+                loadItems().catch((error) => {
+                    console.warn("Chancebook item data could not be loaded.", error);
+                }),
+                fetchPublicData()
+            ]);
+
             if (!alive) return;
+
             status.hidden = true;
             app.querySelector("#chancebook-statistics").hidden = false;
+
             const contributorNote = document.createElement("p");
             contributorNote.className = "chancebook-muted chancebook-small";
-            contributorNote.textContent = `${number(result.contributorCount)} players currently contribute statistics.`;
+            contributorNote.textContent =
+                `${number(result.contributorCount)} players currently contribute statistics.`;
+
             app.querySelector("#chancebook-statistics").prepend(contributorNote);
 
             app.querySelector("#chancebook-stat-grid").innerHTML = [
                 itemStatCard(
                     "Most commonly rolled item",
-                    pickItemStat(result.rolledItemCounts, "max"),
+                    result.itemHighlights?.mostRolled,
                     "No rolled items yet.",
                     "/chancebook/rolled-items",
                     "View all rolled items"
                 ),
                 itemStatCard(
                     "Most commonly obtained item",
-                    pickItemStat(result.obtainedItemCounts, "max"),
+                    result.itemHighlights?.mostObtained,
                     "No obtained items yet.",
                     "/chancebook/obtained-items",
                     "View all obtained items"
                 ),
                 itemStatCard(
                     "Least commonly rolled item",
-                    pickItemStat(result.rolledItemCounts, "min"),
+                    result.itemHighlights?.leastRolled,
                     "No rolled items yet.",
                     "/chancebook/rolled-items",
                     "View all rolled items"
                 ),
                 itemStatCard(
                     "Least commonly obtained item",
-                    pickItemStat(result.obtainedItemCounts, "min"),
+                    result.itemHighlights?.leastObtained,
                     "No obtained items yet.",
                     "/chancebook/obtained-items",
                     "View all obtained items"
                 )
             ].join("");
 
-            renderHiscoresSection(app.querySelector("#chancebook-hiscores"), result.hiscores);
+            renderHiscoresSection(
+                app.querySelector("#chancebook-hiscores"),
+                result.hiscores
+            );
         }
+
     } catch (error) {
-        if (status) status.innerHTML = `<span class="chancebook-error">${escapeHtml(error.message || "Could not load Chancebook statistics.")}</span>`;
+        if (alive && status) {
+            status.innerHTML = `
+                <span class="chancebook-error">
+                    ${escapeHtml(error.message || "Could not load Chancebook statistics.")}
+                </span>
+            `;
+        }
     }
 
-    bindContribution(app);
-    teardownHandler = () => { alive = false; };
+    if (alive) {
+        bindContribution(app);
+    }
 }
 
 // Read the locally cached community statistics.
@@ -605,43 +631,48 @@ async function requestPublicData(params = {}) {
 
 // Fetch public data. Individual profiles are never cached.
 // Community statistics are cached and checked against the server version.
-async function fetchPublicData(supabase, params = {}) {
-    // Profile requests bypass the community statistics cache.
+async function fetchPublicData(params = {}) {
+    // Individual profiles bypass the community statistics cache.
     if (params.profile || Object.keys(params).length > 0) {
         return requestPublicData(params);
     }
 
     const cached = getCachedCommunityStats();
 
-    // First check whether the server has generated a newer statistics snapshot.
-    try {
-        const versionData = await requestPublicData({
-            versionOnly: "true"
-        });
+    // Only check the snapshot version when we actually have a cache.
+    if (cached) {
+        try {
+            const versionData = await requestPublicData({
+                versionOnly: "true"
+            });
 
-        // The local cache is still current. Avoid downloading the full payload.
-        if (
-            cached &&
-            String(cached.version) === String(versionData.version)
-        ) {
-            return cached.data;
-        }
-    } catch (error) {
-        console.warn("Could not check the Chancebook statistics version.", error);
+            // The local cache is still current.
+            if (
+                String(cached.version) === String(versionData.version)
+            ) {
+                return cached.data;
+            }
 
-        // If the server cannot be reached, use the existing cache.
-        if (cached) {
+        } catch (error) {
+            console.warn(
+                "Could not check the Chancebook statistics version.",
+                error
+            );
+
+            // If the server cannot be reached, use the existing cache.
             return cached.data;
         }
     }
 
-    // No cache exists or the server has a newer version.
+    // No cache exists, or the server has a newer snapshot.
+    // Fetch the full payload immediately.
     try {
         const data = await requestPublicData();
 
         saveCachedCommunityStats(data);
 
         return data;
+
     } catch (error) {
         // Keep the page usable if refreshing the cache fails.
         if (cached) {
