@@ -20,6 +20,7 @@ const PROGRESS_LINKS = [
 ];
 
 const ACTION_LINKS = [
+    { href: "/chancebook", label: "Chancebook" },
     { href: "/reupload", label: "Reupload" },
     { href: "/bug", label: "Report a bug" }
 ];

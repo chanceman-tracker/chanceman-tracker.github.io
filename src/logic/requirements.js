@@ -1696,6 +1696,9 @@ export const REQUIREMENT_CHECKS = {
     canCompleteRagAndBoneManII(ctx) {
         return canCompleteRagAndBoneManII(ctx);
     },
+    canCompleteRagAndBoneManIII (ctx) {
+        return canCompleteRagAndBoneManIII(ctx);
+    },
     canCompleteTwilightsPromise(ctx) {
         return canCompleteTwilightsPromise(ctx);
     },
@@ -1731,6 +1734,12 @@ export const REQUIREMENT_CHECKS = {
     },
     canCompleteANightAtTheTheatre(ctx) {
         return canCompleteANightAtTheTheatre(ctx);
+    },
+    canCompleteANewLeaf(ctx) {
+        return canCompleteANewLeaf(ctx);
+    },
+    canStartANewLeaf(ctx) {
+        return canStartANewLeaf(ctx);
     },
     canCompleteThroneOfMiscellania(ctx) {
         return canCompleteThroneOfMiscellania(ctx);
@@ -3319,6 +3328,36 @@ function canCompleteANightAtTheTheatre(ctx) {
         requiresQuest(ctx, "canCompleteATasteOfHope", canCompleteATasteOfHope), //
         has(ctx, 8794), // Saw
     ]);
+}
+
+function canCompleteANewLeaf(ctx) {
+    return allTrue([
+        requiresQuest(ctx, "canCompletePriestInPeril", canCompletePriestInPeril),
+        requiresQuest(ctx, "canCompleteDruidicRitual", canCompleteDruidicRitual),
+        hasNonBoostableSkillLevel(ctx, "Cooking", 35),
+        hasNonBoostableSkillLevel(ctx, "Farming", 45),
+        hasNonBoostableSkillLevel(ctx, "Herblore", 32),
+        has(ctx, 1965), // Cabbage
+        has(ctx, 6032), // compost
+        has(ctx, 227), // vial of water
+        has(ctx, 952), // Spade
+        has(ctx, 5324), // Cabbage seed
+        has(ctx, 5097), // rosemary seed
+        has(ctx, 5318), // potato seed
+        has(ctx, 1923), // bowl
+        has(ctx, 5341), // rake
+    ])
+}
+
+function canStartANewLeaf(ctx) {
+    return allTrue([
+        requiresQuest(ctx, "canCompletePriestInPeril", canCompletePriestInPeril),
+        requiresQuest(ctx, "canCompleteDruidicRitual", canCompleteDruidicRitual),
+        hasNonBoostableSkillLevel(ctx, "Cooking", 35),
+        hasNonBoostableSkillLevel(ctx, "Farming", 45),
+        hasNonBoostableSkillLevel(ctx, "Herblore", 32),
+        has(ctx, 1965), // Cabbage
+    ])
 }
 
 function canCompleteAnimalMagnetism(ctx) {
@@ -5010,6 +5049,21 @@ function canCompleteRagAndBoneManII(ctx) {
         requiresQuest(ctx, "canCompletePriestInPeril", canCompletePriestInPeril), //
         has(ctx, 952), // Spade, as only this is needed to gain access to experiments cave
         canEnterLumbridgeSwampCaves(ctx), //
+    ]);
+}
+
+function canCompleteRagAndBoneManIII(ctx) {
+    return allTrue([
+        hasSkillLevel(ctx, "Slayer", 58),
+        has(ctx, 1931), // Pot
+        has(ctx, 590), // Tinderbox
+        hasAnyLog(ctx), //
+        requiresQuest(ctx, "canCompleteRagAndBoneManII", canCompleteRagAndBoneManII), //
+        requiresQuest(ctx, "canCompleteDragonSlayerI", canCompleteDragonSlayerI), //
+        requiresQuest(ctx, "canCompleteTheGreatBrainRobbery", canCompleteTheGreatBrainRobbery),
+        requiresQuest(ctx, "canCompleteDefenderOfVarrock", canCompleteDefenderOfVarrock),
+        requiresQuest(ctx, "canCompleteTowerOfLife", canCompleteTowerOfLife),
+        requiresQuest(ctx, "canCompleteASoulsBane", canCompleteASoulsBane), //
     ]);
 }
 

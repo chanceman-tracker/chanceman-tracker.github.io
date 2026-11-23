@@ -30095,6 +30095,10 @@
         "Emptying bowls": {
           "notes": "Requires a filled bowl item.",
           "rule": "hasAnyFilledBowl"
+        },
+        "Questing": {
+          "notes": "Obtained during A New Leaf by taking a bowl from a crate.",
+          "rule": "canStartANewLeaf"
         }
       }
     }
@@ -35575,6 +35579,12 @@
         },
         "Wise Old Man tasks": {
           "droprate": "Common"
+        }
+      },
+      "other": {
+        "Questing": {
+          "notes": "Obtained during A New Leaf by talking to Dishop Dennis.",
+          "rule": "canStartANewLeaf"
         }
       }
     },
@@ -42058,6 +42068,12 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other": {
+        "Questing": {
+          "notes": "Obtained during A New Leaf by talking to Dishop Dennis.",
+          "rule": "canStartANewLeaf"
+        }
       }
     },
     "tags": [
@@ -114542,6 +114558,10 @@
               }
             ]
           }
+        },
+        "Questing": {
+          "notes": "Obtained during A New Leaf by talking to Dishop Dennis.",
+          "rule": "canStartANewLeaf"
         }
       }
     }
@@ -119946,6 +119966,12 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other": {
+        "Questing": {
+          "notes": "Obtained during A New Leaf by talking to Dishop Dennis.",
+          "rule": "canStartANewLeaf"
+        }
       }
     },
     "tags": [
@@ -128597,6 +128623,12 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other": {
+        "Questing": {
+          "notes": "Obtained during A New Leaf by talking to Dishop Dennis.",
+          "rule": "canStartANewLeaf"
+        }
       }
     },
     "tags": [
@@ -138998,6 +139030,20 @@
     "tags": [
       "Farming"
     ]
+  },
+  {
+    "index": 4623,
+    "id": 34813,
+    "name": "Seed of growth",
+    "image": "Seed_of_growth.png",
+    "sources": {
+      "other": {
+        "Farming": {
+          "notes": "Obtainable after completing the quest A New Leaf (seed packs, 1/100).",
+          "rule": "canCompleteANewLeaf"
+        }
+      }
+    }
   },
   {
     "index": 3384,

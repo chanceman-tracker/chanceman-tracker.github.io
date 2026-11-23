@@ -1,5 +1,6 @@
 export const QUEST_POINTS: Record<string, number> = {
     "A Kingdom Divided": 2,
+    "A New Leaf": 2,
     "A Night at the Theatre": 2,
     "A Porcine of Interest": 1,
     "A Ruff Situation": 1,
@@ -129,6 +130,7 @@ export const QUEST_POINTS: Record<string, number> = {
     "Prying Times": 1,
     "Rag and Bone Man I": 1,
     "Rag and Bone Man II": 1,
+    "Rag and Bone Man III": 3,
     "Ratcatchers": 2,
     "Recipe for Disaster": 0,
     "Recipe for Disaster - Another Cook's Quest": 1,
