@@ -1272,6 +1272,9 @@ export const REQUIREMENT_CHECKS = {
     canGrabTheFinalDawnDrinks(ctx) {
         return canGrabTheFinalDawnDrinks(ctx)
     },
+    canGrabTheFinalDawnPotatoes(ctx) {
+        return canGrabTheFinalDawnPotatoes(ctx);
+    },
     canCompleteShadesOfMortton(ctx) {
         return canCompleteShadesOfMortton(ctx);
     },
@@ -3113,6 +3116,9 @@ export const REQUIREMENT_CHECKS = {
     },
     canAccessWyrmscraigIsland(ctx) {  
         return canAccessWyrmscraigIsland(ctx);
+    },
+    canAccessGreatConch(ctx) {
+        return canAccessGreatConch(ctx);
     },
     canCompleteGardenOfDeath(ctx) {
         return canCompleteGardenOfDeath(ctx);
@@ -5671,6 +5677,9 @@ function canCompleteTheFinalDawn(ctx) {
         hasKnifeOrNarwhalKnife(ctx), // Knife
         has(ctx, 1917), // Beer
         has(ctx, 5418), // Empty Sack
+        has(ctx, 1919), // Beer glass
+        has(ctx, 29412), // Steamforge brew 
+        has(ctx, 1907), // Wizard's mind bomb
         has(ctx, 1913), // Dwarven Stout
         hasAnyItems(ctx, [3183, 4834, 4832, 3123, 31726, 22124, 2859, 22780, 28899, 6812, 4812, 534, 530, 532, 526, 528, 6729, 536, 22783, 4830, 31729, 22786, 3125, 11943, 2136, 2134, 2132, 25833, 10816, 2142]),
     ]);
@@ -5686,6 +5695,17 @@ function canGrabTheFinalDawnDrinks(ctx) {
         hasKnifeOrNarwhalKnife(ctx), // Knife
         has(ctx, 1917), // Beer
         has(ctx, 5418), // Empty Sack
+        hasAnyItems(ctx, [3183, 4834, 4832, 3123, 31726, 22124, 2859, 22780, 28899, 6812, 4812, 534, 530, 532, 526, 528, 6729, 536, 22783, 4830, 31729, 22786, 3125, 11943, 2136, 2134, 2132, 25833, 10816, 2142]),
+    ]);
+}
+
+function canGrabTheFinalDawnPotatoes(ctx) {
+    return allTrue([
+        hasSkillLevel(ctx, "Thieving", 66),
+        hasSkillLevel(ctx, "Runecraft", 52),
+        hasSkillLevel(ctx, "Fletching", 52),
+        requiresQuest(ctx, "canCompleteTheHeartOfDarkness", canCompleteTheHeartOfDarkness), //
+        requiresQuest(ctx, "canCompletePerilousMoons", canCompletePerilousMoons), //
         hasAnyItems(ctx, [3183, 4834, 4832, 3123, 31726, 22124, 2859, 22780, 28899, 6812, 4812, 534, 530, 532, 526, 528, 6729, 536, 22783, 4830, 31729, 22786, 3125, 11943, 2136, 2134, 2132, 25833, 10816, 2142]),
     ]);
 }
@@ -6097,7 +6117,8 @@ function canCompleteTrollStronghold(ctx) {
 }
 
 function canCompleteTroubledTortugans(ctx) {
-    return allTrue([
+    return ( 
+        allTrue([
         hasNonBoostableSkillLevel(ctx, "Slayer", 51), //
         hasNonBoostableSkillLevel(ctx, "Construction", 48), //
         hasNonBoostableSkillLevel(ctx, "Sailing", 45), //
@@ -6106,8 +6127,26 @@ function canCompleteTroubledTortugans(ctx) {
         hasNonBoostableSkillLevel(ctx, "Crafting", 34), //
         requiresQuest(ctx, "canCompletePandemonium", canCompletePandemonium), //
         hasUsableAxe(ctx),
-        has(ctx, 401), // Seaweed
-    ]);
+        has(ctx, 401), // Seaweed]) 
+        ]) ||
+        ctx.player.quests["Troubled Tortugans"] === 2 // already completed quest
+    );
+}
+
+function canAccessGreatConch(ctx) {
+    return (
+        allTrue([
+            hasNonBoostableSkillLevel(ctx, "Slayer", 51), //
+            hasNonBoostableSkillLevel(ctx, "Construction", 48), //
+            hasNonBoostableSkillLevel(ctx, "Sailing", 45), //
+            hasNonBoostableSkillLevel(ctx, "Hunter", 45), //
+            hasNonBoostableSkillLevel(ctx, "Woodcutting", 40), //
+            hasNonBoostableSkillLevel(ctx, "Crafting", 34), //
+            requiresQuest(ctx, "canCompletePandemonium", canCompletePandemonium), //
+            has(ctx, 401), // Seaweed 
+        ]) ||
+        ctx.player.quests["Troubled Tortugans"] === 2 // already completed quest
+    );
 }
 
 function canCompleteTwilightsPromise(ctx) {

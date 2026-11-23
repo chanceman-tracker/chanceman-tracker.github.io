@@ -3662,13 +3662,11 @@
                 "type": "Anagrams",
                 "requirements": {
                     "skills": {},
-                    "quests": {
-                        "Children of the Sun": "completed"
-                    },
+                    "quests": {},
                     "items": [],
                     "untracked": [],
                     "itemsAny": [],
-                    "rulesAll": [],
+                    "rulesAll": ["canAccessGreatConch"],
                     "rulesAny": []
                 }
             },

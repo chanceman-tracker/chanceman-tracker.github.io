@@ -1320,6 +1320,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 891
+                  },
+                  {
+                    "has": 5620
+                  },
+                  {
+                    "has": 5626
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -1885,6 +1908,29 @@
               {
                 "skill": "Fletching",
                 "level": 61
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 9290
+                  },
+                  {
+                    "has": 9297
+                  },
+                  {
+                    "has": 9304
+                  }
+                ]
               }
             ]
           }
@@ -2481,6 +2527,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 1227
+                  },
+                  {
+                    "has": 5676
+                  },
+                  {
+                    "has": 5694
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -2614,6 +2683,29 @@
               {
                 "skill": "Fletching",
                 "level": 67
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 816
+                  },
+                  {
+                    "has": 5633
+                  },
+                  {
+                    "has": 5640
+                  }
+                ]
               }
             ]
           }
@@ -3123,6 +3215,32 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 11409
+                  },
+                  {
+                    "has": 11407
+                  },
+                  {
+                    "has": 11410
+                  },
+                  {
+                    "has": 11412
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -3351,6 +3469,29 @@
               {
                 "skill": "Fletching",
                 "level": 62
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 835
+                  },
+                  {
+                    "has": 5646
+                  },
+                  {
+                    "has": 5652
+                  }
+                ]
               }
             ]
           }
@@ -3731,6 +3872,29 @@
               },
               {
                 "has": 2347
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 875
+                  },
+                  {
+                    "has": 5659
+                  },
+                  {
+                    "has": 5666
+                  }
+                ]
               }
             ]
           }
@@ -5138,6 +5302,32 @@
               },
               {
                 "has": 2347
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 3174
+                  },
+                  {
+                    "has": 1259
+                  },
+                  {
+                    "has": 5712
+                  },
+                  {
+                    "has": 5726
+                  }
+                ]
               }
             ]
           }
@@ -7534,6 +7724,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 21332
+                  },
+                  {
+                    "has": 21334
+                  },
+                  {
+                    "has": 21336
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -7692,7 +7905,7 @@
     "sources": {
       "other": {
         "Fletching some Amethyst broad bolts": {
-          "notes": "Requires Amethyst bolt tips and Broad bolts and level 76 Herblore.",
+          "notes": "Requires Amethyst bolt tips and Broad bolts and level 76 Fletching.",
           "rule": {
             "all": [
               {
@@ -7702,7 +7915,7 @@
                 "has": 11875
               },
               {
-                "skill": "Herblore",
+                "skill": "Fletching",
                 "level": 76
               }
             ]
@@ -7732,6 +7945,29 @@
               {
                 "skill": "Fletching",
                 "level": 90
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 25851
+                  },
+                  {
+                    "has": 25855
+                  },
+                  {
+                    "has": 25857
+                  }
+                ]
               }
             ]
           }
@@ -7875,6 +8111,29 @@
               {
                 "skill": "Fletching",
                 "level": 84
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 21320
+                  },
+                  {
+                    "has": 21322
+                  },
+                  {
+                    "has": 21324
+                  }
+                ]
               }
             ]
           }
@@ -8052,7 +8311,7 @@
     "sources": {
       "other": {
         "Runecrafting an amulet": {
-          "notes": "Combine amulet of magic, air diamond and air runes.",
+          "notes": "Combine amulet of magic, air diamond and air runes at the air altar.",
           "rule": {
             "all": [
               {
@@ -8067,7 +8326,8 @@
               {
                 "skill": "Runecraft",
                 "level": 18
-              }
+              },
+              "canEnterAirAltar"
             ]
           }
         }
@@ -8253,7 +8513,7 @@
     "sources": {
       "other": {
         "Runecrafting an amulet": {
-          "notes": "Combine amulet of magic, earth emerald and earth runes.",
+          "notes": "Combine amulet of magic, earth emerald and earth runes at the Earth altar.",
           "rule": {
             "all": [
               {
@@ -8268,7 +8528,8 @@
               {
                 "skill": "Runecraft",
                 "level": 20
-              }
+              },
+              "canEnterEarthAltar"
             ]
           }
         }
@@ -8311,7 +8572,7 @@
     "sources": {
       "other": {
         "Runecrafting an amulet": {
-          "notes": "Combine amulet of magic, fire ruby and fire runes.",
+          "notes": "Combine amulet of magic, fire ruby and fire runes at the Fire altar.",
           "rule": {
             "all": [
               {
@@ -8326,7 +8587,8 @@
               {
                 "skill": "Runecraft",
                 "level": 21
-              }
+              },
+              "canEnterFireAltar"
             ]
           }
         }
@@ -8898,7 +9160,7 @@
     "sources": {
       "other": {
         "Runecrafting an amulet": {
-          "notes": "Combine amulet of magic, water sapphire and water runes.",
+          "notes": "Combine amulet of magic, water sapphire and water runes at the Water altar.",
           "rule": {
             "all": [
               {
@@ -8913,7 +9175,8 @@
               {
                 "skill": "Runecraft",
                 "level": 19
-              }
+              },
+              "canEnterWaterAltar"
             ]
           }
         }
@@ -20540,6 +20803,31 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other":{
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 1233
+                  },
+                  {
+                    "has": 5682
+                  },
+                  {
+                    "has": 5700
+                  }
+                ]
+              }
+            ]
+          }
+        }
       }
     },
     "processable": {
@@ -20655,6 +20943,31 @@
       "drops": {
         "Soldier (Burthorpe)": {
           "droprate": "1/14.222"
+        }
+      },
+      "other": {
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 3094
+                  },
+                  {
+                    "has": 5631
+                  },
+                  {
+                    "has": 5638
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -21440,6 +21753,31 @@
         },
         "Shadow warrior": {
           "droprate": "1/128"
+        }
+      },
+      "other":{
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 874
+                  },
+                  {
+                    "has": 5658
+                  },
+                  {
+                    "has": 5665
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -22561,6 +22899,34 @@
         },
         "Steel Chest (red)": {
           "droprate": "1/134.35; 1/129.19"
+        }
+      },
+      "other": {
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 4584
+                  },
+                  {
+                    "has": 4582
+                  },
+                  {
+                    "has": 5734
+                  },
+                  {
+                    "has": 5736
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -31094,6 +31460,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 878
+                  },
+                  {
+                    "has": 6061
+                  },
+                  {
+                    "has": 6062
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -31552,6 +31941,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 1221
+                  },
+                  {
+                    "has": 5670
+                  },
+                  {
+                    "has": 5688
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -31676,6 +32088,29 @@
               {
                 "skill": "Fletching",
                 "level": 10
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 812
+                  },
+                  {
+                    "has": 5628
+                  },
+                  {
+                    "has": 5635
+                  }
+                ]
               }
             ]
           }
@@ -32045,6 +32480,32 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 11381
+                  },
+                  {
+                    "has": 11379
+                  },
+                  {
+                    "has": 11382
+                  },
+                  {
+                    "has": 11384
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -32194,6 +32655,29 @@
               {
                 "skill": "Fletching",
                 "level": 3
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 831
+                  },
+                  {
+                    "has": 5642
+                  },
+                  {
+                    "has": 5648
+                  }
+                ]
               }
             ]
           }
@@ -32452,6 +32936,29 @@
               },
               {
                 "has": 2347
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 870
+                  },
+                  {
+                    "has": 5654
+                  },
+                  {
+                    "has": 5661
+                  }
+                ]
               }
             ]
           }
@@ -33379,6 +33886,32 @@
                 "has": 1511
               },
               "canCompleteBarbarianSmithing"
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 3170
+                  },
+                  {
+                    "has": 1251
+                  },
+                  {
+                    "has": 5704
+                  },
+                  {
+                    "has": 5718
+                  }
+                ]
+              }
             ]
           }
         }
@@ -48860,6 +49393,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 11227
+                  },
+                  {
+                    "has": 11228
+                  },
+                  {
+                    "has": 11229
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -49325,6 +49881,29 @@
               {
                 "skill": "Fletching",
                 "level": 84
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 21924
+                  },
+                  {
+                    "has": 21926
+                  },
+                  {
+                    "has": 21928
+                  }
+                ]
               }
             ]
           }
@@ -49968,6 +50547,31 @@
       },
       "shops": {
         "Yes": "No requirements"
+      },
+      "other": {
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 1231
+                  },
+                  {
+                    "has": 5680
+                  },
+                  {
+                    "has": 5698
+                  }
+                ]
+              }
+            ]
+          }
+        }
       }
     },
     "processable": {
@@ -50105,6 +50709,29 @@
               {
                 "skill": "Fletching",
                 "level": 95
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 11231
+                  },
+                  {
+                    "has": 11233
+                  },
+                  {
+                    "has": 11234
+                  }
+                ]
               }
             ]
           }
@@ -50604,6 +51231,29 @@
               {
                 "skill": "Fletching",
                 "level": 92
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 19486
+                  },
+                  {
+                    "has": 19488
+                  },
+                  {
+                    "has": 19490
+                  }
+                ]
               }
             ]
           }
@@ -85075,6 +85725,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 885
+                  },
+                  {
+                    "has": 5617
+                  },
+                  {
+                    "has": 5623
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -85554,6 +86227,29 @@
               {
                 "skill": "Fletching",
                 "level": 39
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 9287
+                  },
+                  {
+                    "has": 9294
+                  },
+                  {
+                    "has": 9301
+                  }
+                ]
               }
             ]
           }
@@ -86191,6 +86887,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 1219
+                  },
+                  {
+                    "has": 5668
+                  },
+                  {
+                    "has": 5686
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -86324,6 +87043,29 @@
               {
                 "skill": "Fletching",
                 "level": 22
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 813
+                  },
+                  {
+                    "has": 5629
+                  },
+                  {
+                    "has": 5636
+                  }
+                ]
               }
             ]
           }
@@ -86701,6 +87443,32 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 11388
+                  },
+                  {
+                    "has": 11386
+                  },
+                  {
+                    "has": 11389
+                  },
+                  {
+                    "has": 11391
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -86847,6 +87615,29 @@
               {
                 "skill": "Fletching",
                 "level": 17
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 832
+                  },
+                  {
+                    "has": 5643
+                  },
+                  {
+                    "has": 5649
+                  }
+                ]
               }
             ]
           }
@@ -87174,6 +87965,29 @@
               },
               {
                 "has": 2347
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 871
+                  },
+                  {
+                    "has": 5655
+                  },
+                  {
+                    "has": 5662
+                  }
+                ]
               }
             ]
           }
@@ -88490,6 +89304,32 @@
               "canCompleteBarbarianSmithing",
               {
                 "has": 2347
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 3171
+                  },
+                  {
+                    "has": 1253
+                  },
+                  {
+                    "has": 5706
+                  },
+                  {
+                    "has": 5720
+                  }
+                ]
               }
             ]
           }
@@ -102635,6 +103475,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 889
+                  },
+                  {
+                    "has": 5619
+                  },
+                  {
+                    "has": 5625
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -103275,6 +104138,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 9289
+                  },
+                  {
+                    "has": 9296
+                  },
+                  {
+                    "has": 9303
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -103846,6 +104732,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 1225
+                  },
+                  {
+                    "has": 5674
+                  },
+                  {
+                    "has": 5692
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -103985,6 +104894,29 @@
               {
                 "skill": "Fletching",
                 "level": 52
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 815
+                  },
+                  {
+                    "has": 5632
+                  },
+                  {
+                    "has": 5639
+                  }
+                ]
               }
             ]
           }
@@ -104399,6 +105331,32 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 11402
+                  },
+                  {
+                    "has": 11400
+                  },
+                  {
+                    "has": 11403
+                  },
+                  {
+                    "has": 11405
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -104554,6 +105512,29 @@
               {
                 "skill": "Fletching",
                 "level": 47
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 834
+                  },
+                  {
+                    "has": 5645
+                  },
+                  {
+                    "has": 5651
+                  }
+                ]
               }
             ]
           }
@@ -104956,6 +105937,29 @@
               },
               {
                 "has": 2347
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 873
+                  },
+                  {
+                    "has": 5657
+                  },
+                  {
+                    "has": 5664
+                  }
+                ]
               }
             ]
           }
@@ -106309,6 +107313,32 @@
               },
               {
                 "has": 2347
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 3173
+                  },
+                  {
+                    "has": 1257
+                  },
+                  {
+                    "has": 5710
+                  },
+                  {
+                    "has": 5724
+                  }
+                ]
               }
             ]
           }
@@ -118930,11 +119960,11 @@
     "sources": {
       "other": {
         "Cooking a Potato with butter": {
-          "notes": "Requires a Potato and Pat of butter (or pat of not Garlic butter) and level 39 Cooking.",
+          "notes": "Requires a Baked potato and Pat of butter (or pat of not Garlic butter) and level 39 Cooking.",
           "rule": {
             "all": [
               {
-                "has": 1942
+                "has": 6701
               },
               {
                 "any": [
@@ -119007,6 +120037,19 @@
       "other": {
         "Crafting a Potatoes(10)": {
           "notes": "Requires Potato and an Empty sack.",
+          "rule": {
+            "all": [
+              {
+                "has": 1942
+              },
+              {
+                "has": 5418
+              }
+            ]
+          }
+        },
+        "Questing": {
+          "notes": "You can combine the Potatoes(3) spawn during The Final Dawn quest.",
           "rule": {
             "all": [
               {
@@ -128966,6 +130009,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 893
+                  },
+                  {
+                    "has": 5621
+                  },
+                  {
+                    "has": 5627
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -129992,6 +131058,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 1229
+                  },
+                  {
+                    "has": 5678
+                  },
+                  {
+                    "has": 5696
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -130148,6 +131237,29 @@
               {
                 "skill": "Fletching",
                 "level": 81
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 817
+                  },
+                  {
+                    "has": 5634
+                  },
+                  {
+                    "has": 5641
+                  }
+                ]
               }
             ]
           }
@@ -130821,6 +131933,32 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 11416
+                  },
+                  {
+                    "has": 11414
+                  },
+                  {
+                    "has": 11417
+                  },
+                  {
+                    "has": 11419
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -131070,6 +132208,29 @@
               {
                 "skill": "Fletching",
                 "level": 77
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 836
+                  },
+                  {
+                    "has": 5647
+                  },
+                  {
+                    "has": 5653
+                  }
+                ]
               }
             ]
           }
@@ -131582,6 +132743,29 @@
               },
               {
                 "has": 2347
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 876
+                  },
+                  {
+                    "has": 5660
+                  },
+                  {
+                    "has": 5667
+                  }
+                ]
               }
             ]
           }
@@ -133369,6 +134553,32 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 3175
+                  },
+                  {
+                    "has": 1261
+                  },
+                  {
+                    "has": 5714
+                  },
+                  {
+                    "has": 5728
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -134344,6 +135554,29 @@
               {
                 "skill": "Fletching",
                 "level": 69
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 9291
+                  },
+                  {
+                    "has": 9298
+                  },
+                  {
+                    "has": 9305
+                  }
+                ]
               }
             ]
           }
@@ -139537,6 +140770,29 @@
               {
                 "skill": "Fletching",
                 "level": 43
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 9292
+                  },
+                  {
+                    "has": 9299
+                  },
+                  {
+                    "has": 9306
+                  }
+                ]
               }
             ]
           }
@@ -145263,6 +146519,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 887
+                  },
+                  {
+                    "has": 5618
+                  },
+                  {
+                    "has": 5624
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -146091,6 +147370,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 9288
+                  },
+                  {
+                    "has": 9295
+                  },
+                  {
+                    "has": 9302
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -146769,6 +148071,29 @@
               }
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 1223
+                  },
+                  {
+                    "has": 5672
+                  },
+                  {
+                    "has": 5690
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -146954,6 +148279,29 @@
               {
                 "skill": "Fletching",
                 "level": 37
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 814
+                  },
+                  {
+                    "has": 5630
+                  },
+                  {
+                    "has": 5637
+                  }
+                ]
               }
             ]
           }
@@ -147401,6 +148749,32 @@
               "canCompleteBarbarianSmithing"
             ]
           }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 11395
+                  },
+                  {
+                    "has": 11393
+                  },
+                  {
+                    "has": 11396
+                  },
+                  {
+                    "has": 11398
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -147541,6 +148915,29 @@
               {
                 "skill": "Fletching",
                 "level": 36
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 833
+                  },
+                  {
+                    "has": 5644
+                  },
+                  {
+                    "has": 5650
+                  }
+                ]
               }
             ]
           }
@@ -147909,6 +149306,29 @@
               },
               {
                 "has": 2347
+              }
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 872
+                  },
+                  {
+                    "has": 5656
+                  },
+                  {
+                    "has": 5663
+                  }
+                ]
               }
             ]
           }
@@ -149265,6 +150685,32 @@
                 "has": 1519
               },
               "canCompleteBarbarianSmithing"
+            ]
+          }
+        },
+        "Removing weapon poison": {
+          "notes": "Requires a cleaning cloth and a poisoned version of this weapon",
+          "rule": {
+            "all":[
+              {
+                "has": 3188
+              },
+              {
+                "any": [
+                  {
+                    "has": 3172
+                  },
+                  {
+                    "has": 1255
+                  },
+                  {
+                    "has": 5708
+                  },
+                  {
+                    "has": 5722
+                  }
+                ]
+              }
             ]
           }
         }
