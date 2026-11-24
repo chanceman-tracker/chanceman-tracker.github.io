@@ -25,7 +25,7 @@ const PLUGIN_RULES = [
 const CUSTOM_RULES = [
     { id: "skill99Rolls", label: "I roll an item when I reach level 99 in a skill" },
     { id: "petRolls", label: "I roll 5 items when I obtain a pet" },
-    { id: "otherchancersHouses", label: "I get rolls from other player's houses" },
+    { id: "otherPlayersHouses", label: "I get rolls from other player's houses" },
     { id: "allowTelegrab", label: "I allow telegrab for rolls" },
     { id: "rerollThirdAge", label: "I reroll third age items" },
     { id: "rerollGilded", label: "I reroll gilded items" },
