@@ -1,8 +1,6 @@
 
-import {
-    CHANCEBOOK_SUPABASE_URL,
-    CHANCEBOOK_SUPABASE_ANON_KEY
-} from "../chancebook/config.js";
+import {CHANCEBOOK_SUPABASE_URL,CHANCEBOOK_SUPABASE_ANON_KEY} from "../chancebook/config.js";
+import { fileStore } from "../storage/fileStore.js";
 
 let teardownHandler = null;
 
@@ -278,6 +276,15 @@ export default async function ChancebookRolledItemsPage() {
                     max-height: 32px;
                 }
             }
+
+            .chancebook-item-count-row.is-personal-item {
+                background: rgba(34, 197, 94, 0.10);
+                border-color: rgba(34, 197, 94, 0.3);
+            }
+
+            .chancebook-item-count-row.is-personal-item:hover {
+                background: rgba(34, 197, 94, 0.18);
+            }
         </style>
 
         <div class="chancebook-page chancebook-item-count-page">
@@ -357,6 +364,22 @@ export default async function ChancebookRolledItemsPage() {
                             >
                             Hide poisoned weapons
                         </label>
+
+                        <label>
+                            <input
+                                id="chancebook-rolled-items-only-personal"
+                                type="checkbox"
+                            >
+                            Only show items I've rolled
+                        </label>
+
+                        <label>
+                            <input
+                                id="chancebook-rolled-items-highlight-personal"
+                                type="checkbox"
+                            >
+                            Highlight items I've rolled
+                        </label>
                     </div>
                 </div>
 
@@ -397,6 +420,8 @@ export async function init() {
     const hidePoisoned = app.querySelector("#chancebook-rolled-items-hide-poisoned");
     const summary = app.querySelector("#chancebook-rolled-items-summary");
     const list = app.querySelector("#chancebook-rolled-items-list");
+    const onlyPersonal = app.querySelector("#chancebook-rolled-items-only-personal");
+    const highlightPersonal = app.querySelector("#chancebook-rolled-items-highlight-personal");
 
     try {
         if (!CHANCEBOOK_SUPABASE_URL || !CHANCEBOOK_SUPABASE_ANON_KEY) {
@@ -411,6 +436,12 @@ export async function init() {
         if (!alive) return;
 
         const contributorCount = Number(data.contributorCount || 0);
+
+        const personalRolledIds = new Set(
+            (Array.isArray(fileStore.rolled) ? fileStore.rolled : [])
+                .map(Number)
+                .filter(Number.isFinite)
+        );
 
         const rows = renderItemRows(
             items,
@@ -430,6 +461,8 @@ export async function init() {
             const hideItemSets = hideItemsets.checked;
             const hideFlatpackItems = hideFlatpacks.checked;
             const hidePoisonedWeapons = hidePoisoned.checked;
+            const showOnlyPersonal = onlyPersonal.checked;
+            const highlightPersonalItems = highlightPersonal.checked;
 
             const sortedRows = [...allRows].sort((a, b) => {
                 const countA = Number(a.dataset.count);
@@ -449,6 +482,14 @@ export async function init() {
                 const nameMatches = row.dataset.itemName.includes(query);
                 const isFull = contributorCount > 0 && count >= contributorCount;
                 const isZero = count === 0;
+                const isPersonalItem = personalRolledIds.has(
+                    Number(row.getAttribute("href").match(/[?&]id=(\d+)/)?.[1])
+                );
+
+                row.classList.toggle(
+                    "is-personal-item",
+                    highlightPersonalItems && isPersonalItem
+                );
 
                 const isItemset = row.dataset.itemset === "true";
                 const isFlatpack = row.dataset.flatpack === "true";
@@ -458,7 +499,8 @@ export async function init() {
                     && !(showOnlyZero && !isZero)
                     && !(hideItemSets && isItemset)
                     && !(hideFlatpackItems && isFlatpack)
-                    && !(hidePoisonedWeapons && row.dataset.poisoned === "true");
+                    && !(hidePoisonedWeapons && row.dataset.poisoned === "true")
+                    && (!showOnlyPersonal || isPersonalItem);
 
                 row.hidden = !visible;
                 list.appendChild(row);
@@ -490,6 +532,8 @@ export async function init() {
         hideItemsets.addEventListener("change", updateList);
         hideFlatpacks.addEventListener("change", updateList);
         hidePoisoned.addEventListener("change", updateList);
+        onlyPersonal.addEventListener("change", updateList);
+        highlightPersonal.addEventListener("change", updateList);
 
         updateList();
 
