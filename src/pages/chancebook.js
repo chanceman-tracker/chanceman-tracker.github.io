@@ -11,7 +11,7 @@ const SKILLS = [
 ];
 
 const RULESET_STORAGE_KEY = "chancebookRulesets";
-const COMMUNITY_STATS_CACHE_KEY = "chancebookCommunityStatsCache";
+const COMMUNITY_STATS_CACHE_KEY = "chancebookCommunityStatsCacheV2";
 
 const PLUGIN_RULES = [
     { id: "freeToPlayOnly", label: "I am free to play only" },
@@ -193,12 +193,26 @@ async function loadItems() {
     itemsById = new Map(items.map((item) => [Number(item.id), item]));
 }
 
-function itemMarkup(itemId, count, label) {
-    const item = itemsById.get(Number(itemId));
-    if (!item) return `<div class="chancebook-item"><span>Item #${escapeHtml(itemId)}</span><strong>${number(count)}</strong></div>`;
+
+function itemMarkup(itemId, count, itemData = null) {
+    const item = itemData?.name
+        ? itemData
+        : itemsById.get(Number(itemId));
+
+    if (!item) {
+        return `
+            <div class="chancebook-item">
+                <span>Item #${escapeHtml(itemId)}</span>
+                <strong>${number(count)}</strong>
+            </div>
+        `;
+    }
+
     return `
-        <a class="chancebook-item" data-link href="/item?id=${Number(item.id)}" title="${escapeHtml(item.name)}">
-            <img src="/images/${encodeURIComponent(item.image)}" alt="" loading="lazy">
+        <a class="chancebook-item" data-link href="/item?id=${Number(itemId)}" title="${escapeHtml(item.name)}">
+            ${item.image ? `
+                <img src="/images/${encodeURIComponent(item.image)}" alt="" loading="lazy">
+            ` : ""}
             <span>${escapeHtml(item.name)}</span>
             <strong>${number(count)}</strong>
         </a>
@@ -210,7 +224,7 @@ function itemStatCard(title, record, emptyText, itemsPageHref, itemsPageLabel) {
         <section class="chancebook-stat-card">
             <h3>${title}</h3>
             ${record
-                ? itemMarkup(record.itemId, record.count)
+                ? itemMarkup(record.itemId, record.count, record)
                 : `<p class="chancebook-muted">${emptyText}</p>`
             }
             ${record ? `
@@ -418,6 +432,66 @@ export default async function ChancebookPage() {
     `;
 }
 
+
+function renderCommunityStats(app, result) {
+    const status = app.querySelector("#chancebook-load-status");
+    const statistics = app.querySelector("#chancebook-statistics");
+
+    if (!statistics) return;
+
+    status.hidden = true;
+    statistics.hidden = false;
+
+    // Avoid duplicating the contributor note when background data refreshes.
+    statistics.querySelector(".chancebook-contributor-note")?.remove();
+
+    const contributorNote = document.createElement("p");
+    contributorNote.className =
+        "chancebook-muted chancebook-small chancebook-contributor-note";
+
+    contributorNote.textContent =
+        `${number(result.contributorCount)} chancers currently contribute statistics.`;
+
+    statistics.prepend(contributorNote);
+
+    app.querySelector("#chancebook-stat-grid").innerHTML = [
+        itemStatCard(
+            "Most commonly rolled item",
+            result.itemHighlights?.mostRolled,
+            "No rolled items yet.",
+            "/chancebook/rolled-items",
+            "View all rolled items"
+        ),
+        itemStatCard(
+            "Most commonly obtained item",
+            result.itemHighlights?.mostObtained,
+            "No obtained items yet.",
+            "/chancebook/obtained-items",
+            "View all obtained items"
+        ),
+        itemStatCard(
+            "Least commonly rolled item",
+            result.itemHighlights?.leastRolled,
+            "No rolled items yet.",
+            "/chancebook/rolled-items",
+            "View all rolled items"
+        ),
+        itemStatCard(
+            "Least commonly obtained item",
+            result.itemHighlights?.leastObtained,
+            "No obtained items yet.",
+            "/chancebook/obtained-items",
+            "View all obtained items"
+        )
+    ].join("");
+
+    renderHiscoresSection(
+        app.querySelector("#chancebook-hiscores"),
+        result.hiscores
+    );
+}
+
+
 export async function init() {
     teardown();
 
@@ -486,7 +560,12 @@ export async function init() {
         return;
     }
 
+    
     const status = app.querySelector("#chancebook-load-status");
+
+    // Set up contribution controls immediately.
+    // Their existing-contribution check runs independently.
+    bindContribution(app);
 
     try {
         if (!CHANCEBOOK_SUPABASE_URL || !CHANCEBOOK_SUPABASE_ANON_KEY) {
@@ -497,61 +576,16 @@ export async function init() {
                 <code>.env.local</code> file before building.
             `;
         } else {
-            // Start both requests immediately instead of waiting for items.json.
-            const [, result] = await Promise.all([
-                loadItems().catch((error) => {
-                    console.warn("Chancebook item data could not be loaded.", error);
-                }),
-                fetchPublicData()
-            ]);
+            const result = await fetchPublicData((updatedData) => {
+                // This callback runs if newer statistics arrive in the background.
+                if (!alive) return;
+
+                renderCommunityStats(app, updatedData);
+            });
 
             if (!alive) return;
 
-            status.hidden = true;
-            app.querySelector("#chancebook-statistics").hidden = false;
-
-            const contributorNote = document.createElement("p");
-            contributorNote.className = "chancebook-muted chancebook-small";
-            contributorNote.textContent =
-                `${number(result.contributorCount)} chancers currently contribute statistics.`;
-
-            app.querySelector("#chancebook-statistics").prepend(contributorNote);
-
-            app.querySelector("#chancebook-stat-grid").innerHTML = [
-                itemStatCard(
-                    "Most commonly rolled item",
-                    result.itemHighlights?.mostRolled,
-                    "No rolled items yet.",
-                    "/chancebook/rolled-items",
-                    "View all rolled items"
-                ),
-                itemStatCard(
-                    "Most commonly obtained item",
-                    result.itemHighlights?.mostObtained,
-                    "No obtained items yet.",
-                    "/chancebook/obtained-items",
-                    "View all obtained items"
-                ),
-                itemStatCard(
-                    "Least commonly rolled item",
-                    result.itemHighlights?.leastRolled,
-                    "No rolled items yet.",
-                    "/chancebook/rolled-items",
-                    "View all rolled items"
-                ),
-                itemStatCard(
-                    "Least commonly obtained item",
-                    result.itemHighlights?.leastObtained,
-                    "No obtained items yet.",
-                    "/chancebook/obtained-items",
-                    "View all obtained items"
-                )
-            ].join("");
-
-            renderHiscoresSection(
-                app.querySelector("#chancebook-hiscores"),
-                result.hiscores
-            );
+            renderCommunityStats(app, result);
         }
 
     } catch (error) {
@@ -563,13 +597,9 @@ export async function init() {
             `;
         }
     }
-
-    if (alive) {
-        bindContribution(app);
-    }
 }
 
-// Read the locally cached community statistics.
+
 function getCachedCommunityStats() {
     try {
         const cached = JSON.parse(
@@ -591,9 +621,15 @@ function getCachedCommunityStats() {
     return null;
 }
 
-// Save the latest community statistics locally.
 function saveCachedCommunityStats(data) {
     if (!data || data.version === undefined) return;
+
+    // Only cache information required to render the main Chancebook page.
+    // The full item-count arrays are not needed here.
+    const cacheData = { ...data };
+
+    delete cacheData.rolledItemCounts;
+    delete cacheData.obtainedItemCounts;
 
     try {
         localStorage.setItem(
@@ -601,11 +637,30 @@ function saveCachedCommunityStats(data) {
             JSON.stringify({
                 version: data.version,
                 updatedAt: data.updatedAt ?? null,
-                data
+                data: cacheData
             })
         );
     } catch (error) {
         console.warn("Could not cache Chancebook statistics.", error);
+
+        // If an older cache is taking up space, remove it and retry once.
+        try {
+            localStorage.removeItem(COMMUNITY_STATS_CACHE_KEY);
+
+            localStorage.setItem(
+                COMMUNITY_STATS_CACHE_KEY,
+                JSON.stringify({
+                    version: data.version,
+                    updatedAt: data.updatedAt ?? null,
+                    data: cacheData
+                })
+            );
+        } catch (retryError) {
+            console.warn(
+                "Could not save the reduced Chancebook cache.",
+                retryError
+            );
+        }
     }
 }
 
@@ -631,62 +686,51 @@ async function requestPublicData(params = {}) {
 
 // Fetch public data. Individual profiles are never cached.
 // Community statistics are cached and checked against the server version.
-async function fetchPublicData(params = {}) {
-    // Individual profiles bypass the community statistics cache.
-    if (params.profile || Object.keys(params).length > 0) {
-        return requestPublicData(params);
-    }
-
+async function fetchPublicData(onBackgroundUpdate) {
     const cached = getCachedCommunityStats();
 
-    // Only check the snapshot version when we actually have a cache.
+    // Return cached data immediately and refresh in the background.
     if (cached) {
-        try {
-            const versionData = await requestPublicData({
-                versionOnly: "true"
-            });
+        void (async () => {
+            try {
+                const versionData = await requestPublicData({
+                    versionOnly: "true"
+                });
 
-            // The local cache is still current.
-            if (
-                String(cached.version) === String(versionData.version)
-            ) {
-                return cached.data;
+                // Nothing to refresh if the snapshot is unchanged.
+                if (
+                    String(cached.version) === String(versionData.version)
+                ) {
+                    return;
+                }
+
+                const data = await requestPublicData();
+
+                saveCachedCommunityStats(data);
+
+                if (typeof onBackgroundUpdate === "function") {
+                    onBackgroundUpdate(data);
+                }
+
+            } catch (error) {
+                console.warn(
+                    "Could not refresh Chancebook statistics in the background.",
+                    error
+                );
             }
+        })();
 
-        } catch (error) {
-            console.warn(
-                "Could not check the Chancebook statistics version.",
-                error
-            );
-
-            // If the server cannot be reached, use the existing cache.
-            return cached.data;
-        }
+        return cached.data;
     }
 
-    // No cache exists, or the server has a newer snapshot.
-    // Fetch the full payload immediately.
-    try {
-        const data = await requestPublicData();
+    // First visit: no cache exists, so fetch the full snapshot.
+    const data = await requestPublicData();
 
-        saveCachedCommunityStats(data);
+    saveCachedCommunityStats(data);
 
-        return data;
-
-    } catch (error) {
-        // Keep the page usable if refreshing the cache fails.
-        if (cached) {
-            console.warn(
-                "Could not refresh Chancebook statistics. Using cached data.",
-                error
-            );
-
-            return cached.data;
-        }
-
-        throw error;
-    }
+    return data;
 }
+
 
 function renderProfile(profile, slug) {
     const player = profile.player || {};

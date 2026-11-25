@@ -6,6 +6,13 @@ import { initFiltersOverrides } from "./styles/filtersOverrides.js";
 import "./styles/main.css";
 import { initTheme } from "./styles/theme.js";
 
+// Remove obsolete Most Wanted cache to free browser storage.
+try {
+    localStorage.removeItem("chanceman-most-wanted-cache-v3");
+} catch (error) {
+    console.warn("Could not remove obsolete Most Wanted cache.", error);
+}
+
 initTheme();
 initFiltersOverrides();
 
