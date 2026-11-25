@@ -2389,13 +2389,20 @@ body.route-loading .route-loading-overlay {
     gap: 5px;
 }
 
-/* Chancebook */
+
+/* ========================================
+   Chancebook
+======================================== */
+
 .chancebook-page {
     max-width: 1180px;
     margin: 1rem auto 2rem;
     padding: 0 1rem;
 }
-.chancebook-heading, .chancebook-profile-heading {
+
+/* Shared headings */
+.chancebook-heading,
+.chancebook-profile-heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2403,23 +2410,94 @@ body.route-loading .route-loading-overlay {
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
-.chancebook-heading h1, .chancebook-profile-heading h1 { margin: 0; }
-.chancebook-heading p, .chancebook-profile-heading p { margin: 0.25rem 0 0; }
-.chancebook-stat-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
-    margin: 1rem 0;
+
+.chancebook-heading h1,
+.chancebook-profile-heading h1 {
+    margin: 0;
 }
-.chancebook-stat-card, .chancebook-panel {
+
+.chancebook-heading p,
+.chancebook-profile-heading p {
+    margin: 0.25rem 0 0;
+}
+
+/* Shared cards */
+.chancebook-stat-card,
+.chancebook-panel,
+.chancebook-profile-stats > div {
     background: var(--card-bg);
     border: 1px solid var(--border-color-darker);
     border-radius: 6px;
     padding: 0.85rem;
     min-width: 0;
 }
-.chancebook-stat-card h3 { margin: 0 0 0.65rem; font-size: 1rem; }
-.chancebook-stat-card small { display: block; color: var(--text-color); opacity: 0.75; margin-top: 0.25rem; }
+
+.chancebook-panel {
+    margin: 1rem 0;
+}
+
+.chancebook-panel h2 {
+    margin: 0 0 0.5rem;
+}
+
+.chancebook-panel h3 {
+    margin-top: 0;
+}
+
+.chancebook-panel > p {
+    margin: 0.35rem 0 0.75rem;
+}
+
+.chancebook-stat-card h3 {
+    margin: 0 0 0.65rem;
+    font-size: 1rem;
+}
+
+.chancebook-stat-card small {
+    display: block;
+    color: var(--text-color);
+    opacity: 0.75;
+    margin-top: 0.25rem;
+}
+
+/* Statistics */
+.chancebook-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.chancebook-fun-stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.chancebook-profile-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.65rem;
+    margin: 1rem 0;
+}
+
+.chancebook-profile-stats > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.8rem;
+}
+
+.chancebook-profile-stats strong {
+    font-size: 1.4rem;
+}
+
+.chancebook-profile-stats span {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Items */
 .chancebook-item {
     display: flex;
     align-items: center;
@@ -2428,82 +2506,175 @@ body.route-loading .route-loading-overlay {
     color: var(--text-color);
     text-decoration: none;
 }
-.chancebook-item img { width: 36px; height: 36px; object-fit: contain; image-rendering: pixelated; }
-.chancebook-item span { overflow: hidden; text-overflow: ellipsis; }
-.chancebook-item strong { margin-left: auto; white-space: nowrap; }
-.chancebook-panel { margin: 1rem 0; }
-.chancebook-panel h2 { margin: 0 0 0.5rem; }
-.chancebook-panel > p { margin: 0.35rem 0 0.75rem; }
-.chancebook-muted { opacity: 0.78; }
-.chancebook-small { font-size: 0.88rem; }
-.chancebook-ready { padding: 0.55rem 0.7rem; background: var(--table-alternate-row); border-left: 3px solid var(--highlight-color); }
-.chancebook-check { display: flex; align-items: flex-start; gap: 0.55rem; margin: 0.65rem 0; }
-.chancebook-check input { margin-top: 0.2rem; }
-.chancebook-actions { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.85rem; }
-.chancebook-danger { background: #8f3030; }
-.chancebook-danger:hover { background: #a33b3b; }
-.chancebook-error { color: #c43b3b; }
-.chancebook-table-wrap { overflow-x: auto; }
-.chancebook-hiscores { min-width: 620px; }
-.chancebook-profile-back { margin-bottom: 0.8rem; }
-.chancebook-profile-stats {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.65rem;
-    margin: 1rem 0;
-}
-.chancebook-profile-stats > div {
-    background: var(--card-bg);
-    border: 1px solid var(--border-color-darker);
-    border-radius: 6px;
-    padding: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-}
-.chancebook-profile-stats strong { font-size: 1.4rem; }
-.chancebook-profile-stats span { font-size: 0.85rem; opacity: 0.8; }
-.chancebook-achievements { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0.5rem; }
-.chancebook-achievement { padding: 0.5rem; border: 1px solid var(--border-color); border-radius: 5px; opacity: 0.65; }
-.chancebook-achievement span { margin-right: 0.5rem; }
-.chancebook-achievement.is-unlocked { opacity: 1; border-color: #548b51; }
-.chancebook-achievement.is-unlocked span { color: #548b51; font-weight: bold; }
-.chancebook-recent-items { display: flex; flex-wrap: wrap; gap: 0.75rem; }
-.chancebook-recent-items a {
-    display: flex; flex-direction: column; align-items: center; gap: 0.3rem;
-    min-width: 100px; padding: 0.5rem; border: 1px solid var(--border-color);
-    border-radius: 5px; text-align: center; text-decoration: none;
-}
-.chancebook-recent-items img { width: 40px; height: 40px; object-fit: contain; image-rendering: pixelated; }
-.chancebook-recent-items span { font-size: 0.85rem; }
-.chancebook-skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.4rem; }
-.chancebook-skill {
-    display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; align-items: center;
-    gap: 0.35rem; padding: 0.4rem; border: 1px solid var(--border-color);
-    border-radius: 4px; background: var(--table-alternate-row); min-width: 0;
-}
-.chancebook-skill img { width: 24px; height: 24px; object-fit: contain; }
-.chancebook-skill span { font-size: 0.82rem; overflow: hidden; text-overflow: ellipsis; }
-.chancebook-skill strong { font-variant-numeric: tabular-nums; }
-@media (max-width: 700px) {
-    .chancebook-stat-grid { grid-template-columns: 1fr; }
-    .chancebook-profile-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .chancebook-skills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.chancebook-item img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    image-rendering: pixelated;
 }
 
+.chancebook-item span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chancebook-item strong {
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+/* Recent items */
 .chancebook-recent-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
 }
 
-@media (max-width: 600px) {
-    .chancebook-recent-grid {
-        grid-template-columns: 1fr;
-    }
+.chancebook-recent-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
-/* Chancebook ruleset settings */
+.chancebook-recent-items a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    min-width: 100px;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.chancebook-recent-items img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+.chancebook-recent-items span {
+    font-size: 0.85rem;
+}
+
+/* Skills */
+.chancebook-skills {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.4rem;
+}
+
+.chancebook-skill {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--table-alternate-row);
+    min-width: 0;
+}
+
+.chancebook-skill img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.chancebook-skill span {
+    font-size: 0.82rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chancebook-skill strong {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Achievements */
+.chancebook-achievements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 0.5rem;
+}
+
+.chancebook-achievement {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.chancebook-achievement.is-unlocked {
+    opacity: 1;
+    border-color: #548b51;
+}
+
+.chancebook-achievement.is-unlocked span {
+    color: #548b51;
+    font-weight: bold;
+}
+
+.chancebook-achievement span {
+    margin-right: 0.5rem;
+}
+
+/* General utilities */
+.chancebook-muted {
+    opacity: 0.78;
+}
+
+.chancebook-small {
+    font-size: 0.88rem;
+}
+
+.chancebook-ready {
+    padding: 0.55rem 0.7rem;
+    background: var(--table-alternate-row);
+    border-left: 3px solid var(--highlight-color);
+}
+
+.chancebook-error {
+    color: #c43b3b;
+}
+
+.chancebook-danger {
+    background: #8f3030;
+}
+
+.chancebook-danger:hover {
+    background: #a33b3b;
+}
+
+/* Checkboxes and actions */
+.chancebook-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    margin: 0.65rem 0;
+}
+
+.chancebook-check input {
+    margin-top: 0.2rem;
+}
+
+.chancebook-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 0.85rem;
+}
+
+/* ========================================
+   Ruleset settings
+======================================== */
+
 .chancebook-ruleset-settings {
     margin: 1.5rem 0;
 }
@@ -2512,17 +2683,25 @@ body.route-loading .route-loading-overlay {
     margin: 1.25rem 0 0.5rem;
 }
 
+.chancebook-ruleset-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem 1rem;
+}
+
 .chancebook-rule-option {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.5rem;
+    min-width: 0;
 }
 
 .chancebook-rule-option .chancebook-check {
     flex: 1;
+    min-width: 0;
 }
 
-/* Ruleset information icons */
+/* Ruleset information tooltips */
 .chancebook-rule-info {
     position: relative;
     display: inline-flex;
@@ -2565,7 +2744,14 @@ body.route-loading .route-loading-overlay {
     margin-bottom: 0;
 }
 
-/* Rules displayed on player profiles */
+/* ========================================
+   Player profiles
+======================================== */
+
+.chancebook-profile-back {
+    margin-bottom: 0.8rem;
+}
+
 .chancebook-profile-rules {
     display: grid;
     gap: 0.5rem;
@@ -2574,32 +2760,15 @@ body.route-loading .route-loading-overlay {
 
 .chancebook-profile-rule {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.5rem;
+    min-width: 0;
 }
 
 .chancebook-panel h3 + .chancebook-profile-rules {
     margin-top: 0.5rem;
 }
 
-/* Three-column ruleset selection grids */
-.chancebook-ruleset-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.65rem 1rem;
-}
-
-.chancebook-rule-option {
-    min-width: 0;
-    align-items: flex-start;
-}
-
-.chancebook-rule-option .chancebook-check {
-    min-width: 0;
-    flex: 1;
-}
-
-/* Two-column ruleset display on player profiles */
 .chancebook-profile-rules-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2610,34 +2779,34 @@ body.route-loading .route-loading-overlay {
     margin-top: 0;
 }
 
-.chancebook-profile-rule {
-    min-width: 0;
-    align-items: flex-start;
+/* ========================================
+   Hiscores
+======================================== */
+
+.chancebook-table-wrap {
+    overflow-x: auto;
 }
 
-/* Make locked achievements visually distinct */
-.chancebook-achievement.is-locked {
-    opacity: 0.7;
-}
-
-/* Responsive layouts */
-@media (max-width: 800px) {
-    .chancebook-ruleset-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 600px) {
-    .chancebook-ruleset-grid,
-    .chancebook-profile-rules-grid {
-        grid-template-columns: 1fr;
-    }
+.chancebook-hiscores {
+    min-width: 620px;
 }
 
 .chancebook-hiscores-controls {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 1rem;
+}
+
+.chancebook-hiscores-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.chancebook-hiscores-header p {
+    margin: 0;
 }
 
 .chancebook-hiscores-pagination {
@@ -2659,28 +2828,6 @@ body.route-loading .route-loading-overlay {
     cursor: not-allowed;
 }
 
-.chancebook-hiscores-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.chancebook-hiscores-header p {
-    margin: 0;
-}
-
-@media (max-width: 500px) {
-    .chancebook-hiscores-header {
-        flex-wrap: wrap;
-    }
-}
-
-#cb-manage {
-    margin-top: 0.75rem;
-}
-
 .chancebook-hiscore-player {
     display: inline-flex;
     align-items: center;
@@ -2694,12 +2841,13 @@ body.route-loading .route-loading-overlay {
     vertical-align: middle;
 }
 
-
-.chancebook-fun-stat-value {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin: 8px 0;
+#cb-manage {
+    margin-top: 0.75rem;
 }
+
+/* ========================================
+   Fun Stats and tools
+======================================== */
 
 .chancebook-tool-grid {
     display: grid;
@@ -2715,8 +2863,9 @@ body.route-loading .route-loading-overlay {
     justify-content: center;
     gap: 6px;
     padding: 14px 8px;
-    border: 1px solid var(--border-color, rgba(128, 128, 128, 0.25));
-    border-radius: 10px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color-darker);
+    border-radius: 6px;
     text-align: center;
     min-width: 0;
 }
@@ -2738,6 +2887,8 @@ body.route-loading .route-loading-overlay {
 
 .chancebook-tool-card small {
     font-size: 0.75rem;
+    color: var(--text-color);
+    opacity: 0.75;
 }
 
 .chancebook-fun-stats-link {
@@ -2750,8 +2901,10 @@ body.route-loading .route-loading-overlay {
     justify-content: space-between;
     gap: 12px;
     padding: 16px 20px;
-    border: 1px solid var(--border-color, rgba(128, 128, 128, 0.25));
-    border-radius: 10px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color-darker);
+    border-radius: 6px;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -2762,7 +2915,8 @@ body.route-loading .route-loading-overlay {
 }
 
 .chancebook-fun-stats-link small {
-    color: var(--text-muted, inherit);
+    color: var(--text-color);
+    opacity: 0.75;
 }
 
 .chancebook-history-link {
@@ -2780,7 +2934,7 @@ body.route-loading .route-loading-overlay {
 }
 
 .chancebook-history-item:hover {
-    background: var(--hover-background, rgba(128, 128, 128, 0.12));
+    background: var(--table-alternate-row);
 }
 
 .chancebook-item-stat-link {
@@ -2788,4 +2942,42 @@ body.route-loading .route-loading-overlay {
     margin-top: 10px;
     font-size: 0.85rem;
     font-weight: 600;
+}
+
+/* ========================================
+   Responsive layouts
+======================================== */
+
+@media (max-width: 800px) {
+    .chancebook-ruleset-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .chancebook-stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chancebook-profile-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .chancebook-skills {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .chancebook-recent-grid,
+    .chancebook-ruleset-grid,
+    .chancebook-profile-rules-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .chancebook-hiscores-header {
+        flex-wrap: wrap;
+    }
 }

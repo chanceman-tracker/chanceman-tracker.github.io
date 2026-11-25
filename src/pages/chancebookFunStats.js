@@ -148,19 +148,29 @@ function renderToolCard(name, item, count, contributorCount) {
 }
 
 function renderToolWithoutOtherToolStats(funStats) {
-    const stats = funStats.toolWithoutOtherTool || [];
+    const stats = funStats.toolWithoutOtherTool || {};
 
-    if (!stats.length) return "";
+    const labels = {
+        rakeWithoutSpade: "Rakes without a Spade",
+        sawWithoutHammer: "Saws without a Hammer",
+        herbloreWithoutVial: "Herblore without a Vial",
+        plantpotWithoutTrowel: "Plant Pots without a Gardening Trowel",
+        trowelWithoutPlantpot: "Gardening Trowels without a Plant Pot"
+    };
+
+    const cards = Object.entries(labels).map(([key, name]) =>
+        statCard(
+            name,
+            number(stats[key] || 0),
+            "Chancers are very sad"
+        )
+    );
 
     return `
         <section class="chancebook-panel">
             <h2>Sad tool sounds</h2>
             <div class="chancebook-stat-grid">
-                ${stats.map((stat) => statCard(
-                    stat.name,
-                    number(stat.count),
-                    "Chancers are very sad"
-                )).join("")}
+                ${cards.join("")}
             </div>
         </section>
     `;
@@ -265,8 +275,6 @@ function renderFunStats(data) {
                 ${toolCards}
             </div>
             ${renderToolWithoutOtherToolStats(funStats)}
-            
-           
         </section>
     `;
 }

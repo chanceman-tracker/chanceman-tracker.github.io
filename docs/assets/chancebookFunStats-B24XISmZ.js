@@ -60,10 +60,10 @@ import{C as b,a as k}from"./config-BS53vI6F.js";let m=new Map,l=null;const C=["K
             <div class="chancebook-tool-grid">
                 ${g}
             </div>
-            ${T(o)}
-            
-           
         </section>
+
+        
+        ${T(o)}
     `}async function F(){return`
         <div class="chancebook-page">
             <div class="chancebook-profile-back">
