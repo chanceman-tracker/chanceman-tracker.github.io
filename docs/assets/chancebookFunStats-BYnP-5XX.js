@@ -1,4 +1,4 @@
-import{C as h,a as m}from"./config-BS53vI6F.js";let l=null;function t(a){return Number(a||0).toLocaleString()}function s(a){return String(a??"").replace(/[&<>"']/g,o=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[o])}async function f(){const a=await fetch(`${h}/functions/v1/chancebook-public-data`,{headers:{apikey:m}}),o=await a.json().catch(()=>({}));if(!a.ok)throw new Error(o.error||`Chancebook request failed (${a.status}).`);return o}function i(a,o,n=""){return`
+import{C as h,a as m}from"./config-BS53vI6F.js";let l=null;function t(a){return Number(a||0).toLocaleString()}function s(a){return String(a??"").replace(/[&<>"']/g,o=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[o])}async function p(){const a=await fetch(`${h}/functions/v1/chancebook-public-data`,{headers:{apikey:m}}),o=await a.json().catch(()=>({}));if(!a.ok)throw new Error(o.error||`Chancebook request failed (${a.status}).`);return o}function i(a,o,n=""){return`
         <section class="chancebook-stat-card">
             <h3>${s(a)}</h3>
             <p class="chancebook-fun-stat-value">${s(o)}</p>
@@ -36,10 +36,10 @@ import{C as h,a as m}from"./config-BS53vI6F.js";let l=null;function t(a){return 
         <section class="chancebook-panel">
             <h2>Sad tool sounds</h2>
             <div class="chancebook-stat-grid">
-                ${Object.entries({rakeWithoutSpade:"Rakes without a Spade",sawWithoutHammer:"Saws without a Hammer",herbloreWithoutVial:"Herblore without a Vial",plantpotWithoutTrowel:"Plant Pots without a Gardening Trowel",trowelWithoutPlantpot:"Gardening Trowels without a Plant Pot"}).map(([c,r])=>i(r,t(o[c]||0),"Chancers are very sad")).join("")}
+                ${Object.entries({rakeWithoutSpade:"Rakes without a Spade",sawWithoutHammer:"Saws without a Hammer",herbloreWithoutVial:"Herblore without a Vial of water",plantpotWithoutTrowel:"Plant Pots without a Gardening Trowel",trowelWithoutPlantpot:"Gardening Trowels without a Plant Pot"}).map(([c,r])=>i(r,t(o[c]||0),"Chancers are very sad")).join("")}
             </div>
         </section>
-    `}function d(a,o,n,e){return i(`${a} unlocked`,`${t(o)} / ${t(n)}`,`${Number(e||0).toFixed(1)}% of chancers`)}function $(a){const o=Number(a.contributorCount||0),n=a.funStats||{},e=Number(n.totalRolls||0),c=Number(n.ironmanCount||0),r=n.unlockCounts||{},u=n.unlockPercentages||{},b=(a.tools||[]).map(p=>v(p,o)).join(""),k=[d("Herblore",Number(r.herblore||0),o,u.herblore),d("Sailing",Number(r.sailing||0),o,u.sailing),d("Morytania",Number(r.morytania||0),o,u.morytania)].join("");return`
+    `}function d(a,o,n,e){return i(`${a} unlocked`,`${t(o)} / ${t(n)}`,`${Number(e||0).toFixed(1)}% of chancers`)}function $(a){const o=Number(a.contributorCount||0),n=a.funStats||{},e=Number(n.totalRolls||0),c=Number(n.ironmanCount||0),r=n.unlockCounts||{},u=n.unlockPercentages||{},b=(a.tools||[]).map(f=>v(f,o)).join(""),k=[d("Herblore",Number(r.herblore||0),o,u.herblore),d("Sailing",Number(r.sailing||0),o,u.sailing),d("Morytania",Number(r.morytania||0),o,u.morytania)].join("");return`
         <div class="chancebook-stat-grid chancebook-fun-summary">
             ${i("Participating chancers",t(o))}
             ${i("Total community rolls",t(e),"Includes duplicate rolls")}
@@ -89,7 +89,7 @@ import{C as h,a as m}from"./config-BS53vI6F.js";let l=null;function t(a){return 
 
             <div id="chancebook-fun-stats-content" hidden></div>
         </div>
-    `}async function S(){C();const a=document.getElementById("app");if(!a)return;let o=!0;l=()=>{o=!1};const n=a.querySelector("#chancebook-fun-stats-status"),e=a.querySelector("#chancebook-fun-stats-content");try{const c=await f();if(!o)return;e.innerHTML=$(c),e.hidden=!1,n.hidden=!0}catch(c){if(!o)return;n.innerHTML=`
+    `}async function S(){C();const a=document.getElementById("app");if(!a)return;let o=!0;l=()=>{o=!1};const n=a.querySelector("#chancebook-fun-stats-status"),e=a.querySelector("#chancebook-fun-stats-content");try{const c=await p();if(!o)return;e.innerHTML=$(c),e.hidden=!1,n.hidden=!0}catch(c){if(!o)return;n.innerHTML=`
             <span class="chancebook-error">
                 ${s(c.message||"Could not load Fun Stats.")}
             </span>

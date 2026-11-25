@@ -1,4 +1,4 @@
-import{o as y,f as S}from"./index-DYnYne-s.js";import{s as v,a as w}from"./autoSync-CaxnvpLG.js";import"./questPoints-B1dBdpc5.js";import"./client-BHTf7wdt.js";import"./config-BS53vI6F.js";function C(){const e=sessionStorage.getItem("uploadReturnPath");if(!e)return"/items";const t=e.split("?")[0].split("#")[0];return t==="/upload"||t==="/reupload"?"/items":e}function q(){return`
+import{o as y,f as S}from"./index-qCOHgrdw.js";import{s as v,a as w}from"./autoSync-RY-jJn4L.js";import"./questPoints-B1dBdpc5.js";import"./client-BG4hBspV.js";import"./config-BS53vI6F.js";function C(){const e=sessionStorage.getItem("uploadReturnPath");if(!e)return"/items";const t=e.split("?")[0].split("#")[0];return t==="/upload"||t==="/reupload"?"/items":e}function q(){return`
         <h1>Reupload Files</h1>
 
         <p><strong>Replace your chanceman_obtained.json and chanceman_rolled.json files.</strong></p>

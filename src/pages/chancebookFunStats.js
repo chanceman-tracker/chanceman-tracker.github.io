@@ -99,7 +99,7 @@ function renderToolWithoutOtherToolStats(funStats) {
     const labels = {
         rakeWithoutSpade: "Rakes without a Spade",
         sawWithoutHammer: "Saws without a Hammer",
-        herbloreWithoutVial: "Herblore without a Vial",
+        herbloreWithoutVial: "Herblore without a Vial of water",
         plantpotWithoutTrowel: "Plant Pots without a Gardening Trowel",
         trowelWithoutPlantpot: "Gardening Trowels without a Plant Pot"
     };
