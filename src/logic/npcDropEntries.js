@@ -22,15 +22,15 @@ function normalizeIdArray(entries) {
 }
 
 function isItemEligible(item, obtainedSet, rolledSet, filters) {
-    if (!item) return false; // if not an item, skip it
-    if (obtainedSet.has(item.id)) return false; // if already obtained, skip it
-    if (filters.onlyRolled && !rolledSet.has(item.id)) return false; // if filters are set to only rolled and youve not rolled it, skip it
-    if (filters.npcOnlyRolled && !rolledSet.has(item.id)) return false; // dunno
-    if (isItemHiddenByTag(item)) return false; // dunno
-    if (!filters.hasFlatpacks && item.tags?.includes("flatpack")) return false; // if flatpack and not playing with flatpacks, skip it
-    if (!filters.hasItemsets && item.tags?.includes("itemset")) return false; // if itemset and not playing with itemsets, skip it
-    if (filters.hideClue && item.tags?.includes("clue-reward-only")) return false; // if clues are hidden and the item has clue-reward-only, skip it
-    if (filters.hideHunterKit && item.tags?.includes("hunterKit")) return false; // if hunter kits are hidden and the item has hunterKit, skip it
+    if (!item) return false;
+    if (!filters.npcShowObtained && obtainedSet.has(item.id)) return false;
+    if (filters.onlyRolled && !rolledSet.has(item.id)) return false;
+    if (filters.npcOnlyRolled && !rolledSet.has(item.id)) return false;
+    if (isItemHiddenByTag(item)) return false;
+    if (!filters.hasFlatpacks && item.tags?.includes("flatpack")) return false;
+    if (!filters.hasItemsets && item.tags?.includes("itemset")) return false;
+    if (filters.hideClue && item.tags?.includes("clue-reward-only")) return false;
+    if (filters.hideHunterKit && item.tags?.includes("hunterKit")) return false;
     return true;
 }
 
@@ -110,29 +110,41 @@ export async function buildNpcDropEntries({
     };
 
     const itemsByNpc = new Map();
+
     for (const item of allItems) {
         if (!isItemEligible(item, obtainedSet, rolledSet, activeFilters)) continue;
+
         const drops = item.sources?.drops;
         if (!drops) continue;
+
         for (const npcName of Object.keys(drops)) {
             if (shouldHideTaskOnlyDropItem(item, npcName, activeFilters)) continue;
+
             const list = itemsByNpc.get(npcName) || [];
             list.push(item);
             itemsByNpc.set(npcName, list);
         }
     }
 
-        const entries = [];
-        for (const [npcName, npcItems] of itemsByNpc.entries()) {
-            if (!npcItems.length) continue;
+    const entries = [];
 
-            const obtainable = await isNpcObtainable(npcName, ctx);
+    for (const [npcName, npcItems] of itemsByNpc.entries()) {
+        if (!npcItems.length) continue;
 
-            let totalRateScore = 0;
+        const obtainable = await isNpcObtainable(npcName, ctx);
+
+        let totalRateScore = 0;
+
         for (const item of npcItems) {
+            // Obtained items are displayed when requested, but do not
+            // contribute to the chance of getting a new roll.
+            if (obtainedSet.has(item.id)) continue;
+
             const drops = item.sources?.drops?.[npcName];
             if (!drops) continue;
+
             let bestRate = -Infinity;
+
             if (Array.isArray(drops)) {
                 for (const drop of drops) {
                     if (!drop?.droprate) continue;
@@ -141,6 +153,7 @@ export async function buildNpcDropEntries({
             } else if (drops?.droprate) {
                 bestRate = parseDropRate(drops.droprate);
             }
+
             totalRateScore += normalizeRateScore(bestRate);
         }
 
@@ -157,8 +170,10 @@ export async function buildNpcDropEntries({
             const rateDiff = b.totalRateScore - a.totalRateScore;
             if (rateDiff !== 0) return rateDiff;
         }
+
         const countDiff = b.items.length - a.items.length;
         if (countDiff !== 0) return countDiff;
+
         return a.npcName.localeCompare(b.npcName);
     });
 

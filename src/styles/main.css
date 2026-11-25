@@ -1489,6 +1489,10 @@ body.route-loading .route-loading-overlay {
     color: var(--text-color);
 }
 
+.npc-drop-item--obtained .npc-drop-item-name {
+    font-weight: bold;
+    color: #2e9b55 !important;
+}
 
 .npc-drop-rate {
     font-size: 0.85rem;

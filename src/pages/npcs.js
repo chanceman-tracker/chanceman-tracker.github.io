@@ -76,8 +76,11 @@ export default async function NpcsPage() {
                     const drops = item.sources?.drops?.[entry.npcName];
                     const rateLabel = getDropRateLabel(drops);
                     const isRolled = rolledSet.has(item.id);
+                    const isObtained = (fileStore.obtained || []).some(
+                        obtained => Number(obtained.id ?? obtained) === Number(item.id)
+                    );
                     return `
-                    <div class="npc-drop-item" onclick="navigate('/item?id=${item.id}')">
+                    <div class="npc-drop-item ${isObtained ? "npc-drop-item--obtained" : ""}" onclick="navigate('/item?id=${item.id}')">
                         <img class="npc-drop-item-image" src="/images/${item.image}" alt="${escapeHtml(item.name)}">
                         <span class="npc-drop-item-name">${escapeHtml(item.name)}${escapeHtml(rateLabel)}</span>
                         ${isRolled ? `<span class="badge rolled npc-drop-rolled">Rolled</span>` : ""}
@@ -144,6 +147,10 @@ export default async function NpcsPage() {
             <label class="npc-drop-filter npc-drop-filter--checkbox">
                 <input type="checkbox" id="npcHideInaccessibleToggle">
                 <span>Hide inaccessible NPCs</span>
+            </label>
+            <label class="npc-drop-filter npc-drop-filter--checkbox">
+                <input type="checkbox" id="npcShowObtainedToggle">
+                <span>Show obtained items</span>
             </label>
             <div class="npc-filter" id="npcFilter">
                 <button type="button" id="npcFilterToggle">Hide specific NPCs</button>
@@ -212,6 +219,10 @@ export function init() {
     if (hideInaccessibleToggle) {
         hideInaccessibleToggle.checked = Boolean(fileStore.filters?.npcHideInaccessible);
     }
+    const showObtainedToggle = document.getElementById("npcShowObtainedToggle");
+    if (showObtainedToggle) {
+        showObtainedToggle.checked = Boolean(fileStore.filters?.npcShowObtained);
+    }
     const collapseDropsToggle = document.getElementById("npcCollapseDropsToggle");
     if (collapseDropsToggle) {
         collapseDropsToggle.checked = Boolean(fileStore.filters?.npcCollapseDrops);
@@ -223,6 +234,16 @@ export function init() {
         await fileStore.setFilters({
             ...fileStore.filters,
             npcHideInaccessible: event.target.checked
+        });
+
+        window.dispatchEvent(new PopStateEvent("popstate"));
+    };
+    const onNpcShowObtainedInput = async (event) => {
+        if (event.target.id !== "npcShowObtainedToggle") return;
+
+        await fileStore.setFilters({
+            ...fileStore.filters,
+            npcShowObtained: event.target.checked
         });
 
         window.dispatchEvent(new PopStateEvent("popstate"));
@@ -272,6 +293,7 @@ export function init() {
     document.addEventListener("input", onNpcSortInput);
     document.addEventListener("input", onNpcOnlyRolledInput);
     document.addEventListener("input", onNpcHideInaccessibleInput);
+    document.addEventListener("input", onNpcShowObtainedInput);
     document.addEventListener("input", onNpcCollapseDropsInput);
 
     teardownNpcsHandlers = () => {
@@ -279,6 +301,7 @@ export function init() {
         document.removeEventListener("input", onNpcSortInput);
         document.removeEventListener("input", onNpcOnlyRolledInput);
         document.removeEventListener("input", onNpcHideInaccessibleInput);
+        document.removeEventListener("input", onNpcShowObtainedInput);
         document.removeEventListener("input", onNpcCollapseDropsInput);
     };
 }
