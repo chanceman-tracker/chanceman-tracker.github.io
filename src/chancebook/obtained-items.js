@@ -49,6 +49,17 @@ async function fetchPublicData() {
     return data;
 }
 
+function loadVisibleImages(container) {
+    const images = container.querySelectorAll("img[data-src]");
+
+    images.forEach((img) => {
+        if (img.dataset.src) {
+            img.src = img.dataset.src;
+            delete img.dataset.src;
+        }
+    });
+}
+
 function renderItemRows(items, counts, contributorCount) {
     const countById = new Map(
         (counts || []).map((entry) => [
@@ -85,7 +96,7 @@ function renderItemRows(items, counts, contributorCount) {
         >
             <span class="chancebook-item-count-image-wrap">
                 <img
-                    src="/images/${encodeURIComponent(item.image || "")}"
+                    data-src="/images/${encodeURIComponent(item.image || "")}"
                     alt=""
                     loading="lazy"
                     onerror="this.hidden = true"
@@ -517,6 +528,8 @@ export async function init() {
                 row.hidden = !visible;
                 list.appendChild(row);
             });
+
+            loadVisibleImages(list);
 
             const visibleCount = allRows.filter((row) => !row.hidden).length;
 

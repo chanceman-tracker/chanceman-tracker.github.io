@@ -168084,31 +168084,6 @@
     }
   },
   {
-    "index": 4276,
-    "id": 28583,
-    "name": "Warped sceptre",
-    "image": "warped_sceptre.png",
-    "sources": {
-      "drops": {
-        "Mutated Terrorbird": {
-          "droprate": "1/320"
-        },
-        "Mutated Tortoise": {
-          "droprate": "1/320"
-        },
-        "Warped Terrorbird": {
-          "droprate": "1/320"
-        },
-        "Warped Tortoise": {
-          "droprate": "1/320"
-        }
-      }
-    },
-    "tags": [
-      "Magic"
-    ]
-  },
-  {
     "index": 4277,
     "id": 28583,
     "name": "Warped sceptre (uncharged)",

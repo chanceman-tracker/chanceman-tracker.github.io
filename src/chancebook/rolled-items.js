@@ -49,6 +49,17 @@ async function fetchPublicData() {
     return data;
 }
 
+function loadVisibleImages(container) {
+    const images = container.querySelectorAll("img[data-src]");
+
+    images.forEach((img) => {
+        if (img.dataset.src) {
+            img.src = img.dataset.src;
+            delete img.dataset.src;
+        }
+    });
+}
+
 function renderItemRows(items, counts, contributorCount) {
     const countById = new Map(
         (counts || []).map((entry) => [
@@ -84,7 +95,7 @@ function renderItemRows(items, counts, contributorCount) {
         >
             <span class="chancebook-item-count-image-wrap">
                 <img
-                    src="/images/${encodeURIComponent(item.image || "")}"
+                    data-src="/images/${encodeURIComponent(item.image || "")}"
                     alt=""
                     loading="lazy"
                     onerror="this.hidden = true"
@@ -453,6 +464,25 @@ export async function init() {
 
         const allRows = [...list.querySelectorAll(".chancebook-item-count-row")];
 
+        const renderedIds = allRows.map((row) =>
+    Number(row.getAttribute("href").match(/[?&]id=(\d+)/)?.[1])
+);
+
+const matchedIds = renderedIds.filter((id) => personalRolledIds.has(id));
+
+console.log("Rolled file entries:", fileStore.rolled.length);
+console.log("Unique rolled IDs:", personalRolledIds.size);
+console.log("Rendered item rows:", allRows.length);
+console.log("Rows matching rolled IDs:", matchedIds.length);
+console.log(
+    "Rolled IDs missing from rendered rows:",
+    [...personalRolledIds].filter((id) => !renderedIds.includes(id))
+);
+console.log(
+    "Rendered IDs duplicated:",
+    renderedIds.filter((id, index) => renderedIds.indexOf(id) !== index)
+);
+
         function updateList() {
             const query = search.value.trim().toLowerCase();
             const direction = sort.value;
@@ -505,6 +535,8 @@ export async function init() {
                 row.hidden = !visible;
                 list.appendChild(row);
             });
+
+            loadVisibleImages(list);
 
             const visibleCount = allRows.filter((row) => !row.hidden).length;
 

@@ -1,9 +1,9 @@
-import{C as $,a as A}from"./config-BS53vI6F.js";import{f as q}from"./index-BCs-xkYc.js";let p=null;function u(e){return Number(e||0).toLocaleString()}function y(e){return String(e??"").replace(/[&<>"']/g,n=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[n])}async function Y(){const e=await fetch("/data/items.json");if(!e.ok)throw new Error("Could not load the item database.");return e.json()}async function G(){const e=await fetch(`${$}/functions/v1/chancebook-public-data`,{headers:{apikey:A}}),n=await e.json().catch(()=>({}));if(!e.ok)throw new Error(n.error||`Chancebook request failed (${e.status}).`);return n}function J(e,n,i){const b=new Map((n||[]).map(t=>[Number(t.itemId),Number(t.count||0)]));return e.map(t=>{const r=b.get(Number(t.id))||0,h=i>0?r/i*100:0;return{...t,playerCount:r,percentage:h}}).map(t=>`
+import{C as H,a as O}from"./config-BS53vI6F.js";import{f as I}from"./index-OkH0wE2r.js";let k=null;function f(e){return Number(e||0).toLocaleString()}function C(e){return String(e??"").replace(/[&<>"']/g,n=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[n])}async function G(){const e=await fetch("/data/items.json");if(!e.ok)throw new Error("Could not load the item database.");return e.json()}async function J(){const e=await fetch(`${H}/functions/v1/chancebook-public-data`,{headers:{apikey:O}}),n=await e.json().catch(()=>({}));if(!e.ok)throw new Error(n.error||`Chancebook request failed (${e.status}).`);return n}function Q(e){e.querySelectorAll("img[data-src]").forEach(a=>{a.dataset.src&&(a.src=a.dataset.src,delete a.dataset.src)})}function X(e,n,a){const x=new Map((n||[]).map(t=>[Number(t.itemId),Number(t.count||0)]));return e.map(t=>{const l=x.get(Number(t.id))||0,u=a>0?l/a*100:0;return{...t,playerCount:l,percentage:u}}).map(t=>`
         <a
             class="chancebook-item-count-row"
             data-link
             href="/item?id=${encodeURIComponent(t.id)}"
-            data-item-name="${y(String(t.name||"").toLowerCase())}"
+            data-item-name="${C(String(t.name||"").toLowerCase())}"
             data-itemset="${(t.tags||[]).includes("itemset")}"
             data-flatpack="${(t.tags||[]).includes("flatpack")}"
             data-poisoned="${/\((?:p\+{0,2}|kp)\)$/i.test(String(t.name||"").trim())}"
@@ -12,7 +12,7 @@ import{C as $,a as A}from"./config-BS53vI6F.js";import{f as q}from"./index-BCs-x
         >
             <span class="chancebook-item-count-image-wrap">
                 <img
-                    src="/images/${encodeURIComponent(t.image||"")}"
+                    data-src="/images/${encodeURIComponent(t.image||"")}"
                     alt=""
                     loading="lazy"
                     onerror="this.hidden = true"
@@ -20,15 +20,15 @@ import{C as $,a as A}from"./config-BS53vI6F.js";import{f as q}from"./index-BCs-x
             </span>
 
             <span class="chancebook-item-count-name">
-                ${y(t.name)}
+                ${C(t.name)}
             </span>
 
             <span class="chancebook-item-count-details">
-                <strong>${u(t.playerCount)} / ${u(i)}</strong>
+                <strong>${f(t.playerCount)} / ${f(a)}</strong>
                 <small>${t.percentage.toFixed(1)}%</small>
             </span>
         </a>
-    `).join("")}async function te(){return`
+    `).join("")}async function ae(){return`
         <style>
             .chancebook-item-count-page {
                 width: 100%;
@@ -318,8 +318,8 @@ import{C as $,a as A}from"./config-BS53vI6F.js";import{f as q}from"./index-BCs-x
                 ></div>
             </div>
         </div>
-    `}async function oe(){Q();const e=document.getElementById("app");if(!e)return;let n=!0;p=()=>{n=!1};const i=e.querySelector("#chancebook-rolled-items-status"),b=e.querySelector("#chancebook-rolled-items-content"),k=e.querySelector("#chancebook-rolled-items-search"),t=e.querySelector("#chancebook-rolled-items-sort"),r=e.querySelector("#chancebook-rolled-items-hide-full"),h=e.querySelector("#chancebook-rolled-items-only-zero"),v=e.querySelector("#chancebook-rolled-items-hide-itemsets"),w=e.querySelector("#chancebook-rolled-items-hide-flatpacks"),S=e.querySelector("#chancebook-rolled-items-hide-poisoned"),P=e.querySelector("#chancebook-rolled-items-summary"),s=e.querySelector("#chancebook-rolled-items-list"),C=e.querySelector("#chancebook-rolled-items-only-personal"),I=e.querySelector("#chancebook-rolled-items-highlight-personal");try{let a=function(){const O=k.value.trim().toLowerCase(),j=t.value,z=r.checked,B=h.checked,F=v.checked,M=w.checked,U=S.checked,_=C.checked,K=I.checked;[...x].sort((o,l)=>{const d=Number(o.dataset.count),m=Number(l.dataset.count);return d!==m?j==="asc"?d-m:m-d:o.dataset.itemName.localeCompare(l.dataset.itemName)}).forEach(o=>{const l=Number(o.dataset.count),d=o.dataset.itemName.includes(O),m=f>0&&l>=f,Z=l===0,L=H.has(Number(o.getAttribute("href").match(/[?&]id=(\d+)/)?.[1]));o.classList.toggle("is-personal-item",K&&L);const T=o.dataset.itemset==="true",D=o.dataset.flatpack==="true",W=d&&!(z&&m)&&!(B&&!Z)&&!(F&&T)&&!(M&&D)&&!(U&&o.dataset.poisoned==="true")&&(!_||L);o.hidden=!W,s.appendChild(o)});const E=x.filter(o=>!o.hidden).length;P.textContent=`Showing ${u(E)} of ${u(x.length)} items`;let c=s.querySelector(".chancebook-item-count-empty");E===0?c||(c=document.createElement("p"),c.className="chancebook-item-count-empty",c.textContent="No items match your filters.",s.appendChild(c)):c&&c.remove()};const[g,N]=await Promise.all([Y(),G()]);if(!n)return;const f=Number(N.contributorCount||0),H=new Set((Array.isArray(q.rolled)?q.rolled:[]).map(Number).filter(Number.isFinite)),R=J(g,N.rolledItemCounts,f);s.innerHTML=R;const x=[...s.querySelectorAll(".chancebook-item-count-row")];k.addEventListener("input",a),t.addEventListener("change",a),r.addEventListener("change",a),h.addEventListener("change",a),v.addEventListener("change",a),w.addEventListener("change",a),S.addEventListener("change",a),C.addEventListener("change",a),I.addEventListener("change",a),a(),b.hidden=!1,i.hidden=!0}catch(g){if(!n)return;i.innerHTML=`
+    `}async function ce(){ee();const e=document.getElementById("app");if(!e)return;let n=!0;k=()=>{n=!1};const a=e.querySelector("#chancebook-rolled-items-status"),x=e.querySelector("#chancebook-rolled-items-content"),y=e.querySelector("#chancebook-rolled-items-search"),t=e.querySelector("#chancebook-rolled-items-sort"),l=e.querySelector("#chancebook-rolled-items-hide-full"),u=e.querySelector("#chancebook-rolled-items-only-zero"),N=e.querySelector("#chancebook-rolled-items-hide-itemsets"),q=e.querySelector("#chancebook-rolled-items-hide-flatpacks"),E=e.querySelector("#chancebook-rolled-items-hide-poisoned"),z=e.querySelector("#chancebook-rolled-items-summary"),r=e.querySelector("#chancebook-rolled-items-list"),L=e.querySelector("#chancebook-rolled-items-only-personal"),$=e.querySelector("#chancebook-rolled-items-highlight-personal");try{let c=function(){const i=y.value.trim().toLowerCase(),S=t.value,F=l.checked,M=u.checked,U=N.checked,D=q.checked,_=E.checked,K=L.checked,Z=$.checked;[...d].sort((o,m)=>{const h=Number(o.dataset.count),p=Number(m.dataset.count);return h!==p?S==="asc"?h-p:p-h:o.dataset.itemName.localeCompare(m.dataset.itemName)}).forEach(o=>{const m=Number(o.dataset.count),h=o.dataset.itemName.includes(i),p=v>0&&m>=v,T=m===0,P=b.has(Number(o.getAttribute("href").match(/[?&]id=(\d+)/)?.[1]));o.classList.toggle("is-personal-item",Z&&P);const V=o.dataset.itemset==="true",W=o.dataset.flatpack==="true",Y=h&&!(F&&p)&&!(M&&!T)&&!(U&&V)&&!(D&&W)&&!(_&&o.dataset.poisoned==="true")&&(!K||P);o.hidden=!Y,r.appendChild(o)}),Q(r);const R=d.filter(o=>!o.hidden).length;z.textContent=`Showing ${f(R)} of ${f(d.length)} items`;let s=r.querySelector(".chancebook-item-count-empty");R===0?s||(s=document.createElement("p"),s.className="chancebook-item-count-empty",s.textContent="No items match your filters.",r.appendChild(s)):s&&s.remove()};const[w,A]=await Promise.all([G(),J()]);if(!n)return;const v=Number(A.contributorCount||0),b=new Set((Array.isArray(I.rolled)?I.rolled:[]).map(Number).filter(Number.isFinite)),j=X(w,A.rolledItemCounts,v);r.innerHTML=j;const d=[...r.querySelectorAll(".chancebook-item-count-row")],g=d.map(i=>Number(i.getAttribute("href").match(/[?&]id=(\d+)/)?.[1])),B=g.filter(i=>b.has(i));console.log("Rolled file entries:",I.rolled.length),console.log("Unique rolled IDs:",b.size),console.log("Rendered item rows:",d.length),console.log("Rows matching rolled IDs:",B.length),console.log("Rolled IDs missing from rendered rows:",[...b].filter(i=>!g.includes(i))),console.log("Rendered IDs duplicated:",g.filter((i,S)=>g.indexOf(i)!==S)),y.addEventListener("input",c),t.addEventListener("change",c),l.addEventListener("change",c),u.addEventListener("change",c),N.addEventListener("change",c),q.addEventListener("change",c),E.addEventListener("change",c),L.addEventListener("change",c),$.addEventListener("change",c),c(),x.hidden=!1,a.hidden=!0}catch(w){if(!n)return;a.innerHTML=`
             <span class="chancebook-error">
-                ${y(g.message||"Could not load rolled item statistics.")}
+                ${C(w.message||"Could not load rolled item statistics.")}
             </span>
-        `}}function Q(){typeof p=="function"&&(p(),p=null)}export{te as default,oe as init,Q as teardown};
+        `}}function ee(){typeof k=="function"&&(k(),k=null)}export{ae as default,ce as init,ee as teardown};
