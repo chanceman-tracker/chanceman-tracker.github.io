@@ -193,6 +193,7 @@ export const QUEST_POINTS: Record<string, number> = {
     "The Giant Dwarf": 2,
     "The Golem": 1,
     "The Grand Tree": 5,
+    "The Graveyard": 3,
     "The Great Brain Robbery": 2,
     "The Hand in the Sand": 1,
     "The Ides of Milk": 1,

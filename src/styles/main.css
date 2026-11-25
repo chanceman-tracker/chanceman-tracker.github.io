@@ -2981,3 +2981,38 @@ body.route-loading .route-loading-overlay {
         flex-wrap: wrap;
     }
 }
+
+.chancebook-hiscores-filters {
+    margin: 0.75rem 0 1rem;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid var(--chancebook-border);
+    border-radius: 6px;
+    background: var(--chancebook-card);
+}
+
+.chancebook-hiscores-filters summary {
+    cursor: pointer;
+    font-weight: 600;
+    user-select: none;
+}
+
+.chancebook-hiscores-filter-content {
+    display: grid;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.chancebook-hiscores-filter-group {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.chancebook-hiscores-filter-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.5rem 1rem;
+}
+
+.chancebook-hiscores-clear-filters {
+    justify-self: start;
+}

@@ -14,12 +14,12 @@ const RULESET_STORAGE_KEY = "chancebookRulesets";
 const COMMUNITY_STATS_CACHE_KEY = "chancebookCommunityStatsCacheV2";
 
 const PLUGIN_RULES = [
-    { id: "freeToPlayOnly", label: "I am free to play only" },
-    { id: "itemSets", label: "I play with item sets" },
-    { id: "flatpacks", label: "I play with flatpacks" },
-    { id: "weaponPoisonRequirements", label: 'I play with "Weapon Poison Requirements"' },
-    { id: "toolRollGuarantee", label: 'I play with "Tool Roll Guarantee"' },
-    { id: "questItemRolls", label: 'I play with "Quest Item Rolls"' }
+    { id: "freeToPlayOnly", label: "Free to play only" },
+    { id: "itemSets", label: "Item sets" },
+    { id: "flatpacks", label: "Flatpacks" },
+    { id: "weaponPoisonRequirements", label: 'Weapon Poison Requirements' },
+    { id: "toolRollGuarantee", label: 'Tool Roll Guarantee' },
+    { id: "questItemRolls", label: 'Quest Item Rolls' }
 ];
 
 const CUSTOM_RULES = [
@@ -144,6 +144,7 @@ function renderProfileRulesets(rulesets = {}) {
         <div class="chancebook-profile-rules-grid">
             <div>
                 <h3>Plug-in settings</h3>
+                <p>Check your Chanceman plugin settings and select all options that you also have checked there.</p> 
                 <div class="chancebook-profile-rules">
                     ${renderSelected(selectedPluginRules)}
                 </div>
@@ -241,7 +242,11 @@ function itemStatCard(title, record, emptyText, itemsPageHref, itemsPageLabel) {
 }
 
 let hiscoresPage = 0;
-let hiscoresFreeToPlayOnly = false;
+
+let hiscoresFilters = {
+    pluginSettings: [],
+    customRules: []
+};
 
 function hiscoreAccountIcon(row) {
     const icons = {
@@ -268,10 +273,42 @@ function hiscoreAccountIcon(row) {
     `;
 }
 
+
 function renderHiscoresSection(container, rows = []) {
-    const filteredRows = hiscoresFreeToPlayOnly
-        ? rows.filter(row => row.freeToPlayOnly === true)
-        : rows;
+    const filteredRows = rows.filter(row => {
+        const rulesets = row.chancebookRulesets || {};
+
+        const pluginSettings = rulesets.pluginSettings || [];
+        const customRules = rulesets.customRules || [];
+
+        return (
+            hiscoresFilters.pluginSettings.every(id =>
+                pluginSettings.includes(id)
+            ) &&
+            hiscoresFilters.customRules.every(id =>
+                customRules.includes(id)
+            )
+        );
+    });
+
+    const renderFilterGroup = (title, rules, group, selected) => `
+        <div class="chancebook-hiscores-filter-group">
+            <strong>${title}</strong>
+            <div class="chancebook-hiscores-filter-options">
+                ${rules.map(rule => `
+                    <label class="chancebook-check">
+                        <input
+                            type="checkbox"
+                            data-filter-group="${group}"
+                            value="${escapeHtml(rule.id)}"
+                            ${selected.includes(rule.id) ? "checked" : ""}
+                        >
+                        ${escapeHtml(rule.label)}
+                    </label>
+                `).join("")}
+            </div>
+        </div>
+    `;
 
     const pageSize = 10;
     const totalPages = Math.ceil(filteredRows.length / pageSize);
@@ -281,15 +318,46 @@ function renderHiscoresSection(container, rows = []) {
     const start = currentPage * pageSize;
     const pageRows = filteredRows.slice(start, start + pageSize);
 
+    const filtersWereOpen = container.querySelector(
+        ".chancebook-hiscores-filters"
+    )?.open ?? false;
+
     container.innerHTML = `
         <div class="chancebook-hiscores-header">
-            <p class="chancebook-muted chancebook-small">Each chancer has their own ruleset, so feel free to click into their profile and have a look!</p>
-            <label class="chancebook-check">
-                <input type="checkbox" id="chancebook-f2p-filter"
-                    ${hiscoresFreeToPlayOnly ? "checked" : ""}>
-                Free to Play
-            </label>
+            <p class="chancebook-muted chancebook-small">
+                Each chancer has their own ruleset, so feel free to click into their profile and have a look!
+            </p>
         </div>
+
+        <details class="chancebook-hiscores-filters" ${filtersWereOpen ? "open" : ""}>
+            <summary>
+                Filters
+                <span class="chancebook-muted chancebook-small">
+                    (${hiscoresFilters.pluginSettings.length +
+                       hiscoresFilters.customRules.length} selected)
+                </span>
+            </summary>
+
+            <div class="chancebook-hiscores-filter-content">
+                ${renderFilterGroup(
+                    "Plugin settings",
+                    PLUGIN_RULES,
+                    "pluginSettings",
+                    hiscoresFilters.pluginSettings
+                )}
+
+                ${renderFilterGroup(
+                    "Custom rules",
+                    CUSTOM_RULES,
+                    "customRules",
+                    hiscoresFilters.customRules
+                )}
+
+                <button type="button" class="chancebook-hiscores-clear-filters">
+                    Clear filters
+                </button>
+            </div>
+        </details>
 
         ${pageRows.length ? `
             <div class="chancebook-table-wrap">
@@ -325,23 +393,54 @@ function renderHiscoresSection(container, rows = []) {
                     </tbody>
                 </table>
             </div>
-        ` : `<p class="chancebook-muted">No chancers found${hiscoresFreeToPlayOnly ? " with Free to Play selected" : ""}.</p>`}
+        ` : `
+            <p class="chancebook-muted">
+                No chancers found matching the selected filters.
+            </p>
+        `}
 
         ${totalPages > 1 ? `
             <div class="chancebook-hiscores-pagination">
-                <button type="button" class="chancebook-page-prev" ${currentPage === 0 ? "disabled" : ""} aria-label="Previous page">←</button>
+                <button type="button" class="chancebook-page-prev"
+                    ${currentPage === 0 ? "disabled" : ""}
+                    aria-label="Previous page">←</button>
                 <span>Page ${currentPage + 1} of ${totalPages}</span>
-                <button type="button" class="chancebook-page-next" ${currentPage >= totalPages - 1 ? "disabled" : ""} aria-label="Next page">→</button>
+                <button type="button" class="chancebook-page-next"
+                    ${currentPage >= totalPages - 1 ? "disabled" : ""}
+                    aria-label="Next page">→</button>
             </div>
         ` : ""}
     `;
 
-    container.querySelector("#chancebook-f2p-filter").addEventListener("change", (event) => {
-        hiscoresFreeToPlayOnly = event.target.checked;
-        hiscoresPage = 0;
-        renderHiscoresSection(container, rows);
+    // Filter changes
+    container.querySelectorAll("[data-filter-group]").forEach(input => {
+        input.addEventListener("change", () => {
+            const group = input.dataset.filterGroup;
+
+            hiscoresFilters[group] = Array.from(
+                container.querySelectorAll(
+                    `[data-filter-group="${group}"]:checked`
+                )
+            ).map(checkbox => checkbox.value);
+
+            hiscoresPage = 0;
+            renderHiscoresSection(container, rows);
+        });
     });
 
+    // Clear filters
+    container.querySelector(".chancebook-hiscores-clear-filters")
+        .addEventListener("click", () => {
+            hiscoresFilters = {
+                pluginSettings: [],
+                customRules: []
+            };
+
+            hiscoresPage = 0;
+            renderHiscoresSection(container, rows);
+        });
+
+    // Pagination
     container.querySelector(".chancebook-page-prev")?.addEventListener("click", () => {
         hiscoresPage--;
         renderHiscoresSection(container, rows);
@@ -352,6 +451,7 @@ function renderHiscoresSection(container, rows = []) {
         renderHiscoresSection(container, rows);
     });
 }
+
 
 function renderContribution() {
     const loaded = Array.isArray(fileStore.rolled) && Array.isArray(fileStore.obtained) && fileStore.player;
@@ -364,6 +464,7 @@ function renderContribution() {
                 <p class="chancebook-ready">Tracker data detected for <strong>${escapeHtml(currentName)}</strong>.</p>
                 <div class="chancebook-ruleset-settings">
                     <h3>Plug-in settings</h3>
+                    <p>Select which options you have selected in the Chanceman plugin settings.</p>
                     <div class="chancebook-ruleset-grid">
                         ${renderRulesetOptions(PLUGIN_RULES, "pluginSettings")}
                     </div>

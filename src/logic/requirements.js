@@ -2113,6 +2113,9 @@ export const REQUIREMENT_CHECKS = {
     canCompletePiratesTreasure(ctx) {
         return canCompletePiratesTreasure(ctx);
     },
+    canCompleteTheGraveyard(ctx) {
+        return canCompleteTheGraveyard(ctx);
+    },
     canFishFromRewardPool(ctx) {
         return canFishFromRewardPool(ctx);
     },
@@ -3186,6 +3189,23 @@ function canCompleteAShellOfAFriend(ctx) {
         requiresQuest(ctx, "canCompletePriestInPeril", canCompletePriestInPeril), //
         requiresQuest(ctx, "canCompleteDruidicRitual", canCompleteDruidicRitual), //
         hasUsableAxe(ctx),
+    ])
+}
+
+function canCompleteTheGraveyard(ctx) {
+    return allTrue([
+        hasNonBoostableSkillLevel(ctx, "Sailing", 65), //
+        hasNonBoostableSkillLevel(ctx, "Agility", 65), //
+        hasNonBoostableSkillLevel(ctx, "Woodcutting", 56), //
+        hasNonBoostableSkillLevel(ctx, "Fletching", 54), //
+        requiresQuest(ctx, "canCompleteTheFremennikExiles", canCompleteTheFremennikExiles), //
+        requiresQuest(ctx, "canCompleteOlafsQuest", canCompleteOlafsQuest), //
+        requiresQuest(ctx, "canCompletePandemonium", canCompletePandemonium), //
+        hasKnifeOrNarwhalKnife(ctx), // Knife
+        has(ctx, 10810), // Arctic pine logs
+        has(ctx, 566), // soul rune
+        hasAnyItems(ctx, [2347, 1755]), // hammer or chisel
+        hasUsableAxe(ctx), // axe
     ])
 }
 
