@@ -4,37 +4,7 @@ import {
     CHANCEBOOK_SUPABASE_ANON_KEY
 } from "../chancebook/config.js";
 
-let itemsById = new Map();
 let teardownHandler = null;
-
-const TOOL_NAMES = [
-    "Knife",
-    "Hammer",
-    "Saw",
-    "Tinderbox",
-    "Bucket",
-    "Spade",
-    "Chisel",
-    "Pestle and mortar",
-    "Vial of water",
-    "Rake",
-    "Rope",
-    "Lockpick",
-    "Gardening trowel",
-    "Secateurs",
-    "Watering can",
-    "Small fishing net",
-    "Big fishing net",
-    "Fishing rod",
-    "Fly fishing rod",
-    "Lobster pot",
-    "Bird snare",
-    "Box trap",
-    "Insect net",
-    "Net trap",
-    "Noose wand",
-    "Teasing stick"
-];
 
 function number(value) {
     return Number(value || 0).toLocaleString();
@@ -48,20 +18,6 @@ function escapeHtml(value) {
         '"': "&quot;",
         "'": "&#39;"
     })[char]);
-}
-
-async function loadItems() {
-    if (itemsById.size) return;
-
-    const response = await fetch("/data/items.json");
-    if (!response.ok) {
-        throw new Error("Could not load the item database.");
-    }
-
-    const items = await response.json();
-    itemsById = new Map(
-        items.map((item) => [Number(item.id), item])
-    );
 }
 
 async function fetchPublicData() {
@@ -85,20 +41,6 @@ async function fetchPublicData() {
     return data;
 }
 
-function normalizeName(name) {
-    return String(name || "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]/g, "");
-}
-
-function findToolItem(name) {
-    const normalized = normalizeName(name);
-
-    return [...itemsById.values()].find(
-        (item) => normalizeName(item.name) === normalized
-    );
-}
-
 function statCard(title, value, description = "") {
     return `
         <section class="chancebook-stat-card">
@@ -111,37 +53,41 @@ function statCard(title, value, description = "") {
     `;
 }
 
-function renderToolCard(name, item, count, contributorCount) {
-    if (!item) {
+function renderToolCard(tool, contributorCount) {
+    if (!tool || !tool.itemId) {
         return `
             <div class="chancebook-tool-card">
-                <div class="chancebook-tool-name">${escapeHtml(name)}</div>
+                <div class="chancebook-tool-name">
+                    ${escapeHtml(tool?.name || "Unknown tool")}
+                </div>
                 <small class="chancebook-muted">Item data unavailable</small>
             </div>
         `;
     }
 
-    const percentage = contributorCount > 0
-        ? (count / contributorCount) * 100
-        : 0;
-
-    return `
-        <div class="chancebook-tool-card">
+    const image = tool.image
+        ? `
             <img
                 class="chancebook-tool-image"
-                src="/images/${encodeURIComponent(item.image)}"
-                alt="${escapeHtml(item.name)}"
+                src="/images/${encodeURIComponent(tool.image)}"
+                alt="${escapeHtml(tool.name)}"
                 loading="lazy"
                 onerror="this.hidden = true"
             >
+        `
+        : "";
+
+    return `
+        <div class="chancebook-tool-card">
+            ${image}
             <div class="chancebook-tool-name">
-                ${escapeHtml(item.name)}
+                ${escapeHtml(tool.name)}
             </div>
             <div class="chancebook-tool-percentage">
-                ${percentage.toFixed(1)}%
+                ${Number(tool.percentage || 0).toFixed(1)}%
             </div>
             <small class="chancebook-muted">
-                ${number(count)} / ${number(contributorCount)} chancers
+                ${number(tool.count)} / ${number(contributorCount)} chancers
             </small>
         </div>
     `;
@@ -176,15 +122,11 @@ function renderToolWithoutOtherToolStats(funStats) {
     `;
 }
 
-function renderUnlockCard(name, count, contributorCount) {
-    const percentage = contributorCount > 0
-        ? (count / contributorCount) * 100
-        : 0;
-
+function renderUnlockCard(name, count, contributorCount, percentage) {
     return statCard(
         `${name} unlocked`,
         `${number(count)} / ${number(contributorCount)}`,
-        `${percentage.toFixed(1)}% of chancers`
+        `${Number(percentage || 0).toFixed(1)}% of chancers`
     );
 }
 
@@ -196,43 +138,30 @@ function renderFunStats(data) {
     const ironmanCount = Number(funStats.ironmanCount || 0);
 
     const unlockCounts = funStats.unlockCounts || {};
+    const unlockPercentages = funStats.unlockPercentages || {};
 
-    const rolledCounts = new Map(
-        (data.rolledItemCounts || [])
-            .map((entry) => [
-                Number(entry.itemId),
-                Number(entry.count || 0)
-            ])
-    );
+    const toolCards = (data.tools || [])
+        .map((tool) => renderToolCard(tool, contributorCount))
+        .join("");
 
-    const toolCards = TOOL_NAMES.map((name) => {
-        const item = findToolItem(name);
-        const count = item
-            ? rolledCounts.get(Number(item.id)) || 0
-            : 0;
-
-        return renderToolCard(
-            name,
-            item,
-            count,
-            contributorCount
-        );
-    }).join("");
-        const unlockCards = [
+    const unlockCards = [
         renderUnlockCard(
             "Herblore",
             Number(unlockCounts.herblore || 0),
-            contributorCount
+            contributorCount,
+            unlockPercentages.herblore
         ),
         renderUnlockCard(
             "Sailing",
             Number(unlockCounts.sailing || 0),
-            contributorCount
+            contributorCount,
+            unlockPercentages.sailing
         ),
         renderUnlockCard(
             "Morytania",
             Number(unlockCounts.morytania || 0),
-            contributorCount
+            contributorCount,
+            unlockPercentages.morytania
         ),
     ].join("");
 
@@ -251,7 +180,7 @@ function renderFunStats(data) {
                 "Ironman chancers",
                 `${number(ironmanCount)} / ${number(contributorCount)}`,
                 contributorCount > 0
-                    ? `${((ironmanCount / contributorCount) * 100).toFixed(1)}% of chancers`
+                    ? `${Number(funStats.ironmanPercentage || 0).toFixed(1)}% of chancers`
                     : "No participating chancers yet"
             )}
         </div>
@@ -322,12 +251,6 @@ export async function init() {
     const content = app.querySelector("#chancebook-fun-stats-content");
 
     try {
-        await Promise.all([
-            loadItems()
-        ]);
-
-        if (!alive) return;
-
         if (!CHANCEBOOK_SUPABASE_URL || !CHANCEBOOK_SUPABASE_ANON_KEY) {
             throw new Error("Chancebook is not configured yet.");
         }
