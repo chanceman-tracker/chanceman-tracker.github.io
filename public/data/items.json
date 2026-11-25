@@ -60367,11 +60367,11 @@
     "sources": {
       "other": {
         "Mixing a potion": {
-          "notes": "Requires Energy potion(1) and a Yellow fin and level 66 Herblore.",
+          "notes": "Requires Super energy(1) and a Yellow fin and level 66 Herblore.",
           "rule": {
             "all": [
               {
-                "has": 3014
+                "has": 3022
               },
               {
                 "has": 32360
@@ -60413,11 +60413,11 @@
     "sources": {
       "other": {
         "Mixing a potion": {
-          "notes": "Requires Energy potion(2) and a Yellow fin and level 66 Herblore.",
+          "notes": "Requires Super energy(2) and a Yellow fin and level 66 Herblore.",
           "rule": {
             "all": [
               {
-                "has": 3012
+                "has": 3020
               },
               {
                 "has": 32360
@@ -60459,11 +60459,11 @@
     "sources": {
       "other": {
         "Mixing a potion": {
-          "notes": "Requires Energy potion(3) and a Yellow fin and level 66 Herblore.",
+          "notes": "Requires Super energy(3) and a Yellow fin and level 66 Herblore.",
           "rule": {
             "all": [
               {
-                "has": 3010
+                "has": 3018
               },
               {
                 "has": 32360
@@ -60505,11 +60505,11 @@
     "sources": {
       "other": {
         "Mixing a potion": {
-          "notes": "Requires Energy potion(4) and a Yellow fin and level 66 Herblore.",
+          "notes": "Requires Super energy(4) and a Yellow fin and level 66 Herblore.",
           "rule": {
             "all": [
               {
-                "has": 3008
+                "has": 3016
               },
               {
                 "has": 32360
