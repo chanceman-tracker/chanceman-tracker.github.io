@@ -3501,10 +3501,7 @@ function canCompleteBarbarianHerblore(ctx) {
     return allTrue([
         hasNonBoostableSkillLevel(ctx, "Herblore", 4),
         requiresQuest(ctx, "canCompleteDruidicRitual", canCompleteDruidicRitual), //
-        requiresQuest(ctx, "canCompleteBarbarianFiremaking1", canCompleteBarbarianFiremaking1), //
         requiresQuest(ctx, "canCompleteBarbarianFishing", canCompleteBarbarianFishing), //
-        has(ctx, 123), // Attack potion(2)
-        hasAnyItems(ctx, [11324, 11326]), // Roe or Caviar
     ]);
 }
 
