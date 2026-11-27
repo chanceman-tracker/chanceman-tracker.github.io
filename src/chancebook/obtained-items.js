@@ -348,6 +348,14 @@ export default async function ChancebookObtainedItemsPage() {
 
                         <label>
                             <input
+                                id="chancebook-obtained-items-hide-zero"
+                                type="checkbox"
+                            >
+                            Hide items obtained by 0% of players
+                        </label>
+
+                        <label>
+                            <input
                                 id="chancebook-obtained-items-only-zero"
                                 type="checkbox"
                             >
@@ -433,7 +441,8 @@ export async function init() {
     const content = app.querySelector("#chancebook-obtained-items-content");
     const search = app.querySelector("#chancebook-obtained-items-search");
     const sort = app.querySelector("#chancebook-obtained-items-sort");
-    const hideFull = app.querySelector("#chancebook-obtained-items-hide-full");
+    const hideAll = app.querySelector("#chancebook-obtained-items-hide-full");
+    const hideZero = app.querySelector("#chancebook-obtained-items-hide-zero");
     const onlyZero = app.querySelector("#chancebook-obtained-items-only-zero");
     const hideItemsets = app.querySelector("#chancebook-obtained-items-hide-itemsets");
     const hideFlatpacks = app.querySelector("#chancebook-obtained-items-hide-flatpacks");
@@ -477,7 +486,8 @@ export async function init() {
         function updateList() {
             const query = search.value.trim().toLowerCase();
             const direction = sort.value;
-            const hideAllPlayers = hideFull.checked;
+            const hideAllPlayers = hideAll.checked;
+            const hideZeroPlayers = hideZero.checked;
             const showOnlyZero = onlyZero.checked;
             const hideItemSets = hideItemsets.checked;
             const hideFlatpackItems = hideFlatpacks.checked;
@@ -502,7 +512,8 @@ export async function init() {
             sortedRows.forEach((row) => {
                 const count = Number(row.dataset.count);
                 const nameMatches = row.dataset.itemName.includes(query);
-                const isFull = contributorCount > 0 && count >= contributorCount;
+                const isAllPlayers = contributorCount > 0 && count >= contributorCount;
+                const isZeroPlayers = contributorCount > 0 && count === 0;
                 const isZero = count === 0;
                 const isPersonalItem = personalObtainedIds.has(
                     Number(row.getAttribute("href").match(/[?&]id=(\d+)/)?.[1])
@@ -517,7 +528,8 @@ export async function init() {
                 const isFlatpack = row.dataset.flatpack === "true";
 
                 const visible = nameMatches
-                    && !(hideAllPlayers && isFull)
+                    && !(hideAllPlayers && isAllPlayers)
+                    && !(hideZeroPlayers && isZeroPlayers)
                     && !(showOnlyZero && !isZero)
                     && !(hideItemSets && isItemset)
                     && !(hideFlatpackItems && isFlatpack)
@@ -552,7 +564,8 @@ export async function init() {
 
         search.addEventListener("input", updateList);
         sort.addEventListener("change", updateList);
-        hideFull.addEventListener("change", updateList);
+        hideAll.addEventListener("change", updateList);
+        hideZero.addEventListener("change", updateList);
         onlyZero.addEventListener("change", updateList);
         hideItemsets.addEventListener("change", updateList);
         hideFlatpacks.addEventListener("change", updateList);
