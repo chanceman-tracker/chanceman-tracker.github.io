@@ -1,0 +1,1 @@
+import{_ as r}from"./index-C3jLVVAD.js";import{C as n,a as o}from"./config-BS53vI6F.js";let t=null;async function a(){return t||(t=r(async()=>{const{createClient:e}=await import("https://esm.sh/@supabase/supabase-js@2");return{createClient:e}},[]).then(({createClient:e})=>e(n,o,{auth:{persistSession:!0,autoRefreshToken:!0,detectSessionInUrl:!0}}))),t}export{a as g};

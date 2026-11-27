@@ -17670,7 +17670,7 @@
                     "untracked": [],
                     "itemsAny": [],
                     "rulesAll": [
-                        "canCompleteBarbarianHerblore"
+                        "canUnlockBarbarianHerblore"
                     ],
                     "rulesAny": []
                 }

@@ -1,11 +1,12 @@
-import{C as H,a as O}from"./config-BS53vI6F.js";import{f as I}from"./index-Cf7nTrme.js";let k=null;function f(e){return Number(e||0).toLocaleString()}function C(e){return String(e??"").replace(/[&<>"']/g,n=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[n])}async function G(){const e=await fetch("/data/items.json");if(!e.ok)throw new Error("Could not load the item database.");return e.json()}async function J(){const e=await fetch(`${H}/functions/v1/chancebook-public-data`,{headers:{apikey:O}}),n=await e.json().catch(()=>({}));if(!e.ok)throw new Error(n.error||`Chancebook request failed (${e.status}).`);return n}function Q(e){e.querySelectorAll("img[data-src]").forEach(a=>{a.dataset.src&&(a.src=a.dataset.src,delete a.dataset.src)})}function X(e,n,a){const x=new Map((n||[]).map(t=>[Number(t.itemId),Number(t.count||0)]));return e.map(t=>{const l=x.get(Number(t.id))||0,u=a>0?l/a*100:0;return{...t,playerCount:l,percentage:u}}).map(t=>`
+import{C as $,a as H}from"./config-BS53vI6F.js";import{f as O}from"./index-C3jLVVAD.js";let S=null;const F="chancebookObtainedItemsFilters";function te(){const e={search:"",sort:"desc",hideAll:!1,hideZero:!1,onlyZero:!1,hideItemsets:!1,hideFlatpacks:!1,hidePoisoned:!1,hideClue:!1,onlyPersonal:!1,highlightPersonal:!1};try{const a=JSON.parse(localStorage.getItem(F)||"{}");return{...e,...a}}catch{return e}}function oe(e){try{localStorage.setItem(F,JSON.stringify(e))}catch{}}function I(e){return Number(e||0).toLocaleString()}function N(e){return String(e??"").replace(/[&<>"']/g,a=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[a])}async function ae(){const e=await fetch("/data/items.json");if(!e.ok)throw new Error("Could not load the item database.");return e.json()}async function ne(){const e=await fetch(`${$}/functions/v1/chancebook-public-data`,{headers:{apikey:H}}),a=await e.json().catch(()=>({}));if(!e.ok)throw new Error(a.error||`Chancebook request failed (${e.status}).`);return a}function ce(e){e.querySelectorAll("img[data-src]").forEach(c=>{c.dataset.src&&(c.src=c.dataset.src,delete c.dataset.src)})}function ie(e,a,c){const C=new Map((a||[]).map(t=>[Number(t.itemId),Number(t.count||0)]));return e.map(t=>{const s=C.get(Number(t.id))||0,d=c>0?s/c*100:0;return{...t,playerCount:s,percentage:d}}).map(t=>`
         <a
             class="chancebook-item-count-row"
             data-link
             href="/item?id=${encodeURIComponent(t.id)}"
-            data-item-name="${C(String(t.name||"").toLowerCase())}"
+            data-item-name="${N(String(t.name||"").toLowerCase())}"
             data-itemset="${(t.tags||[]).includes("itemset")}"
             data-flatpack="${(t.tags||[]).includes("flatpack")}"
+            data-clue-only="${(t.tags||[]).includes("clue-reward-only")}"
             data-poisoned="${/\((?:p\+{0,2}|kp)\)$/i.test(String(t.name||"").trim())}"
             data-count="${t.playerCount}"
             data-percentage="${t.percentage}"
@@ -20,15 +21,15 @@ import{C as H,a as O}from"./config-BS53vI6F.js";import{f as I}from"./index-Cf7nT
             </span>
 
             <span class="chancebook-item-count-name">
-                ${C(t.name)}
+                ${N(t.name)}
             </span>
 
             <span class="chancebook-item-count-details">
-                <strong>${f(t.playerCount)} / ${f(a)}</strong>
+                <strong>${I(t.playerCount)} / ${I(c)}</strong>
                 <small>${t.percentage.toFixed(1)}%</small>
             </span>
         </a>
-    `).join("")}async function ae(){return`
+    `).join("")}async function he(){return`
         <style>
             .chancebook-item-count-page {
                 width: 100%;
@@ -218,23 +219,23 @@ import{C as H,a as O}from"./config-BS53vI6F.js";import{f as I}from"./index-Cf7nT
 
             <div class="chancebook-heading">
                 <div>
-                    <h1>Rolled Items</h1>
-                    <p>How many participating chancers have rolled each item.</p>
+                    <h1>Obtained Items</h1>
+                    <p>How many participating chancers have obtained each item.</p>
                 </div>
             </div>
 
             <div
-                id="chancebook-rolled-items-status"
+                id="chancebook-obtained-items-status"
                 class="chancebook-muted"
                 role="status"
             >
-                Loading rolled item statistics...
+                Loading obtained item statistics...
             </div>
 
-            <div id="chancebook-rolled-items-content" hidden>
+            <div id="chancebook-obtained-items-content" hidden>
                 <div class="chancebook-item-count-controls">
                     <input
-                        id="chancebook-rolled-items-search"
+                        id="chancebook-obtained-items-search"
                         class="chancebook-item-count-search"
                         type="search"
                         placeholder="Search items..."
@@ -243,7 +244,7 @@ import{C as H,a as O}from"./config-BS53vI6F.js";import{f as I}from"./index-Cf7nT
 
                     <label class="chancebook-item-count-sort">
                         <span>Sort:</span>
-                        <select id="chancebook-rolled-items-sort">
+                        <select id="chancebook-obtained-items-sort">
                             <option value="desc">Most to least</option>
                             <option value="asc">Least to most</option>
                         </select>
@@ -252,22 +253,30 @@ import{C as H,a as O}from"./config-BS53vI6F.js";import{f as I}from"./index-Cf7nT
                     <div class="chancebook-item-count-filters">
                         <label>
                             <input
-                                id="chancebook-rolled-items-hide-full"
+                                id="chancebook-obtained-items-hide-full"
                                 type="checkbox"
                             >
-                            Hide items rolled by 100% of players
+                            Hide items obtained by 100% of players
                         </label>
 
                         <label>
                             <input
-                                id="chancebook-rolled-items-only-zero"
+                                id="chancebook-obtained-items-hide-zero"
                                 type="checkbox"
                             >
-                            Only show items rolled by 0 players
+                            Hide items obtained by 0% of players
+                        </label>
+
+                        <label>
+                            <input
+                                id="chancebook-obtained-items-only-zero"
+                                type="checkbox"
+                            >
+                            Only show items obtained by 0 players
                         </label>
                         <label>
                             <input
-                                id="chancebook-rolled-items-hide-itemsets"
+                                id="chancebook-obtained-items-hide-itemsets"
                                 type="checkbox"
                             >
                             Hide item sets
@@ -275,7 +284,7 @@ import{C as H,a as O}from"./config-BS53vI6F.js";import{f as I}from"./index-Cf7nT
 
                         <label>
                             <input
-                                id="chancebook-rolled-items-hide-flatpacks"
+                                id="chancebook-obtained-items-hide-flatpacks"
                                 type="checkbox"
                             >
                             Hide flatpacks
@@ -283,7 +292,7 @@ import{C as H,a as O}from"./config-BS53vI6F.js";import{f as I}from"./index-Cf7nT
                         
                         <label>
                             <input
-                                id="chancebook-rolled-items-hide-poisoned"
+                                id="chancebook-obtained-items-hide-poisoned"
                                 type="checkbox"
                             >
                             Hide poisoned weapons
@@ -291,35 +300,43 @@ import{C as H,a as O}from"./config-BS53vI6F.js";import{f as I}from"./index-Cf7nT
 
                         <label>
                             <input
-                                id="chancebook-rolled-items-only-personal"
+                                id="chancebook-obtained-items-hide-clue"
                                 type="checkbox"
                             >
-                            Only show items I've rolled
+                            Hide clue rewards
                         </label>
 
                         <label>
                             <input
-                                id="chancebook-rolled-items-highlight-personal"
+                                id="chancebook-obtained-items-only-personal"
                                 type="checkbox"
                             >
-                            Highlight items I've rolled
+                            Only show items I haven't obtained
+                        </label>
+
+                        <label>
+                            <input
+                                id="chancebook-obtained-items-highlight-personal"
+                                type="checkbox"
+                            >
+                            Highlight items I've obtained
                         </label>
                     </div>
                 </div>
 
                 <p
-                    id="chancebook-rolled-items-summary"
+                    id="chancebook-obtained-items-summary"
                     class="chancebook-item-count-summary"
                 ></p>
 
                 <div
-                    id="chancebook-rolled-items-list"
+                    id="chancebook-obtained-items-list"
                     class="chancebook-item-count-list"
                 ></div>
             </div>
         </div>
-    `}async function ce(){ee();const e=document.getElementById("app");if(!e)return;let n=!0;k=()=>{n=!1};const a=e.querySelector("#chancebook-rolled-items-status"),x=e.querySelector("#chancebook-rolled-items-content"),y=e.querySelector("#chancebook-rolled-items-search"),t=e.querySelector("#chancebook-rolled-items-sort"),l=e.querySelector("#chancebook-rolled-items-hide-full"),u=e.querySelector("#chancebook-rolled-items-only-zero"),N=e.querySelector("#chancebook-rolled-items-hide-itemsets"),q=e.querySelector("#chancebook-rolled-items-hide-flatpacks"),E=e.querySelector("#chancebook-rolled-items-hide-poisoned"),z=e.querySelector("#chancebook-rolled-items-summary"),r=e.querySelector("#chancebook-rolled-items-list"),L=e.querySelector("#chancebook-rolled-items-only-personal"),$=e.querySelector("#chancebook-rolled-items-highlight-personal");try{let c=function(){const i=y.value.trim().toLowerCase(),S=t.value,F=l.checked,M=u.checked,U=N.checked,D=q.checked,_=E.checked,K=L.checked,Z=$.checked;[...d].sort((o,m)=>{const h=Number(o.dataset.count),p=Number(m.dataset.count);return h!==p?S==="asc"?h-p:p-h:o.dataset.itemName.localeCompare(m.dataset.itemName)}).forEach(o=>{const m=Number(o.dataset.count),h=o.dataset.itemName.includes(i),p=v>0&&m>=v,T=m===0,P=b.has(Number(o.getAttribute("href").match(/[?&]id=(\d+)/)?.[1]));o.classList.toggle("is-personal-item",Z&&P);const V=o.dataset.itemset==="true",W=o.dataset.flatpack==="true",Y=h&&!(F&&p)&&!(M&&!T)&&!(U&&V)&&!(D&&W)&&!(_&&o.dataset.poisoned==="true")&&(!K||P);o.hidden=!Y,r.appendChild(o)}),Q(r);const R=d.filter(o=>!o.hidden).length;z.textContent=`Showing ${f(R)} of ${f(d.length)} items`;let s=r.querySelector(".chancebook-item-count-empty");R===0?s||(s=document.createElement("p"),s.className="chancebook-item-count-empty",s.textContent="No items match your filters.",r.appendChild(s)):s&&s.remove()};const[w,A]=await Promise.all([G(),J()]);if(!n)return;const v=Number(A.contributorCount||0),b=new Set((Array.isArray(I.rolled)?I.rolled:[]).map(Number).filter(Number.isFinite)),j=X(w,A.rolledItemCounts,v);r.innerHTML=j;const d=[...r.querySelectorAll(".chancebook-item-count-row")],g=d.map(i=>Number(i.getAttribute("href").match(/[?&]id=(\d+)/)?.[1])),B=g.filter(i=>b.has(i));console.log("Rolled file entries:",I.rolled.length),console.log("Unique rolled IDs:",b.size),console.log("Rendered item rows:",d.length),console.log("Rows matching rolled IDs:",B.length),console.log("Rolled IDs missing from rendered rows:",[...b].filter(i=>!g.includes(i))),console.log("Rendered IDs duplicated:",g.filter((i,S)=>g.indexOf(i)!==S)),y.addEventListener("input",c),t.addEventListener("change",c),l.addEventListener("change",c),u.addEventListener("change",c),N.addEventListener("change",c),q.addEventListener("change",c),E.addEventListener("change",c),L.addEventListener("change",c),$.addEventListener("change",c),c(),x.hidden=!1,a.hidden=!0}catch(w){if(!n)return;a.innerHTML=`
+    `}async function me(){se();const e=document.getElementById("app");if(!e)return;let a=!0;S=()=>{a=!1};const c=e.querySelector("#chancebook-obtained-items-status"),C=e.querySelector("#chancebook-obtained-items-content"),m=e.querySelector("#chancebook-obtained-items-search"),t=e.querySelector("#chancebook-obtained-items-sort"),s=e.querySelector("#chancebook-obtained-items-hide-full"),d=e.querySelector("#chancebook-obtained-items-hide-zero"),b=e.querySelector("#chancebook-obtained-items-only-zero"),k=e.querySelector("#chancebook-obtained-items-hide-itemsets"),g=e.querySelector("#chancebook-obtained-items-hide-flatpacks"),y=e.querySelector("#chancebook-obtained-items-hide-poisoned"),Z=e.querySelector("#chancebook-obtained-items-summary"),l=e.querySelector("#chancebook-obtained-items-list"),f=e.querySelector("#chancebook-obtained-items-only-personal"),x=e.querySelector("#chancebook-obtained-items-highlight-personal"),v=e.querySelector("#chancebook-obtained-items-hide-clue"),i=te();m.value=i.search,t.value=i.sort,s.checked=i.hideAll,d.checked=i.hideZero,b.checked=i.onlyZero,k.checked=i.hideItemsets,g.checked=i.hideFlatpacks,y.checked=i.hidePoisoned,v.checked=i.hideClue,f.checked=i.onlyPersonal,x.checked=i.highlightPersonal;try{let n=function(){const B=m.value.trim().toLowerCase(),R=t.value,_=s.checked,M=d.checked,U=b.checked,K=k.checked,T=g.checked,D=y.checked,J=f.checked,Y=x.checked,V=v.checked;oe({search:m.value,sort:t.value,hideAll:s.checked,hideZero:d.checked,onlyZero:b.checked,hideItemsets:k.checked,hideFlatpacks:g.checked,hidePoisoned:y.checked,hideClue:v.checked,onlyPersonal:f.checked,highlightPersonal:x.checked}),[...P].sort((o,h)=>{const p=Number(o.dataset.count),u=Number(h.dataset.count);return p!==u?R==="asc"?p-u:u-p:o.dataset.itemName.localeCompare(h.dataset.itemName)}).forEach(o=>{const h=Number(o.dataset.count),p=o.dataset.itemName.includes(B),u=w>0&&h>=w,W=w>0&&h===0,G=h===0,A=z.has(Number(o.getAttribute("href").match(/[?&]id=(\d+)/)?.[1]));o.classList.toggle("is-personal-item",Y&&A);const Q=o.dataset.itemset==="true",X=o.dataset.flatpack==="true",ee=p&&!(_&&u)&&!(M&&W)&&!(U&&!G)&&!(K&&Q)&&!(T&&X)&&!(D&&o.dataset.poisoned==="true")&&(!J||!A)&&!(V&&o.dataset.clueOnly==="true");o.hidden=!ee,l.appendChild(o)}),ce(l);const q=P.filter(o=>!o.hidden).length;Z.textContent=`Showing ${I(q)} of ${I(P.length)} items`;let r=l.querySelector(".chancebook-item-count-empty");q===0?r||(r=document.createElement("p"),r.className="chancebook-item-count-empty",r.textContent="No items match your filters.",l.appendChild(r)):r&&r.remove()};const[E,L]=await Promise.all([ae(),ne()]);if(!a)return;const w=Number(L.contributorCount||0),z=new Set((Array.isArray(O.obtained)?O.obtained:[]).map(Number).filter(Number.isFinite)),j=ie(E,L.obtainedItemCounts,w);l.innerHTML=j;const P=[...l.querySelectorAll(".chancebook-item-count-row")];m.addEventListener("input",n),t.addEventListener("change",n),s.addEventListener("change",n),d.addEventListener("change",n),b.addEventListener("change",n),k.addEventListener("change",n),g.addEventListener("change",n),y.addEventListener("change",n),f.addEventListener("change",n),x.addEventListener("change",n),v.addEventListener("change",n),n(),C.hidden=!1,c.hidden=!0}catch(E){if(!a)return;c.innerHTML=`
             <span class="chancebook-error">
-                ${C(w.message||"Could not load rolled item statistics.")}
+                ${N(E.message||"Could not load obtained item statistics.")}
             </span>
-        `}}function ee(){typeof k=="function"&&(k(),k=null)}export{ae as default,ce as init,ee as teardown};
+        `}}function se(){typeof S=="function"&&(S(),S=null)}export{he as default,me as init,se as teardown};

@@ -4,6 +4,45 @@ import { fileStore } from "../storage/fileStore.js";
 
 let teardownHandler = null;
 
+const OBTAINED_FILTERS_KEY = "chancebookObtainedItemsFilters";
+
+function loadObtainedFilters() {
+    const defaults = {
+        search: "",
+        sort: "desc",
+        hideAll: false,
+        hideZero: false,
+        onlyZero: false,
+        hideItemsets: false,
+        hideFlatpacks: false,
+        hidePoisoned: false,
+        hideClue: false,
+        onlyPersonal: false,
+        highlightPersonal: false
+    };
+
+    try {
+        const saved = JSON.parse(
+            localStorage.getItem(OBTAINED_FILTERS_KEY) || "{}"
+        );
+
+        return { ...defaults, ...saved };
+    } catch {
+        return defaults;
+    }
+}
+
+function saveObtainedFilters(filters) {
+    try {
+        localStorage.setItem(
+            OBTAINED_FILTERS_KEY,
+            JSON.stringify(filters)
+        );
+    } catch {
+        // Ignore storage errors; filtering should still work.
+    }
+}
+
 function number(value) {
     return Number(value || 0).toLocaleString();
 }
@@ -453,6 +492,21 @@ export async function init() {
     const highlightPersonal = app.querySelector("#chancebook-obtained-items-highlight-personal");
     const hideClue = app.querySelector("#chancebook-obtained-items-hide-clue");
 
+    const savedFilters = loadObtainedFilters();
+
+    search.value = savedFilters.search;
+    sort.value = savedFilters.sort;
+
+    hideAll.checked = savedFilters.hideAll;
+    hideZero.checked = savedFilters.hideZero;
+    onlyZero.checked = savedFilters.onlyZero;
+    hideItemsets.checked = savedFilters.hideItemsets;
+    hideFlatpacks.checked = savedFilters.hideFlatpacks;
+    hidePoisoned.checked = savedFilters.hidePoisoned;
+    hideClue.checked = savedFilters.hideClue;
+    onlyPersonal.checked = savedFilters.onlyPersonal;
+    highlightPersonal.checked = savedFilters.highlightPersonal;
+
     try {
         if (!CHANCEBOOK_SUPABASE_URL || !CHANCEBOOK_SUPABASE_ANON_KEY) {
             throw new Error("Chancebook is not configured yet.");
@@ -495,6 +549,20 @@ export async function init() {
             const showOnlyPersonal = onlyPersonal.checked;
             const highlightPersonalItems = highlightPersonal.checked;
             const hideClueItems = hideClue.checked;
+
+            saveObtainedFilters({
+                search: search.value,
+                sort: sort.value,
+                hideAll: hideAll.checked,
+                hideZero: hideZero.checked,
+                onlyZero: onlyZero.checked,
+                hideItemsets: hideItemsets.checked,
+                hideFlatpacks: hideFlatpacks.checked,
+                hidePoisoned: hidePoisoned.checked,
+                hideClue: hideClue.checked,
+                onlyPersonal: onlyPersonal.checked,
+                highlightPersonal: highlightPersonal.checked
+            });
 
             const sortedRows = [...allRows].sort((a, b) => {
                 const countA = Number(a.dataset.count);

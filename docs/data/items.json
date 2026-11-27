@@ -6532,7 +6532,7 @@
           "notes": "Mixing an Agility potion(2) with Caviar and level 37 Herblore.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 3036
               },
@@ -10361,7 +10361,7 @@
           "notes": "Mixing a Ancient brew(2) with Caviar and level 92 Herblore.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 26344
               },
@@ -11322,7 +11322,7 @@
           "notes": "Mixing a Superantipoison(2) with Caviar and level 51 Herblore.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 183
               },
@@ -11715,7 +11715,7 @@
           "notes": "Mixing a Antidote+(2) with Caviar and level 74 Herblore.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 5947
               },
@@ -12084,7 +12084,7 @@
           "notes": "Mixing a Antifire potion(2) with Caviar and level 75 Herblore.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 2456
               },
@@ -12313,7 +12313,7 @@
           "notes": "Mixing an Antipoison(2) with Roe and level 6 Herblore.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 177
               },
@@ -14951,7 +14951,7 @@
           "notes": "Mixing a Attack potion(2) with Roe and level 4 Herblore.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 123
               },
@@ -41766,15 +41766,19 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Combat potion(2) with Caviar.",
+          "notes": "Mixing a Combat potion(2) with Caviar and Herblore level 40.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 9743
               },
               {
                 "has": 11326
+              },
+              {
+                "skill": "Herblore",
+                "level": 40
               }
             ]
           }
@@ -46252,15 +46256,19 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Defence potion(2) with Caviar.",
+          "notes": "Mixing a Defence potion(2) with Caviar and Herblore level 33.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 137
               },
               {
                 "has": 11326
+              },
+              {
+                "skill": "Herblore",
+                "level": 33
               }
             ]
           }
@@ -58183,15 +58191,19 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing an Energy potion(2) with Caviar.",
+          "notes": "Mixing an Energy potion(2) with Caviar and Herblore level 29.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 3012
               },
               {
                 "has": 11326
+              },
+              {
+                "skill": "Herblore",
+                "level": 29
               }
             ]
           }
@@ -59741,15 +59753,19 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Extended antifire(2) with Caviar.",
+          "notes": "Mixing a Extended antifire(2) with Caviar and Herblore level 91.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 11955
               },
               {
                 "has": 11326
+              },
+              {
+                "skill": "Herblore",
+                "level": 91
               }
             ]
           }
@@ -60164,15 +60180,19 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Extended super antifire(2) with Caviar.",
+          "notes": "Mixing a Extended super antifire(2) with Caviar and Herblore level 99.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 22215
               },
               {
                 "has": 11326
+              },
+              {
+                "skill": "Herblore",
+                "level": 99
               }
             ]
           }
@@ -62900,15 +62920,19 @@
       },
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Fishing potion(2) with Caviar.",
+          "notes": "Mixing a Fishing potion(2) with Caviar and Herblore level 53.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 153
               },
               {
                 "has": 11326
+              },
+              {
+                "skill": "Herblore",
+                "level": 53
               }
             ]
           }
@@ -84165,15 +84189,19 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Hunter potion(2) with Caviar.",
+          "notes": "Mixing a Hunter potion(2) with Caviar and Herblore level 58.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 10002
               },
               {
                 "has": 11326
+              },
+              {
+                "skill": "Herblore",
+                "level": 58
               }
             ]
           }
@@ -98117,17 +98145,21 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Magic essence(2) with Caviar.",
+          "notes": "Mixing a Magic essence(2) with Caviar and Herblore level 61.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 227
               },
               {
                 "has": 11326
               },
-              "canCompleteFairytale"
+              "canCompleteFairytale",
+              {
+                "skill": "Herblore",
+                "level": 61
+              }
             ]
           }
         }
@@ -98447,15 +98479,19 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Magic potion(2) with Caviar.",
+          "notes": "Mixing a Magic potion(2) with Caviar and Herblore level 83.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 3044
               },
               {
                 "has": 11326
+              },
+              {
+                "skill": "Herblore",
+                "level": 83
               }
             ]
           }
@@ -120172,15 +120208,19 @@
       },
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Prayer potion(2) with Caviar.",
+          "notes": "Mixing a Prayer potion(2) with Caviar and Herblore level 42.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 141
               },
               {
                 "has": 11326
+              },
+              {
+                "skill": "Herblore",
+                "level": 42
               }
             ]
           }
@@ -122568,15 +122608,19 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Ranging potion(2) with Caviar.",
+          "notes": "Mixing a Ranging potion(2) with Caviar and Herblore level 80.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 171
               },
               {
                 "has": 11326
+              },
+              {
+                "skill": "Herblore",
+                "level": 80
               }
             ]
           }
@@ -127028,15 +127072,19 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Relicym's balm(2) with Roe.",
+          "notes": "Mixing a Relicym's balm(2) with Roe and Herblore level 9.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 4846
               },
               {
                 "has": 11324
+              },
+              {
+                "skill": "Herblore",
+                "level": 9
               }
             ]
           }
@@ -127119,15 +127167,19 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Restore potion(2) with Roe.",
+          "notes": "Mixing a Restore potion(2) with Roe and Herblore level 24.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 129
               },
               {
                 "has": 11324
+              },
+              {
+                "skill": "Herblore",
+                "level": 24
               }
             ]
           }
@@ -145821,15 +145873,19 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Stamina potion(2) with some Caviar.",
+          "notes": "Mixing a Stamina potion(2) with some Caviar and Herblore level 86.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 12629
               },
               {
                 "has": 11326
+              },
+              {
+                "skill": "Herblore",
+                "level": 86
               }
             ]
           }
@@ -152010,15 +152066,19 @@
       },
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Strength potion(2) with some Roe.",
+          "notes": "Mixing a Strength potion(2) with some Roe and Herblore level 14.",
           "rule": {
             "all": [
-              "canCompleteBarbarianHerblore",
+              "canUnlockBarbarianHerblore",
               {
                 "has": 117
               },
               {
                 "has": 11324
+              },
+              {
+                "skill": "Herblore",
+                "level": 14
               }
             ]
           }
@@ -153184,7 +153244,7 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Super antifire potion(2) with Caviar.",
+          "notes": "Mixing a Super antifire potion(2) with Caviar and level 98 Herblore.",
           "rule": {
             "all": [
               {
@@ -153193,7 +153253,11 @@
               {
                 "has": 11326
               },
-              "canCompleteBarbarianHerblore"
+              "canUnlockBarbarianHerblore",
+              {
+                "skill": "Herblore",
+                "level": 98
+              }
             ]
           }
         }
@@ -153791,7 +153855,7 @@
       },
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Super defence(2) with Caviar.",
+          "notes": "Mixing a Super defence(2) with Caviar and Herblore level 71.",
           "rule": {
             "all": [
               {
@@ -153800,7 +153864,11 @@
               {
                 "has": 11326
               },
-              "canCompleteBarbarianHerblore"
+              "canUnlockBarbarianHerblore",
+              {
+                "skill": "Herblore",
+                "level": 71
+              }
             ]
           }
         }
@@ -154050,7 +154118,7 @@
     "sources": {
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Super energy(2) with Caviar.",
+          "notes": "Mixing a Super energy(2) with Caviar and level 56 Herblore.",
           "rule": {
             "all": [
               {
@@ -154059,7 +154127,11 @@
               {
                 "has": 11326
               },
-              "canCompleteBarbarianHerblore"
+              "canUnlockBarbarianHerblore",
+              {
+                "skill": "Herblore",
+                "level": 56
+              }
             ]
           }
         }
@@ -154629,7 +154701,7 @@
       },
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Super restore(2) with Caviar.",
+          "notes": "Mixing a Super restore(2) with Caviar and Herblore level 67.",
           "rule": {
             "all": [
               {
@@ -154638,7 +154710,11 @@
               {
                 "has": 11326
               },
-              "canCompleteBarbarianHerblore"
+              "canUnlockBarbarianHerblore",
+              {
+                "skill": "Herblore",
+                "level": 67
+              }
             ]
           }
         }
@@ -154948,7 +155024,7 @@
       },
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Super strength(2) with Caviar.",
+          "notes": "Mixing a Super strength(2) with Caviar and level 59 Herblore.",
           "rule": {
             "all": [
               {
@@ -154957,7 +155033,11 @@
               {
                 "has": 11326
               },
-              "canCompleteBarbarianHerblore"
+              "canUnlockBarbarianHerblore",
+              {
+                "skill": "Herblore",
+                "level": 59
+              }
             ]
           }
         }
@@ -155428,7 +155508,7 @@
       },
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Super attack(2) with Caviar.",
+          "notes": "Mixing a Super attack(2) with Caviar and Herblore level 47.",
           "rule": {
             "all": [
               {
@@ -155437,7 +155517,11 @@
               {
                 "has": 11326
               },
-              "canCompleteBarbarianHerblore"
+              "canUnlockBarbarianHerblore",
+              {
+                "skill": "Herblore",
+                "level": 47
+              }
             ]
           }
         }
@@ -175918,7 +176002,7 @@
       },
       "other": {
         "Mixing a barbarian potion": {
-          "notes": "Mixing a Zamorak brew(2) with Caviar.",
+          "notes": "Mixing a Zamorak brew(2) with Caviar and Herblore level 85.",
           "rule": {
             "all": [
               {
@@ -175927,7 +176011,11 @@
               {
                 "has": 11326
               },
-              "canCompleteBarbarianHerblore"
+              "canUnlockBarbarianHerblore",
+              {
+                "skill": "Herblore",
+                "level": 85
+              }
             ]
           }
         }

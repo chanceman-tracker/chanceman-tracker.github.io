@@ -322,11 +322,14 @@ function formatRule(rule) {
     if (!rule) return "";
     if (typeof rule === "string") return rule;
 
+    if (rule.skill && rule.level != null)
+        return `${rule.skill} level ${rule.level}`;
+
     if (rule.any)
-        return "Any: " + rule.any.join(", ");
+        return "Any: " + rule.any.map(r => typeof r === "object" ? formatRule(r) : r).join(", ");
 
     if (rule.all)
-        return "All: " + rule.all.map(r => typeof r === "object" ? JSON.stringify(r) : r).join(", ");
+        return "All: " + rule.all.map(r => typeof r === "object" ? formatRule(r) : r).join(", ");
 
     if (rule.has !== undefined)
         return `Has item ${rule.has}`;

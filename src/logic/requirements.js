@@ -2758,6 +2758,9 @@ export const REQUIREMENT_CHECKS = {
     canCompleteBarbarianHerblore(ctx) {
         return canCompleteBarbarianHerblore(ctx);
     },
+    canUnlockBarbarianHerblore(ctx) {
+        return canUnlockBarbarianHerblore(ctx);
+    },
     canCompleteBarbarianSmithing(ctx) {
         return canCompleteBarbarianSmithing(ctx);
     },
@@ -3498,6 +3501,16 @@ function canCompleteBarbarianFishing(ctx) {
 }
 
 function canCompleteBarbarianHerblore(ctx) {
+    return allTrue([
+        hasNonBoostableSkillLevel(ctx, "Herblore", 4),
+        requiresQuest(ctx, "canCompleteDruidicRitual", canCompleteDruidicRitual), //
+        requiresQuest(ctx, "canCompleteBarbarianFishing", canCompleteBarbarianFishing), //
+        has(ctx, 123), // Attack potion(2)
+        hasAnyItems(ctx, [11324, 11326]), // Roe or Caviar
+    ]);
+}
+
+function canUnlockBarbarianHerblore(ctx) {
     return allTrue([
         hasNonBoostableSkillLevel(ctx, "Herblore", 4),
         requiresQuest(ctx, "canCompleteDruidicRitual", canCompleteDruidicRitual), //

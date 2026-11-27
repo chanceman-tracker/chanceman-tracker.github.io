@@ -4,6 +4,43 @@ import { fileStore } from "../storage/fileStore.js";
 
 let teardownHandler = null;
 
+const ROLLED_FILTERS_KEY = "chancebookRolledItemsFilters";
+
+function loadRolledFilters() {
+    const defaults = {
+        search: "",
+        sort: "desc",
+        hideFull: false,
+        onlyZero: false,
+        hideItemsets: false,
+        hideFlatpacks: false,
+        hidePoisoned: false,
+        onlyPersonal: false,
+        highlightPersonal: false
+    };
+
+    try {
+        const saved = JSON.parse(
+            localStorage.getItem(ROLLED_FILTERS_KEY) || "{}"
+        );
+
+        return { ...defaults, ...saved };
+    } catch {
+        return defaults;
+    }
+}
+
+function saveRolledFilters(filters) {
+    try {
+        localStorage.setItem(
+            ROLLED_FILTERS_KEY,
+            JSON.stringify(filters)
+        );
+    } catch {
+        // Ignore storage errors; filtering should still work.
+    }
+}
+
 function number(value) {
     return Number(value || 0).toLocaleString();
 }
@@ -434,6 +471,19 @@ export async function init() {
     const onlyPersonal = app.querySelector("#chancebook-rolled-items-only-personal");
     const highlightPersonal = app.querySelector("#chancebook-rolled-items-highlight-personal");
 
+    const savedFilters = loadRolledFilters();
+
+    search.value = savedFilters.search;
+    sort.value = savedFilters.sort;
+
+    hideFull.checked = savedFilters.hideFull;
+    onlyZero.checked = savedFilters.onlyZero;
+    hideItemsets.checked = savedFilters.hideItemsets;
+    hideFlatpacks.checked = savedFilters.hideFlatpacks;
+    hidePoisoned.checked = savedFilters.hidePoisoned;
+    onlyPersonal.checked = savedFilters.onlyPersonal;
+    highlightPersonal.checked = savedFilters.highlightPersonal;
+
     try {
         if (!CHANCEBOOK_SUPABASE_URL || !CHANCEBOOK_SUPABASE_ANON_KEY) {
             throw new Error("Chancebook is not configured yet.");
@@ -493,6 +543,18 @@ console.log(
             const hidePoisonedWeapons = hidePoisoned.checked;
             const showOnlyPersonal = onlyPersonal.checked;
             const highlightPersonalItems = highlightPersonal.checked;
+
+            saveRolledFilters({
+                search: search.value,
+                sort: sort.value,
+                hideFull: hideFull.checked,
+                onlyZero: onlyZero.checked,
+                hideItemsets: hideItemsets.checked,
+                hideFlatpacks: hideFlatpacks.checked,
+                hidePoisoned: hidePoisoned.checked,
+                onlyPersonal: onlyPersonal.checked,
+                highlightPersonal: highlightPersonal.checked
+            });
 
             const sortedRows = [...allRows].sort((a, b) => {
                 const countA = Number(a.dataset.count);
