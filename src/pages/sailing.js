@@ -2230,22 +2230,36 @@ const EQUIPMENT_TIERS = {
     ]
 };
 
-const EQUIPMENT_BUILD_OPTIONS = {
-    mast: MASTS_AND_SAILS_SLOOP,
-    helm: HELMS_SLOOP,
-    keel: KEELS_SLOOP
-};
+function getEquipmentBuildOptions(type, ships) {
+    const sectionTitles = {
+        mast: ["Mast and sails", "Mast"],
+        helm: ["Helm"],
+        keel: ["Keel"]
+    };
+
+    const titles = sectionTitles[type];
+
+    if (!titles) {
+        return [];
+    }
+
+    return ships.flatMap((ship) =>
+        ship.sections
+            .filter((section) => titles.includes(section.title))
+            .flatMap((section) => section.items || [])
+    );
+}
 
 function hasMinimumEquipment(
     requirement,
     itemNameMap,
     obtainedSet,
-    rolledSet
+    rolledSet,
+    ships
 ) {
     const tiers = EQUIPMENT_TIERS[requirement.type];
-    const buildOptions = EQUIPMENT_BUILD_OPTIONS[requirement.type];
 
-    if (!tiers || !buildOptions) {
+    if (!tiers) {
         return false;
     }
 
@@ -2255,29 +2269,32 @@ function hasMinimumEquipment(
         return false;
     }
 
-    // Check the required tier and every higher tier.
-    for (let i = minimumIndex; i < tiers.length; i++) {
-        const requiredName = tiers[i];
+    const buildOptions = getEquipmentBuildOptions(
+        requirement.type,
+        ships
+    );
 
-        // Find the actual Sloop upgrade definition.
+    for (let i = minimumIndex; i < tiers.length; i++) {
         const item = buildOptions.find(
-            (option) => option.name === requiredName
+            (option) => option.name === tiers[i]
         );
 
         if (!item) continue;
 
-        // Use exactly the same availability checker as
-        // the Sloop submenu.
         const status = getBuildStatus(
             item,
             itemNameMap,
             obtainedSet,
-            rolledSet
+            rolledSet,
+            ships
         );
 
-        // The equipment must have all materials,
-        // equipment requirements, rules AND skill levels.
-        if (status.state === "available") {
+        if (
+            status.materialStatus.missing.length === 0 &&
+            status.missingEquipment.length === 0 &&
+            status.missingRules.length === 0 &&
+            status.missingSkills.length === 0
+        ) {
             return true;
         }
     }
@@ -2501,7 +2518,8 @@ function getMissingEquipmentRequirements(
     requirements,
     itemNameMap,
     obtainedSet,
-    rolledSet
+    rolledSet,
+    ships
 ) {
     const missing = [];
 
@@ -2513,7 +2531,8 @@ function getMissingEquipmentRequirements(
                 requirement,
                 itemNameMap,
                 obtainedSet,
-                rolledSet
+                rolledSet,
+                ships
             );
         } else if (requirement?.exact) {
             const item = findItemByName(
@@ -2630,12 +2649,13 @@ function renderMaterials(materialStatus) {
     `;
 }
 
-function getBuildStatus(item, itemNameMap, obtainedSet, rolledSet) {
+function getBuildStatus(item, itemNameMap, obtainedSet, rolledSet, ships) {
     const materialStatus = getMaterialStatus(
         item.materials || [],
         itemNameMap,
         obtainedSet,
-        rolledSet
+        rolledSet,
+        ships
     );
 
     const missingSkills = getMissingSkills({
@@ -2647,7 +2667,8 @@ function getBuildStatus(item, itemNameMap, obtainedSet, rolledSet) {
         item.requirements?.equipment,
         itemNameMap,
         obtainedSet,
-        rolledSet
+        rolledSet,
+        ships
     );
 
     const missingRules = [];
@@ -2692,13 +2713,15 @@ function renderBuildRow(
     itemNameMap,
     obtainedSet,
     rolledSet,
+    ships,
     extra = {}
 ) {
     const status = getBuildStatus(
         item,
         itemNameMap,
         obtainedSet,
-        rolledSet
+        rolledSet,
+        ships
     );
 
     const missingSkillText = status.missingSkills.length
@@ -2814,6 +2837,7 @@ function renderSection(
     itemNameMap,
     obtainedSet,
     rolledSet,
+    ships,
     boat = null
 ) {
     const filteredItems =
@@ -2842,7 +2866,8 @@ function renderSection(
                         item,
                         itemNameMap,
                         obtainedSet,
-                        rolledSet
+                        rolledSet,
+                        ships
                     )
                 ).join("")}
             </div>
@@ -2856,6 +2881,7 @@ function renderShipSection(
     itemNameMap,
     obtainedSet,
     rolledSet,
+    ships,
     id
 ) {
     return `
@@ -2872,6 +2898,7 @@ function renderShipSection(
                         itemNameMap,
                         obtainedSet,
                         rolledSet,
+                        ships,
                         title
                     );
                 }).join("")}
@@ -2884,7 +2911,8 @@ function getHazardState(
     hazard,
     itemNameMap,
     obtainedSet,
-    rolledSet
+    rolledSet,
+    ships
 ) {
     const missingEquipment = [];
 
@@ -2910,7 +2938,8 @@ function getHazardState(
                 equipmentRequirement,
                 itemNameMap,
                 obtainedSet,
-                rolledSet
+                rolledSet,
+                ships
             );
         }
 
@@ -2965,13 +2994,15 @@ function renderHazard(
     hazard,
     itemNameMap,
     obtainedSet,
-    rolledSet
+    rolledSet,
+    ships
 ) {
     const result = getHazardState(
         hazard,
         itemNameMap,
         obtainedSet,
-        rolledSet
+        rolledSet,
+        ships
     );
 
     let detail = "";
@@ -3126,7 +3157,8 @@ function getAvailableBoatSections(
     ship,
     itemNameMap,
     obtainedSet,
-    rolledSet
+    rolledSet,
+    ships
 ) {
     return ship.sections.map((section) => {
         let items = section.items || [];
@@ -3148,7 +3180,8 @@ function getAvailableBoatSections(
                 item,
                 itemNameMap,
                 obtainedSet,
-                rolledSet
+                rolledSet,
+                ships
             )
         }));
 
@@ -3204,7 +3237,8 @@ function getBestBoatForPlayer(
             ship,
             itemNameMap,
             obtainedSet,
-            rolledSet
+            rolledSet,
+            ships
         );
 
         const availableCount = sections.reduce(
@@ -4175,6 +4209,7 @@ export default async function SailingPage() {
             itemNameMap,
             obtainedSet,
             rolledSet,
+            ships,
             id
         )
     ).join("");
@@ -4184,7 +4219,8 @@ export default async function SailingPage() {
             hazard,
             itemNameMap,
             obtainedSet,
-            rolledSet
+            rolledSet,
+            ships
         )
     ).join("");
 
