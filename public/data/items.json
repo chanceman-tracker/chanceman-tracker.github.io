@@ -40940,7 +40940,7 @@
     "sources": {
       "other": {
         "Special shop": {
-          "notes": "Forestry reward - Requires Willow logs and Maple logs and level 50 Woodcutting and level 50 Crafting.",
+          "notes": "Forestry reward - Requires Willow logs and Maple logs.",
           "rule": {
             "all": [
               {
@@ -40948,18 +40948,6 @@
               },
               {
                 "has": 1517
-              },
-              {
-                "skills": [
-                  {
-                    "skill": "Woodcutting",
-                    "level": 50
-                  },
-                  {
-                    "skill": "Crafting",
-                    "level": 50
-                  }
-                ]
               }
             ]
           }
@@ -98155,7 +98143,7 @@
               {
                 "has": 11326
               },
-              "canCompleteFairytale",
+              "canCompleteFairytaleIGrowingPains",
               {
                 "skill": "Herblore",
                 "level": 61
@@ -139729,7 +139717,27 @@
                 "skill": "Herblore",
                 "level": 15
               },
-              "canCompleteShadesOfMortton"
+              "canCompleteDruidicRitual",
+              "canCompletePriestInPeril"
+            ]
+          }
+        },
+        "Mixing a potion 2": {
+          "notes": "Requires Unfinished potion and Tarromin and level 15 Herblore.",
+          "rule": {
+            "all": [
+              {
+                "has": 3406
+              },
+              {
+                "has": 253
+              },
+              {
+                "skill": "Herblore",
+                "level": 15
+              },
+              "canCompleteDruidicRitual",
+              "canCompletePriestInPeril"
             ]
           }
         },
@@ -166069,7 +166077,8 @@
               {
                 "has": 227
               },
-              "canCompleteShadesOfMortton"
+              "canCompleteDruidicRitual",
+              "canCompletePriestInPeril"
             ]
           }
         }
