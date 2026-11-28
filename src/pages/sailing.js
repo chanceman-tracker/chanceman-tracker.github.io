@@ -2230,6 +2230,12 @@ const EQUIPMENT_TIERS = {
     ]
 };
 
+const EQUIPMENT_BUILD_OPTIONS = {
+    mast: MASTS_AND_SAILS_SLOOP,
+    helm: HELMS_SLOOP,
+    keel: KEELS_SLOOP
+};
+
 function hasMinimumEquipment(
     requirement,
     itemNameMap,
@@ -2237,8 +2243,9 @@ function hasMinimumEquipment(
     rolledSet
 ) {
     const tiers = EQUIPMENT_TIERS[requirement.type];
+    const buildOptions = EQUIPMENT_BUILD_OPTIONS[requirement.type];
 
-    if (!tiers) {
+    if (!tiers || !buildOptions) {
         return false;
     }
 
@@ -2248,12 +2255,29 @@ function hasMinimumEquipment(
         return false;
     }
 
+    // Check the required tier and every higher tier.
     for (let i = minimumIndex; i < tiers.length; i++) {
-        const item = findItemByName(tiers[i], itemNameMap);
+        const requiredName = tiers[i];
+
+        // Find the actual Sloop upgrade definition.
+        const item = buildOptions.find(
+            (option) => option.name === requiredName
+        );
 
         if (!item) continue;
 
-        if (itemIsAvailable(item, obtainedSet, rolledSet)) {
+        // Use exactly the same availability checker as
+        // the Sloop submenu.
+        const status = getBuildStatus(
+            item,
+            itemNameMap,
+            obtainedSet,
+            rolledSet
+        );
+
+        // The equipment must have all materials,
+        // equipment requirements, rules AND skill levels.
+        if (status.state === "available") {
             return true;
         }
     }
@@ -3072,19 +3096,16 @@ function renderHazard(
 /*
  * Best boat visual representation
  *
- * Shows only the boat with the greatest number of currently
- * available upgrades.
+ * Shows only the boat with the greatest number of currently available upgrades.
  *
  * Boat availability:
  * - Raft: always available
  * - Skiff: Sailing 15+
  * - Sloop: Sailing 50+
  *
- * For normal upgrade sections, if no upgrade is currently available,
- * the first entry is shown as a fallback.
+ * For normal upgrade sections, if no upgrade is currently available, the first entry is shown as a fallback.
  *
- * Facilities, Flags, Trims and Braziers remain blank when nothing
- * is currently available.
+ * Facilities, Flags, Trims and Braziers remain blank when nothing is currently available.
  */
 
 const BEST_BOAT_FALLBACK_SECTIONS = new Set([
@@ -3120,20 +3141,32 @@ function getAvailableBoatSections(
             );
         }
 
-        const availableItems = items.filter((item) => {
-            const status = getBuildStatus(
+        // Calculate the build status for every item.
+        const itemsWithStatus = items.map((item) => ({
+            ...item,
+            buildStatus: getBuildStatus(
                 item,
                 itemNameMap,
                 obtainedSet,
                 rolledSet
-            );
+            )
+        }));
 
-            return status.state === "available";
+        // An item qualifies if materials, equipment and rules
+        // are satisfied. Skill levels do not prevent selection.
+        const availableItems = itemsWithStatus.filter((item) => {
+            const status = item.buildStatus;
+
+            return (
+                status.materialStatus.missing.length === 0 &&
+                status.missingEquipment.length === 0 &&
+                status.missingRules.length === 0
+            );
         });
 
         return {
             ...section,
-            items,
+            items: itemsWithStatus,
             availableItems
         };
     });
@@ -3223,8 +3256,10 @@ function getBestUpgradeForSection(section) {
     /*
      * For Hull, Helm, Mast and sails, and Keel:
      *
-     * 1. Use the highest available upgrade.
-     * 2. If nothing is available, use the first entry.
+     * 1. Use the highest upgrade for which all items,
+     *    equipment and rules are satisfied.
+     * 2. Skill requirements do not prevent selection.
+     * 3. If nothing qualifies, use the first entry.
      */
     if (section.availableItems.length) {
         return section.availableItems[
@@ -3242,11 +3277,48 @@ function getBestUpgradeForSection(section) {
     return null;
 }
 
+function getBestBoatMissingLevelText(item) {
+    const status = item.buildStatus;
+
+    // Only show level requirements when all other requirements
+    // are satisfied.
+    if (
+        !status ||
+        status.materialStatus.missing.length ||
+        status.missingEquipment.length ||
+        status.missingRules.length ||
+        !status.missingSkills.length
+    ) {
+        return "";
+    }
+
+    const missingLevels = [];
+
+    const sailingRequired = Number(item.sailing) || 0;
+    const constructionRequired = Number(item.construction) || 0;
+
+    if (
+        sailingRequired > 0 &&
+        getPlayerSkillLevel("Sailing") < sailingRequired
+    ) {
+        missingLevels.push(`${sailingRequired} Sailing required`);
+    }
+
+    if (
+        constructionRequired > 0 &&
+        getPlayerSkillLevel("Construction") < constructionRequired
+    ) {
+        missingLevels.push(`${constructionRequired} Construction required`);
+    }
+
+    return missingLevels.join(" · ");
+}
+
 function renderBestBoatUpgradeCell(section) {
     /*
      * Facilities, Flags, Trims and Braziers:
-     * Show every currently available item.
-     * If none are available, show "None".
+     * Show every item for which all item requirements are met.
+     * Skill requirements are ignored for selection.
      */
     if (BEST_BOAT_OPTIONAL_SECTIONS.has(section.title)) {
         if (!section.availableItems.length) {
@@ -3263,8 +3335,20 @@ function renderBestBoatUpgradeCell(section) {
             <td class="sailing-best-boat-cell">
                 <div class="sailing-best-boat-upgrade-list">
                     ${section.availableItems.map((item) => `
-                        <div class="sailing-best-boat-upgrade-name">
-                            ${escapeHtml(item.name)}
+                        <div class="sailing-best-boat-upgrade-entry">
+                            <div class="sailing-best-boat-upgrade-name">
+                                ${escapeHtml(item.name)}
+                            </div>
+
+                            ${
+                                getBestBoatMissingLevelText(item)
+                                    ? `
+                                        <div class="sailing-best-boat-missing-level">
+                                            ${escapeHtml(getBestBoatMissingLevelText(item))}
+                                        </div>
+                                    `
+                                    : ""
+                            }
                         </div>
                     `).join("")}
                 </div>
@@ -3274,8 +3358,8 @@ function renderBestBoatUpgradeCell(section) {
 
     /*
      * Hull, Helm, Mast and sails, and Keel:
-     * Show the best available upgrade.
-     * If no upgrade is available, show the first/base entry.
+     * Show the best qualifying upgrade.
+     * If none qualify, show the first/base entry.
      */
     const item = getBestUpgradeForSection(section);
 
@@ -3292,14 +3376,15 @@ function renderBestBoatUpgradeCell(section) {
     /*
      * The first item in these sections is ALWAYS considered
      * the base option.
-     *
-     * This is intentionally NOT based on availability.
-     * Therefore, even if the player can build Bronze keel,
-     * Bronze keel will still say "Base option" when it is the
-     * first entry for that boat.
      */
     const baseItem = section.items[0];
     const isBaseOption = item === baseItem;
+
+    // Only display the missing-level warning when all other
+    // requirements for this item are satisfied.
+    const status = item.buildStatus;
+
+    const missingLevelText = getBestBoatMissingLevelText(item);
 
     return `
         <td class="sailing-best-boat-cell">
@@ -3319,6 +3404,16 @@ function renderBestBoatUpgradeCell(section) {
                             : "Best upgrade"
                     }
                 </div>
+
+                ${
+                    missingLevelText
+                        ? `
+                            <div class="sailing-best-boat-missing-level">
+                                ${escapeHtml(missingLevelText)}
+                            </div>
+                        `
+                        : ""
+                }
             </div>
         </td>
     `;
@@ -3893,6 +3988,25 @@ function getPageStyles() {
                     grid-template-columns: 1fr;
                 }
             }
+
+            .sailing-best-boat-missing-level {
+            display: inline-block;
+            margin-top: 0.3rem;
+            padding: 0.15rem 0.45rem;
+            border-radius: 4px;
+            background: rgba(220, 170, 60, 0.15);
+            color: #d6a83c;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .sailing-best-boat-upgrade-entry {
+            margin-bottom: 0.4rem;
+        }
+
+        .sailing-best-boat-upgrade-entry:last-child {
+            margin-bottom: 0;
+        }
         </style>
     `;
 }
